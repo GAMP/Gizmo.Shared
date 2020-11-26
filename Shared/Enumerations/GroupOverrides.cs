@@ -3,26 +3,26 @@
 namespace Gizmo
 {
     /// <summary>
-    /// Order options.
+    /// Computer group configuration overrides.
     /// </summary>
     [Flags]
-    public enum OrderOptionType
+    public enum GroupOverrides
     {
         /// <summary>
         /// None.
         /// </summary>
         None = 0,
         /// <summary>
-        /// Client order disallowed.
+        /// Applications.
         /// </summary>
-        DisallowAllowOrder = 1,
+        Applications = 1,
         /// <summary>
-        /// Disallow ability of order for non users.
+        /// Security.
         /// </summary>
-        RestrictNonCustomers = 2,
+        Security = 2,
         /// <summary>
-        /// Restricts product sale.
+        /// Age rating.
         /// </summary>
-        RestrictSale = 4
+        AgeRating = 4,
     }
 }
