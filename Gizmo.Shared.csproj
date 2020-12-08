@@ -1,13 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<PackageProjectUrl>https://github.com/GAMP/Gizmo.Shared</PackageProjectUrl>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Client\" />
-    <Folder Include="Manager\" />
-    <Folder Include="Server\" />
-  </ItemGroup>
+	<ItemGroup>
+		<Folder Include="Client\" />
+		<Folder Include="Manager\" />
+		<Folder Include="Server\" />
+	</ItemGroup>
 
 </Project>
