@@ -3,13 +3,35 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<LangVersion>latest</LangVersion>
-		<PackageProjectUrl>https://github.com/GAMP/Gizmo.Shared</PackageProjectUrl>
+		<PackageProjectUrl>https://www.gizmopowered.net/</PackageProjectUrl>
+		<SignAssembly>false</SignAssembly>
+		<RepositoryUrl>https://github.com/GAMP/Gizmo.Shared</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Authors>NETProjects</Authors>
+		<Company>NETProjects</Company>
+		<Product>Gizmo</Product>
+		<Description>Gizmo shared code library. The library contains code shared between all of Gizmo modules.</Description>
+		<Copyright>NETProjects</Copyright>
+		<RepositoryType>git</RepositoryType>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PackageIcon>package_icon.png</PackageIcon>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<Folder Include="Client\" />
 		<Folder Include="Manager\" />
 		<Folder Include="Server\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="Resources\package_icon.png">
+	    <Pack>True</Pack>
+	    <PackagePath></PackagePath>
+	  </None>
 	</ItemGroup>
 
 </Project>
