@@ -1,21 +1,21 @@
 ﻿namespace Gizmo
 {
     /// <summary>
-    /// Sex enumeration.
+    /// Order line payment type.
     /// </summary>
-    public enum Sex
+    public enum OrderLinePayType
     {
         /// <summary>
-        /// Unspecified.
+        /// Mixed.
         /// </summary>
-        Unspecified = 0,
+        Mixed = 2,
         /// <summary>
-        /// Male.
+        /// Points.
         /// </summary>
-        Male = 1,
+        Points = 1,
         /// <summary>
-        /// Female.
+        /// Cash.
         /// </summary>
-        Female = 2,
+        Cash = 0,
     }
 }
