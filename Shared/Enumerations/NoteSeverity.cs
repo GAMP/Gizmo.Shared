@@ -10,11 +10,13 @@
         /// </summary>
         [Localized("NOTE_SEVIRITY_GREEN")]
         Green = 0,
+
         /// <summary>
         /// Yellow.
         /// </summary>
         [Localized("NOTE_SEVIRITY_YELLOW")]
         Yellow = 1,
+
         /// <summary>
         /// Red.
         /// </summary>

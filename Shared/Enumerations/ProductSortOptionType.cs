@@ -10,11 +10,13 @@
         /// </summary>
         [Localized("MANUAL")]
         Default = 0,
+
         /// <summary>
         /// Name.
         /// </summary>
         [Localized("NAME")]
         Name = 1,
+
         /// <summary>
         /// Created.
         /// </summary>

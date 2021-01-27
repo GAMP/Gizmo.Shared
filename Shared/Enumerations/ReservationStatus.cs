@@ -9,6 +9,7 @@
         /// Reservation is waiting.
         /// </summary>
         Waiting = 0,
+
         /// <summary>
         /// Reservation is canceled by operator.
         /// </summary>

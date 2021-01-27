@@ -10,6 +10,7 @@
         /// </summary>
         [Localized("AND")]
         And = 0,
+
         /// <summary>
         /// Or.
         /// </summary>

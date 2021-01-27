@@ -10,11 +10,13 @@
         /// </summary>
         [Localized("PRODUCT_TYPE_PRODUCT")]
         Product,
+
         /// <summary>
         /// Time product.
         /// </summary>
         [Localized("PRODUCT_TYPE_TIME")]
         ProductTime,
+
         /// <summary>
         /// Bundle.
         /// </summary>

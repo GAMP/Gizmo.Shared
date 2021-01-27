@@ -10,6 +10,7 @@
         /// </summary>
         [Localized("PAY_IN")]
         PayIn = 1,
+
         /// <summary>
         /// Pay out.
         /// </summary>
