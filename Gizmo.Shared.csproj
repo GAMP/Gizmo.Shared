@@ -13,7 +13,7 @@
 		<Description>Gizmo shared code library. The library contains code shared between all of Gizmo modules.</Description>
 		<Copyright>NETProjects</Copyright>
 		<RepositoryType>git</RepositoryType>
-		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>	
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<PackageIcon>package_icon.png</PackageIcon>
@@ -21,21 +21,26 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="Client\" />
 		<Folder Include="Manager\" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Include="Resources\package_icon.png">
-	    <Pack>True</Pack>
-	    <PackagePath></PackagePath>
-	  </None>
+		<None Include="Resources\package_icon.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
-	  <PackageReference Include="System.Reflection.Emit.Lightweight" Version="4.7.0" />
-	  <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="5.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="5.0.0" />
+		<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+		<PackageReference Include="System.Reflection.Emit.Lightweight" Version="4.7.0" />
+		<PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
 	</ItemGroup>
 
 </Project>

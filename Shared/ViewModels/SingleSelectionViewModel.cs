@@ -67,6 +67,5 @@ namespace Gizmo.Shared.ViewModels
         #endregion
 
         #endregion
-
     }
 }
