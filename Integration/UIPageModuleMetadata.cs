@@ -41,7 +41,7 @@ namespace Gizmo.Client.UI
         public NavlinkMatch DefaultRouteMatch
         {
             get; init;
-        }
+        } = NavlinkMatch.All;
 
         /// <summary>
         /// Gets all associated routes.
