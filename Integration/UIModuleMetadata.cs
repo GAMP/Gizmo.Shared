@@ -39,6 +39,11 @@ namespace Gizmo.Client.UI
         /// </summary>
         public Type Type { get; init; }
 
+        /// <summary>
+        /// Gets module guid.
+        /// </summary>
+        public string Guid { get; init; }
+
         #endregion
     }
 }

@@ -46,7 +46,7 @@ namespace Gizmo.Client.UI
         /// <summary>
         /// Gets all associated routes.
         /// </summary>
-        public IEnumerable<string> Routes { get; set; } = Array.Empty<string>();
+        public IEnumerable<string> Routes { get; init; } = Array.Empty<string>();
 
         #endregion
     }

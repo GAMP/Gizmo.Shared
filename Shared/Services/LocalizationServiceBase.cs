@@ -109,7 +109,7 @@ namespace Gizmo.Shared.Shared.Services
         }
 
         /// <inheritdoc/>
-        public void SetCurrentCulture(CultureInfo culture)
+        public virtual void SetCurrentCulture(CultureInfo culture)
         {
             Logger.LogTrace($"Setting current culture to {culture}.");
             CultureInfo.DefaultThreadCurrentCulture = culture;

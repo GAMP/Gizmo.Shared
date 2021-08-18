@@ -132,6 +132,7 @@ namespace Gizmo.Client.UI
                     DefaultRoute = type.GetCustomAttribute<DefaultRouteAttribute>()?.Template,
                     DisplayOrder = type.GetCustomAttribute<ModuleDisplayOrderAttribute>()?.DisplayOrder ?? 0,
                     Routes = GetRoutes(type),
+                    Guid = type.GetCustomAttribute<ModuleGuidAttribute>()?.Guid,
                     Type = type
                 })
                 .OrderBy(metaData => metaData.DisplayOrder)
