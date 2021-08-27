@@ -8,9 +8,14 @@ namespace Gizmo.Shared.Services
         #region PROPERTIES
         
         /// <summary>
-        /// Gets a list of available cultures.
+        /// Gets a list of available regions.
         /// </summary>
         public IEnumerable<RegionInfo> SupportedRegions { get; }
+
+        /// <summary>
+        /// Gets a list of available cultures.
+        /// </summary>
+        public IEnumerable<CultureInfo> SupportedCultures { get; }
 
         #endregion
 
