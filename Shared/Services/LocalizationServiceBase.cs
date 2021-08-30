@@ -26,11 +26,17 @@ namespace Gizmo.Shared.Shared.Services
         private readonly object[] _DEFAULT_ARGS = System.Array.Empty<object>();
         private readonly IStringLocalizer _localizer;
         private readonly ILogger _logger;
-        private readonly HashSet<RegionInfo> _cultures = new()
+        private readonly HashSet<RegionInfo> _regions = new()
         {
             new RegionInfo("us"),
             new RegionInfo("ru"),
             new RegionInfo("gr")
+        };
+        private readonly HashSet<CultureInfo> _cultures = new()
+        {
+            new CultureInfo("en-US"),
+            new CultureInfo("ru-RU"),
+            new CultureInfo("el-GR")
         };
 
         #endregion
@@ -38,7 +44,10 @@ namespace Gizmo.Shared.Shared.Services
         #region PUBLIC
 
         /// <inheritdoc/>
-        public IEnumerable<RegionInfo> SupportedRegions => _cultures;
+        public IEnumerable<RegionInfo> SupportedRegions => _regions;
+
+        /// <inheritdoc/>
+        public IEnumerable<CultureInfo> SupportedCultures => _cultures;
 
         #endregion
 
