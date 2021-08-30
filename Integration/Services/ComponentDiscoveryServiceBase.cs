@@ -130,8 +130,9 @@ namespace Gizmo.Client.UI
                     Description = type.GetCustomAttribute<PageUIModuleAttribute>()?.Description,
                     DescriptionLocalizationKey = type.GetCustomAttribute<PageUIModuleAttribute>()?.DescriptionLocalizationKey,
                     DefaultRoute = type.GetCustomAttribute<DefaultRouteAttribute>()?.Template,
-                    DisplayOrder = type.GetCustomAttribute<ModuleDisplayOrderAttribute>()?.DisplayOrder ?? 0,
+                    DefaultRouteMatch = type.GetCustomAttribute<DefaultRouteAttribute>()?.DefaultRouteMatch ?? NavlinkMatch.All,
                     Routes = GetRoutes(type),
+                    DisplayOrder = type.GetCustomAttribute<ModuleDisplayOrderAttribute>()?.DisplayOrder ?? 0,                                 
                     Guid = type.GetCustomAttribute<ModuleGuidAttribute>()?.Guid,
                     Type = type
                 })

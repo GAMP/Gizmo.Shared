@@ -12,6 +12,11 @@ namespace Gizmo.Shared.Services
         /// </summary>
         public IEnumerable<RegionInfo> SupportedRegions { get; }
 
+        /// <summary>
+        /// Gets a list of supported cultures.
+        /// </summary>
+        IEnumerable<CultureInfo> SupportedCultures { get; }
+
         #endregion
 
         #region FUNCTIONS

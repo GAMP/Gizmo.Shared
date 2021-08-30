@@ -23,6 +23,7 @@ namespace Gizmo.Client.UI
         #endregion
 
         #region PROPERTIES
+        
         /// <summary>
         /// Gets the route template.
         /// </summary>
@@ -30,6 +31,15 @@ namespace Gizmo.Client.UI
         {
             get; init;
         }
+
+        /// <summary>
+        /// Gets default route matching option.
+        /// </summary>
+        public NavlinkMatch DefaultRouteMatch
+        {
+            get;init;
+        }
+
         #endregion
     }
 }
