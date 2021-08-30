@@ -68,7 +68,7 @@ namespace Gizmo.Shared.Shared.Services
         /// <summary>
         /// Gets logger instance.
         /// </summary>
-        private ILogger Logger
+        protected ILogger Logger
         {
             get { return _logger; }
         }
