@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
@@ -30,6 +31,11 @@ namespace Gizmo.Client.UI
         /// </summary>
         IEnumerable<UIPageModuleMetadata> PageModules { get; }
 
+        /// <summary>
+        /// Gets root component type.
+        /// </summary>
+        public Type RootComponentType { get; }
+
         #endregion
 
         #region FUNCTIONS
@@ -39,7 +45,7 @@ namespace Gizmo.Client.UI
         /// </summary>
         /// <param name="ct">Cancellation token.</param>
         /// <returns>Associated task.</returns>
-        public Task InitializeAsync(CancellationToken ct); 
+        public Task InitializeAsync(CancellationToken ct = default); 
 
         #endregion
     }

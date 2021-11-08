@@ -21,6 +21,22 @@
         }
 
         /// <summary>
+        /// Gets or sets app assembly.
+        /// </summary>
+        public string AppAssembly
+        {
+            get;set;
+        }
+
+        /// <summary>
+        /// Gets root component type.
+        /// </summary>
+        public string RootComponentType
+        {
+            get;set;
+        }
+
+        /// <summary>
         /// Gets or sets additional assemblies.
         /// </summary>
         public string[] AdditionalAssemblies

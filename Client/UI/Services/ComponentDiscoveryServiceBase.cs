@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration.Json;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System;
@@ -10,7 +12,7 @@ using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Gizmo.Client.UI
+namespace Gizmo.Client.UI.Services
 {
     /// <summary>
     /// Component discovery service base implementation.
@@ -18,7 +20,7 @@ namespace Gizmo.Client.UI
     public abstract class ComponentDiscoveryServiceBase : IComponentDiscoveryService
     {
         #region CONSTRUCTOR
-        public ComponentDiscoveryServiceBase(IConfiguration configuration,ILogger logger, IServiceProvider serviceProvider)
+        public ComponentDiscoveryServiceBase(IConfiguration configuration, ILogger logger, IServiceProvider serviceProvider)
         {
             _logger = logger;
             _configuration = configuration;
@@ -27,12 +29,16 @@ namespace Gizmo.Client.UI
         #endregion
 
         #region FIELDS
+
         protected HashSet<Assembly> _addtionalAssemblies = new();
-        protected Assembly _appAssembly = default;       
+        protected Assembly _appAssembly = default;
+        protected Type _rootComponentType = default;
         protected List<UIPageModuleMetadata> _pageModules = new();
+        protected string _basePath = default;
         private readonly IConfiguration _configuration;
         private readonly ILogger _logger;
         private readonly IServiceProvider _serviceProvider;
+
         #endregion
 
         #region PROPERTIES
@@ -47,13 +53,18 @@ namespace Gizmo.Client.UI
         public virtual Assembly AppAssembly
         {
             get { return _appAssembly; }
-        }        
+        }
 
         /// <inheritdoc/>
         public IEnumerable<UIPageModuleMetadata> PageModules
         {
             get { return _pageModules; }
-        }     
+        }
+
+        /// <inheritdoc/>
+        public Type RootComponentType => _rootComponentType;
+
+        public string BasePath { get { return _basePath; } }
 
         #region PROTECTED
 
@@ -90,10 +101,19 @@ namespace Gizmo.Client.UI
         /// <inheritdoc/>
         public virtual async Task InitializeAsync(CancellationToken ct)
         {
+            //get configuration root
+            var configurationRoot = (IConfigurationRoot)Configuration;
+
+            //get json settings provider
+            var jsonProvider = configurationRoot.Providers.OfType<JsonConfigurationProvider>().First();
+
+            //get base path
+            _basePath = ((PhysicalFileProvider)jsonProvider.Source.FileProvider).Root;
+
             //here we should attempt to load any dependent assemblies
 
             //first we need to get the additional assemblies from configuration
-            //second step is to try to download them and load them into current app domain
+            //second step is to try to load them into current app domain
 
             //get client app settings
             var appConfiguration = ServiceProvider.GetRequiredService<IOptions<ClientAppSettings>>();
@@ -107,7 +127,7 @@ namespace Gizmo.Client.UI
                 try
                 {
                     //load external assembly
-                    await LoadAssemblyAsync(externalAssembly, ct);
+                    await LoadAssemblyAsync(externalAssembly, true, ct);
                 }
                 catch (Exception ex)
                 {
@@ -115,12 +135,19 @@ namespace Gizmo.Client.UI
                 }
             }
 
+            //load app assembly
+            _appAssembly = await LoadAssemblyAsync(appConfiguration.Value.AppAssembly, false, ct);
+
+            //get root component type
+            _rootComponentType = Type.GetType(appConfiguration.Value.RootComponentType);
+
             //create list of all assembiles
             var targetAssemblies = AdditionalAssemblies
                 .ToArray()
                 .Append(AppAssembly)
                 .ToArray();
 
+            //populate page modules
             _pageModules = targetAssemblies
                 .SelectMany(assembly => assembly.GetTypes().Where(type => type.GetCustomAttribute<PageUIModuleAttribute>() != null))
                 .Select(type => new UIPageModuleMetadata()
@@ -132,7 +159,7 @@ namespace Gizmo.Client.UI
                     DefaultRoute = type.GetCustomAttribute<DefaultRouteAttribute>()?.Template,
                     DefaultRouteMatch = type.GetCustomAttribute<DefaultRouteAttribute>()?.DefaultRouteMatch ?? NavlinkMatch.All,
                     Routes = GetRoutes(type),
-                    DisplayOrder = type.GetCustomAttribute<ModuleDisplayOrderAttribute>()?.DisplayOrder ?? 0,                                 
+                    DisplayOrder = type.GetCustomAttribute<ModuleDisplayOrderAttribute>()?.DisplayOrder ?? 0,
                     Guid = type.GetCustomAttribute<ModuleGuidAttribute>()?.Guid,
                     Type = type
                 })
@@ -156,14 +183,16 @@ namespace Gizmo.Client.UI
         /// <param name="assemblyName">Assembly name.</param>
         /// <param name="ct">Cancellation token.</param>
         /// <returns>Associated task.</returns>
-        protected virtual Task LoadAssemblyAsync(string assemblyName, CancellationToken ct)
+        protected virtual Task<Assembly> LoadAssemblyAsync(string assemblyName, bool isAdditional = true, CancellationToken ct = default)
         {
-            string fullAssemblyPath = Path.Combine(Environment.CurrentDirectory, assemblyName);
-            
-            var assembly = AppDomain.CurrentDomain.Load(fullAssemblyPath);
-            _addtionalAssemblies.Add(assembly);
+            string fullAssemblyPath = !Path.IsPathRooted(assemblyName) ? Path.Combine(_basePath, assemblyName) : assemblyName;
 
-            return Task.CompletedTask;
+            var assembly = Assembly.LoadFrom(fullAssemblyPath);
+
+            if (isAdditional)
+                _addtionalAssemblies.Add(assembly);
+
+            return Task.FromResult(assembly);
         }
 
         /// <summary>

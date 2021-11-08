@@ -21,7 +21,7 @@ namespace Gizmo.Shared.ViewModels
         #region FIELDS
 
         private bool _isInitialized;
-        private ILogger<ViewModelLocatorServiceBase<TKey,TModelType>> _logger;
+        private readonly ILogger<ViewModelLocatorServiceBase<TKey,TModelType>> _logger;
 
         #endregion
 
@@ -45,13 +45,12 @@ namespace Gizmo.Shared.ViewModels
 
         #endregion
 
+        #region PUBLIC FUNCTIONS
+        
         public async Task<TModelType> GetAsync(TKey key)
         {
-            if(!_cache.TryGetValue(key,out var model))
-            {
+            if (!_cache.TryGetValue(key, out var model))
                 model = await OnGetViewModelAsync(key);
-            }
-
             return model;
         }
 
@@ -71,12 +70,14 @@ namespace Gizmo.Shared.ViewModels
             catch (Exception ex)
             {
                 //log initialization error
-                Logger.LogError(ex,"Initialization failed.");
+                Logger.LogError(ex, "Initialization failed.");
             }
-        }
+        } 
+
+        #endregion
 
         #region ABSTRACT MEMBERS
-        
+
         /// <summary>
         /// Called when we need to obtain a view model by specified key.
         /// </summary>
@@ -92,7 +93,5 @@ namespace Gizmo.Shared.ViewModels
         protected abstract Task OnInitialize(CancellationToken ct);
 
         #endregion
-
-
     }
 }

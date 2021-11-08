@@ -13,6 +13,14 @@ namespace Gizmo.Client.UI
             return configuration;
         }
 
+        public static IConfigurationBuilder AddClientConfiguration(this IConfigurationBuilder configuration, string fileName)
+        {
+            //add our main configuration file
+            configuration.AddJsonFile(fileName, true);
+
+            return configuration;
+        }
+
         public static IServiceCollection AddClientConfiguration(this IServiceCollection services, IConfiguration configuration)
         {
             //bind client app configuration to the desired class

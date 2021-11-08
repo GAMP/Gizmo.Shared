@@ -1,10 +1,9 @@
-﻿using Gizmo.Shared.Services;
-using Microsoft.Extensions.Localization;
+﻿using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace Gizmo.Shared.Shared.Services
+namespace Gizmo.Shared.Services
 {
     /// <summary>
     /// Localization service base.

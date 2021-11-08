@@ -3,6 +3,9 @@ using System.Globalization;
 
 namespace Gizmo.Shared.Services
 {
+    /// <summary>
+    /// Localization service interface.
+    /// </summary>
     public interface ILocalizationService
     {
         #region PROPERTIES
