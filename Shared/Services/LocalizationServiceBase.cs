@@ -22,6 +22,7 @@ namespace Gizmo.Shared.Services
 
         #region PRIVATE
 
+        private CultureInfo _desiredUiCulture;
         private readonly object[] _DEFAULT_ARGS = System.Array.Empty<object>();
         private readonly IStringLocalizer _localizer;
         private readonly ILogger _logger;
@@ -48,6 +49,13 @@ namespace Gizmo.Shared.Services
         /// <inheritdoc/>
         public IEnumerable<CultureInfo> SupportedCultures => _cultures;
 
+        /// <inheritdoc/>
+        public CultureInfo DesiredUICulture
+        {
+            get { return _desiredUiCulture; }
+            set { _desiredUiCulture = value; }
+        }
+
         #endregion
 
         #endregion
@@ -70,7 +78,7 @@ namespace Gizmo.Shared.Services
         protected ILogger Logger
         {
             get { return _logger; }
-        }
+        }  
 
         #endregion
 
@@ -87,8 +95,14 @@ namespace Gizmo.Shared.Services
         }
 
         /// <inheritdoc/>
-        public string GetString(string key, params object[] arguments)
+        public virtual string GetString(string key, params object[] arguments)
         {
+            //looks like we need to set the desired culture every time for now
+            if (DesiredUICulture != null)
+            {
+                CultureInfo.CurrentUICulture = DesiredUICulture ?? default;
+            }
+
             return Localizer.GetString(key, arguments);
         }
 
@@ -120,8 +134,12 @@ namespace Gizmo.Shared.Services
         public virtual void SetCurrentCulture(CultureInfo culture)
         {
             Logger.LogTrace($"Setting current culture to {culture}.");
-            CultureInfo.DefaultThreadCurrentCulture = culture;
-            CultureInfo.DefaultThreadCurrentUICulture = culture;
+            
+            //set the desired culture
+            DesiredUICulture = culture;
+
+            CultureInfo.CurrentCulture = culture;
+            CultureInfo.CurrentUICulture = culture;
         }
 
         #endregion
