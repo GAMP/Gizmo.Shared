@@ -20,11 +20,6 @@ namespace Gizmo.Shared.Services
         /// </summary>
         public IEnumerable<CultureInfo> SupportedCultures { get; }
 
-        /// <summary>
-        /// Gets or sets desired localization culture.
-        /// </summary>
-        public CultureInfo DesiredUICulture { get; set; }
-
         #endregion
 
         #region FUNCTIONS
