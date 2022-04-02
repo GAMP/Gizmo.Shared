@@ -22,6 +22,8 @@
 
 	<ItemGroup>
 		<Folder Include="Manager\" />
+		<Folder Include="Web\API\Infrastructure\Interfaces\" />
+		<Folder Include="Web\API\Messaging\Base\" />
 	</ItemGroup>
 
 	<ItemGroup>
