@@ -22,8 +22,6 @@
 
 	<ItemGroup>
 		<Folder Include="Manager\" />
-		<Folder Include="Web\API\Infrastructure\Interfaces\" />
-		<Folder Include="Web\API\Messaging\Base\" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -44,6 +42,7 @@
 		<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
 		<PackageReference Include="System.Reflection.Emit.Lightweight" Version="4.7.0" />
 		<PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
+		<PackageReference Include="MessagePack" Version="2.3.85" />
 	</ItemGroup>
 
 </Project>
