@@ -13,16 +13,20 @@
         /// </summary>
         None=0,
         /// <summary>
+        /// Receipt print was required but overriden by operator or non fiscal payment method.
+        /// </summary>
+        Override=1,
+        /// <summary>
         /// Receipt printing is pending.
         /// </summary>
-        Pending=1,
+        Pending=2,
         /// <summary>
         /// Receipt was printed.
         /// </summary>
-        Printed=2,
+        Printed=3,
         /// <summary>
-        /// Not all required receipts printed.
+        /// Not all required receipts printed or print failed.
         /// </summary>
-        PartialyPrinted=3,
+        Failed=4,
     }
 }

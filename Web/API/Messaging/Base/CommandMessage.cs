@@ -44,15 +44,5 @@ namespace Gizmo.Web.Api.Messaging
         }
 
         #endregion
-
-        public static TResponseMessage CreateResponseMessage<TInputMessage, TResponseMessage>(TInputMessage inputMessage)
-            where TInputMessage : ICorrelationMessage
-            where TResponseMessage : ICorrelationMessage, new()
-        {
-            if (inputMessage == null)
-                throw new ArgumentNullException(nameof(inputMessage));
-
-            return new() { CorrelationId = inputMessage.CorrelationId };
-        }
     }
 }
