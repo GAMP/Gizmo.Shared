@@ -22,8 +22,16 @@
         /// </summary>
         VoidDeposit=3,
         /// <summary>
-        /// Register transaction.
+        /// Deposit withdraw.
         /// </summary>
-        RegisterTransaction=4,
+        WithdrawDeposit=4,
+        /// <summary>
+        /// Pay in transaction.
+        /// </summary>
+        PayIn=5,
+        /// <summary>
+        /// Pay out transaction.
+        /// </summary>
+        PayOut=6,
     }
 }
