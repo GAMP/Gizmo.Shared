@@ -11,22 +11,27 @@
         /// <summary>
         /// No receipt required.
         /// </summary>
-        None=0,
+        [Localized("FISCAL_RECEIPT_PRINT_STATUS_NONE")]
+        None = 0,
         /// <summary>
         /// Receipt print was required but overriden by operator or non fiscal payment method.
         /// </summary>
-        Override=1,
+        [Localized("FISCAL_RECEIPT_PRINT_STATUS_OVERRIDE")]
+        Override = 1,
         /// <summary>
         /// Receipt printing is pending.
         /// </summary>
-        Pending=2,
+        [Localized("FISCAL_RECEIPT_PRINT_STATUS_PENDING")]
+        Pending = 2,
         /// <summary>
         /// Receipt was printed.
         /// </summary>
-        Printed=3,
+        [Localized("FISCAL_RECEIPT_PRINT_STATUS_PRINTED")]
+        Printed = 3,
         /// <summary>
         /// Not all required receipts printed or print failed.
         /// </summary>
-        Failed=4,
+        [Localized("FISCAL_RECEIPT_PRINT_STATUS_FAILED")]
+        Failed = 4,
     }
 }
