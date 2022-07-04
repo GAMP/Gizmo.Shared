@@ -74,14 +74,6 @@ namespace System.ComponentModel
             protected set;
         }
 
-        /// <summary>
-        /// Gets the source object that caused this change.
-        /// </summary>
-        public object ChangeSource
-        {
-            get;protected set;
-        }
-
         #endregion
     }
 }

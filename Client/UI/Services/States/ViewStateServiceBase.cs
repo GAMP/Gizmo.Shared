@@ -5,6 +5,7 @@ using System.Reactive.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Linq;
+using System.ComponentModel;
 
 namespace Gizmo.Client.UI.View.Services
 {
@@ -20,8 +21,11 @@ namespace Gizmo.Client.UI.View.Services
         #region FIELDS
         private readonly TState _viewState;
         private readonly Subject<IViewState> _stateChnageDebounceSubject = new();
+        private readonly Subject<Tuple<object, PropertyChangedEventArgs>> _propertyChangedDebounceSubject = new();
+        private IDisposable _propertyChnagedDebounceSubscription;
         private IDisposable _stateChangeDebounceSubscription;
-        private int _debounceBufferTime = 100;  //buffer state changes for 0.1 second by default
+        private int _stateChangedDebounceBufferTime = 100;  //buffer state changes for 0.1 second by default
+        private int _propertyChangedBufferTime = 100; //buffer state changes for 0.1 second by default
         #endregion
 
         #region PROPERTIES
@@ -37,19 +41,38 @@ namespace Gizmo.Client.UI.View.Services
         /// <summary>
         /// Gets or sets defaul view state changed buffer time in milliseconds.
         /// </summary>
-        protected int DebounceBufferTime
+        protected int StateChangedDebounceBufferTime
         {
-            get { return _debounceBufferTime; }
+            get { return _stateChangedDebounceBufferTime; }
             set
             {
                 if (value <= 0)
-                    throw new ArgumentOutOfRangeException(nameof(DebounceBufferTime));
+                    throw new ArgumentOutOfRangeException(nameof(StateChangedDebounceBufferTime));
+
+                //update current value
+                _stateChangedDebounceBufferTime = value;
 
                 //resubscribe
                 StateChangedDebounceSubscribe();
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets default view property changed buffer time in milliseconds.
+        /// </summary>
+        protected int PropertyChangedDebounceBufferTime
+        {
+            get { return _propertyChangedBufferTime; }
+            set
+            {
+                if (value <= 0)
+                    throw new ArgumentOutOfRangeException(nameof(PropertyChangedDebounceBufferTime));
 
                 //update current value
-                _debounceBufferTime = value;
+                _propertyChangedBufferTime = value;
+
+                //resubscribe
+                PropertyChangedDebounceSubscribe();
             }
         }
 
@@ -64,7 +87,7 @@ namespace Gizmo.Client.UI.View.Services
 
             //resubscribe
             _stateChangeDebounceSubscription = _stateChnageDebounceSubject
-                .Buffer(TimeSpan.FromMilliseconds(DebounceBufferTime))
+                .Buffer(TimeSpan.FromMilliseconds(StateChangedDebounceBufferTime))
                 .Where(buffer => buffer.Count > 0)
                 .Distinct()
                 .Subscribe(viewStates =>
@@ -84,10 +107,29 @@ namespace Gizmo.Client.UI.View.Services
                 });
         }
 
+        private void PropertyChangedDebounceSubscribe()
+        {
+            //dispose any existing subscriptions
+            _propertyChnagedDebounceSubscription?.Dispose();
+
+            //resubscribe
+            _propertyChnagedDebounceSubscription = _propertyChangedDebounceSubject
+             .Buffer(TimeSpan.FromMilliseconds(PropertyChangedDebounceBufferTime))
+             .Where(buffer => buffer.Count > 0)
+             .Subscribe((e) =>
+             {
+                 foreach (var item in e.ToList())
+                 {
+                     OnViewStatePropertyChangedDebounced(item.Item1, item.Item2);
+                 }
+
+             });
+        }
+
         #endregion
 
         #region PROTECTED FUNCTIONS
-        
+
         /// <summary>
         /// Debounces view state change.
         /// </summary>
@@ -108,23 +150,43 @@ namespace Gizmo.Client.UI.View.Services
 
             //push the state to the subject
             _stateChnageDebounceSubject.OnNext(viewState);
-        } 
+        }
 
-        #endregion     
+        #endregion
 
         #region PRIVATE EVENT HANDLERS
 
-        private void OnViewStatePropertyChangedInternal(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        private void OnViewStatePropertyChangedInternal(object sender, PropertyChangedEventArgs e)
         {
-            Logger.LogTrace("View state ({viewState}) property ({propertyName}) changed.", sender.GetType().FullName, e.PropertyName);            
+            Logger.LogTrace("View state ({viewState}) property ({propertyName}) changed.", sender.GetType().FullName, e.PropertyName);
+            
+            //call property changed
             OnViewStatePropertyChanged(sender, e);
+
+            //buffer chnage
+            _propertyChangedDebounceSubject.OnNext(Tuple.Create(sender, e));
         }
 
         #endregion
 
         #region PROTECTED VIRTUAL
 
-        protected virtual void OnViewStatePropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        /// <summary>
+        /// Called after view state property changed based on buffer interval.
+        /// </summary>
+        /// <param name="sender">Source view state object.</param>
+        /// <param name="e">Arguments.</param>
+        protected virtual void OnViewStatePropertyChangedDebounced(object sender, PropertyChangedEventArgs e)
+        {
+            Logger.LogInformation("Debounce changed");
+        }
+
+        /// <summary>
+        /// Called instantly on view state property changed.
+        /// </summary>
+        /// <param name="sender">Source view state object.</param>
+        /// <param name="e">Arguments.</param>
+        protected virtual void OnViewStatePropertyChanged(object sender, PropertyChangedEventArgs e)
         {
         }
 
@@ -135,6 +197,8 @@ namespace Gizmo.Client.UI.View.Services
         protected override Task OnInitializing(CancellationToken ct)
         {
             StateChangedDebounceSubscribe();
+            PropertyChangedDebounceSubscribe();
+
             ViewState.PropertyChanged += OnViewStatePropertyChangedInternal;
 
             return base.OnInitializing(ct);
@@ -145,10 +209,13 @@ namespace Gizmo.Client.UI.View.Services
             _stateChangeDebounceSubscription?.Dispose();
             _stateChnageDebounceSubject?.Dispose();
 
+            _propertyChangedDebounceSubject?.Dispose();
+            _propertyChnagedDebounceSubscription?.Dispose();
+
             ViewState.PropertyChanged -= OnViewStatePropertyChangedInternal;
 
             base.OnDisposing(isDisposing);
-        } 
+        }
 
         #endregion
     }

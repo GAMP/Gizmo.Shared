@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Threading;
 
 namespace Gizmo.Client.UI
 {
@@ -14,6 +15,7 @@ namespace Gizmo.Client.UI
         private bool? _isInitialized;
         private bool _isInitializing;
         private bool _isDirty;
+        private int _propertyChnagedlockCount;
         #endregion
 
         #region PROPERTIES
@@ -60,8 +62,11 @@ namespace Gizmo.Client.UI
 
         public void SetDefaultsIfDirty()
         {
-            if(IsDirty)
+            if (IsDirty)
+            {
                 SetDefaults();
+                _isDirty = false;
+            }
         }
 
         #endregion
@@ -71,10 +76,6 @@ namespace Gizmo.Client.UI
         protected override void OnPropertyChanged(object sender, PropertyChangedEventArgsExtended args)
         {
             base.OnPropertyChanged(sender, args);
-
-            //dont take any ignored properties into account
-            if (IsIgnoredProperty(args.PropertyName))
-                return;
 
             //any property change marks state as dirty
             _isDirty = true;
@@ -86,6 +87,67 @@ namespace Gizmo.Client.UI
             }
         }
 
+        protected override bool OnPropertyChanging(object sender, PropertyChangedEventArgsExtended args)
+        {
+            //dont take any ignored properties into account
+            if (IsIgnoredProperty(args.PropertyName))
+                return false;
+
+            if (Interlocked.Add(ref _propertyChnagedlockCount,0) > 0)
+            {
+                return false;
+            }
+            else
+            {
+                return base.OnPropertyChanging(sender, args);
+            }
+        }
+
+        #endregion
+
+        /// <summary>
+        /// Creates property change lock.
+        /// </summary>
+        /// <remarks>
+        /// As long as one or more locks held the <see cref="PropertyChangedBase.OnPropertyChanged(object, PropertyChangedEventArgsExtended)"/> method will not be called.
+        /// </remarks>
+        /// <returns>Disposable lock object.</returns>
+        public IDisposable PropertyChangedLock()
+        {
+            Interlocked.Increment(ref _propertyChnagedlockCount);
+            return new PropertyChangeLock(this);
+        }
+
+        internal void ReleaseLock()
+        {
+            int previousCount = Interlocked.Add(ref _propertyChnagedlockCount, 0);
+            int newCount = Interlocked.Decrement(ref _propertyChnagedlockCount);
+
+            if (previousCount > 0 && newCount == 0)
+            {
+                //all locks released
+            }
+        }
+    }
+
+    class PropertyChangeLock : IDisposable
+    {
+        #region CONSTRUCTOR
+        public PropertyChangeLock(ViewStateBase viewState)
+        {
+            _viewState = viewState ?? throw new ArgumentNullException(nameof(viewState));
+        } 
+        #endregion
+
+        #region READ ONLY FIELDS
+        private readonly ViewStateBase _viewState;
+        #endregion
+
+        #region IDisposable
+        public void Dispose()
+        {
+            _viewState.ReleaseLock();
+        } 
         #endregion
     }
 }

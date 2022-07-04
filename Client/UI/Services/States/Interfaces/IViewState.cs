@@ -45,7 +45,8 @@ namespace Gizmo.Client.UI
         /// <summary>
         /// Raises changed event.
         /// </summary>
-        void RaiseChanged(); 
+        void RaiseChanged();
+        IDisposable PropertyChangedLock();
 
         #endregion
     }
