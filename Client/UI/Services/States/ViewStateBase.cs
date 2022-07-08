@@ -45,6 +45,7 @@ namespace Gizmo.Client.UI
         public bool IsDirty
         {
             get { return _isDirty; }
+            set { SetProperty(ref _isDirty, value); }
         }
 
         #endregion
@@ -60,15 +61,6 @@ namespace Gizmo.Client.UI
         {
         }
 
-        public void SetDefaultsIfDirty()
-        {
-            if (IsDirty)
-            {
-                SetDefaults();
-                _isDirty = false;
-            }
-        }
-
         #endregion
 
         #region OVERRIDES
@@ -76,9 +68,6 @@ namespace Gizmo.Client.UI
         protected override void OnPropertyChanged(object sender, PropertyChangedEventArgsExtended args)
         {
             base.OnPropertyChanged(sender, args);
-
-            //any property change marks state as dirty
-            _isDirty = true;
 
             if (EmmitChangedOnPropertyChange)
             {

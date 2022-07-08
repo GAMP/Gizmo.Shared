@@ -38,6 +38,11 @@ namespace Gizmo.Client.UI
         /// </summary>
         bool IsInitializing { get; set; }
 
+        /// <summary>
+        /// Gets if state has modifications and considered dirty.
+        /// </summary>
+        bool IsDirty { get; set; }
+
         #endregion
 
         #region FUNCTIONS
@@ -46,6 +51,14 @@ namespace Gizmo.Client.UI
         /// Raises changed event.
         /// </summary>
         void RaiseChanged();
+
+        /// <summary>
+        /// Creates property change lock.
+        /// </summary>
+        /// <returns>Dispsable lock.</returns>
+        /// <remarks>
+        /// Will block raising of <see cref="INotifyPropertyChanged.PropertyChanged"/> event as long as any locks are held.
+        /// </remarks>
         IDisposable PropertyChangedLock();
 
         #endregion

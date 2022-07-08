@@ -6,26 +6,27 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Linq;
 using System.ComponentModel;
+using System.Collections.Generic;
 
 namespace Gizmo.Client.UI.View.Services
 {
-    public abstract class ViewStateServiceBase<TState> : ViewServiceBase where TState : IViewState
+    public abstract class ViewStateServiceBase<TViewState> : ViewServiceBase where TViewState : IViewState
     {
         #region CONSTRUCTOR
-        public ViewStateServiceBase(TState viewState, ILogger logger, IServiceProvider serviceProvider) : base(logger, serviceProvider)
+        public ViewStateServiceBase(TViewState viewState, ILogger logger, IServiceProvider serviceProvider) : base(logger, serviceProvider)
         {
             _viewState = viewState;
         }
         #endregion
 
         #region FIELDS
-        private readonly TState _viewState;
+        private readonly TViewState _viewState;
         private readonly Subject<IViewState> _stateChnageDebounceSubject = new();
         private readonly Subject<Tuple<object, PropertyChangedEventArgs>> _propertyChangedDebounceSubject = new();
-        private IDisposable _propertyChnagedDebounceSubscription;
+        private IDisposable _propertyChangedDebounceSubscription;
         private IDisposable _stateChangeDebounceSubscription;
-        private int _stateChangedDebounceBufferTime = 100;  //buffer state changes for 0.1 second by default
-        private int _propertyChangedBufferTime = 100; //buffer state changes for 0.1 second by default
+        private int _stateChangedDebounceBufferTime = 1000;  //buffer state changes for 1 second by default
+        private int _propertyChangedBufferTime = 1000; //buffer state changes for 1 second by default
         #endregion
 
         #region PROPERTIES
@@ -33,7 +34,7 @@ namespace Gizmo.Client.UI.View.Services
         /// <summary>
         /// Gets view state.
         /// </summary>
-        public TState ViewState
+        public TViewState ViewState
         {
             get { return _viewState; }
         }
@@ -101,7 +102,7 @@ namespace Gizmo.Client.UI.View.Services
                         catch (Exception ex)
                         {
                             //the handlers are outside of our code so we should handle the exception and log it
-                            Logger.LogError(ex, "Error in view state change handler.");
+                            Logger.LogError(ex, "Error in view state change debounce handler.");
                         }
                     }
                 });
@@ -110,19 +111,51 @@ namespace Gizmo.Client.UI.View.Services
         private void PropertyChangedDebounceSubscribe()
         {
             //dispose any existing subscriptions
-            _propertyChnagedDebounceSubscription?.Dispose();
+            _propertyChangedDebounceSubscription?.Dispose();
 
             //resubscribe
-            _propertyChnagedDebounceSubscription = _propertyChangedDebounceSubject
+            _propertyChangedDebounceSubscription = _propertyChangedDebounceSubject
+             //buffer for desired time
              .Buffer(TimeSpan.FromMilliseconds(PropertyChangedDebounceBufferTime))
+             //only call when there are items in the buffer
              .Where(buffer => buffer.Count > 0)
-             .Subscribe((e) =>
+             //group changes by their source
+             .Select(e => e.GroupBy(p => p.Item1))
+             //select changes grupped by sender (view state)
+             .Select(e => e.Select(p=> new
              {
-                 foreach (var item in e.ToList())
+                 //sender will be the groupping key
+                 Sender=p.Key,
+                 //group property changes by property name and only select last from each
+                 Args = p.Select(pc => pc.Item2)
+                 .GroupBy(pr => pr.PropertyName)
+                 .Select(prc => prc.Last())
+             }))
+             .Subscribe((changes) =>
+             {
+                 foreach (var changedState in changes)
                  {
-                     OnViewStatePropertyChangedDebounced(item.Item1, item.Item2);
-                 }
+                     try
+                     {
+                         OnViewStatePropertyChangedDebounced(changedState.Sender, changedState.Args.ToList());
+                     }
+                     catch(Exception ex)
+                     {
+                         Logger.LogError(ex, "Error in property changed debounce handler (multiple properties).");
+                     }
 
+                     foreach(var change in changedState.Args)
+                     {
+                         try
+                         {
+                             OnViewStatePropertyChangedDebounced(changedState.Sender, change);
+                         }
+                         catch (Exception ex)
+                         {
+                             Logger.LogError(ex, "Error in property changed debounce handler (single property).");
+                         }
+                     }                   
+                 }
              });
         }
 
@@ -152,6 +185,35 @@ namespace Gizmo.Client.UI.View.Services
             _stateChnageDebounceSubject.OnNext(viewState);
         }
 
+        /// <summary>
+        /// Raises view state change event on attached view state.
+        /// </summary>
+        protected void ViewStateChanged()
+        {
+            ViewState.RaiseChanged();
+        }
+
+        protected void AttachTree(INotifyPropertyChanged notifyPropertyChanged)
+        {
+            Attach(notifyPropertyChanged);
+        }
+
+        protected void DetachTree(INotifyPropertyChanged notifyPropertyChanged)
+        {
+            Detach(notifyPropertyChanged);
+        }
+
+        protected void Attach(INotifyPropertyChanged notifyPropertyChanged)
+        {
+            notifyPropertyChanged.PropertyChanged -= OnViewStatePropertyChangedInternal;
+            notifyPropertyChanged.PropertyChanged += OnViewStatePropertyChangedInternal;
+        }
+
+        protected void Detach(INotifyPropertyChanged notifyPropertyChanged)
+        {
+            notifyPropertyChanged.PropertyChanged -= OnViewStatePropertyChangedInternal;
+        }
+
         #endregion
 
         #region PRIVATE EVENT HANDLERS
@@ -159,7 +221,7 @@ namespace Gizmo.Client.UI.View.Services
         private void OnViewStatePropertyChangedInternal(object sender, PropertyChangedEventArgs e)
         {
             Logger.LogTrace("View state ({viewState}) property ({propertyName}) changed.", sender.GetType().FullName, e.PropertyName);
-            
+
             //call property changed
             OnViewStatePropertyChanged(sender, e);
 
@@ -175,17 +237,31 @@ namespace Gizmo.Client.UI.View.Services
         /// Called after view state property changed based on buffer interval.
         /// </summary>
         /// <param name="sender">Source view state object.</param>
-        /// <param name="e">Arguments.</param>
-        protected virtual void OnViewStatePropertyChangedDebounced(object sender, PropertyChangedEventArgs e)
+        /// <param name="propertyChangedArgs">Property changed arguments.</param>
+        /// <remarks>
+        /// The arguments will contain a list of unique property change arguments.
+        /// </remarks>
+        protected virtual void OnViewStatePropertyChangedDebounced(object sender, IEnumerable<PropertyChangedEventArgs> propertyChangedArgs)
         {
-            Logger.LogInformation("Debounce changed");
+        }
+
+        /// <summary>
+        /// Called after view state property changed based on buffer interval.
+        /// </summary>
+        /// <param name="sender">Source view state object.</param>
+        /// <param name="e">Property changed arguments.</param>
+        protected virtual void OnViewStatePropertyChangedDebounced(object sender, PropertyChangedEventArgs e)
+        {           
         }
 
         /// <summary>
         /// Called instantly on view state property changed.
         /// </summary>
         /// <param name="sender">Source view state object.</param>
-        /// <param name="e">Arguments.</param>
+        /// <param name="e">Property changed arguments.</param>
+        /// <remarks>
+        /// This method is called as soon as the view state property changes.
+        /// </remarks>
         protected virtual void OnViewStatePropertyChanged(object sender, PropertyChangedEventArgs e)
         {
         }
@@ -199,7 +275,7 @@ namespace Gizmo.Client.UI.View.Services
             StateChangedDebounceSubscribe();
             PropertyChangedDebounceSubscribe();
 
-            ViewState.PropertyChanged += OnViewStatePropertyChangedInternal;
+            Attach(ViewState);
 
             return base.OnInitializing(ct);
         }
@@ -210,9 +286,9 @@ namespace Gizmo.Client.UI.View.Services
             _stateChnageDebounceSubject?.Dispose();
 
             _propertyChangedDebounceSubject?.Dispose();
-            _propertyChnagedDebounceSubscription?.Dispose();
+            _propertyChangedDebounceSubscription?.Dispose();
 
-            ViewState.PropertyChanged -= OnViewStatePropertyChangedInternal;
+            Detach(ViewState);
 
             base.OnDisposing(isDisposing);
         }
