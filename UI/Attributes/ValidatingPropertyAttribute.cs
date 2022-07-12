@@ -1,7 +1,7 @@
 ﻿using System;
 
-namespace Gizmo.Client.UI.View.States
-{
+namespace Gizmo.UI
+{ 
     /// <summary>
     /// Marks property eligible for validation.
     /// </summary>

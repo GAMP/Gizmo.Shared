@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace Gizmo.Client.UI
+namespace Gizmo.UI.View.States
 {
     /// <summary>
     /// View state interface.

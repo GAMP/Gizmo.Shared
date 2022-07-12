@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Gizmo.Client.UI.View.Services
+namespace Gizmo.UI.View.Services
 {
     /// <summary>
     /// View service interface.

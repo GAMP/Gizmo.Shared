@@ -1,4 +1,4 @@
-﻿namespace Gizmo.Client.UI
+﻿namespace Gizmo.UI.View.States
 {
     /// <summary>
     /// Validating view state interface.
