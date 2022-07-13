@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gizmo.Client.UI
+namespace Gizmo.UI
 {
     /// <summary>
     /// This attribute is used to identify default route for modules that expose multiple routes.
@@ -19,11 +19,11 @@ namespace Gizmo.Client.UI
                 throw new ArgumentNullException(nameof(template));
 
             Template = template;
-        } 
+        }
         #endregion
 
         #region PROPERTIES
-        
+
         /// <summary>
         /// Gets the route template.
         /// </summary>
@@ -37,7 +37,7 @@ namespace Gizmo.Client.UI
         /// </summary>
         public NavlinkMatch DefaultRouteMatch
         {
-            get;init;
+            get; init;
         }
 
         #endregion

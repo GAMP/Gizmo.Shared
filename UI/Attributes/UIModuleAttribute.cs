@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gizmo.Client.UI
+namespace Gizmo.UI
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple =true)]
     public class UIModuleAttribute : Attribute

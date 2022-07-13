@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Gizmo.Client;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.Json;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
@@ -12,7 +13,7 @@ using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Gizmo.Client.UI.Services
+namespace Gizmo.UI.Services
 {
     /// <summary>
     /// Component discovery service base implementation.
@@ -116,7 +117,7 @@ namespace Gizmo.Client.UI.Services
             //second step is to try to load them into current app domain
 
             //get client app settings
-            var appConfiguration = ServiceProvider.GetRequiredService<IOptions<ClientAppSettings>>();
+            var appConfiguration = ServiceProvider.GetRequiredService<IOptions<UICompositionSettings>>();
 
             //get external assemblies from the configuration
             string[] externalAssemblies = appConfiguration.Value.AdditionalAssemblies.ToArray();

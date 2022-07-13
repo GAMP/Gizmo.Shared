@@ -1,24 +1,11 @@
-﻿namespace Gizmo.Client
+﻿namespace Gizmo.UI
 {
-    public class ClientAppSettings
+    /// <summary>
+    /// User interface composition settings.
+    /// </summary>
+    public sealed class UICompositionSettings
     {
         #region PROPERTIES
-
-        /// <summary>
-        /// Gets or sets api endpoint url.
-        /// </summary>
-        public string ApiEndpoint
-        {
-            get; set;
-        }
-
-        /// <summary>
-        /// Gets or sets real time endpoint url.
-        /// </summary>
-        public string RealTimeEndpoint
-        {
-            get; set;
-        }
 
         /// <summary>
         /// Gets or sets app assembly.

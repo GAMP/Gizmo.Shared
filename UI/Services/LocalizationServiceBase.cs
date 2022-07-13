@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace Gizmo.Shared.Services
+namespace Gizmo.UI.Services
 {
     /// <summary>
     /// Localization service base.

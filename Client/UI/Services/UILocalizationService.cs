@@ -1,4 +1,4 @@
-﻿using Gizmo.Shared.Services;
+﻿using Gizmo.UI.Services;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 
@@ -17,7 +17,7 @@ namespace Gizmo.Client.UI.Services
         /// <param name="localizer">Localizer.</param>
         public UILocalizationService(ILogger<UILocalizationService> logger, IStringLocalizer localizer) : base(logger, localizer)
         {
-        } 
+        }
         #endregion
     }
 }

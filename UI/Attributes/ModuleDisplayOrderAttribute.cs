@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace Gizmo.Client.UI
+namespace Gizmo.UI
 {
     /// <summary>
     /// Module display order attribute.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Class,AllowMultiple =false)]
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
     public class ModuleDisplayOrderAttribute : Attribute
     {
         #region CONSTRUCTOR
@@ -16,11 +16,11 @@ namespace Gizmo.Client.UI
         #endregion
 
         #region PROPERTIES
-        
+
         /// <summary>
         /// Gets display order value.
         /// </summary>
-        public int DisplayOrder { get; } 
+        public int DisplayOrder { get; }
 
         #endregion
     }

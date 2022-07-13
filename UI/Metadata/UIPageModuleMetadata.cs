@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Gizmo.Client.UI
+namespace Gizmo.UI
 {
     /// <summary>
     /// Page module metadata.
     /// </summary>
-    public class UIPageModuleMetadata : UIModuleMetadata
+    public sealed class UIPageModuleMetadata : UIModuleMetadata
     {
         #region FIELDS
         private readonly string _defaultRoute; 

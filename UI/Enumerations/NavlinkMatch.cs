@@ -1,4 +1,4 @@
-﻿namespace Gizmo.Client.UI
+﻿namespace Gizmo.UI
 {
     /// <summary>
     /// Navlink match proxy enum.

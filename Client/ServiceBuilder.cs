@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Gizmo.UI;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Gizmo.Client.UI
@@ -24,7 +25,7 @@ namespace Gizmo.Client.UI
         public static IServiceCollection AddClientConfiguration(this IServiceCollection services, IConfiguration configuration)
         {
             //bind client app configuration to the desired class
-            services.Configure<ClientAppSettings>((options) => configuration.GetSection("App").Bind(options));
+            services.Configure<UICompositionSettings>((options) => configuration.GetSection("App").Bind(options));
             services.Configure<ClientUISettings>((options) => configuration.GetSection("Interface").Bind(options));
 
             return services;

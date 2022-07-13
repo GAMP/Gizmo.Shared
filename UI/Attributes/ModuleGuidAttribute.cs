@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gizmo.Client.UI
+namespace Gizmo.UI
 {
     /// <summary>
     /// Module guid attribute.
