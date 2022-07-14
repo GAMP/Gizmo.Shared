@@ -1,5 +1,4 @@
-﻿using Gizmo.Client.UI;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Threading;
@@ -15,8 +14,12 @@ namespace Gizmo.UI.Services
     /// </remarks>
     public interface IComponentDiscoveryService
     {
+        #region EVENTS
+        public event EventHandler<EventArgs> Initialized; 
+        #endregion
+
         #region PROPERTIES
-        
+
         /// <summary>
         /// Gets additional assemblies to be loaded by router component.
         /// </summary>
