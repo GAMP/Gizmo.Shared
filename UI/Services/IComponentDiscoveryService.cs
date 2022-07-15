@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Gizmo.UI;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Gizmo.UI.Services
+namespace Gizmo.Shared.UI.Services
 {
     /// <summary>
     /// Component discovery service.
@@ -15,7 +16,7 @@ namespace Gizmo.UI.Services
     public interface IComponentDiscoveryService
     {
         #region EVENTS
-        public event EventHandler<EventArgs> Initialized; 
+        public event EventHandler<EventArgs> Initialized;
         #endregion
 
         #region PROPERTIES
@@ -49,7 +50,7 @@ namespace Gizmo.UI.Services
         /// </summary>
         /// <param name="ct">Cancellation token.</param>
         /// <returns>Associated task.</returns>
-        public Task InitializeAsync(CancellationToken ct = default); 
+        public Task InitializeAsync(CancellationToken ct = default);
 
         #endregion
     }

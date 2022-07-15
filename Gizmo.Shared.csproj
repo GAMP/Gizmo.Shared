@@ -21,10 +21,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="Manager\" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<None Include="Resources\package_icon.png">
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>

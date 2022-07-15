@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Globalization;
 
-namespace Gizmo.UI.Services
+namespace Gizmo.Shared.UI.Services
 {
     /// <summary>
     /// Localization service interface.
@@ -9,7 +9,7 @@ namespace Gizmo.UI.Services
     public interface ILocalizationService
     {
         #region PROPERTIES
-        
+
         /// <summary>
         /// Gets a list of available regions.
         /// </summary>
@@ -73,7 +73,7 @@ namespace Gizmo.UI.Services
         /// Sets current culture.
         /// </summary>
         /// <param name="culture">Desired culture.</param>
-        void SetCurrentCulture(CultureInfo culture); 
+        void SetCurrentCulture(CultureInfo culture);
 
         #endregion
     }

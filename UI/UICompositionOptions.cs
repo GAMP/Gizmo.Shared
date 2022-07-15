@@ -3,7 +3,7 @@
     /// <summary>
     /// User interface composition settings.
     /// </summary>
-    public sealed class UICompositionSettings
+    public sealed class UICompositionOptions
     {
         #region PROPERTIES
 
