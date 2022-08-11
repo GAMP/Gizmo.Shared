@@ -14,5 +14,13 @@ namespace Gizmo.Client
         {
             get; set;
         }
+
+        /// <summary>
+        /// Gets skin.
+        /// </summary>
+        public string? Skin
+        {
+            get; set;
+        }
     }
 }
