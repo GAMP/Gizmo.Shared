@@ -1,10 +1,10 @@
 ﻿#nullable enable
-
 namespace Microsoft.Extensions.Options
 {
     /// <summary>
     /// Represents option metadata with value.
     /// </summary>
+    [MessagePack.MessagePackObject()]
     public sealed class StoreOptionMetadataValue
     {
         #region CONSTRUCTOR
@@ -18,7 +18,7 @@ namespace Microsoft.Extensions.Options
         {
             Metadata = metadata;
             Value = value;
-        } 
+        }
 
         #endregion
 
@@ -27,6 +27,7 @@ namespace Microsoft.Extensions.Options
         /// <summary>
         /// Gets metadata.
         /// </summary>
+        [MessagePack.Key(1)]
         public StoreOptionMetadata Metadata
         {
             get;
@@ -35,6 +36,7 @@ namespace Microsoft.Extensions.Options
         /// <summary>
         /// Gets store read value.
         /// </summary>
+        [MessagePack.Key(2)]
         public StoreOptionReadValue Value
         {
             get;

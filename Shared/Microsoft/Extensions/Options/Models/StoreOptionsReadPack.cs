@@ -8,6 +8,7 @@ namespace Microsoft.Extensions.Options
     /// <summary>
     /// Represents options read from the store.
     /// </summary>
+    [MessagePack.MessagePackObject()]
     public sealed class StoreOptionsReadPack
     {
         #region CONSTRUCTOR
@@ -23,7 +24,7 @@ namespace Microsoft.Extensions.Options
             GroupName = groupName;
             Section = section;
             ValueStore = values;
-        } 
+        }
 
         #endregion
 
@@ -35,11 +36,13 @@ namespace Microsoft.Extensions.Options
         /// <remarks>
         /// This will be set to the fully qualifed type name.
         /// </remarks>
+        [MessagePack.Key(0)]
         public string OptionsType { get; }
 
         /// <summary>
         /// Gets options group name.
         /// </summary>
+        [MessagePack.Key(1)]
         public string GroupName
         {
             get;
@@ -48,23 +51,26 @@ namespace Microsoft.Extensions.Options
         /// <summary>
         /// Gets options section.
         /// </summary>
+        [MessagePack.Key(2)]
         public string? Section
         {
-            get;init;
+            get; init;
         }
 
         /// <summary>
         /// Gets options metadata and current values.
         /// </summary>
+        [MessagePack.IgnoreMember()]
         public IEnumerable<StoreOptionMetadataValue> Values
         {
-            get { return ValueStore.Select(kv=> new StoreOptionMetadataValue(kv.Key, kv.Value)); }
+            get { return ValueStore.Select(kv => new StoreOptionMetadataValue(kv.Key, kv.Value)); }
         }
 
         /// <summary>
         /// Gets options metadata and current values.
         /// </summary>
         [JsonIgnore()]
+        [MessagePack.Key(3)]
         public Dictionary<StoreOptionMetadata, StoreOptionReadValue> ValueStore { get; }
 
         #endregion
