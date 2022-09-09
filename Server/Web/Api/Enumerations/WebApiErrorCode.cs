@@ -1,5 +1,8 @@
-﻿namespace Gizmo.Server.Web.Api
+﻿using System.ComponentModel;
+
+namespace Gizmo.Server.Web.Api
 {
+    [DefaultValue(Unknown)]
     /// <summary>
     /// Web api error codes.
     /// </summary>
