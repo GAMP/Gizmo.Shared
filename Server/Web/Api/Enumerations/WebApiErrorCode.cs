@@ -2,102 +2,105 @@
 
 namespace Gizmo.Server.Web.Api
 {
-    [DefaultValue(Unknown)]
     /// <summary>
     /// Web api error codes.
     /// </summary>
     /// <remarks>
     /// The purpose of the error codes is to map known errors/exception and be provided as an error code value to the caller.
     /// </remarks>
+    [DefaultValue(Unknown)]
     public enum WebApiErrorCode
     {
         /// <summary>
         /// Default code.
         /// </summary>
-        Unknown=0,
+        /// <remarks>
+        /// This will be used in case of system exceptions that dont map to web api error code directly.
+        /// </remarks>
+        Unknown = 0,
         /// <summary>
-        /// Invalid property error code, maps to <see cref="InvalidPropertyException"/>
+        /// Invalid property error code.
         /// </summary>
         InvalidProperty = 1,
         /// <summary>
-        /// Non unique entity error code, maps to <see cref="NonUniqueEntityValueException"/>
+        /// Non unique entity error code.
         /// </summary>
         NonUniqueEntityValue = 2,
         /// <summary>
-        /// Entity not found entity error code, maps to <see cref="EntityNotFoundException"/>
+        /// Entity not found entity error code.
         /// </summary>
         EntityNotFound = 3,
         /// <summary>
-        /// Entity in use error code, maps to <see cref="EntityInUseException"/>
+        /// Entity in use error code.
         /// </summary>
         EntityInUse = 4,
         /// <summary>
-        /// Entity already referenced error code, maps to <see cref="EntityAlreadyReferencedException"/>
+        /// Entity already referenced error code.
         /// </summary>
         EntityAlreadyReferenced = 5,
         /// <summary>
-        /// Entity not referenced error code, maps to <see cref="EntityNotReferencedException"/>
+        /// Entity not referenced error code.
         /// </summary>
         EntityNotReferenced = 6,
         /// <summary>
         /// Asset error code.
         /// </summary>
-        Asset=7,
+        Asset = 7,
         /// <summary>
         /// Billing profile error code.
         /// </summary>
-        BillingProfile=8,
+        BillingProfile = 8,
         /// <summary>
         /// Deposit error code.
         /// </summary>
-        Deposit=9,
+        Deposit = 9,
         /// <summary>
         /// Host reservation error code.
         /// </summary>
-        HostReservation=10,
+        HostReservation = 10,
         /// <summary>
         /// Invoice error code.
         /// </summary>
-        Invoice=11,
+        Invoice = 11,
         /// <summary>
         /// Invoice payment error code.
         /// </summary>
-        InvoicePayment=12,
+        InvoicePayment = 12,
         /// <summary>
         /// Order status error code.
         /// </summary>
-        OrderStatus=13,
+        OrderStatus = 13,
         /// <summary>
         /// Payment error code.
         /// </summary>
-        Payment=14,
+        Payment = 14,
         /// <summary>
         /// Points error code.
         /// </summary>
-        Points=15,
+        Points = 15,
         /// <summary>
         /// Product error code.
         /// </summary>
-        Product=16,
+        Product = 16,
         /// <summary>
         /// Shift error code.
         /// </summary>
-        Shift=17,
+        Shift = 17,
         /// <summary>
         /// Stock error code.
         /// </summary>
-        Stock=18,
+        Stock = 18,
         /// <summary>
         /// User group error code.
         /// </summary>
-        UserGroup=19,
+        UserGroup = 19,
         /// <summary>
         /// Waiting line error code.
         /// </summary>
-        WaitingLine=20,
+        WaitingLine = 20,
         /// <summary>
         /// Model state validation error.
         /// </summary>
-        ValidationError=21,
-    }    
+        ValidationError = 21,
+    }
 }
