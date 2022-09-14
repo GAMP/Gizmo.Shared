@@ -102,5 +102,9 @@ namespace Gizmo.Server.Web.Api
         /// Model state validation error.
         /// </summary>
         ValidationError = 21,
+        /// <summary>
+        /// Fiscal printer.
+        /// </summary>
+        FiscalPrinter= 22,
     }
 }
