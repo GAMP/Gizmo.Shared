@@ -1,4 +1,6 @@
 ﻿#nullable enable
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Microsoft.Extensions.Options
 {
@@ -48,7 +50,13 @@ namespace Microsoft.Extensions.Options
         {
             get;
             init;
-        } 
+        }
+
+        /// <summary>
+        /// Gets allowed values.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public IEnumerable<StoreOptionAllowedValueMetadata> AllowedValues { get; init; } = Enumerable.Empty<StoreOptionAllowedValueMetadata>();
 
         #endregion
     }
