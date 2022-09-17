@@ -25,7 +25,7 @@ namespace Microsoft.Extensions.DependencyInjection
         #endregion
 
         #region FUNCTIONS
-        
+
         /// <summary>
         /// Gets all types that implement specified interface.
         /// </summary>
@@ -40,13 +40,24 @@ namespace Microsoft.Extensions.DependencyInjection
             if (!interfaceType.IsInterface)
                 throw new ArgumentException("Only interface types are supported.");
 
-            foreach (var loadedAssembly in AppDomain.CurrentDomain.GetAssemblies())
-            {
-                foreach (Type type in loadedAssembly.GetTypes()
-                    .Where(t => t.IsAbstract == false && t.IsInterface == false)
-                    .Where(t => t.GetInterfaces().Any(ifc => ifc == interfaceType)))
-                    yield return type;
-            }
+            //read all matching types from assemblies loaded in app domain
+            return AppDomain.CurrentDomain.GetAssemblies()
+                .SelectMany(assembly =>
+                {
+                    try
+                    {
+                        return assembly.GetTypes()
+                        .Where(t => t.IsAbstract == false && t.IsInterface == false)
+                        .Where(t => t.GetInterfaces().Any(ifc => ifc == interfaceType));
+                    }
+                    catch(System.Reflection.ReflectionTypeLoadException)
+                    {
+                        //catch type load exceptions
+                        //this will happen if one of the types in assembly cant be loaded
+
+                        return Enumerable.Empty<Type>();
+                    }
+                });
         }
 
         /// <summary>
