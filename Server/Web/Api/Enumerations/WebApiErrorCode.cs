@@ -106,5 +106,7 @@ namespace Gizmo.Server.Web.Api
         /// Fiscal printer.
         /// </summary>
         FiscalPrinter= 22,
+        PaymentRequest =23,
+        PaymentProvider=24,
     }
 }
