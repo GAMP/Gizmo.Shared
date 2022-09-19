@@ -50,7 +50,7 @@ namespace Microsoft.Extensions.DependencyInjection
                         .Where(t => t.IsAbstract == false && t.IsInterface == false)
                         .Where(t => t.GetInterfaces().Any(ifc => ifc == interfaceType));
                     }
-                    catch(System.Reflection.ReflectionTypeLoadException)
+                    catch(ReflectionTypeLoadException)
                     {
                         //catch type load exceptions
                         //this will happen if one of the types in assembly cant be loaded
