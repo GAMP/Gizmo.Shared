@@ -7,7 +7,7 @@ namespace Microsoft.Extensions.Options
     /// Provides options unique store group name.
     /// </summary>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
-    public class StoreOptionsGroupAttribute : Attribute
+    public sealed class StoreOptionsGroupAttribute : Attribute
     {
         #region CONSTRUCTOR
         public StoreOptionsGroupAttribute(string groupName)

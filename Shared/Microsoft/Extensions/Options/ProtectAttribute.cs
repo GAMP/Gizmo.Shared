@@ -6,7 +6,7 @@ namespace Microsoft.Extensions.Options
     /// Protect attribute used to mark properties that should be protected.
     /// </summary>
     [AttributeUsage(AttributeTargets.Property,AllowMultiple =false)]
-    public class ProtectAttribute : Attribute
+    public sealed class ProtectAttribute : Attribute
     {
     }
 }

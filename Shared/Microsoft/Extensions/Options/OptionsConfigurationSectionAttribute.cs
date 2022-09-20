@@ -6,7 +6,7 @@ namespace Microsoft.Extensions.Options
     /// Provides section name to be used with .net configuration infrastructure.
     /// </summary>
     [AttributeUsage(AttributeTargets.Class,AllowMultiple =false)]
-    public class OptionsConfigurationSectionAttribute : Attribute
+    public sealed class OptionsConfigurationSectionAttribute : Attribute
     {
         #region CONSTRUCTOR
         /// <summary>

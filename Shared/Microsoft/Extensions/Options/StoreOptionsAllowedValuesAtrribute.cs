@@ -7,7 +7,7 @@ namespace Microsoft.Extensions.Options
     /// Specifies allowed values on an options property.
     /// </summary>
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = true)]
-    public class StoreOptionsAllowedValuesAttribute : Attribute
+    public sealed class StoreOptionsAllowedValuesAttribute : Attribute
     {
         #region CONSTRUCTOR
         /// <summary>

@@ -4,7 +4,7 @@ using System.Globalization;
 namespace Microsoft.Extensions.Options
 {
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
-    public class InvariantClutureDateTimeFormat : OptionValueCustomStringFormatAttribute
+    public sealed class InvariantClutureDateTimeFormat : OptionValueCustomStringFormatAttribute
     {
         public override string Format(object value)
         {

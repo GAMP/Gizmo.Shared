@@ -7,7 +7,7 @@ namespace Microsoft.Extensions.Options
     /// Provides option unique store name.
     /// </summary>
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
-    public class StoreOptionKeyAttribute : Attribute
+    public sealed class StoreOptionKeyAttribute : Attribute
     {
         #region CONSTRUCTOR
 

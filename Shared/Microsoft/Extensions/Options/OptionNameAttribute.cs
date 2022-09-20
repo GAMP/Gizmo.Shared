@@ -5,8 +5,8 @@ namespace Microsoft.Extensions.Options
     /// <summary>
     /// Option name attribute.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Property,AllowMultiple =false)]
-    public class OptionNameAttribute : Attribute
+    [AttributeUsage(AttributeTargets.Property | AttributeTargets.Class,AllowMultiple =false)]
+    public sealed class OptionNameAttribute : Attribute
     {
         #region CONSTRUCTOR
         /// <summary>
