@@ -14,7 +14,7 @@ namespace Microsoft.Extensions.Options
         /// Gets value name.
         /// </summary>
         [MessagePack.Key(0)]
-        public string? ValueName
+        public string? Name
         {
             get; init;
         }
@@ -23,7 +23,7 @@ namespace Microsoft.Extensions.Options
         /// Gets value description.
         /// </summary>
         [MessagePack.Key(1)]
-        public string? ValueDescription { get; init; }
+        public string? Description { get; init; }
 
         /// <summary>
         /// Gets allowed value.

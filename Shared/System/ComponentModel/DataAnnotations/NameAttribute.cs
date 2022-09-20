@@ -5,7 +5,7 @@ namespace System.ComponentModel.DataAnnotations
     /// <summary>
     /// Name attribute.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Class| AttributeTargets.Property,AllowMultiple =false)]
+    [AttributeUsage(AttributeTargets.All, AllowMultiple = false)]
     public class NameAttribute : Attribute
     {
         #region CONSTRUCTOR
@@ -29,7 +29,7 @@ namespace System.ComponentModel.DataAnnotations
         public string Name
         {
             get;
-        } 
+        }
         #endregion
     }
 }
