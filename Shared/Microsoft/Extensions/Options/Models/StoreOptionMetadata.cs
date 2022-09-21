@@ -25,10 +25,14 @@ namespace Microsoft.Extensions.Options
         public string Name { get;init; } = string.Empty;
 
         /// <summary>
-        /// Gets optional default value.
+        /// Gets option description.
         /// </summary>
         [MessagePack.Key(2)]
-        public string? DefaultValue { get;init;}
+        public string? Description
+        {
+            get;
+            init;
+        }
 
         /// <summary>
         /// Gets option value type full name.
@@ -43,14 +47,10 @@ namespace Microsoft.Extensions.Options
         public string ValuePropertyName { get; init; } = string.Empty;
 
         /// <summary>
-        /// Gets option description.
+        /// Gets optional default value.
         /// </summary>
         [MessagePack.Key(5)]
-        public string? Description
-        {
-            get;
-            init;
-        }
+        public string? DefaultValue { get; init; }
 
         /// <summary>
         /// Gets allowed values.
