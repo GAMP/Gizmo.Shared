@@ -1,4 +1,6 @@
-﻿namespace Gizmo
+﻿using Gizmo.Internal;
+
+namespace Gizmo
 {
     /// <summary>
     /// Account create by token completion result.

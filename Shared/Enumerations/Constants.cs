@@ -1,4 +1,4 @@
-﻿namespace Gizmo
+﻿namespace Gizmo.Internal
 {
     /// <summary>
     /// Base codes.
