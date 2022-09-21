@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Gizmo.Server.Web.Api
+namespace Gizmo.Server.Exceptions
 {
     /// <summary>
     /// Web api error codes.
@@ -9,7 +9,7 @@ namespace Gizmo.Server.Web.Api
     /// The purpose of the error codes is to map known errors/exception and be provided as an error code value to the caller.
     /// </remarks>
     [DefaultValue(Unknown)]
-    public enum WebApiErrorCode
+    public enum ExceptionCode
     {
         /// <summary>
         /// Default code.

@@ -1,5 +1,4 @@
-﻿using Gizmo.Server.Web.Api;
-using System;
+﻿using System;
 
 namespace Gizmo.Server.Exceptions
 {
@@ -16,7 +15,7 @@ namespace Gizmo.Server.Exceptions
         /// Creates new instance.
         /// </summary>
         /// <param name="errorCode">Web api error code.</param>
-        public ExceptionFilterCodeAttribute(WebApiErrorCode errorCode)
+        public ExceptionFilterCodeAttribute(ExceptionCode errorCode)
         {
             ErrorCode = errorCode;
         } 
@@ -27,7 +26,7 @@ namespace Gizmo.Server.Exceptions
         /// <summary>
         /// Web api error code.
         /// </summary>
-        public WebApiErrorCode ErrorCode { get; } 
+        public ExceptionCode ErrorCode { get; } 
 
         #endregion
     }
