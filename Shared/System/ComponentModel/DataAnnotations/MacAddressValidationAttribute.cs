@@ -1,20 +1,18 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
-namespace Gizmo
+namespace System.ComponentModel.DataAnnotations
 {
     /// <summary>
     /// MAC address validation attribute.
     /// </summary>
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Parameter, AllowMultiple = false)]
-    public sealed class MacAddressAttribute : ValidationAttribute
+    public sealed class MacAddressValidationAttribute : ValidationAttribute
     {
         #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        public MacAddressAttribute()
+        public MacAddressValidationAttribute()
         {
             _regex = new Regex("^([0-9A-F]{2}[:-]){5}([0-9A-F]{2})$", RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.Compiled);
         }

@@ -1,12 +1,9 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-
-namespace Gizmo
+﻿namespace System.ComponentModel.DataAnnotations
 {
     /// <summary>
     /// Enum value validation attribute.
     /// </summary>
-    public sealed class EnumValueAttribute : ValidationAttribute
+    public sealed class EnumValueValidationAttribute : ValidationAttribute
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
