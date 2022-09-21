@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Shared
+namespace Gizmo
 {
     /// <summary>
     /// Assembly resource localization service.
