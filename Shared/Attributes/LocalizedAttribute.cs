@@ -1,11 +1,12 @@
-﻿using System;
+﻿#nullable enable
+using System;
 
 namespace Gizmo
 {
     /// <summary>
     /// Localized object attribute.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
+    [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
     public class LocalizedAttribute : Attribute
     {
         #region CONSTRUCTOR
@@ -15,13 +16,20 @@ namespace Gizmo
         /// </summary>
         /// <param name="resourceKey">Resource key.</param>
         /// <param name="localize">Indicates if value should be localized.</param>
-        public LocalizedAttribute(string resourceKey, bool localize = true)
+        public LocalizedAttribute(string resourceKey)
         {
             if (string.IsNullOrWhiteSpace(resourceKey))
                 throw new ArgumentNullException("ResourceKey", "Resource key may not be null or empty.");
 
             ResourceKey = resourceKey;
-            Localize = localize;
+        }
+
+        /// <summary>
+        /// Protected constructor.
+        /// </summary>
+        protected LocalizedAttribute()
+        {
+            ResourceKey = string.Empty;
         }
 
         #endregion
@@ -34,16 +42,6 @@ namespace Gizmo
         public string ResourceKey
         {
             get;
-            protected set;
-        }
-
-        /// <summary>
-        /// Gets if value should be localized.
-        /// </summary>
-        public bool Localize
-        {
-            get;
-            protected set;
         }
 
         #endregion
