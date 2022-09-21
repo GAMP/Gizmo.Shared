@@ -3,7 +3,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo
 {
-    public class EnumValueAttribute : ValidationAttribute
+    /// <summary>
+    /// Enum value validation attribute.
+    /// </summary>
+    public sealed class EnumValueAttribute : ValidationAttribute
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
