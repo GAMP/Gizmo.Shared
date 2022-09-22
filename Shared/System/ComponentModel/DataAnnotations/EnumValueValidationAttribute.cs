@@ -1,10 +1,12 @@
 ﻿namespace System.ComponentModel.DataAnnotations
 {
     /// <summary>
-    /// Enum value validation attribute.
+    /// Validating attribute ensuring that the value type is enum and its value is defined.
     /// </summary>
     public sealed class EnumValueValidationAttribute : ValidationAttribute
     {
+        #region OVERRDIES
+        
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
             if (value != null)
@@ -18,6 +20,8 @@
             }
 
             return ValidationResult.Success;
-        }
+        } 
+
+        #endregion
     }
 }

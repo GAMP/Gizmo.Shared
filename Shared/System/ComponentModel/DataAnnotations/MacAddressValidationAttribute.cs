@@ -3,7 +3,7 @@
 namespace System.ComponentModel.DataAnnotations
 {
     /// <summary>
-    /// MAC address validation attribute.
+    /// Validation attribute ensuring that specified string value is valid MAC address.
     /// </summary>
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Parameter, AllowMultiple = false)]
     public sealed class MacAddressValidationAttribute : ValidationAttribute

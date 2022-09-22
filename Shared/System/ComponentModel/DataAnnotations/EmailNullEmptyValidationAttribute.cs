@@ -3,7 +3,7 @@
 namespace System.ComponentModel.DataAnnotations
 {
     /// <summary>
-    /// Email null or empty validation attribute.
+    /// Validation attribute ensuring that only valid or empty email contained in specified string value.
     /// </summary>
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Parameter, AllowMultiple = false)]
     public sealed class EmailNullEmptyValidationAttribute : DataTypeAttribute
@@ -24,11 +24,6 @@ namespace System.ComponentModel.DataAnnotations
         #endregion
 
         #region OVERRIDES
-        /// <summary>
-        /// Gets if value is valid.
-        /// </summary>
-        /// <param name="value">Value.</param>
-        /// <returns>True or false.</returns>
         public override bool IsValid(object value)
         {
             string emailString = value as string;
