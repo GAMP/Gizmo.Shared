@@ -59,6 +59,11 @@ namespace Microsoft.Extensions.DependencyInjection
             }
         }
 
+        /// <summary>
+        /// Gets store option type.
+        /// </summary>
+        /// <param name="typeGuid">Type guid.</param>
+        /// <returns>Option type, null if no type specified.</returns>
         public static Type? StoreOptionTypeGet(Guid typeGuid)
         {
             //get payment provider

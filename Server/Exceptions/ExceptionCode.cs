@@ -106,7 +106,13 @@ namespace Gizmo.Server.Exceptions
         /// Fiscal printer.
         /// </summary>
         FiscalPrinter= 22,
+        /// <summary>
+        /// Payment request exception.
+        /// </summary>
         PaymentRequest =23,
-        PaymentProvider=24,
+        /// <summary>
+        /// Provider exception.
+        /// </summary>
+        Provider=24,
     }
 }
