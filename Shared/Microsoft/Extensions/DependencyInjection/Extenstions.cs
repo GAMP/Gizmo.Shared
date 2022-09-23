@@ -2,7 +2,6 @@
 using System.Linq;
 using System.Reflection;
 using System;
-using System.Collections.Generic;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Configuration;
 
@@ -27,40 +26,6 @@ namespace Microsoft.Extensions.DependencyInjection
         #region FUNCTIONS
 
         /// <summary>
-        /// Gets all types that implement specified interface.
-        /// </summary>
-        /// <param name="interfaceType">Interface type.</param>
-        /// <returns>List of types.</returns>
-        /// <remarks>
-        /// This function searches type from assemblies that are loaded in current app domain.
-        /// </remarks>
-        public static IEnumerable<Type> GetTypesByInteface(Type interfaceType)
-        {
-            //check that type represents an inteface
-            if (!interfaceType.IsInterface)
-                throw new ArgumentException("Only interface types are supported.");
-
-            //read all matching types from assemblies loaded in app domain
-            return AppDomain.CurrentDomain.GetAssemblies()
-                .SelectMany(assembly =>
-                {
-                    try
-                    {
-                        return assembly.GetTypes()
-                        .Where(t => t.IsAbstract == false && t.IsInterface == false)
-                        .Where(t => t.GetInterfaces().Any(ifc => ifc == interfaceType));
-                    }
-                    catch(ReflectionTypeLoadException)
-                    {
-                        //catch type load exceptions
-                        //this will happen if one of the types in assembly cant be loaded
-
-                        return Enumerable.Empty<Type>();
-                    }
-                });
-        }
-
-        /// <summary>
         /// Configures all payment providers.
         /// </summary>
         /// <param name="serviceCollection">Service collection.</param>
@@ -71,10 +36,10 @@ namespace Microsoft.Extensions.DependencyInjection
         /// This function will discover all implementations specified by <paramref name="interfaceType"/> and register any options provided by <see cref="StoreOptionsTypeAttribute"/>.<br></br>
         /// The types must provide <see cref="OptionsConfigurationSectionAttribute"/> in order for us to be able to bind them to a configuration section, if they not <see cref="ArgumentException"/> will be thrown.
         /// </remarks>
-        public static void AddStoreOptions(this IServiceCollection serviceCollection, IConfiguration configuration, Type interfaceType)
+        public static void AddStoreOptions<TInterface>(this IServiceCollection serviceCollection, IConfiguration configuration)
         {
             //get all present payment providers
-            foreach (var targetType in GetTypesByInteface(interfaceType))
+            foreach (var targetType in TypeHelper.GetTypes<TInterface>())
             {
                 //get store options type if one specified
                 var storeOptionsType = targetType.GetCustomAttribute<StoreOptionsTypeAttribute>()?.OptionsType;
