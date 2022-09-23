@@ -1,4 +1,8 @@
-﻿using System;
+﻿// we dont need to check the GuidAttribute, if one set on the object it will be automatically present on Type
+// https://learn.microsoft.com/en-us/dotnet/api/system.type.guid?view=net-6.0
+
+#nullable enable
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -46,10 +50,6 @@ namespace Microsoft.Extensions.DependencyInjection
             if (!interfaceType.IsInterface)
                 throw new ArgumentException("Only interface types are supported.", nameof(interfaceType));
 
-            //check that type represents an inteface
-            if (!interfaceType.IsInterface)
-                throw new ArgumentException("Only interface types are supported.");
-
             //read all matching types from assemblies loaded in app domain
             return AppDomain.CurrentDomain.GetAssemblies()
                 .SelectMany(assembly =>
@@ -68,7 +68,7 @@ namespace Microsoft.Extensions.DependencyInjection
                         return Enumerable.Empty<Type>();
                     }
                 });
-        }
+        }     
 
         /// <summary>
         /// Gets all types implementing <typeparamref name="TInterface"/> and their guid being equal to value specified by <paramref name="guid"/>.
@@ -79,12 +79,8 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <exception cref="ArgumentException">thrown in case <typeparamref name="TInterface"/> type does not represent an interface.</exception>
         public static IEnumerable<Type> GetTypes<TInterface>(Guid guid)
         {
-            //get all types that implement specified interface
-            var types = GetTypes<TInterface>();
-
-            //we dont need to check the GuidAttribute, if one set on the object it will be automatically present on Type
-            //https://learn.microsoft.com/en-us/dotnet/api/system.type.guid?view=net-6.0
-            return types.Where(type => type.GUID == guid);
+            //get all types that implement specified interface and guid
+            return GetTypes<TInterface>().Where(type => type.GUID == guid);
         }
 
         /// <summary>
@@ -120,7 +116,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <returns>Found type.</returns>
         /// <exception cref="InvalidOperationException">thrown in case of multiple types found with same guid.</exception>
         /// <exception cref="ArgumentException">thrown in case <typeparamref name="TInterface"/> type does not represent an interface.</exception>
-        public static Type GetType<TInterface>(Guid guid)
+        public static Type? GetType<TInterface>(Guid guid)
         {
             return GetTypes<TInterface>(guid)
                 .SingleOrDefault();
@@ -132,12 +128,12 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <param name="guid">Guid.</param>
         /// <returns>Found type.</returns>
         /// <exception cref="InvalidOperationException">thrown in case of multiple types found with same guid.</exception>
-        public static Type GetType(Guid guid)
+        public static Type? GetType(Guid guid)
         {
-            return GetTypes(guid).SingleOrDefault();
+            return GetTypes(guid)
+                .SingleOrDefault();
         }
 
         #endregion
-
     }
 }

@@ -59,6 +59,15 @@ namespace Microsoft.Extensions.DependencyInjection
             }
         }
 
+        public static Type? StoreOptionTypeGet(Guid typeGuid)
+        {
+            //get payment provider
+            var targetType = TypeHelper.GetType(typeGuid);
+
+            //get options type
+            return targetType?.GetCustomAttribute<StoreOptionsTypeAttribute>()?.OptionsType;
+        }
+
         #endregion
     }
 }
