@@ -91,7 +91,10 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <returns>Services of type <typeparamref name="TInterface"/>.</returns>
         public static IEnumerable<Type> GetServiceTypes<TInterface>(this IServiceProvider serviceProvider)
         {
+            //get IServiceProviderIsService, this service will help us determine if type is registered in service provider
             var isServiceService = serviceProvider.GetRequiredService<IServiceProviderIsService>();
+
+            //filter out types
             return TypeHelper.GetTypes<TInterface>().Where(type => isServiceService.IsService(type));
         }
 
@@ -103,7 +106,10 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <returns>true if the specified service is a available, false if it is not.</returns>
         public static bool IsService(this IServiceProvider serviceProvider, Type type)
         {
+            //get IServiceProviderIsService, this service will help us determine if type is registered in service provider
             var isServiceService = serviceProvider.GetRequiredService<IServiceProviderIsService>();
+
+            //check if type is registered in service provider
             return isServiceService.IsService(type);
         }
 
