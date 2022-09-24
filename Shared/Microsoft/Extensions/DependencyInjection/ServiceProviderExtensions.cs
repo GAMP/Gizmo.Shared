@@ -50,6 +50,10 @@ namespace Microsoft.Extensions.DependencyInjection
             //get service type
             var serviceType = TypeHelper.GetType<TInterface>(guid);
 
+            //check if we obtained the serivce type, if not we should return default value
+            if (serviceType == null)
+                return default;
+
             //get service
             var service = serviceProvider.GetService(serviceType);
 
