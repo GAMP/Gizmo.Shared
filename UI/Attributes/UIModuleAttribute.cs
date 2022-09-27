@@ -3,7 +3,7 @@
 namespace Gizmo.UI
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple =true)]
-    public sealed class UIModuleAttribute : Attribute
+    public class UIModuleAttribute : Attribute
     {
         #region PROPERTIES
         
