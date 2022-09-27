@@ -6,7 +6,7 @@ namespace Gizmo.UI
     /// This attribute is used to identify default route for modules that expose multiple routes.
     /// </summary>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
-    public class DefaultRouteAttribute : Attribute
+    public sealed class DefaultRouteAttribute : Attribute
     {
         #region CONSTRUCTOR
         /// <summary>

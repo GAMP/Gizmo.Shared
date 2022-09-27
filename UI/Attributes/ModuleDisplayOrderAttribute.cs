@@ -6,7 +6,7 @@ namespace Gizmo.UI
     /// Module display order attribute.
     /// </summary>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
-    public class ModuleDisplayOrderAttribute : Attribute
+    public sealed class ModuleDisplayOrderAttribute : Attribute
     {
         #region CONSTRUCTOR
         public ModuleDisplayOrderAttribute(int displayOrder)

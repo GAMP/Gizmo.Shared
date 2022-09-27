@@ -6,7 +6,7 @@ namespace Gizmo.UI
     /// Generic attribute to identify page modules.
     /// </summary>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple =false, Inherited =false)]
-    public class PageUIModuleAttribute : UIModuleAttribute
+    public sealed class PageUIModuleAttribute : UIModuleAttribute
     {
     }
 }

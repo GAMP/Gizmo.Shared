@@ -9,7 +9,7 @@ namespace Gizmo.UI
     /// Used to uniquely identify modules.
     /// </remarks>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
-    public class ModuleGuidAttribute : Attribute
+    public sealed class ModuleGuidAttribute : Attribute
     {
         #region CONSTRUCTOR
 
