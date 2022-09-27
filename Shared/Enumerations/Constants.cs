@@ -41,6 +41,10 @@
         /// Invalid token input.
         /// </summary>
         public const int INVALID_TOKEN_INPUT = 105;
+        /// <summary>
+        /// Invalid token type.
+        /// </summary>
+        public const int INVALID_TOKEN_TYPE = 106;
     }
 
     /// <summary>
