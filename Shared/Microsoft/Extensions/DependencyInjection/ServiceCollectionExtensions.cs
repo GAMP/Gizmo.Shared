@@ -3,6 +3,7 @@
 using System.Reflection;
 using System;
 using System.Linq;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -48,6 +49,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
             foreach (var service in assemblyServices)
             {
+                //get register attribute
                 var registerAttribute = service.Attribute;
                 if (registerAttribute == null)
                     continue;
@@ -71,25 +73,27 @@ namespace Microsoft.Extensions.DependencyInjection
                         throw new ArgumentException("Only interface or class supported as registration type.");
                     }
                 }
+                
+                //use Try* methods to register services, this way we will avoid adding same services multiple times
 
                 if (registerAttribute.Scope == RegisterScope.Scoped)
                 {
-                    services.AddScoped(service.Type);
+                    services.TryAddScoped(service.Type);
                     foreach (var extendedType in registerAttribute.Types)
-                        services.AddScoped(extendedType, (sp) => sp.GetRequiredService(service.Type));
+                        services.TryAddScoped(extendedType, (sp) => sp.GetRequiredService(service.Type));
                 }
                 else if (registerAttribute.Scope == RegisterScope.Singelton)
                 {
-                    services.AddSingleton(service.Type);
+                    services.TryAddSingleton(service.Type);
                     foreach (var extendedType in registerAttribute.Types)
-                        services.AddSingleton(extendedType, (sp) => sp.GetRequiredService(service.Type));
+                        services.TryAddSingleton(extendedType, (sp) => sp.GetRequiredService(service.Type));
                 
                 }
                 else if (registerAttribute.Scope == RegisterScope.Transient)
                 {
-                    services.AddTransient(service.Type);
+                    services.TryAddTransient(service.Type);
                     foreach(var extendedType in registerAttribute.Types)
-                        services.AddTransient(extendedType, (sp) => sp.GetRequiredService(service.Type));                    
+                        services.TryAddTransient(extendedType, (sp) => sp.GetRequiredService(service.Type));                    
                 }
             }
 

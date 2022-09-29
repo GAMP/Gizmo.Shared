@@ -61,7 +61,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// Gets extended types by which this service should be registered.
         /// </summary>
         /// <remarks>
-        /// The service will always be registered by the type the attribute applied to and all extended types will forward service registration to original type.<br/>
+        /// The service will always be registered by the type the attribute applied to and all extended types will forward service registration to original type implementation.<br/>
         /// <b>Types must either represent a class or interface.</b> 
         /// </remarks>
         public Type[] Types { get; init; } = Array.Empty<Type>();
