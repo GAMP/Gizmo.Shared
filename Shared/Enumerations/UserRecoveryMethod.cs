@@ -18,10 +18,10 @@ namespace Gizmo
         /// <summary>
         /// Recovery by mobile phone.
         /// </summary>
-        Mobile=1,
+        Mobile = 1,
         /// <summary>
         /// Recovery by email.
         /// </summary>
-        Email=2,
+        Email = 2,
     }
 }
