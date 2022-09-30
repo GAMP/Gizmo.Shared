@@ -1,11 +1,10 @@
-﻿using Gizmo.UI;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Gizmo.Shared.UI.Services
+namespace Gizmo.UI.Services
 {
     /// <summary>
     /// Component discovery service.

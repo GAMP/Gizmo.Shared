@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace Gizmo.Shared.Exceptions
+namespace Gizmo.Exceptions
 {
     #region ERRORCODEEXCEPTIONBASE
 
