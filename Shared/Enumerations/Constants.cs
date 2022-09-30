@@ -60,6 +60,10 @@
         /// Used verification.
         /// </summary>
         public const int USED_VERIFICATION = 202;
+        /// <summary>
+        /// No verification.
+        /// </summary>
+        public const int NOT_VERIFIED = 203;
     }
 
     /// <summary>
@@ -98,6 +102,10 @@
         /// Non unique input.
         /// </summary>
         public const int NON_UNIQUE_INPUT = 405;
+        /// <summary>
+        /// User not found.
+        /// </summary>
+        public const int USER_NOT_FOUND = 406;
     }
 
     /// <summary>

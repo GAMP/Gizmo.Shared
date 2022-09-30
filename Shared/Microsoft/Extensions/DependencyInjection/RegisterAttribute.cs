@@ -5,6 +5,9 @@ namespace Microsoft.Extensions.DependencyInjection
     /// <summary>
     /// Dependency injection registration attribute.
     /// </summary>
+    /// <remarks>
+    /// Default scope value is <see cref="RegisterScope.Singelton"/>.
+    /// </remarks>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
     public sealed class RegisterAttribute : Attribute
     {
