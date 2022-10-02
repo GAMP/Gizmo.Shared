@@ -1,13 +1,11 @@
 ﻿using MessagePack;
 using System;
-using System.Runtime.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Control message.
     /// </summary>
-    [DataContract()]
     [MessagePackObject()]
     public abstract class ControlMessage : SerializationTypeMessage , IControlMessage
     {

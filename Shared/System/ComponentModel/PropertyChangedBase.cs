@@ -1,13 +1,11 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
-using System.Runtime.Serialization;
 
 namespace System.ComponentModel
 {
     /// <summary>
     /// Property change base class.
     /// </summary>
-    [DataContract()]
     public abstract class PropertyChangedBase :
         INotifyPropertyChanged
     {

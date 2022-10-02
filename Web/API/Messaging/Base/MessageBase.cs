@@ -8,7 +8,6 @@ namespace Gizmo.Web.Api.Messaging
     /// <summary>
     /// Base communication message class.
     /// </summary>
-    [DataContract()]
     [MessagePackObject()]
     public abstract class MessageBase : IMessage
     {
@@ -27,7 +26,6 @@ namespace Gizmo.Web.Api.Messaging
         /// </summary>
         [DefaultValue(0)]
         [JsonIgnore()]
-        [IgnoreDataMember()]
         [Key(0)]
         public int Version
         {

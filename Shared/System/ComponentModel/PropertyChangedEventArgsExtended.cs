@@ -6,7 +6,6 @@ namespace System.ComponentModel
     /// Extended PropertyChangedEventArgs class.
     /// </summary>
     [Serializable()]
-    [DataContract]
     public class PropertyChangedEventArgsExtended : PropertyChangedEventArgs
     {
         #region CONSTRUCTOR
