@@ -1,12 +1,10 @@
-﻿using MessagePack;
-using System;
+﻿using System;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Event base message.
     /// </summary>
-    [MessagePackObject()]
     public abstract class EventMessage : SerializationTypeMessage, IEventMessage
     {
         #region CONSTRUCTOR

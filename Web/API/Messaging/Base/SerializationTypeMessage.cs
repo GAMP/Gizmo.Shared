@@ -1,5 +1,6 @@
 ﻿using MessagePack;
 using System;
+using System.Diagnostics;
 using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
@@ -20,26 +21,7 @@ namespace Gizmo.Web.Api.Messaging
         {
             SerializationType = serializationType;
         }
-        #endregion
-
-        #region READ ONLY FIELDS
-
-        /// <summary>
-        /// Event message type.
-        /// </summary>
-        public static readonly Type IEventMessage = typeof(IEventMessage);
-
-        /// <summary>
-        /// Command message type.
-        /// </summary>
-        public static readonly Type ICommandMessage = typeof(ICommandMessage);
-
-        /// <summary>
-        /// Control message type.
-        /// </summary>
-        public static readonly Type IControlMessage = typeof(IControlMessage);
-
-        #endregion
+        #endregion        
 
         #region PROPERTIES
 
@@ -48,6 +30,7 @@ namespace Gizmo.Web.Api.Messaging
         /// </summary>
         [JsonIgnore()]
         [IgnoreMember()]
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         public Type SerializationType { get; protected set; } 
 
         #endregion

@@ -1,6 +1,6 @@
 ﻿using MessagePack;
 using System.ComponentModel;
-using System.Runtime.Serialization;
+using System.Diagnostics;
 using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
@@ -8,7 +8,6 @@ namespace Gizmo.Web.Api.Messaging
     /// <summary>
     /// Base communication message class.
     /// </summary>
-    [MessagePackObject()]
     public abstract class MessageBase : IMessage
     {
         #region CONSTRUCTOR
@@ -27,6 +26,7 @@ namespace Gizmo.Web.Api.Messaging
         [DefaultValue(0)]
         [JsonIgnore()]
         [Key(0)]
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         public int Version
         {
             get; set;

@@ -1,6 +1,8 @@
 ﻿namespace Gizmo.Web.Api.Messaging
 {
-    ///<inheritdoc/>
+    /// <summary>
+    /// API Message type descriminator.
+    /// </summary>
     public enum MessageTypeDiscriminator
     {
         /// <summary>
