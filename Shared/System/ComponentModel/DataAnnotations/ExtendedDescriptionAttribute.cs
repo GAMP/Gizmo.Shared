@@ -42,6 +42,9 @@ namespace System.ComponentModel.DataAnnotations
         /// <summary>
         /// Gets description.
         /// </summary>
+        /// <remarks>
+        /// The value is used if <see cref="LocalizedAttribute.ResourceKey"/> is not found.
+        /// </remarks>
         public string Description { get; init; } 
 
         #endregion
