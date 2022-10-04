@@ -1,6 +1,6 @@
 ﻿#nullable enable
 
-namespace Gizmo.Client
+namespace Gizmo.Client.UI
 {
     /// <summary>
     /// Client user interface options.
