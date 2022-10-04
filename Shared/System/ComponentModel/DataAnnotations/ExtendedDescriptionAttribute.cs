@@ -5,7 +5,7 @@ using Gizmo;
 namespace System.ComponentModel.DataAnnotations
 {
     /// <summary>
-    /// Custom description attribute.
+    /// Description attribute.
     /// </summary>
     /// <remarks>
     /// This attribute allows addition of extended description metadata.
