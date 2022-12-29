@@ -3,7 +3,7 @@
     /// <summary>
     /// Base codes.
     /// </summary>
-    internal class BASE_CODES
+    internal static class BASE_CODES
     {
         /// <summary>
         /// Success.
@@ -19,7 +19,7 @@
     /// <summary>
     /// Token error codes.
     /// </summary>
-    internal class TOKEN_ERROR_CODES
+    internal static class TOKEN_ERROR_CODES
     {
         /// <summary>
         /// Invalid token.
@@ -50,7 +50,7 @@
     /// <summary>
     /// Verification error codes.
     /// </summary>
-    internal class VERIFICATION_ERROR_CODES
+    internal static class VERIFICATION_ERROR_CODES
     {
         /// <summary>
         /// Invalid verification.
@@ -69,7 +69,7 @@
     /// <summary>
     /// Confirmation error codes.
     /// </summary>
-    internal class CONFIRMATION_ERROR_CODES
+    internal static class CONFIRMATION_ERROR_CODES
     {
         /// <summary>
         /// Invalid confirmation.
@@ -80,7 +80,7 @@
     /// <summary>
     /// Extended error codes.
     /// </summary>
-    internal class EXTENDED_ERROR_CODES
+    internal static class EXTENDED_ERROR_CODES
     {
         /// <summary>
         /// Partial success.
@@ -111,7 +111,7 @@
     /// <summary>
     /// Delivery error codes.
     /// </summary>
-    internal class DELIVERY_ERROR_CODES
+    internal static class DELIVERY_ERROR_CODES
     {
         /// <summary>
         /// Failed.
