@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 namespace Gizmo.UI.Services
 {
     /// <summary>
-    /// Component discovery service.
+    /// UI Composition service.
     /// </summary>
     /// <remarks>
     /// Main purpose of the service is to load external assemblies and provide the means to obtain component metadata information.
     /// </remarks>
-    public interface IComponentDiscoveryService
+    public interface IUICompositionService
     {
         #region EVENTS
         public event EventHandler<EventArgs> Initialized;
