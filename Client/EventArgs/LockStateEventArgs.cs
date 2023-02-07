@@ -7,7 +7,6 @@ namespace Gizmo.Client
     /// </summary>
     public sealed class LockStateEventArgs : EventArgs
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
@@ -16,9 +15,6 @@ namespace Gizmo.Client
         {
             IsLocked = isLocked;
         }
-        #endregion
-
-        #region PROPERTIES
 
         /// <summary>
         /// Gets if the lock is active.
@@ -28,7 +24,5 @@ namespace Gizmo.Client
             get;
             init;
         }
-
-        #endregion
     }
 }

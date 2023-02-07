@@ -5,9 +5,8 @@ namespace Gizmo.Client
     /// <summary>
     /// User profile change event args.
     /// </summary>
-    public class UserProfileChangeArgs : EventArgs
+    public sealed class UserProfileChangeArgs : EventArgs
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
@@ -18,9 +17,6 @@ namespace Gizmo.Client
             NewProfile = newProfile ?? throw new ArgumentNullException(nameof(newProfile));
             OldProfile = oldProfile ?? throw new ArgumentNullException(nameof(oldProfile));
         }
-        #endregion
-
-        #region PROPERTIES
 
         /// <summary>
         /// Gets old profile value.
@@ -39,7 +35,5 @@ namespace Gizmo.Client
             get;
             init;
         }
-
-        #endregion
     }
 }

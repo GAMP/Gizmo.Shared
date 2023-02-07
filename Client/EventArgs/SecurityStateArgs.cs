@@ -7,8 +7,6 @@ namespace Gizmo.Client
     /// </summary>
     public sealed class SecurityStateArgs : EventArgs
     {
-        #region CONSTRUCTOR
-
         /// <summary>
         /// Creates new instance.
         /// </summary>
@@ -30,10 +28,6 @@ namespace Gizmo.Client
         {
             ActiveProfileChanged = activeProfile;
         }
-
-        #endregion
-
-        #region PROPERTIES
 
         /// <summary>
         /// Gets if security is currently enabled.
@@ -61,7 +55,5 @@ namespace Gizmo.Client
             get;
             init;
         }
-
-        #endregion
     }
 }

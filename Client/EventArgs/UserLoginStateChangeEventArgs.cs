@@ -3,11 +3,10 @@
 namespace Gizmo.Client
 {
     /// <summary>
-    ///User event arguments.
+    /// User login state change event args.
     /// </summary>
-    public class UserEventArgs : EventArgs
+    public class UserLoginStateChangeEventArgs : EventArgs
     { 
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
@@ -16,7 +15,7 @@ namespace Gizmo.Client
         /// <param name="oldState">Old state.</param>
         /// <param name="failReason">Fail reason.</param>
         /// <param name="requiredInfo">Required info.</param>
-        public UserEventArgs(Gizmo.IUserProfile profile,
+        public UserLoginStateChangeEventArgs(Gizmo.IUserProfile profile,
             LoginState state,
             LoginState oldState = LoginState.LoggedOut,
             LoginResult failReason = LoginResult.Sucess,
@@ -27,10 +26,7 @@ namespace Gizmo.Client
             OldState = oldState;
             FailReason = failReason;
             RequiredUserInformation = requiredInfo;
-        }
-        #endregion    
-
-        #region PROPERTIES
+        }   
 
         /// <summary>
         /// Gets the user profile that caused the event.
@@ -38,7 +34,7 @@ namespace Gizmo.Client
         public IUserProfile UserProfile
         {
             get;
-            protected set;
+            init;
         }
 
         /// <summary>
@@ -47,7 +43,7 @@ namespace Gizmo.Client
         public LoginState State
         {
             get;
-            protected set;
+            init;
         }
 
         /// <summary>
@@ -56,7 +52,7 @@ namespace Gizmo.Client
         public LoginState OldState
         {
             get;
-            protected set;
+            init;
         }
 
         /// <summary>
@@ -68,7 +64,7 @@ namespace Gizmo.Client
         public LoginResult FailReason
         {
             get;
-            protected set;
+            init;
         }
 
         /// <summary>
@@ -80,7 +76,7 @@ namespace Gizmo.Client
         public UserInfoTypes RequiredUserInformation
         {
             get;
-            protected set;
+            init;
         }
 
         /// <summary>
@@ -107,7 +103,5 @@ namespace Gizmo.Client
                 return (RequiredUserInformation & UserInfoTypes.Password) == UserInfoTypes.Password;
             }
         }
-
-        #endregion
     }
 }

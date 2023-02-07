@@ -2,9 +2,11 @@
 
 namespace Gizmo.Client
 {
+    /// <summary>
+    /// Client language change event args.
+    /// </summary>
     public sealed class LanguageChangeEventArgs : EventArgs
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
@@ -15,9 +17,6 @@ namespace Gizmo.Client
             SettingsLanguage = settingsLanguage;
             PreferedUILanguage = preferedUILanguage;
         }
-        #endregion
-
-        #region PROPERTIES
 
         /// <summary>
         /// Current settings language.
@@ -36,7 +35,5 @@ namespace Gizmo.Client
             get;
             init;
         }
-
-        #endregion
     }
 }

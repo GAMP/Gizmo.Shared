@@ -7,8 +7,6 @@ namespace Gizmo
     /// </summary>
     public interface IRating
     {
-        #region PROPERTIES
-        
         /// <summary>
         /// Gets application id.
         /// </summary>
@@ -28,7 +26,5 @@ namespace Gizmo
         /// Gets total rates value.
         /// </summary>
         double Value { get; } 
-
-        #endregion
     }
 }

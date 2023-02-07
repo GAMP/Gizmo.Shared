@@ -1,5 +1,8 @@
 ﻿namespace Gizmo
 {
+    /// <summary>
+    /// User balance interface.
+    /// </summary>
     public interface IUserBalance
     {
         double? AvailableCreditedTime { get; set; }

@@ -3,26 +3,22 @@
 namespace Gizmo.Client
 {
     /// <summary>
-    /// Client application ratred event args.
+    /// Client application rated event args.
     /// </summary>
     public sealed class ApplicationRateEventArgs : EventArgs
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        /// <param name="appId">App id.</param>
+        /// <param name="appId">Application id.</param>
         /// <param name="overallRating">Overall rating.</param>
         /// <param name="userRating">User rating.</param>
         public ApplicationRateEventArgs(int appId, IRating overallRating, IRating userRating)
         {
             ApplicationId = appId;
-            OverallRating = overallRating ?? throw new ArgumentNullException("overallRating");
-            UserRating = userRating ?? throw new ArgumentNullException("userRating");
+            OverallRating = overallRating ?? throw new ArgumentNullException(nameof(overallRating));
+            UserRating = userRating ?? throw new ArgumentNullException(nameof(userRating));
         }
-        #endregion
-
-        #region PROPERTIES
 
         /// <summary>
         /// Gets rated application id.
@@ -50,7 +46,5 @@ namespace Gizmo.Client
             get;
             init;
         }
-
-        #endregion
     }
 }

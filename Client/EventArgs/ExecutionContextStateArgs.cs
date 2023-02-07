@@ -3,12 +3,10 @@
 namespace Gizmo.Client
 {
     /// <summary>
-    /// Execution context arguments.
+    /// Execution context event args.
     /// </summary>
     public sealed class ExecutionContextStateArgs : EventArgs
     {
-        #region CONSTRUCTOR
-
         /// <summary>
         /// Creates new instance.
         /// </summary>
@@ -37,10 +35,6 @@ namespace Gizmo.Client
             OldState = oldState;
             StateObject = stateObject;
         }
-
-        #endregion
-
-        #region PROPERTIES
 
         /// <summary>
         /// Gets executable id.
@@ -77,7 +71,5 @@ namespace Gizmo.Client
             get;
             init;
         }
-
-        #endregion
     }
 }

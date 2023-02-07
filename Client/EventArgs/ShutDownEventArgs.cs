@@ -2,19 +2,21 @@
 
 namespace Gizmo.Client
 {
+    /// <summary>
+    /// Client shutdown event args.
+    /// </summary>
     public sealed class ShutDownEventArgs : EventArgs
     {
-        #region CONSTRUCTOR
-
+        /// <summary>
+        /// Creates new instance.
+        /// </summary>
+        /// <param name="restarting"></param>
+        /// <param name="isCrashed"></param>
         public ShutDownEventArgs(bool restarting = false, bool isCrashed = false)
         {
             IsRestarting = restarting;
             IsCrashed = isCrashed;
         }
-
-        #endregion
-
-        #region PROPERTIES
 
         /// <summary>
         /// Gets if application is restarting.
@@ -33,7 +35,5 @@ namespace Gizmo.Client
             get;
             init;
         }
-
-        #endregion
     }
 }

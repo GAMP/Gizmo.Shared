@@ -7,8 +7,6 @@ namespace Gizmo
     /// </summary>
     public interface IUserProfile
     {
-        #region PROPERTIES
-
         /// <summary>
         /// Gets or sets username.
         /// </summary>
@@ -114,15 +112,9 @@ namespace Gizmo
         /// </summary>
         bool CanChangePassword { get; set; }
 
-        #endregion
-
-        #region FUNCTIONS
-
         /// <summary>
         /// Reset profile to default values.
         /// </summary>
         void Reset();
-
-        #endregion
     }
 }
