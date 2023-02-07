@@ -22,7 +22,7 @@ namespace Gizmo.Client
         public bool IsRestarting
         {
             get;
-            protected set;
+            init;
         }
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Gizmo.Client
         public bool IsCrashed
         {
             get;
-            protected set;
+            init;
         }
 
         #endregion

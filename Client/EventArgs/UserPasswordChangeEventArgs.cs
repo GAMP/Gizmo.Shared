@@ -25,7 +25,7 @@ namespace Gizmo.Client
         public string NewPassword
         {
             get;
-            protected set;
+            init;
         }
         #endregion
     } 

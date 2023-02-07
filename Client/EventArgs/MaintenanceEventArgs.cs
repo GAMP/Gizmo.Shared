@@ -21,7 +21,7 @@ namespace Gizmo.Client
         public bool IsEnabled
         {
             get;
-            protected set;
+            init;
         }
 
         #endregion

@@ -7,8 +7,16 @@ namespace Gizmo.Client
     /// </summary>
     public sealed class GracePeriodChangeEventArgs : EventArgs
     {
-        public bool IsInGracePeriod { get; set; }
+        public bool IsInGracePeriod
+        {
+            get;
+            init;
+        }
 
-        public int GracePeriodTime { get; set; }
+        public int GracePeriodTime
+        {
+            get;
+            init;
+        }
     }
 }

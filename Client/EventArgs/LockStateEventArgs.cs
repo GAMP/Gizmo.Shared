@@ -26,7 +26,7 @@ namespace Gizmo.Client
         public bool IsLocked
         {
             get;
-            protected set;
+            init;
         }
 
         #endregion

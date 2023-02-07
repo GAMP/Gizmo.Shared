@@ -1,8 +1,11 @@
-﻿namespace Gizmo
+﻿using System;
+
+namespace Gizmo
 {
     /// <summary>
     /// Sex enumeration.
     /// </summary>
+    [Flags()]
     public enum Sex
     {
         /// <summary>

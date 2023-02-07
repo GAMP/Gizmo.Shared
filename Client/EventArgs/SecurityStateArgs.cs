@@ -41,7 +41,7 @@ namespace Gizmo.Client
         public bool IsEnabled
         {
             get;
-            protected set;
+            init;
         }
 
         /// <summary>
@@ -50,7 +50,7 @@ namespace Gizmo.Client
         public bool WasEnabled
         {
             get;
-            protected set;
+            init;
         }
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace Gizmo.Client
         public bool ActiveProfileChanged
         {
             get;
-            protected set;
+            init;
         }
 
         #endregion
