@@ -21,6 +21,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Client\Interfaces\**" />
+	  <EmbeddedResource Remove="Client\Interfaces\**" />
+	  <None Remove="Client\Interfaces\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<None Include="Resources\package_icon.png">
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
@@ -33,11 +39,6 @@
 		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
 		<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
 		<PackageReference Include="MessagePack" Version="2.3.85" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Client\EventArgs\Classes\" />
-	  <Folder Include="Client\Interfaces\" />
 	</ItemGroup>
 
 </Project>
