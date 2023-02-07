@@ -7,5 +7,9 @@ namespace Gizmo.Client
     /// </summary>
     public sealed class ReservationChangeEventArgs : EventArgs
     {
+        /// <summary>
+        /// Creates new instance.
+        /// </summary>
+        public ReservationChangeEventArgs() { }
     }
 }

@@ -7,7 +7,6 @@ namespace Gizmo.Client
     /// </summary>
     public sealed class UserPasswordChangeEventArgs : EventArgs
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
@@ -16,17 +15,14 @@ namespace Gizmo.Client
         {
             NewPassword = newPassword;
         }
-        #endregion
 
-        #region PROPERTIES
         /// <summary>
         /// Gets new password value.
         /// </summary>
         public string NewPassword
         {
             get;
-            protected set;
+            init;
         }
-        #endregion
     } 
 }

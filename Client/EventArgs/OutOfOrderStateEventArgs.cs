@@ -7,7 +7,6 @@ namespace Gizmo.Client
     /// </summary>
     public sealed class OutOfOrderStateEventArgs : EventArgs
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
@@ -16,9 +15,6 @@ namespace Gizmo.Client
         {
             IsOutOfOrder = newState;
         }
-        #endregion
-
-        #region PROPERTIES
 
         /// <summary>
         /// Gets if out of order.
@@ -26,9 +22,7 @@ namespace Gizmo.Client
         public bool IsOutOfOrder
         {
             get;
-            private set;
+            init;
         }
-
-        #endregion
     }
 }

@@ -7,6 +7,14 @@ namespace Gizmo.Client
     /// </summary>
     public sealed class UserLockChangeEventArgs : EventArgs
     {
-        public bool IsLocked { get; set; }
+        /// <summary>
+        /// Creates new instance.
+        /// </summary>
+        public UserLockChangeEventArgs() { }
+
+        /// <summary>
+        /// Gets if user lock is active.
+        /// </summary>
+        public bool IsLocked { get; init; }
     }
 }

@@ -7,8 +7,19 @@ namespace Gizmo.Client
     /// </summary>
     public sealed class GracePeriodChangeEventArgs : EventArgs
     {
-        public bool IsInGracePeriod { get; set; }
+        /// <summary>
+        /// Creates new instance.
+        /// </summary>
+        public GracePeriodChangeEventArgs() { }
 
-        public int GracePeriodTime { get; set; }
+        /// <summary>
+        /// Gets if client is in grace period.
+        /// </summary>
+        public bool IsInGracePeriod { get; init; }
+
+        /// <summary>
+        /// Gets grace period time in minutes.
+        /// </summary>
+        public int GracePeriodTime { get; init; }
     }
 }

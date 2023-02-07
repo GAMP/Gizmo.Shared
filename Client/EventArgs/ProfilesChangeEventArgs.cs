@@ -7,7 +7,6 @@ namespace Gizmo.Client
     /// </summary>
     public sealed class ProfilesChangeEventArgs : EventArgs
     {
-        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
@@ -16,9 +15,6 @@ namespace Gizmo.Client
         {
             IsInitial = isInitial;
         }
-        #endregion
-
-        #region PROPERTIES
 
         /// <summary>
         /// Gets if event was created by initial change of profiles.
@@ -26,9 +22,7 @@ namespace Gizmo.Client
         public bool IsInitial
         {
             get;
-            protected set;
+            init;
         }
-
-        #endregion
     }
 }
