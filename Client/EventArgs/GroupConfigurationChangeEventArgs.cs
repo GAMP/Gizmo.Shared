@@ -2,7 +2,7 @@
 
 namespace Gizmo.Client
 {
-    public class GroupConfigurationChangeEventArgs : EventArgs
+    public sealed class GroupConfigurationChangeEventArgs : EventArgs
     {
     }
 }

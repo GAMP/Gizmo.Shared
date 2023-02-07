@@ -2,7 +2,7 @@
 
 namespace Gizmo.Client
 {
-    public class ShutDownEventArgs : EventArgs
+    public sealed class ShutDownEventArgs : EventArgs
     {
         #region CONSTRUCTOR
 

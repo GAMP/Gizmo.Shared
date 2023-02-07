@@ -5,7 +5,7 @@ namespace Gizmo.Client
     /// <summary>
     /// Out of order state change event args.
     /// </summary>
-    public class OutOfOrderStateEventArgs : EventArgs
+    public sealed class OutOfOrderStateEventArgs : EventArgs
     {
         #region CONSTRUCTOR
         /// <summary>

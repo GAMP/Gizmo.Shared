@@ -5,7 +5,7 @@ namespace Gizmo.Client
     /// <summary>
     /// Client grace period change args.
     /// </summary>
-    public class GracePeriodChangeEventArgs : EventArgs
+    public sealed class GracePeriodChangeEventArgs : EventArgs
     {
         public bool IsInGracePeriod { get; set; }
 

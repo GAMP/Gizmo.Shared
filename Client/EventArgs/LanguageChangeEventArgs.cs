@@ -2,7 +2,7 @@
 
 namespace Gizmo.Client
 {
-    public class LanguageChangeEventArgs : EventArgs
+    public sealed class LanguageChangeEventArgs : EventArgs
     {
         #region CONSTRUCTOR
         /// <summary>

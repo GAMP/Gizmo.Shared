@@ -5,7 +5,7 @@ namespace Gizmo.Client
     /// <summary>
     /// Client id changed event args.
     /// </summary>
-    public class IdChangeEventArgs : EventArgs
+    public sealed class IdChangeEventArgs : EventArgs
     {
         #region CONSTRUCTOR
         /// <summary>

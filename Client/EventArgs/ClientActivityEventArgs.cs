@@ -3,32 +3,30 @@
 namespace Gizmo.Client
 {
     /// <summary>
-    /// Profiles change event args.
+    /// Client activity event args.
     /// </summary>
-    public sealed class ProfilesChangeEventArgs : EventArgs
+    public sealed class ClientActivityEventArgs : EventArgs
     {
         #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        /// <param name="isInitial">Indicates if change is initial.</param>
-        public ProfilesChangeEventArgs(bool isInitial)
+        /// <param name="activity">Current activity.</param>
+        public ClientActivityEventArgs(ClientStartupActivity activity)
         {
-            IsInitial = isInitial;
+            Activity = activity;
         }
         #endregion
 
         #region PROPERTIES
-
         /// <summary>
-        /// Gets if event was created by initial change of profiles.
+        /// Gets current client activity.
         /// </summary>
-        public bool IsInitial
+        public ClientStartupActivity Activity
         {
             get;
             protected set;
         }
-
         #endregion
     }
 }

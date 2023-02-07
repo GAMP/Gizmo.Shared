@@ -5,7 +5,7 @@ namespace Gizmo.Client
     /// <summary>
     /// User password change event args.
     /// </summary>
-    public class UserPasswordChangeEventArgs : EventArgs
+    public sealed class UserPasswordChangeEventArgs : EventArgs
     {
         #region CONSTRUCTOR
         /// <summary>

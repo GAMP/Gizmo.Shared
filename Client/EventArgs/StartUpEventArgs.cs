@@ -2,7 +2,7 @@
 
 namespace Gizmo.Client
 {
-    public class StartUpEventArgs : EventArgs
+    public sealed class StartUpEventArgs : EventArgs
     {
     }
 }

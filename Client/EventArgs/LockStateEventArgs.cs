@@ -5,7 +5,7 @@ namespace Gizmo.Client
     /// <summary>
     /// Lock state change event args.
     /// </summary>
-    public class LockStateEventArgs : EventArgs
+    public sealed class LockStateEventArgs : EventArgs
     {
         #region CONSTRUCTOR
         /// <summary>
