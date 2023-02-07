@@ -3,9 +3,9 @@
 namespace Gizmo.Client
 {
     /// <summary>
-    /// Execution context event args.
+    /// Client execution context event args.
     /// </summary>
-    public sealed class ExecutionContextStateArgs : EventArgs
+    public sealed class ClientExecutionContextStateArgs : EventArgs
     {
         /// <summary>
         /// Creates new instance.
@@ -13,7 +13,7 @@ namespace Gizmo.Client
         /// <param name="exeId">Executable id.</param>
         /// <param name="newState">New state.</param>
         /// <param name="oldState">Old state.</param>
-        public ExecutionContextStateArgs(int exeId, ContextExecutionState newState,
+        public ClientExecutionContextStateArgs(int exeId, ContextExecutionState newState,
           ContextExecutionState oldState)
             : this(exeId, newState, oldState, null)
         {
@@ -26,7 +26,7 @@ namespace Gizmo.Client
         /// <param name="newState">New state.</param>
         /// <param name="oldState">Old state.</param>
         /// <param name="stateObject">Custom state object.</param>
-        public ExecutionContextStateArgs(int exeId, ContextExecutionState newState,
+        public ClientExecutionContextStateArgs(int exeId, ContextExecutionState newState,
             ContextExecutionState oldState,
             object stateObject)
         {
