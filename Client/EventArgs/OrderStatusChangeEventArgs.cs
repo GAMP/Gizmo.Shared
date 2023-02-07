@@ -7,6 +7,7 @@ namespace Gizmo.Client
     /// </summary>
     public sealed class OrderStatusChangeEventArgs : EventArgs
     {
+        #region CONSTRUCTOR  
         /// <summary>
         /// Creates new instance.
         /// </summary>
@@ -24,6 +25,9 @@ namespace Gizmo.Client
             NewStatus = newStatus;
             OldStatus = oldStatus;
         }
+        #endregion
+
+        #region PROPERTIES
 
         /// <summary>
         /// Gets user id.
@@ -31,7 +35,7 @@ namespace Gizmo.Client
         public int UserId
         {
             get;
-            init;
+            protected set;
         }
 
         /// <summary>
@@ -39,7 +43,7 @@ namespace Gizmo.Client
         /// </summary>
         public int OrderId
         {
-            get; init;
+            get; protected set;
         }
 
         /// <summary>
@@ -47,7 +51,7 @@ namespace Gizmo.Client
         /// </summary>
         public OrderStatus NewStatus
         {
-            get; init;
+            get; set;
         }
 
         /// <summary>
@@ -55,7 +59,22 @@ namespace Gizmo.Client
         /// </summary>
         public OrderStatus? OldStatus
         {
-            get; init;
+            get; set;
         }
+
+        #endregion
+
+        #region OVERRDIES
+
+        /// <summary>
+        /// Converts to string.
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return $"Order id {OrderId} , Old status = {OldStatus?.ToString() ?? ""} New status = {NewStatus}";
+        }
+
+        #endregion
     }
 }

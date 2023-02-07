@@ -7,6 +7,7 @@ namespace Gizmo.Client
     /// </summary>
     public sealed class ClientActivityEventArgs : EventArgs
     {
+        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
@@ -15,14 +16,17 @@ namespace Gizmo.Client
         {
             Activity = activity;
         }
+        #endregion
 
+        #region PROPERTIES
         /// <summary>
         /// Gets current client activity.
         /// </summary>
         public ClientStartupActivity Activity
         {
             get;
-            init;
+            protected set;
         }
+        #endregion
     }
 }

@@ -2,27 +2,28 @@
 
 namespace Gizmo.Client
 {
-    /// <summary>
-    /// Maintenance mode changed event args.
-    /// </summary>
     public sealed class MaintenanceEventArgs : EventArgs
     {
-        /// <summary>
-        /// Creates new instance.
-        /// </summary>
-        /// <param name="enabled">Indicates if maintenance mod is enabled.</param>
+        #region CONSTRUCTOR
+
         public MaintenanceEventArgs(bool enabled)
         {
             IsEnabled = enabled;
         }
 
+        #endregion
+
+        #region PROPERTIES
+
         /// <summary>
-        /// Gets if maintenance mode is enabled.
+        /// Gets if maintenance mod is enabled.
         /// </summary>
         public bool IsEnabled
         {
             get;
-            init;
+            protected set;
         }
+
+        #endregion
     }
 }

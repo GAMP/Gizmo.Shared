@@ -5,11 +5,9 @@ namespace Gizmo.Client
     /// <summary>
     /// Client id changed event args.
     /// </summary>
-    /// <remarks>
-    /// The id represents client number.
-    /// </remarks>
     public sealed class IdChangeEventArgs : EventArgs
     {
+        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
@@ -20,6 +18,9 @@ namespace Gizmo.Client
             NewId = newId;
             OldId = oldId;
         }
+        #endregion
+
+        #region PROPERTIES
 
         /// <summary>
         /// Gets new id.
@@ -27,7 +28,7 @@ namespace Gizmo.Client
         public int NewId
         {
             get;
-            init;
+            protected set;
         }
 
         /// <summary>
@@ -36,7 +37,9 @@ namespace Gizmo.Client
         public int OldId
         {
             get;
-            init;
+            protected set;
         }
+
+        #endregion
     }
 }

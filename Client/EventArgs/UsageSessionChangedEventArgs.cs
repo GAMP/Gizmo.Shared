@@ -7,6 +7,7 @@ namespace Gizmo.Client
     /// </summary>
     public sealed class UsageSessionChangedEventArgs : EventArgs
     {
+        #region CONSTRUCTOR
         /// <summary>
         /// Creates new instance.
         /// </summary>
@@ -19,6 +20,9 @@ namespace Gizmo.Client
             CurrentTimeProduct = timeProduct;
             CurrentUsageType = usageType;
         }
+        #endregion
+
+        #region PROPERTIES
 
         /// <summary>
         /// Gets user id.
@@ -26,7 +30,7 @@ namespace Gizmo.Client
         public int UserId
         {
             get;
-            init;
+            protected set;
         }
 
         /// <summary>
@@ -35,7 +39,7 @@ namespace Gizmo.Client
         public string CurrentTimeProduct
         {
             get;
-            init;
+            private set;
         }
 
         /// <summary>
@@ -44,7 +48,9 @@ namespace Gizmo.Client
         public UsageType CurrentUsageType
         {
             get;
-            init;
+            private set;
         }
+
+        #endregion
     }
 }
