@@ -24,7 +24,8 @@ namespace Gizmo.Client
         /// </summary>
         public string SettingsLanguage
         {
-            get; protected set;
+            get;
+            init;
         }
 
         /// <summary>
@@ -32,7 +33,8 @@ namespace Gizmo.Client
         /// </summary>
         public string PreferedUILanguage
         {
-            get; protected set;
+            get;
+            init;
         }
 
         #endregion

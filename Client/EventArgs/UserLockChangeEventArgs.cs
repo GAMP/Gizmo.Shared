@@ -7,6 +7,10 @@ namespace Gizmo.Client
     /// </summary>
     public sealed class UserLockChangeEventArgs : EventArgs
     {
-        public bool IsLocked { get; set; }
+        public bool IsLocked
+        {
+            get;
+            init;
+        }
     }
 }

@@ -28,7 +28,7 @@ namespace Gizmo.Client
         public int NewId
         {
             get;
-            protected set;
+            init;
         }
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace Gizmo.Client
         public int OldId
         {
             get;
-            protected set;
+            init;
         }
 
         #endregion

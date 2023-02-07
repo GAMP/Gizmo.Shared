@@ -26,7 +26,7 @@ namespace Gizmo.Client
         public bool IsInitial
         {
             get;
-            protected set;
+            init;
         }
 
         #endregion

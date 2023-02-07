@@ -35,4 +35,9 @@
 		<PackageReference Include="MessagePack" Version="2.3.85" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Client\EventArgs\Classes\" />
+	  <Folder Include="Client\Interfaces\" />
+	</ItemGroup>
+
 </Project>

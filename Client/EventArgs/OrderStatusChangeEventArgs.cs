@@ -35,7 +35,7 @@ namespace Gizmo.Client
         public int UserId
         {
             get;
-            protected set;
+            init;
         }
 
         /// <summary>
@@ -43,7 +43,8 @@ namespace Gizmo.Client
         /// </summary>
         public int OrderId
         {
-            get; protected set;
+            get;
+            init;
         }
 
         /// <summary>
@@ -51,7 +52,8 @@ namespace Gizmo.Client
         /// </summary>
         public OrderStatus NewStatus
         {
-            get; set;
+            get;
+            init;
         }
 
         /// <summary>
@@ -59,7 +61,8 @@ namespace Gizmo.Client
         /// </summary>
         public OrderStatus? OldStatus
         {
-            get; set;
+            get;
+            init;
         }
 
         #endregion

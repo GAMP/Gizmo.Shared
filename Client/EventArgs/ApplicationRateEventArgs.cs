@@ -14,7 +14,7 @@ namespace Gizmo.Client
         /// <param name="appId">App id.</param>
         /// <param name="overallRating">Overall rating.</param>
         /// <param name="userRating">User rating.</param>
-        public ApplicationRateEventArgs(int appId, IRating overallRating, IRating userRating)
+        public ApplicationRateEventArgs(int appId, Rating overallRating, Rating userRating)
         {
             ApplicationId = appId;
             OverallRating = overallRating ?? throw new ArgumentNullException("overallRating");
@@ -30,25 +30,25 @@ namespace Gizmo.Client
         public int ApplicationId
         {
             get;
-            protected set;
+            init;
         }
 
         /// <summary>
         /// Gets application overall rating.
         /// </summary>
-        public IRating OverallRating
+        public Rating OverallRating
         {
             get;
-            protected set;
+            init;
         }
 
         /// <summary>
         /// Gets application user rating.
         /// </summary>
-        public IRating UserRating
+        public Rating UserRating
         {
             get;
-            protected set;
+            init;
         }
 
         #endregion

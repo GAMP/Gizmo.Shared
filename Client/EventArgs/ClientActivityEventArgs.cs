@@ -25,7 +25,7 @@ namespace Gizmo.Client
         public ClientStartupActivity Activity
         {
             get;
-            protected set;
+            init;
         }
         #endregion
     }

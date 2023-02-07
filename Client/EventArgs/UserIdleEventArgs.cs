@@ -3,32 +3,33 @@
 namespace Gizmo.Client
 {
     /// <summary>
-    /// Out of order state change event args.
+    /// User idle event args.
     /// </summary>
-    public sealed class OutOfOrderStateEventArgs : EventArgs
+    public sealed class UserIdleEventArgs : EventArgs
     {
         #region CONSTRUCTOR
+
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        /// <param name="newState">New state.</param>
-        public OutOfOrderStateEventArgs(bool newState)
+        /// <param name="isIdle">Indicates if user is idle.</param>
+        public UserIdleEventArgs(bool isIdle)
         {
-            IsOutOfOrder = newState;
+            IsIdle = isIdle;
         }
         #endregion
 
         #region PROPERTIES
 
         /// <summary>
-        /// Gets if out of order.
+        /// Gets if the user is idle.
         /// </summary>
-        public bool IsOutOfOrder
+        public bool IsIdle
         {
             get;
             init;
         }
-
+        
         #endregion
-    }
+    } 
 }
