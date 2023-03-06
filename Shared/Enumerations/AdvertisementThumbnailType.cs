@@ -5,7 +5,9 @@
     /// </summary>
     public enum AdvertisementThumbnailType
     {
-        Internal = 1 ,
-        External
+        None = -1,
+        Manually,
+        YouTube,
+        Vk
     }
 }
