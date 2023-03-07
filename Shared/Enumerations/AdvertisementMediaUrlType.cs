@@ -3,10 +3,9 @@
     /// <summary>
     /// Advertisement Thumbnail Url type.
     /// </summary>
-    public enum AdvertisementThumbnailType
+    public enum AdvertisementMediaUrlType
     {
         None = 0,
-        Manually,
         YouTube,
         Vk
     }
