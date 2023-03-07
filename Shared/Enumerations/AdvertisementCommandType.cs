@@ -5,7 +5,8 @@
     /// </summary>
     public enum AdvertisementCommandType
     {
-        AddToCart = 1,
+        NotSupported = 0,
+        AddToCart,
         Launch,
         Navigate
     }
