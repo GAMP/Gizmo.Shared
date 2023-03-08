@@ -6,6 +6,7 @@
     public enum AdvertisementMediaUrlType
     {
         None = 0,
+        Custom,
         YouTube,
         Vk
     }
