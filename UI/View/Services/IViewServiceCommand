@@ -1,0 +1,16 @@
+#nullable enable
+
+using System.Collections.Generic;
+
+namespace Gizmo.UI.View.Services;
+
+/// <summary>
+/// IViewServiceCommand.
+/// </summary>
+public interface IViewServiceCommand
+{
+    string Name { get; init; }
+    string Subject { get; init; }
+    ViewServiceCommandType Type { get; init; }
+    Dictionary<string, object>? Params { get; init; }
+}
