@@ -1,11 +1,11 @@
-#nullable enable
+﻿#nullable enable
 
 using System.Collections.Generic;
 
 namespace Gizmo.UI.View.Services;
 
 /// <summary>
-/// IViewServiceCommand.
+/// Command for the Gizmo.Client.UI from a URL
 /// </summary>
 public interface IViewServiceCommand
 {

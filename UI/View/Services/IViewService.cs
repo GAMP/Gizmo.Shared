@@ -18,7 +18,14 @@ namespace Gizmo.UI.View.Services
         /// <returns>Associated task.</returns>
         Task IntializeAsync(CancellationToken ct = default);
 
-        Task ExecuteCommandAsync<TCommand>(TCommand command) where TCommand : notnull, IViewServiceCommand;
+        /// <summary>
+        /// Execute the command for the Gizmo.Client.UI from a URL
+        /// </summary>
+        /// <typeparam name="TCommand"></typeparam>
+        /// <param name="command"></param>
+        /// <param name="cTocken"></param>
+        /// <returns></returns>
+        Task ExecuteCommandAsync<TCommand>(TCommand command, CancellationToken cTocken = default) where TCommand : notnull, IViewServiceCommand;
 
         #endregion
     }
