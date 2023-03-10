@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 
 namespace Gizmo.UI.Services
@@ -30,6 +31,13 @@ namespace Gizmo.UI.Services
         /// <param name="key">Key.</param>
         /// <returns>Localized string value.</returns>
         string GetString(string key);
+
+        /// <summary>
+        /// Gets localized string value.
+        /// </summary>
+        /// <param name="enumValue">Enum value.</param>
+        /// <returns>Localized string value.</returns>
+        string GetString(Enum enumValue);
 
         /// <summary>
         /// Gets localized string value.
