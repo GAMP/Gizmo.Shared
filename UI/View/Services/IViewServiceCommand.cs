@@ -5,12 +5,24 @@ using System.Collections.Generic;
 namespace Gizmo.UI.View.Services;
 
 /// <summary>
-/// Command for the Gizmo.Client.UI from a URL
+/// Command from URL.
 /// </summary>
 public interface IViewServiceCommand
 {
-    string Name { get; init; }
-    string Subject { get; init; }
+    /// <summary>
+    /// Path of the URL without command but with host name.
+    /// </summary>
+    string Key { get; init; }
+    /// <summary>
+    /// The full path of the URL with host name.
+    /// </summary>
+    string Name { get; set; }
+    /// <summary>
+    /// Enum command type from URL path.
+    /// </summary>
     ViewServiceCommandType Type { get; init; }
+    /// <summary>
+    /// Params from URL query params.
+    /// </summary>
     Dictionary<string, object>? Params { get; init; }
 }
