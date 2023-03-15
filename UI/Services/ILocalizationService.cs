@@ -12,11 +12,6 @@ namespace Gizmo.UI.Services
         #region PROPERTIES
 
         /// <summary>
-        /// Gets a list of available regions.
-        /// </summary>
-        public IEnumerable<RegionInfo> SupportedRegions { get; }
-
-        /// <summary>
         /// Gets a list of available cultures.
         /// </summary>
         public IEnumerable<CultureInfo> SupportedCultures { get; }
@@ -76,12 +71,6 @@ namespace Gizmo.UI.Services
         /// <param name="arguments">Arguments.</param>
         /// <returns>Localized string value.</returns>
         string GetStringLower(string key, params object[] arguments);
-
-        /// <summary>
-        /// Sets current culture.
-        /// </summary>
-        /// <param name="culture">Desired culture.</param>
-        void SetCurrentCulture(CultureInfo culture);
 
         #endregion
     }
