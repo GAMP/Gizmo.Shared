@@ -30,13 +30,6 @@ namespace Gizmo.UI.Services
         /// <summary>
         /// Gets localized string value.
         /// </summary>
-        /// <param name="enumValue">Enum value.</param>
-        /// <returns>Localized string value.</returns>
-        string GetString(Enum enumValue);
-
-        /// <summary>
-        /// Gets localized string value.
-        /// </summary>
         /// <param name="key">Key.</param>
         /// <param name="arguments">Arguments.</param>
         /// <returns>Localized string value.</returns>
