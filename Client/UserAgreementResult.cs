@@ -2,5 +2,6 @@
 {
     public class UserAgreementResult
     {
+        public bool Accepted { get; set; }
     }
 }
