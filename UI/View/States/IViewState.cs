@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
 
 namespace Gizmo.UI.View.States
 {
@@ -9,7 +8,7 @@ namespace Gizmo.UI.View.States
     /// <remarks>
     /// Used by any view comopnent that is bound to properties of this object.
     /// </remarks>
-    public interface IViewState : INotifyPropertyChanged
+    public interface IViewState
     {
         #region EVENTS
         
@@ -21,11 +20,6 @@ namespace Gizmo.UI.View.States
         #endregion
 
         #region PROPERTIES
-        
-        /// <summary>
-        /// Gets or sets if change event should be reaised on propery change.
-        /// </summary>
-        bool EmmitChangedOnPropertyChange { get; set; }
 
         /// <summary>
         /// Gets if state is initialized.
@@ -51,15 +45,6 @@ namespace Gizmo.UI.View.States
         /// Raises changed event.
         /// </summary>
         void RaiseChanged();
-
-        /// <summary>
-        /// Creates property change lock.
-        /// </summary>
-        /// <returns>Dispsable lock.</returns>
-        /// <remarks>
-        /// Will block raising of <see cref="INotifyPropertyChanged.PropertyChanged"/> event as long as any locks are held.
-        /// </remarks>
-        IDisposable PropertyChangedLock();
 
         #endregion
     }
