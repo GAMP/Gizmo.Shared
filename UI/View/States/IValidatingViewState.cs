@@ -19,7 +19,7 @@
         /// Gets if model is being validated.
         /// </summary>
         /// <remarks>
-        /// This can be used as a hint if async validation being done in background.
+        /// Indicates that async validation being done in background.
         /// </remarks>
         bool IsValidating { get; set; } 
 
