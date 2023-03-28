@@ -1,5 +1,7 @@
 ﻿#nullable enable
 
+using System;
+
 namespace Gizmo.Client.UI
 {
     /// <summary>
@@ -22,5 +24,11 @@ namespace Gizmo.Client.UI
         {
             get; set;
         }
+
+        public ClientUICultureOptions CultureOptions { get; set; } = new();
+    }
+    public sealed class ClientUICultureOptions
+    {
+        public string? CurrencySymbol { get; set; }
     }
 }
