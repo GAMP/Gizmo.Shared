@@ -5,7 +5,7 @@ namespace Gizmo.Client.UI
     /// <summary>
     /// Client user interface options.
     /// </summary>
-    public class ClientUIOptions
+    public sealed class ClientUIOptions
     {
         /// <summary>
         /// Gets background.
