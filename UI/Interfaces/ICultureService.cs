@@ -17,13 +17,13 @@ namespace Gizmo.UI
         /// <summary>
         /// Gets a list of available cultures.
         /// </summary>
-        public IEnumerable<CultureInfo> AveliableClientCultures { get; }
+        public IEnumerable<CultureInfo> AveliableCultures { get; }
 
         /// <summary>
         /// Sets current UI culture.
         /// </summary>
         /// <param name="culture">Culture.</param>
-        Task SetCurrentUICultureAsync(CultureInfo culture);
-        CultureInfo GetCurrentUICulture(IEnumerable<CultureInfo> cultures, string twoLetterISOLanguageName);
+        Task SetCurrentCultureAsync(CultureInfo culture);
+        CultureInfo GetCurrentCulture(string twoLetterISOLanguageName);
     }
 }
