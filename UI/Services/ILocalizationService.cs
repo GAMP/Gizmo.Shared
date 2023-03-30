@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Globalization;
+using System.Threading.Tasks;
 
 namespace Gizmo.UI.Services
 {
@@ -13,11 +14,14 @@ namespace Gizmo.UI.Services
         /// <summary>
         /// Gets a list of available cultures.
         /// </summary>
-        public IEnumerable<CultureInfo> SupportedCultures { get; }
+        IEnumerable<CultureInfo> SupportedCultures { get; }
 
         #endregion
 
         #region FUNCTIONS
+
+        Task SetCurrentCultureAsync(CultureInfo culture);
+        CultureInfo GetCulture(string twoLetterISOLanguageName);
 
         /// <summary>
         /// Gets localized string value.
