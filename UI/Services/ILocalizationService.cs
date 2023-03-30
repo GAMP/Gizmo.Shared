@@ -9,15 +9,6 @@ namespace Gizmo.UI.Services
     /// </summary>
     public interface ILocalizationService
     {
-        #region PROPERTIES
-
-        /// <summary>
-        /// Gets a list of supported cultures.
-        /// </summary>
-        IEnumerable<CultureInfo> SupportedCultures { get; }
-
-        #endregion
-
         #region FUNCTIONS
         
         /// <summary>
@@ -27,20 +18,20 @@ namespace Gizmo.UI.Services
         /// Culture that must be set as current.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous operation.
+        /// Task.
         /// </returns>
         Task SetCurrentCultureAsync(CultureInfo culture);
-        
+
         /// <summary>
-        /// Gets culture by two letter ISO language name.
+        /// Gets supported cultures.
         /// </summary>
-        /// <param name="twoLetterISOLanguageName">
-        /// Two letter ISO language name.
+        /// <param name="culture">
+        /// Culture that must be set as current.
         /// </param>
         /// <returns>
-        /// Available culture or defailt if not found.
+        /// Supported cultures.
         /// </returns>
-        CultureInfo GetCulture(string twoLetterISOLanguageName);
+        ValueTask<IEnumerable<CultureInfo>> GetSupportedCulturesAsync();
 
         /// <summary>
         /// Gets localized string value.
