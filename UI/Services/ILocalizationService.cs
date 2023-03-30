@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Globalization;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Gizmo.UI.Services
@@ -10,7 +11,7 @@ namespace Gizmo.UI.Services
     public interface ILocalizationService
     {
         #region FUNCTIONS
-        
+
         /// <summary>
         /// Sets current culture.
         /// </summary>
@@ -25,13 +26,13 @@ namespace Gizmo.UI.Services
         /// <summary>
         /// Gets supported cultures.
         /// </summary>
-        /// <param name="culture">
-        /// Culture that must be set as current.
+        /// <param name="cToken">
+        /// Cancellation token.
         /// </param>
         /// <returns>
         /// Supported cultures.
         /// </returns>
-        ValueTask<IEnumerable<CultureInfo>> GetSupportedCulturesAsync();
+        ValueTask<IEnumerable<CultureInfo>> GetSupportedCulturesAsync(CancellationToken cToken = default);
 
         /// <summary>
         /// Gets localized string value.
