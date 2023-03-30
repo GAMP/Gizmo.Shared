@@ -8,7 +8,10 @@ namespace Gizmo.UI
 {
     public interface IInputLanguageService
     {
-        IEnumerable<CultureInfo> AvailableLanguages { get; }
+        /// <summary>
+        /// Gets available input languages.
+        /// </summary>
+        IEnumerable<CultureInfo> AvailableInputLanguages { get; }
         CultureInfo? GetLanguage(string twoLetterISOLanguageName);
         Task SetCurrentInputLanguageAsync(CultureInfo currentInputLanguage);
     }
