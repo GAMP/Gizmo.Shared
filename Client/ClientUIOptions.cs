@@ -25,10 +25,6 @@ namespace Gizmo.Client.UI
             get; set;
         }
 
-        public CultureOutputOptions CultureOutputOptions { get; set; } = new();
-    }
-    public sealed class CultureOutputOptions
-    {
-        public string? CurrencySymbol { get; set; }
+        public ClientCurrencyOptions CurrencyOptions { get; set; } = new();
     }
 }

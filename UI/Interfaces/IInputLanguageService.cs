@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Threading.Tasks;
 
-namespace Gizmo.UI.Services
+namespace Gizmo.UI
 {
     public interface IInputLanguageService
     {
-        IEnumerable<CultureInfo> AvailableLaguages { get; }
+        IEnumerable<CultureInfo> AvailableLanguages { get; }
         CultureInfo? GetLanguage(string twoLetterISOLanguageName);
         Task SetCurrentInputLanguageAsync(CultureInfo currentInputLanguage);
     }
