@@ -12,15 +12,34 @@ namespace Gizmo.UI.Services
         #region PROPERTIES
 
         /// <summary>
-        /// Gets a list of available cultures.
+        /// Gets a list of supported cultures.
         /// </summary>
         IEnumerable<CultureInfo> SupportedCultures { get; }
 
         #endregion
 
         #region FUNCTIONS
-
+        
+        /// <summary>
+        /// Sets current culture.
+        /// </summary>
+        /// <param name="culture">
+        /// Culture that must be set as current.
+        /// </param>
+        /// <returns>
+        /// A task that represents the asynchronous operation.
+        /// </returns>
         Task SetCurrentCultureAsync(CultureInfo culture);
+        
+        /// <summary>
+        /// Gets culture by two letter ISO language name.
+        /// </summary>
+        /// <param name="twoLetterISOLanguageName">
+        /// Two letter ISO language name.
+        /// </param>
+        /// <returns>
+        /// Available culture or defailt if not found.
+        /// </returns>
         CultureInfo GetCulture(string twoLetterISOLanguageName);
 
         /// <summary>
