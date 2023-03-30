@@ -1,6 +1,5 @@
 ﻿#nullable enable
 
-using System;
 
 namespace Gizmo.Client.UI
 {
@@ -24,7 +23,5 @@ namespace Gizmo.Client.UI
         {
             get; set;
         }
-
-        public ClientCurrencyOptions CurrencyOptions { get; set; } = new();
     }
 }
