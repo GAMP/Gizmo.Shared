@@ -16,7 +16,7 @@ namespace Gizmo.UI.View.Services
         /// </summary>
         /// <param name="ct">Cancellation token.</param>
         /// <returns>Associated task.</returns>
-        Task IntializeAsync(CancellationToken ct = default);
+        Task InitializeAsync(CancellationToken ct = default);
 
         /// <summary>
         /// Execute the command of the service.
