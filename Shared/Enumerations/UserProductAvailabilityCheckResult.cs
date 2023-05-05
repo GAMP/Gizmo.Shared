@@ -50,5 +50,9 @@
         /// </summary>
         [Localized("PRODUCT_ORDER_PASS_RESULT_PURCHASE_PERIOD_DISALLOWED")]
         PeriodDisallowed = 8,
+        /// <summary>
+        /// Price differs.
+        /// </summary>
+        PriceDiffers = 9,
     }
 }
