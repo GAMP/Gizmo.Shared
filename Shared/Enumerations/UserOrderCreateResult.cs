@@ -29,5 +29,9 @@
         /// Invalid user id.
         /// </summary>
         InvalidUserId = 5,
+        /// <summary>
+        /// Price differs.
+        /// </summary>
+        PriceDiffers = 6,
     }
 }
