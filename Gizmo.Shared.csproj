@@ -21,12 +21,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Compile Remove="Client\Interfaces\**" />
-	  <EmbeddedResource Remove="Client\Interfaces\**" />
-	  <None Remove="Client\Interfaces\**" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<None Include="Resources\package_icon.png">
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
