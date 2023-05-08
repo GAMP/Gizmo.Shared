@@ -1,14 +1,14 @@
 ﻿namespace Gizmo
 {
     /// <summary>
-    /// User order create result.
+    /// Order fail reason.
     /// </summary>
-    public enum UserOrderCreateResult
+    public enum OrderFailReason
     {
         /// <summary>
         /// Success.
         /// </summary>
-        Success = 0,
+        None = 0,
         /// <summary>
         /// Insufficient balance.
         /// </summary>
