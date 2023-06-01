@@ -40,6 +40,11 @@ namespace Gizmo.UI.Services
         /// </summary>
         public Type RootComponentType { get; }
 
+        /// <summary>
+        /// Gets notifications component type.
+        /// </summary>
+        public Type NotificationsComponentType { get; }
+
         #endregion
 
         #region FUNCTIONS

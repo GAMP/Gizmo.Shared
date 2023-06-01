@@ -24,6 +24,14 @@
         }
 
         /// <summary>
+        /// Gets notifications component type.
+        /// </summary>
+        public string NotificationsComponentType
+        {
+            get;set;
+        }
+
+        /// <summary>
         /// Gets or sets additional assemblies.
         /// </summary>
         public string[] AdditionalAssemblies
