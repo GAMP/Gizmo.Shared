@@ -19,6 +19,6 @@ namespace Gizmo.UI
         /// <summary>
         /// Hides host window.
         /// </summary>
-        public Task HideAsyc();
+        public Task HideAsync();
     }
 }
