@@ -1,4 +1,6 @@
-﻿using System;
+﻿#nullable enable
+
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Threading;
@@ -15,7 +17,7 @@ namespace Gizmo.UI.Services
     public interface IUICompositionService
     {
         #region EVENTS
-        public event EventHandler<EventArgs> Initialized;
+        public event EventHandler<EventArgs>? Initialized;
         #endregion
 
         #region PROPERTIES
@@ -44,6 +46,11 @@ namespace Gizmo.UI.Services
         /// Gets notifications component type.
         /// </summary>
         public Type NotificationsComponentType { get; }
+
+        /// <summary>
+        /// Gets if previously applied configuration was successfully initialized.
+        /// </summary>
+        public bool IsInitialized { get; }
 
         #endregion
 
