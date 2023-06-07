@@ -4,6 +4,8 @@ namespace Gizmo.UI
 {
     public enum AlertTypes
     {
+        None,
+
         [Description("danger")]
         Danger,
 
@@ -14,9 +16,6 @@ namespace Gizmo.UI
         Warning,
 
         [Description("info")]
-        Info,
-
-        [Description("accent")]
-        Accent
+        Info
     }
 }
