@@ -23,5 +23,21 @@ namespace Gizmo.Client.UI
         {
             get; set;
         }
+
+        /// <summary>
+        /// Whether the app details are disabled.
+        /// </summary>
+        public bool DisableAppDetails
+        {
+            get; set;
+        }
+
+        /// <summary>
+        /// Whether the product details are disabled.
+        /// </summary>
+        public bool DisableProductDetails
+        {
+            get; set;
+        }
     }
 }
