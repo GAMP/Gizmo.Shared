@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Threading;
 using System.Threading.Tasks;
@@ -10,6 +11,8 @@ namespace Gizmo.UI.Services
     /// </summary>
     public interface ILocalizationService
     {
+        event EventHandler<EventArgs> LocalizationOptionsChanged;
+
         #region FUNCTIONS
 
         /// <summary>
