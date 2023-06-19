@@ -1,11 +1,11 @@
 ﻿#nullable enable
 
-namespace Gizmo.Client.UI
+namespace Gizmo.UI
 {
     /// <summary>
     /// Currency hard options.
     /// </summary>
-    public sealed class ClientCurrencyOptions
+    public sealed class CurrencyOptions
     {
         /// <summary>
         /// Gets or sets the currency symbol.
