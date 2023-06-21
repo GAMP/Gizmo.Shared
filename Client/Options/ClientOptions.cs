@@ -13,8 +13,8 @@ namespace Gizmo.Client
     {
         [Key(0)]
         [JsonPropertyOrder(0)]
-        [JsonPropertyName("Interface")]
-        public ClientUIOptions UserInterface { get; init; } = new ClientUIOptions();
+        [JsonPropertyName("ClientInterfaceOptions")]
+        public ClientInterfaceOptions ClientInterface { get; init; } = new ClientInterfaceOptions();
 
         [Key(1)]
         [JsonPropertyOrder(1)]

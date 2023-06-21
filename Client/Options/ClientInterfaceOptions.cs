@@ -9,7 +9,7 @@ namespace Gizmo.Client.UI
     /// Client user interface options.
     /// </summary>
     [MessagePackObject()]
-    public sealed class ClientUIOptions
+    public sealed class ClientInterfaceOptions
     {
         /// <summary>
         /// Gets background.
