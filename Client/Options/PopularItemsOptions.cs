@@ -20,12 +20,6 @@ namespace Gizmo.Client.UI
         /// Gets or sets maximum popular applications to display.
         /// </summary>
         [Key(1)]
-        public int MaxPopularApplications { get; set; }
-
-        /// <summary>
-        /// Gets or sets maximum popular user executables to display.
-        /// </summary>
-        [Key(2)]
-        public int MaxPopularUserExecutables { get; set; }
+        public int MaxPopularApplications { get; set; }     
     }
 }

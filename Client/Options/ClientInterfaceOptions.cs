@@ -64,5 +64,14 @@ namespace Gizmo.Client.UI
         /// </summary>
         [Key(6)]
         public int ProductsPageMaxItemsPerRow { get; set; }
+
+        /// <summary>
+        /// Gets or sets maximum quick quick executables to display.
+        /// </summary>
+        /// <remarks>
+        /// This enforces maximum on both user favorites and quick launch executables.
+        /// </remarks>
+        [Key(7)]
+        public int QuickLaunchMaxItems { get; set; }
     }
 }
