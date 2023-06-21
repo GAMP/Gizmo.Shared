@@ -13,9 +13,9 @@ namespace Gizmo.Client.UI
         /// <summary>
         /// Defines delay between feed rotation in seconds.
         /// </summary>
-        [MessagePack.Key(0)]
-        [Range(1,int.MaxValue)]
+        [MessagePack.Key(0)]   
         [DefaultValue(5)]
+        [Range(1, int.MaxValue)]
         public int RotateEvery { get; init; }
     }
 }

@@ -17,7 +17,7 @@ namespace Gizmo.Client.UI
         /// </summary>
         [MessagePack.Key(0)]
         [DefaultValue(false)]
-        public bool IsEnabled { get; set; }
+        public bool Enabled { get; set; }
 
         /// <summary>
         /// Gets or sets path of images/videos.

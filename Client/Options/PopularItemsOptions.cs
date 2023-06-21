@@ -1,28 +1,30 @@
 ﻿#nullable enable
 
 using System.ComponentModel;
-using MessagePack;
+using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Client.UI
 {
     /// <summary>
     /// Popular items options.
     /// </summary>
-    [MessagePackObject()]
+    [MessagePack.MessagePackObject()]
     public sealed class PopularItemsOptions
     {
         /// <summary>
         /// Gets or sets maximum popular products to display.
         /// </summary>
-        [Key(0)]
+        [MessagePack.Key(0)]
         [DefaultValue(8)]
+        [Range(1,int.MaxValue)]
         public int MaxPopularProducts { get; set; }
 
         /// <summary>
         /// Gets or sets maximum popular applications to display.
         /// </summary>
-        [Key(1)]
+        [MessagePack.Key(1)]
         [DefaultValue(8)]
+        [Range(1, int.MaxValue)]
         public int MaxPopularApplications { get; set; }     
     }
 }

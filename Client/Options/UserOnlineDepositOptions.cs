@@ -1,14 +1,14 @@
 ﻿#nullable enable
 
 using System.ComponentModel;
-using MessagePack;
+using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Client.UI
 {
     /// <summary>
     /// Online deposit options.
     /// </summary>
-    [MessagePackObject()]
+    [MessagePack.MessagePackObject()]
     public sealed class UserOnlineDepositOptions
     {
         /// <summary>
@@ -17,9 +17,9 @@ namespace Gizmo.Client.UI
         /// <remarks>
         /// This will override default functionality where online depoists are available to the user if at leas one online payment method is configured.
         /// </remarks>
-        [Key(0)]
+        [MessagePack.Key(0)]
         [DefaultValue(false)]
-        public bool ShowUserOnlineDeposit { get; set; }
+        public bool Disabled { get; set; }
 
         /// <summary>
         /// Defines maximum amount for an online deposit.
@@ -27,8 +27,9 @@ namespace Gizmo.Client.UI
         /// <remarks>
         /// This amount is used to limit the amount user deposits manually witout using any defined deposit presets.
         /// </remarks>
-        [Key(1)]
-        [DefaultValue(0)]
+        [MessagePack.Key(1)]
+        [DefaultValue(100000000)]
+        [Range(typeof(decimal), "1","100000000")]
         public decimal MaximumAmount { get; set; }
     }
 }

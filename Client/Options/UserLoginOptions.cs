@@ -1,9 +1,8 @@
 ﻿using System.ComponentModel;
-using MessagePack;
 
 namespace Gizmo.Client.UI
 {
-    [MessagePackObject()]
+    [MessagePack.MessagePackObject()]
     public sealed class UserLoginOptions
     {
         /// <summary>
@@ -12,7 +11,7 @@ namespace Gizmo.Client.UI
         /// <remarks>
         /// This will disable manual user login from host. False by default.
         /// </remarks>
-        [Key(0)]
+        [MessagePack.Key(0)]
         [DefaultValue(false)]
         public bool Disabled { get; init; } = false;
     }
