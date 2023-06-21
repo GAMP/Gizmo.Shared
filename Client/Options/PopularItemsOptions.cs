@@ -23,27 +23,9 @@ namespace Gizmo.Client.UI
         public int MaxPopularApplications { get; set; }
 
         /// <summary>
-        /// Gets or sets maximum quick launch executables to display.
+        /// Gets or sets maximum popular user executables to display.
         /// </summary>
         [Key(2)]
-        public int MaxQuickLaunchExecutables { get; set; }
-
-        /// <summary>
-        /// Gets or sets maximum home page items per row to display.
-        /// </summary>
-        [Key(3)]
-        public int HomePageMaxItemsPerRow { get; set; }
-
-        /// <summary>
-        /// Gets or sets apps home page items per row to display.
-        /// </summary>
-        [Key(4)]
-        public int AppsPageMaxItemsPerRow { get; set; }
-
-        /// <summary>
-        /// Gets or sets products home page items per row to display.
-        /// </summary>
-        [Key(5)]
-        public int ProductsPageMaxItemsPerRow { get; set; }
+        public int MaxPopularUserExecutables { get; set; }
     }
 }

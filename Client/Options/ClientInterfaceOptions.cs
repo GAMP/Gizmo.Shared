@@ -46,5 +46,23 @@ namespace Gizmo.Client.UI
         {
             get; set;
         }
+
+        /// <summary>
+        /// Gets or sets maximum home page items per row to display.
+        /// </summary>
+        [Key(4)]
+        public int HomePageMaxItemsPerRow { get; set; }
+
+        /// <summary>
+        /// Gets or sets apps home page items per row to display.
+        /// </summary>
+        [Key(5)]
+        public int AppsPageMaxItemsPerRow { get; set; }
+
+        /// <summary>
+        /// Gets or sets products home page items per row to display.
+        /// </summary>
+        [Key(6)]
+        public int ProductsPageMaxItemsPerRow { get; set; }
     }
 }
