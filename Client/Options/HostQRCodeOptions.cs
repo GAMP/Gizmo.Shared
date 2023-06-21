@@ -1,5 +1,8 @@
-﻿namespace Gizmo.Client.UI
+﻿using MessagePack;
+
+namespace Gizmo.Client.UI
 {
+    [MessagePackObject]
     public sealed class HostQRCodeOptions
     {
         /// <summary>
@@ -8,6 +11,7 @@
         /// <remarks>
         /// False by default.
         /// </remarks>
+        [Key(0)]
         public bool Enabled { get; init; } = false;
     }
 }
