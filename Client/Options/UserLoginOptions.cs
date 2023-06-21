@@ -1,4 +1,5 @@
-﻿using MessagePack;
+﻿using System.ComponentModel;
+using MessagePack;
 
 namespace Gizmo.Client.UI
 {
@@ -6,12 +7,13 @@ namespace Gizmo.Client.UI
     public sealed class UserLoginOptions
     {
         /// <summary>
-        /// Indicates if user login is enbaled.
+        /// Indicates if user login is disabled.
         /// </summary>
         /// <remarks>
-        /// This will disable manual user login from host. True by default.
+        /// This will disable manual user login from host. False by default.
         /// </remarks>
         [Key(0)]
-        public bool Enabled { get; init; } = true;
+        [DefaultValue(false)]
+        public bool Disabled { get; init; } = false;
     }
 }

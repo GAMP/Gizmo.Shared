@@ -1,5 +1,6 @@
 ﻿#nullable enable
 
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using MessagePack;
 
@@ -15,6 +16,7 @@ namespace Gizmo.Client.UI
         /// Gets or sets if rotator is enabled.
         /// </summary>
         [MessagePack.Key(0)]
+        [DefaultValue(false)]
         public bool IsEnabled { get; set; }
 
         /// <summary>
@@ -27,7 +29,8 @@ namespace Gizmo.Client.UI
         /// Defines delay between feed rotation in seconds.
         /// </summary>
         [MessagePack.Key(2)]
+        [DefaultValue(5)]
         [Range(1, int.MaxValue)]
-        public int RotateEvery { get; init; } = 6;
+        public int RotateEvery { get; init; };
     }
 }

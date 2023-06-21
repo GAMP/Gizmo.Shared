@@ -1,6 +1,7 @@
 ﻿#nullable enable
 
 
+using System.ComponentModel;
 using MessagePack;
 
 namespace Gizmo.Client.UI
@@ -33,6 +34,7 @@ namespace Gizmo.Client.UI
         /// Whether the app details are disabled.
         /// </summary>
         [Key(2)]
+        [DefaultValue(false)]
         public bool DisableAppDetails
         {
             get; set;
@@ -42,6 +44,7 @@ namespace Gizmo.Client.UI
         /// Whether the product details are disabled.
         /// </summary>
         [Key(3)]
+        [DefaultValue(false)]
         public bool DisableProductDetails
         {
             get; set;
@@ -51,18 +54,21 @@ namespace Gizmo.Client.UI
         /// Gets or sets maximum home page items per row to display.
         /// </summary>
         [Key(4)]
+        [DefaultValue(8)]
         public int HomePageMaxItemsPerRow { get; set; }
 
         /// <summary>
         /// Gets or sets apps home page items per row to display.
         /// </summary>
         [Key(5)]
+        [DefaultValue(8)]
         public int AppsPageMaxItemsPerRow { get; set; }
 
         /// <summary>
         /// Gets or sets products home page items per row to display.
         /// </summary>
         [Key(6)]
+        [DefaultValue(6)]
         public int ProductsPageMaxItemsPerRow { get; set; }
 
         /// <summary>
@@ -72,6 +78,7 @@ namespace Gizmo.Client.UI
         /// This enforces maximum on both user favorites and quick launch executables.
         /// </remarks>
         [Key(7)]
+        [DefaultValue(16)]
         public int QuickLaunchMaxItems { get; set; }
     }
 }

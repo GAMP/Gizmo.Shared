@@ -1,4 +1,5 @@
-﻿using MessagePack;
+﻿using System.ComponentModel;
+using MessagePack;
 
 namespace Gizmo.Client.UI
 {
@@ -12,6 +13,7 @@ namespace Gizmo.Client.UI
         /// False by default.
         /// </remarks>
         [Key(0)]
+        [DefaultValue(false)]
         public bool Enabled { get; init; } = false;
     }
 }
