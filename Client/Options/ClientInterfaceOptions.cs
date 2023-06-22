@@ -1,6 +1,5 @@
 ﻿#nullable enable
 
-
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
@@ -16,15 +15,24 @@ namespace Gizmo.Client.UI
         /// Gets background.
         /// </summary>
         [MessagePack.Key(0)]
+        [DefaultValue(null)]
         public string? Background
         {
             get; set;
         }
 
+        [MessagePack.Key(1)]
+        [DefaultValue(null)]
+        public string? LoginBackground
+        {
+            get;set;
+        }
+
         /// <summary>
         /// Gets skin theme.
         /// </summary>
-        [MessagePack.Key(1)]
+        [MessagePack.Key(2)]
+        [DefaultValue(null)]
         public string? Theme
         {
             get; set;
@@ -33,7 +41,7 @@ namespace Gizmo.Client.UI
         /// <summary>
         /// Whether the app details are disabled.
         /// </summary>
-        [MessagePack.Key(2)]
+        [MessagePack.Key(3)]
         [DefaultValue(false)]
         public bool DisableAppDetails
         {
@@ -43,7 +51,7 @@ namespace Gizmo.Client.UI
         /// <summary>
         /// Whether the product details are disabled.
         /// </summary>
-        [MessagePack.Key(3)]
+        [MessagePack.Key(4)]
         [DefaultValue(false)]
         public bool DisableProductDetails
         {
@@ -53,7 +61,7 @@ namespace Gizmo.Client.UI
         /// <summary>
         /// Gets or sets maximum home page items per row to display.
         /// </summary>
-        [MessagePack.Key(4)]
+        [MessagePack.Key(5)]
         [DefaultValue(8)]
         [Range(1,int.MaxValue)]
         public int HomePageMaxItemsPerRow { get; set; }
@@ -61,7 +69,7 @@ namespace Gizmo.Client.UI
         /// <summary>
         /// Gets or sets apps home page items per row to display.
         /// </summary>
-        [MessagePack.Key(5)]
+        [MessagePack.Key(6)]
         [DefaultValue(8)]
         [Range(1, int.MaxValue)]
         public int AppsPageMaxItemsPerRow { get; set; }
@@ -69,7 +77,7 @@ namespace Gizmo.Client.UI
         /// <summary>
         /// Gets or sets products home page items per row to display.
         /// </summary>
-        [MessagePack.Key(6)]
+        [MessagePack.Key(7)]
         [DefaultValue(6)]
         [Range(1, int.MaxValue)]
         public int ProductsPageMaxItemsPerRow { get; set; }
@@ -80,7 +88,7 @@ namespace Gizmo.Client.UI
         /// <remarks>
         /// This enforces maximum on both user favorites and quick launch executables.
         /// </remarks>
-        [MessagePack.Key(7)]
+        [MessagePack.Key(8)]
         [DefaultValue(16)]
         [Range(1,int.MaxValue)]
         public int QuickLaunchMaxItems { get; set; }
