@@ -22,10 +22,10 @@ namespace Gizmo.Client.UI
         }
 
         /// <summary>
-        /// Gets skin.
+        /// Gets skin theme.
         /// </summary>
         [MessagePack.Key(1)]
-        public string? Skin
+        public string? Theme
         {
             get; set;
         }
