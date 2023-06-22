@@ -58,7 +58,7 @@ namespace Gizmo.Client
         [MessagePack.Key(9)]
         [JsonPropertyOrder(9)]
         [JsonPropertyName("Shop")]
-        public ClientShopOptions Shop { get; init; }
+        public ClientShopOptions Shop { get; init; } = new ClientShopOptions();
 
     }
 }
