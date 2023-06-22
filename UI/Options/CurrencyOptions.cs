@@ -16,6 +16,7 @@ namespace Gizmo.UI
         /// </summary>
         [MessagePack.Key(0)]
         [DefaultValue(null)]
+        [Range(1,10)]
         public string? CurrencySymbol { get; set; }
 
         /// <summary>
@@ -23,7 +24,7 @@ namespace Gizmo.UI
         /// </summary>
         [MessagePack.Key(1)]
         [DefaultValue(2)]
-        [Range(2, int.MaxValue)]
+        [Range(2, 4)]
         public int? CurrencyDecimalDigits { get; set; }
 
         /// <summary>

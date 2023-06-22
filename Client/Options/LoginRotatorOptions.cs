@@ -23,6 +23,7 @@ namespace Gizmo.Client.UI
         /// Gets or sets path of images/videos.
         /// </summary>
         [MessagePack.Key(1)]
+        [Range(1,255)]
         public string? Path { get; set; }
 
         /// <summary>
