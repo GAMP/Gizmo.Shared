@@ -11,9 +11,19 @@ namespace Gizmo.Client.UI
     public sealed class FeedsOptions
     {
         /// <summary>
+        /// Defines if feeds are disabled.
+        /// </summary>
+        [MessagePack.Key(0)]
+        [DefaultValue(false)]
+        public bool Disabled
+        {
+            get;init;
+        }
+
+        /// <summary>
         /// Defines delay between feed rotation in seconds.
         /// </summary>
-        [MessagePack.Key(0)]   
+        [MessagePack.Key(1)]   
         [DefaultValue(5)]
         [Range(1, int.MaxValue)]
         public int RotateEvery { get; init; }

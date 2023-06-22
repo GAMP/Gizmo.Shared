@@ -55,5 +55,10 @@ namespace Gizmo.Client
         [JsonPropertyName("UserOnlineDeposit")]
         public UserOnlineDepositOptions UserOnlineDeposit { get; init; } = new UserOnlineDepositOptions();
 
+        [MessagePack.Key(9)]
+        [JsonPropertyOrder(9)]
+        [JsonPropertyName("Shop")]
+        public ClientShopOptions Shop { get; init; }
+
     }
 }
