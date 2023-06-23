@@ -32,11 +32,11 @@ namespace Gizmo.Client.UI
         }
 
         /// <summary>
-        /// Gets skin theme.
+        /// Gets custom style sheet.
         /// </summary>
         [MessagePack.Key(2)]
         [DefaultValue(null)]
-        public string? Theme
+        public string? StyleSheet
         {
             get; set;
         }
