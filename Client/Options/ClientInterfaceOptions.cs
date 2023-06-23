@@ -21,6 +21,9 @@ namespace Gizmo.Client.UI
             get; set;
         }
 
+        /// <summary>
+        /// Gets login background.
+        /// </summary>
         [MessagePack.Key(1)]
         [DefaultValue(null)]
         public string? LoginBackground
