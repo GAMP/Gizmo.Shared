@@ -5,7 +5,7 @@ namespace Gizmo.Client
     /// <summary>
     /// User usage session change event args.
     /// </summary>
-    public sealed class UsageSessionChangedEventArgs : EventArgs
+    public sealed class UsageSessionChangeEventArgs : EventArgs
     {
         /// <summary>
         /// Creates new instance.
@@ -13,7 +13,7 @@ namespace Gizmo.Client
         /// <param name="userId">User id.</param>
         /// <param name="usageType">Current usage type.</param>
         /// <param name="timeProduct">Current time product name.</param>
-        public UsageSessionChangedEventArgs(int userId, UsageType usageType, string timeProduct)
+        public UsageSessionChangeEventArgs(int userId, UsageType usageType, string timeProduct)
         {
             UserId = userId;
             CurrentTimeProduct = timeProduct;
