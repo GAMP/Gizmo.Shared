@@ -6,10 +6,10 @@ namespace Gizmo.Client.UI
     public sealed class PasswordValidationOptions
     {
         [MessagePack.Key(0)]
-        [DefaultValue(0)]
+        [DefaultValue(1)]
         public int MinimumLength
         {
-            get;set;
+            get; set;
         }
 
         [MessagePack.Key(1)]

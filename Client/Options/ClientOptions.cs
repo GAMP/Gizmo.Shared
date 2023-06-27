@@ -70,7 +70,7 @@ namespace Gizmo.Client
 
         [MessagePack.Key(11)]
         [JsonPropertyOrder(11)]
-        [JsonPropertyName("Password")]
-        public PasswordValidationOptions PasswordValidation { get; init; } = new PasswordValidationOptions();
+        [JsonPropertyName("Validation")]
+        public ValidationOptions Validation { get; init; } = new ValidationOptions();
     }
 }
