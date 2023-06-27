@@ -67,5 +67,10 @@ namespace Gizmo.Client
         [JsonPropertyOrder(10)]
         [JsonPropertyName("Shop")]
         public ClientShopOptions Shop { get; init; } = new ClientShopOptions();
+
+        [MessagePack.Key(11)]
+        [JsonPropertyOrder(11)]
+        [JsonPropertyName("Password")]
+        public PasswordValidationOptions PasswordValidation { get; init; } = new PasswordValidationOptions();
     }
 }
