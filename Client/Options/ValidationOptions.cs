@@ -11,6 +11,6 @@ namespace Gizmo.Client.UI
         public PasswordValidationOptions Password
         {
             get; set;
-        }
+        } = new PasswordValidationOptions();
     }
 }

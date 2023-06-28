@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.ComponentModel;
+using System.Text.Json.Serialization;
 using Gizmo.Client.UI;
 using Gizmo.UI;
 
@@ -72,5 +73,25 @@ namespace Gizmo.Client
         [JsonPropertyOrder(11)]
         [JsonPropertyName("Validation")]
         public ValidationOptions Validation { get; init; } = new ValidationOptions();
+
+        /// <summary>
+        /// Resets invalid properties to their default values.
+        /// </summary>
+        public void ResetInvalidToDefault()
+        {
+            OptionsHelper.SetInvalidPropertiesToDefault(ClientInterface);
+            OptionsHelper.SetInvalidPropertiesToDefault(Logo);  
+            OptionsHelper.SetInvalidPropertiesToDefault(Currency);
+            OptionsHelper.SetInvalidPropertiesToDefault(Reservations);
+            OptionsHelper.SetInvalidPropertiesToDefault(Feeds);
+            OptionsHelper.SetInvalidPropertiesToDefault(HostQRCode);
+            OptionsHelper.SetInvalidPropertiesToDefault(LoginRotator);
+            OptionsHelper.SetInvalidPropertiesToDefault(PopularItems);
+            OptionsHelper.SetInvalidPropertiesToDefault(UserLogin);
+            OptionsHelper.SetInvalidPropertiesToDefault(UserOnlineDeposit);
+            OptionsHelper.SetInvalidPropertiesToDefault(Shop);
+            OptionsHelper.SetInvalidPropertiesToDefault(Validation);
+            OptionsHelper.SetInvalidPropertiesToDefault(Validation.Password);
+        }
     }
 }
