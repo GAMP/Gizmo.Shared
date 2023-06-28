@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Client.UI
 {
@@ -7,14 +8,16 @@ namespace Gizmo.Client.UI
     {
         [MessagePack.Key(0)]
         [DefaultValue(1)]
-        public int MinimumLength
+        [Range(1, int.MaxValue)]
+        public int? MinimumLength
         {
             get; set;
         }
 
         [MessagePack.Key(1)]
         [DefaultValue(24)]
-        public int MaximumLength
+        [Range(1, int.MaxValue)]
+        public int? MaximumLength
         {
             get; set;
         }
