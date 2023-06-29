@@ -95,5 +95,15 @@ namespace Gizmo.Client.UI
         [DefaultValue(16)]
         [Range(1,int.MaxValue)]
         public int QuickLaunchMaxItems { get; set; }
+
+        /// <summary>
+        /// Gets or sets client user interface prefered language.
+        /// </summary>
+        [MessagePack.Key(9)]
+        [DefaultValue("English")]
+        public string? PreferedLanguage
+        {
+            get; set;
+        }
     }
 }
