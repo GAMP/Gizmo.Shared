@@ -100,7 +100,7 @@ namespace Gizmo.Client.UI
         /// Gets or sets client user interface prefered language.
         /// </summary>
         [MessagePack.Key(9)]
-        [DefaultValue("English")]
+        [DefaultValue("en")]
         public string? PreferedLanguage
         {
             get; set;
