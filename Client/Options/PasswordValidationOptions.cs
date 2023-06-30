@@ -7,7 +7,7 @@ namespace Gizmo.Client.UI
     public sealed class PasswordValidationOptions
     {
         [MessagePack.Key(0)]
-        [DefaultValue(1)]
+        [DefaultValue(8)]
         [Range(1, int.MaxValue)]
         public int? MinimumLength
         {
