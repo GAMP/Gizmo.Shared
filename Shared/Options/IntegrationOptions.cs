@@ -19,7 +19,7 @@ namespace Gizmo
         [MessagePack.Key(0)]
         public string? LocationId
         {
-            get;set;
-        }
+            get; set;
+        } = null;
     }
 }
