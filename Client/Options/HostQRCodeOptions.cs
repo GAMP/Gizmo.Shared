@@ -13,6 +13,6 @@ namespace Gizmo.Client.UI
         /// </remarks>
         [MessagePack.Key(0)]
         [DefaultValue(false)]
-        public bool Enabled { get; init; } = false;
+        public bool Enabled { get; set; } = false;
     }
 }

@@ -32,6 +32,6 @@ namespace Gizmo.Client.UI
         [MessagePack.Key(2)]
         [DefaultValue(5)]
         [Range(1, int.MaxValue)]
-        public int RotateEvery { get; init; }
+        public int RotateEvery { get; set; }
     }
 }
