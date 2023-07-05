@@ -24,7 +24,7 @@ namespace Gizmo.UI
         /// </summary>
         [MessagePack.Key(1)]
         [DefaultValue(2)]
-        [Range(2, 4)]
+        [Range(0, 4)]
         public int? CurrencyDecimalDigits { get; set; }
 
         /// <summary>
