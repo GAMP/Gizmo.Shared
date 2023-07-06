@@ -29,8 +29,8 @@ namespace Gizmo.Client.UI
         /// This amount is used to limit the amount user deposits manually witout using any defined deposit presets.
         /// </remarks>
         [MessagePack.Key(1)]
-        [DefaultValue(typeof(decimal), "1000")]
-        [Range(typeof(decimal), "1", "1000")]
+        [DefaultValue(typeof(decimal), "100000")]
+        [Range(typeof(decimal), "1", "100000")]
         public decimal MaximumAmount { get; set; }
     }
 }
