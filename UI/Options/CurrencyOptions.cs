@@ -16,7 +16,7 @@ namespace Gizmo.UI
         /// </summary>
         [MessagePack.Key(0)]
         [DefaultValue(null)]
-        [Range(1,10)]
+        [StringLength(10,MinimumLength = 1)]
         public string? CurrencySymbol { get; set; }
 
         /// <summary>
