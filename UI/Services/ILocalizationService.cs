@@ -13,6 +13,8 @@ namespace Gizmo.UI.Services
     {
         event EventHandler<EventArgs> LocalizationOptionsChanged;
 
+        event EventHandler<EventArgs> LanguageChanged;
+
         #region FUNCTIONS
 
         /// <summary>
