@@ -16,7 +16,7 @@ namespace Gizmo.Client.UI
         /// </summary>
         [MessagePack.Key(0)]
         [DefaultValue(8)]
-        [Range(1,int.MaxValue)]
+        [Range(0, int.MaxValue)]
         public int MaxPopularProducts { get; set; }
 
         /// <summary>
@@ -24,7 +24,7 @@ namespace Gizmo.Client.UI
         /// </summary>
         [MessagePack.Key(1)]
         [DefaultValue(8)]
-        [Range(1, int.MaxValue)]
-        public int MaxPopularApplications { get; set; }     
+        [Range(0, int.MaxValue)]
+        public int MaxPopularApplications { get; set; }
     }
 }
