@@ -105,5 +105,15 @@ namespace Gizmo.Client.UI
         {
             get; set;
         }
+
+        /// <summary>
+        /// Whether the user lock is disabled.
+        /// </summary>
+        [MessagePack.Key(10)]
+        [DefaultValue(false)]
+        public bool DisableUserLock
+        {
+            get; set;
+        }
     }
 }

@@ -79,6 +79,11 @@ namespace Gizmo.Client
         [JsonPropertyName("Integration")]
         public IntegrationOptions Integration { get; init; } = new IntegrationOptions();
 
+        [MessagePack.Key(13)]
+        [JsonPropertyOrder(13)]
+        [JsonPropertyName("Apps")]
+        public ClientAppsOptions Apps { get; init; } = new ClientAppsOptions();
+
         /// <summary>
         /// Resets invalid properties to their default values.
         /// </summary>
@@ -98,6 +103,7 @@ namespace Gizmo.Client
             OptionsHelper.SetInvalidPropertiesToDefault(Validation);
             OptionsHelper.SetInvalidPropertiesToDefault(Validation.Password);
             OptionsHelper.SetInvalidPropertiesToDefault(Integration);
+            OptionsHelper.SetInvalidPropertiesToDefault(Apps);
         }
     }
 }
