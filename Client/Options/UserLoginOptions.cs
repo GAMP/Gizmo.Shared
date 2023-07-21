@@ -9,7 +9,7 @@ namespace Gizmo.Client.UI
         /// Indicates if user login is disabled.
         /// </summary>
         /// <remarks>
-        /// This will disable manual user login from host. False by default.
+        /// This will disable user login form in the UI. False by default.
         /// </remarks>
         [MessagePack.Key(0)]
         [DefaultValue(false)]
