@@ -5,9 +5,8 @@
     /// </summary>
     public enum ViewServiceCommandType
     {
-        Add = 1,
-        Delete,
-        Launch,
-        Navigate
+        Navigate = 1,
+        Add = 2,
+        Launch = 3,
     }
 }
