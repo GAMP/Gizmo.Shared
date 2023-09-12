@@ -114,5 +114,9 @@ namespace Gizmo.Server.Exceptions
         /// Provider exception.
         /// </summary>
         Provider=24,
+        /// <summary>
+        /// Assitance request.
+        /// </summary>
+        AssistanceRequest = 25,
     }
 }
