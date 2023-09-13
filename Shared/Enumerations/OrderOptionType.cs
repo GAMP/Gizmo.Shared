@@ -27,6 +27,10 @@ namespace Gizmo
         /// <summary>
         /// If the product is service.
         /// </summary>
-        IsService = 8
+        IsService = 8,
+        /// <summary>
+        /// If the product is marked product.
+        /// </summary>
+        IsMarkedProduct = 16
     }
 }
