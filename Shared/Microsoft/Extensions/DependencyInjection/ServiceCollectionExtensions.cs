@@ -65,7 +65,7 @@ namespace Microsoft.Extensions.DependencyInjection
                     }
                     else if(extendedType.IsClass)
                     {
-                        if(!service.Type.IsSubclassOf(extendedType))
+                        if(service.Type != extendedType && !service.Type.IsSubclassOf(extendedType))
                             throw new ArgumentException($"Specified service type {service.Type} is not subclass of {extendedType}.");
                     }
                     else
