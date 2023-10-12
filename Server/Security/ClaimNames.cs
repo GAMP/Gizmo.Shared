@@ -5,8 +5,8 @@
     /// </summary>
     public static class ClaimNames
     {
-        public const string OperatorRoleName = "Operator";
-        public const string UserRoleName = "User";
+        public const string OperatorRoleName = "operator";
+        public const string UserRoleName = "user";
         public const string Branch = "branch";
         public const string Register = "register";
     }
