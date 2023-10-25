@@ -115,5 +115,15 @@ namespace Gizmo.Client.UI
         {
             get; set;
         }
+
+        /// <summary>
+        /// Whether the user purchase history is disabled.
+        /// </summary>
+        [MessagePack.Key(11)]
+        [DefaultValue(false)]
+        public bool DisableUserPurchaseHistory
+        {
+            get; set;
+        }
     }
 }
