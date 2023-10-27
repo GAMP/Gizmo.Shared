@@ -89,6 +89,11 @@ namespace Gizmo.Client
         [JsonPropertyName("Home")]
         public ClientHomeOptions Home { get; init; } = new ClientHomeOptions();
 
+        [MessagePack.Key(15)]
+        [JsonPropertyOrder(15)]
+        [JsonPropertyName("AssistanceRequest")]
+        public AssistanceRequestOptions AssistanceRequest { get; init; } = new AssistanceRequestOptions();
+
         /// <summary>
         /// Resets invalid properties to their default values.
         /// </summary>
@@ -110,6 +115,7 @@ namespace Gizmo.Client
             OptionsHelper.SetInvalidPropertiesToDefault(Integration);
             OptionsHelper.SetInvalidPropertiesToDefault(Apps);
             OptionsHelper.SetInvalidPropertiesToDefault(Home);
+            OptionsHelper.SetInvalidPropertiesToDefault(AssistanceRequest);
         }
     }
 }
