@@ -118,5 +118,9 @@ namespace Gizmo.Server.Exceptions
         /// Assitance request.
         /// </summary>
         AssistanceRequest = 25,
+        /// <summary>
+        /// HTTP exception.
+        /// </summary>
+        HttpException = 26,
     }
 }
