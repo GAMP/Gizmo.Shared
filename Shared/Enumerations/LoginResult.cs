@@ -120,5 +120,10 @@ namespace Gizmo
         /// </summary>
         [Localized("LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED")]
         OperatorUserGroupDenied = 524288,
+        /// <summary>
+        /// Login is restricted by age-hour restrictions.
+        /// </summary>
+        [Localized("LOGIN_RESULT_RESTRICTED_BY_AGE")]
+        RestrictedByAge = 1048576,
     }
 }
