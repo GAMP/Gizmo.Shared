@@ -1,6 +1,4 @@
-﻿using Gizmo.Shared.Web.Reports.Interfaces;
-
-namespace GizmoWeb.Reports
+﻿namespace Gizmo.Web.Reports
 {
     /// <summary>
     /// Report filter used when report module does not support any filters.
