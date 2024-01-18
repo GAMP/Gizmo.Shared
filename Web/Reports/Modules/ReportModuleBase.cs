@@ -9,10 +9,19 @@ namespace Gizmo.Shared.Web.Reports
     /// </summary>
     public abstract class ReportModuleBase<TReportFilter> : IReportModule where TReportFilter : IReportFilter, new()
     {
-        private readonly TReportFilter _filterModel = new();
+        protected TReportFilter _filterModel = new();
 
         public IReportFilter Filter => _filterModel;
-     
-        public abstract Task<object> GnerateReportAsync(ReportRangeFilter reportRangeFilter, CancellationToken cancellationToken = default);      
+
+        /// <summary>
+        /// Gets concrete filter.
+        /// </summary>
+        /// <remarks>
+        /// This model can be used to construct the desired report filter in <see cref="GenerateReportAsync(ReportRangeFilter, CancellationToken)"/> method.<br></br>
+        /// All the filter parameters will be set and validated before calling <see cref="GenerateReportAsync(ReportRangeFilter, CancellationToken)"/>.
+        /// </remarks>
+        protected TReportFilter FilterConcrete => _filterModel;
+    
+        public abstract Task<object> GenerateReportAsync(ReportRangeFilter reportRangeFilter, CancellationToken cancellationToken = default);      
     }
 }
