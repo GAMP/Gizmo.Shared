@@ -5,7 +5,7 @@ namespace Gizmo.Web.Reports
     /// <summary>
     /// This attribute must be used on any property present in the filter model that will be used for filtering.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Property)]
+    [AttributeUsage(AttributeTargets.Property,AllowMultiple =false)]
     public sealed class ReportFilterFieldAttribute : Attribute
     {
         /// <summary>

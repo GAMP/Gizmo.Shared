@@ -5,7 +5,7 @@ namespace Gizmo.Web.Reports
     /// <summary>
     /// Identifies report modules.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Class)]
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
     public class ReportModuleAttribute : Attribute 
     {
         /// <summary>
