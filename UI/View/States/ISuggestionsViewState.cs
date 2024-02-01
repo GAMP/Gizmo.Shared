@@ -37,5 +37,11 @@ namespace Gizmo.UI.View.States
     {
         /// <inheritdoc cref="ISuggestionsViewState.Suggestions"/>
         new IEnumerable<TSuggestion> Suggestions { get; }
+
+        /// <summary>
+        /// Sets current suggestions.
+        /// </summary>
+        /// <param name="suggestions">Suggestions.</param>
+        void SetSuggestions(IEnumerable<TSuggestion> suggestions);
     }
 }
