@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿#nullable enable
+
+using System.Collections.Generic;
 
 namespace Gizmo.UI.View.States
 {
@@ -25,9 +27,7 @@ namespace Gizmo.UI.View.States
     /// <typeparam name="TSuggestion">Suggestion view state type.</typeparam>
     public interface ISuggestionsViewState<TSuggestion> : ISuggestionsViewState where TSuggestion : ISuggestionViewState
     {
-        /// <summary>
-        /// Gets suggestions.
-        /// </summary>
+        /// <inheritdoc cref="ISuggestionsViewState.Suggestions"/>
         new IEnumerable<TSuggestion> Suggestions { get; }
     }
 }
