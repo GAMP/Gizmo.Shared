@@ -18,6 +18,14 @@ namespace Gizmo.UI.View.States
         /// Gets current suggestions results.
         /// </summary>
         IEnumerable<ISuggestionViewState> Suggestions { get; }
+
+        /// <summary>
+        /// Resets suggestions.
+        /// </summary>
+        /// <remarks>
+        /// Since we dont have write access to <see cref="Suggestions"/> through the interface this method is required for clearing current suggestions.
+        /// </remarks>
+        void ResetSuggestions();
     }
 
 
