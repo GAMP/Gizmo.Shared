@@ -60,7 +60,7 @@ namespace Microsoft.Extensions.Configuration
 
             //if previous service was set unsubscribe from options change event
             if (_service != null)
-                _service.Changed += StoreOptionsChanged;
+                _service.Changed -= StoreOptionsChanged;
 
             _service = service;
             _service.Changed += StoreOptionsChanged;
