@@ -10,7 +10,7 @@ namespace Microsoft.Extensions.Options
     /// Options store service implementation interface.
     /// </summary>
     /// <remarks>
-    /// Provides functionality of storing options in store (database,api etc).
+    /// Provides functionality of storing/reading options in store (database,api etc).
     /// </remarks>
     public interface IOptionsStoreService
     {
@@ -66,11 +66,11 @@ namespace Microsoft.Extensions.Options
         Task<StoreOptionsReadPack> ReadAsync(Type type, CancellationToken cancellationToken);
 
         /// <summary>
-        /// Reads all configured options from the store.
+        /// Reads all app domain wide options from the store.
         /// </summary>
         /// <param name="cancellationToken">Cancellation token.</param>
         /// <returns>All read options pack.</returns>
-        Task<IEnumerable<StoreOptionsReadPack>> ReadAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<StoreOptionsReadPack>> ReadAllAsync(CancellationToken cancellationToken);
 
         #endregion
     }

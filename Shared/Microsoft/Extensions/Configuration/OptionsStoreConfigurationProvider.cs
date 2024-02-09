@@ -50,7 +50,7 @@ namespace Microsoft.Extensions.Configuration
 
             try
             {
-                var allOptions = await Source.Service.ReadAsync(default)
+                var allOptions = await Source.Service.ReadAllAsync(default)
                     .ConfigureAwait(false);
 
                 foreach (var optionPack in allOptions)
