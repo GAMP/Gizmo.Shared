@@ -84,6 +84,7 @@ namespace Gizmo.UI.Services
         /// <returns>Localized string value.</returns>
         string GetStringLower(string key, params object[] arguments);
 
+
         #endregion
     }
 }
