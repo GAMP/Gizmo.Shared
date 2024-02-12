@@ -13,13 +13,13 @@ namespace Gizmo.Server.Options
     [StoreOptionsGroup("GENERAL")]
     public sealed class GeneralOptions : IStoreOptions
     {
-        [Name("Default language", "SERVER_OPTION_DEFAULT_LANGUAGE_NAME")]
-        [ExtendedDescription("Specifies default language", "SERVER_OPTION_DEFAULT_LANGUAGE_DESCRIPTION")]
-        [StoreOptionKey("DEFAULT_LANGUAGE")]
+        [Name("Default culture", "SERVER_OPTION_DEFAULT_CULTURE_NAME")]
+        [ExtendedDescription("Specifies default culture", "SERVER_OPTION_DEFAULT_CULTURE_DESCRIPTION")]
+        [StoreOptionKey("DEFAULT_CULTURE")]
         [DefaultValue("en-US")]
-        public string? DefaultLanguage
+        public string? DefaultCulture
         {
-            get;init;
-        }
+            get; init;
+        } = "en-US";
     }
 }
