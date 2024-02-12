@@ -1,6 +1,7 @@
 ﻿#nullable enable
 
 using Microsoft.Extensions.Options;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Server.Options
@@ -22,9 +23,18 @@ namespace Gizmo.Server.Options
         [Name("Default currency", "SERVER_OPTION_CURRENCY_CURRENCY_NAME")]
         [ExtendedDescription("Specifies default currency", "SERVER_OPTION_CURRENCY_CURRENCY_DESCRIPTION")]
         [StoreOptionKey("CURRENCY_CODE")]
-        public string CurrencyCode
+        [DefaultValue(null)]
+        public string? CurrencyCode
         {
             get; init;
-        } = string.Empty; 
+        } = string.Empty;
+
+        [Name("Currency symbol", "SERVER_OPTION_CURRENCY_SYMBOL_NAME")]
+        [ExtendedDescription("Specifies currency symbol", "SERVER_OPTION_CURRENCY_SYMBOL_DESCRIPTION")]
+        [DefaultValue(null)]
+        public string? CurrencySymbol
+        {
+            get;init;
+        } = string.Empty;
     }
 }
