@@ -27,7 +27,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Business day start", "SERVER_OPTION_BUSINESS_DAY_START_NAME_DESCRIPTION")]
         [StoreOptionKey("BUSINESS_DAY_START")]
         [MessagePack.Key(1)]
-        public string? BuisinessDayStart
+        public string? BusinessDayStart
         {
             get; init;
         }
