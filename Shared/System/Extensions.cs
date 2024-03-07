@@ -10,7 +10,7 @@ namespace System
         /// <typeparam name="T">The type of the attribute you want to retrieve</typeparam> 
         /// <param name="value">The enum value</param> 
         /// <returns>The attribute of type T that exists on the enum value</returns> 
-        public static T GetAttributeOfType<T>(this Enum value) where T : Attribute
+        public static T GetAttribute<T>(this Enum value) where T : Attribute
         {
             var type = value.GetType();
             var memInfo = type.GetMember(value.ToString());
