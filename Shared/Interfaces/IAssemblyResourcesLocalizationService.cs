@@ -37,7 +37,19 @@ namespace Gizmo
         /// This function will always return empty string if either resource not found or <see cref="NameAttribute.Name"/> not set or <paramref name="nameAttribute"/> is equal to null.
         /// </remarks>
         /// <exception cref="ArgumentException">thrown in case assembly name cant be extracted from <paramref name="type"/>specified.</exception>
-        string GetLocalizedStringValue(Type type, NameAttribute nameAttribute); 
+        string GetLocalizedStringValue(Type type, NameAttribute nameAttribute);
+
+        /// <summary>
+        /// Gets localized string value.
+        /// </summary>
+        /// <param name="enumValue">Enum value.</param>
+        /// <remarks>
+        /// This function will return value set on <see cref="NameAttribute.Name"/> by default if localized resource is not found.<br></br>
+        /// This function will always return empty string if either resource not found or <see cref="NameAttribute.Name"/> not set.
+        /// </remarks>
+        /// <returns>Found localized string value.</returns>
+        /// <exception cref="ArgumentException">thrown in case assembly name cant be extracted from <paramref name="type"/>specified.</exception>
+        string GetLocalizedStringValue(Enum enumValue);
 
         #endregion
     }
