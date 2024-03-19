@@ -8,6 +8,7 @@
         Product = 0,
         TimeProduct = 1,
         FixedTime = 2,
-        SessionTime = 3
+        SessionTime = 3,
+        Deposit = 4,
     }
 }
