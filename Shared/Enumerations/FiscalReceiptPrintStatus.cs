@@ -14,7 +14,7 @@
         [Localized("FISCAL_RECEIPT_PRINT_STATUS_NONE")]
         None = 0,
         /// <summary>
-        /// Receipt print was required but overriden by operator or non fiscal payment method.
+        /// Receipt print was required but overridden by operator or non fiscal payment method.
         /// </summary>
         [Localized("FISCAL_RECEIPT_PRINT_STATUS_OVERRIDE")]
         Override = 1,
