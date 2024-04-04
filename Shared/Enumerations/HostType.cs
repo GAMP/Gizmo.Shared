@@ -8,11 +8,11 @@
         /// <summary>
         /// Computer.
         /// </summary>
-        Computer,
+        Computer = 0,
 
         /// <summary>
         /// Endpoint.
         /// </summary>
-        Endpoint
+        Endpoint = 1,
     }
 }
