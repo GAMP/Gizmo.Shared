@@ -105,22 +105,26 @@ namespace Gizmo.Server.Exceptions
         /// <summary>
         /// Fiscal printer.
         /// </summary>
-        FiscalPrinter= 22,
+        FiscalPrinter = 22,
         /// <summary>
         /// Payment request exception.
         /// </summary>
-        PaymentRequest =23,
+        PaymentRequest = 23,
         /// <summary>
         /// Provider exception.
         /// </summary>
-        Provider=24,
+        Provider = 24,
         /// <summary>
-        /// Assitance request.
+        /// Assistance request.
         /// </summary>
         AssistanceRequest = 25,
         /// <summary>
         /// HTTP response exception.
         /// </summary>
         HttpResponseException = 26,
+        /// <summary>
+        /// Remote control exception.
+        /// </summary>
+        RemoteControlException = 27,
     }
 }
