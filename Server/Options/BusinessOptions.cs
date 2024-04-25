@@ -21,7 +21,7 @@ namespace Gizmo.Server.Options
         public string BusinessName
         {
             get; init;
-        } = string.Empty;
+        } = string.Empty;  
 
         [Name("Business day start", "SERVER_OPTION_BUSINESS_DAY_START_NAME")]
         [ExtendedDescription("Business day start", "SERVER_OPTION_BUSINESS_DAY_START_NAME_DESCRIPTION")]
@@ -48,6 +48,15 @@ namespace Gizmo.Server.Options
         public DayOfWeek? BusinessStartWeekDay
         {
             get; init;
+        }
+
+        [Name("Business email", "SERVER_OPTION_BUSINESS_EMAIL_NAME")]
+        [ExtendedDescription("Business email", "SERVER_OPTION_BUSINESS_EMAIL_DESCRIPTION")]
+        [StoreOptionKey("BUSINESS_EMAIL")]
+        [MessagePack.Key(4)]
+        public string? BusinessEmail
+        {
+            get; set;
         }
     }
 }
