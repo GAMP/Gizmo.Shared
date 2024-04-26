@@ -5,10 +5,17 @@
     /// </summary>
     public enum TaxSystems
     {
-        RU_Main = 0,
-        RU_SimplifiedSystemIncomeTaxation = 1,
-        RU_SimplifiedSystemIncomeMinusExpenses = 2,
-        RU_SingleAgriculturalTax = 3,
-        RU_PatentSystem = 4    
+        /// <summary>
+        /// Undefined.
+        /// </summary>
+        /// <remarks>
+        /// Had to keep this enum in order to preserve compatibility with existing configuration.
+        /// </remarks>
+        Undefined = 0,
+        RU_Main = 1,
+        RU_SimplifiedSystemIncomeTaxation = 2,
+        RU_SimplifiedSystemIncomeMinusExpenses = 3,
+        RU_SingleAgriculturalTax = 4,
+        RU_PatentSystem = 5    
     }
 }
