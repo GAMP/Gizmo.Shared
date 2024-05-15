@@ -6,7 +6,7 @@ namespace Gizmo.UI.View.States
     /// View state interface.
     /// </summary>
     /// <remarks>
-    /// Used by any view comopnent that is bound to properties of this object.
+    /// Used by any view component that is bound to properties of this object.
     /// </remarks>
     public interface IViewState
     {
