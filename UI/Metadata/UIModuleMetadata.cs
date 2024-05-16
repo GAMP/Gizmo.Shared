@@ -44,6 +44,11 @@ namespace Gizmo.UI
         /// </summary>
         public string Guid { get; init; }
 
+        /// <summary>
+        /// Gets module icon.
+        /// </summary>
+        public string Icon { get; init; }
+
         #endregion
     }
 }
