@@ -58,5 +58,14 @@ namespace Gizmo.Server.Options
         {
             get; set;
         }
+
+        [Name("Business web site", "SERVER_OPTION_BUSINESS_WEB_SITE_NAME")]
+        [ExtendedDescription("Business web site", "SERVER_OPTION_BUSINESS_WEB_SITE_DESCRIPTION")]
+        [StoreOptionKey("BUSINESS_WEB_SITE")]
+        [MessagePack.Key(5)]
+        public string? BusinessWebSite
+        {
+            get;set;
+        }
     }
 }
