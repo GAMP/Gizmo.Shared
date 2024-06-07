@@ -6,7 +6,7 @@ namespace Gizmo.UI
     /// Notifications host interface.
     /// </summary>
     /// <remarks>
-    /// An manipulation interface used for overlay area that hosts notfications.<br></br>
+    /// An manipulation interface used for overlay area that hosts notifications.<br></br>
     /// In WPF it represents an overlay window, in web projects this should be an page overlay.
     /// </remarks>
     public interface INotificationsHost
