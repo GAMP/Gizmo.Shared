@@ -10,7 +10,7 @@ namespace Gizmo
     public enum LoginResult
     {
         /// <summary>
-        /// Login was sucessfull.
+        /// Login was successful.
         /// </summary>
         [Localized("LOGIN_RESULT_SUCESS")]
         Sucess = 0,
@@ -78,6 +78,7 @@ namespace Gizmo
         /// <summary>
         /// Login in progress.
         /// </summary>
+        [Obsolete()]
         [Localized("LOGIN_RESULT_IN_PROGRESS")]
         [Name("In progress", "EXCEPTION_ERROR_LOGIN_RESULT_LOGIN_IN_PROGRESS_NAME")]
         [ExtendedDescription("Login in progress", "EXCEPTION_ERROR_LOGIN_RESULT_LOGIN_IN_PROGRESS_DESCRIPTION")]
@@ -85,6 +86,7 @@ namespace Gizmo
         /// <summary>
         /// Logout in progress.
         /// </summary>
+        [Obsolete()]
         [Localized("LOGIN_RESULT_IN_PROGRESS")]
         [Name("In progress", "EXCEPTION_ERROR_LOGIN_RESULT_LOGOUT_IN_PROGRESS_NAME")]
         [ExtendedDescription("Logout in progress", "EXCEPTION_ERROR_LOGIN_RESULT_LOGOUT_IN_PROGRESS_DESCRIPTION")]
@@ -94,21 +96,21 @@ namespace Gizmo
         /// </summary>
         [Localized("LOGIN_RESULT_INVALID_USER")]
         [Name("Invalid user", "EXCEPTION_ERROR_LOGIN_RESULT_INVALID_USER_ID_NAME")]
-        [ExtendedDescription("The specified user is invalid", "EXCEPTION_ERROR_LOGIN_RESULT_INVALID_USER_ID_DESCRIPTION")]
+        [ExtendedDescription("The specified user id is invalid", "EXCEPTION_ERROR_LOGIN_RESULT_INVALID_USER_ID_DESCRIPTION")]
         InvalidUserId = 2048,
         /// <summary>
         /// Invalid host id.
         /// </summary>
         [Localized("LOGIN_RESULT_INVALID_HOST")]
         [Name("Invalid host", "EXCEPTION_ERROR_LOGIN_RESULT_INVALID_HOST_ID_NAME")]
-        [ExtendedDescription("The specified host is invalid", "EXCEPTION_ERROR_LOGIN_RESULT_INVALID_HOST_ID_DESCRIPTION")]
+        [ExtendedDescription("The specified host id is invalid", "EXCEPTION_ERROR_LOGIN_RESULT_INVALID_HOST_ID_DESCRIPTION")]
         InvalidHostId = 4096,
         /// <summary>
         /// Maximum sessions reached.
         /// </summary>
         [Localized("LOGIN_RESULT_MAX_SESSIONS_REACHED")]
         [Name("Maximum sessions reached", "EXCEPTION_ERROR_LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_NAME")]
-        [ExtendedDescription("Login failed because maximum sessions reached", "EXCEPTION_ERROR_LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_DESCRIPTION")]
+        [ExtendedDescription("Login failed due to maximum sessions reached", "EXCEPTION_ERROR_LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_DESCRIPTION")]
         MaximumSessionsReached = 8192,
         /// <summary>
         /// Insufficient balance.
@@ -122,7 +124,7 @@ namespace Gizmo
         /// </summary>
         [Localized("LOGIN_RESULT_INVALID_USER_GROUP")]
         [Name("Invalid user group", "EXCEPTION_ERROR_LOGIN_RESULT_INVALID_USER_GROUP_ID_NAME")]
-        [ExtendedDescription("The specified user group is invalid", "EXCEPTION_ERROR_LOGIN_RESULT_INVALID_USER_GROUP_ID_DESCRIPTION")]
+        [ExtendedDescription("The specified user group id is invalid", "EXCEPTION_ERROR_LOGIN_RESULT_INVALID_USER_GROUP_ID_DESCRIPTION")]
         InvalidUserGroupId = 32768,
         /// <summary>
         /// Slot in use.
