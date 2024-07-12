@@ -2,12 +2,13 @@
 {
     public enum AlertDialogButtons
     {
-        OK = 0,
-        OKCancel = 1,
-        AbortRetryIgnore = 2,
-        YesNoCancel = 3,
-        YesNo = 4,
-        RetryCancel = 5,
-        CancelTryContinue = 6
+        None = 0,
+        OK = 1,
+        OKCancel = 2,
+        AbortRetryIgnore = 3,
+        YesNoCancel = 4,
+        YesNo = 5,
+        RetryCancel = 6,
+        CancelTryContinue = 7
     }
 }
