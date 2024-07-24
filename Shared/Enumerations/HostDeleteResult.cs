@@ -1,11 +1,8 @@
-﻿using System;
-
-namespace Gizmo
+﻿namespace Gizmo
 {
     /// <summary>
     /// Host delete result.
     /// </summary>
-    [Flags()]
     public enum HostDeleteResult
     {
         Success = 0

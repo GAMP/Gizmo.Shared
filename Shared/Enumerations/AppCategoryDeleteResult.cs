@@ -1,11 +1,8 @@
-﻿using System;
-
-namespace Gizmo
+﻿namespace Gizmo
 {
     /// <summary>
     /// App category delete result.
     /// </summary>
-    [Flags()]
     public enum AppCategoryDeleteResult
     {
         Success = 0
