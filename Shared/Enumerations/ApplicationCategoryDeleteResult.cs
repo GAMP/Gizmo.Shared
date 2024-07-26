@@ -1,9 +1,9 @@
 ﻿namespace Gizmo
 {
     /// <summary>
-    /// App category delete result.
+    /// Application category delete result.
     /// </summary>
-    public enum AppCategoryDeleteResult
+    public enum ApplicationCategoryDeleteResult
     {
         Success = 0
     }
