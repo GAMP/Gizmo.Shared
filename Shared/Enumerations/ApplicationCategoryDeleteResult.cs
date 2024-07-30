@@ -20,6 +20,13 @@ namespace Gizmo
         /// </summary>
         [Name("Failed to delete application category", nameof(Resources.APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME))]
         [ExtendedDescription("Failed to delete application category", nameof(Resources.APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION))]
-        Failed = 1
+        Failed = 1,
+        /// <summary>
+        /// Failed to delete application category.
+        /// </summary>
+        [Name("Failed to delete application category", nameof(Resources.APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_NAME))]
+        [ExtendedDescription("Failed to delete application category", nameof(Resources.APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_DESCRIPTION))]
+        NonEmpty = 2,
+
     }
 }
