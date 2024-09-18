@@ -15,7 +15,7 @@ namespace Microsoft.Extensions.DependencyInjection
     public static class TypeHelper
     {
         #region FUNCTIONS
-        
+
         /// <summary>
         /// Gets type short name.
         /// </summary>
@@ -68,7 +68,39 @@ namespace Microsoft.Extensions.DependencyInjection
                         return Enumerable.Empty<Type>();
                     }
                 });
-        }     
+        }
+
+        /// <summary>
+        /// Gets all types implementing <typeparamref name="TInterface"/> in specified assembly.
+        /// </summary>
+        /// <typeparam name="TInterface">Interface type.</typeparam>
+        /// <param name="assembly">Assembly to search.</param>
+        /// <returns>Found types.</returns>
+        /// <exception cref="ArgumentException">thrown in case <typeparamref name="TInterface"/> type does not represent an interface.</exception>
+        public static IEnumerable<Type> GetTypes<TInterface>(Assembly assembly)
+        {
+            //get interface type
+            var interfaceType = typeof(TInterface);
+
+            //check if type specified represents interface
+            if (!interfaceType.IsInterface)
+                throw new ArgumentException("Only interface types are supported.", nameof(interfaceType));
+
+            try
+            {
+                return assembly.GetTypes()
+                .Where(t => t.IsAbstract == false && t.IsInterface == false)
+                .Where(t => t.GetInterfaces().Any(ifc => ifc == interfaceType));
+            }
+            catch (ReflectionTypeLoadException)
+            {
+                //catch type load exceptions
+                //this will happen if one of the types in assembly cant be loaded
+
+                return Enumerable.Empty<Type>();
+            }
+
+        }
 
         /// <summary>
         /// Gets all types implementing <typeparamref name="TInterface"/> and their guid being equal to value specified by <paramref name="guid"/>.
