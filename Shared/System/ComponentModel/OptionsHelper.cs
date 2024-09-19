@@ -16,7 +16,7 @@ namespace System.ComponentModel
         }
 
         /// <summary>
-        /// Setst default value for specified property.
+        /// Sets default value for specified property.
         /// </summary>
         /// <param name="propertyName">Property name.</param>
         public static void SetDefault(object instance, string propertyName)
@@ -35,7 +35,7 @@ namespace System.ComponentModel
         /// <returns>Grouped validation results.</returns>
         public static IEnumerable<IGrouping<string, ValidationResult>> GetValidationResults(object instance)
         {
-            //create new validation contect
+            //create new validation context
             var validationContext = new ValidationContext(instance, null, null);
 
             //create store for validation results

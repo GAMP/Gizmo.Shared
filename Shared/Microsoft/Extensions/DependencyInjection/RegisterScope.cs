@@ -14,7 +14,7 @@
         /// </summary>
         Scoped=1,
         /// <summary>
-        /// Singelton.
+        /// Singleton.
         /// </summary>
         Singelton=0,
     }

@@ -4,6 +4,7 @@ using System.Reflection;
 using System;
 using System.Linq;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.Extensions.Options;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -24,7 +25,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <exception cref="ArgumentException">thrown in case the registration requirements are not met.</exception>
         /// <remarks>
         /// In order to be registered services must have <see cref="RegisterAttribute"/> applied to them.<br/>
-        /// <see cref="RegisterAttribute"/> enforces applied type to be an class and it is the only supported type for depencency injection registration.
+        /// <see cref="RegisterAttribute"/> enforces applied type to be an class and it is the only supported type for dependency injection registration.
         /// </remarks>
         public static IServiceCollection RegisterServices(this IServiceCollection services, Assembly assembly)
         {
@@ -98,7 +99,22 @@ namespace Microsoft.Extensions.DependencyInjection
             }
 
             return services;
-        } 
+        }
+
+        /// <summary>
+        /// Adds options proxy.
+        /// </summary>
+        /// <typeparam name="TOptionsProxy">Proxy type.</typeparam>
+        /// <typeparam name="TOptions">Options type.</typeparam>
+        /// <param name="sc">Service collection.</param>
+        /// <returns></returns>
+        public static IServiceCollection AddOptionsProxy<TOptionsProxy, TOptions>(this IServiceCollection sc) where TOptions : class, TOptionsProxy where TOptionsProxy : class
+        {
+            sc.AddSingleton<IOptions<TOptionsProxy>>(sp => sp.GetRequiredService<IOptions<TOptions>>());
+            sc.AddTransient<IOptionsSnapshot<TOptionsProxy>>(sp => sp.GetRequiredService<IOptionsSnapshot<TOptions>>());
+            sc.AddSingleton<IOptionsMonitor<TOptionsProxy>>(sp => sp.GetRequiredService<IOptionsMonitor<TOptions>>());
+            return sc;
+        }
 
         #endregion
     }

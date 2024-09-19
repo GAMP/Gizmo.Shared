@@ -10,7 +10,7 @@ namespace Microsoft.Extensions.DependencyInjection
     /// <summary>
     /// Options extensions.
     /// </summary>
-    public static class OptionsExtenstions
+    public static class OptionsExtensions
     {
         #region STATIC READ ONLY FIELDS
         private readonly static MethodInfo? ADD_OPTIONS_METHOD = typeof(OptionsServiceCollectionExtensions)
