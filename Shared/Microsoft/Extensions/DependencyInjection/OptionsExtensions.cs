@@ -26,14 +26,14 @@ namespace Microsoft.Extensions.DependencyInjection
         #region FUNCTIONS
 
         /// <summary>
-        /// Configures all payment providers.
+        /// Configures all store options for specified interface.
         /// </summary>
         /// <param name="serviceCollection">Service collection.</param>
         /// <param name="configuration">Configuration.</param>
-        /// <param name="interfaceType">Interface type.</param>
+        /// <typeparam name="TInterface">Interface type.</typeparam>
         /// <exception cref="ArgumentException">thrown if some of required parameters are not set.</exception>
         /// <remarks>
-        /// This function will discover all implementations specified by <paramref name="interfaceType"/> and register any options provided by <see cref="StoreOptionsTypeAttribute"/>.<br></br>
+        /// This function will discover all implementations specified by <typeparam name="TInterface">Interface type.</typeparam> and register any options provided by <see cref="StoreOptionsTypeAttribute"/>.<br></br>
         /// The types must provide <see cref="OptionsConfigurationSectionAttribute"/> in order for us to be able to bind them to a configuration section, if they not <see cref="ArgumentException"/> will be thrown.
         /// </remarks>
         public static void AddStoreOptions<TInterface>(this IServiceCollection serviceCollection, IConfiguration configuration)
@@ -52,10 +52,10 @@ namespace Microsoft.Extensions.DependencyInjection
                     throw new ArgumentException("Options section must be provided.");
 
                 //add options by type
-                object? optionsBuilder = ADD_OPTIONS_METHOD?.MakeGenericMethod(new Type[] { storeOptionsType }).Invoke(null, new[] { serviceCollection });
+                object? optionsBuilder = ADD_OPTIONS_METHOD?.MakeGenericMethod([storeOptionsType]).Invoke(null, [serviceCollection]);
 
                 //bind options to specified section
-                BIND_OPTIONS_METHOD?.MakeGenericMethod(new Type[] { storeOptionsType }).Invoke(null, new[] { optionsBuilder, configuration.GetSection(configurationSection) });
+                BIND_OPTIONS_METHOD?.MakeGenericMethod([storeOptionsType]).Invoke(null, [optionsBuilder, configuration.GetSection(configurationSection)]);
             }
         }
 
