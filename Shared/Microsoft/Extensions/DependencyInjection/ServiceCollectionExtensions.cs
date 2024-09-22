@@ -58,7 +58,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 //early validation to avoid and service misconfiguration
                 foreach(var extendedType in registerAttribute.Types)
                 {
-                    //if extended type is an inteface make sure that service does implement it
+                    //if extended type is an interface make sure that service does implement it
                     if (extendedType.IsInterface)
                     {
                         if (!service.Type.GetInterfaces().Where(ifc => ifc == extendedType).Any())
@@ -99,21 +99,6 @@ namespace Microsoft.Extensions.DependencyInjection
             }
 
             return services;
-        }
-
-        /// <summary>
-        /// Adds options proxy.
-        /// </summary>
-        /// <typeparam name="TOptionsProxy">Proxy type.</typeparam>
-        /// <typeparam name="TOptions">Options type.</typeparam>
-        /// <param name="sc">Service collection.</param>
-        /// <returns></returns>
-        public static IServiceCollection AddOptionsProxy<TOptionsProxy, TOptions>(this IServiceCollection sc) where TOptions : class, TOptionsProxy where TOptionsProxy : class
-        {
-            sc.AddSingleton<IOptions<TOptionsProxy>>(sp => sp.GetRequiredService<IOptions<TOptions>>());
-            sc.AddTransient<IOptionsSnapshot<TOptionsProxy>>(sp => sp.GetRequiredService<IOptionsSnapshot<TOptions>>());
-            sc.AddSingleton<IOptionsMonitor<TOptionsProxy>>(sp => sp.GetRequiredService<IOptionsMonitor<TOptions>>());
-            return sc;
         }
 
         #endregion
