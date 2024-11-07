@@ -5,7 +5,7 @@ using Microsoft.Extensions.Options;
 namespace Gizmo.Server.Options
 {
     /// <summary>
-    /// Business options.
+    /// Manager features options.
     /// </summary>
     [OptionsConfigurationSection("MANAGER:FEATURES")]
     [StoreOptionsGroup("MANAGER_FEATURES")]
@@ -17,13 +17,20 @@ namespace Gizmo.Server.Options
         [DefaultValue(true)]
         [StoreOptionKey("SALES_MODULE")]
         [MessagePack.Key(0)]
-        public bool Sales { get; init; }
+        public bool SalesModule { get; init; }
 
         [Name("Reservations module", "SERVER_OPTION_MANAGER_FEATURES_RESERVATIONS_MODULE_NAME")]
         [ExtendedDescription("Enable reservations module", "SERVER_OPTION_MANAGER_FEATURES_RESERVATIONS_MODULE_DESCRIPTION")]
         [DefaultValue(true)]
         [StoreOptionKey("RESERVATIONS_MODULE")]
         [MessagePack.Key(1)]
-        public bool Reservations { get; init; }
+        public bool ReservationsModule { get; init; }
+
+        [Name("Users module", "SERVER_OPTION_MANAGER_FEATURES_USERS_MODULE_NAME")]
+        [ExtendedDescription("Enable users module", "SERVER_OPTION_MANAGER_FEATURES_USERS_MODULE_DESCRIPTION")]
+        [DefaultValue(true)]
+        [StoreOptionKey("USERS_MODULE")]
+        [MessagePack.Key(1)]
+        public bool UsersModule { get; init; }
     }
 }
