@@ -30,7 +30,7 @@ namespace Microsoft.Extensions.Options
         /// Gets options class type.
         /// </summary>
         /// <remarks>
-        /// This will be set to the fully qualifed type name.
+        /// This will be set to the fully qualified type name.
         /// </remarks>
         [MessagePack.Key(0)]
         public string OptionsType { get; }

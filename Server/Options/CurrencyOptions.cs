@@ -10,7 +10,8 @@ namespace Gizmo.Server.Options
     /// Currency options.
     /// </summary>
     [OptionsConfigurationSection("CURRENCY")]
-    [StoreOptionsGroup("CURRENCY")]    
+    [StoreOptionsGroup("CURRENCY")]
+    [MessagePack.MessagePackObject()]
     public sealed class CurrencyOptions : IStoreOptions
     {
         /// <summary>
@@ -22,6 +23,7 @@ namespace Gizmo.Server.Options
         [StoreOptionKey("CURRENCY_CODE")]
         [StringLength(3,MinimumLength = 3)]
         [DefaultValue(null)]
+        [MessagePack.Key(0)]
         public string? CurrencyCode
         {
             get; init;
@@ -37,9 +39,31 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies currency symbol", "SERVER_OPTION_CURRENCY_SYMBOL_DESCRIPTION")]
         [StoreOptionKey("CURRENCY_SYMBOL")]
         [DefaultValue(null)]
+        [MessagePack.Key(1)]
         public string? CurrencySymbol
         {
             get;init;
         }
+
+        /// <summary>
+        /// Gets currency decimal digits.
+        /// </summary>
+        [Name("Currency decimal digits", "SERVER_OPTION_CURRENCY_DECIMAL_DIGITS_NAME")]
+        [ExtendedDescription("Specifies currency decimal digits", "SERVER_OPTION_CURRENCY_DECIMAL_DIGITS_DESCRIPTION")]
+        [StoreOptionKey("CURRENCY_DECIMAL_DIGITS")]
+        [MessagePack.Key(2)]
+        [DefaultValue(2)]
+        [Range(0, 4)]
+        public int? CurrencyDecimalDigits { get; set; }
+
+        /// <summary>
+        /// Gets currency decimal separator.
+        /// </summary>
+        [Name("Currency decimal separator", "SERVER_OPTION_CURRENCY_DECIMAL_SEPARATOR_NAME")]
+        [ExtendedDescription("Specifies currency decimal separator", "SERVER_OPTION_CURRENCY_DECIMAL_SEPARATOR_DESCRIPTION")]
+        [StoreOptionKey("CURRENCY_DECIMAL_SEPARATOR")]
+        [MessagePack.Key(3)]
+        [DefaultValue(null)]
+        public string? CurrencyDecimalSeparator { get; set; }
     }
 }
