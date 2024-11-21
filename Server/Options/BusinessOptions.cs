@@ -66,6 +66,7 @@ namespace Gizmo.Server.Options
         [Name("Business web site", "SERVER_OPTION_BUSINESS_WEB_SITE_NAME")]
         [ExtendedDescription("Business web site", "SERVER_OPTION_BUSINESS_WEB_SITE_DESCRIPTION")]
         [StoreOptionKey("BUSINESS_WEB_SITE")]
+        [UrlNullEmptyValidation()]
         [MessagePack.Key(5)]
         public string? BusinessWebSite
         {
