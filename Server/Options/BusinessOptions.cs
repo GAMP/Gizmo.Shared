@@ -26,6 +26,7 @@ namespace Gizmo.Server.Options
         [Name("Business day start", "SERVER_OPTION_BUSINESS_DAY_START_NAME")]
         [ExtendedDescription("Business day start", "SERVER_OPTION_BUSINESS_DAY_START_NAME_DESCRIPTION")]
         [StoreOptionKey("BUSINESS_DAY_START")]
+        [TimeSpanValidation(true, 0, 1440)]
         [MessagePack.Key(1)]
         public string? BusinessDayStart
         {
@@ -35,6 +36,7 @@ namespace Gizmo.Server.Options
         [Name("Business day end", "SERVER_OPTION_BUSINESS_DAY_END_NAME")]
         [ExtendedDescription("Business day end", "SERVER_OPTION_BUSINESS_DAY_END_NAME_DESCRIPTION")]
         [StoreOptionKey("BUSINESS_DAY_END")]
+        [TimeSpanValidation(true, 0, 1440)]
         [MessagePack.Key(2)]
         public string? BusinessDayEnd
         {
@@ -54,6 +56,7 @@ namespace Gizmo.Server.Options
         [Name("Business email", "SERVER_OPTION_BUSINESS_EMAIL_NAME")]
         [ExtendedDescription("Business email", "SERVER_OPTION_BUSINESS_EMAIL_DESCRIPTION")]
         [StoreOptionKey("BUSINESS_EMAIL")]
+        [EmailNullEmptyValidation()]
         [MessagePack.Key(4)]
         public string? BusinessEmail
         {
@@ -75,5 +78,11 @@ namespace Gizmo.Server.Options
         [MessagePack.Key(6)]
         [Range(0, 6)]
         public DayOfWeek? BusinessEndWeekDay { get; set; }
+
+        [Name("Enable business schedule", "SERVER_OPTION_BUSINESS_HAS_BUSINESS_SCHEDULE_NAME")]
+        [ExtendedDescription("Specifies if business schedule is enabled", "SERVER_OPTION_BUSINESS_HAS_BUSINESS_SCHEDULE_DESCRIPTION")]
+        [StoreOptionKey("HAS_BUSINESS_SCHEDULE")]
+        [MessagePack.Key(7)]
+        public bool HasBusinessSchedule { get; set; }
     }
 }
