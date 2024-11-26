@@ -75,7 +75,6 @@ namespace Gizmo.Server.Options
         [Name("Deposit vat rate", "SERVER_OPTION_TAX_DEPOSIT_VAT_RATE_NAME")]
         [ExtendedDescription("Specifies deposit VAT rate", "SERVER_OPTION_TAX_DEPOSIT_VAT_RATE_DESCRIPTION")]
         [StoreOptionKey("DEPOSIT_VAT_RATE")]
-        [Range(0, 100)]
         [DefaultValue(null)]
         [MessagePack.Key(6)]
         public VatRates? DepositVATRate
