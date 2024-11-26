@@ -19,7 +19,7 @@ namespace Gizmo.Server.Options
         [Name("Password", "SERVER_OPTION_SUBSCRIPTION_PASSWORD_NAME")]
         [ExtendedDescription("Subscription password", "SERVER_OPTION_SUBSCRIPTION_PASSWORD_DESCRIPTION")]
         [StoreOptionKey("PASSWORD")]
-        [MessagePack.Key(0)]
+        [MessagePack.Key(1)]
         public string? Password { get; init; }
     }
 }
