@@ -13,6 +13,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies default currency", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_DESCRIPTION")]
         [StoreOptionKey("ENABLE_LOGIN_BLOCK")]
         [DefaultValue(false)]
+        [MessagePack.Key(0)]
         public bool EnableLoginBlock
         {
             get; set;
@@ -23,6 +24,7 @@ namespace Gizmo.Server.Options
         [StoreOptionKey("LOGIN_BLOCK_TIME")]
         [DefaultValue(0)]
         [Range(0, int.MaxValue)]
+        [MessagePack.Key(1)]
         public int LoginBlockTime
         {
             get; set;
@@ -32,6 +34,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies if login unblock is enabled", "SERVER_OPTION_RESERVATIONS_LOGIN_UNBLOCK_DESCRIPTION")]
         [StoreOptionKey("ENABLE_LOGIN_UNBLOCK")]
         [DefaultValue(false)]
+        [MessagePack.Key(2)]
         public bool EnableLoginUnblock
         {
             get; set;
@@ -42,6 +45,7 @@ namespace Gizmo.Server.Options
         [StoreOptionKey("LOGIN_UNBLOCK_TIME")]
         [DefaultValue(0)]
         [Range(0, int.MaxValue)]
+        [MessagePack.Key(3)]
         public int LoginUnblockTime
         {
             get; set;
@@ -51,6 +55,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies if reservation timeout is enabled", "SERVER_OPTION_RESERVATIONS_LOGIN_TIMEOUT_DESCRIPTION")]
         [StoreOptionKey("ENABLE_TIMEOUT")]
         [DefaultValue(false)]
+        [MessagePack.Key(4)]
         public bool EnableTimeout
         {
             get; init;
@@ -60,6 +65,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies reservation timeout time", "SERVER_OPTION_RESERVATIONS_LOGIN_TIMEOUT_TIME_DESCRIPTION")]
         [StoreOptionKey("TIMEOUT")]
         [Range(0, int.MaxValue)]
+        [MessagePack.Key(5)]
         public int Timeout
         {
             get;init;

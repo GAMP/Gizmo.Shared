@@ -8,6 +8,7 @@ namespace Gizmo.Server.Options
 {
     [OptionsConfigurationSection("TAX")]
     [StoreOptionsGroup("TAX")]
+    [MessagePack.MessagePackObject()]
     public sealed class TaxOptions : IStoreOptions
     {
         /// <summary>
