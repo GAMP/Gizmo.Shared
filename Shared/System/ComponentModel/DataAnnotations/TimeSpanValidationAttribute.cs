@@ -5,7 +5,7 @@ namespace System.ComponentModel.DataAnnotations
     /// <summary>
     /// TimeSpan validation attribute.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Property , AllowMultiple = false)]
+    [AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
     public class TimeSpanValidationAttribute : ValidationAttribute
     {
         /// <summary>
@@ -24,7 +24,7 @@ namespace System.ComponentModel.DataAnnotations
         /// <param name="max">Maximum in minutes.</param>
         public TimeSpanValidationAttribute(bool allowNull, int min, int max)
         {
-            if(min > max)
+            if (min > max)
                 throw new ArgumentException("Min value cannot be greater than max value.");
 
             AllowNull = allowNull;
@@ -50,22 +50,42 @@ namespace System.ComponentModel.DataAnnotations
         protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
         {
             //allow null values
-            if(value == null && AllowNull)
+            if (value == null && AllowNull)
                 return ValidationResult.Success;
 
             if (value is not string stringValue)
-                return new ValidationResult("Value is not a string.");           
+                return new ValidationResult("Value is not a string.");
 
-            if (!TimeSpan.TryParse(stringValue, out TimeSpan timeSpan))
-                return new ValidationResult("Invalid TimeSpan format.");            
+            try
+            {
+                //split with expected separator
+                string[] input = stringValue.Split(':');
 
-            if(Max.HasValue && timeSpan > Max.Value)
-                return new ValidationResult($"Value is greater than {(int)Max.Value.TotalHours:D2}:{Max.Value.Minutes:D2}:{Max.Value.Seconds:D2}.");
+                //at least one split is required
+                if (input.Length < 1)
+                    return new ValidationResult("Invalid format.");
 
-            if (Min.HasValue && timeSpan < Min.Value)
-                return new ValidationResult($"Value is less than {(int)Min.Value.TotalHours:D2}:{Min.Value.Minutes:D2}:{Min.Value.Seconds:D2}.");          
+                int hours = int.Parse(input[0]);
+                int minutes = input.Length >= 2 ? int.Parse(input[1]) : 0;
+                int seconds = input.Length >= 3 ? int.Parse(input[2]) : 0;
+                int mills = input.Length >= 4 ? int.Parse(input[3]) : 0;
 
-            return ValidationResult.Success;
+                TimeSpan timeSpan = new TimeSpan(0, hours, minutes, seconds, mills);
+
+                if (Max.HasValue && timeSpan > Max.Value)
+                    return new ValidationResult($"Value is greater than {(int)Max.Value.TotalHours:D2}:{Max.Value.Minutes:D2}:{Max.Value.Seconds:D2}.");
+
+                if (Min.HasValue && timeSpan < Min.Value)
+                    return new ValidationResult($"Value is less than {(int)Min.Value.TotalHours:D2}:{Min.Value.Minutes:D2}:{Min.Value.Seconds:D2}.");
+
+                return ValidationResult.Success;
+            }
+            catch
+            {
+                //parsing exception (probably)
+
+                return new ValidationResult("Invalid format.");
+            }
         }
     }
 }
