@@ -1,4 +1,6 @@
-﻿namespace Gizmo
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Gizmo
 {
     /// <summary>
     /// Tax system country.
@@ -11,10 +13,12 @@
         /// <summary>
         /// None.
         /// </summary>
+        [Name("Unspecified", "TAX_SYSTEM_COUNTRY_UNSPECIFIED")]
         None = 0,
         /// <summary>
         /// Russia.
         /// </summary>
+        [Name("Russia", "TAX_SYSTEM_COUNTRY_RUSSIA")]
         Russia = 1,
     }
 }

@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_ADVANCE" xml:space="preserve">
+    <value>Advance</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PAYMENT" xml:space="preserve">
+    <value>Full payment</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PREPAYMENT" xml:space="preserve">
+    <value>Full prepayment</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_PREPAYMENT" xml:space="preserve">
+    <value>Prepayment</value>
+  </data>
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve">
     <value>Failed to delete application category</value>
   </data>
@@ -284,5 +296,41 @@
   </data>
   <data name="LOGIN_RESULT_SUCCESS_NAME" xml:space="preserve">
     <value>Login success</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_MAIN" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_PATENT_SYSTEM" xml:space="preserve">
+    <value>Patent system</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_EXPSENSES" xml:space="preserve">
+    <value>Simplified system minus expenses</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_TAXATION" xml:space="preserve">
+    <value>Simplified system minus taxation</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SINGLE_AGRICULTURAL_TAX" xml:space="preserve">
+    <value>Single agricultural tax</value>
+  </data>
+  <data name="TAX_SYSTEMS_UNSPECIFIED" xml:space="preserve">
+    <value>Unspecified</value>
+  </data>
+  <data name="TAX_SYSTEM_COUNTRY_RUSSIA" xml:space="preserve">
+    <value>Russia</value>
+  </data>
+  <data name="TAX_SYSTEM_COUNTRY_UNSPECIFIED" xml:space="preserve">
+    <value>Unspecified</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_NONE" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT0" xml:space="preserve">
+    <value>VAT0</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT10" xml:space="preserve">
+    <value>VAT10</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT20" xml:space="preserve">
+    <value>VAT20</value>
   </data>
 </root>
