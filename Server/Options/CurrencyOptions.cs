@@ -65,5 +65,15 @@ namespace Gizmo.Server.Options
         [MessagePack.Key(3)]
         [DefaultValue(null)]
         public string? CurrencyDecimalSeparator { get; set; }
+
+        /// <summary>
+        ///  Gets or sets the string to use as the group separator in currency values.
+        /// </summary>
+        [Name("Currency group separator", "SERVER_OPTION_CURRENCY_GROUP_SEPARATOR_NAME")]
+        [ExtendedDescription("Specifies currency group separator", "SERVER_OPTION_CURRENCY_GROUP_SEPARATOR_DESCRIPTION")]
+        [StoreOptionKey("CURRENCY_GROUP_SEPARATOR")]
+        [MessagePack.Key(4)]
+        [DefaultValue(null)]
+        public string? CurrencyGroupSeparator { get; set; }
     }
 }
