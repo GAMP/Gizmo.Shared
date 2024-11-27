@@ -19,7 +19,7 @@ namespace Gizmo.Server.Options
         [StoreOptionKey("TAX_SYSTEM")]
         [DefaultValue(null)]
         [MessagePack.Key(0)]
-        public int? TaxSystem { get; init; }
+        public TaxSystemCountry? TaxSystem { get; init; }
 
         /// <summary>
         /// Gets or sets the tax system applicable to goods.
@@ -29,7 +29,7 @@ namespace Gizmo.Server.Options
         [StoreOptionKey("GOODS_TAX_SYSTEM")]
         [DefaultValue(null)]
         [MessagePack.Key(1)]
-        public int? GoodsTaxSystem { get; init; }
+        public TaxSystems? GoodsTaxSystem { get; init; }
 
         /// <summary>
         /// Gets or sets the tax system applicable to services.
@@ -39,7 +39,7 @@ namespace Gizmo.Server.Options
         [StoreOptionKey("SERVICES_TAX_SYSTEM")]
         [DefaultValue(null)]
         [MessagePack.Key(2)]
-        public int? ServicesTaxSystem { get; init; }
+        public TaxSystems? ServicesTaxSystem { get; init; }
 
         /// <summary>
         /// Gets or sets whether deposits should be treated as a service.
