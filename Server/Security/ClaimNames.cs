@@ -7,6 +7,7 @@
     {
         public const string OperatorRoleName = "operator";
         public const string UserRoleName = "user";
+        public const string ApiKeyRoleName = "apikey";
         public const string Branch = "branch";
         public const string Register = "register";
     }
