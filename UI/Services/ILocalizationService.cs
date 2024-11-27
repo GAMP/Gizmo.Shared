@@ -11,11 +11,15 @@ namespace Gizmo.UI.Services
     /// </summary>
     public interface ILocalizationService
     {
+        /// <summary>
+        /// Occurs when localization options change.
+        /// </summary>
         event EventHandler<EventArgs> LocalizationOptionsChanged;
 
+        /// <summary>
+        /// Occurs when current language change.
+        /// </summary>
         event EventHandler<EventArgs> LanguageChanged;
-
-        #region FUNCTIONS
 
         /// <summary>
         /// Sets current culture.
@@ -83,8 +87,5 @@ namespace Gizmo.UI.Services
         /// <param name="arguments">Arguments.</param>
         /// <returns>Localized string value.</returns>
         string GetStringLower(string key, params object[] arguments);
-
-
-        #endregion
     }
 }
