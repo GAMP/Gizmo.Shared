@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Server
 {
@@ -108,5 +109,23 @@ namespace Gizmo.Server
         {
             get; set;
         } = true;
+
+        /// <summary>
+        /// This allows implicit conversion from <see cref="ClaimDescriptionAttribute"/> to <see cref="NameAttribute"/>.
+        /// </summary>
+        /// <param name="value"></param>
+        public static implicit operator NameAttribute(ClaimDescriptionAttribute value)
+        {
+            return new NameAttribute(value.Operation, value.NameKey);
+        }
+
+        /// <summary>
+        /// This allows implicit conversion from <see cref="ClaimDescriptionAttribute"/> to <see cref="DescriptionAttribute"/>.
+        /// </summary>
+        /// <param name="value"></param>
+        public static implicit operator ExtendedDescriptionAttribute(ClaimDescriptionAttribute value)
+        {
+            return new ExtendedDescriptionAttribute(value.Operation, value.DescriptionKey);
+        }
     }
 }
