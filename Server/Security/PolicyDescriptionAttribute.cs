@@ -4,10 +4,10 @@ using System.ComponentModel.DataAnnotations;
 namespace Gizmo.Server
 {
     /// <summary>
-    /// Gizmo claim description attribute.
+    /// Policy description attribute.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
-    public class ClaimDescriptionAttribute : Attribute
+    public class PolicyDescriptionAttribute : Attribute
     {
         /// <summary>
         /// Creates new instance.
@@ -17,7 +17,7 @@ namespace Gizmo.Server
         /// <param name="groupKey">Group key.</param>
         /// <param name="nameKey">Name key.</param>
         /// <param name="descriptionKey">Description key.</param>
-        public ClaimDescriptionAttribute(string resource,
+        public PolicyDescriptionAttribute(string resource,
             string operation,
             string groupKey = null,
             string nameKey = null,
@@ -39,7 +39,7 @@ namespace Gizmo.Server
         /// <param name="groupKey">Group key.</param>
         /// <param name="nameKey">Name key.</param>
         /// <param name="descriptionKey">Description key.</param>
-        public ClaimDescriptionAttribute(string resource,
+        public PolicyDescriptionAttribute(string resource,
             string operation,
             GizmoPolicies[] dependsOn,
             string groupKey = null,
@@ -111,19 +111,19 @@ namespace Gizmo.Server
         } = true;
 
         /// <summary>
-        /// This allows implicit conversion from <see cref="ClaimDescriptionAttribute"/> to <see cref="NameAttribute"/>.
+        /// This allows implicit conversion from <see cref="PolicyDescriptionAttribute"/> to <see cref="NameAttribute"/>.
         /// </summary>
         /// <param name="value"></param>
-        public static implicit operator NameAttribute(ClaimDescriptionAttribute value)
+        public static implicit operator NameAttribute(PolicyDescriptionAttribute value)
         {
             return new NameAttribute(value.Operation, value.NameKey);
         }
 
         /// <summary>
-        /// This allows implicit conversion from <see cref="ClaimDescriptionAttribute"/> to <see cref="DescriptionAttribute"/>.
+        /// This allows implicit conversion from <see cref="PolicyDescriptionAttribute"/> to <see cref="DescriptionAttribute"/>.
         /// </summary>
         /// <param name="value"></param>
-        public static implicit operator ExtendedDescriptionAttribute(ClaimDescriptionAttribute value)
+        public static implicit operator ExtendedDescriptionAttribute(PolicyDescriptionAttribute value)
         {
             return new ExtendedDescriptionAttribute(value.Operation, value.DescriptionKey);
         }
