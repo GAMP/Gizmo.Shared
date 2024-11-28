@@ -16,7 +16,7 @@ namespace Gizmo.Client.UI
         /// Defines if the online deposits should be disabled.
         /// </summary>
         /// <remarks>
-        /// This will override default functionality where online depoists are available to the user if at leas one online payment method is configured.
+        /// This will override default functionality where online deposits are available to the user if at leas one online payment method is configured.
         /// </remarks>
         [MessagePack.Key(0)]
         [DefaultValue(false)]
