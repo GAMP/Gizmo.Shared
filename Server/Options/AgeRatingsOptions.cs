@@ -9,6 +9,7 @@ namespace Gizmo.Server.Options
     /// </summary>
     [OptionsConfigurationSection("AGERATINGS")]
     [StoreOptionsGroup("AGE_RATINGS")]
+    [MessagePack.MessagePackObject()]
     public sealed class AgeRatingsOptions : IStoreOptions
     {
         [Name("Enable age ratings", "SERVER_OPTION_AGE_RATINGS_ENABLED_NAME")]
