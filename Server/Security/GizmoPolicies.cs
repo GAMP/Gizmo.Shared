@@ -1,7 +1,7 @@
 ﻿namespace Gizmo.Server
 {
     /// <summary>
-    /// Claim info types.
+    /// Policy types.
     /// </summary>
     public enum GizmoPolicies
     {
