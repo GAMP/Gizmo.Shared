@@ -9,7 +9,7 @@ namespace Gizmo.Server
     /// <summary>
     /// Helper class to build policies.
     /// </summary>
-    public static class GizmoPolicesBuilder
+    public static class PolicesBuilder
     {
         /// <summary>
         /// Adds known Gizmo policies to the authorization options.
@@ -25,7 +25,7 @@ namespace Gizmo.Server
                  .Select(policy => new
                  {
                      Policy = policy,
-                     Description = policy.GetAttribute<ClaimDescriptionAttribute>()
+                     Description = policy.GetAttribute<PolicyDescriptionAttribute>()
                  })
                  .Where(policy => policy.Description != null)
                  .ToList();
@@ -39,7 +39,7 @@ namespace Gizmo.Server
                     var builder = e.RequireClaim(description.Resource, description.Operation);
                     foreach (var dependency in description.DependsOn)
                     {
-                        var dependencyAttribute = dependency.GetAttribute<ClaimDescriptionAttribute>();
+                        var dependencyAttribute = dependency.GetAttribute<PolicyDescriptionAttribute>();
                         if (dependencyAttribute == null)
                             continue;
 

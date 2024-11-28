@@ -1,153 +1,156 @@
 ﻿namespace Gizmo.Server
 {
     /// <summary>
-    /// Claim info types.
+    /// Gizmo permissions.
     /// </summary>
+    /// <remarks>
+    /// Defines permissions/policies supported by application.
+    /// </remarks>
     public enum GizmoPolicies
     {
         #region SALE
         /// <summary>
         /// Sale permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "*", "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE")]
+        [PolicyDescription(@"Sale", "*", "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE")]
         Sale,
 
         /// <summary>
         /// Sale at custom permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "CustomPrice", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_CUSTOM_PRICE")]
+        [PolicyDescription(@"Sale", "CustomPrice", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_CUSTOM_PRICE")]
         SaleCustomPrice,
 
         /// <summary>
         /// Sale with non default vat permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "NonDefaultVat", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_NON_DEFAULT_VAT", IsAssignable = false)]
+        [PolicyDescription(@"Sale", "NonDefaultVat", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_NON_DEFAULT_VAT", IsAssignable = false)]
         SaleNonDefaultVat,
 
         /// <summary>
         /// Sale with pay later permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "PayLater", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_PAY_LATER")]
+        [PolicyDescription(@"Sale", "PayLater", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_PAY_LATER")]
         SaleNonPayLater,
 
         /// <summary>
         /// Sale void invoice permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "VoidInvoices", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VOID_INVOICES")]
+        [PolicyDescription(@"Sale", "VoidInvoices", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VOID_INVOICES")]
         SaleNoVoidInvoices,
 
         /// <summary>
         /// Void used time invoices permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "VoidUsedTimeInvoices", new GizmoPolicies[] { SaleNoVoidInvoices }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VOID_USED_TIME_INVOICES")]
+        [PolicyDescription(@"Sale", "VoidUsedTimeInvoices", new GizmoPolicies[] { SaleNoVoidInvoices }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VOID_USED_TIME_INVOICES")]
         VoidUsedTimeInvoices,
 
         /// <summary>
         /// Void closed shift invoices permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "VoidClosedShiftInvoices", new GizmoPolicies[] { SaleNoVoidInvoices }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VOID_CLOSED_SHIFT_INVOICES")]
+        [PolicyDescription(@"Sale", "VoidClosedShiftInvoices", new GizmoPolicies[] { SaleNoVoidInvoices }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VOID_CLOSED_SHIFT_INVOICES")]
         VoidClosedShiftInvoices,
 
         /// <summary>
         /// Void other operator invoices permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "VoidOtherOperatorInvoices", new GizmoPolicies[] { SaleNoVoidInvoices }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VOID_OTHER_OPERATOR_INVOICES")]
+        [PolicyDescription(@"Sale", "VoidOtherOperatorInvoices", new GizmoPolicies[] { SaleNoVoidInvoices }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VOID_OTHER_OPERATOR_INVOICES")]
         VoidOtherOperatorInvoices,
 
         /// <summary>
         /// Void previous business day invoices permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "VoidPastDaysInvoices", new GizmoPolicies[] { SaleNoVoidInvoices }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VOID_PAST_DAYS_INVOICES")]
+        [PolicyDescription(@"Sale", "VoidPastDaysInvoices", new GizmoPolicies[] { SaleNoVoidInvoices }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VOID_PAST_DAYS_INVOICES")]
         VoidPastDaysInvoices,
 
         /// <summary>
         /// Sale deposit permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "Deposit", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_DEPOSIT")]
+        [PolicyDescription(@"Sale", "Deposit", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_DEPOSIT")]
         Deposit,
 
         /// <summary>
         /// Sale withdraw permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "Withdraw", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_WITHDRAW")]
+        [PolicyDescription(@"Sale", "Withdraw", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_WITHDRAW")]
         Withdraw,
 
         /// <summary>
         /// Sale void deposits permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "VoidDeposits", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VOID_DEPOSITS")]
+        [PolicyDescription(@"Sale", "VoidDeposits", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VOID_DEPOSITS")]
         VoidDeposits,
 
         /// <summary>
         /// Sale manual open cash drawer permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "ManualOpenCashDrawer", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_MANUAL_OPEN_CASH_DRAWER")]
+        [PolicyDescription(@"Sale", "ManualOpenCashDrawer", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_MANUAL_OPEN_CASH_DRAWER")]
         SaleManualOpenCashDrawer,
 
         /// <summary>
         /// Sale modify billing options permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "ModifyBillingOptions", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_MODIFY_BILLING_OPTIONS")]
+        [PolicyDescription(@"Sale", "ModifyBillingOptions", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_MODIFY_BILLING_OPTIONS")]
         SaleModifyBillingOptions,
 
         /// <summary>
         /// Sale allow time credit permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "AllowTimeCredit", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_ALLOW_TIME_CREDIT")]
+        [PolicyDescription(@"Sale", "AllowTimeCredit", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_ALLOW_TIME_CREDIT")]
         AllowTimeCredit,
 
         /// <summary>
         /// Sale disable receipt print permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "AllowDisableReceiptPrint", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_ALLOW_DISABLE_RECEIPT_PRINT")]
+        [PolicyDescription(@"Sale", "AllowDisableReceiptPrint", new GizmoPolicies[] { Sale }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_ALLOW_DISABLE_RECEIPT_PRINT")]
         SaleAllowDisableReceiptPrint,
 
         /// <summary>
         /// View invoices permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "ViewInvoices", "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VIEW_INVOICES")]
+        [PolicyDescription(@"Sale", "ViewInvoices", "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VIEW_INVOICES")]
         ViewInvoices,
 
         /// <summary>
         /// View only unpaid invoices permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "ViewPaidInvoices", new GizmoPolicies[] { ViewInvoices }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VIEW_PAID_INVOICES")]
+        [PolicyDescription(@"Sale", "ViewPaidInvoices", new GizmoPolicies[] { ViewInvoices }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VIEW_PAID_INVOICES")]
         ViewPaidInvoices,
 
         /// <summary>
         /// View only business day invoices permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "ViewPastDaysInvoices", new GizmoPolicies[] { ViewInvoices }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VIEW_PAST_DAYS_INVOICES")]
+        [PolicyDescription(@"Sale", "ViewPastDaysInvoices", new GizmoPolicies[] { ViewInvoices }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VIEW_PAST_DAYS_INVOICES")]
         ViewPastDaysInvoices,
 
         /// <summary>
         /// View deposits permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "ViewDeposits", "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VIEW_DEPOSITS")]
+        [PolicyDescription(@"Sale", "ViewDeposits", "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VIEW_DEPOSITS")]
         ViewDeposits,
 
         /// <summary>
         /// View only business day deposits permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "ViewPastDaysDeposits", new GizmoPolicies[] { ViewDeposits }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VIEW_PAST_DAYS_DEPOSITS")]
+        [PolicyDescription(@"Sale", "ViewPastDaysDeposits", new GizmoPolicies[] { ViewDeposits }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VIEW_PAST_DAYS_DEPOSITS")]
         ViewPastDaysDeposits,
 
         /// <summary>
         /// View register transactions permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "ViewRegisterTransactions", "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VIEW_REGISTER_TRANSACTIONS")]
+        [PolicyDescription(@"Sale", "ViewRegisterTransactions", "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VIEW_REGISTER_TRANSACTIONS")]
         ViewRegisterTransactions,
 
         /// <summary>
         /// View only business day register transactions permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "ViewPastDaysRegisterTransactions", new GizmoPolicies[] { ViewRegisterTransactions }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VIEW_PAST_DAYS_REGISTER_TRANSACTIONS")]
+        [PolicyDescription(@"Sale", "ViewPastDaysRegisterTransactions", new GizmoPolicies[] { ViewRegisterTransactions }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_VIEW_PAST_DAYS_REGISTER_TRANSACTIONS")]
         ViewPastDaysRegisterTransactions,
 
         /// <summary>
         /// Sale delete time purchases permission.
         /// </summary>
-        [ClaimDescription(@"Sale", "DeleteTimePurchases", "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_DELETE_TIME_PURCHASES")]
+        [PolicyDescription(@"Sale", "DeleteTimePurchases", "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_DELETE_TIME_PURCHASES")]
         SaleNoDeleteTimePurchases,
 
         #endregion
@@ -156,7 +159,7 @@
         /// <summary>
         /// Shift view expected permission.
         /// </summary>
-        [ClaimDescription(@"Shift", "ViewExpected", "PERMISSION_GROUP_SHIFT", "PERMISSION_ACTION_SHIFT_VIEW_EXPECTED")]
+        [PolicyDescription(@"Shift", "ViewExpected", "PERMISSION_GROUP_SHIFT", "PERMISSION_ACTION_SHIFT_VIEW_EXPECTED")]
         ShiftCountViewExpected,
         #endregion
 
@@ -165,25 +168,25 @@
         /// <summary>
         /// Stock permission.
         /// </summary>
-        [ClaimDescription(@"Stock", "*", "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_STOCK_ACCESS")]
+        [PolicyDescription(@"Stock", "*", "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_STOCK_ACCESS")]
         StockAccess,
 
         /// <summary>
         /// Stock permission.
         /// </summary>
-        [ClaimDescription(@"Stock", "Manage", new GizmoPolicies[] { StockAccess }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_STOCK_MANAGE")]
+        [PolicyDescription(@"Stock", "Manage", new GizmoPolicies[] { StockAccess }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_STOCK_MANAGE")]
         StockManage,
 
         /// <summary>
         /// Stock permission.
         /// </summary>
-        [ClaimDescription(@"Stock", "ViewStockTransactions", "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_STOCK_VIEW_STOCK_TRANSACTIONS")]
+        [PolicyDescription(@"Stock", "ViewStockTransactions", "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_STOCK_VIEW_STOCK_TRANSACTIONS")]
         ViewStockTransactions,
 
         /// <summary>
         /// Stock permission.
         /// </summary>
-        [ClaimDescription(@"Stock", "ViewPastDaysStockTransactions", new GizmoPolicies[] { ViewStockTransactions }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_STOCK_VIEW_PAST_DAYS_STOCK_TRANSACTIONS")]
+        [PolicyDescription(@"Stock", "ViewPastDaysStockTransactions", new GizmoPolicies[] { ViewStockTransactions }, "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_STOCK_VIEW_PAST_DAYS_STOCK_TRANSACTIONS")]
         ViewPastDaysStockTransactions,
 
         #endregion
@@ -193,55 +196,55 @@
         /// <summary>
         /// Management permission.
         /// </summary>
-        [ClaimDescription(@"Management", "*", "PERMISSION_GROUP_MANAGEMENT", "PERMISSION_ACTION_MANAGEMENT")]
+        [PolicyDescription(@"Management", "*", "PERMISSION_GROUP_MANAGEMENT", "PERMISSION_ACTION_MANAGEMENT")]
         Management,
 
         /// <summary>
         /// Management access tasks permission.
         /// </summary>
-        [ClaimDescription(@"Management", "Tasks", new GizmoPolicies[] { Management }, "PERMISSION_GROUP_MANAGEMENT", "PERMISSION_ACTION_MANAGEMENT_TASKS")]
+        [PolicyDescription(@"Management", "Tasks", new GizmoPolicies[] { Management }, "PERMISSION_GROUP_MANAGEMENT", "PERMISSION_ACTION_MANAGEMENT_TASKS")]
         ManagementTasks,
 
         /// <summary>
         /// Management access processes permission.
         /// </summary>
-        [ClaimDescription(@"Management", "Processes", new GizmoPolicies[] { Management }, "PERMISSION_GROUP_MANAGEMENT", "PERMISSION_ACTION_MANAGEMENT_PROCESSES")]
+        [PolicyDescription(@"Management", "Processes", new GizmoPolicies[] { Management }, "PERMISSION_GROUP_MANAGEMENT", "PERMISSION_ACTION_MANAGEMENT_PROCESSES")]
         ManageProcesses,
 
         /// <summary>
         /// Management access files permission.
         /// </summary>
-        [ClaimDescription(@"Management", "Files", new GizmoPolicies[] { Management }, "PERMISSION_GROUP_MANAGEMENT", "PERMISSION_ACTION_MANAGEMENT_FILES")]
+        [PolicyDescription(@"Management", "Files", new GizmoPolicies[] { Management }, "PERMISSION_GROUP_MANAGEMENT", "PERMISSION_ACTION_MANAGEMENT_FILES")]
         ManageFiles,
 
         /// <summary>
         /// Management maintenance mode permission.
         /// </summary>
-        [ClaimDescription(@"Management", "Maintenance", "PERMISSION_GROUP_MANAGEMENT", "PERMISSION_ACTION_MANAGEMENT_MAINTENANCE")]
+        [PolicyDescription(@"Management", "Maintenance", "PERMISSION_GROUP_MANAGEMENT", "PERMISSION_ACTION_MANAGEMENT_MAINTENANCE")]
         ManageMaintenance,
 
         /// <summary>
         /// Management security permission.
         /// </summary>
-        [ClaimDescription(@"Management", "Security", "PERMISSION_GROUP_MANAGEMENT", "PERMISSION_ACTION_MANAGEMENT_SECURITY")]
+        [PolicyDescription(@"Management", "Security", "PERMISSION_GROUP_MANAGEMENT", "PERMISSION_ACTION_MANAGEMENT_SECURITY")]
         ManageSecurity,
 
         /// <summary>
         /// Management lock state permission.
         /// </summary>
-        [ClaimDescription(@"Management", "LockState", "PERMISSION_GROUP_MANAGEMENT", "PERMISSION_ACTION_MANAGEMENT_LOCK_STATE")]
+        [PolicyDescription(@"Management", "LockState", "PERMISSION_GROUP_MANAGEMENT", "PERMISSION_ACTION_MANAGEMENT_LOCK_STATE")]
         ManageLockState,
 
         /// <summary>
         /// Management module restart permission.
         /// </summary>
-        [ClaimDescription(@"Management", "ModuleRestart", "PERMISSION_GROUP_MANAGEMENT", "PERMISSION_ACTION_MANAGEMENT_MODULE_RESTART")]
+        [PolicyDescription(@"Management", "ModuleRestart", "PERMISSION_GROUP_MANAGEMENT", "PERMISSION_ACTION_MANAGEMENT_MODULE_RESTART")]
         ManageModuleRestart,
 
         /// <summary>
         /// Management power on endpoints permission.
         /// </summary>
-        [ClaimDescription(@"Management", "PowerOnEndpoints", "PERMISSION_GROUP_MANAGEMENT", "PERMISSION_ACTION_MANAGEMENT_POWER_ON_ENDPOINTS")]
+        [PolicyDescription(@"Management", "PowerOnEndpoints", "PERMISSION_GROUP_MANAGEMENT", "PERMISSION_ACTION_MANAGEMENT_POWER_ON_ENDPOINTS")]
         ManagePowerOnEndpoints,
 
         #endregion
@@ -249,37 +252,37 @@
         /// <summary>
         /// Deployment permission.
         /// </summary>
-        [ClaimDescription(@"Deployment", "*", "PERMISSION_GROUP_DEPLOYMENT", "PERMISSION_ACTION_DEPLOYMENT")]
+        [PolicyDescription(@"Deployment", "*", "PERMISSION_GROUP_DEPLOYMENT", "PERMISSION_ACTION_DEPLOYMENT")]
         Deployment,
 
         /// <summary>
         /// Monitoring permission.
         /// </summary>
-        [ClaimDescription(@"Monitoring", "*", "PERMISSION_GROUP_MONITORING", "PERMISSION_ACTION_MONITORING")]
+        [PolicyDescription(@"Monitoring", "*", "PERMISSION_GROUP_MONITORING", "PERMISSION_ACTION_MONITORING")]
         Monitoring,
 
         /// <summary>
         /// Reports permission.
         /// </summary>
-        [ClaimDescription(@"Reports", "*", "PERMISSION_GROUP_REPORTS", "PERMISSION_ACTION_REPORTS")]
+        [PolicyDescription(@"Reports", "*", "PERMISSION_GROUP_REPORTS", "PERMISSION_ACTION_REPORTS")]
         Reports,
 
         /// <summary>
         /// Server settings permission.
         /// </summary>
-        [ClaimDescription(@"Settings", "*", "PERMISSION_GROUP_MAIN", "PERMISSION_ACTION_SERVER_SETTINGS")]
+        [PolicyDescription(@"Settings", "*", "PERMISSION_GROUP_MAIN", "PERMISSION_ACTION_SERVER_SETTINGS")]
         ServerSettings,
 
         /// <summary>
         /// Applications permission.
         /// </summary>
-        [ClaimDescription(@"Apps", "*", "PERMISSION_GROUP_APPLICATIONS", "PERMISSION_ACTION_APPLICATIONS")]
+        [PolicyDescription(@"Apps", "*", "PERMISSION_GROUP_APPLICATIONS", "PERMISSION_ACTION_APPLICATIONS")]
         Applications,
 
         /// <summary>
         /// News permission.
         /// </summary>
-        [ClaimDescription(@"News", "*", "PERMISSION_GROUP_NEWS", "PERMISSION_ACTION_NEWS")]
+        [PolicyDescription(@"News", "*", "PERMISSION_GROUP_NEWS", "PERMISSION_ACTION_NEWS")]
         News,
 
         #region USER
@@ -287,61 +290,61 @@
         /// <summary>
         /// Reset user password permission.
         /// </summary>
-        [ClaimDescription(@"User", "UserPasswordReset", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_USER_PASSWORD_RESET")]
+        [PolicyDescription(@"User", "UserPasswordReset", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_USER_PASSWORD_RESET")]
         UserResetPassword,
 
         /// <summary>
         /// Enable user permission.
         /// </summary>
-        [ClaimDescription(@"User", "UserEnable", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_USER_ENABLE")]
+        [PolicyDescription(@"User", "UserEnable", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_USER_ENABLE")]
         UserEnable,
 
         /// <summary>
         /// Disable user permission.
         /// </summary>
-        [ClaimDescription(@"User", "UserDisable", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_USER_DISABLE")]
+        [PolicyDescription(@"User", "UserDisable", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_USER_DISABLE")]
         UserDisable,
 
         /// <summary>
         /// Manual user login permission.
         /// </summary>
-        [ClaimDescription(@"User", "UserManualLogin", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_MANUAL_LOGIN")]
+        [PolicyDescription(@"User", "UserManualLogin", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_MANUAL_LOGIN")]
         UserManualLogin,
 
         /// <summary>
         /// Add user permission.
         /// </summary>
-        [ClaimDescription(@"User", "Add", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_USER_ADD")]
+        [PolicyDescription(@"User", "Add", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_USER_ADD")]
         UserAdd,
 
         /// <summary>
         /// Delete user permission.
         /// </summary>
-        [ClaimDescription(@"User", "Delete", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_USER_DELETE")]
+        [PolicyDescription(@"User", "Delete", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_USER_DELETE")]
         UserDelete,
 
         /// <summary>
         /// Change user name permission.
         /// </summary>
-        [ClaimDescription(@"User", "ChangeUserName", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_USER_CHANGE_USERNAME")]
+        [PolicyDescription(@"User", "ChangeUserName", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_USER_CHANGE_USERNAME")]
         UserChangeUserName,
 
         /// <summary>
         /// Change user group permission.
         /// </summary>
-        [ClaimDescription(@"User", "ChangeUserGroup", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_USER_CHANGE_USERGROUP")]
+        [PolicyDescription(@"User", "ChangeUserGroup", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_USER_CHANGE_USERGROUP")]
         UserChangeUserGroup,
 
         /// <summary>
         /// Edit user permission.
         /// </summary>
-        [ClaimDescription(@"User", "Edit", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_USER_EDIT")]
+        [PolicyDescription(@"User", "Edit", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_USER_EDIT")]
         UserEdit,
 
         /// <summary>
         /// Edit user permission.
         /// </summary>
-        [ClaimDescription(@"User", "AccessStats", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_USER_ACCESS_STATS")]
+        [PolicyDescription(@"User", "AccessStats", "PERMISSION_GROUP_USER", "PERMISSION_ACTION_USER_ACCESS_STATS")]
         UserAccessStats,
 
         #endregion
@@ -351,13 +354,13 @@
         /// <summary>
         /// Access log permission.
         /// </summary>
-        [ClaimDescription(@"Log", "*", "PERMISSION_GROUP_LOG", "PERMISSION_ACTION_LOG_ACCESS")]
+        [PolicyDescription(@"Log", "*", "PERMISSION_GROUP_LOG", "PERMISSION_ACTION_LOG_ACCESS")]
         LogAccess,
 
         /// <summary>
         /// Clear log permission.
         /// </summary>
-        [ClaimDescription(@"Log", "Clear", new GizmoPolicies[] { LogAccess }, "PERMISSION_GROUP_LOG", "PERMISSION_ACTION_LOG_CLEAR")]
+        [PolicyDescription(@"Log", "Clear", new GizmoPolicies[] { LogAccess }, "PERMISSION_GROUP_LOG", "PERMISSION_ACTION_LOG_CLEAR")]
         LogClear,
 
         #endregion
@@ -367,13 +370,13 @@
         /// <summary>
         /// Access waiting lines permission.
         /// </summary>
-        [ClaimDescription(@"WaitingLines", "*", "PERMISSION_GROUP_WAITING_LINES", "PERMISSION_ACTION_WAITING_LINES_ACCESS")]
+        [PolicyDescription(@"WaitingLines", "*", "PERMISSION_GROUP_WAITING_LINES", "PERMISSION_ACTION_WAITING_LINES_ACCESS")]
         WaitingLinesAccess,
 
         /// <summary>
         /// Manage waiting lines permission.
         /// </summary>
-        [ClaimDescription(@"WaitingLines", "Manage", new GizmoPolicies[] { WaitingLinesAccess }, "PERMISSION_GROUP_WAITING_LINES", "PERMISSION_ACTION_WAITING_LINES_MANAGE")]
+        [PolicyDescription(@"WaitingLines", "Manage", new GizmoPolicies[] { WaitingLinesAccess }, "PERMISSION_GROUP_WAITING_LINES", "PERMISSION_ACTION_WAITING_LINES_MANAGE")]
         WaitingLinesManage,
 
         #endregion
@@ -383,19 +386,19 @@
         /// <summary>
         /// Create pay in register transactions permission.
         /// </summary>
-        [ClaimDescription(@"RegisterTransactions", "RegisterTransactionsPayIn", "PERMISSION_GROUP_REGISTER_TRANSACTIONS", "PERMISSION_REGISTER_TRANSACTIONS_PAY_IN")]
+        [PolicyDescription(@"RegisterTransactions", "RegisterTransactionsPayIn", "PERMISSION_GROUP_REGISTER_TRANSACTIONS", "PERMISSION_REGISTER_TRANSACTIONS_PAY_IN")]
         RegisterTransactionsPayIn,
 
         /// <summary>
         /// Create pay out register transactions permission.
         /// </summary>
-        [ClaimDescription(@"RegisterTransactions", "RegisterTransactionsPayOut", "PERMISSION_GROUP_REGISTER_TRANSACTIONS", "PERMISSION_REGISTER_TRANSACTIONS_PAY_OUT")]
+        [PolicyDescription(@"RegisterTransactions", "RegisterTransactionsPayOut", "PERMISSION_GROUP_REGISTER_TRANSACTIONS", "PERMISSION_REGISTER_TRANSACTIONS_PAY_OUT")]
         RegisterTransactionsPayOut,
 
         #endregion
 
         #region WEB API
-        [ClaimDescription(@"WebApi", "*", "PERMISSION_GROUP_WEB_API", "PERMISSION_ACTION_WEB_API")]
+        [PolicyDescription(@"WebApi", "*", "PERMISSION_GROUP_WEB_API", "PERMISSION_ACTION_WEB_API")]
         WebApi,
         #endregion
     }
