@@ -67,10 +67,10 @@ namespace Gizmo.Server.Options
         [Name("Time based service vat rate", "SERVER_OPTION_TAX_TIME_BASED_SERVICE_VAT_RATE_NAME")]
         [ExtendedDescription("Specifies time based service vat rate", "SERVER_OPTION_TAX_TIME_BASED_SERVICE_VAT_RATE_DESCRIPTION")]
         [StoreOptionKey("TIME_BASED_SERVICE_VAT_RATE")]
-        [Range(0, 100)]
+        [Range(0.00, 100.00)]
         [DefaultValue(null)]
         [MessagePack.Key(5)]
-        public decimal? TimeBasedServiceVATRate { get; init; }
+        public decimal TimeBasedServiceVATRate { get; init; }
 
         [Name("Deposit vat rate", "SERVER_OPTION_TAX_DEPOSIT_VAT_RATE_NAME")]
         [ExtendedDescription("Specifies deposit VAT rate", "SERVER_OPTION_TAX_DEPOSIT_VAT_RATE_DESCRIPTION")]
