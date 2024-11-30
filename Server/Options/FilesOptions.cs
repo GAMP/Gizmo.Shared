@@ -12,7 +12,7 @@ namespace Gizmo.Server.Options
     public sealed class FilesOptions : IStoreOptions
     {
         [Name("User data path", "SERVER_OPTION_FILES_USER_DATA_PATH_NAME")]
-        [ExtendedDescription("Specifies user data path", "SERVER_OPTION_FILES_USER_DATA_PATH_EDESCRIPTION")]
+        [ExtendedDescription("Specifies user data path", "SERVER_OPTION_FILES_USER_DATA_PATH_DESCRIPTION")]
         [StoreOptionKey("USER_DATA_PATH")]
         [DefaultValue("UserData")]
         [StringLength(255)]
@@ -24,7 +24,7 @@ namespace Gizmo.Server.Options
         }
 
         [Name("Defaults user data path", "SERVER_OPTION_FILES_DEFAULTS_USER_DATA_PATH_NAME")]
-        [ExtendedDescription("Specifies defaults data path", "SERVER_OPTION_FILES_DEFAULTS_USER_DATA_PATH_EDESCRIPTION")]
+        [ExtendedDescription("Specifies defaults data path", "SERVER_OPTION_FILES_DEFAULTS_USER_DATA_PATH_DESCRIPTION")]
         [StoreOptionKey("DEFAULTS_USER_DATA_PATH")]
         [DefaultValue("DefaultUserFiles")]
         [StringLength(255)]
