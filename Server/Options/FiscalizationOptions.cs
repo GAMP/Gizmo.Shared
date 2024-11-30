@@ -17,7 +17,7 @@ namespace Gizmo.Server.Options
         /// Gets or sets whether fiscalization is enabled.
         /// </summary>
         [Name("Enable fiscalization", "SERVER_OPTION_FISCALIZATION_ENABLED_NAME")]
-        [ExtendedDescription("Specifies if fiscalization is enabled", "SERVER_OPTION_FISCALIZATION_ENABLED_NAME_DESCRIPTION")]
+        [ExtendedDescription("Specifies if fiscalization is enabled", "SERVER_OPTION_FISCALIZATION_ENABLED_DESCRIPTION")]
         [StoreOptionKey("ENABLED")]
         [MessagePack.Key(0)]
         public bool IsEnabled { get; init; }
