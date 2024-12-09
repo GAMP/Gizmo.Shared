@@ -23,7 +23,7 @@ namespace Gizmo.Server.Options
         [Name("Country code", "SERVER_OPTION_COUNTRY_CODE_NAME")]
         [ExtendedDescription("Specifies country code", "SERVER_OPTION_REGIONAL_COUNTRY_CODE_DESCRIPTION")]
         [StoreOptionKey("COUNTRY_CODE")]
-        [StringLength(2, MinimumLength = 2)]
+        [StringLength(2)]
         [MessagePack.Key(0)]
         public string? CountryCode { get; init; }
 

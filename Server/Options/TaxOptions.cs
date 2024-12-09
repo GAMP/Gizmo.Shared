@@ -41,7 +41,7 @@ namespace Gizmo.Server.Options
         [Name("Deposit service description", "SERVER_OPTION_TAX_DEPOSIT_SERVICE_DESCRIPTION_NAME")]
         [ExtendedDescription("Specifies if deposits should be treated as service", "SERVER_OPTION_TAX_DEPOSIT_SERVICE_DESCRIPTION_DESCRIPTION")]
         [StoreOptionKey("DEPOSIT_SERVICE_DESCRIPTION")]
-        [StringLength(255, MinimumLength = 1)]
+        [StringLength(255)]
         [DefaultValue(null)]
         [MessagePack.Key(4)]
         public string? DepositServiceDescription { get; init; }
@@ -77,7 +77,7 @@ namespace Gizmo.Server.Options
         [Name("Business VAT Id", "SERVER_OPTION_TAX_BUSINESS_VAT_ID_NAME")]
         [ExtendedDescription("Specifies business VAT Id", "SERVER_OPTION_TAX_BUSINESS_VAT_ID_DESCRIPTION")]
         [StoreOptionKey("BUSINESS_VAT_ID")]
-        [StringLength(255, MinimumLength = 1)]
+        [StringLength(255)]
         [DefaultValue(null)]
         [MessagePack.Key(8)]
         public string? BusinessVATId { get; init; }
