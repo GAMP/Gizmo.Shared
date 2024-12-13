@@ -147,6 +147,456 @@
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
     <value>Application category delete success</value>
   </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to the applications feature, enabling the user to manage and interact with applications</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_DEPLOYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to the file copy and deployment feature, enabling the user to manage deployments</value>
+  </data>
+  <data name="GIZMO_POLICY_DEPLOYMENT_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_APPLICATIONS_DESCRIPTION" xml:space="preserve">
+    <value>Policies for managing application access and settings.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_APPLICATIONS_NAME" xml:space="preserve">
+    <value>Applications</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_DEPLOYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Policies for managing application and service deployments.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_DEPLOYMENT_NAME" xml:space="preserve">
+    <value>Deployment</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_LOG_DESCRIPTION" xml:space="preserve">
+    <value>Policies for accessing and managing logs.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_LOG_NAME" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_MANAGEMENT_DESCRIPTION" xml:space="preserve">
+    <value>Policies for system and operations management.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_MANAGEMENT_NAME" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_MONITORING_DESCRIPTION" xml:space="preserve">
+    <value>Policies for system and operational monitoring.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_MONITORING_NAME" xml:space="preserve">
+    <value>Monitoring</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_NEWS_DESCRIPTION" xml:space="preserve">
+    <value>Policies related to managing and displaying news content.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_NEWS_NAME" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_REGISTER_DESCRIPTION" xml:space="preserve">
+    <value>Policies for managing register operations and settings.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_REGISTER_NAME" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_REPORTS_DESCRIPTION" xml:space="preserve">
+    <value>Policies for creating, accessing, and managing reports.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_REPORTS_NAME" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SALES_DESCRIPTION" xml:space="preserve">
+    <value>Policies related to managing and monitoring sales.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SALES_NAME" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SERVER_SETTINGS_DESCRIPTION" xml:space="preserve">
+    <value>Policies related to server configuration and settings.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SERVER_SETTINGS_NAME" xml:space="preserve">
+    <value>Server Settings</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SHIFT_DESCRIPTION" xml:space="preserve">
+    <value>Policies governing shifts and sales operations during shifts.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SHIFT_NAME" xml:space="preserve">
+    <value>Shift</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_STOCK_DESCRIPTION" xml:space="preserve">
+    <value>Policies for managing and accessing stock inventory.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_STOCK_NAME" xml:space="preserve">
+    <value>Stock</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_USER_DESCRIPTION" xml:space="preserve">
+    <value>Policies for user management and access.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_USER_NAME" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_WAITING_LINES_DESCRIPTION" xml:space="preserve">
+    <value>Policies for managing access to waiting lines.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_WAITING_LINES_NAME" xml:space="preserve">
+    <value>Waiting Lines</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_WEB_API_DESCRIPTION" xml:space="preserve">
+    <value>Policies for accessing and managing Web API functionality.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_WEB_API_NAME" xml:space="preserve">
+    <value>Web API</value>
+  </data>
+  <data name="GIZMO_POLICY_LOG_CLEAR_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to the log management feature enabling the user to clear system logs</value>
+  </data>
+  <data name="GIZMO_POLICY_LOG_CLEAR_NAME" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="GIZMO_POLICY_LOG_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to the log feature enabling the user to view system logs</value>
+  </data>
+  <data name="GIZMO_POLICY_LOG_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_CLIENT_MODULE_RESTART_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to the restart feature enabling the user to restart the client module</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_CLIENT_MODULE_RESTART_NAME" xml:space="preserve">
+    <value>Restart client module</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to the management feature enabling the user to perform administrative tasks</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_FILES_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to the client host files feature enabling the user to manage and interact with host files</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_FILES_NAME" xml:space="preserve">
+    <value>Manage files</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_LOCK_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to manage the client host keyboard and mouse input lock state enabling the user to control input permissions</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_LOCK_NAME" xml:space="preserve">
+    <value>Input lock</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_MAINTENANCE_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to manage the client host maintenance state enabling the user to control and update its maintenance status</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_MAINTENANCE_NAME" xml:space="preserve">
+    <value>Manage maintenance</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_PROCESSES_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to the client hosts processes feature enabling the user to view and manage running processes</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_PROCESSES_NAME" xml:space="preserve">
+    <value>Manage processes</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_SECURITY_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to manage the client host security state enabling the user to control and update security settings</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_SECURITY_NAME" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to the tasks feature enabling the user to view and manage tasks</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_TASKS_NAME" xml:space="preserve">
+    <value>Access tasks</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to manually turn on endpoints enabling the user to control endpoint power states</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_NAME" xml:space="preserve">
+    <value>Turn on endpoints</value>
+  </data>
+  <data name="GIZMO_POLICY_MONITORING_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to the screen monitoring feature enabling the user to view and monitor client screens</value>
+  </data>
+  <data name="GIZMO_POLICY_MONITORING_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_NEWS_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to the news and marketing feature enabling the user to view and manage related content</value>
+  </data>
+  <data name="GIZMO_POLICY_NEWS_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_PAY_IN_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to perform register pay-ins enabling the user to add funds to the register</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_PAY_IN_NAME" xml:space="preserve">
+    <value>Make pay-ins</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_PAY_OUT_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to perform register pay-outs enabling the user to withdraw funds from the register</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_PAY_OUT_NAME" xml:space="preserve">
+    <value>Make pay-outs</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to view past day register transactions enabling the user to review previous register activities</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve">
+    <value>View past day transactions</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to view register transactions enabling the user to review all register activities</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_NAME" xml:space="preserve">
+    <value>View transactions</value>
+  </data>
+  <data name="GIZMO_POLICY_REPORTS_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to the reports feature enabling the user to view and generate reports</value>
+  </data>
+  <data name="GIZMO_POLICY_REPORTS_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_DESCRIPTION" xml:space="preserve">
+    <value>Allow time credit</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_NAME" xml:space="preserve">
+    <value>Allow time credit</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_CUSTOM_PRICE_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to make sales at custom prices enabling the user to override default pricing</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_CUSTOM_PRICE_NAME" xml:space="preserve">
+    <value>Custom price</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_DELETE_TIME_PURCHASES_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to delete time purchases enabling the user to remove fixed time or time offer transactions</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_DELETE_TIME_PURCHASES_NAME" xml:space="preserve">
+    <value>Delete time purchases</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_DEPOSIT_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to make deposits enabling the user to add funds to customer accounts</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_DEPOSIT_NAME" xml:space="preserve">
+    <value>Deposit</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to make sales enabling the user to process customer purchases</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_DISABLE_RECEIPT_PRINT_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to selectively disable receipt printing enabling the user to manage receipt generation preferences</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_DISABLE_RECEIPT_PRINT_NAME" xml:space="preserve">
+    <value>Disable receipt printing</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_MODIFY_USER_BILLING_OPTIONS_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to manually select user billing options enabling the user to customize billing preferences for customers</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_MODIFY_USER_BILLING_OPTIONS_NAME" xml:space="preserve">
+    <value>Modify user billing options</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_OPEN_CASH_DRAWER_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to manually open the cash drawer enabling the user to override automatic controls</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_OPEN_CASH_DRAWER_NAME" xml:space="preserve">
+    <value>Open cash drawer</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_PAY_LATER_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to enable pay later options allowing the user to defer payment for transactions</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_PAY_LATER_NAME" xml:space="preserve">
+    <value>Pay later</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_DEPOSITS_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to view deposits enabling the user to review customer account deposit transactions</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_DEPOSITS_NAME" xml:space="preserve">
+    <value>View deposits</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to view invoices enabling the user to review billing and payment details</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_NAME" xml:space="preserve">
+    <value>View invoices</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to view paid invoices enabling the user to review completed payment records</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_NAME" xml:space="preserve">
+    <value>View paid invoices</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to view past day deposits enabling the user to review deposit transactions from the previous day</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_NAME" xml:space="preserve">
+    <value>View past day deposits</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to view past day invoices enabling the user to review invoices issued on the previous day</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_NAME" xml:space="preserve">
+    <value>View past day invoices</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to void invoices from closed shifts enabling the user to cancel transactions after the shift has ended</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_NAME" xml:space="preserve">
+    <value>Void closed shift invoices</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_DEPOSIT_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to void deposits enabling the user to cancel or reverse deposit transactions</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_DEPOSIT_NAME" xml:space="preserve">
+    <value>Void deposit</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_INVOICE_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to void invoices enabling the user to cancel or reverse issued invoices</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_INVOICE_NAME" xml:space="preserve">
+    <value>Void</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_NON_OWNED_INVOICE_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to void invoices created by other operators enabling the user to cancel transactions initiated by different users</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_NON_OWNED_INVOICE_NAME" xml:space="preserve">
+    <value>Void non owned invoices</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_PAST_DAY_INVOICE_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to void invoices created on past dates enabling the user to cancel transactions from previous days</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_PAST_DAY_INVOICE_NAME" xml:space="preserve">
+    <value>Void past day invoices</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to void invoices with used time offers enabling the user to cancel transactions involving redeemed time offers</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_NAME" xml:space="preserve">
+    <value>Void used time invoices</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_WITHDRAW_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to make withdrawals enabling the user to deduct funds from customer accounts</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_WITHDRAW_NAME" xml:space="preserve">
+    <value>Withdraw</value>
+  </data>
+  <data name="GIZMO_POLICY_SETTINGS_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to the settings feature enabling the user to view and modify system configurations</value>
+  </data>
+  <data name="GIZMO_POLICY_SETTINGS_NAME" xml:space="preserve">
+    <value>Acccess</value>
+  </data>
+  <data name="GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to view shift expected amounts enabling the user to review anticipated totals for shifts</value>
+  </data>
+  <data name="GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_NAME" xml:space="preserve">
+    <value>View expected</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to the stock feature enabling the user to view and manage inventory items</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_MANAGE_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to manage stock enabling the user to update and control inventory items</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_MANAGE_NAME" xml:space="preserve">
+    <value>Manage</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTIONS" xml:space="preserve">
+    <value>Grants access to view past day stock transactions enabling the user to review inventory activities from the previous day</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve">
+    <value>View past day transactions</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to view stock transactions enabling the user to review all inventory activities</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_NAME" xml:space="preserve">
+    <value>View transactions</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_BAN_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to ban users enabling the user to restrict account access for specific users</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_BAN_NAME" xml:space="preserve">
+    <value>Ban user</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_CHANGE_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to move users to different user groups enabling the user to update user group assignments</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_CHANGE_GROUP_NAME" xml:space="preserve">
+    <value>Change usergroup</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to manually create users enabling the user to add new user accounts to the system</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_CREATE_NAME" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to delete users enabling the user to remove user accounts from the system</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_DELETE_NAME" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to edit users personal information enabling the user to update account details</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_EDIT_NAME" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_HARD_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to hard delete users enabling the user to permanently remove user accounts from the system</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_HARD_DELETE_NAME" xml:space="preserve">
+    <value>Hard delete</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to manually log in users enabling the user to initiate user sessions directly</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_NAME" xml:space="preserve">
+    <value>Login users</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_PASSWORD_RESET_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to manually reset user passwords enabling the user to update account credentials</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_PASSWORD_RESET_NAME" xml:space="preserve">
+    <value>Reset password</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_RENAME_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to rename users enabling the user to update user account names</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_RENAME_NAME" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_UNBAN_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to manually unban users enabling the user to restore access for previously banned accounts</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_UNBAN_NAME" xml:space="preserve">
+    <value>Unban user</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_VIEW_STATS_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to view user stats enabling the user to review activity and performance metrics of users</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_VIEW_STATS_NAME" xml:space="preserve">
+    <value>View stats</value>
+  </data>
+  <data name="GIZMO_POLICY_WAITING_LINES_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to the waiting lines feature enabling the user to manage and monitor queues</value>
+  </data>
+  <data name="GIZMO_POLICY_WAITING_LINES_MANAGE_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to manage waiting lines enabling the user to organize and control queue operations</value>
+  </data>
+  <data name="GIZMO_POLICY_WAITING_LINES_MANAGE_NAME" xml:space="preserve">
+    <value>Manage waiting lines</value>
+  </data>
+  <data name="GIZMO_POLICY_WAITING_LINES_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
   <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_DESCRIPTION" xml:space="preserve">
     <value>The host has reserved guest</value>
   </data>

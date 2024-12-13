@@ -32,12 +32,13 @@ namespace Gizmo.Server
 
             foreach (var attribute in attributes)
             {
-                var description = attribute.Description!;
+                var descriptionAttribute = attribute.Description!;                
                 var policy = attribute.Policy;
+
                 authorizationOptions.AddPolicy(GetPolicyName(policy), e =>
                 {
-                    var builder = e.RequireClaim(description.Resource, description.Operation);
-                    foreach (var dependency in description.DependsOn)
+                    var builder = e.RequireClaim(descriptionAttribute.Resource, descriptionAttribute.Operation);
+                    foreach (var dependency in descriptionAttribute.DependsOn)
                     {
                         var dependencyAttribute = dependency.GetAttribute<PolicyDescriptionAttribute>();
                         if (dependencyAttribute == null)

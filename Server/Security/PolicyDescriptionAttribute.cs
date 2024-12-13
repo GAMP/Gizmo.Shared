@@ -12,103 +12,89 @@ namespace Gizmo.Server
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        /// <param name="resource">Resource.</param>
-        /// <param name="operation">Operation.</param>
-        /// <param name="groupKey">Group key.</param>
-        /// <param name="nameKey">Name key.</param>
-        /// <param name="descriptionKey">Description key.</param>
-        public PolicyDescriptionAttribute(string resource,
-            string operation,
-            string groupKey = null,
-            string nameKey = null,
-            string descriptionKey = null)
+        /// <param name="resource">Claim resource.</param>
+        /// <param name="operation">Claim operation.</param>
+        /// <param name="policyGroup">Policy group.</param>
+        /// <param name="dependsOn">Policy dependencies.</param>
+        /// <param name="nameKey">Localized name key.</param>
+        /// <param name="descriptionKey">Localized description key.</param>
+        public PolicyDescriptionAttribute(string resource, string operation, PolicyGroups policyGroup, GizmoPolicies[] dependsOn, string nameKey, string descriptionKey)
         {
-            Resource = resource;
-            Operation = operation;
-            GroupKey = groupKey;
             NameKey = nameKey;
             DescriptionKey = descriptionKey;
+            Resource = resource;
+            Operation = operation;
+            PolicyGroup = policyGroup;
+            DependsOn = dependsOn;
         }
 
         /// <summary>
         /// Creates new instance.
         /// </summary>
-        /// <param name="resource">Resource.</param>
-        /// <param name="operation">Operation.</param>
-        /// <param name="dependsOn">Depends on.</param>
-        /// <param name="groupKey">Group key.</param>
-        /// <param name="nameKey">Name key.</param>
-        /// <param name="descriptionKey">Description key.</param>
-        public PolicyDescriptionAttribute(string resource,
-            string operation,
-            GizmoPolicies[] dependsOn,
-            string groupKey = null,
-            string nameKey = null,
-            string descriptionKey = null)
+        /// <param name="resource">Claim resource.</param>
+        /// <param name="operation">Claim operation.</param>
+        /// <param name="policyGroup">Policy group.</param>
+        /// <param name="nameKey">Localized name key.</param>
+        /// <param name="descriptionKey">Localized description key.</param>
+        public PolicyDescriptionAttribute(string resource, string operation, PolicyGroups policyGroup, string nameKey, string descriptionKey) : this(resource, operation, policyGroup, Array.Empty<GizmoPolicies>(), nameKey, descriptionKey)
         {
-            Resource = resource;
-            Operation = operation;
-            GroupKey = groupKey;
-            NameKey = nameKey;
-            DescriptionKey = descriptionKey;
-            DependsOn = dependsOn;
         }
 
         /// <summary>
-        /// Gets or sets resource.
+        /// Gets resource.
         /// </summary>
         public string Resource
         {
-            get; set;
+            get;
         }
 
         /// <summary>
-        /// Gets or sets operation.
+        /// Gets operation.
         /// </summary>
         public string Operation
         {
-            get; set;
+            get;
         }
 
         /// <summary>
-        /// Gets or sets localized group key name.
-        /// </summary>
-        public string GroupKey
-        {
-            get; set;
-        }
-
-        /// <summary>
-        /// Gets or sets localized resource key name.
+        /// Gets localized name key.
         /// </summary>
         public string NameKey
         {
-            get; set;
+            get;
         }
 
         /// <summary>
-        /// Gets or sets localized description key name.
+        /// Gets localized description key.
         /// </summary>
         public string DescriptionKey
         {
-            get; set;
+            get;        
         }
 
         /// <summary>
-        /// Gets or sets dependent claim type.
+        /// Gets dependencies.
         /// </summary>
         public GizmoPolicies[] DependsOn
         {
-            get; set;
+            get;
         } = [];
 
         /// <summary>
-        /// Gets if permission is assignable.
+        /// Gets or sets if permission is assignable.
         /// </summary>
         public bool IsAssignable
         {
-            get; set;
+            get; init;
         } = true;
+
+        /// <summary>
+        /// Gets policy group.
+        /// </summary>
+        public PolicyGroups PolicyGroup
+        {
+            get;
+        }
 
         /// <summary>
         /// This allows implicit conversion from <see cref="PolicyDescriptionAttribute"/> to <see cref="NameAttribute"/>.
