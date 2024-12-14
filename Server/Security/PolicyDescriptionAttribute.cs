@@ -18,7 +18,7 @@ namespace Gizmo.Server
         /// <param name="dependsOn">Policy dependencies.</param>
         /// <param name="nameKey">Localized name key.</param>
         /// <param name="descriptionKey">Localized description key.</param>
-        public PolicyDescriptionAttribute(string resource, string operation, PolicyGroups policyGroup, GizmoPolicies[] dependsOn, string nameKey, string descriptionKey)
+        public PolicyDescriptionAttribute(string resource, string operation, GizmoPolicyGroups policyGroup, GizmoPolicies[] dependsOn, string nameKey, string descriptionKey)
         {
             NameKey = nameKey;
             DescriptionKey = descriptionKey;
@@ -36,7 +36,7 @@ namespace Gizmo.Server
         /// <param name="policyGroup">Policy group.</param>
         /// <param name="nameKey">Localized name key.</param>
         /// <param name="descriptionKey">Localized description key.</param>
-        public PolicyDescriptionAttribute(string resource, string operation, PolicyGroups policyGroup, string nameKey, string descriptionKey) : this(resource, operation, policyGroup, Array.Empty<GizmoPolicies>(), nameKey, descriptionKey)
+        public PolicyDescriptionAttribute(string resource, string operation, GizmoPolicyGroups policyGroup, string nameKey, string descriptionKey) : this(resource, operation, policyGroup, Array.Empty<GizmoPolicies>(), nameKey, descriptionKey)
         {
         }
 
@@ -91,7 +91,7 @@ namespace Gizmo.Server
         /// <summary>
         /// Gets policy group.
         /// </summary>
-        public PolicyGroups PolicyGroup
+        public GizmoPolicyGroups PolicyGroup
         {
             get;
         }
@@ -102,7 +102,7 @@ namespace Gizmo.Server
         /// <param name="value"></param>
         public static implicit operator NameAttribute(PolicyDescriptionAttribute value)
         {
-            return new NameAttribute(value.Operation, value.NameKey);
+            return new NameAttribute(value.Resource, value.NameKey);
         }
 
         /// <summary>

@@ -14,133 +14,133 @@ namespace Gizmo.Server
         /// <summary>
         /// Sale permission.
         /// </summary>
-        [PolicyDescription("Sale", "*", PolicyGroups.Sales, nameof(Resources.GIZMO_POLICY_SALE_NAME), nameof(Resources.GIZMO_POLICY_SALE_DESCRIPTION))]
+        [PolicyDescription("Sale", "*", GizmoPolicyGroups.Sales, nameof(Resources.GIZMO_POLICY_SALE_NAME), nameof(Resources.GIZMO_POLICY_SALE_DESCRIPTION))]
         Sale,
 
         /// <summary>
         /// Sale at custom permission.
         /// </summary>
-        [PolicyDescription("Sale", "CustomPrice", PolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_CUSTOM_PRICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_CUSTOM_PRICE_DESCRIPTION))]
+        [PolicyDescription("Sale", "CustomPrice", GizmoPolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_CUSTOM_PRICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_CUSTOM_PRICE_DESCRIPTION))]
         SaleCustomPrice,
 
         /// <summary>
         /// Sale with non default vat permission.
         /// </summary>
-        [PolicyDescription("Sale", "NonDefaultVat", PolicyGroups.Sales, [Sale], "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_NON_DEFAULT_VAT", IsAssignable = false)]
+        [PolicyDescription("Sale", "NonDefaultVat", GizmoPolicyGroups.Sales, [Sale], "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_NON_DEFAULT_VAT", IsAssignable = false)]
         SaleNonDefaultVat,
 
         /// <summary>
         /// Sale with pay later permission.
         /// </summary>
-        [PolicyDescription("Sale", "PayLater", PolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_PAY_LATER_NAME), nameof(Resources.GIZMO_POLICY_SALE_PAY_LATER_DESCRIPTION))]
+        [PolicyDescription("Sale", "PayLater", GizmoPolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_PAY_LATER_NAME), nameof(Resources.GIZMO_POLICY_SALE_PAY_LATER_DESCRIPTION))]
         SaleNonPayLater,
 
         /// <summary>
         /// Sale void invoice permission.
         /// </summary>
-        [PolicyDescription("Sale", "VoidInvoices", PolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_VOID_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_INVOICE_DESCRIPTION))]
+        [PolicyDescription("Sale", "VoidInvoices", GizmoPolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_VOID_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_INVOICE_DESCRIPTION))]
         SaleNoVoidInvoices,
 
         /// <summary>
         /// Void used time invoices permission.
         /// </summary>
-        [PolicyDescription("Sale", "VoidUsedTimeInvoices", PolicyGroups.Sales, [SaleNoVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_DESCRIPTION))]
+        [PolicyDescription("Sale", "VoidUsedTimeInvoices", GizmoPolicyGroups.Sales, [SaleNoVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_DESCRIPTION))]
         VoidUsedTimeInvoices,
 
         /// <summary>
         /// Void closed shift invoices permission.
         /// </summary>
-        [PolicyDescription("Sale", "VoidClosedShiftInvoices", PolicyGroups.Sales, [SaleNoVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_DESCRIPTION))]
+        [PolicyDescription("Sale", "VoidClosedShiftInvoices", GizmoPolicyGroups.Sales, [SaleNoVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_DESCRIPTION))]
         VoidClosedShiftInvoices,
 
         /// <summary>
         /// Void other operator invoices permission.
         /// </summary>
-        [PolicyDescription("Sale", "VoidOtherOperatorInvoices", PolicyGroups.Sales, [SaleNoVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_NON_OWNED_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_DESCRIPTION))]
+        [PolicyDescription("Sale", "VoidOtherOperatorInvoices", GizmoPolicyGroups.Sales, [SaleNoVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_NON_OWNED_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_DESCRIPTION))]
         VoidOtherOperatorInvoices,
 
         /// <summary>
         /// Void previous business day invoices permission.
         /// </summary>
-        [PolicyDescription("Sale", "VoidPastDaysInvoices", PolicyGroups.Sales, [SaleNoVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_PAST_DAY_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_DESCRIPTION))]
+        [PolicyDescription("Sale", "VoidPastDaysInvoices", GizmoPolicyGroups.Sales, [SaleNoVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_PAST_DAY_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_DESCRIPTION))]
         VoidPastDaysInvoices,
 
         /// <summary>
         /// Sale deposit permission.
         /// </summary>
-        [PolicyDescription("Sale", "Deposit", PolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_GROUP_DEPLOYMENT_NAME), nameof(Resources.GIZMO_POLICY_SALE_DEPOSIT_DESCRIPTION))]
+        [PolicyDescription("Sale", "Deposit", GizmoPolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_GROUP_DEPLOYMENT_NAME), nameof(Resources.GIZMO_POLICY_SALE_DEPOSIT_DESCRIPTION))]
         Deposit,
 
         /// <summary>
         /// Sale withdraw permission.
         /// </summary>
-        [PolicyDescription("Sale", "Withdraw", PolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_WITHDRAW_NAME), nameof(Resources.GIZMO_POLICY_SALE_WITHDRAW_DESCRIPTION))]
+        [PolicyDescription("Sale", "Withdraw", GizmoPolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_WITHDRAW_NAME), nameof(Resources.GIZMO_POLICY_SALE_WITHDRAW_DESCRIPTION))]
         Withdraw,
 
         /// <summary>
         /// Sale void deposits permission.
         /// </summary>
-        [PolicyDescription("Sale", "VoidDeposits", PolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_VOID_DEPOSIT_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_DEPOSIT_DESCRIPTION))]
+        [PolicyDescription("Sale", "VoidDeposits", GizmoPolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_VOID_DEPOSIT_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_DEPOSIT_DESCRIPTION))]
         VoidDeposits,
 
         /// <summary>
         /// Sale manual open cash drawer permission.
         /// </summary>
-        [PolicyDescription("Sale", "ManualOpenCashDrawer", PolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_OPEN_CASH_DRAWER_NAME), nameof(Resources.GIZMO_POLICY_SALE_OPEN_CASH_DRAWER_DESCRIPTION))]
+        [PolicyDescription("Sale", "ManualOpenCashDrawer", GizmoPolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_OPEN_CASH_DRAWER_NAME), nameof(Resources.GIZMO_POLICY_SALE_OPEN_CASH_DRAWER_DESCRIPTION))]
         SaleManualOpenCashDrawer,
 
         /// <summary>
         /// Sale modify billing options permission.
         /// </summary>
-        [PolicyDescription("Sale", "ModifyBillingOptions", PolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_MODIFY_USER_BILLING_OPTIONS_NAME), nameof(Resources.GIZMO_POLICY_SALE_MODIFY_USER_BILLING_OPTIONS_DESCRIPTION))]
+        [PolicyDescription("Sale", "ModifyBillingOptions", GizmoPolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_MODIFY_USER_BILLING_OPTIONS_NAME), nameof(Resources.GIZMO_POLICY_SALE_MODIFY_USER_BILLING_OPTIONS_DESCRIPTION))]
         SaleModifyBillingOptions,
 
         /// <summary>
         /// Sale allow time credit permission.
         /// </summary>
-        [PolicyDescription("Sale", "AllowTimeCredit", PolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_NAME), nameof(Resources.GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_DESCRIPTION))]
+        [PolicyDescription("Sale", "AllowTimeCredit", GizmoPolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_NAME), nameof(Resources.GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_DESCRIPTION))]
         AllowTimeCredit,
 
         /// <summary>
         /// Sale disable receipt print permission.
         /// </summary>
-        [PolicyDescription("Sale", "AllowDisableReceiptPrint", PolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_DISABLE_RECEIPT_PRINT_NAME), nameof(Resources.GIZMO_POLICY_SALE_DISABLE_RECEIPT_PRINT_DESCRIPTION))]
+        [PolicyDescription("Sale", "AllowDisableReceiptPrint", GizmoPolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_DISABLE_RECEIPT_PRINT_NAME), nameof(Resources.GIZMO_POLICY_SALE_DISABLE_RECEIPT_PRINT_DESCRIPTION))]
         SaleAllowDisableReceiptPrint,
 
         /// <summary>
         /// View invoices permission.
         /// </summary>
-        [PolicyDescription("Sale", "ViewInvoices", PolicyGroups.Sales, nameof(Resources.GIZMO_POLICY_SALE_VIEW_INVOICES_NAME), nameof(Resources.GIZMO_POLICY_SALE_VIEW_INVOICES_DESCRIPTION))]
+        [PolicyDescription("Sale", "ViewInvoices", GizmoPolicyGroups.Sales, nameof(Resources.GIZMO_POLICY_SALE_VIEW_INVOICES_NAME), nameof(Resources.GIZMO_POLICY_SALE_VIEW_INVOICES_DESCRIPTION))]
         ViewInvoices,
 
         /// <summary>
         /// View only unpaid invoices permission.
         /// </summary>
-        [PolicyDescription("Sale", "ViewPaidInvoices", PolicyGroups.Sales, [ViewInvoices], nameof(Resources.GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_NAME), nameof(Resources.GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_DESCRIPTION))]
+        [PolicyDescription("Sale", "ViewPaidInvoices", GizmoPolicyGroups.Sales, [ViewInvoices], nameof(Resources.GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_NAME), nameof(Resources.GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_DESCRIPTION))]
         ViewPaidInvoices,
 
         /// <summary>
         /// View only business day invoices permission.
         /// </summary>
-        [PolicyDescription("Sale", "ViewPastDaysInvoices", PolicyGroups.Sales, [ViewInvoices], nameof(Resources.GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_NAME), nameof(Resources.GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_DESCRIPTION))]
+        [PolicyDescription("Sale", "ViewPastDaysInvoices", GizmoPolicyGroups.Sales, [ViewInvoices], nameof(Resources.GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_NAME), nameof(Resources.GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_DESCRIPTION))]
         ViewPastDaysInvoices,
 
         /// <summary>
         /// View deposits permission.
         /// </summary>
-        [PolicyDescription("Sale", "ViewDeposits", PolicyGroups.Sales, nameof(Resources.GIZMO_POLICY_SALE_VIEW_DEPOSITS_NAME), nameof(Resources.GIZMO_POLICY_SALE_VIEW_DEPOSITS_DESCRIPTION))]
+        [PolicyDescription("Sale", "ViewDeposits", GizmoPolicyGroups.Sales, nameof(Resources.GIZMO_POLICY_SALE_VIEW_DEPOSITS_NAME), nameof(Resources.GIZMO_POLICY_SALE_VIEW_DEPOSITS_DESCRIPTION))]
         ViewDeposits,
 
         /// <summary>
         /// View only business day deposits permission.
         /// </summary>
-        [PolicyDescription("Sale", "ViewPastDaysDeposits", PolicyGroups.Sales, [ViewDeposits], nameof(Resources.GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_NAME), nameof(Resources.GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_DESCRIPTION))]
+        [PolicyDescription("Sale", "ViewPastDaysDeposits", GizmoPolicyGroups.Sales, [ViewDeposits], nameof(Resources.GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_NAME), nameof(Resources.GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_DESCRIPTION))]
         ViewPastDaysDeposits,
 
         /// <summary>
         /// Sale delete time purchases permission.
         /// </summary>
-        [PolicyDescription("Sale", "DeleteTimePurchases", PolicyGroups.Sales, nameof(Resources.GIZMO_POLICY_SALE_DELETE_TIME_PURCHASES_NAME), nameof(Resources.GIZMO_POLICY_SALE_DELETE_TIME_PURCHASES_DESCRIPTION))]
+        [PolicyDescription("Sale", "DeleteTimePurchases", GizmoPolicyGroups.Sales, nameof(Resources.GIZMO_POLICY_SALE_DELETE_TIME_PURCHASES_NAME), nameof(Resources.GIZMO_POLICY_SALE_DELETE_TIME_PURCHASES_DESCRIPTION))]
         SaleNoDeleteTimePurchases,
 
         #endregion
@@ -149,7 +149,7 @@ namespace Gizmo.Server
         /// <summary>
         /// Shift view expected permission.
         /// </summary>
-        [PolicyDescription("Shift", "ViewExpected", PolicyGroups.Sales, nameof(Resources.GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_NAME), nameof(Resources.GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_DESCRIPTION))]
+        [PolicyDescription("Shift", "ViewExpected", GizmoPolicyGroups.Sales, nameof(Resources.GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_NAME), nameof(Resources.GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_DESCRIPTION))]
         ShiftCountViewExpected,
         #endregion
 
@@ -158,25 +158,25 @@ namespace Gizmo.Server
         /// <summary>
         /// Stock permission.
         /// </summary>
-        [PolicyDescription("Stock", "*", PolicyGroups.Sales, nameof(Resources.GIZMO_POLICY_STOCK_NAME), nameof(Resources.GIZMO_POLICY_STOCK_DESCRIPTION))]
+        [PolicyDescription("Stock", "*", GizmoPolicyGroups.Sales, nameof(Resources.GIZMO_POLICY_STOCK_NAME), nameof(Resources.GIZMO_POLICY_STOCK_DESCRIPTION))]
         Stock,
 
         /// <summary>
         /// Stock permission.
         /// </summary>
-        [PolicyDescription("Stock", "Manage", PolicyGroups.Sales, [Stock], nameof(Resources.GIZMO_POLICY_STOCK_MANAGE_NAME), nameof(Resources.GIZMO_POLICY_STOCK_MANAGE_DESCRIPTION))]
+        [PolicyDescription("Stock", "Manage", GizmoPolicyGroups.Sales, [Stock], nameof(Resources.GIZMO_POLICY_STOCK_MANAGE_NAME), nameof(Resources.GIZMO_POLICY_STOCK_MANAGE_DESCRIPTION))]
         StockManage,
 
         /// <summary>
         /// Stock permission.
         /// </summary>
-        [PolicyDescription("Stock", "ViewStockTransactions", PolicyGroups.Sales, nameof(Resources.GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_NAME), nameof(Resources.GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_DESCRIPTION))]
+        [PolicyDescription("Stock", "ViewStockTransactions", GizmoPolicyGroups.Sales, nameof(Resources.GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_NAME), nameof(Resources.GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_DESCRIPTION))]
         StockViewTransactions,
 
         /// <summary>
         /// Stock permission.
         /// </summary>
-        [PolicyDescription("Stock", "ViewPastDaysStockTransactions", PolicyGroups.Sales, [StockViewTransactions], nameof(Resources.GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_NAME), nameof(Resources.GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTIONS))]
+        [PolicyDescription("Stock", "ViewPastDaysStockTransactions", GizmoPolicyGroups.Sales, [StockViewTransactions], nameof(Resources.GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_NAME), nameof(Resources.GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTIONS))]
         StockViewPastDayTransactions,
 
         #endregion
@@ -186,55 +186,55 @@ namespace Gizmo.Server
         /// <summary>
         /// Management permission.
         /// </summary>
-        [PolicyDescription("Management", "*", PolicyGroups.Management, nameof(Resources.GIZMO_POLICY_MANAGEMENT_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_DESCRIPTION))]
+        [PolicyDescription("Management", "*", GizmoPolicyGroups.Management, nameof(Resources.GIZMO_POLICY_MANAGEMENT_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_DESCRIPTION))]
         Management,
 
         /// <summary>
         /// Management access tasks permission.
         /// </summary>
-        [PolicyDescription("Management", "Tasks", PolicyGroups.Management, [Management], nameof(Resources.GIZMO_POLICY_MANAGEMENT_TASKS_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_TASKS_DESCRIPTION))]
+        [PolicyDescription("Management", "Tasks", GizmoPolicyGroups.Management, [Management], nameof(Resources.GIZMO_POLICY_MANAGEMENT_TASKS_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_TASKS_DESCRIPTION))]
         ManagementTasks,
 
         /// <summary>
         /// Management access processes permission.
         /// </summary>
-        [PolicyDescription("Management", "Processes", PolicyGroups.Management, [Management], nameof(Resources.GIZMO_POLICY_MANAGEMENT_PROCESSES_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_PROCESSES_DESCRIPTION))]
+        [PolicyDescription("Management", "Processes", GizmoPolicyGroups.Management, [Management], nameof(Resources.GIZMO_POLICY_MANAGEMENT_PROCESSES_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_PROCESSES_DESCRIPTION))]
         ManageProcesses,
 
         /// <summary>
         /// Management access files permission.
         /// </summary>
-        [PolicyDescription("Management", "Files", PolicyGroups.Management, [Management], nameof(Resources.GIZMO_POLICY_MANAGEMENT_FILES_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_FILES_DESCRIPTION))]
+        [PolicyDescription("Management", "Files", GizmoPolicyGroups.Management, [Management], nameof(Resources.GIZMO_POLICY_MANAGEMENT_FILES_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_FILES_DESCRIPTION))]
         ManageFiles,
 
         /// <summary>
         /// Management maintenance mode permission.
         /// </summary>
-        [PolicyDescription("Management", "Maintenance", PolicyGroups.Management, nameof(Resources.GIZMO_POLICY_MANAGEMENT_MAINTENANCE_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_MAINTENANCE_DESCRIPTION))]
+        [PolicyDescription("Management", "Maintenance", GizmoPolicyGroups.Management, nameof(Resources.GIZMO_POLICY_MANAGEMENT_MAINTENANCE_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_MAINTENANCE_DESCRIPTION))]
         ManageMaintenance,
 
         /// <summary>
         /// Management security permission.
         /// </summary>
-        [PolicyDescription("Management", "Security", PolicyGroups.Management, nameof(Resources.GIZMO_POLICY_MANAGEMENT_SECURITY_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_SECURITY_DESCRIPTION))]
+        [PolicyDescription("Management", "Security", GizmoPolicyGroups.Management, nameof(Resources.GIZMO_POLICY_MANAGEMENT_SECURITY_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_SECURITY_DESCRIPTION))]
         ManageSecurity,
 
         /// <summary>
         /// Management lock state permission.
         /// </summary>
-        [PolicyDescription("Management", "LockState", PolicyGroups.Management, nameof(Resources.GIZMO_POLICY_MANAGEMENT_LOCK_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_LOCK_DESCRIPTION))]
+        [PolicyDescription("Management", "LockState", GizmoPolicyGroups.Management, nameof(Resources.GIZMO_POLICY_MANAGEMENT_LOCK_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_LOCK_DESCRIPTION))]
         ManageLockState,
 
         /// <summary>
         /// Management module restart permission.
         /// </summary>
-        [PolicyDescription("Management", "ModuleRestart", PolicyGroups.Management, nameof(Resources.GIZMO_POLICY_MANAGEMENT_CLIENT_MODULE_RESTART_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_CLIENT_MODULE_RESTART_DESCRIPTION))]
+        [PolicyDescription("Management", "ModuleRestart", GizmoPolicyGroups.Management, nameof(Resources.GIZMO_POLICY_MANAGEMENT_CLIENT_MODULE_RESTART_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_CLIENT_MODULE_RESTART_DESCRIPTION))]
         ManageModuleRestart,
 
         /// <summary>
         /// Management power on endpoints permission.
         /// </summary>
-        [PolicyDescription("Management", "PowerOnEndpoints", PolicyGroups.Management, nameof(Resources.GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_DESCRIPTION))]
+        [PolicyDescription("Management", "PowerOnEndpoints", GizmoPolicyGroups.Management, nameof(Resources.GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_DESCRIPTION))]
         ManagePowerOnEndpoints,
 
         #endregion
@@ -242,37 +242,37 @@ namespace Gizmo.Server
         /// <summary>
         /// Deployment permission.
         /// </summary>
-        [PolicyDescription("Deployment", "*", PolicyGroups.Deployment, nameof(Resources.GIZMO_POLICY_DEPLOYMENT_NAME), nameof(Resources.GIZMO_POLICY_DEPLOYMENT_DESCRIPTION))]
+        [PolicyDescription("Deployment", "*", GizmoPolicyGroups.Deployment, nameof(Resources.GIZMO_POLICY_DEPLOYMENT_NAME), nameof(Resources.GIZMO_POLICY_DEPLOYMENT_DESCRIPTION))]
         Deployment,
 
         /// <summary>
         /// Monitoring permission.
         /// </summary>
-        [PolicyDescription("Monitoring", "*", PolicyGroups.Monitoring, nameof(Resources.GIZMO_POLICY_MONITORING_NAME), nameof(Resources.GIZMO_POLICY_MONITORING_DESCRIPTION))]
+        [PolicyDescription("Monitoring", "*", GizmoPolicyGroups.Monitoring, nameof(Resources.GIZMO_POLICY_MONITORING_NAME), nameof(Resources.GIZMO_POLICY_MONITORING_DESCRIPTION))]
         Monitoring,
 
         /// <summary>
         /// Reports permission.
         /// </summary>
-        [PolicyDescription("Reports", "*", PolicyGroups.Reports, nameof(Resources.GIZMO_POLICY_REPORTS_NAME), nameof(Resources.GIZMO_POLICY_REPORTS_DESCRIPTION))]
+        [PolicyDescription("Reports", "*", GizmoPolicyGroups.Reports, nameof(Resources.GIZMO_POLICY_REPORTS_NAME), nameof(Resources.GIZMO_POLICY_REPORTS_DESCRIPTION))]
         Reports,
 
         /// <summary>
         /// Server settings permission.
         /// </summary>
-        [PolicyDescription("Settings", "*", PolicyGroups.ServerSettings, nameof(Resources.GIZMO_POLICY_SETTINGS_NAME), nameof(Resources.GIZMO_POLICY_SETTINGS_DESCRIPTION))]
+        [PolicyDescription("Settings", "*", GizmoPolicyGroups.ServerSettings, nameof(Resources.GIZMO_POLICY_SETTINGS_NAME), nameof(Resources.GIZMO_POLICY_SETTINGS_DESCRIPTION))]
         ServerSettings,
 
         /// <summary>
         /// Applications permission.
         /// </summary>
-        [PolicyDescription("Apps", "*", PolicyGroups.Applications, nameof(Resources.GIZMO_POLICY_APPLICATIONS_NAME), nameof(Resources.GIZMO_POLICY_APPLICATIONS_DESCRIPTION))]
+        [PolicyDescription("Apps", "*", GizmoPolicyGroups.Applications, nameof(Resources.GIZMO_POLICY_APPLICATIONS_NAME), nameof(Resources.GIZMO_POLICY_APPLICATIONS_DESCRIPTION))]
         Applications,
 
         /// <summary>
         /// News permission.
         /// </summary>
-        [PolicyDescription("News", "*", PolicyGroups.News, nameof(Resources.GIZMO_POLICY_NEWS_NAME), nameof(Resources.GIZMO_POLICY_NEWS_DESCRIPTION))]
+        [PolicyDescription("News", "*", GizmoPolicyGroups.News, nameof(Resources.GIZMO_POLICY_NEWS_NAME), nameof(Resources.GIZMO_POLICY_NEWS_DESCRIPTION))]
         News,
 
         #region USER
@@ -280,67 +280,67 @@ namespace Gizmo.Server
         /// <summary>
         /// Reset user password permission.
         /// </summary>
-        [PolicyDescription("User", "UserPasswordReset", PolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_PASSWORD_RESET_NAME), nameof(Resources.GIZMO_POLICY_USER_PASSWORD_RESET_DESCRIPTION))]
+        [PolicyDescription("User", "UserPasswordReset", GizmoPolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_PASSWORD_RESET_NAME), nameof(Resources.GIZMO_POLICY_USER_PASSWORD_RESET_DESCRIPTION))]
         UserResetPassword,
 
         /// <summary>
         /// Enable user permission.
         /// </summary>
-        [PolicyDescription("User", "UserEnable", PolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_UNBAN_NAME), nameof(Resources.GIZMO_POLICY_USER_UNBAN_DESCRIPTION))]
+        [PolicyDescription("User", "UserEnable", GizmoPolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_UNBAN_NAME), nameof(Resources.GIZMO_POLICY_USER_UNBAN_DESCRIPTION))]
         UserEnable,
 
         /// <summary>
         /// Disable user permission.
         /// </summary>
-        [PolicyDescription("User", "UserDisable", PolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_BAN_NAME), nameof(Resources.GIZMO_POLICY_USER_BAN_DESCRIPTION))]
+        [PolicyDescription("User", "UserDisable", GizmoPolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_BAN_NAME), nameof(Resources.GIZMO_POLICY_USER_BAN_DESCRIPTION))]
         UserDisable,
 
         /// <summary>
         /// Manual user login permission.
         /// </summary>
-        [PolicyDescription("User", "UserManualLogin", PolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_MANUAL_LOGIN_NAME), nameof(Resources.GIZMO_POLICY_USER_MANUAL_LOGIN_DESCRIPTION))]
+        [PolicyDescription("User", "UserManualLogin", GizmoPolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_MANUAL_LOGIN_NAME), nameof(Resources.GIZMO_POLICY_USER_MANUAL_LOGIN_DESCRIPTION))]
         UserManualLogin,
 
         /// <summary>
         /// Add user permission.
         /// </summary>
-        [PolicyDescription("User", "Add", PolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_CREATE_NAME), nameof(Resources.GIZMO_POLICY_USER_CREATE_DESCRIPTION))]
+        [PolicyDescription("User", "Add", GizmoPolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_CREATE_NAME), nameof(Resources.GIZMO_POLICY_USER_CREATE_DESCRIPTION))]
         UserAdd,
 
         /// <summary>
         /// Delete user permission.
         /// </summary>
-        [PolicyDescription("User", "Delete", PolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_DELETE_NAME), nameof(Resources.GIZMO_POLICY_USER_DELETE_DESCRIPTION))]
+        [PolicyDescription("User", "Delete", GizmoPolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_DELETE_NAME), nameof(Resources.GIZMO_POLICY_USER_DELETE_DESCRIPTION))]
         UserDelete,
 
         /// <summary>
         /// Delete user permission.
         /// </summary>
-        [PolicyDescription("User", "HardDelete", PolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_HARD_DELETE_NAME), nameof(Resources.GIZMO_POLICY_USER_HARD_DELETE_DESCRIPTION))]
+        [PolicyDescription("User", "HardDelete", GizmoPolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_HARD_DELETE_NAME), nameof(Resources.GIZMO_POLICY_USER_HARD_DELETE_DESCRIPTION))]
         UserHardDelete,
 
         /// <summary>
         /// Change user name permission.
         /// </summary>
-        [PolicyDescription("User", "ChangeUserName", PolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_RENAME_NAME), nameof(Resources.GIZMO_POLICY_USER_RENAME_DESCRIPTION))]
+        [PolicyDescription("User", "ChangeUserName", GizmoPolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_RENAME_NAME), nameof(Resources.GIZMO_POLICY_USER_RENAME_DESCRIPTION))]
         UserChangeUserName,
 
         /// <summary>
         /// Change user group permission.
         /// </summary>
-        [PolicyDescription("User", "ChangeUserGroup", PolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_CHANGE_GROUP_NAME), nameof(Resources.GIZMO_POLICY_USER_CHANGE_GROUP_DESCRIPTION))]
+        [PolicyDescription("User", "ChangeUserGroup", GizmoPolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_CHANGE_GROUP_NAME), nameof(Resources.GIZMO_POLICY_USER_CHANGE_GROUP_DESCRIPTION))]
         UserChangeUserGroup,
 
         /// <summary>
         /// Edit user permission.
         /// </summary>
-        [PolicyDescription("User", "Edit", PolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_EDIT_NAME), nameof(Resources.GIZMO_POLICY_USER_EDIT_DESCRIPTION))]
+        [PolicyDescription("User", "Edit", GizmoPolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_EDIT_NAME), nameof(Resources.GIZMO_POLICY_USER_EDIT_DESCRIPTION))]
         UserEdit,
 
         /// <summary>
         /// Edit user permission.
         /// </summary>
-        [PolicyDescription("User", "AccessStats", PolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_VIEW_STATS_NAME), nameof(Resources.GIZMO_POLICY_USER_VIEW_STATS_DESCRIPTION))]
+        [PolicyDescription("User", "AccessStats", GizmoPolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_VIEW_STATS_NAME), nameof(Resources.GIZMO_POLICY_USER_VIEW_STATS_DESCRIPTION))]
         UserAccessStats,
 
         #endregion
@@ -350,13 +350,13 @@ namespace Gizmo.Server
         /// <summary>
         /// Access log permission.
         /// </summary>
-        [PolicyDescription("Log", "*", PolicyGroups.Log, nameof(Resources.GIZMO_POLICY_LOG_NAME), nameof(Resources.GIZMO_POLICY_LOG_DESCRIPTION))]
+        [PolicyDescription("Log", "*", GizmoPolicyGroups.Log, nameof(Resources.GIZMO_POLICY_LOG_NAME), nameof(Resources.GIZMO_POLICY_LOG_DESCRIPTION))]
         Log,
 
         /// <summary>
         /// Clear log permission.
         /// </summary>
-        [PolicyDescription("Log", "Clear", PolicyGroups.Log, [Log], nameof(Resources.GIZMO_POLICY_LOG_CLEAR_NAME), nameof(Resources.GIZMO_POLICY_LOG_CLEAR_DESCRIPTION))]
+        [PolicyDescription("Log", "Clear", GizmoPolicyGroups.Log, [Log], nameof(Resources.GIZMO_POLICY_LOG_CLEAR_NAME), nameof(Resources.GIZMO_POLICY_LOG_CLEAR_DESCRIPTION))]
         LogClear,
 
         #endregion
@@ -366,13 +366,13 @@ namespace Gizmo.Server
         /// <summary>
         /// Access waiting lines permission.
         /// </summary>
-        [PolicyDescription("WaitingLines", "*", PolicyGroups.WaitingLines, nameof(Resources.GIZMO_POLICY_GROUP_WAITING_LINES_NAME), nameof(Resources.GIZMO_POLICY_WAITING_LINES_DESCRIPTION))]
+        [PolicyDescription("WaitingLines", "*", GizmoPolicyGroups.WaitingLines, nameof(Resources.GIZMO_POLICY_GROUP_WAITING_LINES_NAME), nameof(Resources.GIZMO_POLICY_WAITING_LINES_DESCRIPTION))]
         WaitingLines,
 
         /// <summary>
         /// Manage waiting lines permission.
         /// </summary>
-        [PolicyDescription("WaitingLines", "Manage", PolicyGroups.WaitingLines, [WaitingLines], nameof(Resources.GIZMO_POLICY_WAITING_LINES_MANAGE_NAME), nameof(Resources.GIZMO_POLICY_WAITING_LINES_MANAGE_DESCRIPTION))]
+        [PolicyDescription("WaitingLines", "Manage", GizmoPolicyGroups.WaitingLines, [WaitingLines], nameof(Resources.GIZMO_POLICY_WAITING_LINES_MANAGE_NAME), nameof(Resources.GIZMO_POLICY_WAITING_LINES_MANAGE_DESCRIPTION))]
         WaitingLinesManage,
 
         #endregion
@@ -382,32 +382,32 @@ namespace Gizmo.Server
         /// <summary>
         /// View register transactions permission.
         /// </summary>
-        [PolicyDescription("Register", "ViewRegisterTransactions", PolicyGroups.Register, nameof(Resources.GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_NAME), nameof(Resources.GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_DESCRIPTION))]
+        [PolicyDescription("Register", "ViewRegisterTransactions", GizmoPolicyGroups.Register, nameof(Resources.GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_NAME), nameof(Resources.GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_DESCRIPTION))]
         RegisterViewTransactions,
 
         /// <summary>
         /// View only business day register transactions permission.
         /// </summary>
-        [PolicyDescription("Register", "ViewPastDaysRegisterTransactions", PolicyGroups.Register, [RegisterViewTransactions], nameof(Resources.GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_NAME), nameof(Resources.GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTION))]
+        [PolicyDescription("Register", "ViewPastDaysRegisterTransactions", GizmoPolicyGroups.Register, [RegisterViewTransactions], nameof(Resources.GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_NAME), nameof(Resources.GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTION))]
         RegisterViewPastDaysTransactions,
 
         /// <summary>
         /// Create pay in register transactions permission.
         /// </summary>
 
-        [PolicyDescription("RegisterTransactions", "RegisterTransactionsPayIn", PolicyGroups.Register, nameof(Resources.GIZMO_POLICY_REGISTER_PAY_IN_NAME), nameof(Resources.GIZMO_POLICY_REGISTER_PAY_IN_DESCRIPTION))]
+        [PolicyDescription("RegisterTransactions", "RegisterTransactionsPayIn", GizmoPolicyGroups.Register, nameof(Resources.GIZMO_POLICY_REGISTER_PAY_IN_NAME), nameof(Resources.GIZMO_POLICY_REGISTER_PAY_IN_DESCRIPTION))]
         RegisterTransactionsPayIn,
 
         /// <summary>
         /// Create pay out register transactions permission.
         /// </summary>
-        [PolicyDescription("RegisterTransactions", "RegisterTransactionsPayOut", PolicyGroups.Register, nameof(Resources.GIZMO_POLICY_REGISTER_PAY_OUT_NAME), nameof(Resources.GIZMO_POLICY_SALE_PAY_LATER_DESCRIPTION))]
+        [PolicyDescription("RegisterTransactions", "RegisterTransactionsPayOut", GizmoPolicyGroups.Register, nameof(Resources.GIZMO_POLICY_REGISTER_PAY_OUT_NAME), nameof(Resources.GIZMO_POLICY_SALE_PAY_LATER_DESCRIPTION))]
         RegisterTransactionsPayOut,
 
         #endregion
 
         #region WEB API
-        [PolicyDescription("WebApi", "*", PolicyGroups.WebApi, "PERMISSION_GROUP_WEB_API", "PERMISSION_ACTION_WEB_API", IsAssignable = false)]
+        [PolicyDescription("WebApi", "*", GizmoPolicyGroups.WebApi, "PERMISSION_GROUP_WEB_API", "PERMISSION_ACTION_WEB_API", IsAssignable = false)]
         WebApi,
         #endregion
     }
