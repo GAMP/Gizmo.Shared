@@ -149,7 +149,7 @@ namespace Gizmo.Server
         /// <summary>
         /// Shift view expected permission.
         /// </summary>
-        [PolicyDescription("Shift", "ViewExpected", GizmoPolicyGroups.Sales, nameof(Resources.GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_NAME), nameof(Resources.GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_DESCRIPTION))]
+        [PolicyDescription("Shift", "ViewExpected", GizmoPolicyGroups.Shift, nameof(Resources.GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_NAME), nameof(Resources.GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_DESCRIPTION))]
         ShiftCountViewExpected,
         #endregion
 
@@ -158,25 +158,25 @@ namespace Gizmo.Server
         /// <summary>
         /// Stock permission.
         /// </summary>
-        [PolicyDescription("Stock", "*", GizmoPolicyGroups.Sales, nameof(Resources.GIZMO_POLICY_STOCK_NAME), nameof(Resources.GIZMO_POLICY_STOCK_DESCRIPTION))]
+        [PolicyDescription("Stock", "*", GizmoPolicyGroups.Stock, nameof(Resources.GIZMO_POLICY_STOCK_NAME), nameof(Resources.GIZMO_POLICY_STOCK_DESCRIPTION))]
         Stock,
 
         /// <summary>
         /// Stock permission.
         /// </summary>
-        [PolicyDescription("Stock", "Manage", GizmoPolicyGroups.Sales, [Stock], nameof(Resources.GIZMO_POLICY_STOCK_MANAGE_NAME), nameof(Resources.GIZMO_POLICY_STOCK_MANAGE_DESCRIPTION))]
+        [PolicyDescription("Stock", "Manage", GizmoPolicyGroups.Stock, [Stock], nameof(Resources.GIZMO_POLICY_STOCK_MANAGE_NAME), nameof(Resources.GIZMO_POLICY_STOCK_MANAGE_DESCRIPTION))]
         StockManage,
 
         /// <summary>
         /// Stock permission.
         /// </summary>
-        [PolicyDescription("Stock", "ViewStockTransactions", GizmoPolicyGroups.Sales, nameof(Resources.GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_NAME), nameof(Resources.GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_DESCRIPTION))]
+        [PolicyDescription("Stock", "ViewStockTransactions", GizmoPolicyGroups.Stock, nameof(Resources.GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_NAME), nameof(Resources.GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_DESCRIPTION))]
         StockViewTransactions,
 
         /// <summary>
         /// Stock permission.
         /// </summary>
-        [PolicyDescription("Stock", "ViewPastDaysStockTransactions", GizmoPolicyGroups.Sales, [StockViewTransactions], nameof(Resources.GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_NAME), nameof(Resources.GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTIONS))]
+        [PolicyDescription("Stock", "ViewPastDaysStockTransactions", GizmoPolicyGroups.Stock, [StockViewTransactions], nameof(Resources.GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_NAME), nameof(Resources.GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTIONS))]
         StockViewPastDayTransactions,
 
         #endregion
