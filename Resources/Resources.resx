@@ -489,6 +489,21 @@
   <data name="GIZMO_POLICY_SETTINGS_NAME" xml:space="preserve">
     <value>Acccess</value>
   </data>
+  <data name="GIZMO_POLICY_SET_CASHIER_NAME" xml:space="preserve">
+    <value>Cashier</value>
+  </data>
+  <data name="GIZMO_POLICY_SET_MANAGER_NAME" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="GIZMO_POLICY_SET_MARKETER_NAME" xml:space="preserve">
+    <value>Marketer</value>
+  </data>
+  <data name="GIZMO_POLICY_SET_OWNER_NAME" xml:space="preserve">
+    <value>Owner</value>
+  </data>
+  <data name="GIZMO_POLICY_SET_TECHNICIAN_NAME" xml:space="preserve">
+    <value>Technician</value>
+  </data>
   <data name="GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_DESCRIPTION" xml:space="preserve">
     <value>Grants access to view shift expected amounts enabling the user to review anticipated totals for shifts</value>
   </data>

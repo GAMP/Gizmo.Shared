@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Gizmo.Server.Security;
 
 namespace Gizmo.Server
 {
@@ -15,10 +16,11 @@ namespace Gizmo.Server
         /// <param name="resource">Claim resource.</param>
         /// <param name="operation">Claim operation.</param>
         /// <param name="policyGroup">Policy group.</param>
-        /// <param name="dependsOn">Policy dependencies.</param>
+        /// <param name="dependsOn">Dependent policies.</param>
+        /// <param name="policySets">Default policies sets</param>
         /// <param name="nameKey">Localized name key.</param>
         /// <param name="descriptionKey">Localized description key.</param>
-        public PolicyDescriptionAttribute(string resource, string operation, GizmoPolicyGroups policyGroup, GizmoPolicies[] dependsOn, string nameKey, string descriptionKey)
+        public PolicyDescriptionAttribute(string resource, string operation, GizmoPolicyGroups policyGroup, GizmoPolicies[] dependsOn, string nameKey, string descriptionKey, GizmoPolicySet[] policySets)
         {
             NameKey = nameKey;
             DescriptionKey = descriptionKey;
@@ -26,6 +28,33 @@ namespace Gizmo.Server
             Operation = operation;
             PolicyGroup = policyGroup;
             DependsOn = dependsOn;
+            DefaultSets = policySets;
+        }
+
+        /// <summary>
+        /// Creates new instance.
+        /// </summary>
+        /// <param name="resource">Claim resource.</param>
+        /// <param name="operation">Claim operation.</param>
+        /// <param name="policyGroup">Policy group.</param>
+        /// <param name="dependsOn">Policy dependencies.</param>
+        /// <param name="nameKey">Localized name key.</param>
+        /// <param name="descriptionKey">Localized description key.</param>
+        public PolicyDescriptionAttribute(string resource, string operation, GizmoPolicyGroups policyGroup, GizmoPolicies[] dependsOn, string nameKey, string descriptionKey) :
+            this(resource, operation, policyGroup, dependsOn, nameKey, descriptionKey, Array.Empty<GizmoPolicySet>())
+        {
+        }
+
+        /// <summary>
+        /// Creates new instance.
+        /// </summary>
+        /// <param name="resource">Claim resource.</param>
+        /// <param name="operation">Claim operation.</param>
+        /// <param name="policyGroup">Policy group.</param>
+        /// <param name="nameKey">Localized name key.</param>
+        /// <param name="descriptionKey">Localized description key.</param>
+        public PolicyDescriptionAttribute(string resource, string operation, GizmoPolicyGroups policyGroup, string nameKey, string descriptionKey, GizmoPolicySet[] policySets) : this(resource, operation, policyGroup, Array.Empty<GizmoPolicies>(), nameKey, descriptionKey,policySets)
+        {
         }
 
         /// <summary>
@@ -69,7 +98,7 @@ namespace Gizmo.Server
         /// </summary>
         public string DescriptionKey
         {
-            get;        
+            get;
         }
 
         /// <summary>
@@ -79,6 +108,11 @@ namespace Gizmo.Server
         {
             get;
         } = [];
+
+        /// <summary>
+        /// Gets default policy sets.
+        /// </summary>
+        public GizmoPolicySet[] DefaultSets { get; } = [];
 
         /// <summary>
         /// Gets or sets if permission is assignable.
