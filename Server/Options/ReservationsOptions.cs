@@ -17,68 +17,37 @@ namespace Gizmo.Server.Options
         [MessagePack.Key(0)]
         public bool EnableLoginBlock
         {
-            get; set;
+            get; init;
         }
 
-        [Name("Login block time", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_TIME_NAME")]
-        [ExtendedDescription("Specifies login block time", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_TIME_DESCRIPTION")]
-        [StoreOptionKey("LOGIN_BLOCK_TIME")]
+        [Name("Login block after time", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_AFTER_NAME")]
+        [ExtendedDescription("Specifies login block after time", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_AFTER_DESCRIPTION")]
+        [StoreOptionKey("LOGIN_BLOCK_AFTER")]
         [DefaultValue(0)]
         [Range(0, int.MaxValue)]
         [MessagePack.Key(1)]
-        public int LoginBlockTime
+        public int LoginBlockAfter
         {
-            get; set;
+            get; init;
         }
 
-        [Name("Enable login unblock", "SERVER_OPTION_RESERVATIONS_LOGIN_UNBLOCK_NAME")]
-        [ExtendedDescription("Specifies if login unblock is enabled", "SERVER_OPTION_RESERVATIONS_LOGIN_UNBLOCK_DESCRIPTION")]
-        [StoreOptionKey("ENABLE_LOGIN_UNBLOCK")]
+        [Name("Enable reservation expiration", "SERVER_OPTION_RESERVATIONS_LOGIN_TIMEOUT_NAME")]
+        [ExtendedDescription("Specifies if reservation expiration is enabled", "SERVER_OPTION_RESERVATIONS_LOGIN_TIMEOUT_DESCRIPTION")]
+        [StoreOptionKey("ENABLE_EXPIRATION")]
         [DefaultValue(false)]
         [MessagePack.Key(2)]
-        public bool EnableLoginUnblock
+        public bool EnableExpiration
         {
-            get; set;
+            get; init;
         }
 
-        [Name("Login unblock time", "SERVER_OPTION_CURRENCY_CURRENCY_NAME")]
-        [ExtendedDescription("Specifies login unblock time", "SERVER_OPTION_RESERVATIONS_LOGIN_UNBLOCK_TIME_DESCRIPTION")]
-        [StoreOptionKey("LOGIN_UNBLOCK_TIME")]
-        [DefaultValue(0)]
+        [Name("Reservation expire after time", "SERVER_OPTION_RESERVATIONS_EXPIRE_AFTER_NAME")]
+        [ExtendedDescription("Specifies reservation expire after time", "SERVER_OPTION_RESERVATIONS_EXPIRE_AFTER_DESCRIPTION")]
+        [StoreOptionKey("EXPIRE_AFTER")]
         [Range(0, int.MaxValue)]
+        [DefaultValue(0)]
         [MessagePack.Key(3)]
-        public int LoginUnblockTime
-        {
-            get; set;
-        }
-
-        [Name("Enable reservation timeout", "SERVER_OPTION_RESERVATIONS_LOGIN_TIMEOUT_NAME")]
-        [ExtendedDescription("Specifies if reservation timeout is enabled", "SERVER_OPTION_RESERVATIONS_LOGIN_TIMEOUT_DESCRIPTION")]
-        [StoreOptionKey("ENABLE_TIMEOUT")]
-        [DefaultValue(false)]
-        [MessagePack.Key(4)]
-        public bool EnableTimeout
-        {
-            get; init;
-        }
-
-        [Name("Reservation timeout time", "SERVER_OPTION_RESERVATIONS_LOGIN_TIMEOUT_TIME_NAME")]
-        [ExtendedDescription("Specifies reservation timeout time", "SERVER_OPTION_RESERVATIONS_LOGIN_TIMEOUT_TIME_DESCRIPTION")]
-        [StoreOptionKey("TIMEOUT")]
-        [Range(0, int.MaxValue)]
-        [DefaultValue(0)]
-        [MessagePack.Key(5)]
-        public int Timeout
-        {
-            get; init;
-        }
-
-        [Name("Disable time products", "SERVER_OPTION_RESERVATIONS_TIME_PRODUCTS_DISABLE_NAME")]
-        [ExtendedDescription("Specifies if time product purchase disabled for reservations", "SERVER_OPTION_RESERVATIONS_TIME_PRODUCTS_DISABLE_DESCRIPTION")]
-        [StoreOptionKey("TIME_PRODUCTS_DISABLE")]
-        [DefaultValue(false)]
-        [MessagePack.Key(6)]
-        public bool TimeProductsDisable
+        public int ExpireAfter
         {
             get; init;
         }
@@ -87,7 +56,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies if custom time is enabled for reservations", "SERVER_OPTION_RESERVATIONS_CUSTOM_TIME_ENABLE_DESCRIPTION")]
         [StoreOptionKey("CUSTOM_TIME_ENABLE")]
         [DefaultValue(false)]
-        [MessagePack.Key(7)]
+        [MessagePack.Key(4)]
         public bool CustomTimeEnable
         {
             get; init;
@@ -96,95 +65,121 @@ namespace Gizmo.Server.Options
         [Name("Minimum reservation time", "SERVER_OPTION_RESERVATIONS_MINIMUM_TIME_NAME")]
         [ExtendedDescription("Specifies minimum reservation time", "SERVER_OPTION_RESERVATIONS_MINIMUM_TIME_DESCRIPTION")]
         [StoreOptionKey("MINIMUM_TIME")]
-        [MessagePack.Key(8)]
+        [DefaultValue(null)]
+        [MessagePack.Key(5)]
         public int? MinimumTime
         {
             get; init;
         }
 
+        [Name("Maximum reservation time", "SERVER_OPTION_RESERVATIONS_MAXIMUM_TIME_NAME")]
+        [ExtendedDescription("Specifies minimum reservation time", "SERVER_OPTION_RESERVATIONS_MAXIMUM_TIME_DESCRIPTION")]
+        [StoreOptionKey("MAXIMUM_TIME")]
+        [DefaultValue(null)]
+        [MessagePack.Key(6)]
+        public int? MaximumTime 
+        {
+            get;
+            init;
+        }
+
         [Name("Reservation fee type", "SERVER_OPTION_RESERVATIONS_FEE_TYPE_NAME")]
         [ExtendedDescription("Specifies reservation fee type", "SERVER_OPTION_RESERVATIONS_FEE_TYPE_DESCRIPTION")]
         [StoreOptionKey("FEE_TYPE")]
-        [MessagePack.Key(9)]
+        [MessagePack.Key(7)]
         public ReservationFeeType FeeType
         {
-            get; init;
+            get;
+            init;
         }
 
         [Name("Reservation fee", "SERVER_OPTION_RESERVATIONS_FEE_NAME")]
         [ExtendedDescription("Specifies reservation fee", "SERVER_OPTION_RESERVATIONS_FEE_DESCRIPTION")]
         [StoreOptionKey("FEE")]
-        [MessagePack.Key(10)]
+        [MessagePack.Key(8)]
         public decimal Fee
         {
             get;
             init;
         }
 
-        [Name("Reservation cancellation fee type", "SERVER_OPTION_RESERVATIONS_CANCELLATION_FEE_TYPE_NAME")]
-        [ExtendedDescription("Specifies reservation cancellation fee type", "SERVER_OPTION_RESERVATIONS_CANCELLATION_FEE_TYPE_DESCRIPTION")]
-        [StoreOptionKey("CANCELLATION_FEE_TYPE")]
-        [MessagePack.Key(11)]
-        public ReservationFeeType CancellationFeeType
+        [Name("Reservation minimum payment percentage", "SERVER_OPTION_RESERVATIONS_MINIMUM_PAYMENT_PERCENTAGE_NAME")]
+        [ExtendedDescription("Specifies reservation minimum payment percentage", "SERVER_OPTION_RESERVATIONS_MINIMUM_PAYMENT_PERCENTAGE_DESCRIPTION")]
+        [StoreOptionKey("MINIMUM_PAYMENT_PERCENTAGE")]
+        [DefaultValue(100)]
+        [MessagePack.Key(9)]
+        public decimal MinimumPaymentPercentage
         {
-            get; init;
-        }
-
-        [Name("Reservation cancellation fee", "SERVER_OPTION_RESERVATIONS_FEE_NAME")]
-        [ExtendedDescription("Specifies reservation cancellation fee", "SERVER_OPTION_RESERVATIONS_FEE_DESCRIPTION")]
-        [StoreOptionKey("CANCELLATION_FEE")]
-        [MessagePack.Key(12)]
-        public decimal CancellationFee
-        {
-            get; init;
+            get;init;
         }
 
         [Name("Reservation cancellation grace period", "SERVER_OPTION_RESERVATIONS_CANCELLATION_GRACE_PERIOD_NAME")]
         [ExtendedDescription("Specifies reservation cancellation grace period", "SERVER_OPTION_RESERVATIONS_CANCELLATION_GRACE_PERIOD_DESCRIPTION")]
         [StoreOptionKey("CANCELLATION_GRACE_PERIOD")]
         [DefaultValue(null)]
-        [MessagePack.Key(13)]
+        [MessagePack.Key(10)]
         public int? CancellationGracePeriod
         {
-            get; init;
+            get;
+            init;
+        }
+
+        [Name("Reservation cancellation refund percentage", "SERVER_OPTION_RESERVATIONS_CANCELLATION_REFUND_PERCENTAGE_NAME")]
+        [ExtendedDescription("Specifies reservation cancellation refund percentage", "SERVER_OPTION_RESERVATIONS_CANCELLATION_REFUND_PERCENTAGE_DESCRIPTION")]
+        [StoreOptionKey("CANCELLATION_REFUND_PERCENTAGE")]
+        [MessagePack.Key(11)]
+        public decimal CancellationRefundPercentage
+        {
+            get;
+            init;
         }
 
         [Name("Disable multiple hosts", "SERVER_OPTION_RESERVATIONS_CANCELLATION_GRACE_PERIOD_NAME")]
         [ExtendedDescription("Specifies if multiple hosts reservations should be disabled", "SERVER_OPTION_RESERVATIONS_CANCELLATION_GRACE_PERIOD_DESCRIPTION")]
         [StoreOptionKey("DISABLE_MULTIPLE_HOSTS")]
         [DefaultValue(false)]
-        [MessagePack.Key(14)]
         public bool MultiHostDisable
         {
-            get; init;
+            get; 
+            init;
         }
 
-        [Name("Disable discounts", "SERVER_OPTION_RESERVATIONS_DISABLE_DISCOUNTS_NAME")]
-        [ExtendedDescription("Specifies discounts should be disabled for reservations", "SERVER_OPTION_RESERVATIONS_DISABLE_DISCOUNTS_DESCRIPTION")]
-        [StoreOptionKey("DISABLE_DISCOUNTS")]
+        [Name("Disable time products purchase", "SERVER_OPTION_RESERVATIONS_PURCHASE_TIME_PRODUCTS_DISABLE_NAME")]
+        [ExtendedDescription("Specifies if time product purchase disabled for reservations", "SERVER_OPTION_RESERVATIONS_PURCHASE_TIME_PRODUCTS_DISABLE_DESCRIPTION")]
+        [StoreOptionKey("PURCHASE_TIME_PRODUCTS_DISABLE")]
         [DefaultValue(false)]
-        [MessagePack.Key(15)]
-        public bool DisableDiscounts
+        public bool PurchaseTimeProductsDisable
         {
-            get; init;
+            get; 
+            init;
         }
 
+        [Name("Disable purchase discounts", "SERVER_OPTION_RESERVATIONS_PURCHASE_DISABLE_DISCOUNTS_NAME")]
+        [ExtendedDescription("Specifies discounts should be disabled for reservations", "SERVER_OPTION_RESERVATIONS_PURCHASE_DISABLE_DISCOUNTS_DESCRIPTION")]
+        [StoreOptionKey("PURCHASE_DISABLE_DISCOUNTS")]
+        [DefaultValue(false)]
+        public bool PurchaseDisableDiscounts
+        {
+            get; 
+            init;
+        }
+ 
         [Name("Deficit factor", "SERVER_OPTION_RESERVATIONS_DEFICIT_FACTOR_NAME")]
         [ExtendedDescription("Specifies deficit factor", "SERVER_OPTION_RESERVATIONS_DEFICIT_FACTOR_DESCRIPTION")]
         [StoreOptionKey("DEFICIT_FACTOR")]
         [DefaultValue(null)]
-        [MessagePack.Key(16)]
         public int? DeficitFactor
         {
-            get; init;
+            get; 
+            init;
         }
 
-
-        ///add an option in minutes that will be effective only for billing profiles and set an expected time the user will be using pc and some other user will be able to book it
-        ///
-
-        //add maximum reservation time.
-        //minimum reservation time should be global and not relate to allow custom time
-
+        [StoreOptionKey("EXPECTED_AVERAGE_SESSION_TIME")]
+        [DefaultValue(null)]
+        public int? ExpectedAverageSessionDuration
+        {
+            get;
+            init;
+        }
     }
 }
