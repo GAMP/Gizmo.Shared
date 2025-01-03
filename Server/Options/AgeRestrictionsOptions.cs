@@ -13,25 +13,33 @@ namespace Gizmo.Server.Options
     [MessagePack.MessagePackObject()]
     public sealed class AgeRestrictionsOptions : IStoreOptions
     {
+        [Name("Enforces all restrictions for users with unknown age", nameof(Resources.SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_NAME))]
+        [ExtendedDescription("Specifies if age is mandatory for all age restrictions", nameof(Resources.SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_DESCRIPTION))]
+        [StoreOptionKey("REQUIRE_AGE")]
+        [MessagePack.Key(0)]
+        [DefaultValue(false)]
+        public bool RequireAge { get; init; }
+
         [Name("Enable age restrictions for applications", nameof(Resources.SERVER_OPTION_AGE_RESTRICTIONS_APPLICATIONS_ENABLED_NAME))]
         [ExtendedDescription("Specifies if age restrictions enabled for applications", nameof(Resources.SERVER_OPTION_AGE_RESTRICTIONS_APPLICATIONS_ENABLED_DESCRIPTION))]
         [StoreOptionKey("APPLICATIONS_ENABLED")]
-        [MessagePack.Key(0)]
+        [MessagePack.Key(1)]
         [DefaultValue(false)]
         public bool IsApplicationsEnabled { get; init; }
 
         [Name("Enable age restrictions for login", nameof(Resources.SERVER_OPTION_AGE_RESTRICTIONS_LOGIN_ENABLED_NAME))]
         [ExtendedDescription("Specifies if age restrictions enabled for login", nameof(Resources.SERVER_OPTION_AGE_RESTRICTIONS_LOGIN_ENABLED_DESCRIPTION))]
         [StoreOptionKey("LOGIN_ENABLED")]
-        [MessagePack.Key(1)]
+        [MessagePack.Key(2)]
         [DefaultValue(false)]
         public bool IsLoginEnabled { get; init; }
 
-        [Name("Enforces all restrictions for users with unknown age", nameof(Resources.SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_NAME))]
-        [ExtendedDescription("Specifies if age is mandatory for all age restrictions", nameof(Resources.SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_DESCRIPTION))]
-        [StoreOptionKey("REQUIRE_AGE")]
-        [MessagePack.Key(2)]
+        [Name("Enable age restrictions for products", nameof(Resources.SERVER_OPTION_AGE_RESTRICTIONS_LOGIN_ENABLED_NAME))]
+        [ExtendedDescription("Specifies if age restrictions enabled for products", nameof(Resources.SERVER_OPTION_AGE_RESTRICTIONS_LOGIN_ENABLED_DESCRIPTION))]
+        [StoreOptionKey("PRODUCTS_ENABLED")]
+        [MessagePack.Key(3)]
         [DefaultValue(false)]
-        public bool RequireAge { get; init; }
+        public bool IsProductsEnabled { get; init; }
+
     }
 }
