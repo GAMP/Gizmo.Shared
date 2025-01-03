@@ -762,6 +762,24 @@
   <data name="LOGIN_RESULT_SUCCESS_NAME" xml:space="preserve">
     <value>Login success</value>
   </data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_APPLICATIONS_ENABLED_DESCRIPTION" xml:space="preserve">
+    <value>Specifies if age restrictions enabled for applications</value>
+  </data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_APPLICATIONS_ENABLED_NAME" xml:space="preserve">
+    <value>Enable age restrictions for applications</value>
+  </data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_LOGIN_ENABLED_DESCRIPTION" xml:space="preserve">
+    <value>Specifies if age restrictions enabled for login</value>
+  </data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_LOGIN_ENABLED_NAME" xml:space="preserve">
+    <value>Enable age restrictions for login</value>
+  </data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_DESCRIPTION" xml:space="preserve">
+    <value>Specifies if age is mandatory for all age restrictions</value>
+  </data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_NAME" xml:space="preserve">
+    <value>Enforces all restrictions for users with unknown age</value>
+  </data>
   <data name="TAX_SYSTEMS_RUSSIA_MAIN" xml:space="preserve">
     <value>Main</value>
   </data>
