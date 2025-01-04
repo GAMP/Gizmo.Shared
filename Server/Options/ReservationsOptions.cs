@@ -11,7 +11,7 @@ namespace Gizmo.Server.Options
     public sealed class ReservationsOptions : IStoreOptions
     {
         [Name("Enable login block", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_NAME")]
-        [ExtendedDescription("Specifies default currency", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_DESCRIPTION")]
+        [ExtendedDescription("Specifies if login block is enabled", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_DESCRIPTION")]
         [StoreOptionKey("ENABLE_LOGIN_BLOCK")]
         [DefaultValue(false)]
         [MessagePack.Key(0)]
@@ -20,13 +20,13 @@ namespace Gizmo.Server.Options
             get; init;
         }
 
-        [Name("Login block after time", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_AFTER_NAME")]
-        [ExtendedDescription("Specifies login block after time", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_AFTER_DESCRIPTION")]
-        [StoreOptionKey("LOGIN_BLOCK_AFTER")]
+        [Name("Login block time", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_TIME_NAME")]
+        [ExtendedDescription("Specifies login block time before reservation", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_TIME_DESCRIPTION")]
+        [StoreOptionKey("LOGIN_BLOCK_TIME")]
         [DefaultValue(0)]
         [Range(0, int.MaxValue)]
         [MessagePack.Key(1)]
-        public int LoginBlockAfter
+        public int LoginBlockTime
         {
             get; init;
         }
