@@ -11,8 +11,23 @@
         Waiting = 0,
 
         /// <summary>
-        /// Reservation is canceled by operator.
+        /// Reservation is canceled by user or operator.
         /// </summary>
         Canceled = 1,
+
+        /// <summary>
+        /// Reservation is active.
+        /// </summary>
+        Active = 2,
+
+        /// <summary>
+        /// Reservation is expired.
+        /// </summary>
+        Expired = 3,
+
+        /// <summary>
+        /// Reservation is completed.
+        /// </summary>
+        Completed = 4,
     }
 }
