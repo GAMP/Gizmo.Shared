@@ -29,10 +29,10 @@ namespace Gizmo.Server.Options
         [MessagePack.Key(2)]
         public int? HttpsPort { get; set; }
 
-        [Name("Access url", "SERVER_OPTION_NETWORK_ACCESS_URL_NAME")]
-        [StoreOptionKey("ACCESS_URL")]
+        [Name("Host name", "SERVER_OPTION_NETWORK_HOST_NAME_NAME")]
+        [StoreOptionKey("HOST_NAME")]
         [Required()]
         [MessagePack.Key(3)]
-        public string? AccessUrl { get; init; }
+        public string? HostName { get; init; }
     }
 }
