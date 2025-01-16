@@ -1,4 +1,4 @@
-﻿namespace Gizmo
+﻿namespace Gizmo.UI
 {
     /// <summary>
     /// View service command type.
