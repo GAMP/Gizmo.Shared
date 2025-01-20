@@ -26,7 +26,7 @@ namespace Gizmo.Server.Options
         [Name("HTTPS certificate password", "SERVER_OPTION_HTTPS_CERTIFICATE_PASSWORD_NAME")]
         [DefaultValue(null)]
         [StoreOptionKey("CERTIFICATE_PASSWORD")]
-        [MessagePack.Key(1)]
+        [MessagePack.Key(2)]
         public string? Password { get; init; }
     }
 }
