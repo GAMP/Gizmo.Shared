@@ -6,6 +6,10 @@
     public enum RestrictionType
     {
         /// <summary>
+        /// Unset.
+        /// </summary>
+        Unset = 0,
+        /// <summary>
         /// File name.
         /// </summary>
         FileName = 1,
