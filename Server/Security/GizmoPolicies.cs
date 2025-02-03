@@ -252,6 +252,13 @@ namespace Gizmo.Server
             [GizmoPolicySet.Technician, GizmoPolicySet.Owner])]
         ManagePowerOnEndpoints,
 
+        /// <summary>
+        /// Management edit layouts permission.
+        /// </summary>
+        [PolicyDescription("Management", "EditLayouts", GizmoPolicyGroups.Management, nameof(Resources.GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_DESCRIPTION),
+            [GizmoPolicySet.Cashier, GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ManageEditLayouts,
+
         #endregion
 
         /// <summary>

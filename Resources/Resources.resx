@@ -270,6 +270,12 @@
   <data name="GIZMO_POLICY_MANAGEMENT_DESCRIPTION" xml:space="preserve">
     <value>Grants access to the management feature enabling the user to perform administrative tasks</value>
   </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to edit layouts</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_NAME" xml:space="preserve">
+    <value>Edit layouts</value>
+  </data>
   <data name="GIZMO_POLICY_MANAGEMENT_FILES_DESCRIPTION" xml:space="preserve">
     <value>Grants access to the client host files feature enabling the user to manage and interact with host files</value>
   </data>
