@@ -4,7 +4,7 @@ using Microsoft.Extensions.Options;
 
 namespace Gizmo.Server.Options
 {
-    [OptionsConfigurationSection("SMS_GATEWAY")]
+    [OptionsConfigurationSection("SMSGATEWAY")]
     [StoreOptionsGroup("SMS_GATEWAY")]
     [MessagePack.MessagePackObject()]
     public sealed class SMSGatewayOptions : IStoreOptions
