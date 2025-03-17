@@ -6,7 +6,7 @@ using Microsoft.Extensions.Options;
 
 namespace Gizmo.Server.Options
 {
-    [OptionsConfigurationSection("HTTPS_CERTIFICATE")]
+    [OptionsConfigurationSection("HTTPSCERTIFICATE")]
     [StoreOptionsGroup("HTTPS_CERTIFICATE")]
     [MessagePack.MessagePackObject()]
     public sealed class HttpsCertificateOptions : IStoreOptions
