@@ -19,8 +19,15 @@ namespace Gizmo.Server.Options
         [Name("Minimum value", "SERVER_OPTION_TOP_UP_MINIMUM_VALUE_NAME")]
         [ExtendedDescription("Specifies top up minimum value", "SERVER_OPTION_TOP_UP_MINIMUM_VALUE_DESCRIPTION")]
         [StoreOptionKey("MINIMUM_VALUE")]
-        [DefaultValue(0)]
+        [DefaultValue(null)]
         [MessagePack.Key(1)]
-        public decimal MinimumValue { get; init; }
+        public decimal? MinimumValue { get; init; }
+
+        [Name("Maximum value", "SERVER_OPTION_TOP_UP_MAXIMUM_VALUE_NAME")]
+        [ExtendedDescription("Specifies top up maximum value", "SERVER_OPTION_TOP_UP_MAXIMUM_VALUE_DESCRIPTION")]
+        [StoreOptionKey("MAXIMUM_VALUE")]
+        [DefaultValue(null)]
+        [MessagePack.Key(3)]
+        public decimal? MaximumValue { get;init; }
     }
 }
