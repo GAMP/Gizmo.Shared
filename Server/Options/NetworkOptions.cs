@@ -13,7 +13,7 @@ namespace Gizmo.Server.Options
     {
         [Name("Protocols", "SERVER_OPTION_NETWORK_HTTP_PROTOCOLS_NAME")]
         [StoreOptionKey("HTTP_PROTOCOLS")]
-        [DefaultValue(HttpProtocols.Http)]
+        [DefaultValue(HttpProtocols.HttpHttps)]
         [MessagePack.Key(0)]
         public HttpProtocols HttpProtocols {  get; set; } 
 
