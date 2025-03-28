@@ -1,0 +1,28 @@
+<Project>
+    <PropertyGroup>
+
+        <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+        
+        <AnalysisMode>All</AnalysisMode>
+        <AnalysisLevel>latest</AnalysisLevel>
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference
+            Include="StyleCop.Analyzers"
+            PrivateAssets="all"
+            Condition="$(MSBuildProjectExtension) == '.csproj'"
+            Version="1.1.118" />
+        <PackageReference
+            Include="SonarAnalyzer.CSharp"
+            PrivateAssets="all"
+            Condition="$(MSBuildProjectExtension) == '.csproj'"
+            Version="10.7.0.110445" />
+        <PackageReference
+            Include="Roslynator.Analyzers"
+            PrivateAssets="all"
+            Condition="$(MSBuildProjectExtension) == '.csproj'"
+            Version="4.13.1" />
+    </ItemGroup>
+</Project>
