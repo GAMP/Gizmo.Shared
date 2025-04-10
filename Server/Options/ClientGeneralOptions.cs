@@ -1,0 +1,62 @@
+﻿#nullable enable
+
+using Microsoft.Extensions.Options;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
+
+namespace Gizmo.Server.Options
+{
+    [OptionsConfigurationSection("CLIENTOPTIONS")]
+    [StoreOptionsGroup("CLIENT_OPTIONS")]
+    [MessagePack.MessagePackObject()]
+    public sealed class ClientGeneralOptions : IStoreOptions
+    {
+        [Name("Default culture", "SERVER_OPTION_DEFAULT_CULTURE_NAME")]
+        [ExtendedDescription("Specifies default culture", "SERVER_OPTION_DEFAULT_CULTURE_DESCRIPTION")]
+        [StoreOptionKey("DEFAULT_CULTURE")]
+        [DefaultValue("en-US")]
+        [MessagePack.Key(0)]
+        public string? DefaultCulture
+        {
+            get; init;
+        } = "en-US";
+
+        [Name("Logout action")]
+        [ExtendedDescription("Specifies client logout action")]
+        [StoreOptionKey("LOGOUT_ACTION")]
+        [DefaultValue(ClientLogoutAction.Reboot)]
+        [MessagePack.Key(1)]
+        public ClientLogoutAction LogoutAction
+        {
+            get; init;
+        }
+
+        [Name("Power saving")]
+        [ExtendedDescription("Specifies client power saving")]
+        [StoreOptionKey("IDLE_POWER_SAVING")]
+        [DefaultValue(ClientPowerSaving.None)]
+        [MessagePack.Key(2)]
+        public ClientPowerSaving IdlePowerSaving { get; init; }
+
+        [Name("Power saving delay time")]
+        [ExtendedDescription("Specifies client idle power saving delay time")]
+        [StoreOptionKey("IDLE_POWER_SAVING_DELAY")]
+        [DefaultValue(0)]
+        [MessagePack.Key(3)]
+        public int IdlePowerSavingDelay { get; init; }
+
+        [Name("Client data path")]
+        [ExtendedDescription("Specifies client client data path")]
+        [StoreOptionKey("DATA_PATH")]
+        [DefaultValue(null)]
+        [MessagePack.Key(4)]
+        public string? DataPath { get; init; }
+
+        [Name("Manager password")]
+        [ExtendedDescription("Specifies manager password")]
+        [StoreOptionKey("MANAGER_PASSWORD")]
+        [DefaultValue(null)]
+        [MessagePack.Key(5)]
+        public string? ManagerPassword { get; init; }
+    }
+}

@@ -792,6 +792,18 @@
   <data name="SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_NAME" xml:space="preserve">
     <value>Enforces all restrictions for users with unknown age</value>
   </data>
+  <data name="SERVER_OPTION_GRACE_PERIOD_LOGOUT_ENABLED_DESCRIPTION" xml:space="preserve">
+    <value>Specifies if logout grace period is enabled</value>
+  </data>
+  <data name="SERVER_OPTION_GRACE_PERIOD_LOGOUT_ENABLED_NAME" xml:space="preserve">
+    <value>Logout enabled</value>
+  </data>
+  <data name="SERVER_OPTION_GRACE_PERIOD_LOGOUT_TIME_DESCRIPTION" xml:space="preserve">
+    <value>Specifies logout grace period time</value>
+  </data>
+  <data name="SERVER_OPTION_GRACE_PERIOD_LOGOUT_TIME_NAME" xml:space="preserve">
+    <value>Logout time</value>
+  </data>
   <data name="TAX_SYSTEMS_RUSSIA_MAIN" xml:space="preserve">
     <value>Main</value>
   </data>
