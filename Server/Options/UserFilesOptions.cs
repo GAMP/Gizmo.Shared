@@ -6,10 +6,10 @@ using Microsoft.Extensions.Options;
 
 namespace Gizmo.Server.Options
 {
-    [OptionsConfigurationSection("FILES")]
-    [StoreOptionsGroup("FILES")]
+    [OptionsConfigurationSection("USERFILES")]
+    [StoreOptionsGroup("USER_FILES")]
     [MessagePack.MessagePackObject()]
-    public sealed class FilesOptions : IStoreOptions
+    public sealed class UserFilesOptions : IStoreOptions
     {
         [Name("User data path", "SERVER_OPTION_FILES_USER_DATA_PATH_NAME")]
         [ExtendedDescription("Specifies user data path", "SERVER_OPTION_FILES_USER_DATA_PATH_DESCRIPTION")]
