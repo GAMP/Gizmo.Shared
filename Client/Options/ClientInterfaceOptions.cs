@@ -97,11 +97,11 @@ namespace Gizmo.Client.UI
         public int QuickLaunchMaxItems { get; set; }
 
         /// <summary>
-        /// Gets or sets client user interface prefered language.
+        /// Gets or sets client user interface preferred language.
         /// </summary>
         [MessagePack.Key(9)]
         [DefaultValue("en-US")]
-        public string? PreferedLanguage
+        public string? PreferredLanguage
         {
             get; set;
         }

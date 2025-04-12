@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using Microsoft.Extensions.Options;
 
-namespace Gizmo.Shared.Server.Options
+namespace Gizmo.Server.Options
 {
     [OptionsConfigurationSection("USERSTORAGE")]
     [StoreOptionsGroup("USER_STORAGE")]
