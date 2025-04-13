@@ -1,6 +1,5 @@
 ﻿#nullable enable
 
-using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
@@ -26,7 +25,7 @@ namespace Gizmo.Client.UI
         /// Defines maximum amount for an online deposit.
         /// </summary>
         /// <remarks>
-        /// This amount is used to limit the amount user deposits manually witout using any defined deposit presets.
+        /// This amount is used to limit the amount user deposits manually without using any defined deposit presets.
         /// </remarks>
         [MessagePack.Key(1)]
         [DefaultValue(typeof(decimal), "100000")]

@@ -13,7 +13,7 @@ namespace Gizmo.Client.UI
     public sealed class LoginRotatorOptions
     {
         /// <summary>
-        /// Gets or sets if rotator is enabled.
+        /// Defines if rotator is enabled.
         /// </summary>
         [MessagePack.Key(0)]
         [DefaultValue(false)]

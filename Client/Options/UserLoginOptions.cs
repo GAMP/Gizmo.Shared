@@ -6,7 +6,7 @@ namespace Gizmo.Client.UI
     public sealed class UserLoginOptions
     {
         /// <summary>
-        /// Indicates if user login is disabled.
+        /// Defines if user login is disabled.
         /// </summary>
         /// <remarks>
         /// This will disable user login form in the UI. False by default.

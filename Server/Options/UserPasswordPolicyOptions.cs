@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using Microsoft.Extensions.Options;
 
-namespace Gizmo.Shared.Options
+namespace Gizmo.Server.Options
 {
     [OptionsConfigurationSection("USERPASSWORDPOLICY")]
     [StoreOptionsGroup("USER_PASSWORD_POLICY")]

@@ -34,7 +34,7 @@ namespace Gizmo.Server.Options
         [Name("Power saving")]
         [ExtendedDescription("Specifies client power saving")]
         [StoreOptionKey("IDLE_POWER_SAVING")]
-        [DefaultValue(ClientPowerSaving.None)]
+        [DefaultValue(ClientPowerSaving.Disabled)]
         [MessagePack.Key(2)]
         public ClientPowerSaving IdlePowerSaving { get; init; }
 
@@ -58,5 +58,12 @@ namespace Gizmo.Server.Options
         [DefaultValue(null)]
         [MessagePack.Key(5)]
         public string? ManagerPassword { get; init; }
+
+        [Name("Enable concurrent execution limit")]
+        [ExtendedDescription("Specifies concurrent execution limit is enabled")]
+        [StoreOptionKey("CONCURRENT_EXECUTION_LIMIT_ENABLE")]
+        [DefaultValue(false)]
+        [MessagePack.Key(6)]
+        public bool IsConcurrentExecutionLimitEnabled { get; init; }
     }
 }

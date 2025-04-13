@@ -3,9 +3,15 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo.Client.UI
 {
+    /// <summary>
+    /// Password validation options.
+    /// </summary>
     [MessagePack.MessagePackObject()]
     public sealed class PasswordValidationOptions
     {
+        /// <summary>
+        /// Minimum length.
+        /// </summary>
         [MessagePack.Key(0)]
         [DefaultValue(8)]
         [Range(1, int.MaxValue)]
@@ -14,6 +20,9 @@ namespace Gizmo.Client.UI
             get; set;
         }
 
+        /// <summary>
+        /// Maximum length.
+        /// </summary>
         [MessagePack.Key(1)]
         [DefaultValue(24)]
         [Range(1, int.MaxValue)]
@@ -22,6 +31,9 @@ namespace Gizmo.Client.UI
             get; set;
         }
 
+        /// <summary>
+        /// Require lower case characters.
+        /// </summary>
         [MessagePack.Key(2)]
         [DefaultValue(false)]
         public bool LowerCaseCharactersRequired
@@ -29,6 +41,9 @@ namespace Gizmo.Client.UI
             get; set;
         }
 
+        /// <summary>
+        /// Require upper case characters.
+        /// </summary>
         [MessagePack.Key(3)]
         [DefaultValue(false)]
         public bool UpperCaseCharactersRequired
@@ -36,6 +51,9 @@ namespace Gizmo.Client.UI
             get; set;
         }
 
+        /// <summary>
+        /// Require numbers.
+        /// </summary>
         [MessagePack.Key(4)]
         [DefaultValue(false)]
         public bool NumbersRequired

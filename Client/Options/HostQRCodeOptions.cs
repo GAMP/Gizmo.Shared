@@ -6,7 +6,7 @@ namespace Gizmo.Client.UI
     public sealed class HostQRCodeOptions
     {
         /// <summary>
-        /// Indicates if host qr code is enabled.
+        /// Defines if host qr code is enabled.
         /// </summary>
         /// <remarks>
         /// False by default.
@@ -16,7 +16,7 @@ namespace Gizmo.Client.UI
         public bool Enabled { get; set; } = false;
 
         /// <summary>
-        /// Indicates if host qr code is base 64.
+        /// Defines if host qr code is base 64.
         /// </summary>
         /// <remarks>
         /// False by default.

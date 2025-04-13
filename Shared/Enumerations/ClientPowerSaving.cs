@@ -2,7 +2,7 @@
 {
     public enum ClientPowerSaving
     {
-        None = 0,
+        Disabled = 0,
         ShutDown = 1,
         Sleep = 2,
     }

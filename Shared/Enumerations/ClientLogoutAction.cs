@@ -26,6 +26,7 @@
         /// Log off.
         /// </summary>
         LogOff = 3,
+
         /// <summary>
         /// Stand by.
         /// </summary>
