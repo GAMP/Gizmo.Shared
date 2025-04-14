@@ -5,8 +5,6 @@
     /// </summary>
     public interface IValidatingViewState : IViewState
     {
-        #region PROPERTIES
-        
         /// <summary>
         /// Gets if model is valid. 
         /// </summary>
@@ -22,7 +20,5 @@
         /// Indicates that async validation being done in background.
         /// </remarks>
         bool IsValidating { get; set; } 
-
-        #endregion
     }
 }

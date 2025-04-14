@@ -9,8 +9,6 @@ namespace Gizmo.UI.View.Services
     /// </summary>
     public interface IViewService : IDisposable
     {
-        #region FUNCTIONS
-
         /// <summary>
         /// Initializes the service.
         /// </summary>
@@ -34,7 +32,5 @@ namespace Gizmo.UI.View.Services
         /// <param name="cToken">CancellationToken.</param>
         /// <returns>Task of the command.</returns>
         Task ExecuteCommandAsync<TCommand>(TCommand command, CancellationToken cToken = default) where TCommand : notnull, IViewServiceCommand;
-
-        #endregion
     }
 }

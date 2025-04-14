@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using Microsoft.Extensions.Options;
-using Gizmo.Shared;
 
 namespace Gizmo.Server.Options
 {

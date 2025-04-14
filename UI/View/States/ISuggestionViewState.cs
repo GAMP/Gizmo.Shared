@@ -22,7 +22,7 @@ namespace Gizmo.UI.View.States
         /// <remarks>
         /// This value will be forwarded to the model upon selection.
         /// </remarks>
-        /// <returns></returns>
+        /// <returns>Selection value.</returns>
         public object GetSelectionValue();
 
         /// <summary>

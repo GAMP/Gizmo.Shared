@@ -10,16 +10,10 @@ namespace Gizmo.UI.View.States
     /// </remarks>
     public interface IViewState
     {
-        #region EVENTS
-        
         /// <summary>
         /// Raised on object change.
         /// </summary>
         event EventHandler OnChange;
-
-        #endregion
-
-        #region PROPERTIES
 
         /// <summary>
         /// Gets if state is initialized.
@@ -37,15 +31,9 @@ namespace Gizmo.UI.View.States
         /// </summary>
         bool IsDirty { get; set; }
 
-        #endregion
-
-        #region FUNCTIONS
-
         /// <summary>
         /// Raises changed event.
         /// </summary>
         void RaiseChanged();
-
-        #endregion
     }
 }
