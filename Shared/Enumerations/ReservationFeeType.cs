@@ -1,4 +1,4 @@
-﻿namespace Gizmo.Shared
+﻿namespace Gizmo
 {
     /// <summary>
     /// Reservation fee type.
