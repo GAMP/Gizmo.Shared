@@ -56,6 +56,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies manager password")]
         [StoreOptionKey("MANAGER_PASSWORD")]
         [DefaultValue(null)]
+        [Protect()]
         [MessagePack.Key(5)]
         public string? ManagerPassword { get; init; }
 

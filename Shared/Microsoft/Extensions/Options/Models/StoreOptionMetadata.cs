@@ -58,6 +58,15 @@ namespace Microsoft.Extensions.Options
         [MessagePack.Key(6)]
         public IEnumerable<StoreOptionAllowedValueMetadata> AllowedValues { get; init; } = Enumerable.Empty<StoreOptionAllowedValueMetadata>();
 
+        /// <summary>
+        /// Gets if property is protected.
+        /// </summary>
+        /// <remarks>
+        /// Any property marked as protected will be hashed when writing and reading from store.
+        /// </remarks>
+        [MessagePack.Key(7)]
+        public bool Protected { get; init; }
+
         #endregion
     }
 }
