@@ -33,6 +33,6 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies user storage redirected folders")]
         [StoreOptionKey("REDIRECTED_FOLDERS")]
         [MessagePack.Key(3)]
-        public int RedirectedFolders { get; init; }
+        public SpecialFolders RedirectedFolders { get; init; }
     }
 }
