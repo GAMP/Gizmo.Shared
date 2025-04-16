@@ -27,7 +27,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies user verification method")]
         [StoreOptionKey("VERIFICATION_METHOD")]
         [MessagePack.Key(2)]
-        [DefaultValue(UserRecoveryMethod.None)]
+        [DefaultValue(RegistrationVerificationMethod.None)]
         public RegistrationVerificationMethod VerificationMethod { get; init; }
     }
 }
