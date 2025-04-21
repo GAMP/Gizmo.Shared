@@ -51,9 +51,9 @@ namespace Gizmo.Server
 
             //custom policies
             authorizationOptions.AddPolicy("require-register", e => e.RequireClaim(ClaimNames.RegisterId));
-            authorizationOptions.AddPolicy("require-branch", e => e.RequireClaim(ClaimNames.Branch));
-            authorizationOptions.AddPolicy("require-branch-register", e => e.RequireClaim(ClaimNames.Branch).RequireClaim(ClaimNames.RegisterId));
-            authorizationOptions.AddPolicy("require-branch-register", e => e.RequireClaim(ClaimNames.Branch).RequireClaim(ClaimNames.RegisterId));
+            authorizationOptions.AddPolicy("require-branch", e => e.RequireClaim(ClaimNames.BranchId));
+            authorizationOptions.AddPolicy("require-branch-register", e => e.RequireClaim(ClaimNames.BranchId).RequireClaim(ClaimNames.RegisterId));
+            authorizationOptions.AddPolicy("require-branch-register", e => e.RequireClaim(ClaimNames.BranchId).RequireClaim(ClaimNames.RegisterId));
 
             return authorizationOptions;
         }
