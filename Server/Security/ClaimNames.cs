@@ -10,5 +10,6 @@
         public const string ApiKeyRoleName = "apikey";
         public const string Branch = "branch";
         public const string Register = "register";
+        public const string Stock = "stock";
     }
 }
