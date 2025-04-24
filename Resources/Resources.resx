@@ -147,6 +147,36 @@
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
     <value>Application category delete success</value>
   </data>
+  <data name="CLIENT_LOGOUT_ACTION_ADMIN_MODE" xml:space="preserve">
+    <value>Admin Mode</value>
+  </data>
+  <data name="CLIENT_LOGOUT_ACTION_CLOSE_PROGRAMS" xml:space="preserve">
+    <value>Close Programs</value>
+  </data>
+  <data name="CLIENT_LOGOUT_ACTION_LOG_OFF" xml:space="preserve">
+    <value>Log Off</value>
+  </data>
+  <data name="CLIENT_LOGOUT_ACTION_NO_ACTION" xml:space="preserve">
+    <value>No Action</value>
+  </data>
+  <data name="CLIENT_LOGOUT_ACTION_REBOOT" xml:space="preserve">
+    <value>Reboot</value>
+  </data>
+  <data name="CLIENT_LOGOUT_ACTION_STAND_BY" xml:space="preserve">
+    <value>Stand By</value>
+  </data>
+  <data name="CLIENT_LOGOUT_ACTION_TURN_OFF" xml:space="preserve">
+    <value>Turn Off</value>
+  </data>
+  <data name="CLIENT_POWER_SAVING_DISABLED" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="CLIENT_POWER_SAVING_SHUT_DOWN" xml:space="preserve">
+    <value>Shut Down</value>
+  </data>
+  <data name="CLIENT_POWER_SAVING_SLEEP" xml:space="preserve">
+    <value>Sleep</value>
+  </data>
   <data name="GIZMO_POLICY_APPLICATIONS_DESCRIPTION" xml:space="preserve">
     <value>Grants access to the applications feature, enabling the user to manage and interact with applications</value>
   </data>
@@ -642,6 +672,15 @@
   <data name="HOST_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
     <value>Host delete success</value>
   </data>
+  <data name="KEY_GENERATION_CHARACTERS_ALPHANUMERIC" xml:space="preserve">
+    <value>Alphanumeric</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_NUMERIC" xml:space="preserve">
+    <value>Numeric</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_UPPER_CASE_CHARACTERS" xml:space="preserve">
+    <value>Upper Case Characters</value>
+  </data>
   <data name="LOGIN_RESULT_ACCOUNT_DISABLED_DESCRIPTION" xml:space="preserve">
     <value>The specified user account is disabled</value>
   </data>
@@ -768,6 +807,15 @@
   <data name="LOGIN_RESULT_SUCCESS_NAME" xml:space="preserve">
     <value>Login success</value>
   </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE" xml:space="preserve">
+    <value>Mobile Phone</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_NONE" xml:space="preserve">
+    <value>None</value>
+  </data>
   <data name="SERVER_OPTION_AGE_RESTRICTIONS_APPLICATIONS_ENABLED_DESCRIPTION" xml:space="preserve">
     <value>Specifies if age restrictions enabled for applications</value>
   </data>
@@ -815,6 +863,15 @@
   </data>
   <data name="TAX_SYSTEM_COUNTRY_UNSPECIFIED" xml:space="preserve">
     <value>Unspecified</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_EMAIL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_MOBILE" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_NONE" xml:space="preserve">
+    <value>None</value>
   </data>
   <data name="VAT_RATES_RUSSIA_NONE" xml:space="preserve">
     <value>None</value>

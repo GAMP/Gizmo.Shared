@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Gizmo
 {
@@ -14,14 +15,19 @@ namespace Gizmo
         /// <summary>
         /// No recovery method.
         /// </summary>
+        [Name("None", "USER_RECOVERY_METHOD_NONE")]
         None = 0,
+
         /// <summary>
         /// Recovery by mobile phone.
         /// </summary>
+        [Name("Mobile", "USER_RECOVERY_METHOD_MOBILE")]
         Mobile = 1,
+
         /// <summary>
         /// Recovery by email.
         /// </summary>
+        [Name("Email", "USER_RECOVERY_METHOD_EMAIL")]
         Email = 2,
     }
 }
