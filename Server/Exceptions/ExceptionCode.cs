@@ -126,5 +126,9 @@ namespace Gizmo.Server.Exceptions
         /// Remote control exception.
         /// </summary>
         RemoteControlException = 27,
+        /// <summary>
+        /// Inventory exception.
+        /// </summary>
+        InventoryException = 28,
     }
 }
