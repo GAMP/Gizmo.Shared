@@ -51,12 +51,12 @@ namespace Gizmo.Server.Options
             get; init;
         }
 
-        [Name("Enable custom reservation time", "SERVER_OPTION_RESERVATIONS_CUSTOM_TIME_ENABLE_NAME")]
-        [ExtendedDescription("Specifies if custom time is enabled for reservations", "SERVER_OPTION_RESERVATIONS_CUSTOM_TIME_ENABLE_DESCRIPTION")]
-        [StoreOptionKey("CUSTOM_TIME_ENABLE")]
-        [DefaultValue(false)]
+        [Name("Allowed time source type", "SERVER_OPTION_RESERVATIONS_TIME_SOURCE_TYPE_NAME")]
+        [ExtendedDescription("Specifies allowed time source type", "SERVER_OPTION_RESERVATIONS_TIME_SOURCE_TYPE_DESCRIPTION")]
+        [StoreOptionKey("TIME_SOURCE_TYPE")]
+        [DefaultValue(ReservationTimeSourceType.TimeOffer)]
         [MessagePack.Key(4)]
-        public bool CustomTimeEnable
+        public ReservationTimeSourceType TimeSourceType
         {
             get; init;
         }
@@ -137,17 +137,8 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies if multiple hosts reservations should be disabled", "SERVER_OPTION_RESERVATIONS_CANCELLATION_GRACE_PERIOD_DESCRIPTION")]
         [StoreOptionKey("DISABLE_MULTIPLE_HOSTS")]
         [DefaultValue(false)]
+        [MessagePack.Key(12)]
         public bool MultiHostDisable
-        {
-            get; 
-            init;
-        }
-
-        [Name("Disable time products purchase", "SERVER_OPTION_RESERVATIONS_PURCHASE_TIME_PRODUCTS_DISABLE_NAME")]
-        [ExtendedDescription("Specifies if time product purchase disabled for reservations", "SERVER_OPTION_RESERVATIONS_PURCHASE_TIME_PRODUCTS_DISABLE_DESCRIPTION")]
-        [StoreOptionKey("PURCHASE_TIME_PRODUCTS_DISABLE")]
-        [DefaultValue(false)]
-        public bool PurchaseTimeProductsDisable
         {
             get; 
             init;
@@ -157,6 +148,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies discounts should be disabled for reservations", "SERVER_OPTION_RESERVATIONS_PURCHASE_DISABLE_DISCOUNTS_DESCRIPTION")]
         [StoreOptionKey("PURCHASE_DISABLE_DISCOUNTS")]
         [DefaultValue(false)]
+        [MessagePack.Key(13)]
         public bool PurchaseDisableDiscounts
         {
             get; 
@@ -167,6 +159,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies deficit factor", "SERVER_OPTION_RESERVATIONS_DEFICIT_FACTOR_DESCRIPTION")]
         [StoreOptionKey("DEFICIT_FACTOR")]
         [DefaultValue(null)]
+        [MessagePack.Key(14)]
         public int? DeficitFactor
         {
             get; 
@@ -175,6 +168,7 @@ namespace Gizmo.Server.Options
 
         [StoreOptionKey("EXPECTED_AVERAGE_SESSION_TIME")]
         [DefaultValue(null)]
+        [MessagePack.Key(15)]
         public int? ExpectedAverageSessionDuration
         {
             get;

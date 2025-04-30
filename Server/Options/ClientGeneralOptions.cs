@@ -6,13 +6,11 @@ using System.ComponentModel;
 
 namespace Gizmo.Server.Options
 {
-    [OptionsConfigurationSection("CLIENTOPTIONS")]
-    [StoreOptionsGroup("CLIENT_OPTIONS")]
+    [OptionsConfigurationSection("CLIENGENERAL")]
+    [StoreOptionsGroup("CLIENT_GENERAL")]
     [MessagePack.MessagePackObject()]
     public sealed class ClientGeneralOptions : IStoreOptions
     {
-        [Name("Default culture", "SERVER_OPTION_DEFAULT_CULTURE_NAME")]
-        [ExtendedDescription("Specifies default culture", "SERVER_OPTION_DEFAULT_CULTURE_DESCRIPTION")]
         [StoreOptionKey("DEFAULT_CULTURE")]
         [DefaultValue("en-US")]
         [MessagePack.Key(0)]
