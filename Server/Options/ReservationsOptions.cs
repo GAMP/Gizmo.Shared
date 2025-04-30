@@ -9,23 +9,44 @@ namespace Gizmo.Server.Options
     [MessagePack.MessagePackObject()]
     public sealed class ReservationsOptions : IStoreOptions
     {
-        [Name("Enable login block", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_NAME")]
-        [ExtendedDescription("Specifies if login block is enabled", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_DESCRIPTION")]
-        [StoreOptionKey("ENABLE_LOGIN_BLOCK")]
+        [Name("Enable login block before", "SERVER_OPTION_RESERVATIONS_ENABLE_LOGIN_BLOCK_BEFORE_NAME")]
+        [ExtendedDescription("Specifies if login block before reservation is enabled", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_BEFORE_DESCRIPTION")]
+        [StoreOptionKey("ENABLE_LOGIN_BLOCK_BEFORE")]
         [DefaultValue(false)]
         [MessagePack.Key(0)]
-        public bool EnableLoginBlock
+        public bool EnableLoginBlockBefore
         {
             get; init;
         }
 
-        [Name("Login block time", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_TIME_NAME")]
-        [ExtendedDescription("Specifies login block time before reservation", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_TIME_DESCRIPTION")]
-        [StoreOptionKey("LOGIN_BLOCK_TIME")]
+        [Name("Login block before time", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_BEFORE_TIME_NAME")]
+        [ExtendedDescription("Specifies time to block logins before reservation", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_BEFORE_TIME_DESCRIPTION")]
+        [StoreOptionKey("LOGIN_BLOCK_BEFORE_TIME")]
         [DefaultValue(0)]
         [Range(0, int.MaxValue)]
         [MessagePack.Key(1)]
-        public int LoginBlockTime
+        public int LoginBlockBeforeTime
+        {
+            get; init;
+        }
+
+        [Name("Enable login block after", "SERVER_OPTION_RESERVATIONS_ENABLE_LOGIN_BLOCK_AFTER_NAME")]
+        [ExtendedDescription("Specifies if login block before reservation is enabled", "SERVER_OPTION_RESERVATIONS_ENABLE_LOGIN_BLOCK_AFTER_DESCRIPTION")]
+        [StoreOptionKey("ENABLE_LOGIN_BLOCK_AFTER")]
+        [DefaultValue(false)]
+        [MessagePack.Key(2)]
+        public bool EnableLoginBlockAfter
+        {
+            get; init;
+        }
+
+        [Name("Login block after time", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_AFTER_TIME_NAME")]
+        [ExtendedDescription("Specifies time to block logins after reservation", "SERVER_OPTION_RESERVATIONS_LOGIN_BLOCK_AFTER_TIME_DESCRIPTION")]
+        [StoreOptionKey("LOGIN_BLOCK_AFTER_TIME")]
+        [DefaultValue(0)]
+        [Range(0, int.MaxValue)]
+        [MessagePack.Key(3)]
+        public int LoginBlockAfterTime
         {
             get; init;
         }
@@ -34,7 +55,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies if reservation expiration is enabled", "SERVER_OPTION_RESERVATIONS_LOGIN_TIMEOUT_DESCRIPTION")]
         [StoreOptionKey("ENABLE_EXPIRATION")]
         [DefaultValue(false)]
-        [MessagePack.Key(2)]
+        [MessagePack.Key(4)]
         public bool EnableExpiration
         {
             get; init;
@@ -45,8 +66,8 @@ namespace Gizmo.Server.Options
         [StoreOptionKey("EXPIRE_AFTER")]
         [Range(0, int.MaxValue)]
         [DefaultValue(0)]
-        [MessagePack.Key(3)]
-        public int ExpireAfter
+        [MessagePack.Key(5)]
+        public int? ExpireAfter
         {
             get; init;
         }
@@ -55,7 +76,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies allowed time source type", "SERVER_OPTION_RESERVATIONS_TIME_SOURCE_TYPE_DESCRIPTION")]
         [StoreOptionKey("TIME_SOURCE_TYPE")]
         [DefaultValue(ReservationTimeSourceType.TimeOffer)]
-        [MessagePack.Key(4)]
+        [MessagePack.Key(6)]
         public ReservationTimeSourceType TimeSourceType
         {
             get; init;
@@ -65,7 +86,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies minimum reservation time", "SERVER_OPTION_RESERVATIONS_MINIMUM_TIME_DESCRIPTION")]
         [StoreOptionKey("MINIMUM_TIME")]
         [DefaultValue(null)]
-        [MessagePack.Key(5)]
+        [MessagePack.Key(7)]
         public int? MinimumTime
         {
             get; init;
@@ -75,7 +96,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies minimum reservation time", "SERVER_OPTION_RESERVATIONS_MAXIMUM_TIME_DESCRIPTION")]
         [StoreOptionKey("MAXIMUM_TIME")]
         [DefaultValue(null)]
-        [MessagePack.Key(6)]
+        [MessagePack.Key(8)]
         public int? MaximumTime 
         {
             get;
@@ -85,7 +106,7 @@ namespace Gizmo.Server.Options
         [Name("Reservation fee type", "SERVER_OPTION_RESERVATIONS_FEE_TYPE_NAME")]
         [ExtendedDescription("Specifies reservation fee type", "SERVER_OPTION_RESERVATIONS_FEE_TYPE_DESCRIPTION")]
         [StoreOptionKey("FEE_TYPE")]
-        [MessagePack.Key(7)]
+        [MessagePack.Key(9)]
         public ReservationFeeType FeeType
         {
             get;
@@ -95,7 +116,7 @@ namespace Gizmo.Server.Options
         [Name("Reservation fee", "SERVER_OPTION_RESERVATIONS_FEE_NAME")]
         [ExtendedDescription("Specifies reservation fee", "SERVER_OPTION_RESERVATIONS_FEE_DESCRIPTION")]
         [StoreOptionKey("FEE")]
-        [MessagePack.Key(8)]
+        [MessagePack.Key(10)]
         public decimal Fee
         {
             get;
@@ -106,7 +127,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies reservation minimum payment percentage", "SERVER_OPTION_RESERVATIONS_MINIMUM_PAYMENT_PERCENTAGE_DESCRIPTION")]
         [StoreOptionKey("MINIMUM_PAYMENT_PERCENTAGE")]
         [DefaultValue(100)]
-        [MessagePack.Key(9)]
+        [MessagePack.Key(11)]
         public decimal MinimumPaymentPercentage
         {
             get;init;
@@ -116,7 +137,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies reservation cancellation grace period", "SERVER_OPTION_RESERVATIONS_CANCELLATION_GRACE_PERIOD_DESCRIPTION")]
         [StoreOptionKey("CANCELLATION_GRACE_PERIOD")]
         [DefaultValue(null)]
-        [MessagePack.Key(10)]
+        [MessagePack.Key(12)]
         public int? CancellationGracePeriod
         {
             get;
@@ -126,7 +147,8 @@ namespace Gizmo.Server.Options
         [Name("Reservation cancellation refund percentage", "SERVER_OPTION_RESERVATIONS_CANCELLATION_REFUND_PERCENTAGE_NAME")]
         [ExtendedDescription("Specifies reservation cancellation refund percentage", "SERVER_OPTION_RESERVATIONS_CANCELLATION_REFUND_PERCENTAGE_DESCRIPTION")]
         [StoreOptionKey("CANCELLATION_REFUND_PERCENTAGE")]
-        [MessagePack.Key(11)]
+        [DefaultValue(0)]
+        [MessagePack.Key(13)]
         public decimal CancellationRefundPercentage
         {
             get;
@@ -137,7 +159,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies if multiple hosts reservations should be disabled", "SERVER_OPTION_RESERVATIONS_CANCELLATION_GRACE_PERIOD_DESCRIPTION")]
         [StoreOptionKey("DISABLE_MULTIPLE_HOSTS")]
         [DefaultValue(false)]
-        [MessagePack.Key(12)]
+        [MessagePack.Key(14)]
         public bool MultiHostDisable
         {
             get; 
@@ -148,7 +170,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies discounts should be disabled for reservations", "SERVER_OPTION_RESERVATIONS_PURCHASE_DISABLE_DISCOUNTS_DESCRIPTION")]
         [StoreOptionKey("PURCHASE_DISABLE_DISCOUNTS")]
         [DefaultValue(false)]
-        [MessagePack.Key(13)]
+        [MessagePack.Key(15)]
         public bool PurchaseDisableDiscounts
         {
             get; 
@@ -159,7 +181,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies deficit factor", "SERVER_OPTION_RESERVATIONS_DEFICIT_FACTOR_DESCRIPTION")]
         [StoreOptionKey("DEFICIT_FACTOR")]
         [DefaultValue(null)]
-        [MessagePack.Key(14)]
+        [MessagePack.Key(16)]
         public int? DeficitFactor
         {
             get; 
@@ -168,7 +190,7 @@ namespace Gizmo.Server.Options
 
         [StoreOptionKey("EXPECTED_AVERAGE_SESSION_TIME")]
         [DefaultValue(null)]
-        [MessagePack.Key(15)]
+        [MessagePack.Key(17)]
         public int? ExpectedAverageSessionDuration
         {
             get;
