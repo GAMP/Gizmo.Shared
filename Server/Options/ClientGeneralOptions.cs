@@ -11,6 +11,8 @@ namespace Gizmo.Server.Options
     [MessagePack.MessagePackObject()]
     public sealed class ClientGeneralOptions : IStoreOptions
     {
+        [Name("Default culture")]
+        [ExtendedDescription("Specifies default client UI culture")]
         [StoreOptionKey("DEFAULT_CULTURE")]
         [DefaultValue("en-US")]
         [MessagePack.Key(0)]
