@@ -196,5 +196,23 @@ namespace Gizmo.Server.Options
             get;
             init;
         }
+
+        [StoreOptionKey("CLIENT_ALERT_BEFORE_TIME")]
+        [DefaultValue(null)]
+        [MessagePack.Key(18)]
+        public int? ClientAlertBeforeTime
+        {
+            get;
+            init;
+        }
+
+        [StoreOptionKey("MANAGER_ALERT_BEFORE_TIME")]
+        [DefaultValue(null)]
+        [MessagePack.Key(19)]
+        public int? ManagerAlertBeforeTime
+        {
+            get;
+            init;
+        }
     }
 }
