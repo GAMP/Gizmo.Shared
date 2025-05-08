@@ -67,7 +67,7 @@ namespace Gizmo.Server.Options
         [Range(0, int.MaxValue)]
         [DefaultValue(0)]
         [MessagePack.Key(5)]
-        public int? ExpireAfter
+        public int ExpireAfter
         {
             get; init;
         }
