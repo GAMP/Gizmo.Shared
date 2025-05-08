@@ -29,5 +29,15 @@
         /// Reservation is completed.
         /// </summary>
         Completed = 4,
+
+        /// <summary>
+        /// Reservation is released.
+        /// </summary>
+        Released = 5,
+
+        /// <summary>
+        /// Reservation moved.
+        /// </summary>
+        Moved = 6,
     }
 }
