@@ -147,6 +147,24 @@
   <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
     <value>Application category delete success</value>
   </data>
+  <data name="APPLICATION_SORTING_OPTION_ADD_DATE" xml:space="preserve">
+    <value>Add Date</value>
+  </data>
+  <data name="APPLICATION_SORTING_OPTION_POPULARITY" xml:space="preserve">
+    <value>Popularity</value>
+  </data>
+  <data name="APPLICATION_SORTING_OPTION_RATING" xml:space="preserve">
+    <value>Rating</value>
+  </data>
+  <data name="APPLICATION_SORTING_OPTION_RELEASE_DATE" xml:space="preserve">
+    <value>Release Date</value>
+  </data>
+  <data name="APPLICATION_SORTING_OPTION_TITLE" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="APPLICATION_SORTING_OPTION_USE" xml:space="preserve">
+    <value>Use</value>
+  </data>
   <data name="CLIENT_LOGOUT_ACTION_ADMIN_MODE" xml:space="preserve">
     <value>Admin Mode</value>
   </data>
