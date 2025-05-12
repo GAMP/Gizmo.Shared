@@ -127,6 +127,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies reservation minimum payment percentage", "SERVER_OPTION_RESERVATIONS_MINIMUM_PAYMENT_PERCENTAGE_DESCRIPTION")]
         [StoreOptionKey("MINIMUM_PAYMENT_PERCENTAGE")]
         [DefaultValue(100)]
+        [Range(0, 100)]
         [MessagePack.Key(11)]
         public decimal MinimumPaymentPercentage
         {
@@ -181,6 +182,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies deficit factor", "SERVER_OPTION_RESERVATIONS_DEFICIT_FACTOR_DESCRIPTION")]
         [StoreOptionKey("DEFICIT_FACTOR")]
         [DefaultValue(null)]
+        [Range(0, 100)]
         [MessagePack.Key(16)]
         public int? DeficitFactor
         {
