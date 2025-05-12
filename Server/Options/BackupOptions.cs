@@ -36,6 +36,7 @@ namespace Gizmo.Server.Options
         [Name("Max files", "SERVER_OPTION_BACKUP_MAX_FILES_NAME")]
         [ExtendedDescription("Specifies max files", "SERVER_OPTION_BACKUP_MAX_FILES_DESCRIPTION")]
         [StoreOptionKey("MAX_FILES")]
+        [Range(1, 100)]
         [DefaultValue(10)]
         [MessagePack.Key(2)]
         public int MaxFiles
@@ -43,12 +44,14 @@ namespace Gizmo.Server.Options
             get; set;
         }
 
+        /// <remarks>
+        /// Default value will be equal to 00:00:00 since Timespan is struct.
+        /// </remarks>
         [Name("Time", "SERVER_OPTION_BACKUP_TIME_NAME")]
         [ExtendedDescription("Specifies backup time", "SERVER_OPTION_BACKUP_TIME_DESCRIPTION")]
         [StoreOptionKey("TIME")]
-        [DefaultValue(null)]
         [MessagePack.Key(3)]
-        public TimeSpan? Time
+        public TimeSpan Time
         {
             get; set;
         }
