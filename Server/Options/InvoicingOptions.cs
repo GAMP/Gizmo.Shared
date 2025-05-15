@@ -22,7 +22,7 @@ namespace Gizmo.Server.Options
         [DefaultValue(false)]
         [Range(0, int.MaxValue)]
         [MessagePack.Key(1)]
-        public bool AutoInvoiceMemberTime { get; init; }
+        public int AutoInvoiceMemberTime { get; init; }
 
         [Name("Auto invoice payment", "SERVER_OPTION_INVOICING_AUTO_INVOICE_PAYMENT_MEMBER_NAME")]
         [ExtendedDescription("Defines if invoices should be paid automatically", "SERVER_OPTION_INVOICING_AUTO_INVOICE_PAYMENT_MEMBER_DESCRIPTION")]
