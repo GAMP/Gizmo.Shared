@@ -858,6 +858,18 @@
   <data name="SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_NAME" xml:space="preserve">
     <value>Enforces all restrictions for users with unknown age</value>
   </data>
+  <data name="TASK_TYPE_JUNCTION" xml:space="preserve">
+    <value>Junction</value>
+  </data>
+  <data name="TASK_TYPE_NOTIFICATION" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+  <data name="TASK_TYPE_PROCESS" xml:space="preserve">
+    <value>Process</value>
+  </data>
+  <data name="TASK_TYPE_SCRIPT" xml:space="preserve">
+    <value>Script</value>
+  </data>
   <data name="TAX_SYSTEMS_RUSSIA_MAIN" xml:space="preserve">
     <value>Main</value>
   </data>
