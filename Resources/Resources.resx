@@ -195,6 +195,27 @@
   <data name="CLIENT_POWER_SAVING_SLEEP" xml:space="preserve">
     <value>Sleep</value>
   </data>
+  <data name="DISK_SPACE_ALLOCATIONS_FIFTEEN" xml:space="preserve">
+    <value>15%</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_FIVE" xml:space="preserve">
+    <value>5%</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TEN" xml:space="preserve">
+    <value>10%</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_THIRTY" xml:space="preserve">
+    <value>30%</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY" xml:space="preserve">
+    <value>20%</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY_FIVE" xml:space="preserve">
+    <value>25%</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_ZERO" xml:space="preserve">
+    <value>0%</value>
+  </data>
   <data name="GIZMO_POLICY_APPLICATIONS_DESCRIPTION" xml:space="preserve">
     <value>Grants access to the applications feature, enabling the user to manage and interact with applications</value>
   </data>
