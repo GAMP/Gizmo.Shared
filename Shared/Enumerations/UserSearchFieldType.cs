@@ -8,10 +8,11 @@
         MobilePhone = 0,
         Username = 1,
         Email = 2,   
-        FirstName = 3,
-        LastName = 4,
-        Attributes = 5,       
-        Phone = 6,
-        UserGroup = 7,
+        IdentificationNumber = 3,
+        FirstName = 4,
+        LastName = 5,
+        Attributes = 6,       
+        Phone = 7,
+        UserGroup = 8,
     }
 }
