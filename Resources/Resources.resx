@@ -846,6 +846,24 @@
   <data name="LOGIN_RESULT_SUCCESS_NAME" xml:space="preserve">
     <value>Login success</value>
   </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve">
+    <value>Failed to delete product group</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
+    <value>Failed to delete product group</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve">
+    <value>Non empty product group cannot be deleted</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve">
+    <value>Product group is not empty</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>The product group deletion was successful</value>
+  </data>
+  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
+    <value>Product group delete success</value>
+  </data>
   <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL" xml:space="preserve">
     <value>Email</value>
   </data>
