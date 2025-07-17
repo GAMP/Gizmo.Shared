@@ -48,7 +48,7 @@ namespace Gizmo.Server.Options
         [Name("Client data path")]
         [ExtendedDescription("Specifies client client data path")]
         [StoreOptionKey("DATA_PATH")]
-        [DefaultValue(null)]
+        [DefaultValue(@"%ALLUSERSPROFILE%\Application Data\NETProjects\Gizmo Client\")]
         [MessagePack.Key(4)]
         public string? DataPath { get; init; }
 
