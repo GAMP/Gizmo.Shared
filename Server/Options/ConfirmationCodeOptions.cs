@@ -13,7 +13,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies code length")]
         [StoreOptionKey("CODE_LENGTH")]
         [MessagePack.Key(0)]
-        [Range(6,12)]
+        [Range(4,6)]
         [DefaultValue(6)]
         public int Length { get; init; }
 
