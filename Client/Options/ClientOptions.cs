@@ -143,6 +143,14 @@ namespace Gizmo.Client
         public AssistanceRequestOptions AssistanceRequest { get; init; } = new AssistanceRequestOptions();
 
         /// <summary>
+        /// Regional options.
+        /// </summary>
+        [MessagePack.Key(16)]
+        [JsonPropertyOrder(16)]
+        [JsonPropertyName("Regional")]
+        public ClientRegionalOptions Regional { get; init; } = new ClientRegionalOptions();
+
+        /// <summary>
         /// Resets invalid properties to their default values.
         /// </summary>
         public void ResetInvalidToDefault()
@@ -164,6 +172,7 @@ namespace Gizmo.Client
             OptionsHelper.SetInvalidPropertiesToDefault(Apps);
             OptionsHelper.SetInvalidPropertiesToDefault(Home);
             OptionsHelper.SetInvalidPropertiesToDefault(AssistanceRequest);
+            OptionsHelper.SetInvalidPropertiesToDefault(Regional);
         }
     }
 }
