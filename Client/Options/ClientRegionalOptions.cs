@@ -19,7 +19,7 @@ namespace Gizmo.Client.UI
         /// </remarks>
         [StringLength(2)]
         [MessagePack.Key(0)]
-        public string? CountryCode { get; init; }
+        public string? CountryCode { get; set; }
 
         /// <summary>
         /// Gets or sets time zone.
@@ -29,6 +29,6 @@ namespace Gizmo.Client.UI
         /// <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"></a>
         /// </remarks>
         [MessagePack.Key(1)]
-        public string? TimeZone { get; init; }
+        public string? TimeZone { get; set; }
     }
 }
