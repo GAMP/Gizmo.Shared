@@ -24,5 +24,23 @@ namespace Gizmo.Client.UI
         [MessagePack.Key(1)]
         [DefaultValue(false)]
         public bool IsBase64 { get; set; } = false;
+        
+        /// <summary>
+        /// Title text 
+        /// </summary>
+        /// <remarks>
+        /// It is displayed on the login card
+        /// </remarks>
+        [MessagePack.Key(2)]
+        public string Title { get; set; }
+        
+        /// <summary>
+        /// Description text 
+        /// </summary>
+        /// <remarks>
+        /// It is displayed on the login card
+        /// </remarks>
+        [MessagePack.Key(3)]
+        public string Description { get; set; }
     }
 }
