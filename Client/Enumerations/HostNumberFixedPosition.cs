@@ -10,31 +10,31 @@ namespace Gizmo.Shared.Client.Enumerations
     public enum HostNumberFixedPosition
     {
         [Display(Name = "top-right")]
-        TopRight,
+        TopRight = 0,
     
         [Display(Name = "top-center")]
-        TopCenter,
+        TopCenter = 1,
     
         [Display(Name = "top-left")]
-        TopLeft,
+        TopLeft = 2,
     
         [Display(Name = "center-right")]
-        CenterRight,
+        CenterRight = 3,
     
         [Display(Name = "center-screen")]
-        CenterScreen,
+        CenterScreen = 4,
     
         [Display(Name = "center-left")]
-        CenterLeft,
+        CenterLeft = 5,
     
         [Display(Name = "bottom-right")]
-        BottomRight,
+        BottomRight = 6,
     
         [Display(Name = "bottom-center")]
-        BottomCenter,
+        BottomCenter = 7,
     
         [Display(Name = "bottom-left")]
-        BottomLeft
+        BottomLeft = 8
     }
 
     public static class HostNumberFixedPositionExtensions
