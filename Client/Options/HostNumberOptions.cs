@@ -1,4 +1,6 @@
-﻿using System.ComponentModel;
+﻿#nullable enable
+
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using Gizmo.Client.UI.View.Constants;
 using Gizmo.Shared.Client.Enumerations;
@@ -26,7 +28,7 @@ namespace Gizmo.Shared.Client.Options
         /// </remarks>
         [MessagePack.Key(1)]
         [Range(1, 10)]
-        public string Prefix { get; set; }
+        public string? Prefix { get; set; }
         
         /// <summary>
         /// Indicated if host number will be displayed on the wallpaper

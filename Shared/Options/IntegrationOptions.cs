@@ -13,12 +13,12 @@ namespace Gizmo
     public sealed class IntegrationOptions
     {
         /// <summary>
-        /// Gets or sets location id.
+        /// Gets or sets integration id.
         /// </summary>
         [DefaultValue(null)]
         [MaxLength(36)] // max length of guid that is will be used mostly
         [MessagePack.Key(0)]
-        public string? LocationId
+        public string? IntegrationId
         {
             get; set;
         } = null;
@@ -36,5 +36,29 @@ namespace Gizmo
         [MessagePack.Key(2)]
         [DefaultValue(null)]
         public Guid? BranchGuid { get; set; } = null;
+
+        /// <summary>
+        /// Host id.
+        /// </summary>
+        [MessagePack.Key(3)]
+        public int HostId { get; set; }
+
+        /// <summary>
+        /// Host guid.
+        /// </summary>
+        [MessagePack.Key(4)]
+        public Guid HostGuid { get; set; }
+
+        /// <summary>
+        /// Host number.
+        /// </summary>
+        [MessagePack.Key(5)]
+        public int HostNumber { get; set; }
+
+        /// <summary>
+        /// Host group id.
+        /// </summary>
+        [MessagePack.Key(6)]
+        public int? HostGroupId { get; set; }
     }
 }
