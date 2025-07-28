@@ -151,8 +151,8 @@ namespace Gizmo.Client
         /// <summary>
         /// Regional options.
         /// </summary>
-        [MessagePack.Key(16)]
-        [JsonPropertyOrder(16)]
+        [MessagePack.Key(17)]
+        [JsonPropertyOrder(17)]
         [JsonPropertyName("Regional")]
         public ClientRegionalOptions Regional { get; init; } = new ClientRegionalOptions();
 
