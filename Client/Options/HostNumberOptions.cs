@@ -8,6 +8,7 @@ namespace Gizmo.Shared.Client.Options
     /// <summary>
     /// The base class for host number settings
     /// </summary>
+    [MessagePack.MessagePackObject()]
     public class HostNumberOptions
     {
         /// <summary>
