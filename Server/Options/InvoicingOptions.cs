@@ -19,7 +19,6 @@ namespace Gizmo.Server.Options
         [Name("Auto invoice time", "SERVER_OPTION_INVOICING_AUTO_INVOICE_MEMBER_NAME")]
         [ExtendedDescription("Defines the duration after which a member will be invoiced", "SERVER_OPTION_INVOICING_AUTO_INVOICE_MEMBER_DESCRIPTION")]
         [StoreOptionKey("AUTO_INVOICE_MEMBER_TIME")]
-        [DefaultValue(false)]
         [Range(0, int.MaxValue)]
         [MessagePack.Key(1)]
         public int AutoInvoiceMemberTime { get; init; }

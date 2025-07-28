@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Text.Json.Serialization;
 using Gizmo.Client.UI;
+using Gizmo.Shared.Client.Options;
 using Gizmo.UI;
 
 namespace Gizmo.Client
@@ -141,6 +142,19 @@ namespace Gizmo.Client
         [JsonPropertyOrder(15)]
         [JsonPropertyName("AssistanceRequest")]
         public AssistanceRequestOptions AssistanceRequest { get; init; } = new AssistanceRequestOptions();
+        
+        [MessagePack.Key(16)]
+        [JsonPropertyOrder(16)]
+        [JsonPropertyName("HostNumber")]
+        public HostNumberOptions HostNumber { get; init; } = new HostNumberOptions();
+
+        /// <summary>
+        /// Regional options.
+        /// </summary>
+        [MessagePack.Key(16)]
+        [JsonPropertyOrder(16)]
+        [JsonPropertyName("Regional")]
+        public ClientRegionalOptions Regional { get; init; } = new ClientRegionalOptions();
 
         /// <summary>
         /// Resets invalid properties to their default values.
@@ -164,6 +178,8 @@ namespace Gizmo.Client
             OptionsHelper.SetInvalidPropertiesToDefault(Apps);
             OptionsHelper.SetInvalidPropertiesToDefault(Home);
             OptionsHelper.SetInvalidPropertiesToDefault(AssistanceRequest);
+            OptionsHelper.SetInvalidPropertiesToDefault(Regional);
+            OptionsHelper.SetInvalidPropertiesToDefault(HostNumber);
         }
     }
 }

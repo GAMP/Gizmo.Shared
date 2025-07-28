@@ -190,6 +190,7 @@ namespace Gizmo.Server.Options
             init;
         }
 
+        [Name("Average session time", "SERVER_OPTION_RESERVATIONS_EXPECTED_AVERAGE_SESSION_TIME_NAME")]
         [StoreOptionKey("EXPECTED_AVERAGE_SESSION_TIME")]
         [DefaultValue(null)]
         [MessagePack.Key(17)]
@@ -199,6 +200,7 @@ namespace Gizmo.Server.Options
             init;
         }
 
+        [Name("Client reservation alert time", "SERVER_OPTION_RESERVATIONS_CLIENT_ALERT_BEFORE_TIME_NAME")]
         [StoreOptionKey("CLIENT_ALERT_BEFORE_TIME")]
         [DefaultValue(null)]
         [MessagePack.Key(18)]
@@ -208,6 +210,7 @@ namespace Gizmo.Server.Options
             init;
         }
 
+        [Name("Manager reservation alert time", "SERVER_OPTION_RESERVATIONS_MANAGER_ALERT_BEFORE_TIME_NAME")]
         [StoreOptionKey("MANAGER_ALERT_BEFORE_TIME")]
         [DefaultValue(null)]
         [MessagePack.Key(19)]

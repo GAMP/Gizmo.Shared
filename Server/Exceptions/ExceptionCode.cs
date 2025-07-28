@@ -15,120 +15,153 @@ namespace Gizmo.Server.Exceptions
         /// Default code.
         /// </summary>
         /// <remarks>
-        /// This will be used in case of system exceptions that dont map to web api error code directly.
+        /// This will be used in case of system exceptions that don't map to web api error code directly.
         /// </remarks>
         Unknown = 0,
+
         /// <summary>
         /// Invalid property error code.
         /// </summary>
         InvalidProperty = 1,
+
         /// <summary>
         /// Non unique entity error code.
         /// </summary>
         NonUniqueEntityValue = 2,
+
         /// <summary>
         /// Entity not found entity error code.
         /// </summary>
         EntityNotFound = 3,
+
         /// <summary>
         /// Entity in use error code.
         /// </summary>
         EntityInUse = 4,
+
         /// <summary>
         /// Entity already referenced error code.
         /// </summary>
         EntityAlreadyReferenced = 5,
+
         /// <summary>
         /// Entity not referenced error code.
         /// </summary>
         EntityNotReferenced = 6,
+
         /// <summary>
         /// Asset error code.
         /// </summary>
         Asset = 7,
+
         /// <summary>
         /// Billing profile error code.
         /// </summary>
         BillingProfile = 8,
+
         /// <summary>
         /// Deposit error code.
         /// </summary>
         Deposit = 9,
+
         /// <summary>
         /// Host reservation error code.
         /// </summary>
         HostReservation = 10,
+
         /// <summary>
         /// Invoice error code.
         /// </summary>
         Invoice = 11,
+
         /// <summary>
         /// Invoice payment error code.
         /// </summary>
         InvoicePayment = 12,
+
         /// <summary>
         /// Order status error code.
         /// </summary>
         OrderStatus = 13,
+
         /// <summary>
         /// Payment error code.
         /// </summary>
         Payment = 14,
+
         /// <summary>
         /// Points error code.
         /// </summary>
         Points = 15,
+
         /// <summary>
         /// Product error code.
         /// </summary>
         Product = 16,
+
         /// <summary>
         /// Shift error code.
         /// </summary>
         Shift = 17,
+
         /// <summary>
         /// Stock error code.
         /// </summary>
         Stock = 18,
+
         /// <summary>
         /// User group error code.
         /// </summary>
         UserGroup = 19,
+
         /// <summary>
         /// Waiting line error code.
         /// </summary>
         WaitingLine = 20,
+
         /// <summary>
         /// Model state validation error.
         /// </summary>
         ValidationError = 21,
+
         /// <summary>
         /// Fiscal printer.
         /// </summary>
         FiscalPrinter = 22,
+
         /// <summary>
         /// Payment request exception.
         /// </summary>
         PaymentRequest = 23,
+
         /// <summary>
         /// Provider exception.
         /// </summary>
         Provider = 24,
+
         /// <summary>
         /// Assistance request.
         /// </summary>
         AssistanceRequest = 25,
+
         /// <summary>
         /// HTTP response exception.
         /// </summary>
         HttpResponseException = 26,
+
         /// <summary>
         /// Remote control exception.
         /// </summary>
         RemoteControlException = 27,
+
         /// <summary>
         /// Inventory exception.
         /// </summary>
         InventoryException = 28,
+
+        /// <summary>
+        /// Stock count exception.
+        /// </summary>
+        StockCount = 29,
     }
 }
