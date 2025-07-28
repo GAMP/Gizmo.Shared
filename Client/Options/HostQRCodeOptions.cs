@@ -1,4 +1,6 @@
-﻿using System.ComponentModel;
+﻿#nullable enable
+
+using System.ComponentModel;
 
 namespace Gizmo.Client.UI
 {
@@ -32,7 +34,7 @@ namespace Gizmo.Client.UI
         /// It is displayed on the login card
         /// </remarks>
         [MessagePack.Key(2)]
-        public string Title { get; set; }
+        public string? Title { get; set; }
         
         /// <summary>
         /// Description text 
@@ -41,6 +43,21 @@ namespace Gizmo.Client.UI
         /// It is displayed on the login card
         /// </remarks>
         [MessagePack.Key(3)]
-        public string Description { get; set; }
+        public string? Description { get; set; }
+
+
+        /// <summary>
+        /// Defines if QR should contain url.
+        /// </summary>
+        [MessagePack.Key(4)]
+        [DefaultValue(false)]
+        public bool IsURL { get; set; } = false;
+
+        /// <summary>
+        /// Defines QR code parameters url.
+        /// </summary>
+        [MessagePack.Key(5)]
+        [DefaultValue(false)]
+        public string? QRCodeURL { get; set; }
     }
 }
