@@ -19,7 +19,7 @@ namespace Gizmo.Client.UI
         /// </summary>
         [MessagePack.Key(0)]
         [DefaultValue(false)]
-        public bool EnableLoginBlockBefore { get; set; }
+        public bool EnableLoginBlock { get; set; }
 
         /// <summary>
         /// Gets or sets login block time.
@@ -27,33 +27,21 @@ namespace Gizmo.Client.UI
         [MessagePack.Key(1)]
         [DefaultValue(30)]
         [Range(1, int.MaxValue)]
-        public int LoginBlockBeforeTime { get; set; }
+        public int LoginBlockTime { get; set; }
 
         /// <summary>
-        /// Gets or sets enable login block after.
+        /// Gets or sets enable login unblock.
         /// </summary>
         [MessagePack.Key(2)]
         [DefaultValue(false)]
-        public bool EnableLoginBlockAfter { get; set; }
+        public bool EnableLoginUnblock { get; set; }
 
         /// <summary>
-        /// Gets or sets login block after time.
+        /// Gets or sets login unblock time.
         /// </summary>
-        [MessagePack.Key(3)]    
+        [MessagePack.Key(3)]
         [DefaultValue(30)]
         [Range(1, int.MaxValue)]
-        public int LoginUnblockAfterTime { get; set; }
-
-        /// <summary>
-        /// Reservation alert time.
-        /// </summary>
-        [MessagePack.Key(4)]
-        public int? AlertBeforeTime { get; set; }
-
-        /// <summary>
-        /// Reservation notifications.
-        /// </summary>
-        [MessagePack.Key(5)]
-        public IEnumerable<Notification> Notifications { get; set; } = Enumerable.Empty<Notification>();
+        public int LoginUnblockTime { get; set; }
     }
 }
