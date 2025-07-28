@@ -1,4 +1,6 @@
-﻿using System.ComponentModel;
+﻿#nullable enable
+
+using System.ComponentModel;
 
 namespace Gizmo.Client.UI
 {
@@ -24,5 +26,19 @@ namespace Gizmo.Client.UI
         [MessagePack.Key(1)]
         [DefaultValue(false)]
         public bool IsBase64 { get; set; } = false;
+
+        /// <summary>
+        /// Defines if QR should contain url.
+        /// </summary>
+        [MessagePack.Key(2)]
+        [DefaultValue(false)]
+        public bool IsURL { get; set; } = false;
+        
+        /// <summary>
+        /// Defines QR code parameters url.
+        /// </summary>
+        [MessagePack.Key(3)]
+        [DefaultValue(false)]
+        public string? QRCodeURL { get; set; }
     }
 }
