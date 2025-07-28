@@ -51,13 +51,13 @@ namespace Gizmo.Client.UI
         /// </summary>
         [MessagePack.Key(4)]
         [DefaultValue(false)]
-        public bool IsURL { get; set; } = false;
+        public bool GenerateURL { get; set; } = false;
 
         /// <summary>
         /// Defines QR code parameters url.
         /// </summary>
         [MessagePack.Key(5)]
         [DefaultValue(false)]
-        public string? QRCodeURL { get; set; }
+        public string? URL { get; set; }
     }
 }
