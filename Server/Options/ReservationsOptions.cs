@@ -202,7 +202,7 @@ namespace Gizmo.Server.Options
 
         [Name("Client reservation alert time", "SERVER_OPTION_RESERVATIONS_CLIENT_ALERT_BEFORE_TIME_NAME")]
         [StoreOptionKey("CLIENT_ALERT_BEFORE_TIME")]
-        [DefaultValue(null)]
+        [DefaultValue(30)]
         [MessagePack.Key(18)]
         public int? ClientAlertBeforeTime
         {
@@ -212,7 +212,7 @@ namespace Gizmo.Server.Options
 
         [Name("Manager reservation alert time", "SERVER_OPTION_RESERVATIONS_MANAGER_ALERT_BEFORE_TIME_NAME")]
         [StoreOptionKey("MANAGER_ALERT_BEFORE_TIME")]
-        [DefaultValue(null)]
+        [DefaultValue(30)]
         [MessagePack.Key(19)]
         public int? ManagerAlertBeforeTime
         {
