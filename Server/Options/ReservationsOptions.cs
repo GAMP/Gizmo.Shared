@@ -219,5 +219,14 @@ namespace Gizmo.Server.Options
             get;
             init;
         }
+
+        [Name("Reservation payment expiration time", "SERVER_OPTION_RESERVATIONS_PAYMENT_EXPIRE_AFTER")]
+        [StoreOptionKey("PAYMENT_EXPIRE_AFTER")]
+        [DefaultValue(5)]
+        [MessagePack.Key(20)]
+        public int? PaymentExpireAfter
+        {
+            get;init;
+        }
     }
 }

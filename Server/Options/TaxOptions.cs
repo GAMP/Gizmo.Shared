@@ -80,6 +80,6 @@ namespace Gizmo.Server.Options
         [StringLength(255)]
         [DefaultValue(null)]
         [MessagePack.Key(8)]
-        public string? BusinessVATId { get; init; }
+        public string? BusinessVATID { get; init; }
     }
 }

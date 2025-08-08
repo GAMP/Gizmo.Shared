@@ -8,6 +8,11 @@
         /// <summary>
         /// Deposit payment intent.
         /// </summary>
-        Deposit=0,
+        Deposit = 0,
+
+        /// <summary>
+        /// Order payment intent.
+        /// </summary>
+        Order = 1,
     }
 }
