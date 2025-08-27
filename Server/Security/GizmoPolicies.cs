@@ -444,7 +444,7 @@ namespace Gizmo.Server
 
         Reservations,
 
-        [PolicyDescription("Reservations", "ReservationsWithoutPayment", GizmoPolicyGroups.Reservations, nameof(Resources.GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_NAME), nameof(Resources.GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        [PolicyDescription("Reservations", "ReservationsWithoutPayment", GizmoPolicyGroups.Reservations, [Reservations], nameof(Resources.GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_NAME), nameof(Resources.GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
 
         ReservationsWithoutPayment,
     }
