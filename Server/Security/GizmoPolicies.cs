@@ -439,5 +439,13 @@ namespace Gizmo.Server
         [PolicyDescription("WebApi", "*", GizmoPolicyGroups.WebApi, "PERMISSION_GROUP_WEB_API", "PERMISSION_ACTION_WEB_API", IsAssignable = false)]
         WebApi,
         #endregion
+
+        [PolicyDescription("Reservations", "*", GizmoPolicyGroups.Reservations, nameof(Resources.GIZMO_POLICY_RESERVATIONS_NAME), nameof(Resources.GIZMO_POLICY_RESERVATIONS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+
+        Reservations,
+
+        [PolicyDescription("Reservations", "ReservationsWithoutPayment", GizmoPolicyGroups.Reservations, nameof(Resources.GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_NAME), nameof(Resources.GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+
+        ReservationsWithoutPayment,
     }
 }

@@ -82,5 +82,10 @@ namespace Gizmo.Server
         [Name("", nameof(Resources.GIZMO_POLICY_GROUP_MANAGEMENT_NAME))]
         [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_MANAGEMENT_DESCRIPTION))]
         Management ,
+
+        [PolicyGroup()]
+        [Name("", nameof(Resources.GIZMO_POLICY_GROUP_RESERVATONS_NAME))]
+        [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_RESERVATIONS_DESCRIPTION))]
+        Reservations,
     }
 }

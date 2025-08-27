@@ -276,6 +276,12 @@
   <data name="GIZMO_POLICY_GROUP_REPORTS_NAME" xml:space="preserve">
     <value>Reports</value>
   </data>
+  <data name="GIZMO_POLICY_GROUP_RESERVATIONS_DESCRIPTION" xml:space="preserve">
+    <value>Policies governing reservations.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_RESERVATONS_NAME" xml:space="preserve">
+    <value>Reservations</value>
+  </data>
   <data name="GIZMO_POLICY_GROUP_SALES_DESCRIPTION" xml:space="preserve">
     <value>Policies related to managing and monitoring sales.</value>
   </data>
@@ -431,6 +437,18 @@
   </data>
   <data name="GIZMO_POLICY_REPORTS_NAME" xml:space="preserve">
     <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to reservations</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to create reservations without payments</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_NAME" xml:space="preserve">
+    <value>Create reservations without payments</value>
   </data>
   <data name="GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_DESCRIPTION" xml:space="preserve">
     <value>Allow time credit</value>
