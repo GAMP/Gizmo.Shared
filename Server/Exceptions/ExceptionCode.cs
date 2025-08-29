@@ -163,5 +163,10 @@ namespace Gizmo.Server.Exceptions
         /// Stock count exception.
         /// </summary>
         StockCount = 29,
+
+        /// <summary>
+        /// Cart exception.
+        /// </summary>
+        Cart = 30,
     }
 }
