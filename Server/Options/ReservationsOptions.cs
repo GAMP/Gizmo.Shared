@@ -85,7 +85,7 @@ namespace Gizmo.Server.Options
         [Name("Minimum reservation time", "SERVER_OPTION_RESERVATIONS_MINIMUM_TIME_NAME")]
         [ExtendedDescription("Specifies minimum reservation time", "SERVER_OPTION_RESERVATIONS_MINIMUM_TIME_DESCRIPTION")]
         [StoreOptionKey("MINIMUM_TIME")]
-        [DefaultValue(null)]
+        [DefaultValue(30)]
         [MessagePack.Key(7)]
         public int? MinimumTime
         {
@@ -95,7 +95,7 @@ namespace Gizmo.Server.Options
         [Name("Maximum reservation time", "SERVER_OPTION_RESERVATIONS_MAXIMUM_TIME_NAME")]
         [ExtendedDescription("Specifies minimum reservation time", "SERVER_OPTION_RESERVATIONS_MAXIMUM_TIME_DESCRIPTION")]
         [StoreOptionKey("MAXIMUM_TIME")]
-        [DefaultValue(null)]
+        [DefaultValue(1440)]
         [MessagePack.Key(8)]
         public int? MaximumTime 
         {
