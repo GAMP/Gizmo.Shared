@@ -168,5 +168,10 @@ namespace Gizmo.Server.Exceptions
         /// Cart exception.
         /// </summary>
         Cart = 30,
+
+        /// <summary>
+        /// Promotion exception.
+        /// </summary>
+        Promotion = 31,
     }
 }
