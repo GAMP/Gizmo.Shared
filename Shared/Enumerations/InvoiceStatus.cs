@@ -14,7 +14,7 @@
         /// Partially paid.
         /// </summary>
         [Localized("INVOICE_STATUS_PARTIALLY_PAID")]
-        PartialyPaid = 1,
+        PartiallyPaid = 1,
         /// <summary>
         /// Paid.
         /// </summary>
