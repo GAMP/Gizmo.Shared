@@ -915,6 +915,18 @@
   <data name="SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_NAME" xml:space="preserve">
     <value>Enforces all restrictions for users with unknown age</value>
   </data>
+  <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve">
+    <value>Specifies remaining time notification message</value>
+  </data>
+  <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_NAME" xml:space="preserve">
+    <value>Remaining time notification message</value>
+  </data>
+  <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve">
+    <value>Specifies reservation time notification message</value>
+  </data>
+  <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_NAME" xml:space="preserve">
+    <value>Reservation time notification message</value>
+  </data>
   <data name="STOCK_TRANSACTION_TYPE_ADD" xml:space="preserve">
     <value>Add</value>
   </data>

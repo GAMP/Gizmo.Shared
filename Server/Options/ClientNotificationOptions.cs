@@ -15,5 +15,11 @@ namespace Gizmo.Server.Options
         [StoreOptionKey("REMAINING_TIME_NOTIFICATION_MESSAGE")]
         [MessagePack.Key(0)]
         public string? RemainingTimeNotificationMessage { get; init; }
+
+        [Name("Reservation time notification message", "SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_NAME")]
+        [ExtendedDescription("Specifies reservation time notification message", "SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_DESCRIPTION")]
+        [StoreOptionKey("RESERVATION_TIME_NOTIFICATION_MESSAGE")]
+        [MessagePack.Key(1)]
+        public string? ReservationTimeNotificationMessage { get; init; }
     }
 }
