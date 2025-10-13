@@ -10,5 +10,6 @@
         public const string MODULE_PROFILE = "EDADC6BC-4D07-47DF-86B8-3D0945C48A15";
         public const string MODULE_SHOP = "3468B227-4A51-4CEF-A213-43A1CC55E607";
         public const string MODULE_GAMES = "FF2E2130-0A99-4A45-B488-4AFF3BC4ED52";
+        public const string MODULE_STEAM_PAYMENT = "90841CD9-2E66-4A7A-8FE6-9AA5F6019605";
     }
 }
