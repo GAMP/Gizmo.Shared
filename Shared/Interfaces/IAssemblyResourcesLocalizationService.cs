@@ -51,6 +51,14 @@ namespace Gizmo
         /// <exception cref="ArgumentException">thrown in case assembly name cant be extracted from <paramref name="type"/>specified.</exception>
         string GetLocalizedStringValue(Enum enumValue);
 
+        /// <summary>
+        /// Gets localized string value.
+        /// </summary>
+        /// <param name="type">Object type.</param>
+        /// <param name="resourceKey">Resource key.</param>
+        /// <returns>Localized string value or fallback value if key not found.</returns>
+        string GetLocalizedStringValue(Type type, string resourceKey);
+
         #endregion
     }
 }
