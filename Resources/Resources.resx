@@ -195,6 +195,21 @@
   <data name="CLIENT_POWER_SAVING_SLEEP" xml:space="preserve">
     <value>Sleep</value>
   </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_CHARGE" xml:space="preserve">
+    <value>Charge</value>
+  </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_CREDIT" xml:space="preserve">
+    <value>Credit</value>
+  </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_DEPOSIT" xml:space="preserve">
+    <value>Deposit</value>
+  </data>
+  <data name="DEPOSIT_TRANSACTION_TYPE_WITHDRAW" xml:space="preserve">
+    <value>Withdraw</value>
+  </data>
+  <data name="DISABLE_PRINT_RECEIPT_BY_DEFAULT" xml:space="preserve">
+    <value>Disable print receipt by default</value>
+  </data>
   <data name="DISK_SPACE_ALLOCATIONS_FIFTEEN" xml:space="preserve">
     <value>15%</value>
   </data>
@@ -728,6 +743,15 @@
   </data>
   <data name="HOST_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
     <value>Host delete success</value>
+  </data>
+  <data name="INVOICE_STATUS_PAID" xml:space="preserve">
+    <value>Paid</value>
+  </data>
+  <data name="INVOICE_STATUS_PARTIALLY_PAID" xml:space="preserve">
+    <value>Partially Paid</value>
+  </data>
+  <data name="INVOICE_STATUS_UNPAID" xml:space="preserve">
+    <value>Unpaid</value>
   </data>
   <data name="KEY_GENERATION_CHARACTERS_ALPHANUMERIC" xml:space="preserve">
     <value>Alphanumeric</value>

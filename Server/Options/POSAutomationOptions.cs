@@ -26,5 +26,11 @@ namespace Gizmo.Server.Options
         [DefaultValue(false)]
         [MessagePack.Key(2)]
         public bool AutoGuestLogin { get; set; }
+
+        [Name("Disable print receipt by default", "DISABLE_PRINT_RECEIPT_BY_DEFAULT")]
+        [StoreOptionKey("DISABLE_PRINT_RECEIPT_BY_DEFAULT")]
+        [DefaultValue(false)]
+        [MessagePack.Key(3)]
+        public bool DisablePrintReceiptByDefault { get; set; }
     }
 }

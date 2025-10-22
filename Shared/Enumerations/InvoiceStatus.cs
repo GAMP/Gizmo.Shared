@@ -1,4 +1,6 @@
-﻿namespace Gizmo
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Gizmo
 {
     /// <summary>
     /// Invoice status.
@@ -9,16 +11,19 @@
         /// Unpaid.
         /// </summary>
         [Localized("INVOICE_STATUS_UNPAID")]
+        [Name("Unpaid", "INVOICE_STATUS_UNPAID")]
         Unpaid = 0,
         /// <summary>
         /// Partially paid.
         /// </summary>
         [Localized("INVOICE_STATUS_PARTIALLY_PAID")]
+        [Name("Partially Paid", "INVOICE_STATUS_PARTIALLY_PAID")]
         PartiallyPaid = 1,
         /// <summary>
         /// Paid.
         /// </summary>
         [Localized("INVOICE_STATUS_PAID")]
+        [Name("Paid", "INVOICE_STATUS_PAID")]
         Paid = 2,
     }
 }
