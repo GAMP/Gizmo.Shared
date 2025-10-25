@@ -567,6 +567,12 @@
   <data name="GIZMO_POLICY_SALE_VOID_INVOICE_NAME" xml:space="preserve">
     <value>Void</value>
   </data>
+  <data name="GIZMO_POLICY_SALE_VOID_NON_CURRENT_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to void invoices issued in differnt branch</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_NON_CURRENT_BRANCH_NAME" xml:space="preserve">
+    <value>Void non current branch invoices</value>
+  </data>
   <data name="GIZMO_POLICY_SALE_VOID_NON_OWNED_INVOICE_DESCRIPTION" xml:space="preserve">
     <value>Grants access to void invoices created by other operators enabling the user to cancel transactions initiated by different users</value>
   </data>

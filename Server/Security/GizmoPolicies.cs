@@ -67,6 +67,12 @@ namespace Gizmo.Server
         VoidPastDaysInvoices,
 
         /// <summary>
+        /// Void previous business day invoices permission.
+        /// </summary>
+        [PolicyDescription("Sale", nameof(VoidNonCurrentBranchInvoices), GizmoPolicyGroups.Sales, [SaleNoVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_NON_CURRENT_BRANCH_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_NON_CURRENT_BRANCH_DESCRIPTION), [GizmoPolicySet.Owner])]
+        VoidNonCurrentBranchInvoices,
+
+        /// <summary>
         /// Sale deposit permission.
         /// </summary>
         [PolicyDescription("Sale", "Deposit", GizmoPolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_GROUP_DEPLOYMENT_NAME), nameof(Resources.GIZMO_POLICY_SALE_DEPOSIT_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
