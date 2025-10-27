@@ -1,5 +1,6 @@
 ﻿#nullable enable
 
+using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.Extensions.Options;
@@ -32,27 +33,32 @@ namespace Gizmo.Server.Options
         [MessagePack.Key(2)]
         public TaxSystems? ServicesTaxSystem { get; init; }
 
-        [Name("Treat deposits as service", "SERVER_OPTION_TAX_TREAT_DEPOSITS_AS_SERVICE_NAME")]
-        [ExtendedDescription("Specifies if deposits should be treated as service", "SERVER_OPTION_TAX_TREAT_DEPOSITS_AS_SERVICE_DESCRIPTION")]
-        [StoreOptionKey("TREAT_DEPOSITS_AS_SERVICE")]
+        [Name("Deposits tax system", "SERVER_OPTION_TAX_DEPOSITS_TAX_SYSTEM_NAME")]
+        [ExtendedDescription("Specifies deposits tax system", "SERVER_OPTION_TAX_DEPOSITS_TAX_SYSTEM_DESCRIPTION")]
+        [StoreOptionKey("DEPOSIT_TAX_SYSTEM")]
+        [DefaultValue(null)]
         [MessagePack.Key(3)]
-        public bool TreatDepositsAsService { get; init; }
+        public TaxSystems? DepositTaxSystem { get; init; }
 
-        [Name("Deposit service description", "SERVER_OPTION_TAX_DEPOSIT_SERVICE_DESCRIPTION_NAME")]
-        [ExtendedDescription("Specifies if deposits should be treated as service", "SERVER_OPTION_TAX_DEPOSIT_SERVICE_DESCRIPTION_DESCRIPTION")]
-        [StoreOptionKey("DEPOSIT_SERVICE_DESCRIPTION")]
-        [StringLength(255)]
+        [Name("Goods vat rate", "SERVER_OPTION_TAX_GOODS_VAT_RATE_NAME")]
+        [ExtendedDescription("Specifies goods VAT rate", "SERVER_OPTION_TAX_GOODS_VAT_RATE_DESCRIPTION")]
+        [StoreOptionKey("GOODS_VAT_RATE")]
         [DefaultValue(null)]
         [MessagePack.Key(4)]
-        public string? DepositServiceDescription { get; init; }
+        public VatRates? GoodsVATRate
+        {
+            get; init;
+        }
 
-        [Name("Time based service vat rate", "SERVER_OPTION_TAX_TIME_BASED_SERVICE_VAT_RATE_NAME")]
-        [ExtendedDescription("Specifies time based service vat rate", "SERVER_OPTION_TAX_TIME_BASED_SERVICE_VAT_RATE_DESCRIPTION")]
-        [StoreOptionKey("TIME_BASED_SERVICE_VAT_RATE")]
-        [Range(0.00, 100.00)]
+        [Name("Services vat rate", "SERVER_OPTION_TAX_SERVICES_VAT_RATE_NAME")]
+        [ExtendedDescription("Specifies services VAT rate", "SERVER_OPTION_TAX_SERVICES_VAT_RATE_DESCRIPTION")]
+        [StoreOptionKey("SERVICES_VAT_RATE")]
         [DefaultValue(null)]
         [MessagePack.Key(5)]
-        public decimal? TimeBasedServiceVATRate { get; init; }
+        public VatRates? ServicesVATRate
+        {
+            get; init;
+        }
 
         [Name("Deposit vat rate", "SERVER_OPTION_TAX_DEPOSIT_VAT_RATE_NAME")]
         [ExtendedDescription("Specifies deposit VAT rate", "SERVER_OPTION_TAX_DEPOSIT_VAT_RATE_DESCRIPTION")]
@@ -64,22 +70,45 @@ namespace Gizmo.Server.Options
             get; init;
         }
 
-        [Name("Deposit advance payment type", "SERVER_OPTION_TAX_DEPOSIT_ADVANCE_PAYMENT_TYPE_NAME")]
-        [ExtendedDescription("Specifies deposit advance payment type", "SERVER_OPTION_TAX_DEPOSIT_ADVANCE_PAYMENT_TYPE_DESCRIPTION")]
-        [StoreOptionKey("DEPOSIT_ADVANCE_PAYMENT_TYPE")]
+        [Name("Time based service vat rate", "SERVER_OPTION_TAX_TIME_BASED_SERVICE_VAT_RATE_NAME")]
+        [ExtendedDescription("Specifies time based service vat rate", "SERVER_OPTION_TAX_TIME_BASED_SERVICE_VAT_RATE_DESCRIPTION")]
+        [StoreOptionKey("TIME_BASED_SERVICE_VAT_RATE")]
+        [Range(0.00, 100.00)]
         [DefaultValue(null)]
         [MessagePack.Key(7)]
-        public AdvancePaymentTypes? DepositAdvancePaymentType
-        {
-            get; init;
-        }
+        public decimal? TimeBasedServiceVATRate { get; init; }
+
+        [Name("Treat deposits as service", "SERVER_OPTION_TAX_TREAT_DEPOSITS_AS_SERVICE_NAME")]
+        [ExtendedDescription("Specifies if deposits should be treated as service", "SERVER_OPTION_TAX_TREAT_DEPOSITS_AS_SERVICE_DESCRIPTION")]
+        [StoreOptionKey("TREAT_DEPOSITS_AS_SERVICE")]
+        [MessagePack.Key(8)]
+        public bool TreatDepositsAsService { get; init; }
+
+        [Name("Deposit service description", "SERVER_OPTION_TAX_DEPOSIT_SERVICE_DESCRIPTION_NAME")]
+        [ExtendedDescription("Specifies if deposits should be treated as service", "SERVER_OPTION_TAX_DEPOSIT_SERVICE_DESCRIPTION_DESCRIPTION")]
+        [StoreOptionKey("DEPOSIT_SERVICE_DESCRIPTION")]
+        [StringLength(255)]
+        [DefaultValue(null)]
+        [MessagePack.Key(9)]
+        public string? DepositServiceDescription { get; init; }    
 
         [Name("Business VAT Id", "SERVER_OPTION_TAX_BUSINESS_VAT_ID_NAME")]
         [ExtendedDescription("Specifies business VAT Id", "SERVER_OPTION_TAX_BUSINESS_VAT_ID_DESCRIPTION")]
         [StoreOptionKey("BUSINESS_VAT_ID")]
         [StringLength(255)]
         [DefaultValue(null)]
-        [MessagePack.Key(8)]
+        [MessagePack.Key(10)]
         public string? BusinessVATID { get; init; }
+
+        [Obsolete("No longer needed, computer automatically based on TreatDepositsAsService")]
+        [Name("Deposit advance payment type", "SERVER_OPTION_TAX_DEPOSIT_ADVANCE_PAYMENT_TYPE_NAME")]
+        [ExtendedDescription("Specifies deposit advance payment type", "SERVER_OPTION_TAX_DEPOSIT_ADVANCE_PAYMENT_TYPE_DESCRIPTION")]
+        [StoreOptionKey("DEPOSIT_ADVANCE_PAYMENT_TYPE")]
+        [DefaultValue(null)]
+        [MessagePack.Key(11)]
+        public AdvancePaymentTypes? DepositAdvancePaymentType
+        {
+            get; init;
+        }
     }
 }

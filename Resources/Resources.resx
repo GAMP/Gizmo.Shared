@@ -957,6 +957,24 @@
   <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_NAME" xml:space="preserve">
     <value>Reservation time notification message</value>
   </data>
+  <data name="SERVER_OPTION_TAX_DEPOSITS_TAX_SYSTEM_DESCRIPTION" xml:space="preserve">
+    <value>Specifies deposits tax system</value>
+  </data>
+  <data name="SERVER_OPTION_TAX_DEPOSITS_TAX_SYSTEM_NAME" xml:space="preserve">
+    <value>Deposits tax system</value>
+  </data>
+  <data name="SERVER_OPTION_TAX_GOODS_VAT_RATE_DESCRIPTION" xml:space="preserve">
+    <value>Specifies goods VAT rate</value>
+  </data>
+  <data name="SERVER_OPTION_TAX_GOODS_VAT_RATE_NAME" xml:space="preserve">
+    <value>Goods vat rate</value>
+  </data>
+  <data name="SERVER_OPTION_TAX_SERVICES_VAT_RATE_DESCRIPTION" xml:space="preserve">
+    <value>Specifies services VAT rate</value>
+  </data>
+  <data name="SERVER_OPTION_TAX_SERVICES_VAT_RATE_NAME" xml:space="preserve">
+    <value>Services vat rate</value>
+  </data>
   <data name="STOCK_TRANSACTION_TYPE_ADD" xml:space="preserve">
     <value>Add</value>
   </data>
