@@ -750,6 +750,63 @@
   <data name="HOST_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
     <value>Host delete success</value>
   </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_CENTER" xml:space="preserve">
+    <value>Bottom Center</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_LEFT" xml:space="preserve">
+    <value>Bottom Left</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_RIGHT" xml:space="preserve">
+    <value>Bottom Right</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_LEFT" xml:space="preserve">
+    <value>Center Left</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_RIGHT" xml:space="preserve">
+    <value>Center Right</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_SCREEN" xml:space="preserve">
+    <value>Center Screen</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_CENTER" xml:space="preserve">
+    <value>Top Center</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_LEFT" xml:space="preserve">
+    <value>Top Left</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_RIGHT" xml:space="preserve">
+    <value>Top Right</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_CLOCKWISE" xml:space="preserve">
+    <value>Clockwise</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_COUNTERCLOCKWISE" xml:space="preserve">
+    <value>Counterclockwise</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_FIXED" xml:space="preserve">
+    <value>Fixed</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_BOTTOM" xml:space="preserve">
+    <value>Horizontal Bottom</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_CENTER" xml:space="preserve">
+    <value>Horizontal Center</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_TOP" xml:space="preserve">
+    <value>Horizontal Top</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_CENTER" xml:space="preserve">
+    <value>Vertical Center</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_LEFT" xml:space="preserve">
+    <value>Vertical Left</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_RIGHT" xml:space="preserve">
+    <value>Vertical Right</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_WALL_BOUNCE" xml:space="preserve">
+    <value>Wall Bounce</value>
+  </data>
   <data name="INVOICE_STATUS_PAID" xml:space="preserve">
     <value>Paid</value>
   </data>
