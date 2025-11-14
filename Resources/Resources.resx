@@ -1008,6 +1008,12 @@
   <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_NAME" xml:space="preserve">
     <value>Remaining time notification message</value>
   </data>
+  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_DESCRIPTION" xml:space="preserve">
+    <value>Specifies that terminal should be used when paying with credit card</value>
+  </data>
+  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_NAME" xml:space="preserve">
+    <value>Credit card use terminal</value>
+  </data>
   <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve">
     <value>Specifies reservation time notification message</value>
   </data>
