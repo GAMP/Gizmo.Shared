@@ -10,5 +10,6 @@
         FixedTime = 2,
         SessionTime = 3,
         Deposit = 4,
+        ReservationFee = 5,
     }
 }
