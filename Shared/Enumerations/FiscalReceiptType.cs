@@ -52,6 +52,6 @@
         /// Shift close.
         /// </summary>
         [Localized("FISCAL_RECEIPT_TYPE_SHIFT_CLOSE")]
-        ShiftClose = 6,
+        ShiftClose = 8,
     }
 }
