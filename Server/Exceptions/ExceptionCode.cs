@@ -125,9 +125,9 @@ namespace Gizmo.Server.Exceptions
         ValidationError = 21,
 
         /// <summary>
-        /// Fiscal printer.
+        /// Companion.
         /// </summary>
-        FiscalPrinter = 22,
+        Companion = 22,
 
         /// <summary>
         /// Payment request exception.
