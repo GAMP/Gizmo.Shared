@@ -19,6 +19,7 @@
 		<PackageIcon>package_icon.png</PackageIcon>
 		<Version>1.0.5.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>$(NoWarn);NU1902</NoWarn>
 	</PropertyGroup>
 
 	<ItemGroup>
