@@ -1,12 +1,10 @@
-﻿using MessagePack;
-using System;
+﻿using System;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Control message.
     /// </summary>
-    [MessagePackObject()]
     public abstract class ControlMessage : SerializationTypeMessage , IControlMessage
     {
         #region CONSTRUCTOR

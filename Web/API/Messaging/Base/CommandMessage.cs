@@ -1,14 +1,10 @@
-﻿using MessagePack;
-using System;
-using System.Runtime.Serialization;
+﻿using System;
 
 namespace Gizmo.Web.Api.Messaging
 {
     /// <summary>
     /// Command message.
     /// </summary>
-    [DataContract()]
-    [MessagePackObject()]
     public abstract class CommandMessage : SerializationTypeMessage, ICommandMessage
     {
         #region CONSTRUCTOR
@@ -26,8 +22,8 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets command correlation id.
         /// </summary>
-        [DataMember(Order = 2, IsRequired = false)]
-        [Key(1)]
+        [System.Text.Json.Serialization.JsonPropertyOrder(0)]
+        [MessagePack.Key(1)]
         public Guid CorrelationId
         {
             get; set;
@@ -36,8 +32,8 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets server timeout.
         /// </summary>
-        [DataMember(Order = 3, IsRequired = false)]
-        [Key(2)]
+        [System.Text.Json.Serialization.JsonPropertyOrder(1)]
+        [MessagePack.Key(2)]
         public int? ServerTimeout
         {
             get; set;

@@ -1,6 +1,4 @@
-﻿using MessagePack;
-using System.ComponentModel;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Text.Json.Serialization;
 
 namespace Gizmo.Web.Api.Messaging
@@ -23,9 +21,8 @@ namespace Gizmo.Web.Api.Messaging
         /// <summary>
         /// Gets message version.
         /// </summary>
-        [DefaultValue(0)]
         [JsonIgnore()]
-        [Key(0)]
+        [MessagePack.Key(0)]
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         public int Version
         {

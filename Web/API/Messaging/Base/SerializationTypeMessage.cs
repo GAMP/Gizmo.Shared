@@ -1,5 +1,4 @@
-﻿using MessagePack;
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.Text.Json.Serialization;
 
@@ -29,7 +28,7 @@ namespace Gizmo.Web.Api.Messaging
         /// Gets serialization type.
         /// </summary>
         [JsonIgnore()]
-        [IgnoreMember()]
+        [MessagePack.IgnoreMember()]
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         public Type SerializationType { get; protected set; } 
 
