@@ -19,7 +19,6 @@
 		<PackageIcon>package_icon.png</PackageIcon>
 		<Version>1.0.5.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <NoWarn>$(NoWarn);NU1902</NoWarn>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -30,10 +29,10 @@
 	</ItemGroup>
 
 	<ItemGroup>		
-		<PackageReference Include="Microsoft.AspNetCore.Authorization" Version="6.0.0" />		
-		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
-		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Authorization" Version="10.0.1" />		
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.1" />
 		<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
 		<PackageReference Include="MessagePack" Version="2.3.85" />
 	</ItemGroup>
