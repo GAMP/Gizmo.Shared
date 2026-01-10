@@ -4,7 +4,7 @@ using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo
+namespace Gizmo.Client.UI
 {
     /// <summary>
     /// Integration options.
