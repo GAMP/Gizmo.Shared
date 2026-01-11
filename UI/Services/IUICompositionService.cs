@@ -50,7 +50,12 @@ namespace Gizmo.UI.Services
         /// <summary>
         /// Gets if previously applied configuration was successfully initialized.
         /// </summary>
-        public bool IsInitialized { get; }
+        public bool IsInitialized { get; }     
+        
+        /// <summary>
+        /// Gets user menu metadata
+        /// </summary>
+        IEnumerable<UIUserMenuModuleMetadata> UserMenuModules { get; }
 
         #endregion
 
