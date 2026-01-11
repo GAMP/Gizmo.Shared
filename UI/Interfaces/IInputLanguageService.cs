@@ -10,9 +10,9 @@ namespace Gizmo.UI
     public interface IInputLanguageService
     {
         /// <summary>
-        /// Occures once current language changes.
+        /// Occurs once current language changes.
         /// </summary>
-        event EventHandler<EventArgs> LangauageChange;
+        event EventHandler<EventArgs> LanguageChange;
 
         /// <summary>
         /// Gets available input languages.
