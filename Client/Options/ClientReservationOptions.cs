@@ -54,6 +54,6 @@ namespace Gizmo.Client.UI
         /// Reservation notifications.
         /// </summary>
         [MessagePack.Key(5)]
-        public IEnumerable<Notification> Notifications { get; set; } = Enumerable.Empty<Notification>();
+        public IEnumerable<NotificationOption> Notifications { get; set; } = Enumerable.Empty<NotificationOption>();
     }
 }

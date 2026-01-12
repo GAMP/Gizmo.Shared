@@ -4,7 +4,7 @@ using Gizmo.Client.UI;
 using Gizmo.Shared.Client.Options;
 using Gizmo.UI;
 
-namespace Gizmo.Client
+namespace Gizmo.Client.Options
 {
     /// <summary>
     /// Client options pack.

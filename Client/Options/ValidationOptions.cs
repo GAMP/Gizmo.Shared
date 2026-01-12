@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Gizmo.Client.UI
+namespace Gizmo.Client.Options
 {
     /// <summary>
     /// Validation options.

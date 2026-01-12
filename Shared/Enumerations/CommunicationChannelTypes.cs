@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Shared
+namespace Gizmo
 {
     public enum CommunicationChannelTypes
     {

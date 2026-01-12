@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using MessagePack;
 
-namespace Gizmo.Client.UI
+namespace Gizmo.Client.Options
 {
     /// <summary>
     /// Login rotator options.

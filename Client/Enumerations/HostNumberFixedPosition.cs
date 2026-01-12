@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Reflection;
 
-namespace Gizmo.Shared.Client.Enumerations
+namespace Gizmo.Client
 {
     /// <summary>
     /// Host number positions

@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using Gizmo.Client.UI.View.Constants;
 using Gizmo.Shared.Client.Enumerations;
 
-namespace Gizmo.Shared.Client.Options
+namespace Gizmo.Client.Options
 {
     /// <summary>
     /// The base class for host number settings

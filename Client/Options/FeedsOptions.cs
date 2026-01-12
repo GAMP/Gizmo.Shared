@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using MessagePack;
 
-namespace Gizmo.Client.UI
+namespace Gizmo.Client.Options
 {
     /// <summary>
     /// Feed options.

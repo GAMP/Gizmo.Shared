@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Gizmo.Client.UI
+namespace Gizmo.Client.Options
 {
     /// <summary>
     /// Home options.

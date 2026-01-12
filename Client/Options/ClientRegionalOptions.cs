@@ -2,7 +2,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo.Client.UI
+namespace Gizmo.Client.Options
 {
     /// <summary>
     /// Client regional options.

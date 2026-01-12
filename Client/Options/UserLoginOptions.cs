@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Gizmo.Client.UI
+namespace Gizmo.Client.Options
 {
     [MessagePack.MessagePackObject()]
     public sealed class UserLoginOptions
