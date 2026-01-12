@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Text.Json.Serialization;
 using Gizmo.Client.UI;
-using Gizmo.Shared.Client.Options;
 using Gizmo.UI;
 
 namespace Gizmo.Client.Options
