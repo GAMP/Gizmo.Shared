@@ -1,4 +1,4 @@
-﻿namespace Gizmo.Server
+﻿namespace Gizmo.Server.Security
 {
     /// <summary>
     /// Set of claim names provided by Gizmo server.

@@ -1,8 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using Gizmo.Server.Security;
 
-namespace Gizmo.Server
+namespace Gizmo.Server.Security
 {
     /// <summary>
     /// Policy description attribute.

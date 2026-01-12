@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gizmo.Server
+namespace Gizmo.Server.Security
 {
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
     public sealed class PolicyGroupAttribute : Attribute
