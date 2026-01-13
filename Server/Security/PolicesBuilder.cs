@@ -4,7 +4,7 @@ using System;
 using System.Linq;
 using Microsoft.AspNetCore.Authorization;
 
-namespace Gizmo.Server
+namespace Gizmo.Server.Security
 {
     /// <summary>
     /// Helper class to build policies.
