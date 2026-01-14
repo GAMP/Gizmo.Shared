@@ -40,12 +40,12 @@ namespace Gizmo.UI.Services
         /// <summary>
         /// Gets root component type.
         /// </summary>
-        public Type RootComponentType { get; }
+        public Type? RootComponentType { get; }
 
         /// <summary>
         /// Gets notifications component type.
         /// </summary>
-        public Type NotificationsComponentType { get; }
+        public Type? NotificationsComponentType { get; }
 
         /// <summary>
         /// Gets if previously applied configuration was successfully initialized.

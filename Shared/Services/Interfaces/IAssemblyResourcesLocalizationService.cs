@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 
 namespace Gizmo
 {
@@ -11,8 +12,6 @@ namespace Gizmo
     /// </remarks>
     public interface IAssemblyResourcesLocalizationService
     {
-        #region FUNCTIONS
-
         /// <summary>
         /// Gets localized string value.
         /// </summary>
@@ -59,6 +58,10 @@ namespace Gizmo
         /// <returns>Localized string value or fallback value if key not found.</returns>
         string GetLocalizedStringValue(Type type, string resourceKey);
 
-        #endregion
+        /// <summary>
+        /// Sets current culture.
+        /// </summary>
+        /// <param name="culture">Current culture.</param>
+        void SetCulture(CultureInfo culture);
     }
 }
