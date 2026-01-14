@@ -834,6 +834,12 @@
   <data name="HOST_NUMBER_POSITIONING_WALL_BOUNCE" xml:space="preserve">
     <value>Wall Bounce</value>
   </data>
+  <data name="HTTPS_CERTIFICATE_TYPE_SELF_SIGNED" xml:space="preserve">
+    <value>Self Signed</value>
+  </data>
+  <data name="HTTPS_CERTIFICATE_TYPE_USER_DEFINED" xml:space="preserve">
+    <value>User Defined</value>
+  </data>
   <data name="INVOICE_STATUS_PAID" xml:space="preserve">
     <value>Paid</value>
   </data>
