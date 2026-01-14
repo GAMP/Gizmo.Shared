@@ -1143,10 +1143,4 @@
   <data name="VAT_RATES_RUSSIA_VAT20" xml:space="preserve">
     <value>VAT20</value>
   </data>
-  <data name="HTTPS_CERTIFICATE_TYPE_SELF_SIGNED" xml:space="preserve">
-    <value>Self Signed</value>
-  </data>
-  <data name="HTTPS_CERTIFICATE_TYPE_USER_DEFINED" xml:space="preserve">
-    <value>User defined</value>
-  </data>
 </root>
