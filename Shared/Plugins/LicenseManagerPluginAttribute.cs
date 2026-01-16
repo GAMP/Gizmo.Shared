@@ -14,7 +14,10 @@ namespace Gizmo.Shared.Plugins
         /// <summary>
         /// Plugin configuration type.
         /// </summary>
-        public required Type ConfigurationType
+        /// <remarks>
+        /// This value is optional since some license managers may not require configuration.
+        /// </remarks>
+        public Type? ConfigurationType
         {
             get; set;
         }
