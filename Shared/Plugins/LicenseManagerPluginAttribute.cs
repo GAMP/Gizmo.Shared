@@ -4,13 +4,13 @@ using System;
 
 namespace Gizmo.Shared.Plugins
 {
+    /// <summary>
+    /// License manager plugin attribute.
+    /// </summary>
+    /// <remarks>Used to annotate and describe an license management plugin.</remarks>
+    [AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = false)]
     public sealed class LicenseManagerPluginAttribute : Attribute
     {
-        public LicenseManagerPluginAttribute(string type)
-        {
-            TypeName = type;
-        }
-
         /// <summary>
         /// Plugin configuration type.
         /// </summary>
@@ -26,10 +26,5 @@ namespace Gizmo.Shared.Plugins
         {
             get; set;
         }
-
-        /// <summary>
-        /// Plugin type iname.
-        /// </summary>
-        public string TypeName { get; set; }
     }
 }
