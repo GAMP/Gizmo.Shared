@@ -14,7 +14,7 @@ namespace Gizmo.Shared.Plugins
         /// <summary>
         /// Plugin configuration type.
         /// </summary>
-        public Type? ConfigurationType
+        public required Type ConfigurationType
         {
             get; set;
         }
@@ -22,7 +22,7 @@ namespace Gizmo.Shared.Plugins
         /// <summary>
         /// Plugin license key type.
         /// </summary>
-        public Type? KeyType
+        public required Type KeyType
         {
             get; set;
         }
