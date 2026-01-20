@@ -29,7 +29,7 @@ namespace Gizmo
         /// </summary>
         TimeCreditLimited = 16,
         /// <summary>
-        /// Enables unlimitied time credit limit.
+        /// Enables unlimited time credit limit.
         /// </summary>
         TimeCreditUnlimited = 32,
     }
