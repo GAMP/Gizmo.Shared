@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gizmo.Extensibility
+namespace Gizmo.Extensibility.Abstractions
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
     public sealed class ModuleOptionsAttribute : Attribute
@@ -12,6 +12,7 @@ namespace Gizmo.Extensibility
         }
 
         public Type OptionsType { get; }
+
         public string SectionName { get; }
     }
 }

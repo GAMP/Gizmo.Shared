@@ -1,8 +1,7 @@
-﻿#nullable enable
-
+﻿
 using System;
 
-namespace Gizmo.Extensibility
+namespace Gizmo.Extensibility.Abstractions
 {
     /// <summary>
     /// License manager plugin attribute.
