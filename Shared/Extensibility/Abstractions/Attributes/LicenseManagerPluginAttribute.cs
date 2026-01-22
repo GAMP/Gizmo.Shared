@@ -2,9 +2,7 @@
 
 using System;
 
-// TODO : Change namespace
-
-namespace Gizmo.Shared.Plugins
+namespace Gizmo.Extensibility
 {
     /// <summary>
     /// License manager plugin attribute.

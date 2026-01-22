@@ -37,7 +37,8 @@ namespace Gizmo.Extensibility
             var baseDir = Path.GetDirectoryName(fullPath)!;
             var dataDir = Path.Combine(modulesDataRoot, spec.ModuleId);
 
-            Directory.CreateDirectory(dataDir);
+            //if(!Directory.Exists(dataDir))
+            //    Directory.CreateDirectory(dataDir);
 
             var ctx = new ModuleContext
             {
@@ -52,6 +53,7 @@ namespace Gizmo.Extensibility
 
             // (Optional) register keyed context + accessor per module id here if you want it injectable
             // services.AddKeyedSingleton(spec.ModuleId, ctx);
+
 
             var registrars = asm.GetExportedTypes()
                 .Where(t => !t.IsAbstract && typeof(IServiceRegistrar).IsAssignableFrom(t))
