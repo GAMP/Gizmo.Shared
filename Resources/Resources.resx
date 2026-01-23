@@ -129,24 +129,6 @@
   <data name="ADVANCE_PAYMENTS_RUSSIA_PREPAYMENT" xml:space="preserve">
     <value>Prepayment</value>
   </data>
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve">
-    <value>Failed to delete application category</value>
-  </data>
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
-    <value>Failed to delete application category</value>
-  </data>
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve">
-    <value>Non empty application category cannot be deleted</value>
-  </data>
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve">
-    <value>Application category is not empty</value>
-  </data>
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
-    <value>The application category deletion was successful</value>
-  </data>
-  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
-    <value>Application category delete success</value>
-  </data>
   <data name="APPLICATION_SORTING_OPTION_ADD_DATE" xml:space="preserve">
     <value>Add Date</value>
   </data>
@@ -726,30 +708,6 @@
   <data name="GIZMO_POLICY_WAITING_LINES_NAME" xml:space="preserve">
     <value>Access</value>
   </data>
-  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_DESCRIPTION" xml:space="preserve">
-    <value>The host has reserved guest</value>
-  </data>
-  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_NAME" xml:space="preserve">
-    <value>Host has reserved guest</value>
-  </data>
-  <data name="HOST_DELETE_RESULT_HOST_IN_USE_DESCRIPTION" xml:space="preserve">
-    <value>The host is in use</value>
-  </data>
-  <data name="HOST_DELETE_RESULT_HOST_IN_USE_NAME" xml:space="preserve">
-    <value>Host in use</value>
-  </data>
-  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_DESCRIPTION" xml:space="preserve">
-    <value>The host has reservation</value>
-  </data>
-  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_NAME" xml:space="preserve">
-    <value>Host is reserved</value>
-  </data>
-  <data name="HOST_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
-    <value>The host deletion was successful</value>
-  </data>
-  <data name="HOST_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
-    <value>Host delete success</value>
-  </data>
   <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_CENTER" xml:space="preserve">
     <value>Bottom Center</value>
   </data>
@@ -956,24 +914,6 @@
   </data>
   <data name="LOGIN_RESULT_SUCCESS_NAME" xml:space="preserve">
     <value>Login success</value>
-  </data>
-  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve">
-    <value>Failed to delete product group</value>
-  </data>
-  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve">
-    <value>Failed to delete product group</value>
-  </data>
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve">
-    <value>Non empty product group cannot be deleted</value>
-  </data>
-  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve">
-    <value>Product group is not empty</value>
-  </data>
-  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve">
-    <value>The product group deletion was successful</value>
-  </data>
-  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve">
-    <value>Product group delete success</value>
   </data>
   <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL" xml:space="preserve">
     <value>Email</value>
