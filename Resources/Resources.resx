@@ -177,18 +177,6 @@
   <data name="CLIENT_POWER_SAVING_SLEEP" xml:space="preserve">
     <value>Sleep</value>
   </data>
-  <data name="DEPOSIT_TRANSACTION_TYPE_CHARGE" xml:space="preserve">
-    <value>Charge</value>
-  </data>
-  <data name="DEPOSIT_TRANSACTION_TYPE_CREDIT" xml:space="preserve">
-    <value>Credit</value>
-  </data>
-  <data name="DEPOSIT_TRANSACTION_TYPE_DEPOSIT" xml:space="preserve">
-    <value>Deposit</value>
-  </data>
-  <data name="DEPOSIT_TRANSACTION_TYPE_WITHDRAW" xml:space="preserve">
-    <value>Withdraw</value>
-  </data>
   <data name="DISABLE_PRINT_RECEIPT_BY_DEFAULT" xml:space="preserve">
     <value>Disable print receipt by default</value>
   </data>
