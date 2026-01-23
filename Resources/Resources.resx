@@ -984,21 +984,6 @@
   <data name="SERVER_OPTION_TAX_SERVICES_VAT_RATE_NAME" xml:space="preserve">
     <value>Services vat rate</value>
   </data>
-  <data name="STOCK_TRANSACTION_TYPE_ADD" xml:space="preserve">
-    <value>Add</value>
-  </data>
-  <data name="STOCK_TRANSACTION_TYPE_REMOVE" xml:space="preserve">
-    <value>Remove</value>
-  </data>
-  <data name="STOCK_TRANSACTION_TYPE_RETURN" xml:space="preserve">
-    <value>Return</value>
-  </data>
-  <data name="STOCK_TRANSACTION_TYPE_SALE" xml:space="preserve">
-    <value>Sale</value>
-  </data>
-  <data name="STOCK_TRANSACTION_TYPE_SET" xml:space="preserve">
-    <value>Set</value>
-  </data>
   <data name="TASK_TYPE_JUNCTION" xml:space="preserve">
     <value>Junction</value>
   </data>
