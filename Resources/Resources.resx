@@ -195,33 +195,6 @@
   <data name="CLIENT_POWER_SAVING_SLEEP" xml:space="preserve">
     <value>Sleep</value>
   </data>
-  <data name="COMMUNICATION_CHANNEL_TYPES_EMAIL" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="COMMUNICATION_CHANNEL_TYPES_FACEBOOK_MESSENGER" xml:space="preserve">
-    <value>Facebook messenger</value>
-  </data>
-  <data name="COMMUNICATION_CHANNEL_TYPES_INSTAGRAM" xml:space="preserve">
-    <value>Instagram</value>
-  </data>
-  <data name="COMMUNICATION_CHANNEL_TYPES_SMS" xml:space="preserve">
-    <value>SMS</value>
-  </data>
-  <data name="COMMUNICATION_CHANNEL_TYPES_TELEGRAM" xml:space="preserve">
-    <value>Telegram</value>
-  </data>
-  <data name="COMMUNICATION_CHANNEL_TYPES_TWITTER_DM" xml:space="preserve">
-    <value>Twitter</value>
-  </data>
-  <data name="COMMUNICATION_CHANNEL_TYPES_VIBER" xml:space="preserve">
-    <value>Viber</value>
-  </data>
-  <data name="COMMUNICATION_CHANNEL_TYPES_WE_CHAT" xml:space="preserve">
-    <value>WeChat</value>
-  </data>
-  <data name="COMMUNICATION_CHANNEL_TYPES_WHATS_APP" xml:space="preserve">
-    <value>WhatsApp</value>
-  </data>
   <data name="DEPOSIT_TRANSACTION_TYPE_CHARGE" xml:space="preserve">
     <value>Charge</value>
   </data>
@@ -1142,5 +1115,14 @@
   </data>
   <data name="VAT_RATES_RUSSIA_VAT20" xml:space="preserve">
     <value>VAT20</value>
+  </data>
+  <data name="SMTP_SECURITY_NONE_NAME" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="SMTP_SECURITY_SSL_NAME" xml:space="preserve">
+    <value>SSL</value>
+  </data>
+  <data name="SMTP_SECURITY_STARTTLS_NAME" xml:space="preserve">
+    <value>STAR TTLS</value>
   </data>
 </root>

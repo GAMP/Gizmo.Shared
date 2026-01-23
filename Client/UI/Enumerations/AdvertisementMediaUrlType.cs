@@ -1,4 +1,4 @@
-﻿namespace Gizmo
+﻿namespace Gizmo.Client.UI
 {
     /// <summary>
     /// Advertisement Thumbnail Url type.
