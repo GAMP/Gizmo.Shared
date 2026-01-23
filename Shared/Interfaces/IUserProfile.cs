@@ -90,7 +90,7 @@ namespace Gizmo
         /// <summary>
         /// Gets user role.
         /// </summary>
-        UserRoles Role { get; set; }
+        Server.UserRoles Role { get; set; }
 
         /// <summary>
         /// Gets if user is administrator.

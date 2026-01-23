@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gizmo
+namespace Gizmo.Client
 {
     /// <summary>
     /// User personal information types.
