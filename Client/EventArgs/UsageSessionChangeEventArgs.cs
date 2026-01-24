@@ -30,7 +30,7 @@ namespace Gizmo.Client
         }
 
         /// <summary>
-        /// Gets current time poroduct name.
+        /// Gets current time product name.
         /// </summary>
         public string CurrentTimeProduct
         {
