@@ -972,18 +972,6 @@
   <data name="SERVER_OPTION_TAX_SERVICES_VAT_RATE_NAME" xml:space="preserve">
     <value>Services vat rate</value>
   </data>
-  <data name="TASK_TYPE_JUNCTION" xml:space="preserve">
-    <value>Junction</value>
-  </data>
-  <data name="TASK_TYPE_NOTIFICATION" xml:space="preserve">
-    <value>Notification</value>
-  </data>
-  <data name="TASK_TYPE_PROCESS" xml:space="preserve">
-    <value>Process</value>
-  </data>
-  <data name="TASK_TYPE_SCRIPT" xml:space="preserve">
-    <value>Script</value>
-  </data>
   <data name="TAX_SYSTEMS_RUSSIA_MAIN" xml:space="preserve">
     <value>Main</value>
   </data>
