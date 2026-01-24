@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gizmo
+namespace Gizmo.Server
 {
     /// <summary>
     /// Special folders.
