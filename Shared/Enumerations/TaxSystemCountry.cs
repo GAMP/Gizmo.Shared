@@ -15,6 +15,7 @@ namespace Gizmo
         /// </summary>
         [Name("Unspecified", "TAX_SYSTEM_COUNTRY_UNSPECIFIED")]
         None = 0,
+
         /// <summary>
         /// Russia.
         /// </summary>

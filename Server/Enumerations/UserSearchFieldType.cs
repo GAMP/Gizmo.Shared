@@ -1,4 +1,4 @@
-﻿namespace Gizmo
+﻿namespace Gizmo.Server
 {
     /// <summary>
     /// User search field types.
