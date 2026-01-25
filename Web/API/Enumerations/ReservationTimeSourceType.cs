@@ -1,4 +1,4 @@
-﻿namespace Gizmo
+﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Reservation time sources type.

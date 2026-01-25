@@ -75,9 +75,9 @@ namespace Gizmo.Server.Options
         [Name("Allowed time source type", "SERVER_OPTION_RESERVATIONS_TIME_SOURCE_TYPE_NAME")]
         [ExtendedDescription("Specifies allowed time source type", "SERVER_OPTION_RESERVATIONS_TIME_SOURCE_TYPE_DESCRIPTION")]
         [StoreOptionKey("TIME_SOURCE_TYPE")]
-        [DefaultValue(ReservationTimeSourceType.TimeOffer)]
+        [DefaultValue(Gizmo.Web.Api.Models.ReservationTimeSourceType.TimeOffer)]
         [MessagePack.Key(6)]
-        public ReservationTimeSourceType TimeSourceType
+        public Gizmo.Web.Api.Models.ReservationTimeSourceType TimeSourceType
         {
             get; init;
         }
