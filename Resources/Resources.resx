@@ -891,4 +891,19 @@
   <data name="SMTP_SECURITY_STARTTLS_NAME" xml:space="preserve">
     <value>STAR TTLS</value>
   </data>
+  <data name="PAYMENT_METHOD_TYPE_CASH_NAME" xml:space="preserve">
+    <value>Cash</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_CREDIT_CARD_NAME" xml:space="preserve">
+    <value>Credit Card</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_DEPOSIT_NAME" xml:space="preserve">
+    <value>Deposit</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_POINTS_NAME" xml:space="preserve">
+    <value>Points</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_CUSTOM_NAME" xml:space="preserve">
+    <value>Custom</value>
+  </data>
 </root>
