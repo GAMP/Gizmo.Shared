@@ -85,7 +85,7 @@ namespace Gizmo
         /// <summary>
         /// Sex.
         /// </summary>
-        Sex Sex { get; set; }
+        Web.Api.Models.Sex Sex { get; set; }
 
         /// <summary>
         /// Gets user role.

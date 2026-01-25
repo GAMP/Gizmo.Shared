@@ -1,11 +1,8 @@
-﻿using System;
-
-namespace Gizmo
+﻿namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// Sex enumeration.
     /// </summary>
-    [Flags()]
     public enum Sex
     {
         /// <summary>
