@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Gizmo
+namespace Gizmo.Server
 {
     /// <summary>
     /// Recovery method.
