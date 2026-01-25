@@ -129,22 +129,22 @@
   <data name="ADVANCE_PAYMENTS_RUSSIA_PREPAYMENT" xml:space="preserve">
     <value>Prepayment</value>
   </data>
-  <data name="APPLICATION_SORTING_OPTION_ADD_DATE" xml:space="preserve">
+  <data name="APPLICATION_SORTING_OPTION_ADD_DATE_NAME" xml:space="preserve">
     <value>Add Date</value>
   </data>
-  <data name="APPLICATION_SORTING_OPTION_POPULARITY" xml:space="preserve">
+  <data name="APPLICATION_SORTING_OPTION_POPULARITY_NAME" xml:space="preserve">
     <value>Popularity</value>
   </data>
-  <data name="APPLICATION_SORTING_OPTION_RATING" xml:space="preserve">
+  <data name="APPLICATION_SORTING_OPTION_RATING_NAME" xml:space="preserve">
     <value>Rating</value>
   </data>
-  <data name="APPLICATION_SORTING_OPTION_RELEASE_DATE" xml:space="preserve">
+  <data name="APPLICATION_SORTING_OPTION_RELEASE_DATE_NAME" xml:space="preserve">
     <value>Release Date</value>
   </data>
-  <data name="APPLICATION_SORTING_OPTION_TITLE" xml:space="preserve">
+  <data name="APPLICATION_SORTING_OPTION_TITLE_NAME" xml:space="preserve">
     <value>Title</value>
   </data>
-  <data name="APPLICATION_SORTING_OPTION_USE" xml:space="preserve">
+  <data name="APPLICATION_SORTING_OPTION_USE_NAME" xml:space="preserve">
     <value>Use</value>
   </data>
   <data name="CLIENT_LOGOUT_ACTION_ADMIN_MODE" xml:space="preserve">
@@ -759,15 +759,6 @@
   <data name="HTTPS_CERTIFICATE_TYPE_USER_DEFINED" xml:space="preserve">
     <value>User Defined</value>
   </data>
-  <data name="INVOICE_STATUS_PAID" xml:space="preserve">
-    <value>Paid</value>
-  </data>
-  <data name="INVOICE_STATUS_PARTIALLY_PAID" xml:space="preserve">
-    <value>Partially Paid</value>
-  </data>
-  <data name="INVOICE_STATUS_UNPAID" xml:space="preserve">
-    <value>Unpaid</value>
-  </data>
   <data name="KEY_GENERATION_CHARACTERS_ALPHANUMERIC" xml:space="preserve">
     <value>Alphanumeric</value>
   </data>
@@ -870,13 +861,13 @@
   <data name="TAX_SYSTEM_COUNTRY_UNSPECIFIED" xml:space="preserve">
     <value>Unspecified</value>
   </data>
-  <data name="USER_RECOVERY_METHOD_EMAIL" xml:space="preserve">
+  <data name="USER_RECOVERY_METHOD_EMAIL_NAME" xml:space="preserve">
     <value>Email</value>
   </data>
-  <data name="USER_RECOVERY_METHOD_MOBILE" xml:space="preserve">
+  <data name="USER_RECOVERY_METHOD_MOBILE_NAME" xml:space="preserve">
     <value>Mobile</value>
   </data>
-  <data name="USER_RECOVERY_METHOD_NONE" xml:space="preserve">
+  <data name="USER_RECOVERY_METHOD_NONE_NAME" xml:space="preserve">
     <value>None</value>
   </data>
   <data name="VAT_RATES_RUSSIA_NONE" xml:space="preserve">
