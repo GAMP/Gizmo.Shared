@@ -768,13 +768,13 @@
   <data name="KEY_GENERATION_CHARACTERS_UPPER_CASE_CHARACTERS" xml:space="preserve">
     <value>Upper Case Characters</value>
   </data>
-  <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL" xml:space="preserve">
+  <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL_NAME" xml:space="preserve">
     <value>Email</value>
   </data>
-  <data name="REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE" xml:space="preserve">
+  <data name="REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE_NAME" xml:space="preserve">
     <value>Mobile Phone</value>
   </data>
-  <data name="REGISTRATION_VERIFICATION_METHOD_NONE" xml:space="preserve">
+  <data name="REGISTRATION_VERIFICATION_METHOD_NONE_NAME" xml:space="preserve">
     <value>None</value>
   </data>
   <data name="SERVER_OPTION_AGE_RESTRICTIONS_APPLICATIONS_ENABLED_DESCRIPTION" xml:space="preserve">
