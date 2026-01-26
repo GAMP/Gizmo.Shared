@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gizmo.Client
+namespace Gizmo.Web.Api.Models
 {
     /// <summary>
     /// User personal information types.
