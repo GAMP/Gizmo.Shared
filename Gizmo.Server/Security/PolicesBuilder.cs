@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Authorization;
 
@@ -30,7 +31,7 @@ namespace Gizmo.Server.Security
 
             foreach (var attribute in attributes)
             {
-                var descriptionAttribute = attribute.Description!;                
+                var descriptionAttribute = attribute.Description!;
                 var policy = attribute.Policy;
 
                 authorizationOptions.AddPolicy(GetPolicyName(policy), e =>
@@ -65,6 +66,21 @@ namespace Gizmo.Server.Security
         {
             //no special naming is really required, we can just use enum name as its guaranteed to be unique
             return policy.ToString();
+        }
+
+        /// <summary>
+        /// Returns all supported claims.
+        /// </summary>
+        /// <returns></returns>
+        public static IEnumerable<(string Operation, string Resource)> Claims()
+        {
+            return Enum.GetValues(typeof(GizmoPolicies))
+                .OfType<GizmoPolicies>()
+                .Select(enumValue =>
+                {
+                    var claimAttribute = enumValue.GetAttribute<PolicyDescriptionAttribute>();
+                    return (claimAttribute!.Resource, claimAttribute!.Operation);
+              });
         }
     }
 }
