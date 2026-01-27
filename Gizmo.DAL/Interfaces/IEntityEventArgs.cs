@@ -8,8 +8,6 @@ namespace Gizmo.DAL
     /// </summary>
     public interface IEntityEventArgs
     {
-        #region PROPERTIES
-
         /// <summary>
         /// Event type.
         /// </summary>
@@ -46,7 +44,5 @@ namespace Gizmo.DAL
         /// Gets all items.
         /// </summary>
         IEnumerable<object> AllItems { get; }
-
-        #endregion
     }
 }

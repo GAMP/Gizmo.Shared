@@ -3,10 +3,8 @@
     /// <summary>
     /// Database context provider interface.
     /// </summary>
-    public interface IGizmoDbContextProvider //TODO: IDisposable?
+    public interface IGizmoDbContextProvider
     {
-        #region FUNCTIONS
-
         /// <summary>
         /// Gets database context.
         /// </summary>
@@ -18,7 +16,5 @@
         /// </summary>
         /// <returns>New context instance.</returns>
         IGizmoDBContext GetDbNonProxyContext();
-
-        #endregion
     }
 }

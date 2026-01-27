@@ -10,21 +10,15 @@ namespace Gizmo.DAL
     /// <remarks>
     /// It is always safe to cast this interface to Entity Framework DbContext.
     /// </remarks>
-    public interface IGizmoDBContext :IDisposable
+    public interface IGizmoDBContext : IDisposable
     {
-        #region PROPERTIES
-
         /// <summary>
         /// Gets or sets if entity events should be cached.
         /// </summary>
         bool IsEventsCached
         {
-            get;set;
+            get; set;
         }
-
-        #endregion
-
-        #region FUNCTIONS
 
         /// <summary>
         /// Gets queryable db set for specified type.
@@ -32,7 +26,7 @@ namespace Gizmo.DAL
         /// <typeparam name="TEntity">Entity type.</typeparam>
         /// <returns>IQueryable Entity set.</returns>
         IQueryable<TEntity> QueryableSet<TEntity>() where TEntity : class;
-        
+
         /// <summary>
         /// Saves all changes made in this context to the underlying database.
         /// </summary>
@@ -83,7 +77,5 @@ namespace Gizmo.DAL
         /// <param name="isolationLevel">Transaction isolation level.</param>
         /// <returns>Database transaction.</returns>
         IDatabaseTransaction BeginTransaction(IsolationLevel isolationLevel);
-
-        #endregion
     }
 }

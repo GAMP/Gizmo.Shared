@@ -6,9 +6,7 @@ namespace Gizmo.DAL
     /// Database transaction implementation interface.
     /// </summary>
     public interface IDatabaseTransaction : IDisposable
-    {
-        #region FUNCTIONS
-        
+    {        
         /// <summary>
         /// Commits transaction.
         /// </summary>
@@ -18,7 +16,5 @@ namespace Gizmo.DAL
         /// Rolls back transaction.
         /// </summary>
         void Rollback(); 
-
-        #endregion
     }
 }
