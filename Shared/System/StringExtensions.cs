@@ -5,12 +5,10 @@ using System.Text;
 namespace System
 {
     /// <summary>
-    /// String extension class.
+    /// String extension.
     /// </summary>
     public static class StringExtensions
     {
-        #region FUNCTIONS
-
         /// <summary>
         /// Replaces a string value.
         /// </summary>
@@ -101,7 +99,5 @@ namespace System
 
             return sb.ToString();
         }
-
-        #endregion
     }
 }

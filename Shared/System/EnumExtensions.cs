@@ -2,7 +2,10 @@
 
 namespace System
 {
-    public static class Extensions
+    /// <summary>
+    /// Enum extensions.
+    /// </summary>
+    public static class EnumExtensions
     {
         /// <summary> 
         /// Gets an attribute on an enum field value 

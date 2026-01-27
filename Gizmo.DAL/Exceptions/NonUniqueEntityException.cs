@@ -1,6 +1,5 @@
-﻿using Gizmo.Server.Exceptions;
-using System;
-using System.Runtime.Serialization;
+﻿using System;
+using Gizmo.Server.Exceptions;
 
 namespace Gizmo.DAL
 {
@@ -8,26 +7,9 @@ namespace Gizmo.DAL
     /// Non unique entity value exception.
     /// Thrown when trying to update or create an entity and another entity has same unique value.
     /// </summary>
-    [DataContract()]
-    [Serializable()]
     [ExceptionFilterCode(ExceptionCode.NonUniqueEntityValue)]
     public class NonUniqueEntityValueException : Exception
     {
-        #region CONSTRUCTOR
-
-        public NonUniqueEntityValueException():base()
-        {
-        }
-
-        public NonUniqueEntityValueException(string message):base(message)
-        {
-        }
-
-        public NonUniqueEntityValueException(string message, Exception inner)
-           : base(message, inner)
-        {
-        }
-
         /// <summary>
         /// Creates new instance.
         /// </summary>
@@ -44,54 +26,11 @@ namespace Gizmo.DAL
             EntityType = entityType ?? throw new ArgumentNullException(nameof(entityType));
         }
 
-        /// <summary>
-        /// Serialization constructor.
-        /// </summary>
-        /// <param name="info">Serialization info.</param>
-        /// <param name="context">Serialization context.</param>
-        protected NonUniqueEntityValueException(SerializationInfo info,
-            StreamingContext context)
-            : base(info, context)
-        {
-            if (info != null)
-            {
-                EntityType = (Type)info.GetValue(nameof(EntityType), typeof(Type));
-                PropertyName = (string)info.GetValue(nameof(PropertyName), typeof(string));
-                Value = info.GetValue(nameof(Value), typeof(object));
-            }
-        }
-
-        #endregion
-
-        #region OVERRIDES
-
-        /// <summary>
-        /// Gets object data.
-        /// </summary>
-        /// <param name="info">Serialization info.</param>
-        /// <param name="context">Serialization context.</param>
-        public override void GetObjectData(SerializationInfo info, StreamingContext context)
-        {
-            base.GetObjectData(info, context);
-
-            if (info != null)
-            {
-                info.AddValue(nameof(EntityType), EntityType);
-                info.AddValue(nameof(PropertyName), PropertyName);
-                info.AddValue(nameof(Value), Value);
-            }
-        }
-
         public override string Message => $"Specified entity {EntityType} property : {PropertyName} value : {Value} is not unique.";
-
-        #endregion
-
-        #region PROPERTIES
 
         /// <summary>
         /// Gets entity property name.
         /// </summary>
-        [DataMember()]
         public string PropertyName
         {
             get;
@@ -101,7 +40,6 @@ namespace Gizmo.DAL
         /// <summary>
         /// Gets entity type.
         /// </summary>
-        [DataMember()]
         public Type EntityType
         {
             get;
@@ -115,7 +53,5 @@ namespace Gizmo.DAL
         {
             get; set;
         }
-
-        #endregion
     }
 }
