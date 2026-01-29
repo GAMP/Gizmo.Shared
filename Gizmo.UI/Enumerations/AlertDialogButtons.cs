@@ -1,4 +1,4 @@
-﻿namespace Gizmo.Client
+﻿namespace Gizmo.UI
 {
     public enum AlertDialogButtons
     {

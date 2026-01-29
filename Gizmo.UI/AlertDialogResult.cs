@@ -1,4 +1,4 @@
-﻿namespace Gizmo.Client.UI
+﻿namespace Gizmo.UI
 {
     /// <summary>
     /// Alert dialog result.
