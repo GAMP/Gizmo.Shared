@@ -1,5 +1,4 @@
-﻿#nullable enable
-namespace System.Threading.Tasks
+﻿namespace System.Threading.Tasks
 {
 	/// <summary>
 	/// Extension methods for System.Threading.Tasks.Task and System.Threading.Tasks.ValueTask

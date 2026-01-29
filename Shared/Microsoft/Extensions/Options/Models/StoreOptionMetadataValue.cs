@@ -1,5 +1,4 @@
-﻿#nullable enable
-namespace Microsoft.Extensions.Options
+﻿namespace Microsoft.Extensions.Options
 {
     /// <summary>
     /// Represents option metadata with value.

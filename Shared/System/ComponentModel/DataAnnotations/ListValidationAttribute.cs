@@ -1,6 +1,4 @@
-﻿#nullable enable
-
-using System.Linq;
+﻿using System.Linq;
 
 namespace System.ComponentModel.DataAnnotations
 {

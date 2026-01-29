@@ -1,8 +1,4 @@
-﻿// we dont need to check the GuidAttribute, if one set on the object it will be automatically present on Type
-// https://learn.microsoft.com/en-us/dotnet/api/system.type.guid?view=net-6.0
-
-#nullable enable
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;

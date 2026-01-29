@@ -1,6 +1,4 @@
-﻿#nullable enable
-
-using Gizmo;
+﻿using Gizmo;
 
 namespace System.ComponentModel.DataAnnotations
 {

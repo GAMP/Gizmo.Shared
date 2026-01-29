@@ -1,5 +1,4 @@
-﻿#nullable enable
-using System.Linq;
+﻿using System.Linq;
 using System.Reflection;
 using System;
 using Microsoft.Extensions.Options;

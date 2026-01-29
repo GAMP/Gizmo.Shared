@@ -1,5 +1,4 @@
-﻿#nullable enable
-
+﻿
 using Microsoft.Extensions.Options;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;

@@ -1,6 +1,4 @@
-#nullable enable
-
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Gizmo.UI.View.Services;
 
 namespace Gizmo.UI

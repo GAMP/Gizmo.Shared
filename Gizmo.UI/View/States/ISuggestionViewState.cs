@@ -1,6 +1,4 @@
-﻿#nullable enable
-
-namespace Gizmo.UI.View.States
+﻿namespace Gizmo.UI.View.States
 {
     /// <summary>
     /// Suggestion view state interface.

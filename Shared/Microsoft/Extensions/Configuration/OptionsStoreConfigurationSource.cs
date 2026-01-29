@@ -1,5 +1,4 @@
-﻿#nullable enable
-using Microsoft.Extensions.Options;
+﻿using Microsoft.Extensions.Options;
 using System;
 
 namespace Microsoft.Extensions.Configuration

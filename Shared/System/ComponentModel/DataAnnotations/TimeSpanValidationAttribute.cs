@@ -1,6 +1,4 @@
-﻿#nullable enable
-
-namespace System.ComponentModel.DataAnnotations
+﻿namespace System.ComponentModel.DataAnnotations
 {
     /// <summary>
     /// TimeSpan validation attribute.

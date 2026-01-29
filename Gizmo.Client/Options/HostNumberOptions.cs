@@ -1,5 +1,4 @@
-﻿#nullable enable
-
+﻿
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using Gizmo.Client.UI.View.Constants;

@@ -1,6 +1,4 @@
-﻿#nullable enable
-
-using Gizmo.UI.View.States;
+﻿using Gizmo.UI.View.States;
 using System.Threading.Tasks;
 
 namespace Gizmo.UI.View.Services

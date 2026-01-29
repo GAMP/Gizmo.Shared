@@ -1,6 +1,4 @@
-﻿#nullable enable
-
-namespace Microsoft.Extensions.Options
+﻿namespace Microsoft.Extensions.Options
 {
     /// <summary>
     /// Store option allowed value metadata.

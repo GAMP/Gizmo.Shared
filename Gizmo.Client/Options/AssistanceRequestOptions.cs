@@ -1,5 +1,4 @@
-﻿#nullable enable
-
+﻿
 using System.ComponentModel;
 
 namespace Gizmo.Client.Options

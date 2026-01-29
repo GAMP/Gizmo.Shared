@@ -13,7 +13,7 @@
 		<Description>Gizmo shared code library. The library contains code shared between all of Gizmo modules.</Description>
 		<Copyright>NETProjects</Copyright>
 		<RepositoryType>git</RepositoryType>
-		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<PackageIcon>package_icon.png</PackageIcon>

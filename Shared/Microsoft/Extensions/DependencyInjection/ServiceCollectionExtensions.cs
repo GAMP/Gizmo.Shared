@@ -1,10 +1,7 @@
-﻿#nullable enable
-
-using System.Reflection;
+﻿using System.Reflection;
 using System;
 using System.Linq;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using Microsoft.Extensions.Options;
 
 namespace Microsoft.Extensions.DependencyInjection
 {

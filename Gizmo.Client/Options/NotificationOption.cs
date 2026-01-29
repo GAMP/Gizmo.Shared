@@ -1,5 +1,4 @@
-﻿#nullable enable
-
+﻿
 namespace Gizmo.Client.Options
 {
     [MessagePack.MessagePackObject()]
