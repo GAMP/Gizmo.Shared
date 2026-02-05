@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<root> 
+  <!--
+  Loco xml export: ResX - .NET resources
+  Project: Gizmo.Shared
+  Locale: el, Greek
+  Exported by: Oleg Savelos
+  Exported at: Thu, 05 Feb 2026 08:56:32 +0200 
+  --> 
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="locoLocaleCode">
+    <value>el</value>
+  </metadata>
+  <metadata name="locoLocaleName" xml:space="preserve">
+    <value>Greek</value>
+  </metadata> 
+  <data name="ADVANCE_PAYMENTS_RUSSIA_ADVANCE" xml:space="preserve"> 
+    <value>Προκαταβολή</value> 
+  </data> 
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PAYMENT" xml:space="preserve"> 
+    <value>Πλήρης πληρωμή</value> 
+  </data> 
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PREPAYMENT" xml:space="preserve"> 
+    <value>Πλήρης προπληρωμή</value> 
+  </data> 
+  <data name="ADVANCE_PAYMENTS_RUSSIA_PREPAYMENT" xml:space="preserve"> 
+    <value>Προπληρωμή</value> 
+  </data> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
+    <value>Αποτυχία διαγραφής κατηγορίας εφαρμογής</value> 
+  </data> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve"> 
+    <value>Αποτυχία διαγραφής κατηγορίας εφαρμογής</value> 
+  </data> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve"> 
+    <value>Η κατηγορία εφαρμογών που δεν είναι κενή δεν μπορεί να διαγραφεί.</value> 
+  </data> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve"> 
+    <value>Η κατηγορία εφαρμογής δεν είναι κενή</value> 
+  </data> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
+    <value>Η διαγραφή της κατηγορίας εφαρμογής ολοκληρώθηκε με επιτυχία.</value> 
+  </data> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
+    <value>Η διαγραφή της κατηγορίας της εφαρμογής ήταν επιτυχής</value> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_ADD_DATE" xml:space="preserve"> 
+    <value>Ημ/νία Προσθήκης</value> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_POPULARITY" xml:space="preserve"> 
+    <value>Δημοτικότητα</value> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_RATING" xml:space="preserve"> 
+    <value>Αξιολόγηση</value> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_RELEASE_DATE" xml:space="preserve"> 
+    <value>Ημ/νία Έκδοσης</value> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_TITLE" xml:space="preserve"> 
+    <value>Τίτλος</value> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_USE" xml:space="preserve"> 
+    <value>Χρήση</value> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_ADMIN_MODE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_CLOSE_PROGRAMS" xml:space="preserve"> 
+    <value>Τερματισμός εφαρμογών</value> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_LOG_OFF" xml:space="preserve"> 
+    <value>Αποσύνδεση</value> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_NO_ACTION" xml:space="preserve"> 
+    <value>Καμία Ενέργεια</value> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_REBOOT" xml:space="preserve"> 
+    <value>Επανεκκίνηση</value> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_STAND_BY" xml:space="preserve"> 
+    <value>Αναμονή</value> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_TURN_OFF" xml:space="preserve"> 
+    <value>Απενεργοποίηση</value> 
+  </data> 
+  <data name="CLIENT_POWER_SAVING_DISABLED" xml:space="preserve"> 
+    <value>Απενεργοποιημένο</value> 
+  </data> 
+  <data name="CLIENT_POWER_SAVING_SHUT_DOWN" xml:space="preserve"> 
+    <value>Τερματισμός λειτουργίας</value> 
+  </data> 
+  <data name="CLIENT_POWER_SAVING_SLEEP" xml:space="preserve"> 
+    <value>Αναστολή λειτουργίας</value> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_EMAIL" xml:space="preserve"> 
+    <value>Email</value> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_FACEBOOK_MESSENGER" xml:space="preserve"> 
+    <value>Facebook Messenger</value> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_INSTAGRAM" xml:space="preserve"> 
+    <value>Instagram</value> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_SMS" xml:space="preserve"> 
+    <value>SMS</value> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_TELEGRAM" xml:space="preserve"> 
+    <value>Telegram</value> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_TWITTER_DM" xml:space="preserve"> 
+    <value>Twitter</value> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_VIBER" xml:space="preserve"> 
+    <value>Viber</value> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_WE_CHAT" xml:space="preserve"> 
+    <value>WeChat</value> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_WHATS_APP" xml:space="preserve"> 
+    <value>WhatsApp</value> 
+  </data> 
+  <data name="DEPOSIT_TRANSACTION_TYPE_CHARGE" xml:space="preserve"> 
+    <value>Χρέωση</value> 
+  </data> 
+  <data name="DEPOSIT_TRANSACTION_TYPE_CREDIT" xml:space="preserve"> 
+    <value>Πίστωση</value> 
+  </data> 
+  <data name="DEPOSIT_TRANSACTION_TYPE_DEPOSIT" xml:space="preserve"> 
+    <value>Κατάθεση</value> 
+  </data> 
+  <data name="DEPOSIT_TRANSACTION_TYPE_WITHDRAW" xml:space="preserve"> 
+    <value>Ανάληψη</value> 
+  </data> 
+  <data name="DISABLE_PRINT_RECEIPT_BY_DEFAULT" xml:space="preserve"> 
+    <value>Απενεργοποίηση εκτύπωσης αποδείξεων από προεπιλογή</value> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_FIFTEEN" xml:space="preserve"> 
+    <value>15%</value> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_FIVE" xml:space="preserve"> 
+    <value>5%</value> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_TEN" xml:space="preserve"> 
+    <value>10%</value> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_THIRTY" xml:space="preserve"> 
+    <value>30%</value> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY" xml:space="preserve"> 
+    <value>20%</value> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY_FIVE" xml:space="preserve"> 
+    <value>25%</value> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_ZERO" xml:space="preserve"> 
+    <value>0%</value> 
+  </data> 
+  <data name="GIZMO_POLICY_APPLICATIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση στη λειτουργία εφαρμογών, επιτρέποντας στον χρήστη να διαχειρίζεται και να αλληλεπιδρά με τις εφαρμογές.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_APPLICATIONS_NAME" xml:space="preserve"> 
+    <value>Πρόσβαση</value> 
+  </data> 
+  <data name="GIZMO_POLICY_DEPLOYMENT_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση στη λειτουργία αντιγραφής και ανάπτυξης αρχείων, επιτρέποντας στον χρήστη να διαχειρίζεται τις εγκαταστάσεις.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_DEPLOYMENT_NAME" xml:space="preserve"> 
+    <value>Πρόσβαση</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_APPLICATIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>Πολιτικές για τη διαχείριση της πρόσβασης και των ρυθμίσεων των εφαρμογών.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_APPLICATIONS_NAME" xml:space="preserve"> 
+    <value>Εφαρμογές</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_DEPLOYMENT_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_DEPLOYMENT_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_LOG_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_LOG_NAME" xml:space="preserve"> 
+    <value>Ιστορικό</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_MANAGEMENT_DESCRIPTION" xml:space="preserve"> 
+    <value>Πολιτικές για τη διαχείριση συστημάτων και λειτουργιών.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_MANAGEMENT_NAME" xml:space="preserve"> 
+    <value>Διαχείριση</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_MONITORING_DESCRIPTION" xml:space="preserve"> 
+    <value>Πολιτικές για την παρακολούθηση του συστήματος και των λειτουργιών.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_MONITORING_NAME" xml:space="preserve"> 
+    <value>Παρακολούθηση</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_NEWS_DESCRIPTION" xml:space="preserve"> 
+    <value>Πολιτικές σχετικά με τη διαχείριση και την προβολή περιεχομένου ειδήσεων.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_NEWS_NAME" xml:space="preserve"> 
+    <value>Νέα</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_REGISTER_DESCRIPTION" xml:space="preserve"> 
+    <value>Πολιτικές για τη διαχείριση των λειτουργιών και των ρυθμίσεων του μητρώου.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_REGISTER_NAME" xml:space="preserve"> 
+    <value>Ταμείο</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_REPORTS_DESCRIPTION" xml:space="preserve"> 
+    <value>Πολιτικές για τη δημιουργία, την πρόσβαση και τη διαχείριση αναφορών.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_REPORTS_NAME" xml:space="preserve"> 
+    <value>Αναφορές</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_RESERVATIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>Πολιτικές που διέπουν τις κρατήσεις.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_RESERVATONS_NAME" xml:space="preserve"> 
+    <value>Κρατήσεις</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SALES_DESCRIPTION" xml:space="preserve"> 
+    <value>Πολιτικές που σχετίζονται με τη διαχείριση και την παρακολούθηση των πωλήσεων.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SALES_NAME" xml:space="preserve"> 
+    <value>Πωλήσεις</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SERVER_SETTINGS_DESCRIPTION" xml:space="preserve"> 
+    <value>Πολιτικές που σχετίζονται με τη διαμόρφωση και τις ρυθμίσεις του διακομιστή.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SERVER_SETTINGS_NAME" xml:space="preserve"> 
+    <value>Ρυθμίσεις διακομιστή</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SHIFT_DESCRIPTION" xml:space="preserve"> 
+    <value>Πολιτικές που διέπουν τις βάρδιες και τις πωλήσεις κατά τη διάρκεια των βαρδιών.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SHIFT_NAME" xml:space="preserve"> 
+    <value>Βάρδια</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_STOCK_DESCRIPTION" xml:space="preserve"> 
+    <value>Πολιτικές για τη διαχείριση και την πρόσβαση στο απόθεμα.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_STOCK_NAME" xml:space="preserve"> 
+    <value>Απόθεμα</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_USER_DESCRIPTION" xml:space="preserve"> 
+    <value>Πολιτικές για τη διαχείριση χρηστών και την πρόσβαση.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_USER_NAME" xml:space="preserve"> 
+    <value>Χρήστης</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_WAITING_LINES_DESCRIPTION" xml:space="preserve"> 
+    <value>Πολιτικές για τη διαχείριση της πρόσβασης στις ουρές αναμονής.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_WAITING_LINES_NAME" xml:space="preserve"> 
+    <value>Ουρές αναμονής</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_WEB_API_DESCRIPTION" xml:space="preserve"> 
+    <value>Πολιτικές για την πρόσβαση και τη διαχείριση της λειτουργικότητας του WEB API.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_WEB_API_NAME" xml:space="preserve"> 
+    <value>WEB API</value> 
+  </data> 
+  <data name="GIZMO_POLICY_LOG_CLEAR_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση στη λειτουργία διαχείρισης ιστορικού, επιτρέποντας στον χρήστη να διαγράψει τα αρχεία ιστορικού του συστήματος.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_LOG_CLEAR_NAME" xml:space="preserve"> 
+    <value>Απαλοιφή</value> 
+  </data> 
+  <data name="GIZMO_POLICY_LOG_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση στη λειτουργία καταγραφής, επιτρέποντας στον χρήστη να προβάλλει τα αρχεία καταγραφής του συστήματος.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_LOG_NAME" xml:space="preserve"> 
+    <value>Πρόσβαση</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_CLIENT_MODULE_RESTART_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση στη λειτουργία επανεκκίνησης, επιτρέποντας στον χρήστη να επανεκκινήσει τη μονάδα πελάτη.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_CLIENT_MODULE_RESTART_NAME" xml:space="preserve"> 
+    <value>Επανεκκίνηση της μονάδας πελάτη</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση στη λειτουργία διαχείρισης, επιτρέποντας στον χρήστη να εκτελεί διοικητικές εργασίες.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την επεξεργασία διατάξεων</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_NAME" xml:space="preserve"> 
+    <value>Επεξεργασία διατάξεων</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_FILES_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση στη λειτουργία αρχείων κεντρικού υπολογιστή πελάτη, επιτρέποντας στον χρήστη να διαχειρίζεται και να αλληλεπιδρά με αρχεία κεντρικού υπολογιστή.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_FILES_NAME" xml:space="preserve"> 
+    <value>Διαχείριση αρχείων</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_LOCK_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για τη διαχείριση της κατάστασης κλειδώματος πληκτρολογίου και ποντικιού του κεντρικού τερματικού του πελάτη, επιτρέποντας στον χρήστη να ελέγχει τα δικαιώματα εισαγωγής δεδομένων.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_LOCK_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_MAINTENANCE_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για τη διαχείριση της κατάστασης συντήρησης του κεντρικού υπολογιστή του πελάτη, επιτρέποντας στον χρήστη να ελέγχει και να ενημερώνει την κατάσταση συντήρησής του.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_MAINTENANCE_NAME" xml:space="preserve"> 
+    <value>Διαχείριση συντήρησης</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_NAME" xml:space="preserve"> 
+    <value>Πρόσβαση</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_PROCESSES_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση στη λειτουργία των διεργασιών των τερματικών πελατών, επιτρέποντας στον χρήστη να προβάλλει και να διαχειρίζεται τις διεργασίες που εκτελούνται.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_PROCESSES_NAME" xml:space="preserve"> 
+    <value>Διαχείριση διεργασιών</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_SECURITY_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για τη διαχείριση της κατάστασης ασφάλειας του κεντρικού τερματικού του πελάτη, επιτρέποντας στον χρήστη να ελέγχει και να ενημερώνει τις ρυθμίσεις ασφάλειας.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_SECURITY_NAME" xml:space="preserve"> 
+    <value>Ασφάλεια</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_TASKS_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση στη λειτουργία εργασιών, επιτρέποντας στον χρήστη να προβάλλει και να διαχειρίζεται εργασίες.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_TASKS_NAME" xml:space="preserve"> 
+    <value>Πρόσβαση σε εργασίες</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για χειροκίνητη ενεργοποίηση των τερματικών, επιτρέποντας στον χρήστη να ελέγχει τις καταστάσεις τροφοδοσίας των τερματικών.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MONITORING_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση στη λειτουργία παρακολούθησης οθόνης, επιτρέποντας στον χρήστη να βλέπει και να παρακολουθεί τις οθόνες των πελατών.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MONITORING_NAME" xml:space="preserve"> 
+    <value>Πρόσβαση</value> 
+  </data> 
+  <data name="GIZMO_POLICY_NEWS_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση στη λειτουργία ειδήσεων και μάρκετινγκ, επιτρέποντας στον χρήστη να προβάλλει και να διαχειρίζεται σχετικό περιεχόμενο.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_NEWS_NAME" xml:space="preserve"> 
+    <value>Πρόσβαση</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_PAY_IN_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την εκτέλεση εισροών σε Ταμείο, επιτρέποντας στον χρήστη να προσθέσει χρήματα στο Ταμείο.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_PAY_IN_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_PAY_OUT_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την πραγματοποίηση πληρωμών από το ταμείο, επιτρέποντας στον χρήστη να αποσύρει κεφάλαια από το ταμείο</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_PAY_OUT_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την προβολή των συναλλαγών του ημερολογίου της προηγούμενης ημέρας, επιτρέποντας στον χρήστη να ελέγξει τις προηγούμενες δραστηριότητες του ημερολογίου.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve"> 
+    <value>Εμφάνιση συναλλαγών προηγούμενης ημέρας</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την εμφάνιση των συναλλαγών του μητρώου, επιτρέποντας στον χρήστη να ελέγχει όλες τις δραστηριότητες του μητρώου.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_NAME" xml:space="preserve"> 
+    <value>Εμφάνιση συναλλαγών</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REPORTS_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση στη λειτουργία αναφορών, επιτρέποντας στον χρήστη να προβάλλει και να δημιουργεί αναφορές.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REPORTS_NAME" xml:space="preserve"> 
+    <value>Πρόσβαση</value> 
+  </data> 
+  <data name="GIZMO_POLICY_RESERVATIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>Παροχή πρόσβασης σε κρατήσεις</value> 
+  </data> 
+  <data name="GIZMO_POLICY_RESERVATIONS_NAME" xml:space="preserve"> 
+    <value>Πρόσβαση</value> 
+  </data> 
+  <data name="GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_DESCRIPTION" xml:space="preserve"> 
+    <value>Παροχή πρόσβασης για τη δημιουργία κρατήσεων χωρίς πληρωμές</value> 
+  </data> 
+  <data name="GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_NAME" xml:space="preserve"> 
+    <value>Δημιουργία κρατήσεων χωρίς πληρωμές</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_DESCRIPTION" xml:space="preserve"> 
+    <value>Πίστωση χρόνου</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_NAME" xml:space="preserve"> 
+    <value>Πίστωση χρόνου</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_CUSTOM_PRICE_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την πραγματοποίηση πωλήσεων σε τροποποιημένες τιμές, επιτρέποντας στον χρήστη να παρακάμψει τις προεπιλογές.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_CUSTOM_PRICE_NAME" xml:space="preserve"> 
+    <value>Τροποποιημένη τιμή</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DELETE_TIME_PURCHASES_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για τη διαγραφή αγοράς χρόνου, επιτρέποντας στον χρήστη να καταργήσει συναλλαγές προπληρωμένου χρόνου ή προσφορές χρόνου.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DELETE_TIME_PURCHASES_NAME" xml:space="preserve"> 
+    <value>Διαγραφή αγοράς χρόνου</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DEPOSIT_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει δυνατότητα κατάθεσης, επιτρέποντας στον χρήστη να προσθέτει χρήματα σε λογαριασμούς πελατών.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DEPOSIT_NAME" xml:space="preserve"> 
+    <value>Κατάθεση</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την πραγματοποίηση πωλήσεων, επιτρέποντας στον χρήστη να επεξεργάζεται τις αγορές των πελατών.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DISABLE_RECEIPT_PRINT_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την επιλεγμένη απενεργοποίηση της εκτύπωσης αποδείξεων, επιτρέποντας στον χρήστη να διαχειρίζεται τις προτιμήσεις δημιουργίας αποδείξεων.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DISABLE_RECEIPT_PRINT_NAME" xml:space="preserve"> 
+    <value>Απενεργοποίηση εκτύπωσης αποδείξεων</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_MODIFY_USER_BILLING_OPTIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση σε επιλογές χειροκίνητης επιλογής ρυθμίσεων χρέωσης χρήστη, επιτρέποντας στον χρήστη να προσαρμόσει τις προτιμήσεις χρέωσης για τους πελάτες.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_MODIFY_USER_BILLING_OPTIONS_NAME" xml:space="preserve"> 
+    <value>Τροποποίηση επιλογών χρέωσης χρήστη</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_NAME" xml:space="preserve"> 
+    <value>Πρόσβαση</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_OPEN_CASH_DRAWER_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για χειροκίνητο άνοιγμα του συρταριού μετρητών, επιτρέποντας στον χρήστη να παρακάμψει τους αυτόματους ελέγχους.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_OPEN_CASH_DRAWER_NAME" xml:space="preserve"> 
+    <value>Άνοιγμα συρταριού ταμείου</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_PAY_LATER_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση σε επιλογές πληρωμής αργότερα, επιτρέποντας στον χρήστη να αναβάλει την πληρωμή για τις συναλλαγές του.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_PAY_LATER_NAME" xml:space="preserve"> 
+    <value>Πληρωμή αργότερα</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_DEPOSITS_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την προβολή κινήσεων καταθέσεων, επιτρέποντας στον χρήστη να ελέγχει τις κινήσεις καταθέσεων του λογαριασμού πελάτη.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_DEPOSITS_NAME" xml:space="preserve"> 
+    <value>Προβολή κινήσεων καταθέσεων</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την προβολή παραστατικών, επιτρέποντας στον χρήστη να ελέγχει τις λεπτομέρειες χρέωσης και πληρωμής.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_NAME" xml:space="preserve"> 
+    <value>Προβολή παραστατικών</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την προβολή εξοφλημένων παραστατικών, επιτρέποντας στον χρήστη να ελέγχει τα ολοκληρωμένα αρχεία πληρωμών.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_NAME" xml:space="preserve"> 
+    <value>Προβολή πληρωμένων παραστατικών</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την προβολή παλαιών κινήσεων καταθέσεων, επιτρέποντας στον χρήστη να ελέγξει τις κινήσεις καταθέσεων της προηγούμενης ημέρας.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_NAME" xml:space="preserve"> 
+    <value>Προβολή παλαιών κινήσεων καταθέσεων</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την προβολή παλαιών παραστατικών, επιτρέποντας στον χρήστη να ελέγξει τα παραστατικά που εκδόθηκαν την προηγούμενη ημέρα.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_NAME" xml:space="preserve"> 
+    <value>Προβολή παλαιών παραστατικών</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση σε ακυρωμένα παραστατικά από κλειστές βάρδιες, επιτρέποντας στον χρήστη να ακυρώσει συναλλαγές μετά το τέλος της βάρδιας.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_NAME" xml:space="preserve"> 
+    <value>Ακύρωση παραστατικών κλειστών βαρδιών</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_DEPOSIT_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση σε ακυρωμένες καταθέσεις, επιτρέποντας στον χρήστη να ακυρώσει ή να αντιστρέψει συναλλαγές κατάθεσης.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_DEPOSIT_NAME" xml:space="preserve"> 
+    <value>Ακύρωση κατάθεσης</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_INVOICE_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση σε ακυρωμένα παραστατικά, επιτρέποντας στον χρήστη να ακυρώσει ή να αντιστρέψει εκδοθέντα παραστατικά.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_INVOICE_NAME" xml:space="preserve"> 
+    <value>Ακύρωση</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_NON_CURRENT_BRANCH_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση σε ακυρωμένα παραστατικά που εκδόθηκαν σε διαφορετικό υποκατάστημα.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_NON_CURRENT_BRANCH_NAME" xml:space="preserve"> 
+    <value>Ακύρωση μη τρέχοντων παραστατικών υποκαταστημάτων</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_NON_OWNED_INVOICE_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση σε ακυρωμένα παραστατικά που έχουν δημιουργηθεί από άλλους χειριστές, επιτρέποντας στον χρήστη να ακυρώσει συναλλαγές που έχουν ξεκινήσει από διαφορετικούς χρήστες.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_NON_OWNED_INVOICE_NAME" xml:space="preserve"> 
+    <value>Ακυρώστε παραστατικά που δεν σας ανήκουν</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_PAST_DAY_INVOICE_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση σε ακυρωμένα παραστατικά που έχουν δημιουργηθεί σε προηγούμενες ημερομηνίες, επιτρέποντας στον χρήστη να ακυρώσει συναλλαγές από προηγούμενες ημέρες.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_PAST_DAY_INVOICE_NAME" xml:space="preserve"> 
+    <value>Ακύρωση παραστατικών προηγούμενων ημερών</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση σε ακυρωμένα παραστατικά με χρησιμοποιημένες προσφορές χρόνου, επιτρέποντας στον χρήστη να ακυρώσει συναλλαγές που αφορούν εξαργυρωμένες προσφορές χρόνου.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_NAME" xml:space="preserve"> 
+    <value>Ακύρωση παραστατικών με χρησιμοποιημένο χρόνο</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_WITHDRAW_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει δυνατότητα ανάληψης, επιτρέποντας στον χρήστη να αφαιρεί χρήματα από τους λογαριασμούς των πελατών.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_WITHDRAW_NAME" xml:space="preserve"> 
+    <value>Ανάληψη</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SETTINGS_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση στη λειτουργία ρυθμίσεων, επιτρέποντας στον χρήστη να προβάλλει και να τροποποιεί τις διαμορφώσεις του συστήματος.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SETTINGS_NAME" xml:space="preserve"> 
+    <value>Πρόσβαση</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SET_CASHIER_NAME" xml:space="preserve"> 
+    <value>Ταμίας</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SET_MANAGER_NAME" xml:space="preserve"> 
+    <value>Διαχειριστής</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SET_MARKETER_NAME" xml:space="preserve"> 
+    <value>Μάρκετινγκ</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SET_OWNER_NAME" xml:space="preserve"> 
+    <value>Ιδιοκτήτης</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SET_TECHNICIAN_NAME" xml:space="preserve"> 
+    <value>Τεχνικός</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την εμφάνιση των αναμενόμενων ποσότητων βάρδιας, επιτρέποντας στον χρήστη να ελέγχει τα προβλεπόμενα συνολικά ποσά για τις βάρδιες.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_NAME" xml:space="preserve"> 
+    <value>Εμφάνιση αναμενόμενου</value> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση στη λειτουργία αποθεμάτων, επιτρέποντας στον χρήστη να προβάλλει και να διαχειρίζεται τα στοιχεία αποθεμάτων.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_MANAGE_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση σε καρτέλα "διαχείριση αποθέματος", επιτρέποντας στον χρήστη να πραγματοποιεί ενημέρωση και έλεγχο των στοιχείων του αποθέματος.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_MANAGE_NAME" xml:space="preserve"> 
+    <value>Διαχείριση</value> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_NAME" xml:space="preserve"> 
+    <value>Πρόσβαση</value> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTIONS" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την προβολή των μεταβολών αποθέματος της προηγούμενης ημέρας, επιτρέποντας στον χρήστη να ελέγξει τις δραστηριότητες αποθεμάτων της προηγούμενης ημέρας.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve"> 
+    <value>Εμφάνιση συναλλαγών προηγούμενης ημέρας</value> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την προβολή κινήσεων αποθέματος, επιτρέποντας στον χρήστη να ελέγχει όλες τις δραστηριότητες αποθέματος.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_NAME" xml:space="preserve"> 
+    <value>Εμφάνιση συναλλαγών</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_BAN_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την αποβολή χρηστών, επιτρέποντας στον χρήστη να περιορίσει την πρόσβαση στο λογαριασμό για συγκεκριμένους χρήστες.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_BAN_NAME" xml:space="preserve"> 
+    <value>Αποβολή χρήστη</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CHANGE_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για τη μετακίνηση χρηστών σε διαφορετικές ομάδες χρηστών, επιτρέποντας στον χρήστη να πραγματοποιεί ενημέρωση για τις αναθέσεις ομάδων χρηστών.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CHANGE_GROUP_NAME" xml:space="preserve"> 
+    <value>Αλλαγή ομάδας χρηστών</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CREATE_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για χειροκίνητη δημιουργία χρηστών, επιτρέποντας στον χρήστη να προσθέτει νέους λογαριασμούς χρηστών στο σύστημα.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CREATE_NAME" xml:space="preserve"> 
+    <value>Δημιουργία</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_DELETE_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για τη διαγραφή χρηστών, επιτρέποντας στον χρήστη να καταργήσει λογαριασμούς χρηστών από το σύστημα.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_DELETE_NAME" xml:space="preserve"> 
+    <value>Διαγραφή</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_EDIT_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την επεξεργασία των προσωπικών πληροφοριών των χρηστών, επιτρέποντας στον χρήστη να πραγματοποιεί ενημέρωση των στοιχείων του λογαριασμού του.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_EDIT_NAME" xml:space="preserve"> 
+    <value>Επεξεργασία</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_HARD_DELETE_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση σε χρήστες με δικαιώματα οριστικής διαγραφής, επιτρέποντας στον χρήστη να διαγράψει μόνιμα λογαριασμούς χρηστών από το σύστημα.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_HARD_DELETE_NAME" xml:space="preserve"> 
+    <value>Ολική διαγραφή</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση σε χρήστες που συνδέονται χειροκίνητα, επιτρέποντας στον χρήστη να ξεκινήσει απευθείας τις συνεδρίες χρήστη.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_NAME" xml:space="preserve"> 
+    <value>Σύνδεση χρηστών</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_PASSWORD_RESET_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για χειροκίνητη επαναφορά κωδικών χρήστης, επιτρέποντας στον χρήστη να ενημερώσει τα διαπιστευτήρια του λογαριασμού του.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_PASSWORD_RESET_NAME" xml:space="preserve"> 
+    <value>Επαναφορά Κωδικού πρόσβασης</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_RENAME_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για μετονομασία χρηστών, επιτρέποντας στον χρήστη να πραγματοποιεί ενημέρωση των ονομάτων των λογαριασμών χρηστών.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_RENAME_NAME" xml:space="preserve"> 
+    <value>Μετονομασία</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_UNBAN_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την χειροκίνητη ενεργοποίηση χρήστης, επιτρέποντας στον χρήστη να επαναφέρει την πρόσβαση σε λογαριασμούς που είχαν προηγουμένως αποβληθεί.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_UNBAN_NAME" xml:space="preserve"> 
+    <value>Ενεργοποίηση χρήστη</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_VIEW_STATS_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την εμφάνιση στατιστικών στοιχείων χρήστη, επιτρέποντας στον χρήστη να ελέγχει τις μετρήσεις δραστηριότητας και απόδοσης των χρηστών.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_VIEW_STATS_NAME" xml:space="preserve"> 
+    <value>Εμφάνιση στατιστικών</value> 
+  </data> 
+  <data name="GIZMO_POLICY_WAITING_LINES_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση στη λειτουργία των ουρών αναμονής, επιτρέποντας στον χρήστη να διαχειρίζεται και να παρακολουθεί τις ουρές.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_WAITING_LINES_MANAGE_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση στη διαχείριση ουρών αναμονής, επιτρέποντας στον χρήστη να οργανώνει και να ελέγχει τις λειτουργίες της ουράς.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_WAITING_LINES_MANAGE_NAME" xml:space="preserve"> 
+    <value>Διαχείριση ουρών αναμονής</value> 
+  </data> 
+  <data name="GIZMO_POLICY_WAITING_LINES_NAME" xml:space="preserve"> 
+    <value>Πρόσβαση</value> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_HOST_IN_USE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_HOST_IN_USE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_DESCRIPTION" xml:space="preserve"> 
+    <value>Το τελικό σημείο έχει κράτηση</value> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_NAME" xml:space="preserve"> 
+    <value>Το τελικό σημείο είναι δεσμευμένο</value> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
+    <value>Η διαγραφή του κεντρικού υπολογιστή ήταν επιτυχημένη.</value> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
+    <value>Επιτυχημένη διαγραφή τερματικού</value> 
+  </data> 
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_CENTER" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_LEFT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_RIGHT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_LEFT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_RIGHT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_SCREEN" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_CENTER" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_LEFT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_RIGHT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_CLOCKWISE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_COUNTERCLOCKWISE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_FIXED" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_BOTTOM" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_CENTER" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_TOP" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_CENTER" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_LEFT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_RIGHT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_WALL_BOUNCE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="INVOICE_STATUS_PAID" xml:space="preserve"> 
+    <value>Εξοφλημένο</value> 
+  </data> 
+  <data name="INVOICE_STATUS_PARTIALLY_PAID" xml:space="preserve"> 
+    <value>Μερικώς εξοφλημένο</value> 
+  </data> 
+  <data name="INVOICE_STATUS_UNPAID" xml:space="preserve"> 
+    <value>Ανεξόφλητο</value> 
+  </data> 
+  <data name="KEY_GENERATION_CHARACTERS_ALPHANUMERIC" xml:space="preserve"> 
+    <value>Αλφαριθμητικό</value> 
+  </data> 
+  <data name="KEY_GENERATION_CHARACTERS_NUMERIC" xml:space="preserve"> 
+    <value>Αριθμητικό</value> 
+  </data> 
+  <data name="KEY_GENERATION_CHARACTERS_UPPER_CASE_CHARACTERS" xml:space="preserve"> 
+    <value>Κεφαλαία γράμματα</value> 
+  </data> 
+  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_DESCRIPTION" xml:space="preserve"> 
+    <value>Ο καθορισμένος λογαριασμός χρήστη είναι απενεργοποιημένος.</value> 
+  </data> 
+  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_NAME" xml:space="preserve"> 
+    <value>Λογαριασμός απενεργοποιημένος</value> 
+  </data> 
+  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_DESCRIPTION" xml:space="preserve"> 
+    <value>Χρήστης ήδη συνδεδεμένος</value> 
+  </data> 
+  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_NAME" xml:space="preserve"> 
+    <value>Ήδη συνδεδεμένος</value> 
+  </data> 
+  <data name="LOGIN_RESULT_DENIED_DESCRIPTION" xml:space="preserve"> 
+    <value>Η σύνδεση απερρίφθηκε</value> 
+  </data> 
+  <data name="LOGIN_RESULT_DENIED_NAME" xml:space="preserve"> 
+    <value>Η σύνδεση απορρίφθηκε</value> 
+  </data> 
+  <data name="LOGIN_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
+    <value>Απροσδιόριστο σφάλμα σύνδεσης</value> 
+  </data> 
+  <data name="LOGIN_RESULT_FAILED_NAME" xml:space="preserve"> 
+    <value>Η σύνδεση απέτυχε</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_DESCRIPTION" xml:space="preserve"> 
+    <value>Ο συγκεκριμένος χρήστης δεν διαθέτει ανεπαρκές ισοζύγιο</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_NAME" xml:space="preserve"> 
+    <value>Ανεπαρκές ισοζύγιο</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_DESCRIPTION" xml:space="preserve"> 
+    <value>Το καθορισμένο όνομα χρήστη ή κωδικός πρόσβασης δεν είναι έγκυρο</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_NAME" xml:space="preserve"> 
+    <value>Μη έγκυρο όνομα χρήστη ή κωδικός</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_HOST_ID_DESCRIPTION" xml:space="preserve"> 
+    <value>Το καθορισμένο αναγνωριστικό κωδικός του κεντρικού υπολογιστή δεν είναι έγκυρο.</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_HOST_ID_NAME" xml:space="preserve"> 
+    <value>Μη έγκυρο τερματικό</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_PARAMETERS_DESCRIPTION" xml:space="preserve"> 
+    <value>Οι καθορισμένες παράμετροι δεν είναι έγκυρες.</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_PARAMETERS_NAME" xml:space="preserve"> 
+    <value>Μη έγκυροι παράμετροι</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_PASSWORD_DESCRIPTION" xml:space="preserve"> 
+    <value>Ο καθορισμένος κωδικός πρόσβασης δεν είναι έγκυρος.</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_PASSWORD_NAME" xml:space="preserve"> 
+    <value>Μη έγκυρος κωδικός</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_SLOT_DESCRIPTION" xml:space="preserve"> 
+    <value>Η καθορισμένη θέση δεν είναι έγκυρη</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_SLOT_NAME" xml:space="preserve"> 
+    <value>Μη έγκυρη θέση</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_USERNAME_DESCRIPTION" xml:space="preserve"> 
+    <value>Το καθορισμένο όνομα χρήστη δεν είναι έγκυρο</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_USERNAME_NAME" xml:space="preserve"> 
+    <value>Μη έγκυρο όνομα χρήστη</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_DESCRIPTION" xml:space="preserve"> 
+    <value>Το καθορισμένο αναγνωριστικό ομάδας χρηστών δεν είναι έγκυρο.</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_NAME" xml:space="preserve"> 
+    <value>Μη έγκυρη ομάδα χρηστών</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_USER_ID_DESCRIPTION" xml:space="preserve"> 
+    <value>Το καθορισμένο αναγνωριστικό χρήστη δεν είναι έγκυρο.</value> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_USER_ID_NAME" xml:space="preserve"> 
+    <value>Μη έγκυρος χρήστης</value> 
+  </data> 
+  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_DESCRIPTION" xml:space="preserve"> 
+    <value>Σύνδεση σε διεργασία</value> 
+  </data> 
+  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_NAME" xml:space="preserve"> 
+    <value>Σε διεργασία</value> 
+  </data> 
+  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_DESCRIPTION" xml:space="preserve"> 
+    <value>Έξοδος σε διεργασία</value> 
+  </data> 
+  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_NAME" xml:space="preserve"> 
+    <value>Σε διεργασία</value> 
+  </data> 
+  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_DESCRIPTION" xml:space="preserve"> 
+    <value>Η σύνδεση απέτυχε λόγω επίτευξης του μέγιστου αριθμού συνδέσεων</value> 
+  </data> 
+  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_NAME" xml:space="preserve"> 
+    <value>Μέγιστος αριθμός συνδέσεων</value> 
+  </data> 
+  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_DESCRIPTION" xml:space="preserve"> 
+    <value>Ο καθορισμένος χρήστης δεν είναι στην ουρά αναμονής</value> 
+  </data> 
+  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_NAME" xml:space="preserve"> 
+    <value>Δεν είναι στην ουρά αναμονής</value> 
+  </data> 
+  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_DESCRIPTION" xml:space="preserve"> 
+    <value>Μη επιτρεπτή είσοδος ομάδας χρηστών από Διαχειριστικό</value> 
+  </data> 
+  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_NAME" xml:space="preserve"> 
+    <value>Η σύνδεση της ομάδας χρηστών απορρίφθηκε για τον χειριστή</value> 
+  </data> 
+  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_DESCRIPTION" xml:space="preserve"> 
+    <value>Η σύνδεση δεν επιτρέπεται αυτή την ώρα λόγω των ρυθμίσεων περιορισμών ηλικίας.</value> 
+  </data> 
+  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_NAME" xml:space="preserve"> 
+    <value>Περιορισμοί ηλικίας για τη σύνδεση</value> 
+  </data> 
+  <data name="LOGIN_RESULT_SLOT_IN_USE_DESCRIPTION" xml:space="preserve"> 
+    <value>Η καθορισμένη θέση είναι ήδη σε χρήση</value> 
+  </data> 
+  <data name="LOGIN_RESULT_SLOT_IN_USE_NAME" xml:space="preserve"> 
+    <value>Θέση ήδη σε χρήση</value> 
+  </data> 
+  <data name="LOGIN_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
+    <value>Η σύνδεση χρήστη ήταν επιτυχής</value> 
+  </data> 
+  <data name="LOGIN_RESULT_SUCCESS_NAME" xml:space="preserve"> 
+    <value>Επιτυχία σύνδεσης</value> 
+  </data> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
+    <value>Η διαγραφή της ομάδας προϊόντων απέτυχε</value> 
+  </data> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve"> 
+    <value>Η διαγραφή της ομάδας προϊόντων απέτυχε</value> 
+  </data> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve"> 
+    <value>Μια ομάδα προϊόντων που δεν είναι κενή δεν μπορεί να διαγραφεί.</value> 
+  </data> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve"> 
+    <value>Η ομάδα προϊόντων δεν είναι κενή</value> 
+  </data> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
+    <value>Η διαγραφή της ομάδας προϊόντων ολοκληρώθηκε με επιτυχία.</value> 
+  </data> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
+    <value>Επιτυχημένη διαγραφή ομάδας προϊόντων</value> 
+  </data> 
+  <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL" xml:space="preserve"> 
+    <value>Email</value> 
+  </data> 
+  <data name="REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE" xml:space="preserve"> 
+    <value>Κινητό τηλέφωνο</value> 
+  </data> 
+  <data name="REGISTRATION_VERIFICATION_METHOD_NONE" xml:space="preserve"> 
+    <value>Καμία</value> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_APPLICATIONS_ENABLED_DESCRIPTION" xml:space="preserve"> 
+    <value>Καθορίζει εάν οι περιορισμοί ηλικίας είναι ενεργοποιημένοι για τις εφαρμογές</value> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_APPLICATIONS_ENABLED_NAME" xml:space="preserve"> 
+    <value>Ενεργοποίηση περιορισμών ηλικίας για εφαρμογές</value> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_LOGIN_ENABLED_DESCRIPTION" xml:space="preserve"> 
+    <value>Καθορίζει εάν οι περιορισμοί ηλικίας είναι ενεργοποιημένοι για τη σύνδεση</value> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_LOGIN_ENABLED_NAME" xml:space="preserve"> 
+    <value>Ενεργοποίηση περιορισμών ηλικίας για σύνδεση</value> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_PRODUCTS_ENABLED_DESCRIPTION" xml:space="preserve"> 
+    <value>Καθορίζει εάν οι περιορισμοί ηλικίας είναι ενεργοποιημένοι για τα προϊόντα</value> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_PRODUCTS_ENABLED_NAME" xml:space="preserve"> 
+    <value>Ενεργοποίηση περιορισμών ηλικίας για προϊόντα</value> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_DESCRIPTION" xml:space="preserve"> 
+    <value>Καθορίζει εάν η ηλικία είναι υποχρεωτική για όλους τους περιορισμούς ηλικίας.</value> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_NAME" xml:space="preserve"> 
+    <value>Επιβάλλει όλα τα περιοριστικά μέτρα για χρήστες με άγνωστη ηλικία</value> 
+  </data> 
+  <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>Καθορίζει το μήνυμα ειδοποίησης για τον υπολειπόμενο χρόνο</value> 
+  </data> 
+  <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_NAME" xml:space="preserve"> 
+    <value>Μήνυμα ειδοποίησης για τον υπολειπόμενο χρόνο</value> 
+  </data> 
+  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_DESCRIPTION" xml:space="preserve"> 
+    <value>Καθορίζει ότι πρέπει να χρησιμοποιείται τερματικό κατά την πληρωμή με πιστωτική κάρτα.</value> 
+  </data> 
+  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_NAME" xml:space="preserve"> 
+    <value>Η πιστωτική κάρτα χρησιμοποιεί τερματικό</value> 
+  </data> 
+  <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>Καθορίζει το μήνυμα ειδοποίησης για την ώρα της κράτησης</value> 
+  </data> 
+  <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_NAME" xml:space="preserve"> 
+    <value>Μήνυμα ειδοποίησης για την ώρα της κράτησης</value> 
+  </data> 
+  <data name="SERVER_OPTION_TAX_DEPOSITS_TAX_SYSTEM_DESCRIPTION" xml:space="preserve"> 
+    <value>Καθορίζει το σύστημα φορολόγησης των καταθέσεων</value> 
+  </data> 
+  <data name="SERVER_OPTION_TAX_DEPOSITS_TAX_SYSTEM_NAME" xml:space="preserve"> 
+    <value>Φορολογικό σύστημα καταθέσεων</value> 
+  </data> 
+  <data name="SERVER_OPTION_TAX_GOODS_VAT_RATE_DESCRIPTION" xml:space="preserve"> 
+    <value>Καθορίζει τον συντελεστή Φ.Π.Α. για τα αγαθά</value> 
+  </data> 
+  <data name="SERVER_OPTION_TAX_GOODS_VAT_RATE_NAME" xml:space="preserve"> 
+    <value>Συντελεστής Φ.Π.Α. για εμπορεύματα</value> 
+  </data> 
+  <data name="SERVER_OPTION_TAX_SERVICES_VAT_RATE_DESCRIPTION" xml:space="preserve"> 
+    <value>Καθορίζει τον συντελεστή Φ.Π.Α. για τις υπηρεσίες</value> 
+  </data> 
+  <data name="SERVER_OPTION_TAX_SERVICES_VAT_RATE_NAME" xml:space="preserve"> 
+    <value>Συντελεστής Φ.Π.Α. υπηρεσιών</value> 
+  </data> 
+  <data name="STOCK_TRANSACTION_TYPE_ADD" xml:space="preserve"> 
+    <value>Προσθήκη</value> 
+  </data> 
+  <data name="STOCK_TRANSACTION_TYPE_REMOVE" xml:space="preserve"> 
+    <value>Αφαίρεση</value> 
+  </data> 
+  <data name="STOCK_TRANSACTION_TYPE_RETURN" xml:space="preserve"> 
+    <value>Επιστροφή</value> 
+  </data> 
+  <data name="STOCK_TRANSACTION_TYPE_SALE" xml:space="preserve"> 
+    <value>Πώληση</value> 
+  </data> 
+  <data name="STOCK_TRANSACTION_TYPE_SET" xml:space="preserve"> 
+    <value>Ορισμός</value> 
+  </data> 
+  <data name="TASK_TYPE_JUNCTION" xml:space="preserve"> 
+    <value>Σύνδεση φακέλων</value> 
+  </data> 
+  <data name="TASK_TYPE_NOTIFICATION" xml:space="preserve"> 
+    <value>Ειδοποίηση</value> 
+  </data> 
+  <data name="TASK_TYPE_PROCESS" xml:space="preserve"> 
+    <value>Διεργασία</value> 
+  </data> 
+  <data name="TASK_TYPE_SCRIPT" xml:space="preserve"> 
+    <value>Δέσμη Ενεργειών</value> 
+  </data> 
+  <data name="TAX_SYSTEMS_RUSSIA_MAIN" xml:space="preserve"> 
+    <value>Main</value> 
+  </data> 
+  <data name="TAX_SYSTEMS_RUSSIA_PATENT_SYSTEM" xml:space="preserve"> 
+    <value>Patent System</value> 
+  </data> 
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_EXPSENSES" xml:space="preserve"> 
+    <value>Simplified system minus expenses</value> 
+  </data> 
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_TAXATION" xml:space="preserve"> 
+    <value>Simplified system minus taxation</value> 
+  </data> 
+  <data name="TAX_SYSTEMS_RUSSIA_SINGLE_AGRICULTURAL_TAX" xml:space="preserve"> 
+    <value>Single agricultural tax</value> 
+  </data> 
+  <data name="TAX_SYSTEMS_UNSPECIFIED" xml:space="preserve"> 
+    <value>Απροσδιόριστο</value> 
+  </data> 
+  <data name="TAX_SYSTEM_COUNTRY_RUSSIA" xml:space="preserve"> 
+    <value>Ρωσία</value> 
+  </data> 
+  <data name="TAX_SYSTEM_COUNTRY_UNSPECIFIED" xml:space="preserve"> 
+    <value>Απροσδιόριστο</value> 
+  </data> 
+  <data name="USER_RECOVERY_METHOD_EMAIL" xml:space="preserve"> 
+    <value>Email</value> 
+  </data> 
+  <data name="USER_RECOVERY_METHOD_MOBILE" xml:space="preserve"> 
+    <value>Κινητό</value> 
+  </data> 
+  <data name="USER_RECOVERY_METHOD_NONE" xml:space="preserve"> 
+    <value>Καμία</value> 
+  </data> 
+  <data name="VAT_RATES_RUSSIA_NONE" xml:space="preserve"> 
+    <value>Κανένα</value> 
+  </data> 
+  <data name="VAT_RATES_RUSSIA_VAT0" xml:space="preserve"> 
+    <value>ΦΠΑ0</value> 
+  </data> 
+  <data name="VAT_RATES_RUSSIA_VAT10" xml:space="preserve"> 
+    <value>ΦΠΑ10</value> 
+  </data> 
+  <data name="VAT_RATES_RUSSIA_VAT20" xml:space="preserve"> 
+    <value>ΦΠΑ20</value> 
+  </data> 
+  <data name="HTTPS_CERTIFICATE_TYPE_SELF_SIGNED" xml:space="preserve"> 
+    <value>Αυτο-υπογεγραμμένο</value> 
+  </data> 
+  <data name="HTTPS_CERTIFICATE_TYPE_USER_DEFINED" xml:space="preserve"> 
+    <value>Ορισμένο από τον χρήστη</value> 
+  </data> 
+</root>

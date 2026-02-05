@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<root> 
+  <!--
+  Loco xml export: ResX - .NET resources
+  Project: Gizmo.Shared
+  Locale: es-BO, Spanish (Bolivia)
+  Exported by: Oleg Savelos
+  Exported at: Thu, 05 Feb 2026 08:56:32 +0200 
+  --> 
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="locoLocaleCode">
+    <value>es-BO</value>
+  </metadata>
+  <metadata name="locoLocaleName" xml:space="preserve">
+    <value>Spanish (Bolivia)</value>
+  </metadata> 
+  <data name="ADVANCE_PAYMENTS_RUSSIA_ADVANCE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PAYMENT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PREPAYMENT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="ADVANCE_PAYMENTS_RUSSIA_PREPAYMENT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_FAILED_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="APPLICATION_CATEGORY_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_ADD_DATE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_POPULARITY" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_RATING" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_RELEASE_DATE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_TITLE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_USE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_ADMIN_MODE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_CLOSE_PROGRAMS" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_LOG_OFF" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_NO_ACTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_REBOOT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_STAND_BY" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_TURN_OFF" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="CLIENT_POWER_SAVING_DISABLED" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="CLIENT_POWER_SAVING_SHUT_DOWN" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="CLIENT_POWER_SAVING_SLEEP" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_EMAIL" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_FACEBOOK_MESSENGER" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_INSTAGRAM" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_SMS" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_TELEGRAM" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_TWITTER_DM" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_VIBER" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_WE_CHAT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="COMMUNICATION_CHANNEL_TYPES_WHATS_APP" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="DEPOSIT_TRANSACTION_TYPE_CHARGE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="DEPOSIT_TRANSACTION_TYPE_CREDIT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="DEPOSIT_TRANSACTION_TYPE_DEPOSIT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="DEPOSIT_TRANSACTION_TYPE_WITHDRAW" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="DISABLE_PRINT_RECEIPT_BY_DEFAULT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_FIFTEEN" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_FIVE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_TEN" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_THIRTY" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY_FIVE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_ZERO" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_APPLICATIONS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_APPLICATIONS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_DEPLOYMENT_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_DEPLOYMENT_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_APPLICATIONS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_APPLICATIONS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_DEPLOYMENT_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_DEPLOYMENT_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_LOG_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_LOG_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_MANAGEMENT_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_MANAGEMENT_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_MONITORING_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_MONITORING_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_NEWS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_NEWS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_REGISTER_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_REGISTER_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_REPORTS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_REPORTS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_RESERVATIONS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_RESERVATONS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SALES_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SALES_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SERVER_SETTINGS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SERVER_SETTINGS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SHIFT_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SHIFT_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_STOCK_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_STOCK_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_USER_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_USER_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_WAITING_LINES_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_WAITING_LINES_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_WEB_API_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_WEB_API_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_LOG_CLEAR_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_LOG_CLEAR_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_LOG_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_LOG_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_CLIENT_MODULE_RESTART_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_CLIENT_MODULE_RESTART_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_FILES_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_FILES_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_LOCK_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_LOCK_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_MAINTENANCE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_MAINTENANCE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_PROCESSES_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_PROCESSES_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_SECURITY_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_SECURITY_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_TASKS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_TASKS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MONITORING_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_MONITORING_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_NEWS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_NEWS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_PAY_IN_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_PAY_IN_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_PAY_OUT_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_PAY_OUT_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_REPORTS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_REPORTS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_RESERVATIONS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_RESERVATIONS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_CUSTOM_PRICE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_CUSTOM_PRICE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DELETE_TIME_PURCHASES_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DELETE_TIME_PURCHASES_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DEPOSIT_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DEPOSIT_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DISABLE_RECEIPT_PRINT_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DISABLE_RECEIPT_PRINT_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_MODIFY_USER_BILLING_OPTIONS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_MODIFY_USER_BILLING_OPTIONS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_OPEN_CASH_DRAWER_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_OPEN_CASH_DRAWER_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_PAY_LATER_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_PAY_LATER_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_DEPOSITS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_DEPOSITS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_DEPOSIT_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_DEPOSIT_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_INVOICE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_INVOICE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_NON_CURRENT_BRANCH_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_NON_CURRENT_BRANCH_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_NON_OWNED_INVOICE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_NON_OWNED_INVOICE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_PAST_DAY_INVOICE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_PAST_DAY_INVOICE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_WITHDRAW_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_WITHDRAW_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SETTINGS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SETTINGS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SET_CASHIER_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SET_MANAGER_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SET_MARKETER_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SET_OWNER_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SET_TECHNICIAN_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_MANAGE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_MANAGE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTIONS" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_BAN_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_BAN_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CHANGE_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CHANGE_GROUP_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CREATE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CREATE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_DELETE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_DELETE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_EDIT_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_EDIT_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_HARD_DELETE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_HARD_DELETE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_PASSWORD_RESET_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_PASSWORD_RESET_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_RENAME_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_RENAME_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_UNBAN_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_UNBAN_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_VIEW_STATS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_VIEW_STATS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_WAITING_LINES_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_WAITING_LINES_MANAGE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_WAITING_LINES_MANAGE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="GIZMO_POLICY_WAITING_LINES_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_HOST_IN_USE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_HOST_IN_USE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_CENTER" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_LEFT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_RIGHT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_LEFT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_RIGHT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_SCREEN" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_CENTER" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_LEFT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_RIGHT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_CLOCKWISE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_COUNTERCLOCKWISE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_FIXED" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_BOTTOM" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_CENTER" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_TOP" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_CENTER" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_LEFT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_RIGHT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HOST_NUMBER_POSITIONING_WALL_BOUNCE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="INVOICE_STATUS_PAID" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="INVOICE_STATUS_PARTIALLY_PAID" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="INVOICE_STATUS_UNPAID" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="KEY_GENERATION_CHARACTERS_ALPHANUMERIC" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="KEY_GENERATION_CHARACTERS_NUMERIC" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="KEY_GENERATION_CHARACTERS_UPPER_CASE_CHARACTERS" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_ACCOUNT_DISABLED_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_DENIED_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_DENIED_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_FAILED_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_CREDENTIALS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_HOST_ID_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_HOST_ID_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_PARAMETERS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_PARAMETERS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_PASSWORD_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_PASSWORD_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_SLOT_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_SLOT_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_USERNAME_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_USERNAME_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_USER_GROUP_ID_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_USER_ID_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_INVALID_USER_ID_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_LOGIN_IN_PROGRESS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_LOGOUT_IN_PROGRESS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_MAXIMUM_SESSIONS_REACHED_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_OPERATOR_USER_GROUP_DENIED_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_RESTRICTED_BY_AGE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_SLOT_IN_USE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_SLOT_IN_USE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="LOGIN_RESULT_SUCCESS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_FAILED_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_NON_EMPY_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="PRODUCT_GROUP_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="REGISTRATION_VERIFICATION_METHOD_NONE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_APPLICATIONS_ENABLED_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_APPLICATIONS_ENABLED_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_LOGIN_ENABLED_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_LOGIN_ENABLED_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_PRODUCTS_ENABLED_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_PRODUCTS_ENABLED_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_TAX_DEPOSITS_TAX_SYSTEM_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_TAX_DEPOSITS_TAX_SYSTEM_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_TAX_GOODS_VAT_RATE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_TAX_GOODS_VAT_RATE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_TAX_SERVICES_VAT_RATE_DESCRIPTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="SERVER_OPTION_TAX_SERVICES_VAT_RATE_NAME" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="STOCK_TRANSACTION_TYPE_ADD" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="STOCK_TRANSACTION_TYPE_REMOVE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="STOCK_TRANSACTION_TYPE_RETURN" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="STOCK_TRANSACTION_TYPE_SALE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="STOCK_TRANSACTION_TYPE_SET" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="TASK_TYPE_JUNCTION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="TASK_TYPE_NOTIFICATION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="TASK_TYPE_PROCESS" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="TASK_TYPE_SCRIPT" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="TAX_SYSTEMS_RUSSIA_MAIN" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="TAX_SYSTEMS_RUSSIA_PATENT_SYSTEM" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_EXPSENSES" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_TAXATION" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="TAX_SYSTEMS_RUSSIA_SINGLE_AGRICULTURAL_TAX" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="TAX_SYSTEMS_UNSPECIFIED" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="TAX_SYSTEM_COUNTRY_RUSSIA" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="TAX_SYSTEM_COUNTRY_UNSPECIFIED" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="USER_RECOVERY_METHOD_EMAIL" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="USER_RECOVERY_METHOD_MOBILE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="USER_RECOVERY_METHOD_NONE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="VAT_RATES_RUSSIA_NONE" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="VAT_RATES_RUSSIA_VAT0" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="VAT_RATES_RUSSIA_VAT10" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="VAT_RATES_RUSSIA_VAT20" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HTTPS_CERTIFICATE_TYPE_SELF_SIGNED" xml:space="preserve"> 
+    <value /> 
+  </data> 
+  <data name="HTTPS_CERTIFICATE_TYPE_USER_DEFINED" xml:space="preserve"> 
+    <value /> 
+  </data> 
+</root>
