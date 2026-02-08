@@ -906,4 +906,40 @@
   <data name="PAYMENT_METHOD_TYPE_CUSTOM_NAME" xml:space="preserve">
     <value>Custom</value>
   </data>
+  <data name="STOCK_WAREHOUSE_DEFAULT_NAME" xml:space="preserve">
+    <value>Warehouse</value>
+    <comment>Default name to use when crating an warehouse stock.</comment>
+  </data>
+  <data name="STOCK_SELLING_POINT_DEFAULT_NAME" xml:space="preserve">
+    <value>Selling point</value>
+    <comment>Default name to use when crating an selling point stock.</comment>
+  </data>
+  <data name="BRANCH_DEFAULT_NAME" xml:space="preserve">
+    <value>Primary</value>
+    <comment>Default name for creating an default (primary) branch, only used when making new installation and seeding data.</comment>
+  </data>
+  <data name="HOST_GROUP_ENDPOINTS_DEFAULT_NAME" xml:space="preserve">
+    <value>Endpoints</value>
+    <comment>Default name to use when creating endpoints host group on initial data seeding.</comment>
+  </data>
+  <data name="HOST_GROUP_COMPUERS_DEFAULT_NAME" xml:space="preserve">
+    <value>Computers</value>
+    <comment>Default name to use when creating computers host group on initial data seeding.</comment>
+  </data>
+  <data name="HOST_LAYOUT_GROUPED_DEFAULT_NAME" xml:space="preserve">
+    <value>Default layout</value>
+    <comment>Default name to use when creating default host layout group on initial data seeding.</comment>
+  </data>
+  <data name="ASSISTANCE_REQUEST_TYPE_DEFAULT_NAME" xml:space="preserve">
+    <value>I need assistance, please.</value>
+    <comment>Default name to use when creating assistance request on initial data seeding.</comment>
+  </data>
+  <data name="REGISTER_DEFAULT_NAME" xml:space="preserve">
+    <value>Primary</value>
+    <comment>Default name to use when creating default register on initial data seeding.</comment>
+  </data>
+  <data name="CLIENT_OPTIONS_DEFAULT_NAME" xml:space="preserve">
+    <value>Global</value>
+    <comment>Default name to use when creating default client options initial data seeding.</comment>
+  </data>
 </root>
