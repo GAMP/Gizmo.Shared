@@ -58,6 +58,16 @@ namespace Gizmo
             return GetLocalizedString(enumValue.GetType(), nameAttribute);
         }
 
+        public string GetLocalizedStringValueOrName(Enum enumValue)
+        {
+            var nameAttribute = enumValue.GetAttribute<NameAttribute>();
+            if (nameAttribute == null)
+                return enumValue.ToString();
+
+            var result = GetLocalizedString(enumValue.GetType(), nameAttribute);
+            return string.IsNullOrWhiteSpace(result) ? enumValue.ToString() : result;
+        }
+
         /// <inheritdoc/>
         public string GetLocalizedStringValue(Type type, string resourceKey)
         {

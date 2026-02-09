@@ -53,6 +53,18 @@ namespace Gizmo
         /// <summary>
         /// Gets localized string value.
         /// </summary>
+        /// <param name="enumValue">Enum value.</param>
+        /// <remarks>
+        /// This function will return value set on <see cref="NameAttribute.Name"/> by default if localized resource is not found.<br></br>
+        /// This function will always return <paramref name="enumValue"/>.ToString() value if either resource not found or <see cref="NameAttribute.Name"/> not set.
+        /// </remarks>
+        /// <returns>Found localized string value.</returns>
+        /// <exception cref="ArgumentException">thrown in case assembly name cant be extracted from <paramref name="type"/>specified.</exception>
+        string GetLocalizedStringValueOrName(Enum enumValue);
+
+        /// <summary>
+        /// Gets localized string value.
+        /// </summary>
         /// <param name="type">Object type.</param>
         /// <param name="resourceKey">Resource key.</param>
         /// <returns>Localized string value or fallback value if key not found.</returns>
