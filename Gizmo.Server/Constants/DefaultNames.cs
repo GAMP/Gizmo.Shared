@@ -46,5 +46,35 @@ namespace Gizmo.Server
 
         [Name("Global", nameof(Resources.CLIENT_OPTIONS_DEFAULT_NAME))]
         CLIENT_OPTIONS_DEFAULT_NAME,
+
+        [Name("Computers prices", nameof(Resources.BILL_PROFILE_COMPUTERS_DEFAULT_NAME))]
+        BILL_PROFILE_COMPUTERS_DEFAULT_NAME,
+
+        [Name("Endpoints prices", nameof(Resources.BILL_PROFILE_ENDPOINTS_DEFAULT_NAME))]
+        BILL_PROFILE_ENDPOINTS_DEFAULT_NAME,
+
+        [Name("Games", nameof(Resources.APP_CATEGORY_GAMES_DEFAULT_NAME))]
+        APP_CATEGORY_GAMES_DEFAULT_NAME,
+
+        [Name("Launchers", nameof(Resources.APP_CATEGORY_LAUNCHERS_DEFAULT_NAME))]
+        APP_CATEGORY_LAUNCHERS_DEFAULT_NAME,
+
+        [Name("Applications", nameof(Resources.APP_CATEGORY_APPLICATIONS_DEFAULT_NAME))]
+        APP_CATEGORY_APPLICATIONS_DEFAULT_NAME,
+
+        [Name("Default", nameof(Resources.APP_GROUP_DEFAULT_NAME))]
+        APP_GROUP_DEFAULT_NAME,
+
+        [Name("Time offers", nameof(Resources.PRODUCT_GROUP_TIME_OFFERS_DEFAULT_NAME))]
+        PRODUCT_GROUP_TIME_OFFERS_DEFAULT_NAME,
+
+        [Name("Food", nameof(Resources.PRODUCT_GROUP_FOOD_DEFAULT_NAME))]
+        PRODUCT_GROUP_FOOD_DEFAULT_NAME,
+
+        [Name("Drinks", nameof(Resources.PRODUCT_GROUP_DRINKS_DEFAULT_NAME))]
+        PRODUCT_GROUP_DRINKS_DEFAULT_NAME,
+
+        [Name("Sweets", nameof(Resources.PRODUCT_GROUP_SWEETS_DEFAULT_NAME))]
+        PRODUCT_GROUP_SWEETS_DEFAULT_NAME,
     }
 }
