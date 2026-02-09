@@ -177,13 +177,6 @@ namespace Gizmo.Server.Security
         /// <summary>
         /// Stock permission.
         /// </summary>
-        [PolicyDescription("Stock", "Manage", GizmoPolicyGroups.Stock, [Stock], nameof(Resources.GIZMO_POLICY_STOCK_MANAGE_NAME), nameof(Resources.GIZMO_POLICY_STOCK_MANAGE_DESCRIPTION),
-            [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
-        StockManage,
-
-        /// <summary>
-        /// Stock permission.
-        /// </summary>
         [PolicyDescription("Stock", "ViewStockTransactions", GizmoPolicyGroups.Stock, nameof(Resources.GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_NAME), nameof(Resources.GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_DESCRIPTION),
             [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
         StockViewTransactions,
@@ -194,6 +187,78 @@ namespace Gizmo.Server.Security
         [PolicyDescription("Stock", "ViewPastDaysStockTransactions", GizmoPolicyGroups.Stock, [StockViewTransactions], nameof(Resources.GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_NAME), nameof(Resources.GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTIONS),
             [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
         StockViewPastDayTransactions,
+
+        /// <summary>
+        /// Stock count (current register).
+        /// </summary>
+        [PolicyDescription("Stock", "Count", GizmoPolicyGroups.Stock, [Stock], nameof(Resources.GIZMO_POLICY_STOCK_COUNT_NAME), nameof(Resources.GIZMO_POLICY_STOCK_COUNT_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        StockCount,
+
+        /// <summary>
+        /// Stock count (current branch)
+        /// </summary>
+        [PolicyDescription("Stock", "CountBranch", GizmoPolicyGroups.Stock, [Stock, StockCount], nameof(Resources.GIZMO_POLICY_STOCK_COUNT_BRANCH_NAME), nameof(Resources.GIZMO_POLICY_STOCK_COUNT_BRANCH_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        StockCountBranch,
+
+        /// <summary>
+        /// Stock count (global).
+        /// </summary>
+        [PolicyDescription("Stock", "CountGlobal", GizmoPolicyGroups.Stock, [Stock, StockCount], nameof(Resources.GIZMO_POLICY_STOCK_COUNT_GLOBAL_NAME), nameof(Resources.GIZMO_POLICY_STOCK_COUNT_GLOBAL_DESCRIPTION), [GizmoPolicySet.Owner])]
+        StockCountGlobal,
+
+        /// <summary>
+        /// Stock inbound (current register).
+        /// </summary>
+        [PolicyDescription("Stock", "Inbound", GizmoPolicyGroups.Stock, [Stock], nameof(Resources.GIZMO_POLICY_STOCK_INBOUND_NAME), nameof(Resources.GIZMO_POLICY_STOCK_INBOUND_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        StockInbound,
+
+        /// <summary>
+        /// Stock inbound (current branch).
+        /// </summary>
+        [PolicyDescription("Stock", "InboundBranch", GizmoPolicyGroups.Stock, [Stock, StockInbound], nameof(Resources.GIZMO_POLICY_STOCK_INBOUND_BRANCH_NAME), nameof(Resources.GIZMO_POLICY_STOCK_INBOUND_BRANCH_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        StockInboundBranch,
+
+        /// <summary>
+        /// Stock inbound (global).
+        /// </summary>
+        [PolicyDescription("Stock", "InboundGlobal", GizmoPolicyGroups.Stock, [Stock, StockInbound], nameof(Resources.GIZMO_POLICY_STOCK_INBOUND_GLOBAL_NAME), nameof(Resources.GIZMO_POLICY_STOCK_INBOUND_GLOBAL_DESCRIPTION), [GizmoPolicySet.Owner])]
+        StockInboundGlobal,
+
+        /// <summary>
+        /// Stock transfer (current register).
+        /// </summary>
+        [PolicyDescription("Stock", "Transfer", GizmoPolicyGroups.Stock, [Stock], nameof(Resources.GIZMO_POLICY_STOCK_TRANSFER_NAME), nameof(Resources.GIZMO_POLICY_STOCK_TRANSFER_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        StockTransfer,
+
+        /// <summary>
+        /// Stock transfer (current branch).
+        /// </summary>
+        [PolicyDescription("Stock", "TransferBranch", GizmoPolicyGroups.Stock, [Stock, StockTransfer], nameof(Resources.GIZMO_POLICY_STOCK_TRANSFER_BRANCH_NAME), nameof(Resources.GIZMO_POLICY_STOCK_TRANSFER_BRANCH_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        StockTransferBranch,
+
+        /// <summary>
+        /// Stock transfer (global).
+        /// </summary>
+        [PolicyDescription("Stock", "TransferGlobal", GizmoPolicyGroups.Stock, [Stock, StockTransfer], nameof(Resources.GIZMO_POLICY_STOCK_TRANSFER_GLOBAL_NAME), nameof(Resources.GIZMO_POLICY_STOCK_TRANSFER_GLOBAL_DESCRIPTION), [GizmoPolicySet.Owner])]
+        StockTransferGlobal,
+
+        /// <summary>
+        /// Stock adjustment (current register).
+        /// </summary>
+        [PolicyDescription("Stock", "Adjustment", GizmoPolicyGroups.Stock, [Stock], nameof(Resources.GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_NAME), nameof(Resources.GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        StockAdjustment,
+
+        /// <summary>
+        /// Stock adjustment (current branch).
+        /// </summary>
+        [PolicyDescription("Stock", "AdjustmentBranch", GizmoPolicyGroups.Stock, [Stock, StockAdjustment], nameof(Resources.GIZMO_POLICY_STOCK_ADJUSTMENT_BRANCH_NAME), nameof(Resources.GIZMO_POLICY_STOCK_ADJUSTMENT_BRANCH_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        StockAdjustmentBranch,
+
+        /// <summary>
+        /// Stock adjustment (global).
+        /// </summary>
+        [PolicyDescription("Stock", "AdjustmentGlobal", GizmoPolicyGroups.Stock, [Stock, StockAdjustment], nameof(Resources.GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_NAME), nameof(Resources.GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_DESCRIPTION), [GizmoPolicySet.Owner])]
+        StockAdjustmentGlobal,
 
         #endregion
 

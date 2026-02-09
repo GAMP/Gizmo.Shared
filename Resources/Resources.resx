@@ -597,12 +597,6 @@
   <data name="GIZMO_POLICY_STOCK_DESCRIPTION" xml:space="preserve">
     <value>Grants access to the stock feature enabling the user to view and manage inventory items</value>
   </data>
-  <data name="GIZMO_POLICY_STOCK_MANAGE_DESCRIPTION" xml:space="preserve">
-    <value>Grants access to manage stock enabling the user to update and control inventory items</value>
-  </data>
-  <data name="GIZMO_POLICY_STOCK_MANAGE_NAME" xml:space="preserve">
-    <value>Manage</value>
-  </data>
   <data name="GIZMO_POLICY_STOCK_NAME" xml:space="preserve">
     <value>Access</value>
   </data>
@@ -941,5 +935,117 @@
   <data name="CLIENT_OPTIONS_DEFAULT_NAME" xml:space="preserve">
     <value>Global</value>
     <comment>Default name to use when creating default client options initial data seeding.</comment>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_NAME" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to stock count enabling the user to make counts </value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_GLOBAL_NAME" xml:space="preserve">
+    <value>Stock count global</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to stock count enabling the user to make counts globally</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_BRANCH_NAME" xml:space="preserve">
+    <value>Stock count branch</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to stock count enabling the user to make counts in current branch</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_NAME" xml:space="preserve">
+    <value>Inbound</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to accept inbound stock</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_NAME" xml:space="preserve">
+    <value>Transfer</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to manage stock enabling the user to update and control inventory items</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_NAME" xml:space="preserve">
+    <value>Adjustment</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to make stock adjustments</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_BRANCH_NAME" xml:space="preserve">
+    <value>Adjustment branch</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to make stock adjustments in current branch</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_NAME" xml:space="preserve">
+    <value>Adjustment global</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to make stock adjustments globally</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_BRANCH_NAME" xml:space="preserve">
+    <value>Transfer branch</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to make stock transfer in current branch</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_GLOBAL_NAME" xml:space="preserve">
+    <value>Transfer global</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to make stock transfers globally</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_BRANCH_NAME" xml:space="preserve">
+    <value>Inbound branch</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to accept inbound stock in current branch</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_GLOBAL_NAME" xml:space="preserve">
+    <value>Inbound global</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to accept inbound stock globally</value>
+  </data>
+  <data name="BILL_PROFILE_ENDPOINTS_DEFAULT_NAME" xml:space="preserve">
+    <value>Endpoints prices</value>
+    <comment>Default name to use when creating default endpoints billing profile on initial data seeding.</comment>
+  </data>
+  <data name="BILL_PROFILE_COMPUTERS_DEFAULT_NAME" xml:space="preserve">
+    <value>Computers prices</value>
+    <comment>Default name to use when creating default computers billing profile on initial data seeding.</comment>
+  </data>
+  <data name="APP_CATEGORY_GAMES_DEFAULT_NAME" xml:space="preserve">
+    <value>Games</value>
+    <comment>Default name to use when creating app games app category on initial data seeding.</comment>
+  </data>
+  <data name="APP_CATEGORY_LAUNCHERS_DEFAULT_NAME" xml:space="preserve">
+    <value>Launchers</value>
+    <comment>Default name to use when creating app launchers app category on initial data seeding.</comment>
+  </data>
+  <data name="APP_CATEGORY_APPLICATIONS_DEFAULT_NAME" xml:space="preserve">
+    <value>Applications</value>
+    <comment>Default name to use when creating app applications app category on initial data seeding.</comment>
+  </data>
+  <data name="APP_GROUP_DEFAULT_NAME" xml:space="preserve">
+    <value>Default</value>
+    <comment>Default name to use when creating app group on initial data seeding.</comment>
+  </data>
+  <data name="PRODUCT_GROUP_SWEETS_DEFAULT_NAME" xml:space="preserve">
+    <value>Sweets</value>
+    <comment>Default name to use when creating default sweets product group on initial data seeding.</comment>
+  </data>
+  <data name="PRODUCT_GROUP_DRINKS_DEFAULT_NAME" xml:space="preserve">
+    <value>Drinks</value>
+    <comment>Default name to use when creating default drinks product group on initial data seeding.</comment>
+  </data>
+  <data name="PRODUCT_GROUP_FOOD_DEFAULT_NAME" xml:space="preserve">
+    <value>Food</value>
+    <comment>Default name to use when creating default food product group on initial data seeding.</comment>
+  </data>
+  <data name="PRODUCT_GROUP_TIME_OFFERS_DEFAULT_NAME" xml:space="preserve">
+    <value>Time offers</value>
+    <comment>Default name to use when creating default time offers product group on initial data seeding.</comment>
   </data>
 </root>
