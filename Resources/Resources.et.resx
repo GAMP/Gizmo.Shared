@@ -3,7 +3,7 @@
   <!--
   Loco xml export: ResX - .NET resources
   Project: Gizmo.Shared
-  Locale: es-BO, Spanish (Bolivia)
+  Locale: et, Estonian
   Exported by: Oleg Savelos
   Exported at: Thu, 05 Feb 2026 09:36:33 +0200 
   --> 
@@ -66,10 +66,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="locoLocaleCode">
-    <value>es-BO</value>
+    <value>et</value>
   </metadata>
   <metadata name="locoLocaleName" xml:space="preserve">
-    <value>Spanish (Bolivia)</value>
+    <value>Estonian</value>
   </metadata> 
    
    
