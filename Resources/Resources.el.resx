@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+﻿<?xml version="1.0" encoding="utf-8"?> 
 <root> 
   <!--
   Loco xml export: ResX - .NET resources
   Project: Gizmo.Shared
   Locale: el, Greek
   Exported by: Oleg Savelos
-  Exported at: Thu, 05 Feb 2026 08:56:32 +0200 
+  Exported at: Thu, 05 Feb 2026 09:36:32 +0200 
   --> 
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -119,9 +119,7 @@
   <data name="APPLICATION_SORTING_OPTION_USE" xml:space="preserve"> 
     <value>Χρήση</value> 
   </data> 
-  <data name="CLIENT_LOGOUT_ACTION_ADMIN_MODE" xml:space="preserve"> 
-    <value /> 
-  </data> 
+   
   <data name="CLIENT_LOGOUT_ACTION_CLOSE_PROGRAMS" xml:space="preserve"> 
     <value>Τερματισμός εφαρμογών</value> 
   </data> 
@@ -230,15 +228,9 @@
   <data name="GIZMO_POLICY_GROUP_APPLICATIONS_NAME" xml:space="preserve"> 
     <value>Εφαρμογές</value> 
   </data> 
-  <data name="GIZMO_POLICY_GROUP_DEPLOYMENT_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="GIZMO_POLICY_GROUP_DEPLOYMENT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="GIZMO_POLICY_GROUP_LOG_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
+   
+   
+   
   <data name="GIZMO_POLICY_GROUP_LOG_NAME" xml:space="preserve"> 
     <value>Ιστορικό</value> 
   </data> 
@@ -356,9 +348,7 @@
   <data name="GIZMO_POLICY_MANAGEMENT_LOCK_DESCRIPTION" xml:space="preserve"> 
     <value>Παρέχει πρόσβαση για τη διαχείριση της κατάστασης κλειδώματος πληκτρολογίου και ποντικιού του κεντρικού τερματικού του πελάτη, επιτρέποντας στον χρήστη να ελέγχει τα δικαιώματα εισαγωγής δεδομένων.</value> 
   </data> 
-  <data name="GIZMO_POLICY_MANAGEMENT_LOCK_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
+   
   <data name="GIZMO_POLICY_MANAGEMENT_MAINTENANCE_DESCRIPTION" xml:space="preserve"> 
     <value>Παρέχει πρόσβαση για τη διαχείριση της κατάστασης συντήρησης του κεντρικού υπολογιστή του πελάτη, επιτρέποντας στον χρήστη να ελέγχει και να ενημερώνει την κατάσταση συντήρησής του.</value> 
   </data> 
@@ -389,9 +379,7 @@
   <data name="GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_DESCRIPTION" xml:space="preserve"> 
     <value>Παρέχει πρόσβαση για χειροκίνητη ενεργοποίηση των τερματικών, επιτρέποντας στον χρήστη να ελέγχει τις καταστάσεις τροφοδοσίας των τερματικών.</value> 
   </data> 
-  <data name="GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
+   
   <data name="GIZMO_POLICY_MONITORING_DESCRIPTION" xml:space="preserve"> 
     <value>Παρέχει πρόσβαση στη λειτουργία παρακολούθησης οθόνης, επιτρέποντας στον χρήστη να βλέπει και να παρακολουθεί τις οθόνες των πελατών.</value> 
   </data> 
@@ -407,15 +395,11 @@
   <data name="GIZMO_POLICY_REGISTER_PAY_IN_DESCRIPTION" xml:space="preserve"> 
     <value>Παρέχει πρόσβαση για την εκτέλεση εισροών σε Ταμείο, επιτρέποντας στον χρήστη να προσθέσει χρήματα στο Ταμείο.</value> 
   </data> 
-  <data name="GIZMO_POLICY_REGISTER_PAY_IN_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
+   
   <data name="GIZMO_POLICY_REGISTER_PAY_OUT_DESCRIPTION" xml:space="preserve"> 
     <value>Παρέχει πρόσβαση για την πραγματοποίηση πληρωμών από το ταμείο, επιτρέποντας στον χρήστη να αποσύρει κεφάλαια από το ταμείο</value> 
   </data> 
-  <data name="GIZMO_POLICY_REGISTER_PAY_OUT_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
+   
   <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTION" xml:space="preserve"> 
     <value>Παρέχει πρόσβαση για την προβολή των συναλλαγών του ημερολογίου της προηγούμενης ημέρας, επιτρέποντας στον χρήστη να ελέγξει τις προηγούμενες δραστηριότητες του ημερολογίου.</value> 
   </data> 
@@ -707,18 +691,10 @@
   <data name="GIZMO_POLICY_WAITING_LINES_NAME" xml:space="preserve"> 
     <value>Πρόσβαση</value> 
   </data> 
-  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_HAS_RESERVED_GUEST_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_IN_USE_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_DELETE_RESULT_HOST_IN_USE_NAME" xml:space="preserve"> 
-    <value /> 
-  </data> 
+   
+   
+   
+   
   <data name="HOST_DELETE_RESULT_HOST_IS_RESERVED_DESCRIPTION" xml:space="preserve"> 
     <value>Το τελικό σημείο έχει κράτηση</value> 
   </data> 
@@ -731,63 +707,25 @@
   <data name="HOST_DELETE_RESULT_SUCCESS_NAME" xml:space="preserve"> 
     <value>Επιτυχημένη διαγραφή τερματικού</value> 
   </data> 
-  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_CENTER" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_LEFT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_RIGHT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_LEFT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_RIGHT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_SCREEN" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_NUMBER_FIXED_POSITION_TOP_CENTER" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_NUMBER_FIXED_POSITION_TOP_LEFT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_NUMBER_FIXED_POSITION_TOP_RIGHT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_NUMBER_POSITIONING_CLOCKWISE" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_NUMBER_POSITIONING_COUNTERCLOCKWISE" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_NUMBER_POSITIONING_FIXED" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_BOTTOM" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_CENTER" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_TOP" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_NUMBER_POSITIONING_VERTICAL_CENTER" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_NUMBER_POSITIONING_VERTICAL_LEFT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_NUMBER_POSITIONING_VERTICAL_RIGHT" xml:space="preserve"> 
-    <value /> 
-  </data> 
-  <data name="HOST_NUMBER_POSITIONING_WALL_BOUNCE" xml:space="preserve"> 
-    <value /> 
-  </data> 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
   <data name="INVOICE_STATUS_PAID" xml:space="preserve"> 
     <value>Εξοφλημένο</value> 
   </data> 

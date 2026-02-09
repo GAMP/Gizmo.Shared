@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+﻿<?xml version="1.0" encoding="utf-8"?> 
 <root> 
   <!--
   Loco xml export: ResX - .NET resources
   Project: Gizmo.Shared
   Locale: ru, Russian
   Exported by: Oleg Savelos
-  Exported at: Thu, 05 Feb 2026 08:56:31 +0200 
+  Exported at: Thu, 05 Feb 2026 09:36:32 +0200 
   --> 
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
