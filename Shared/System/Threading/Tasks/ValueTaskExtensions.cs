@@ -15,5 +15,12 @@
 
             return vt.AsTask().GetAwaiter().GetResult();
         }
+
+        /// <summary>
+        /// Executes value task synchronously.
+        /// </summary>
+        /// <param name="vt">Value task.</param>
+        /// <returns>Task result.</returns>
+        public static void RunSync(this ValueTask vt) => vt.GetAwaiter().GetResult();
     }
 }
