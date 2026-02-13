@@ -116,6 +116,7 @@ namespace Gizmo.Server.Options
         [Name("Reservation fee", "SERVER_OPTION_RESERVATIONS_FEE_NAME")]
         [ExtendedDescription("Specifies reservation fee", "SERVER_OPTION_RESERVATIONS_FEE_DESCRIPTION")]
         [StoreOptionKey("FEE")]
+        [DefaultValue(typeof(decimal), "0")]
         [MessagePack.Key(10)]
         public decimal Fee
         {
@@ -126,8 +127,8 @@ namespace Gizmo.Server.Options
         [Name("Reservation minimum payment percentage", "SERVER_OPTION_RESERVATIONS_MINIMUM_PAYMENT_PERCENTAGE_NAME")]
         [ExtendedDescription("Specifies reservation minimum payment percentage", "SERVER_OPTION_RESERVATIONS_MINIMUM_PAYMENT_PERCENTAGE_DESCRIPTION")]
         [StoreOptionKey("MINIMUM_PAYMENT_PERCENTAGE")]
-        [DefaultValue(100)]
         [Range(0, 100)]
+        [DefaultValue(typeof(decimal), "100")]
         [MessagePack.Key(11)]
         public decimal MinimumPaymentPercentage
         {
@@ -148,7 +149,7 @@ namespace Gizmo.Server.Options
         [Name("Reservation cancellation refund percentage", "SERVER_OPTION_RESERVATIONS_CANCELLATION_REFUND_PERCENTAGE_NAME")]
         [ExtendedDescription("Specifies reservation cancellation refund percentage", "SERVER_OPTION_RESERVATIONS_CANCELLATION_REFUND_PERCENTAGE_DESCRIPTION")]
         [StoreOptionKey("CANCELLATION_REFUND_PERCENTAGE")]
-        [DefaultValue(0)]
+        [DefaultValue(typeof(decimal), "0")]
         [MessagePack.Key(13)]
         public decimal CancellationRefundPercentage
         {
