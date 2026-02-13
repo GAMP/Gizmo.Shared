@@ -5,7 +5,7 @@
   Project: Gizmo.Shared
   Locale: tr, Turkish
   Exported by: Oleg Savelos
-  Exported at: Thu, 05 Feb 2026 09:36:33 +0200 
+  Exported at: Fri, 13 Feb 2026 17:36:47 +0200 
   --> 
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
