@@ -17,9 +17,15 @@ namespace Gizmo.Client.Options
         public int? AlertBeforeTime { get; set; }
 
         /// <summary>
-        /// Reservation notifications.
+        /// Login block after time.
         /// </summary>
         [MessagePack.Key(1)]
+        public int? LoginBlockAfterTime { get; set; }
+
+        /// <summary>
+        /// Reservation notifications.
+        /// </summary>
+        [MessagePack.Key(2)]
         public IEnumerable<NotificationOption> Notifications { get; set; } = Enumerable.Empty<NotificationOption>();
     }
 }
