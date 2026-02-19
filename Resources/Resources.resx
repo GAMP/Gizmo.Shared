@@ -1048,4 +1048,16 @@
     <value>Time offers</value>
     <comment>Default name to use when creating default time offers product group on initial data seeding.</comment>
   </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_ENABLED_NAME" xml:space="preserve">
+    <value>Enable user logout grace period</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_ENABLED_DESCRIPTION" xml:space="preserve">
+    <value>Specifies if user logout grace period is enabled</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_NAME" xml:space="preserve">
+    <value>Grace time</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve">
+    <value>Specifies user logout grace period time</value>
+  </data>
 </root>
