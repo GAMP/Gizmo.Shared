@@ -7,17 +7,17 @@
 		<SignAssembly>false</SignAssembly>
 		<RepositoryUrl>https://github.com/GAMP/Gizmo.Shared</RepositoryUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<Authors>NETProjects</Authors>
-		<Company>NETProjects</Company>
+		<Authors>NETProjects LP</Authors>
+		<Company>NETProjects LP</Company>
 		<Product>Gizmo</Product>
 		<Description>Gizmo shared code library. The library contains code shared between all of Gizmo modules.</Description>
-		<Copyright>NETProjects</Copyright>
+		<Copyright>NETProjects LP</Copyright>
 		<RepositoryType>git</RepositoryType>
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<PackageIcon>package_icon.png</PackageIcon>
-		<Version>1.0.7.0</Version>
+		<Version>1.0.8.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Nullable>enable</Nullable>
     <Title>Gizmo shared code library. The library contains code shared between all of Gizmo modules.</Title>
