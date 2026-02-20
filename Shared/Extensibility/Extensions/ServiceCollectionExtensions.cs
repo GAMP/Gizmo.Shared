@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Gizmo.Extensibility.Extensions
 {
@@ -7,8 +7,9 @@ namespace Gizmo.Extensibility.Extensions
     /// </summary>
     public static class ServiceCollectionExtensions
     {
-        public static IServiceCollection AddExtensibility(this IServiceCollection services) 
-        {           
+        public static IServiceCollection AddExtensibility(this IServiceCollection services)
+        {
+            services.AddHostedService<ModuleLifecycleHostedService>();
             return services;
         }
     }
