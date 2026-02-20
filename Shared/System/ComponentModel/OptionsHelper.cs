@@ -25,7 +25,7 @@ namespace System.ComponentModel
                 throw new ArgumentNullException(nameof(propertyName));
 
             var property = TypeDescriptor.GetProperties(instance)[propertyName];
-            if (property.CanResetValue(instance))
+            if (property?.CanResetValue(instance) == true)
                 property.ResetValue(instance);
         }
 
