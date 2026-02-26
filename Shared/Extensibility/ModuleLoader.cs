@@ -30,7 +30,8 @@ namespace Gizmo.Extensibility
             IReadOnlyList<IntegrationSpec> integrations,
             IHostEnvironment hostEnvironment,
             string modulesDataRoot,
-            IReadOnlyCollection<string> sharedAssemblyNames)
+            IReadOnlyCollection<string> sharedAssemblyNames,
+            ModuleAssemblyRegistry registry)
         {
             var fullPath = Path.GetFullPath(spec.AssemblyPath);
             if (!File.Exists(fullPath))
@@ -40,6 +41,11 @@ namespace Gizmo.Extensibility
             var asm = alc.LoadFromAssemblyPath(fullPath);
 
             var baseDir = Path.GetDirectoryName(fullPath)!;
+
+            var moduleName = Path.GetFileNameWithoutExtension(fullPath);
+
+            registry.Add(asm, baseDir, moduleName);
+            services.AddKeyedSingleton(asm, new ModuleInfo(moduleName, baseDir));
             var asmVersion = asm.GetName().Version;
 
             // 1. Discover and run all DLL-wide registrars (ordered, no integration context)

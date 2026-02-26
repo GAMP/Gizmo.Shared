@@ -22,6 +22,8 @@ namespace Gizmo.Extensibility
             string modulesDataRoot,
             params string[] sharedAssemblyNames)
         {
+            var registry = new ModuleAssemblyRegistry();
+
             foreach (var m in modules)
             {
                 ModuleLoader.LoadModuleIntoServices(
@@ -30,8 +32,11 @@ namespace Gizmo.Extensibility
                     integrations,
                     hostEnvironment,
                     modulesDataRoot,
-                    sharedAssemblyNames);
+                    sharedAssemblyNames,
+                    registry);
             }
+
+            services.AddSingleton(registry);
 
             return services;
         }
