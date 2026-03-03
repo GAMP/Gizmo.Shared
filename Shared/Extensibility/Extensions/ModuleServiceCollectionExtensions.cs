@@ -23,6 +23,7 @@ namespace Gizmo.Extensibility
             params string[] sharedAssemblyNames)
         {
             var registry = new ModuleAssemblyRegistry();
+            var typeRegistry = new IntegrationTypeRegistry();
 
             foreach (var m in modules)
             {
@@ -33,10 +34,12 @@ namespace Gizmo.Extensibility
                     hostEnvironment,
                     modulesDataRoot,
                     sharedAssemblyNames,
-                    registry);
+                    registry,
+                    typeRegistry);
             }
 
             services.AddSingleton(registry);
+            services.AddSingleton(typeRegistry);
 
             return services;
         }

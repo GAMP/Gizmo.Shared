@@ -31,7 +31,8 @@ namespace Gizmo.Extensibility
             IHostEnvironment hostEnvironment,
             string modulesDataRoot,
             IReadOnlyCollection<string> sharedAssemblyNames,
-            ModuleAssemblyRegistry registry)
+            ModuleAssemblyRegistry registry,
+            IntegrationTypeRegistry typeRegistry)
         {
             var fullPath = Path.GetFullPath(spec.AssemblyPath);
             if (!File.Exists(fullPath))
@@ -84,6 +85,8 @@ namespace Gizmo.Extensibility
             foreach (var (type, attr) in moduleTypes)
             {
                 var typeGuid = Guid.Parse(attr!.ModuleGuid);
+
+                typeRegistry.Add(typeGuid, attr.Id, asm);
 
                 // Config schema metadata is the same for all instances of this type — extract once
                 // and register keyed by TypeGuid so the Manager UI can request it before any

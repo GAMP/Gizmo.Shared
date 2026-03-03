@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
 using System.Text.Json.Serialization;
+using Gizmo;
 using Gizmo.Extensibility.Abstractions;
 
 namespace Gizmo.Extensibility
@@ -60,10 +61,14 @@ namespace Gizmo.Extensibility
             var jsonKey = prop.GetCustomAttribute<JsonPropertyNameAttribute>()?.Name ?? prop.Name;
 
             // Display name: [Name] if present, otherwise the property name.
-            var displayName = prop.GetCustomAttribute<NameAttribute>()?.Name ?? prop.Name;
+            var nameAttr = prop.GetCustomAttribute<NameAttribute>();
+            var displayName = nameAttr?.Name ?? prop.Name;
+            var displayNameResourceKey = GetResourceKey(nameAttr);
 
             // Description: [ExtendedDescription] if present.
-            var description = prop.GetCustomAttribute<ExtendedDescriptionAttribute>()?.Description;
+            var descAttr = prop.GetCustomAttribute<ExtendedDescriptionAttribute>();
+            var description = descAttr?.Description;
+            var descriptionResourceKey = GetResourceKey(descAttr);
 
             // Default value: [DefaultValue] if present.
             var defaultValue = prop.GetCustomAttribute<DefaultValueAttribute>()?.Value?.ToString();
@@ -99,7 +104,9 @@ namespace Gizmo.Extensibility
             {
                 JsonKey = jsonKey,
                 DisplayName = displayName,
+                DisplayNameResourceKey = displayNameResourceKey,
                 Description = description,
+                DescriptionResourceKey = descriptionResourceKey,
                 Kind = kind,
                 IsNullable = isNullable,
                 DefaultValue = defaultValue,
@@ -163,16 +170,28 @@ namespace Gizmo.Extensibility
             {
                 return underlying
                     .GetFields(BindingFlags.Public | BindingFlags.Static)
-                    .Select(f => new ModuleConfigAllowedValueMetadata
+                    .Select(f =>
                     {
-                        Name = f.GetCustomAttribute<NameAttribute>()?.Name,
-                        Description = f.GetCustomAttribute<ExtendedDescriptionAttribute>()?.Description,
-                        Value = f.Name
+                        var fNameAttr = f.GetCustomAttribute<NameAttribute>();
+                        var fDescAttr = f.GetCustomAttribute<ExtendedDescriptionAttribute>();
+                        return new ModuleConfigAllowedValueMetadata
+                        {
+                            Name = fNameAttr?.Name,
+                            NameResourceKey = GetResourceKey(fNameAttr),
+                            Description = fDescAttr?.Description,
+                            DescriptionResourceKey = GetResourceKey(fDescAttr),
+                            Value = f.Name
+                        };
                     })
                     .ToArray();
             }
 
             return [];
+        }
+
+        private static string? GetResourceKey(LocalizedAttribute? attr)
+        {
+            return attr is not null && !string.IsNullOrEmpty(attr.ResourceKey) ? attr.ResourceKey : null;
         }
     }
 }

@@ -85,5 +85,21 @@ namespace Gizmo.Extensibility.Abstractions
         /// </summary>
         [Key(9)]
         public IReadOnlyList<ModuleConfigPropertyMetadata>? NestedProperties { get; init; }
+
+        /// <summary>
+        /// Localization resource key for <see cref="DisplayName"/>, or <see langword="null"/>
+        /// when the display name is not localizable.
+        /// Sourced from <c>[Name("fallback", "resourceKey")]</c>.
+        /// </summary>
+        [Key(10)]
+        public string? DisplayNameResourceKey { get; init; }
+
+        /// <summary>
+        /// Localization resource key for <see cref="Description"/>, or <see langword="null"/>
+        /// when the description is not localizable.
+        /// Sourced from <c>[ExtendedDescription("fallback", "resourceKey")]</c>.
+        /// </summary>
+        [Key(11)]
+        public string? DescriptionResourceKey { get; init; }
     }
 }

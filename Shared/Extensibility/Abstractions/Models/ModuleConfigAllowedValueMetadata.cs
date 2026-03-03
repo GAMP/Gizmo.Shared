@@ -28,5 +28,19 @@ namespace Gizmo.Extensibility.Abstractions
         /// </summary>
         [Key(2)]
         public string Value { get; init; } = string.Empty;
+
+        /// <summary>
+        /// Localization resource key for <see cref="Name"/>, or <see langword="null"/>
+        /// when the name is not localizable.
+        /// </summary>
+        [Key(3)]
+        public string? NameResourceKey { get; init; }
+
+        /// <summary>
+        /// Localization resource key for <see cref="Description"/>, or <see langword="null"/>
+        /// when the description is not localizable.
+        /// </summary>
+        [Key(4)]
+        public string? DescriptionResourceKey { get; init; }
     }
 }
