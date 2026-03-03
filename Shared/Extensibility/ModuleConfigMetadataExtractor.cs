@@ -73,11 +73,19 @@ namespace Gizmo.Extensibility
             // Default value: [DefaultValue] if present.
             var defaultValue = prop.GetCustomAttribute<DefaultValueAttribute>()?.Value?.ToString();
 
-            // Required: [JsonRequired] presence.
-            var isRequired = prop.GetCustomAttribute<JsonRequiredAttribute>() is not null;
+            // Required: [Required] presence.
+            var isRequired = prop.GetCustomAttribute<RequiredAttribute>() is not null;
 
             // Sensitive: [ModuleConfigSensitive] presence.
             var isSensitive = prop.GetCustomAttribute<ModuleConfigSensitiveAttribute>() is not null;
+
+            // String length constraints: [StringLength], [MinLength], [MaxLength].
+            var stringLengthAttr = prop.GetCustomAttribute<StringLengthAttribute>();
+            var minLengthAttr = prop.GetCustomAttribute<MinLengthAttribute>();
+            var maxLengthAttr = prop.GetCustomAttribute<MaxLengthAttribute>();
+
+            int? minLength = stringLengthAttr?.MinimumLength ?? minLengthAttr?.Length;
+            int? maxLength = stringLengthAttr?.MaximumLength ?? maxLengthAttr?.Length;
 
             var (kind, isNullable) = ResolveKind(prop.PropertyType);
 
@@ -113,6 +121,8 @@ namespace Gizmo.Extensibility
                 AllowedValues = BuildAllowedValues(prop),
                 IsRequired = isRequired,
                 IsSensitive = isSensitive,
+                MinLength = minLength,
+                MaxLength = maxLength,
                 NestedProperties = nestedProperties
             };
         }

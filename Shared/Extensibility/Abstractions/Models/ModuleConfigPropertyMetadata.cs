@@ -65,7 +65,7 @@ namespace Gizmo.Extensibility.Abstractions
 
         /// <summary>
         /// Indicates that this property is required in the configuration.
-        /// Sourced from <c>[JsonRequired]</c>.
+        /// Sourced from <c>[Required]</c>.
         /// </summary>
         [Key(7)]
         public bool IsRequired { get; init; }
@@ -101,5 +101,19 @@ namespace Gizmo.Extensibility.Abstractions
         /// </summary>
         [Key(11)]
         public string? DescriptionResourceKey { get; init; }
+
+        /// <summary>
+        /// Minimum length for string properties, or <see langword="null"/> when not constrained.
+        /// Sourced from <c>[StringLength]</c> or <c>[MinLength]</c>.
+        /// </summary>
+        [Key(12)]
+        public int? MinLength { get; init; }
+
+        /// <summary>
+        /// Maximum length for string properties, or <see langword="null"/> when not constrained.
+        /// Sourced from <c>[StringLength]</c> or <c>[MaxLength]</c>.
+        /// </summary>
+        [Key(13)]
+        public int? MaxLength { get; init; }
     }
 }

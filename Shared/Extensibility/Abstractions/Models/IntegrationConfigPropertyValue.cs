@@ -30,5 +30,11 @@ namespace Gizmo.Extensibility.Abstractions
         /// the nested child properties. <see langword="null"/> for all scalar kinds.
         /// </summary>
         public List<IntegrationConfigPropertyValue>? NestedValues { get; init; }
+
+        /// <summary>
+        /// Validation error message for this property, or <see langword="null"/> when valid.
+        /// Set by the UI validation layer.
+        /// </summary>
+        public string? ValidationMessage { get; set; }
     }
 }
