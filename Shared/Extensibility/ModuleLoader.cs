@@ -86,7 +86,8 @@ namespace Gizmo.Extensibility
             {
                 var typeGuid = Guid.Parse(attr!.ModuleGuid);
 
-                typeRegistry.Add(typeGuid, attr.Id, asm);
+                var capabilities = DiscoverCapabilities(type);
+                typeRegistry.Add(typeGuid, attr.Id, asm, capabilities);
 
                 // Config schema metadata is the same for all instances of this type — extract once
                 // and register keyed by TypeGuid so the Manager UI can request it before any
@@ -147,6 +148,22 @@ namespace Gizmo.Extensibility
                     BindModuleOptions(services, type, config);
                 }
             }
+        }
+
+        /// <summary>
+        /// Scans the type's interface tree for interfaces decorated with
+        /// <see cref="IntegrationCapabilityAttribute"/> and collects their capability GUIDs.
+        /// </summary>
+        private static IReadOnlyList<Guid> DiscoverCapabilities(Type type)
+        {
+            var caps = new List<Guid>();
+            foreach (var iface in type.GetInterfaces())
+            {
+                var capAttr = iface.GetCustomAttribute<IntegrationCapabilityAttribute>();
+                if (capAttr != null)
+                    caps.Add(capAttr.CapabilityGuid);
+            }
+            return caps;
         }
 
         private static (IConfiguration Config, IModuleConfigurationReloader Reloader) BuildModuleConfiguration(string? configJson)
