@@ -87,7 +87,7 @@ namespace Gizmo.Extensibility
                 var typeGuid = Guid.Parse(attr!.ModuleGuid);
 
                 var capabilities = DiscoverCapabilities(type);
-                typeRegistry.Add(typeGuid, attr.Id, asm, capabilities);
+                typeRegistry.Add(typeGuid, attr.Id, type, capabilities);
 
                 // Config schema metadata is the same for all instances of this type — extract once
                 // and register keyed by TypeGuid so the Manager UI can request it before any

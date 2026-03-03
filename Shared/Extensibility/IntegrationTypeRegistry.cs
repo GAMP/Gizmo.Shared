@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Reflection;
 
 namespace Gizmo.Extensibility
 {
@@ -21,9 +20,9 @@ namespace Gizmo.Extensibility
         /// <summary>
         /// Adds a discovered integration type to the registry.
         /// </summary>
-        internal void Add(Guid typeGuid, string name, Assembly assembly, IReadOnlyList<Guid> capabilities)
+        internal void Add(Guid typeGuid, string name, Type implementationType, IReadOnlyList<Guid> capabilities)
         {
-            _entries.Add(new IntegrationTypeEntry(typeGuid, name, assembly, capabilities));
+            _entries.Add(new IntegrationTypeEntry(typeGuid, name, implementationType, capabilities));
         }
     }
 
@@ -32,11 +31,11 @@ namespace Gizmo.Extensibility
     /// </summary>
     /// <param name="TypeGuid">The stable type identifier (<see cref="Gizmo.Extensibility.Abstractions.ModuleMetadataAttribute.ModuleGuid"/>).</param>
     /// <param name="Name">Human-readable name (<see cref="Gizmo.Extensibility.Abstractions.ModuleMetadataAttribute.Id"/>).</param>
-    /// <param name="Assembly">The assembly containing the integration type, used for resource resolution.</param>
+    /// <param name="ImplementationType">The CLR type decorated with <see cref="Gizmo.Extensibility.Abstractions.ModuleMetadataAttribute"/>, used for resource resolution.</param>
     /// <param name="Capabilities">Well-known capability GUIDs discovered from interfaces decorated with <see cref="Abstractions.IntegrationCapabilityAttribute"/>.</param>
     public sealed record IntegrationTypeEntry(
         Guid TypeGuid,
         string Name,
-        Assembly Assembly,
+        Type ImplementationType,
         IReadOnlyList<Guid> Capabilities);
 }
