@@ -207,6 +207,12 @@ namespace Gizmo.Server.Security
         StockCountGlobal,
 
         /// <summary>
+        /// Stock count view expected quantity permission.
+        /// </summary>
+        [PolicyDescription("Stock", "CountViewExpected", GizmoPolicyGroups.Stock, [Stock, StockCount], nameof(Resources.GIZMO_POLICY_STOCK_COUNT_VIEW_EXPECTED_NAME), nameof(Resources.GIZMO_POLICY_STOCK_COUNT_VIEW_EXPECTED_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        StockCountViewExpected,
+
+        /// <summary>
         /// Stock inbound (current register).
         /// </summary>
         [PolicyDescription("Stock", "Inbound", GizmoPolicyGroups.Stock, [Stock], nameof(Resources.GIZMO_POLICY_STOCK_INBOUND_NAME), nameof(Resources.GIZMO_POLICY_STOCK_INBOUND_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
@@ -259,6 +265,24 @@ namespace Gizmo.Server.Security
         /// </summary>
         [PolicyDescription("Stock", "AdjustmentGlobal", GizmoPolicyGroups.Stock, [Stock, StockAdjustment], nameof(Resources.GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_NAME), nameof(Resources.GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_DESCRIPTION), [GizmoPolicySet.Owner])]
         StockAdjustmentGlobal,
+
+        /// <summary>
+        /// Stock adjustment sale by price permission.
+        /// </summary>
+        [PolicyDescription("Stock", "AdjustmentSaleByPrice", GizmoPolicyGroups.Stock, [Stock, StockAdjustment], nameof(Resources.GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_PRICE_NAME), nameof(Resources.GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_PRICE_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        StockAdjustmentSaleByPrice,
+
+        /// <summary>
+        /// Stock adjustment sale by cost permission.
+        /// </summary>
+        [PolicyDescription("Stock", "AdjustmentSaleByCost", GizmoPolicyGroups.Stock, [Stock, StockAdjustment], nameof(Resources.GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_COST_NAME), nameof(Resources.GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_COST_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        StockAdjustmentSaleByCost,
+
+        /// <summary>
+        /// Stock adjustment write-off permission.
+        /// </summary>
+        [PolicyDescription("Stock", "AdjustmentWriteOff", GizmoPolicyGroups.Stock, [Stock, StockAdjustment], nameof(Resources.GIZMO_POLICY_STOCK_ADJUSTMENT_WRITE_OFF_NAME), nameof(Resources.GIZMO_POLICY_STOCK_ADJUSTMENT_WRITE_OFF_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        StockAdjustmentWriteOff,
 
         #endregion
 
