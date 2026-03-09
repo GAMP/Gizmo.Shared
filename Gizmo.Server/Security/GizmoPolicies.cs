@@ -387,10 +387,10 @@ namespace Gizmo.Server.Security
         Applications,
 
         /// <summary>
-        /// News permission.
+        /// Marketing permission.
         /// </summary>
-        [PolicyDescription("News", "*", GizmoPolicyGroups.News, nameof(Resources.GIZMO_POLICY_NEWS_NAME), nameof(Resources.GIZMO_POLICY_NEWS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
-        News,
+        [PolicyDescription("Marketing", "*", GizmoPolicyGroups.Marketing, nameof(Resources.GIZMO_POLICY_MARKETING_NAME), nameof(Resources.GIZMO_POLICY_MARKETING_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        Marketing,
 
         #region USER
 

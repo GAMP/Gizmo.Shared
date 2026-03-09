@@ -48,10 +48,10 @@ namespace Gizmo.Server.Security
         [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_APPLICATIONS_DESCRIPTION))]
         Applications,
 
-        [PolicyGroup(GizmoPolicies.News)]
-        [Name("", nameof(Resources.GIZMO_POLICY_GROUP_NEWS_NAME))]
-        [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_NEWS_DESCRIPTION))]
-        News,
+        [PolicyGroup(GizmoPolicies.Marketing)]
+        [Name("", nameof(Resources.GIZMO_POLICY_GROUP_MARKETING_NAME))]
+        [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_MARKETING_DESCRIPTION))]
+        Marketing,
 
         [PolicyGroup()]
         [Name("", nameof(Resources.GIZMO_POLICY_GROUP_USER_NAME))]

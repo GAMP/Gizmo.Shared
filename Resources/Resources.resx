@@ -243,11 +243,11 @@
   <data name="GIZMO_POLICY_GROUP_MONITORING_NAME" xml:space="preserve">
     <value>Monitoring</value>
   </data>
-  <data name="GIZMO_POLICY_GROUP_NEWS_DESCRIPTION" xml:space="preserve">
-    <value>Policies related to managing and displaying news content.</value>
+  <data name="GIZMO_POLICY_GROUP_MARKETING_DESCRIPTION" xml:space="preserve">
+    <value>Policies related to managing marketing content such as news and feeds.</value>
   </data>
-  <data name="GIZMO_POLICY_GROUP_NEWS_NAME" xml:space="preserve">
-    <value>News</value>
+  <data name="GIZMO_POLICY_GROUP_MARKETING_NAME" xml:space="preserve">
+    <value>Marketing</value>
   </data>
   <data name="GIZMO_POLICY_GROUP_REGISTER_DESCRIPTION" xml:space="preserve">
     <value>Policies for managing register operations and settings.</value>
@@ -387,10 +387,10 @@
   <data name="GIZMO_POLICY_MONITORING_NAME" xml:space="preserve">
     <value>Access</value>
   </data>
-  <data name="GIZMO_POLICY_NEWS_DESCRIPTION" xml:space="preserve">
-    <value>Grants access to the news and marketing feature enabling the user to view and manage related content</value>
+  <data name="GIZMO_POLICY_MARKETING_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to the marketing feature enabling the user to view and manage news and feeds</value>
   </data>
-  <data name="GIZMO_POLICY_NEWS_NAME" xml:space="preserve">
+  <data name="GIZMO_POLICY_MARKETING_NAME" xml:space="preserve">
     <value>Access</value>
   </data>
   <data name="GIZMO_POLICY_REGISTER_PAY_IN_DESCRIPTION" xml:space="preserve">
