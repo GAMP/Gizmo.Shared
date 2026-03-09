@@ -11,6 +11,6 @@ namespace Gizmo.Extensibility.Abstractions
         /// <summary>
         /// Called by the host during startup to add services to the host's service collection.
         /// </summary>
-        void RegisterServices(IServiceCollection services, ModuleContext context);
+        void RegisterServices(IServiceCollection services);
     }
 }

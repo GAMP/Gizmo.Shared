@@ -243,11 +243,11 @@
   <data name="GIZMO_POLICY_GROUP_MONITORING_NAME" xml:space="preserve">
     <value>Monitoring</value>
   </data>
-  <data name="GIZMO_POLICY_GROUP_NEWS_DESCRIPTION" xml:space="preserve">
-    <value>Policies related to managing and displaying news content.</value>
+  <data name="GIZMO_POLICY_GROUP_MARKETING_DESCRIPTION" xml:space="preserve">
+    <value>Policies related to managing marketing content such as news and feeds.</value>
   </data>
-  <data name="GIZMO_POLICY_GROUP_NEWS_NAME" xml:space="preserve">
-    <value>News</value>
+  <data name="GIZMO_POLICY_GROUP_MARKETING_NAME" xml:space="preserve">
+    <value>Marketing</value>
   </data>
   <data name="GIZMO_POLICY_GROUP_REGISTER_DESCRIPTION" xml:space="preserve">
     <value>Policies for managing register operations and settings.</value>
@@ -387,10 +387,10 @@
   <data name="GIZMO_POLICY_MONITORING_NAME" xml:space="preserve">
     <value>Access</value>
   </data>
-  <data name="GIZMO_POLICY_NEWS_DESCRIPTION" xml:space="preserve">
-    <value>Grants access to the news and marketing feature enabling the user to view and manage related content</value>
+  <data name="GIZMO_POLICY_MARKETING_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to the marketing feature enabling the user to view and manage news and feeds</value>
   </data>
-  <data name="GIZMO_POLICY_NEWS_NAME" xml:space="preserve">
+  <data name="GIZMO_POLICY_MARKETING_NAME" xml:space="preserve">
     <value>Access</value>
   </data>
   <data name="GIZMO_POLICY_REGISTER_PAY_IN_DESCRIPTION" xml:space="preserve">
@@ -434,6 +434,12 @@
   </data>
   <data name="GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_NAME" xml:space="preserve">
     <value>Create reservations without payments</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to create reservations for guest accounts</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_NAME" xml:space="preserve">
+    <value>Create reservations for guests</value>
   </data>
   <data name="GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_DESCRIPTION" xml:space="preserve">
     <value>Allow time credit</value>
@@ -984,6 +990,30 @@
   <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_DESCRIPTION" xml:space="preserve">
     <value>Grants access to make stock adjustments globally</value>
   </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_VIEW_EXPECTED_NAME" xml:space="preserve">
+    <value>View expected quantity</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_VIEW_EXPECTED_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to view the expected stock quantity during counting</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_PRICE_NAME" xml:space="preserve">
+    <value>Sale by price</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_PRICE_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to make stock adjustments as sale at retail price</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_COST_NAME" xml:space="preserve">
+    <value>Sale by cost</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_COST_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to make stock adjustments as sale at cost price</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_WRITE_OFF_NAME" xml:space="preserve">
+    <value>Write-off</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_WRITE_OFF_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to write off stock</value>
+  </data>
   <data name="GIZMO_POLICY_STOCK_TRANSFER_BRANCH_NAME" xml:space="preserve">
     <value>Transfer branch</value>
   </data>
@@ -1047,5 +1077,17 @@
   <data name="PRODUCT_GROUP_TIME_OFFERS_DEFAULT_NAME" xml:space="preserve">
     <value>Time offers</value>
     <comment>Default name to use when creating default time offers product group on initial data seeding.</comment>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_ENABLED_NAME" xml:space="preserve">
+    <value>Enable user logout grace period</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_ENABLED_DESCRIPTION" xml:space="preserve">
+    <value>Specifies if user logout grace period is enabled</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_NAME" xml:space="preserve">
+    <value>Grace time</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve">
+    <value>Specifies user logout grace period time</value>
   </data>
 </root>
