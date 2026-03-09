@@ -27,6 +27,7 @@ namespace Gizmo.Server.Security
         /// <summary>
         /// Sale with non default vat permission.
         /// </summary>
+        [Obsolete()]
         [PolicyDescription("Sale", "NonDefaultVat", GizmoPolicyGroups.Sales, [Sale], "PERMISSION_GROUP_SALE", "PERMISSION_ACTION_SALE_NON_DEFAULT_VAT", [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner], IsAssignable = false)]
         SaleNonDefaultVat,
 
@@ -34,42 +35,42 @@ namespace Gizmo.Server.Security
         /// Sale with pay later permission.
         /// </summary>
         [PolicyDescription("Sale", "PayLater", GizmoPolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_PAY_LATER_NAME), nameof(Resources.GIZMO_POLICY_SALE_PAY_LATER_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
-        SaleNonPayLater,
+        SalePayLater,
 
         /// <summary>
         /// Sale void invoice permission.
         /// </summary>
         [PolicyDescription("Sale", "VoidInvoices", GizmoPolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_VOID_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_INVOICE_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
-        SaleNoVoidInvoices,
+        SaleVoidInvoices,
 
         /// <summary>
         /// Void used time invoices permission.
         /// </summary>
-        [PolicyDescription("Sale", "VoidUsedTimeInvoices", GizmoPolicyGroups.Sales, [SaleNoVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        [PolicyDescription("Sale", "VoidUsedTimeInvoices", GizmoPolicyGroups.Sales, [SaleVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
         VoidUsedTimeInvoices,
 
         /// <summary>
         /// Void closed shift invoices permission.
         /// </summary>
-        [PolicyDescription("Sale", "VoidClosedShiftInvoices", GizmoPolicyGroups.Sales, [SaleNoVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        [PolicyDescription("Sale", "VoidClosedShiftInvoices", GizmoPolicyGroups.Sales, [SaleVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
         VoidClosedShiftInvoices,
 
         /// <summary>
         /// Void other operator invoices permission.
         /// </summary>
-        [PolicyDescription("Sale", "VoidOtherOperatorInvoices", GizmoPolicyGroups.Sales, [SaleNoVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_NON_OWNED_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        [PolicyDescription("Sale", "VoidOtherOperatorInvoices", GizmoPolicyGroups.Sales, [SaleVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_NON_OWNED_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
         VoidOtherOperatorInvoices,
 
         /// <summary>
         /// Void previous business day invoices permission.
         /// </summary>
-        [PolicyDescription("Sale", "VoidPastDaysInvoices", GizmoPolicyGroups.Sales, [SaleNoVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_PAST_DAY_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        [PolicyDescription("Sale", "VoidPastDaysInvoices", GizmoPolicyGroups.Sales, [SaleVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_PAST_DAY_INVOICE_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
         VoidPastDaysInvoices,
 
         /// <summary>
         /// Void previous business day invoices permission.
         /// </summary>
-        [PolicyDescription("Sale", nameof(VoidNonCurrentBranchInvoices), GizmoPolicyGroups.Sales, [SaleNoVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_NON_CURRENT_BRANCH_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_NON_CURRENT_BRANCH_DESCRIPTION), [GizmoPolicySet.Owner])]
+        [PolicyDescription("Sale", nameof(VoidNonCurrentBranchInvoices), GizmoPolicyGroups.Sales, [SaleVoidInvoices], nameof(Resources.GIZMO_POLICY_SALE_VOID_NON_CURRENT_BRANCH_NAME), nameof(Resources.GIZMO_POLICY_SALE_VOID_NON_CURRENT_BRANCH_DESCRIPTION), [GizmoPolicySet.Owner])]
         VoidNonCurrentBranchInvoices,
 
         /// <summary>
@@ -544,5 +545,11 @@ namespace Gizmo.Server.Security
         [PolicyDescription("Reservations", "ReservationsWithoutPayment", GizmoPolicyGroups.Reservations, [Reservations], nameof(Resources.GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_NAME), nameof(Resources.GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
 
         ReservationsWithoutPayment,
+
+        /// <summary>
+        /// Reservations for guests permission.
+        /// </summary>
+        [PolicyDescription("Reservations", "ForGuests", GizmoPolicyGroups.Reservations, [Reservations], nameof(Resources.GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_NAME), nameof(Resources.GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ReservationsForGuests,
     }
 }
