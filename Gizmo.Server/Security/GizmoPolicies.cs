@@ -224,6 +224,24 @@ namespace Gizmo.Server.Security
         StockCountViewExpected,
 
         /// <summary>
+        /// Stock level (current register).
+        /// </summary>
+        [PolicyDescription("Stock", "Level", GizmoPolicyGroups.Stock, [Stock], nameof(Resources.GIZMO_POLICY_STOCK_LEVEL_NAME), nameof(Resources.GIZMO_POLICY_STOCK_LEVEL_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        StockLevel,
+
+        /// <summary>
+        /// Stock level (current branch).
+        /// </summary>
+        [PolicyDescription("Stock", "LevelBranch", GizmoPolicyGroups.Stock, [Stock, StockLevel], nameof(Resources.GIZMO_POLICY_STOCK_LEVEL_BRANCH_NAME), nameof(Resources.GIZMO_POLICY_STOCK_LEVEL_BRANCH_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        StockLevelBranch,
+
+        /// <summary>
+        /// Stock level (global).
+        /// </summary>
+        [PolicyDescription("Stock", "LevelGlobal", GizmoPolicyGroups.Stock, [Stock, StockLevel], nameof(Resources.GIZMO_POLICY_STOCK_LEVEL_GLOBAL_NAME), nameof(Resources.GIZMO_POLICY_STOCK_LEVEL_GLOBAL_DESCRIPTION), [GizmoPolicySet.Owner])]
+        StockLevelGlobal,
+
+        /// <summary>
         /// Stock inbound (current register).
         /// </summary>
         [PolicyDescription("Stock", "Inbound", GizmoPolicyGroups.Stock, [Stock], nameof(Resources.GIZMO_POLICY_STOCK_INBOUND_NAME), nameof(Resources.GIZMO_POLICY_STOCK_INBOUND_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]

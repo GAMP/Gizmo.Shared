@@ -1374,6 +1374,24 @@
   <data name="GIZMO_POLICY_STOCK_COUNT_VIEW_EXPECTED_DESCRIPTION" xml:space="preserve">
     <value>Grants access to view the expected stock quantity during counting</value>
   </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_NAME" xml:space="preserve">
+    <value>Stock level</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to view stock levels at current register</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_BRANCH_NAME" xml:space="preserve">
+    <value>Stock level branch</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to view stock levels across current branch</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_GLOBAL_NAME" xml:space="preserve">
+    <value>Stock level global</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to view stock levels across all branches</value>
+  </data>
   <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_PRICE_NAME" xml:space="preserve">
     <value>Sale by price</value>
   </data>
