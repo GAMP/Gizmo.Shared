@@ -389,6 +389,15 @@ namespace Gizmo.Server.Security
         [PolicyDescription("Apps", "*", GizmoPolicyGroups.Applications, nameof(Resources.GIZMO_POLICY_APPLICATIONS_NAME), nameof(Resources.GIZMO_POLICY_APPLICATIONS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
         Applications,
 
+        [PolicyDescription("Apps", "Create", GizmoPolicyGroups.Applications, [Applications], nameof(Resources.GIZMO_POLICY_APPLICATIONS_CREATE_NAME), nameof(Resources.GIZMO_POLICY_APPLICATIONS_CREATE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ApplicationsCreate,
+
+        [PolicyDescription("Apps", "Edit", GizmoPolicyGroups.Applications, [Applications], nameof(Resources.GIZMO_POLICY_APPLICATIONS_EDIT_NAME), nameof(Resources.GIZMO_POLICY_APPLICATIONS_EDIT_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ApplicationsEdit,
+
+        [PolicyDescription("Apps", "Delete", GizmoPolicyGroups.Applications, [Applications], nameof(Resources.GIZMO_POLICY_APPLICATIONS_DELETE_NAME), nameof(Resources.GIZMO_POLICY_APPLICATIONS_DELETE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ApplicationsDelete,
+
         /// <summary>
         /// Marketing permission.
         /// </summary>

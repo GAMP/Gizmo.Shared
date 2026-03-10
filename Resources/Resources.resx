@@ -207,6 +207,24 @@
   <data name="GIZMO_POLICY_APPLICATIONS_NAME" xml:space="preserve">
     <value>Access</value>
   </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to create applications</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_CREATE_NAME" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to edit applications</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_EDIT_NAME" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to delete applications</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_DELETE_NAME" xml:space="preserve">
+    <value>Delete</value>
+  </data>
   <data name="GIZMO_POLICY_DEPLOYMENT_DESCRIPTION" xml:space="preserve">
     <value>Grants access to the file copy and deployment feature, enabling the user to manage deployments</value>
   </data>
