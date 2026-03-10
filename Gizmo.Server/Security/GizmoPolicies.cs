@@ -176,6 +176,15 @@ namespace Gizmo.Server.Security
         [PolicyDescription("Stock", "*", GizmoPolicyGroups.Stock, nameof(Resources.GIZMO_POLICY_STOCK_NAME), nameof(Resources.GIZMO_POLICY_STOCK_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
         Stock,
 
+        [PolicyDescription("Stock", "Create", GizmoPolicyGroups.Stock, [Stock], nameof(Resources.GIZMO_POLICY_STOCK_CREATE_NAME), nameof(Resources.GIZMO_POLICY_STOCK_CREATE_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        StockCreate,
+
+        [PolicyDescription("Stock", "Edit", GizmoPolicyGroups.Stock, [Stock], nameof(Resources.GIZMO_POLICY_STOCK_EDIT_NAME), nameof(Resources.GIZMO_POLICY_STOCK_EDIT_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        StockEdit,
+
+        [PolicyDescription("Stock", "Delete", GizmoPolicyGroups.Stock, [Stock], nameof(Resources.GIZMO_POLICY_STOCK_DELETE_NAME), nameof(Resources.GIZMO_POLICY_STOCK_DELETE_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        StockDelete,
+
         /// <summary>
         /// Stock permission.
         /// </summary>

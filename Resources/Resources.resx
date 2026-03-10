@@ -948,8 +948,26 @@
   <data name="GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_NAME" xml:space="preserve">
     <value>View expected</value>
   </data>
+  <data name="GIZMO_POLICY_STOCK_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to create stock</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_CREATE_NAME" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to delete stock</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_DELETE_NAME" xml:space="preserve">
+    <value>Delete</value>
+  </data>
   <data name="GIZMO_POLICY_STOCK_DESCRIPTION" xml:space="preserve">
     <value>Grants access to the stock feature enabling the user to view and manage inventory items</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to edit stock</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_EDIT_NAME" xml:space="preserve">
+    <value>Edit</value>
   </data>
   <data name="GIZMO_POLICY_STOCK_NAME" xml:space="preserve">
     <value>Access</value>
