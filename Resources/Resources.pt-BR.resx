@@ -341,12 +341,6 @@
   <data name="GIZMO_POLICY_MANAGEMENT_DESCRIPTION" xml:space="preserve"> 
     <value>Habilita o recurso de gestão, permitindo que o usuário execute tarefas administrativas.</value> 
   </data> 
-  <data name="GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_DESCRIPTION" xml:space="preserve"> 
-    <value>Concede acesso para editar layouts</value> 
-  </data> 
-  <data name="GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_NAME" xml:space="preserve"> 
-    <value>Editar layouts</value> 
-  </data> 
   <data name="GIZMO_POLICY_MANAGEMENT_FILES_DESCRIPTION" xml:space="preserve"> 
     <value>Concede acesso ao recurso de arquivos do terminal do cliente, permitindo que o usuário gerencie e interaja com os arquivos do terminal</value> 
   </data> 

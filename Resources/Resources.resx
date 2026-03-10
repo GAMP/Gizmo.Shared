@@ -348,12 +348,6 @@
   <data name="GIZMO_POLICY_MANAGEMENT_DESCRIPTION" xml:space="preserve">
     <value>Grants access to the management feature enabling the user to perform administrative tasks</value>
   </data>
-  <data name="GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_DESCRIPTION" xml:space="preserve">
-    <value>Grants access to edit layouts</value>
-  </data>
-  <data name="GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_NAME" xml:space="preserve">
-    <value>Edit layouts</value>
-  </data>
   <data name="GIZMO_POLICY_MANAGEMENT_FILES_DESCRIPTION" xml:space="preserve">
     <value>Grants access to the client host files feature enabling the user to manage and interact with host files</value>
   </data>
@@ -471,6 +465,36 @@
   <data name="GIZMO_POLICY_GROUP_USER_GROUP_NAME" xml:space="preserve">
     <value>User group</value>
   </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_LAYOUT_DESCRIPTION" xml:space="preserve">
+    <value>Policies for host layout management.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_LAYOUT_NAME" xml:space="preserve">
+    <value>Host layout</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to host layouts</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to create host layouts</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_CREATE_NAME" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to edit host layouts</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_EDIT_NAME" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to delete host layouts</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_DELETE_NAME" xml:space="preserve">
+    <value>Delete</value>
+  </data>
   <data name="GIZMO_POLICY_USER_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Grant access to user groups</value>
   </data>
@@ -493,6 +517,276 @@
     <value>Grant access to delete user groups</value>
   </data>
   <data name="GIZMO_POLICY_USER_GROUP_DELETE_NAME" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOSTS_DESCRIPTION" xml:space="preserve">
+    <value>Policies for host management.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOSTS_NAME" xml:space="preserve">
+    <value>Hosts</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to hosts</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to create hosts</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_CREATE_NAME" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to edit hosts</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_EDIT_NAME" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to delete hosts</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_DELETE_NAME" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>Policies for host group management.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_GROUPS_NAME" xml:space="preserve">
+    <value>Host groups</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to host groups</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to create host groups</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_CREATE_NAME" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to edit host groups</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_EDIT_NAME" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to delete host groups</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_DELETE_NAME" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CONTROLLERS_DESCRIPTION" xml:space="preserve">
+    <value>Policies for controller management.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CONTROLLERS_NAME" xml:space="preserve">
+    <value>Controllers</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to controllers</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to create controllers</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_CREATE_NAME" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to edit controllers</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_EDIT_NAME" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to delete controllers</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_DELETE_NAME" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SECURITY_PROFILES_DESCRIPTION" xml:space="preserve">
+    <value>Policies for security profile management.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SECURITY_PROFILES_NAME" xml:space="preserve">
+    <value>Security profiles</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to security profiles</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to create security profiles</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_CREATE_NAME" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to edit security profiles</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_EDIT_NAME" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to delete security profiles</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_DELETE_NAME" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_ASSETS_DESCRIPTION" xml:space="preserve">
+    <value>Policies for asset management.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_ASSETS_NAME" xml:space="preserve">
+    <value>Assets</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to assets</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to create assets</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_CREATE_NAME" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to edit assets</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_EDIT_NAME" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to delete assets</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_DELETE_NAME" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>Policies for task management.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_TASKS_NAME" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to tasks</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to create tasks</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_CREATE_NAME" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to edit tasks</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_EDIT_NAME" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to delete tasks</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_DELETE_NAME" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CLIENT_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>Policies for client task management.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CLIENT_TASKS_NAME" xml:space="preserve">
+    <value>Client tasks</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to client tasks</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to create client tasks</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_CREATE_NAME" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to edit client tasks</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_EDIT_NAME" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to delete client tasks</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_DELETE_NAME" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCTS_DESCRIPTION" xml:space="preserve">
+    <value>Policies for product management.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCTS_NAME" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to products</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to create products</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_CREATE_NAME" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to edit products</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_EDIT_NAME" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to delete products</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_DELETE_NAME" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCT_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>Policies for product group management.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCT_GROUPS_NAME" xml:space="preserve">
+    <value>Product groups</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to product groups</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to create product groups</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_CREATE_NAME" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to edit product groups</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_EDIT_NAME" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to delete product groups</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_DELETE_NAME" xml:space="preserve">
     <value>Delete</value>
   </data>
   <data name="GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_DESCRIPTION" xml:space="preserve">

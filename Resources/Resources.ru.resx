@@ -341,12 +341,6 @@
   <data name="GIZMO_POLICY_MANAGEMENT_DESCRIPTION" xml:space="preserve"> 
     <value>Предоставляет доступ к функции управления, позволяющей пользователю выполнять административные задачи.</value> 
   </data> 
-  <data name="GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_DESCRIPTION" xml:space="preserve"> 
-    <value>Предоставляет доступ к редактированию макетов</value> 
-  </data> 
-  <data name="GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_NAME" xml:space="preserve"> 
-    <value>Редактировать макеты</value> 
-  </data> 
   <data name="GIZMO_POLICY_MANAGEMENT_FILES_DESCRIPTION" xml:space="preserve"> 
     <value>Предоставляет доступ к функции файлов хоста клиента, позволяющей пользователю управлять файлами хоста и взаимодействовать с ними.</value> 
   </data> 

@@ -95,5 +95,55 @@ namespace Gizmo.Server.Security
         [Name("", nameof(Resources.GIZMO_POLICY_GROUP_USER_GROUP_NAME))]
         [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_USER_GROUP_DESCRIPTION))]
         UserGroup,
+
+        [PolicyGroup(GizmoPolicies.HostLayout)]
+        [Name("", nameof(Resources.GIZMO_POLICY_GROUP_HOST_LAYOUT_NAME))]
+        [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_HOST_LAYOUT_DESCRIPTION))]
+        HostLayout,
+
+        [PolicyGroup(GizmoPolicies.Hosts)]
+        [Name("", nameof(Resources.GIZMO_POLICY_GROUP_HOSTS_NAME))]
+        [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_HOSTS_DESCRIPTION))]
+        Hosts,
+
+        [PolicyGroup(GizmoPolicies.HostGroups)]
+        [Name("", nameof(Resources.GIZMO_POLICY_GROUP_HOST_GROUPS_NAME))]
+        [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_HOST_GROUPS_DESCRIPTION))]
+        HostGroups,
+
+        [PolicyGroup(GizmoPolicies.Controllers)]
+        [Name("", nameof(Resources.GIZMO_POLICY_GROUP_CONTROLLERS_NAME))]
+        [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_CONTROLLERS_DESCRIPTION))]
+        Controllers,
+
+        [PolicyGroup(GizmoPolicies.SecurityProfiles)]
+        [Name("", nameof(Resources.GIZMO_POLICY_GROUP_SECURITY_PROFILES_NAME))]
+        [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_SECURITY_PROFILES_DESCRIPTION))]
+        SecurityProfiles,
+
+        [PolicyGroup(GizmoPolicies.Assets)]
+        [Name("", nameof(Resources.GIZMO_POLICY_GROUP_ASSETS_NAME))]
+        [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_ASSETS_DESCRIPTION))]
+        Assets,
+
+        [PolicyGroup(GizmoPolicies.Tasks)]
+        [Name("", nameof(Resources.GIZMO_POLICY_GROUP_TASKS_NAME))]
+        [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_TASKS_DESCRIPTION))]
+        Tasks,
+
+        [PolicyGroup(GizmoPolicies.ClientTasks)]
+        [Name("", nameof(Resources.GIZMO_POLICY_GROUP_CLIENT_TASKS_NAME))]
+        [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_CLIENT_TASKS_DESCRIPTION))]
+        ClientTasks,
+
+        [PolicyGroup(GizmoPolicies.Products)]
+        [Name("", nameof(Resources.GIZMO_POLICY_GROUP_PRODUCTS_NAME))]
+        [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_PRODUCTS_DESCRIPTION))]
+        Products,
+
+        [PolicyGroup(GizmoPolicies.ProductGroups)]
+        [Name("", nameof(Resources.GIZMO_POLICY_GROUP_PRODUCT_GROUPS_NAME))]
+        [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_PRODUCT_GROUPS_DESCRIPTION))]
+        ProductGroups,
     }
 }

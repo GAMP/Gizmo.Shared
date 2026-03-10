@@ -333,12 +333,6 @@
   <data name="GIZMO_POLICY_MANAGEMENT_DESCRIPTION" xml:space="preserve"> 
     <value>Παρέχει πρόσβαση στη λειτουργία διαχείρισης, επιτρέποντας στον χρήστη να εκτελεί διοικητικές εργασίες.</value> 
   </data> 
-  <data name="GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_DESCRIPTION" xml:space="preserve"> 
-    <value>Παρέχει πρόσβαση για την επεξεργασία διατάξεων</value> 
-  </data> 
-  <data name="GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_NAME" xml:space="preserve"> 
-    <value>Επεξεργασία διατάξεων</value> 
-  </data> 
   <data name="GIZMO_POLICY_MANAGEMENT_FILES_DESCRIPTION" xml:space="preserve"> 
     <value>Παρέχει πρόσβαση στη λειτουργία αρχείων κεντρικού υπολογιστή πελάτη, επιτρέποντας στον χρήστη να διαχειρίζεται και να αλληλεπιδρά με αρχεία κεντρικού υπολογιστή.</value> 
   </data> 

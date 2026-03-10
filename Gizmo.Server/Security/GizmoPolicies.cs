@@ -348,13 +348,6 @@ namespace Gizmo.Server.Security
             [GizmoPolicySet.Technician, GizmoPolicySet.Owner])]
         ManagePowerOnEndpoints,
 
-        /// <summary>
-        /// Management edit layouts permission.
-        /// </summary>
-        [PolicyDescription("Management", "EditLayouts", GizmoPolicyGroups.Management, nameof(Resources.GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_NAME), nameof(Resources.GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_DESCRIPTION),
-            [GizmoPolicySet.Cashier, GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
-        ManageEditLayouts,
-
         #endregion
 
         /// <summary>
@@ -590,6 +583,178 @@ namespace Gizmo.Server.Security
         /// </summary>
         [PolicyDescription("UserGroup", "Delete", GizmoPolicyGroups.UserGroup, [UserGroup], nameof(Resources.GIZMO_POLICY_USER_GROUP_DELETE_NAME), nameof(Resources.GIZMO_POLICY_USER_GROUP_DELETE_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
         UserGroupDelete,
+
+        #endregion
+
+        #region HOST LAYOUT
+
+        /// <summary>
+        /// Host layout access permission.
+        /// </summary>
+        [PolicyDescription("HostLayout", "*", GizmoPolicyGroups.HostLayout, nameof(Resources.GIZMO_POLICY_HOST_LAYOUT_NAME), nameof(Resources.GIZMO_POLICY_HOST_LAYOUT_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        HostLayout,
+
+        /// <summary>
+        /// Host layout create permission.
+        /// </summary>
+        [PolicyDescription("HostLayout", "Create", GizmoPolicyGroups.HostLayout, [HostLayout], nameof(Resources.GIZMO_POLICY_HOST_LAYOUT_CREATE_NAME), nameof(Resources.GIZMO_POLICY_HOST_LAYOUT_CREATE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        HostLayoutCreate,
+
+        /// <summary>
+        /// Host layout edit permission.
+        /// </summary>
+        [PolicyDescription("HostLayout", "Edit", GizmoPolicyGroups.HostLayout, [HostLayout], nameof(Resources.GIZMO_POLICY_HOST_LAYOUT_EDIT_NAME), nameof(Resources.GIZMO_POLICY_HOST_LAYOUT_EDIT_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        HostLayoutEdit,
+
+        /// <summary>
+        /// Host layout delete permission.
+        /// </summary>
+        [PolicyDescription("HostLayout", "Delete", GizmoPolicyGroups.HostLayout, [HostLayout], nameof(Resources.GIZMO_POLICY_HOST_LAYOUT_DELETE_NAME), nameof(Resources.GIZMO_POLICY_HOST_LAYOUT_DELETE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        HostLayoutDelete,
+
+        #endregion
+
+        #region HOSTS
+
+        [PolicyDescription("Hosts", "*", GizmoPolicyGroups.Hosts, nameof(Resources.GIZMO_POLICY_HOSTS_NAME), nameof(Resources.GIZMO_POLICY_HOSTS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        Hosts,
+
+        [PolicyDescription("Hosts", "Create", GizmoPolicyGroups.Hosts, [Hosts], nameof(Resources.GIZMO_POLICY_HOSTS_CREATE_NAME), nameof(Resources.GIZMO_POLICY_HOSTS_CREATE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        HostsCreate,
+
+        [PolicyDescription("Hosts", "Edit", GizmoPolicyGroups.Hosts, [Hosts], nameof(Resources.GIZMO_POLICY_HOSTS_EDIT_NAME), nameof(Resources.GIZMO_POLICY_HOSTS_EDIT_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        HostsEdit,
+
+        [PolicyDescription("Hosts", "Delete", GizmoPolicyGroups.Hosts, [Hosts], nameof(Resources.GIZMO_POLICY_HOSTS_DELETE_NAME), nameof(Resources.GIZMO_POLICY_HOSTS_DELETE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        HostsDelete,
+
+        #endregion
+
+        #region HOST GROUPS
+
+        [PolicyDescription("HostGroups", "*", GizmoPolicyGroups.HostGroups, nameof(Resources.GIZMO_POLICY_HOST_GROUPS_NAME), nameof(Resources.GIZMO_POLICY_HOST_GROUPS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        HostGroups,
+
+        [PolicyDescription("HostGroups", "Create", GizmoPolicyGroups.HostGroups, [HostGroups], nameof(Resources.GIZMO_POLICY_HOST_GROUPS_CREATE_NAME), nameof(Resources.GIZMO_POLICY_HOST_GROUPS_CREATE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        HostGroupsCreate,
+
+        [PolicyDescription("HostGroups", "Edit", GizmoPolicyGroups.HostGroups, [HostGroups], nameof(Resources.GIZMO_POLICY_HOST_GROUPS_EDIT_NAME), nameof(Resources.GIZMO_POLICY_HOST_GROUPS_EDIT_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        HostGroupsEdit,
+
+        [PolicyDescription("HostGroups", "Delete", GizmoPolicyGroups.HostGroups, [HostGroups], nameof(Resources.GIZMO_POLICY_HOST_GROUPS_DELETE_NAME), nameof(Resources.GIZMO_POLICY_HOST_GROUPS_DELETE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        HostGroupsDelete,
+
+        #endregion
+
+        #region CONTROLLERS
+
+        [PolicyDescription("Controllers", "*", GizmoPolicyGroups.Controllers, nameof(Resources.GIZMO_POLICY_CONTROLLERS_NAME), nameof(Resources.GIZMO_POLICY_CONTROLLERS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        Controllers,
+
+        [PolicyDescription("Controllers", "Create", GizmoPolicyGroups.Controllers, [Controllers], nameof(Resources.GIZMO_POLICY_CONTROLLERS_CREATE_NAME), nameof(Resources.GIZMO_POLICY_CONTROLLERS_CREATE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ControllersCreate,
+
+        [PolicyDescription("Controllers", "Edit", GizmoPolicyGroups.Controllers, [Controllers], nameof(Resources.GIZMO_POLICY_CONTROLLERS_EDIT_NAME), nameof(Resources.GIZMO_POLICY_CONTROLLERS_EDIT_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ControllersEdit,
+
+        [PolicyDescription("Controllers", "Delete", GizmoPolicyGroups.Controllers, [Controllers], nameof(Resources.GIZMO_POLICY_CONTROLLERS_DELETE_NAME), nameof(Resources.GIZMO_POLICY_CONTROLLERS_DELETE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ControllersDelete,
+
+        #endregion
+
+        #region SECURITY PROFILES
+
+        [PolicyDescription("SecurityProfiles", "*", GizmoPolicyGroups.SecurityProfiles, nameof(Resources.GIZMO_POLICY_SECURITY_PROFILES_NAME), nameof(Resources.GIZMO_POLICY_SECURITY_PROFILES_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        SecurityProfiles,
+
+        [PolicyDescription("SecurityProfiles", "Create", GizmoPolicyGroups.SecurityProfiles, [SecurityProfiles], nameof(Resources.GIZMO_POLICY_SECURITY_PROFILES_CREATE_NAME), nameof(Resources.GIZMO_POLICY_SECURITY_PROFILES_CREATE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        SecurityProfilesCreate,
+
+        [PolicyDescription("SecurityProfiles", "Edit", GizmoPolicyGroups.SecurityProfiles, [SecurityProfiles], nameof(Resources.GIZMO_POLICY_SECURITY_PROFILES_EDIT_NAME), nameof(Resources.GIZMO_POLICY_SECURITY_PROFILES_EDIT_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        SecurityProfilesEdit,
+
+        [PolicyDescription("SecurityProfiles", "Delete", GizmoPolicyGroups.SecurityProfiles, [SecurityProfiles], nameof(Resources.GIZMO_POLICY_SECURITY_PROFILES_DELETE_NAME), nameof(Resources.GIZMO_POLICY_SECURITY_PROFILES_DELETE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        SecurityProfilesDelete,
+
+        #endregion
+
+        #region ASSETS
+
+        [PolicyDescription("Assets", "*", GizmoPolicyGroups.Assets, nameof(Resources.GIZMO_POLICY_ASSETS_NAME), nameof(Resources.GIZMO_POLICY_ASSETS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        Assets,
+
+        [PolicyDescription("Assets", "Create", GizmoPolicyGroups.Assets, [Assets], nameof(Resources.GIZMO_POLICY_ASSETS_CREATE_NAME), nameof(Resources.GIZMO_POLICY_ASSETS_CREATE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        AssetsCreate,
+
+        [PolicyDescription("Assets", "Edit", GizmoPolicyGroups.Assets, [Assets], nameof(Resources.GIZMO_POLICY_ASSETS_EDIT_NAME), nameof(Resources.GIZMO_POLICY_ASSETS_EDIT_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        AssetsEdit,
+
+        [PolicyDescription("Assets", "Delete", GizmoPolicyGroups.Assets, [Assets], nameof(Resources.GIZMO_POLICY_ASSETS_DELETE_NAME), nameof(Resources.GIZMO_POLICY_ASSETS_DELETE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        AssetsDelete,
+
+        #endregion
+
+        #region TASKS
+
+        [PolicyDescription("Tasks", "*", GizmoPolicyGroups.Tasks, nameof(Resources.GIZMO_POLICY_TASKS_NAME), nameof(Resources.GIZMO_POLICY_TASKS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        Tasks,
+
+        [PolicyDescription("Tasks", "Create", GizmoPolicyGroups.Tasks, [Tasks], nameof(Resources.GIZMO_POLICY_TASKS_CREATE_NAME), nameof(Resources.GIZMO_POLICY_TASKS_CREATE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        TasksCreate,
+
+        [PolicyDescription("Tasks", "Edit", GizmoPolicyGroups.Tasks, [Tasks], nameof(Resources.GIZMO_POLICY_TASKS_EDIT_NAME), nameof(Resources.GIZMO_POLICY_TASKS_EDIT_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        TasksEdit,
+
+        [PolicyDescription("Tasks", "Delete", GizmoPolicyGroups.Tasks, [Tasks], nameof(Resources.GIZMO_POLICY_TASKS_DELETE_NAME), nameof(Resources.GIZMO_POLICY_TASKS_DELETE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        TasksDelete,
+
+        #endregion
+
+        #region CLIENT TASKS
+
+        [PolicyDescription("ClientTasks", "*", GizmoPolicyGroups.ClientTasks, nameof(Resources.GIZMO_POLICY_CLIENT_TASKS_NAME), nameof(Resources.GIZMO_POLICY_CLIENT_TASKS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ClientTasks,
+
+        [PolicyDescription("ClientTasks", "Create", GizmoPolicyGroups.ClientTasks, [ClientTasks], nameof(Resources.GIZMO_POLICY_CLIENT_TASKS_CREATE_NAME), nameof(Resources.GIZMO_POLICY_CLIENT_TASKS_CREATE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ClientTasksCreate,
+
+        [PolicyDescription("ClientTasks", "Edit", GizmoPolicyGroups.ClientTasks, [ClientTasks], nameof(Resources.GIZMO_POLICY_CLIENT_TASKS_EDIT_NAME), nameof(Resources.GIZMO_POLICY_CLIENT_TASKS_EDIT_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ClientTasksEdit,
+
+        [PolicyDescription("ClientTasks", "Delete", GizmoPolicyGroups.ClientTasks, [ClientTasks], nameof(Resources.GIZMO_POLICY_CLIENT_TASKS_DELETE_NAME), nameof(Resources.GIZMO_POLICY_CLIENT_TASKS_DELETE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ClientTasksDelete,
+
+        #endregion
+
+        #region PRODUCTS
+
+        [PolicyDescription("Products", "*", GizmoPolicyGroups.Products, nameof(Resources.GIZMO_POLICY_PRODUCTS_NAME), nameof(Resources.GIZMO_POLICY_PRODUCTS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        Products,
+
+        [PolicyDescription("Products", "Create", GizmoPolicyGroups.Products, [Products], nameof(Resources.GIZMO_POLICY_PRODUCTS_CREATE_NAME), nameof(Resources.GIZMO_POLICY_PRODUCTS_CREATE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ProductsCreate,
+
+        [PolicyDescription("Products", "Edit", GizmoPolicyGroups.Products, [Products], nameof(Resources.GIZMO_POLICY_PRODUCTS_EDIT_NAME), nameof(Resources.GIZMO_POLICY_PRODUCTS_EDIT_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ProductsEdit,
+
+        [PolicyDescription("Products", "Delete", GizmoPolicyGroups.Products, [Products], nameof(Resources.GIZMO_POLICY_PRODUCTS_DELETE_NAME), nameof(Resources.GIZMO_POLICY_PRODUCTS_DELETE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ProductsDelete,
+
+        #endregion
+
+        #region PRODUCT GROUPS
+
+        [PolicyDescription("ProductGroups", "*", GizmoPolicyGroups.ProductGroups, nameof(Resources.GIZMO_POLICY_PRODUCT_GROUPS_NAME), nameof(Resources.GIZMO_POLICY_PRODUCT_GROUPS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ProductGroups,
+
+        [PolicyDescription("ProductGroups", "Create", GizmoPolicyGroups.ProductGroups, [ProductGroups], nameof(Resources.GIZMO_POLICY_PRODUCT_GROUPS_CREATE_NAME), nameof(Resources.GIZMO_POLICY_PRODUCT_GROUPS_CREATE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ProductGroupsCreate,
+
+        [PolicyDescription("ProductGroups", "Edit", GizmoPolicyGroups.ProductGroups, [ProductGroups], nameof(Resources.GIZMO_POLICY_PRODUCT_GROUPS_EDIT_NAME), nameof(Resources.GIZMO_POLICY_PRODUCT_GROUPS_EDIT_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ProductGroupsEdit,
+
+        [PolicyDescription("ProductGroups", "Delete", GizmoPolicyGroups.ProductGroups, [ProductGroups], nameof(Resources.GIZMO_POLICY_PRODUCT_GROUPS_DELETE_NAME), nameof(Resources.GIZMO_POLICY_PRODUCT_GROUPS_DELETE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ProductGroupsDelete,
 
         #endregion
     }
