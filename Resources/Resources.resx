@@ -393,6 +393,18 @@
   <data name="GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_NAME" xml:space="preserve">
     <value>Turn on endpoints</value>
   </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to remotely control endpoints enabling the user to interact with client screens</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_NAME" xml:space="preserve">
+    <value>Remote control</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_VIEW_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to view remote endpoint screens enabling the user to monitor client activity</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_VIEW_NAME" xml:space="preserve">
+    <value>Remote control view</value>
+  </data>
   <data name="GIZMO_POLICY_MONITORING_DESCRIPTION" xml:space="preserve">
     <value>Grants access to the screen monitoring feature enabling the user to view and monitor client screens</value>
   </data>
