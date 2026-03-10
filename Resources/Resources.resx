@@ -291,11 +291,11 @@
   <data name="GIZMO_POLICY_GROUP_SALES_NAME" xml:space="preserve">
     <value>Sales</value>
   </data>
-  <data name="GIZMO_POLICY_GROUP_SERVER_SETTINGS_DESCRIPTION" xml:space="preserve">
-    <value>Policies related to server configuration and settings.</value>
+  <data name="GIZMO_POLICY_GROUP_SETTINGS_DESCRIPTION" xml:space="preserve">
+    <value>Policies for settings management.</value>
   </data>
-  <data name="GIZMO_POLICY_GROUP_SERVER_SETTINGS_NAME" xml:space="preserve">
-    <value>Server Settings</value>
+  <data name="GIZMO_POLICY_GROUP_SETTINGS_NAME" xml:space="preserve">
+    <value>Settings</value>
   </data>
   <data name="GIZMO_POLICY_GROUP_SHIFT_DESCRIPTION" xml:space="preserve">
     <value>Policies governing shifts and sales operations during shifts.</value>

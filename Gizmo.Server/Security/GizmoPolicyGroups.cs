@@ -40,10 +40,10 @@ namespace Gizmo.Server.Security
         [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_REPORTS_DESCRIPTION))]
         Reports,
 
-        [PolicyGroup()]
-        [Name("", nameof(Resources.GIZMO_POLICY_GROUP_SERVER_SETTINGS_NAME))]
-        [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_SERVER_SETTINGS_DESCRIPTION))]
-        ServerSettings,
+        [PolicyGroup(GizmoPolicies.Settings)]
+        [Name("", nameof(Resources.GIZMO_POLICY_GROUP_SETTINGS_NAME))]
+        [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_SETTINGS_DESCRIPTION))]
+        Settings,
 
         [PolicyGroup(GizmoPolicies.Applications)]
         [Name("", nameof(Resources.GIZMO_POLICY_GROUP_APPLICATIONS_NAME))]

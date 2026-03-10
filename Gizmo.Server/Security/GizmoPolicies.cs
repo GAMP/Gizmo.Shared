@@ -373,8 +373,8 @@ namespace Gizmo.Server.Security
         /// <summary>
         /// Server settings permission.
         /// </summary>
-        [PolicyDescription("Settings", "*", GizmoPolicyGroups.ServerSettings, nameof(Resources.GIZMO_POLICY_SETTINGS_NAME), nameof(Resources.GIZMO_POLICY_SETTINGS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
-        ServerSettings,
+        [PolicyDescription("Settings", "*", GizmoPolicyGroups.Settings, nameof(Resources.GIZMO_POLICY_SETTINGS_NAME), nameof(Resources.GIZMO_POLICY_SETTINGS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        Settings,
 
         /// <summary>
         /// Applications permission.
@@ -540,6 +540,8 @@ namespace Gizmo.Server.Security
         WebApi,
         #endregion
 
+        #region RESERVATIONS
+        
         [PolicyDescription("Reservations", "*", GizmoPolicyGroups.Reservations, nameof(Resources.GIZMO_POLICY_RESERVATIONS_NAME), nameof(Resources.GIZMO_POLICY_RESERVATIONS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
 
         Reservations,
@@ -556,7 +558,9 @@ namespace Gizmo.Server.Security
         /// Reservations for guests permission.
         /// </summary>
         [PolicyDescription("Reservations", "ForGuests", GizmoPolicyGroups.Reservations, [Reservations, ReservationsCreate], nameof(Resources.GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_NAME), nameof(Resources.GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
-        ReservationsForGuests,
+        ReservationsForGuests, 
+
+        #endregion
 
         #region USER GROUP
 
