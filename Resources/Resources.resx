@@ -429,6 +429,12 @@
   <data name="GIZMO_POLICY_RESERVATIONS_NAME" xml:space="preserve">
     <value>Access</value>
   </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to create reservations</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_CREATE_NAME" xml:space="preserve">
+    <value>Create</value>
+  </data>
   <data name="GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_DESCRIPTION" xml:space="preserve">
     <value>Grant access to create reservations without payments</value>
   </data>

@@ -542,14 +542,18 @@ namespace Gizmo.Server.Security
 
         Reservations,
 
-        [PolicyDescription("Reservations", "ReservationsWithoutPayment", GizmoPolicyGroups.Reservations, [Reservations], nameof(Resources.GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_NAME), nameof(Resources.GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        [PolicyDescription("Reservations", "Create", GizmoPolicyGroups.Reservations, [Reservations], nameof(Resources.GIZMO_POLICY_RESERVATIONS_CREATE_NAME), nameof(Resources.GIZMO_POLICY_RESERVATIONS_CREATE_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+
+        ReservationsCreate,
+
+        [PolicyDescription("Reservations", "ReservationsWithoutPayment", GizmoPolicyGroups.Reservations, [Reservations, ReservationsCreate], nameof(Resources.GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_NAME), nameof(Resources.GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
 
         ReservationsWithoutPayment,
 
         /// <summary>
         /// Reservations for guests permission.
         /// </summary>
-        [PolicyDescription("Reservations", "ForGuests", GizmoPolicyGroups.Reservations, [Reservations], nameof(Resources.GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_NAME), nameof(Resources.GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        [PolicyDescription("Reservations", "ForGuests", GizmoPolicyGroups.Reservations, [Reservations, ReservationsCreate], nameof(Resources.GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_NAME), nameof(Resources.GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
         ReservationsForGuests,
 
         #region USER GROUP
