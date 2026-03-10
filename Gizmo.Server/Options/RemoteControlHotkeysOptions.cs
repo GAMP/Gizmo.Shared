@@ -3,15 +3,15 @@ using Microsoft.Extensions.Options;
 
 namespace Gizmo.Server.Options
 {
-    [OptionsConfigurationSection("RemoteControl:Hotkeys")]
-    [StoreOptionsGroup("REMOTE_CONTROL_HOTKEYS")]
+    [OptionsConfigurationSection("RemoteControl")]
+    [StoreOptionsGroup("REMOTE_CONTROL")]
     [MessagePack.MessagePackObject]
     public sealed class RemoteControlHotkeysOptions : IStoreOptions
     {
         [Name("Viewer hotkey definitions")]
         [ExtendedDescription("JSON object of hotkey-to-label pairs.")]
-        [StoreOptionKey("DEFINITIONS")]
+        [StoreOptionKey("HOTKEYS")]
         [MessagePack.Key(0)]
-        public string? Definitions { get; init; }
+        public string? Hotkeys { get; init; }
     }
 }
