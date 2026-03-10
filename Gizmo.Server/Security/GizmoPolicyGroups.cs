@@ -90,5 +90,10 @@ namespace Gizmo.Server.Security
         [Name("", nameof(Resources.GIZMO_POLICY_GROUP_RESERVATONS_NAME))]
         [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_RESERVATIONS_DESCRIPTION))]
         Reservations,
+
+        [PolicyGroup(GizmoPolicies.UserGroup)]
+        [Name("", nameof(Resources.GIZMO_POLICY_GROUP_USER_GROUP_NAME))]
+        [ExtendedDescription("", nameof(Resources.GIZMO_POLICY_GROUP_USER_GROUP_DESCRIPTION))]
+        UserGroup,
     }
 }

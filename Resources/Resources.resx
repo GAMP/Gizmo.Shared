@@ -441,6 +441,36 @@
   <data name="GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_NAME" xml:space="preserve">
     <value>Create reservations for guests</value>
   </data>
+  <data name="GIZMO_POLICY_GROUP_USER_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Policies for user group management.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_USER_GROUP_NAME" xml:space="preserve">
+    <value>User group</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to user groups</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_NAME" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to create user groups</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_CREATE_NAME" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to edit user groups</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_EDIT_NAME" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Grant access to delete user groups</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_DELETE_NAME" xml:space="preserve">
+    <value>Delete</value>
+  </data>
   <data name="GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_DESCRIPTION" xml:space="preserve">
     <value>Allow time credit</value>
   </data>

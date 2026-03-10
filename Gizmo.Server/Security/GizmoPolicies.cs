@@ -551,5 +551,33 @@ namespace Gizmo.Server.Security
         /// </summary>
         [PolicyDescription("Reservations", "ForGuests", GizmoPolicyGroups.Reservations, [Reservations], nameof(Resources.GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_NAME), nameof(Resources.GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
         ReservationsForGuests,
+
+        #region USER GROUP
+
+        /// <summary>
+        /// User group access permission.
+        /// </summary>
+        [PolicyDescription("UserGroup", "*", GizmoPolicyGroups.UserGroup, nameof(Resources.GIZMO_POLICY_USER_GROUP_NAME), nameof(Resources.GIZMO_POLICY_USER_GROUP_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        UserGroup,
+
+        /// <summary>
+        /// User group create permission.
+        /// </summary>
+        [PolicyDescription("UserGroup", "Create", GizmoPolicyGroups.UserGroup, [UserGroup], nameof(Resources.GIZMO_POLICY_USER_GROUP_CREATE_NAME), nameof(Resources.GIZMO_POLICY_USER_GROUP_CREATE_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        UserGroupCreate,
+
+        /// <summary>
+        /// User group edit permission.
+        /// </summary>
+        [PolicyDescription("UserGroup", "Edit", GizmoPolicyGroups.UserGroup, [UserGroup], nameof(Resources.GIZMO_POLICY_USER_GROUP_EDIT_NAME), nameof(Resources.GIZMO_POLICY_USER_GROUP_EDIT_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        UserGroupEdit,
+
+        /// <summary>
+        /// User group delete permission.
+        /// </summary>
+        [PolicyDescription("UserGroup", "Delete", GizmoPolicyGroups.UserGroup, [UserGroup], nameof(Resources.GIZMO_POLICY_USER_GROUP_DELETE_NAME), nameof(Resources.GIZMO_POLICY_USER_GROUP_DELETE_DESCRIPTION), [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        UserGroupDelete,
+
+        #endregion
     }
 }
