@@ -441,6 +441,12 @@ namespace Gizmo.Server.Security
         #region USER
 
         /// <summary>
+        /// List users permission.
+        /// </summary>
+        [PolicyDescription("User", "List", GizmoPolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_LIST_NAME), nameof(Resources.GIZMO_POLICY_USER_LIST_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        UserList,
+
+        /// <summary>
         /// Reset user password permission.
         /// </summary>
         [PolicyDescription("User", "UserPasswordReset", GizmoPolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_PASSWORD_RESET_NAME), nameof(Resources.GIZMO_POLICY_USER_PASSWORD_RESET_DESCRIPTION), [GizmoPolicySet.Technician, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]

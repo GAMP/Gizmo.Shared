@@ -1014,6 +1014,12 @@
   <data name="GIZMO_POLICY_USER_CREATE_NAME" xml:space="preserve">
     <value>Create</value>
   </data>
+  <data name="GIZMO_POLICY_USER_LIST_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to view the users list page</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_LIST_NAME" xml:space="preserve">
+    <value>List</value>
+  </data>
   <data name="GIZMO_POLICY_USER_DELETE_DESCRIPTION" xml:space="preserve">
     <value>Grants access to delete users enabling the user to remove user accounts from the system</value>
   </data>
