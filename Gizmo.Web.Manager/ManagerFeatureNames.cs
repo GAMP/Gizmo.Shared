@@ -11,11 +11,6 @@
         public const string SalesModule = nameof(SalesModule);
 
         /// <summary>
-        /// Users module.
-        /// </summary>
-        public const string UsersModule = nameof(UsersModule);
-
-        /// <summary>
         /// Reservations module.
         /// </summary>
         public const string ReservationsModule = nameof(ReservationsModule);

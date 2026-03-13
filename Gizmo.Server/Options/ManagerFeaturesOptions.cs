@@ -25,12 +25,5 @@ namespace Gizmo.Server.Options
         [StoreOptionKey("RESERVATIONS_MODULE")]
         [MessagePack.Key(1)]
         public bool ReservationsModule { get; init; }
-
-        [Name("Users module", "SERVER_OPTION_MANAGER_FEATURES_USERS_MODULE_NAME")]
-        [ExtendedDescription("Enable users module", "SERVER_OPTION_MANAGER_FEATURES_USERS_MODULE_DESCRIPTION")]
-        [DefaultValue(true)]
-        [StoreOptionKey("USERS_MODULE")]
-        [MessagePack.Key(2)]
-        public bool UsersModule { get; init; }
     }
 }
