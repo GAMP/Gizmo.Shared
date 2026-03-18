@@ -5,7 +5,7 @@
   Project: Gizmo.Shared
   Locale: el, Greek
   Exported by: Oleg Savelos
-  Exported at: Mon, 02 Mar 2026 16:58:38 +0200 
+  Exported at: Tue, 17 Mar 2026 17:55:09 +0200 
   --> 
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -332,6 +332,12 @@
   </data> 
   <data name="GIZMO_POLICY_MANAGEMENT_DESCRIPTION" xml:space="preserve"> 
     <value>Παρέχει πρόσβαση στη λειτουργία διαχείρισης, επιτρέποντας στον χρήστη να εκτελεί διοικητικές εργασίες.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την επεξεργασία διατάξεων</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_NAME" xml:space="preserve"> 
+    <value>Επεξεργασία διατάξεων</value> 
   </data> 
   <data name="GIZMO_POLICY_MANAGEMENT_FILES_DESCRIPTION" xml:space="preserve"> 
     <value>Παρέχει πρόσβαση στη λειτουργία αρχείων κεντρικού υπολογιστή πελάτη, επιτρέποντας στον χρήστη να διαχειρίζεται και να αλληλεπιδρά με αρχεία κεντρικού υπολογιστή.</value> 

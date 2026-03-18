@@ -5,7 +5,7 @@
   Project: Gizmo.Shared
   Locale: tr, Turkish
   Exported by: Oleg Savelos
-  Exported at: Mon, 02 Mar 2026 16:58:38 +0200 
+  Exported at: Tue, 17 Mar 2026 17:55:09 +0200 
   --> 
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -340,6 +340,12 @@
   </data> 
   <data name="GIZMO_POLICY_MANAGEMENT_DESCRIPTION" xml:space="preserve"> 
     <value>Yönetim özelliğine erişim sağlar, kullanıcının yönetici görevlerini gerçekleştirmesine olanak tanır</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_DESCRIPTION" xml:space="preserve"> 
+    <value>Düzenleri düzenleme erişimi sağlar</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_EDIT_LAYOUT_NAME" xml:space="preserve"> 
+    <value>Düzenleri düzenle</value> 
   </data> 
   <data name="GIZMO_POLICY_MANAGEMENT_FILES_DESCRIPTION" xml:space="preserve"> 
     <value>İstemci bilgisayar dosyaları özelliğine erişim sağlar, kullanıcının bilgisayar dosyalarını yönetmesine ve etkileşime geçmesine olanak tanır</value> 
