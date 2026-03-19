@@ -27,5 +27,11 @@ namespace Gizmo.Extensibility
         /// </summary>
         /// <seealso cref="Gizmo.Server.Extensibility.ISessionBillingHandler"/>
         public static readonly Guid SessionBilling = Guid.Parse("A1B2C3D4-1001-4000-8000-000000000003");
+
+        /// <summary>
+        /// The integration can handle messenger-based verification.
+        /// </summary>
+        /// <seealso cref="Gizmo.Server.Extensibility.IMessengerVerificationHandler"/>
+        public static readonly Guid MessengerVerification = Guid.Parse("A1B2C3D4-1001-4000-8000-000000000004");
     }
 }
