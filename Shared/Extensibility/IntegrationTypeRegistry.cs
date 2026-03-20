@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Gizmo.Extensibility
 {
@@ -11,6 +12,7 @@ namespace Gizmo.Extensibility
     public sealed class IntegrationTypeRegistry
     {
         private readonly List<IntegrationTypeEntry> _entries = new();
+        private readonly List<IntegrationInstanceEntry> _instances = new();
 
         /// <summary>
         /// All discovered integration types.
@@ -18,11 +20,37 @@ namespace Gizmo.Extensibility
         public IReadOnlyList<IntegrationTypeEntry> Entries => _entries;
 
         /// <summary>
+        /// All discovered integration instances.
+        /// </summary>
+        public IReadOnlyList<IntegrationInstanceEntry> Instances => _instances;
+
+        /// <summary>
         /// Adds a discovered integration type to the registry.
         /// </summary>
         internal void Add(Guid typeGuid, string name, Type implementationType, IReadOnlyList<Guid> capabilities)
         {
             _entries.Add(new IntegrationTypeEntry(typeGuid, name, implementationType, capabilities));
+        }
+
+        /// <summary>
+        /// Adds a discovered integration instance to the registry.
+        /// </summary>
+        internal void AddInstance(Guid typeGuid, Guid publicId, Type implementationType)
+        {
+            _instances.Add(new IntegrationInstanceEntry(typeGuid, publicId, implementationType));
+        }
+
+        /// <summary>
+        /// Finds the first instance whose type has the specified capability.
+        /// </summary>
+        public IntegrationInstanceEntry? FindInstanceByCapability(Guid capabilityGuid)
+        {
+            var typeGuids = _entries
+                .Where(e => e.Capabilities.Contains(capabilityGuid))
+                .Select(e => e.TypeGuid)
+                .ToHashSet();
+
+            return _instances.FirstOrDefault(i => typeGuids.Contains(i.TypeGuid));
         }
     }
 
@@ -38,4 +66,15 @@ namespace Gizmo.Extensibility
         string Name,
         Type ImplementationType,
         IReadOnlyList<Guid> Capabilities);
+
+    /// <summary>
+    /// Describes a single integration instance (a configured installation of an integration type).
+    /// </summary>
+    /// <param name="TypeGuid">The type this instance belongs to.</param>
+    /// <param name="PublicId">The unique instance identifier used as the DI keyed-service key.</param>
+    /// <param name="ImplementationType">The CLR implementation type.</param>
+    public sealed record IntegrationInstanceEntry(
+        Guid TypeGuid,
+        Guid PublicId,
+        Type ImplementationType);
 }

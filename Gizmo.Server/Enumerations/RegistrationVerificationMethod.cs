@@ -27,5 +27,11 @@ namespace Gizmo.Server
         /// </summary>
         [Name("Mobile Phone", nameof(Resources.REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE_NAME))]
         MobilePhone = 2,
+
+        /// <summary>
+        /// Messenger verification.
+        /// </summary>
+        [Name("Messenger", nameof(Resources.REGISTRATION_VERIFICATION_METHOD_MESSENGER_NAME))]
+        Messenger = 4,
     }
 }

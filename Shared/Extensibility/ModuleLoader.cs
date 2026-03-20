@@ -98,6 +98,7 @@ namespace Gizmo.Extensibility
                 foreach (var integration in lookup[typeGuid])
                 {
                     var publicId = integration.PublicId;
+                    typeRegistry.AddInstance(typeGuid, publicId, type);
                     var dataDir = Path.Combine(modulesDataRoot, publicId.ToString());
                     var (config, reloader) = BuildModuleConfiguration(integration.ConfigJson);
 

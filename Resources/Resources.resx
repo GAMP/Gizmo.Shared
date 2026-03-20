@@ -1158,6 +1158,9 @@
   <data name="REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE_NAME" xml:space="preserve">
     <value>Mobile Phone</value>
   </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MESSENGER_NAME" xml:space="preserve">
+    <value>Messenger</value>
+  </data>
   <data name="REGISTRATION_VERIFICATION_METHOD_NONE_NAME" xml:space="preserve">
     <value>None</value>
   </data>
