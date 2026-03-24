@@ -41,8 +41,24 @@ namespace Gizmo.Extensibility
             var alc = new ModuleLoadContext(fullPath, sharedAssemblyNames);
             var asm = alc.LoadFromAssemblyPath(fullPath);
 
-            var baseDir = Path.GetDirectoryName(fullPath)!;
+            LoadAssemblyIntoServices(services, asm, integrations, hostEnvironment, modulesDataRoot, registry, typeRegistry);
+        }
 
+        /// <summary>
+        /// Registers an already-loaded assembly (e.g. a directly-referenced project) using the same
+        /// discovery and registration logic as plugin DLLs, without creating a separate load context.
+        /// </summary>
+        public static void LoadAssemblyIntoServices(
+            IServiceCollection services,
+            Assembly asm,
+            IReadOnlyList<IntegrationSpec> integrations,
+            IHostEnvironment hostEnvironment,
+            string modulesDataRoot,
+            ModuleAssemblyRegistry registry,
+            IntegrationTypeRegistry typeRegistry)
+        {
+            var fullPath = asm.Location;
+            var baseDir = Path.GetDirectoryName(fullPath)!;
             var moduleName = Path.GetFileNameWithoutExtension(fullPath);
 
             registry.Add(asm, baseDir, moduleName);
@@ -167,7 +183,7 @@ namespace Gizmo.Extensibility
             return caps;
         }
 
-        private static (IConfiguration Config, IModuleConfigurationReloader Reloader) BuildModuleConfiguration(string? configJson)
+        public static (IConfiguration Config, IModuleConfigurationReloader Reloader) BuildModuleConfiguration(string? configJson)
         {
             var source = new ReloadableJsonConfigurationSource(configJson);
             var config = new ConfigurationBuilder().Add(source).Build();

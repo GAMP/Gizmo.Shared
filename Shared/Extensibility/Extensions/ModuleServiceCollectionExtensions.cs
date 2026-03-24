@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Reflection;
 using Gizmo.Extensibility.Abstractions;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -42,6 +44,48 @@ namespace Gizmo.Extensibility
             services.AddSingleton(typeRegistry);
 
             return services;
+        }
+
+        /// <summary>
+        /// Registers directly-referenced assemblies using the same discovery and registration
+        /// logic as plugin DLLs. Must be called after <see cref="AddModules"/> so that the
+        /// <see cref="ModuleAssemblyRegistry"/> and <see cref="IntegrationTypeRegistry"/>
+        /// singletons are already registered.
+        /// </summary>
+        public static IServiceCollection AddAssemblyModules(
+            this IServiceCollection services,
+            IEnumerable<Assembly> assemblies,
+            IReadOnlyList<IntegrationSpec> integrations,
+            IHostEnvironment hostEnvironment,
+            string modulesDataRoot)
+        {
+            var registry = GetRegisteredSingleton<ModuleAssemblyRegistry>(services);
+            var typeRegistry = GetRegisteredSingleton<IntegrationTypeRegistry>(services);
+
+            foreach (var asm in assemblies)
+            {
+                ModuleLoader.LoadAssemblyIntoServices(
+                    services,
+                    asm,
+                    integrations,
+                    hostEnvironment,
+                    modulesDataRoot,
+                    registry,
+                    typeRegistry);
+            }
+
+            return services;
+        }
+
+        private static T GetRegisteredSingleton<T>(IServiceCollection services) where T : class
+        {
+            foreach (var descriptor in services)
+            {
+                if (descriptor.ServiceType == typeof(T) && descriptor.ImplementationInstance is T instance)
+                    return instance;
+            }
+            throw new InvalidOperationException(
+                $"{typeof(T).Name} not found. Call AddModules before AddAssemblyModules.");
         }
     }
 }
