@@ -1239,8 +1239,8 @@
   <data name="TAX_SYSTEMS_RUSSIA_SINGLE_AGRICULTURAL_TAX" xml:space="preserve">
     <value>Single agricultural tax</value>
   </data>
-  <data name="TAX_SYSTEMS_UNSPECIFIED" xml:space="preserve">
-    <value>Unspecified</value>
+  <data name="TAX_SYSTEMS_UNDEFINED" xml:space="preserve">
+    <value>Undefined</value>
   </data>
   <data name="TAX_SYSTEM_COUNTRY_RUSSIA" xml:space="preserve">
     <value>Russia</value>
@@ -1268,6 +1268,24 @@
   </data>
   <data name="VAT_RATES_RUSSIA_VAT20" xml:space="preserve">
     <value>VAT20</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT5" xml:space="preserve">
+    <value>VAT5</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT7" xml:space="preserve">
+    <value>VAT7</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT105" xml:space="preserve">
+    <value>VAT105</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT107" xml:space="preserve">
+    <value>VAT107</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT110" xml:space="preserve">
+    <value>VAT110</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT120" xml:space="preserve">
+    <value>VAT120</value>
   </data>
   <data name="SMTP_SECURITY_NONE_NAME" xml:space="preserve">
     <value>None</value>
@@ -1494,5 +1512,365 @@
   </data>
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve">
     <value>Specifies user logout grace period time</value>
+  </data>
+  <data name="LINE_TYPE_PRODUCT" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="LINE_TYPE_TIME_PRODUCT" xml:space="preserve">
+    <value>Time product</value>
+  </data>
+  <data name="LINE_TYPE_FIXED_TIME" xml:space="preserve">
+    <value>Fixed time</value>
+  </data>
+  <data name="LINE_TYPE_SESSION_TIME" xml:space="preserve">
+    <value>Session time</value>
+  </data>
+  <data name="LINE_TYPE_DEPOSIT" xml:space="preserve">
+    <value>Deposit</value>
+  </data>
+  <data name="LINE_TYPE_RESERVATION_FEE" xml:space="preserve">
+    <value>Reservation fee</value>
+  </data>
+  <data name="LINE_TYPE_PRODUCT_DESCRIPTION" xml:space="preserve">
+    <value>Product line item</value>
+  </data>
+  <data name="LINE_TYPE_TIME_PRODUCT_DESCRIPTION" xml:space="preserve">
+    <value>Time-based product line item</value>
+  </data>
+  <data name="LINE_TYPE_FIXED_TIME_DESCRIPTION" xml:space="preserve">
+    <value>Fixed time line item</value>
+  </data>
+  <data name="LINE_TYPE_SESSION_TIME_DESCRIPTION" xml:space="preserve">
+    <value>Session time line item</value>
+  </data>
+  <data name="LINE_TYPE_DEPOSIT_DESCRIPTION" xml:space="preserve">
+    <value>Deposit line item</value>
+  </data>
+  <data name="LINE_TYPE_RESERVATION_FEE_DESCRIPTION" xml:space="preserve">
+    <value>Reservation fee line item</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PREPAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Full prepayment before delivery of goods or services</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_PREPAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Partial prepayment before delivery of goods or services</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_ADVANCE_DESCRIPTION" xml:space="preserve">
+    <value>Advance payment for goods or services</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Full payment at the time of delivery</value>
+  </data>
+  <data name="TAX_SYSTEM_COUNTRY_UNSPECIFIED_DESCRIPTION" xml:space="preserve">
+    <value>No specific country tax system</value>
+  </data>
+  <data name="TAX_SYSTEM_COUNTRY_RUSSIA_DESCRIPTION" xml:space="preserve">
+    <value>Russian Federation tax system</value>
+  </data>
+  <data name="TAX_SYSTEMS_UNDEFINED_DESCRIPTION" xml:space="preserve">
+    <value>Undefined tax system</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_MAIN_DESCRIPTION" xml:space="preserve">
+    <value>Main taxation system</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_TAXATION_DESCRIPTION" xml:space="preserve">
+    <value>Simplified taxation system based on income</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_EXPSENSES_DESCRIPTION" xml:space="preserve">
+    <value>Simplified taxation system based on income minus expenses</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SINGLE_AGRICULTURAL_TAX_DESCRIPTION" xml:space="preserve">
+    <value>Single tax for agricultural producers</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_PATENT_SYSTEM_DESCRIPTION" xml:space="preserve">
+    <value>Patent-based taxation system</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_NONE_DESCRIPTION" xml:space="preserve">
+    <value>No VAT applied</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT0_DESCRIPTION" xml:space="preserve">
+    <value>Zero percent VAT rate</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT10_DESCRIPTION" xml:space="preserve">
+    <value>10% VAT rate</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT20_DESCRIPTION" xml:space="preserve">
+    <value>20% VAT rate</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT5_DESCRIPTION" xml:space="preserve">
+    <value>5% VAT rate</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT7_DESCRIPTION" xml:space="preserve">
+    <value>7% VAT rate</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT105_DESCRIPTION" xml:space="preserve">
+    <value>5/105% calculated VAT rate</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT107_DESCRIPTION" xml:space="preserve">
+    <value>7/107% calculated VAT rate</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT110_DESCRIPTION" xml:space="preserve">
+    <value>10/110% calculated VAT rate</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT120_DESCRIPTION" xml:space="preserve">
+    <value>20/120% calculated VAT rate</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_ZERO_DESCRIPTION" xml:space="preserve">
+    <value>Zero disk space allocation</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_FIVE_DESCRIPTION" xml:space="preserve">
+    <value>5% disk space allocation</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TEN_DESCRIPTION" xml:space="preserve">
+    <value>10% disk space allocation</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_FIFTEEN_DESCRIPTION" xml:space="preserve">
+    <value>15% disk space allocation</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY_DESCRIPTION" xml:space="preserve">
+    <value>20% disk space allocation</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY_FIVE_DESCRIPTION" xml:space="preserve">
+    <value>25% disk space allocation</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_THIRTY_DESCRIPTION" xml:space="preserve">
+    <value>30% disk space allocation</value>
+  </data>
+  <data name="HTTPS_CERTIFICATE_TYPE_SELF_SIGNED_DESCRIPTION" xml:space="preserve">
+    <value>Self-signed SSL/TLS certificate</value>
+  </data>
+  <data name="HTTPS_CERTIFICATE_TYPE_USER_DEFINED_DESCRIPTION" xml:space="preserve">
+    <value>User-provided SSL/TLS certificate</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_NUMERIC_DESCRIPTION" xml:space="preserve">
+    <value>Generated keys contain numbers only</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_UPPER_CASE_CHARACTERS_DESCRIPTION" xml:space="preserve">
+    <value>Generated keys contain upper case characters only</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_ALPHANUMERIC_DESCRIPTION" xml:space="preserve">
+    <value>Generated keys contain numbers and upper case characters</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_NONE_DESCRIPTION" xml:space="preserve">
+    <value>No verification required</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL_DESCRIPTION" xml:space="preserve">
+    <value>Verification via email</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE_DESCRIPTION" xml:space="preserve">
+    <value>Verification via mobile phone</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MESSENGER_DESCRIPTION" xml:space="preserve">
+    <value>Verification via messenger</value>
+  </data>
+  <data name="SMTP_SECURITY_NONE_DESCRIPTION" xml:space="preserve">
+    <value>No encryption</value>
+  </data>
+  <data name="SMTP_SECURITY_SSL_DESCRIPTION" xml:space="preserve">
+    <value>SSL encryption</value>
+  </data>
+  <data name="SMTP_SECURITY_STARTTLS_DESCRIPTION" xml:space="preserve">
+    <value>STARTTLS encryption</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_NONE_DESCRIPTION" xml:space="preserve">
+    <value>No recovery method available</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_MOBILE_DESCRIPTION" xml:space="preserve">
+    <value>Recovery via mobile phone</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_EMAIL_DESCRIPTION" xml:space="preserve">
+    <value>Recovery via email</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP" xml:space="preserve">
+    <value>HTTP</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP_DESCRIPTION" xml:space="preserve">
+    <value>HTTP protocol</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTPS" xml:space="preserve">
+    <value>HTTPS</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTPS_DESCRIPTION" xml:space="preserve">
+    <value>HTTPS protocol</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP_HTTPS" xml:space="preserve">
+    <value>HTTP and HTTPS</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP_HTTPS_DESCRIPTION" xml:space="preserve">
+    <value>Both HTTP and HTTPS protocols</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_SUCCESS" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Successfully authenticated</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_UNAUTHORIZED" xml:space="preserve">
+    <value>Unauthorized</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Authentication unauthorized</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_NETWORK_ERROR" xml:space="preserve">
+    <value>Network error</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Network error during authentication</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_ERROR" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Error during authentication</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_NONE" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_NONE_DESCRIPTION" xml:space="preserve">
+    <value>No reservation fee</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_FIXED" xml:space="preserve">
+    <value>Fixed</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_FIXED_DESCRIPTION" xml:space="preserve">
+    <value>Fixed amount reservation fee</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_PERCENTAGE" xml:space="preserve">
+    <value>Percentage</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_PERCENTAGE_DESCRIPTION" xml:space="preserve">
+    <value>Percentage-based reservation fee</value>
+  </data>
+  <data name="SPECIAL_FOLDER_NONE" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="SPECIAL_FOLDER_NONE_DESCRIPTION" xml:space="preserve">
+    <value>No special folder</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DESKTOP" xml:space="preserve">
+    <value>Desktop</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DESKTOP_DESCRIPTION" xml:space="preserve">
+    <value>Desktop folder</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DOWNLOADS" xml:space="preserve">
+    <value>Downloads</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DOWNLOADS_DESCRIPTION" xml:space="preserve">
+    <value>Downloads folder</value>
+  </data>
+  <data name="SPECIAL_FOLDER_FAVORITES" xml:space="preserve">
+    <value>Favorites</value>
+  </data>
+  <data name="SPECIAL_FOLDER_FAVORITES_DESCRIPTION" xml:space="preserve">
+    <value>Favorites folder</value>
+  </data>
+  <data name="SPECIAL_FOLDER_MUSIC" xml:space="preserve">
+    <value>Music</value>
+  </data>
+  <data name="SPECIAL_FOLDER_MUSIC_DESCRIPTION" xml:space="preserve">
+    <value>Music folder</value>
+  </data>
+  <data name="SPECIAL_FOLDER_PICTURES" xml:space="preserve">
+    <value>Pictures</value>
+  </data>
+  <data name="SPECIAL_FOLDER_PICTURES_DESCRIPTION" xml:space="preserve">
+    <value>Pictures folder</value>
+  </data>
+  <data name="SPECIAL_FOLDER_VIDEOS" xml:space="preserve">
+    <value>Videos</value>
+  </data>
+  <data name="SPECIAL_FOLDER_VIDEOS_DESCRIPTION" xml:space="preserve">
+    <value>Videos folder</value>
+  </data>
+  <data name="SPECIAL_FOLDER_SAVED_GAMES" xml:space="preserve">
+    <value>Saved Games</value>
+  </data>
+  <data name="SPECIAL_FOLDER_SAVED_GAMES_DESCRIPTION" xml:space="preserve">
+    <value>Saved games folder</value>
+  </data>
+  <data name="SPECIAL_FOLDER_PERSONAL" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="SPECIAL_FOLDER_PERSONAL_DESCRIPTION" xml:space="preserve">
+    <value>Personal documents folder</value>
+  </data>
+  <data name="USER_ROLE_NONE" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="USER_ROLE_NONE_DESCRIPTION" xml:space="preserve">
+    <value>No role assigned</value>
+  </data>
+  <data name="USER_ROLE_USER" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="USER_ROLE_USER_DESCRIPTION" xml:space="preserve">
+    <value>Standard user role</value>
+  </data>
+  <data name="USER_ROLE_GUEST" xml:space="preserve">
+    <value>Guest</value>
+  </data>
+  <data name="USER_ROLE_GUEST_DESCRIPTION" xml:space="preserve">
+    <value>Guest user role</value>
+  </data>
+  <data name="USER_ROLE_OPERATOR" xml:space="preserve">
+    <value>Operator</value>
+  </data>
+  <data name="USER_ROLE_OPERATOR_DESCRIPTION" xml:space="preserve">
+    <value>Operator role</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_MOBILE_PHONE" xml:space="preserve">
+    <value>Mobile phone</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_MOBILE_PHONE_DESCRIPTION" xml:space="preserve">
+    <value>Search by mobile phone number</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USERNAME" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USERNAME_DESCRIPTION" xml:space="preserve">
+    <value>Search by username</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_EMAIL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_EMAIL_DESCRIPTION" xml:space="preserve">
+    <value>Search by email address</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_IDENTIFICATION_NUMBER" xml:space="preserve">
+    <value>Identification number</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_IDENTIFICATION_NUMBER_DESCRIPTION" xml:space="preserve">
+    <value>Search by identification number</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Search by first name</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME" xml:space="preserve">
+    <value>Last name</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Search by last name</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_ATTRIBUTES" xml:space="preserve">
+    <value>Attributes</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_ATTRIBUTES_DESCRIPTION" xml:space="preserve">
+    <value>Search by attributes</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_PHONE" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_PHONE_DESCRIPTION" xml:space="preserve">
+    <value>Search by phone number</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USER_GROUP" xml:space="preserve">
+    <value>User group</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USER_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Search by user group</value>
   </data>
 </root>
