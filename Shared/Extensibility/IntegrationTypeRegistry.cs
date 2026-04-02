@@ -52,6 +52,40 @@ namespace Gizmo.Extensibility
 
             return _instances.FirstOrDefault(i => typeGuids.Contains(i.TypeGuid));
         }
+
+        /// <summary>
+        /// Finds all instances whose type has the specified capability.
+        /// </summary>
+        public IReadOnlyList<IntegrationInstanceEntry> FindAllInstancesByCapability(Guid capabilityGuid)
+        {
+            var typeGuids = _entries
+                .Where(e => e.Capabilities.Contains(capabilityGuid))
+                .Select(e => e.TypeGuid)
+                .ToHashSet();
+
+            return _instances.Where(i => typeGuids.Contains(i.TypeGuid)).ToList();
+        }
+
+        /// <summary>
+        /// Finds all instances whose type has ALL of the specified capabilities.
+        /// </summary>
+        public IReadOnlyList<IntegrationInstanceEntry> FindAllInstancesByCapabilities(params Guid[] capabilityGuids)
+        {
+            var typeGuids = _entries
+                .Where(e => capabilityGuids.All(c => e.Capabilities.Contains(c)))
+                .Select(e => e.TypeGuid)
+                .ToHashSet();
+
+            return _instances.Where(i => typeGuids.Contains(i.TypeGuid)).ToList();
+        }
+
+        /// <summary>
+        /// Gets the type entry for the specified instance.
+        /// </summary>
+        public IntegrationTypeEntry? GetTypeEntry(Guid typeGuid)
+        {
+            return _entries.FirstOrDefault(e => e.TypeGuid == typeGuid);
+        }
     }
 
     /// <summary>

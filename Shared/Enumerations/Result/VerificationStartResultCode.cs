@@ -35,5 +35,9 @@ namespace Gizmo
         /// Non unique input.
         /// </summary>
         NonUniqueInput = EXTENDED_ERROR_CODES.NON_UNIQUE_INPUT,
+        /// <summary>
+        /// User not found.
+        /// </summary>
+        UserNotFound = EXTENDED_ERROR_CODES.USER_NOT_FOUND,
     }
 }
