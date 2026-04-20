@@ -1287,6 +1287,9 @@
   <data name="VAT_RATES_RUSSIA_VAT120" xml:space="preserve">
     <value>VAT120</value>
   </data>
+  <data name="VAT_RATES_RUSSIA_VAT22" xml:space="preserve">
+    <value>VAT22</value>
+  </data>
   <data name="SMTP_SECURITY_NONE_NAME" xml:space="preserve">
     <value>None</value>
   </data>
@@ -1614,6 +1617,9 @@
   </data>
   <data name="VAT_RATES_RUSSIA_VAT120_DESCRIPTION" xml:space="preserve">
     <value>20/120% calculated VAT rate</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT22_DESCRIPTION" xml:space="preserve">
+    <value>22% VAT rate</value>
   </data>
   <data name="DISK_SPACE_ALLOCATIONS_ZERO_DESCRIPTION" xml:space="preserve">
     <value>Zero disk space allocation</value>
