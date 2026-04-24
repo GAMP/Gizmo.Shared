@@ -23,8 +23,8 @@ namespace Gizmo
         }
         
         private const string DEFAULT_RESOURCE_NAME = "Resources";
-        private CultureInfo? _culture;        
-        private readonly ConcurrentDictionary<(Assembly asm, string simpleName), ResourceManager> _managerCache = new();
+        private CultureInfo? _culture;
+        private readonly ConcurrentDictionary<(Assembly asm, string simpleName), ResourceManager?> _managerCache = new();
 
         /// <inheritdoc/>
         public string GetLocalizedStringValue(Type type, ExtendedDescriptionAttribute? descriptionAttribute)
@@ -87,21 +87,27 @@ namespace Gizmo
         /// Gets default resource string localizer for specified assembly.
         /// </summary>
         /// <param name="assembly">Assembly instance.</param>
-        /// <returns>Default resource string localizer.</returns>
-        /// <exception cref="ArgumentException">thrown in case assembly name cannot be extracted from specified assembly.</exception>
-        private ResourceManagerBackedStringLocalizer GetLocalizer(Assembly assembly, string resourceSimpleName)
+        /// <returns>
+        /// Default resource string localizer, or a no-op localizer if the assembly embeds no
+        /// matching resource. Constructing a <see cref="ResourceManager"/> against a non-existent
+        /// base name would throw <see cref="MissingManifestResourceException"/> on first lookup,
+        /// which is unacceptable for plugin assemblies that legitimately ship without resources.
+        /// </returns>
+        private IStringLocalizer GetLocalizer(Assembly assembly, string resourceSimpleName)
         {
             var rm = _managerCache.GetOrAdd((assembly, resourceSimpleName), static key =>
             {
                 var (asm, simpleName) = key;
                 var baseName = ResolveResourceBaseNameFromManifest(asm, simpleName);
-                return new ResourceManager(baseName, asm);
+                return baseName is null ? null : new ResourceManager(baseName, asm);
             });
 
-            return new ResourceManagerBackedStringLocalizer(rm, _culture);
+            return rm is null
+                ? NullStringLocalizer.Instance
+                : new ResourceManagerBackedStringLocalizer(rm, _culture);
         }
 
-        private static string ResolveResourceBaseNameFromManifest(Assembly assembly, string resourceSimpleName)
+        private static string? ResolveResourceBaseNameFromManifest(Assembly assembly, string resourceSimpleName)
         {
             // Manifest contains entries like "...Resources.resources"
             // (Culture-specific resx typically go into satellite assemblies and won't appear here.)
@@ -113,15 +119,7 @@ namespace Gizmo
                 .ToArray();
 
             if (candidates.Length == 0)
-            {
-                // Fallback: attempt "{AssemblyName}.{Resources}"
-                // (This may still fail if your root namespace differs; but we tried the manifest first.)
-                var asmName = assembly.GetName().Name;
-                if (string.IsNullOrWhiteSpace(asmName))
-                    throw new InvalidOperationException("Assembly has no name.");
-
-                return asmName + "." + resourceSimpleName;
-            }
+                return null;
 
             // Prefer the “most canonical” candidate:
             // 1) If there is exactly one, use it.
@@ -131,6 +129,17 @@ namespace Gizmo
                 return candidates[0];
 
             return candidates.OrderBy(c => c.Length).First();
+        }
+
+        private sealed class NullStringLocalizer : IStringLocalizer
+        {
+            public static readonly NullStringLocalizer Instance = new();
+
+            public LocalizedString this[string name] => new(name ?? string.Empty, name ?? string.Empty, resourceNotFound: true);
+
+            public LocalizedString this[string name, params object[] arguments] => new(name ?? string.Empty, name ?? string.Empty, resourceNotFound: true);
+
+            public IEnumerable<LocalizedString> GetAllStrings(bool includeParentCultures) => [];
         }
 
         public sealed class ResourceManagerBackedStringLocalizer : IStringLocalizer
