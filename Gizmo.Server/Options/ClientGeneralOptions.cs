@@ -5,7 +5,7 @@ using System.ComponentModel;
 
 namespace Gizmo.Server.Options
 {
-    [OptionsConfigurationSection("CLIENGENERAL")]
+    [OptionsConfigurationSection("CLIENTGENERAL")]
     [StoreOptionsGroup("CLIENT_GENERAL")]
     [MessagePack.MessagePackObject()]
     public sealed class ClientGeneralOptions : IStoreOptions
