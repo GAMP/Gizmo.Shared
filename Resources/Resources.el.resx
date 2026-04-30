@@ -1199,8 +1199,8 @@
   <data name="HOST_NUMBER_POSITIONING_WALL_BOUNCE" xml:space="preserve"> 
     <value>Αναπήδηση τοίχου</value> 
   </data> 
-  <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL_NAME" xml:space="preserve"> 
-    <value>Email</value> 
+  <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL_NAME" xml:space="preserve">
+    <value>Ηλεκτρονικό ταχυδρομείο</value>
   </data> 
   <data name="REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE_NAME" xml:space="preserve"> 
     <value>Κινητό τηλέφωνο</value> 
@@ -1214,8 +1214,8 @@
   <data name="TAX_SYSTEMS_UNDEFINED" xml:space="preserve"> 
     <value>Απροσδιόριστο</value> 
   </data> 
-  <data name="USER_RECOVERY_METHOD_EMAIL_NAME" xml:space="preserve"> 
-    <value>Email</value> 
+  <data name="USER_RECOVERY_METHOD_EMAIL_NAME" xml:space="preserve">
+    <value>Ηλεκτρονικό ταχυδρομείο</value>
   </data> 
   <data name="USER_RECOVERY_METHOD_MOBILE_NAME" xml:space="preserve"> 
     <value>Κινητό</value> 
@@ -1785,8 +1785,8 @@
   <data name="USER_SEARCH_FIELD_TYPE_USERNAME_DESCRIPTION" xml:space="preserve"> 
     <value>Αναζήτηση κατά όνομα χρήστη</value> 
   </data> 
-  <data name="USER_SEARCH_FIELD_TYPE_EMAIL" xml:space="preserve"> 
-    <value>Email</value> 
+  <data name="USER_SEARCH_FIELD_TYPE_EMAIL" xml:space="preserve">
+    <value>Ηλεκτρονικό ταχυδρομείο</value> 
   </data> 
   <data name="USER_SEARCH_FIELD_TYPE_EMAIL_DESCRIPTION" xml:space="preserve"> 
     <value>Αναζήτηση κατά διεύθυνση email</value> 

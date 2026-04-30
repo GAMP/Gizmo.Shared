@@ -182,8 +182,8 @@
   <data name="GIZMO_POLICY_GROUP_RESERVATIONS_DESCRIPTION" xml:space="preserve"> 
     <value>Политики бронирования.</value> 
   </data> 
-  <data name="GIZMO_POLICY_GROUP_RESERVATONS_NAME" xml:space="preserve"> 
-    <value>Бронирование</value> 
+  <data name="GIZMO_POLICY_GROUP_RESERVATONS_NAME" xml:space="preserve">
+    <value>Бронирования</value>
   </data> 
   <data name="GIZMO_POLICY_GROUP_SALES_DESCRIPTION" xml:space="preserve"> 
     <value>Политики, связанные с управлением и мониторингом продаж.</value> 
@@ -218,9 +218,9 @@
   <data name="GIZMO_POLICY_GROUP_WEB_API_DESCRIPTION" xml:space="preserve"> 
     <value>Политики доступа и управления функциональностью WEB API.</value> 
   </data> 
-  <data name="GIZMO_POLICY_GROUP_WEB_API_NAME" xml:space="preserve"> 
-    <value>WEB API</value> 
-  </data> 
+  <data name="GIZMO_POLICY_GROUP_WEB_API_NAME" xml:space="preserve">
+    <value>Web API</value>
+  </data>
   <data name="GIZMO_POLICY_LOG_CLEAR_DESCRIPTION" xml:space="preserve"> 
     <value>Предоставляет доступ к функции управления журналами, позволяющей пользователю очищать системные журналы.</value> 
   </data> 
@@ -665,9 +665,9 @@
   <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_TAXATION" xml:space="preserve"> 
     <value>УСН (Доход)</value> 
   </data> 
-  <data name="TAX_SYSTEMS_RUSSIA_SINGLE_AGRICULTURAL_TAX" xml:space="preserve"> 
-    <value>ЕСхн</value> 
-  </data> 
+  <data name="TAX_SYSTEMS_RUSSIA_SINGLE_AGRICULTURAL_TAX" xml:space="preserve">
+    <value>ЕСХН</value>
+  </data>
   <data name="TAX_SYSTEM_COUNTRY_RUSSIA" xml:space="preserve"> 
     <value>Россия</value> 
   </data> 
@@ -1130,4 +1130,1030 @@
   <data name="VAT_RATES_RUSSIA_VAT22_DESCRIPTION" xml:space="preserve"> 
     <value>НДС 22%</value> 
   </data> 
+  <data name="ADVANCE_PAYMENTS_RUSSIA_ADVANCE_DESCRIPTION" xml:space="preserve">
+    <value>Аванс за товары или услуги</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Полная оплата в момент поставки</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PREPAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Полная предоплата до поставки товаров или услуг</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_PREPAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Частичная предоплата до поставки товаров или услуг</value>
+  </data>
+  <data name="APP_CATEGORY_APPLICATIONS_DEFAULT_NAME" xml:space="preserve">
+    <value>Приложения</value>
+  </data>
+  <data name="APP_CATEGORY_GAMES_DEFAULT_NAME" xml:space="preserve">
+    <value>Игры</value>
+  </data>
+  <data name="APP_CATEGORY_LAUNCHERS_DEFAULT_NAME" xml:space="preserve">
+    <value>Лаунчеры</value>
+  </data>
+  <data name="APP_GROUP_DEFAULT_NAME" xml:space="preserve">
+    <value>По умолчанию</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_TYPE_DEFAULT_NAME" xml:space="preserve">
+    <value>Мне нужна помощь.</value>
+  </data>
+  <data name="BILL_PROFILE_COMPUTERS_DEFAULT_NAME" xml:space="preserve">
+    <value>Цены для хостов</value>
+  </data>
+  <data name="BILL_PROFILE_ENDPOINTS_DEFAULT_NAME" xml:space="preserve">
+    <value>Цены для хостов</value>
+  </data>
+  <data name="BRANCH_DEFAULT_NAME" xml:space="preserve">
+    <value>Основной</value>
+  </data>
+  <data name="CLIENT_OPTIONS_DEFAULT_NAME" xml:space="preserve">
+    <value>Глобальные</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_FIFTEEN_DESCRIPTION" xml:space="preserve">
+    <value>Выделение 15% дискового пространства</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_FIVE_DESCRIPTION" xml:space="preserve">
+    <value>Выделение 5% дискового пространства</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TEN_DESCRIPTION" xml:space="preserve">
+    <value>Выделение 10% дискового пространства</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_THIRTY_DESCRIPTION" xml:space="preserve">
+    <value>Выделение 30% дискового пространства</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY_DESCRIPTION" xml:space="preserve">
+    <value>Выделение 20% дискового пространства</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY_FIVE_DESCRIPTION" xml:space="preserve">
+    <value>Выделение 25% дискового пространства</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_ZERO_DESCRIPTION" xml:space="preserve">
+    <value>Без выделения дискового пространства</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к созданию оборудования.</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_CREATE_NAME" xml:space="preserve">
+    <value>Создание</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к удалению оборудования.</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_DELETE_NAME" xml:space="preserve">
+    <value>Удаление</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к разделу «Оборудование».</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к редактированию оборудования.</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_EDIT_NAME" xml:space="preserve">
+    <value>Редактирование</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_NAME" xml:space="preserve">
+    <value>Доступ</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к созданию клиентских задач.</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_CREATE_NAME" xml:space="preserve">
+    <value>Создание</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к удалению клиентских задач.</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_DELETE_NAME" xml:space="preserve">
+    <value>Удаление</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к разделу «Клиентские задачи».</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к редактированию клиентских задач.</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_EDIT_NAME" xml:space="preserve">
+    <value>Редактирование</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_NAME" xml:space="preserve">
+    <value>Доступ</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к созданию контроллеров.</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_CREATE_NAME" xml:space="preserve">
+    <value>Создание</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к удалению контроллеров.</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_DELETE_NAME" xml:space="preserve">
+    <value>Удаление</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к разделу «Контроллеры».</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к редактированию контроллеров.</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_EDIT_NAME" xml:space="preserve">
+    <value>Редактирование</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_NAME" xml:space="preserve">
+    <value>Доступ</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_ASSETS_DESCRIPTION" xml:space="preserve">
+    <value>Политики для управления оборудованием.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_ASSETS_NAME" xml:space="preserve">
+    <value>Оборудование</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CLIENT_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>Политики для управления клиентскими задачами.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CLIENT_TASKS_NAME" xml:space="preserve">
+    <value>Клиентские задачи</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CONTROLLERS_DESCRIPTION" xml:space="preserve">
+    <value>Политики для управления контроллерами.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CONTROLLERS_NAME" xml:space="preserve">
+    <value>Контроллеры</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOSTS_DESCRIPTION" xml:space="preserve">
+    <value>Политики для управления хостами.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOSTS_NAME" xml:space="preserve">
+    <value>Хосты</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>Политики для управления группами хостов.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_GROUPS_NAME" xml:space="preserve">
+    <value>Группы хостов</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_LAYOUT_DESCRIPTION" xml:space="preserve">
+    <value>Политики для управления схемами размещения.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_LAYOUT_NAME" xml:space="preserve">
+    <value>Схема размещения</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCTS_DESCRIPTION" xml:space="preserve">
+    <value>Политики для управления товарами.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCTS_NAME" xml:space="preserve">
+    <value>Товары</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCT_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>Политики для управления группами товаров.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCT_GROUPS_NAME" xml:space="preserve">
+    <value>Группы товаров</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SECURITY_PROFILES_DESCRIPTION" xml:space="preserve">
+    <value>Политики для управления профилями безопасности.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SECURITY_PROFILES_NAME" xml:space="preserve">
+    <value>Профили безопасности</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>Политики для управления задачами.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_TASKS_NAME" xml:space="preserve">
+    <value>Задачи</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_USER_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Политики для управления группами пользователей.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_USER_GROUP_NAME" xml:space="preserve">
+    <value>Группа пользователей</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к созданию хостов.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_CREATE_NAME" xml:space="preserve">
+    <value>Создание</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к удалению хостов.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_DELETE_NAME" xml:space="preserve">
+    <value>Удаление</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к разделу «Хосты».</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к редактированию хостов.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_EDIT_NAME" xml:space="preserve">
+    <value>Редактирование</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_NAME" xml:space="preserve">
+    <value>Доступ</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к созданию групп хостов.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_CREATE_NAME" xml:space="preserve">
+    <value>Создание</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к удалению групп хостов.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_DELETE_NAME" xml:space="preserve">
+    <value>Удаление</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к разделу «Группы хостов».</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к редактированию групп хостов.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_EDIT_NAME" xml:space="preserve">
+    <value>Редактирование</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_NAME" xml:space="preserve">
+    <value>Доступ</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к созданию схемы размещения.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_CREATE_NAME" xml:space="preserve">
+    <value>Создание</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к удалению схемы размещения.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_DELETE_NAME" xml:space="preserve">
+    <value>Удаление</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к разделу «Схема размещения».</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к редактированию схемы размещения.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_EDIT_NAME" xml:space="preserve">
+    <value>Редактирование</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_NAME" xml:space="preserve">
+    <value>Доступ</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_LOCK_NAME" xml:space="preserve">
+    <value>Блокировка ввода</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к удалённому управлению хостами для взаимодействия с экраном клиента.</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_NAME" xml:space="preserve">
+    <value>Удалённое управление</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_VIEW_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к просмотру экранов удалённых хостов для наблюдения за активностью клиентов.</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_VIEW_NAME" xml:space="preserve">
+    <value>Просмотр удалённого управления</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_NAME" xml:space="preserve">
+    <value>Включение хостов</value>
+  </data>
+  <data name="GIZMO_POLICY_MARKETING_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к функции маркетинга, позволяющий просматривать и управлять новостями и каналами.</value>
+  </data>
+  <data name="GIZMO_POLICY_MARKETING_NAME" xml:space="preserve">
+    <value>Доступ</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к созданию товаров.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_CREATE_NAME" xml:space="preserve">
+    <value>Создание</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к удалению товаров.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_DELETE_NAME" xml:space="preserve">
+    <value>Удаление</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к разделу «Товары».</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к редактированию товаров.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_EDIT_NAME" xml:space="preserve">
+    <value>Редактирование</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_NAME" xml:space="preserve">
+    <value>Доступ</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к созданию групп товаров.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_CREATE_NAME" xml:space="preserve">
+    <value>Создание</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к удалению групп товаров.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_DELETE_NAME" xml:space="preserve">
+    <value>Удаление</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к разделу «Группы товаров».</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к редактированию групп товаров.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_EDIT_NAME" xml:space="preserve">
+    <value>Редактирование</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_NAME" xml:space="preserve">
+    <value>Доступ</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_PAY_IN_NAME" xml:space="preserve">
+    <value>Внесение средств</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_PAY_OUT_NAME" xml:space="preserve">
+    <value>Изъятие средств</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к созданию бронирований.</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_CREATE_NAME" xml:space="preserve">
+    <value>Создание</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_DESCRIPTION" xml:space="preserve">
+    <value>Возможность создавать бронирования для гостевых аккаунтов.</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_NAME" xml:space="preserve">
+    <value>Бронирования для гостей</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к созданию профилей безопасности.</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_CREATE_NAME" xml:space="preserve">
+    <value>Создание</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к удалению профилей безопасности.</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_DELETE_NAME" xml:space="preserve">
+    <value>Удаление</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к разделу «Профили безопасности».</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к редактированию профилей безопасности.</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_EDIT_NAME" xml:space="preserve">
+    <value>Редактирование</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_NAME" xml:space="preserve">
+    <value>Доступ</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Возможность выполнять корректировки склада в текущем филиале.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_BRANCH_NAME" xml:space="preserve">
+    <value>Корректировка в текущем филиале</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_DESCRIPTION" xml:space="preserve">
+    <value>Возможность выполнять корректировки склада.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Возможность выполнять корректировки склада глобально.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_NAME" xml:space="preserve">
+    <value>Корректировка глобально</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_NAME" xml:space="preserve">
+    <value>Корректировка</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_COST_DESCRIPTION" xml:space="preserve">
+    <value>Возможность выполнять корректировки склада как продажу по себестоимости.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_COST_NAME" xml:space="preserve">
+    <value>Продажа по себестоимости</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_PRICE_DESCRIPTION" xml:space="preserve">
+    <value>Возможность выполнять корректировки склада как продажу по розничной цене.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_PRICE_NAME" xml:space="preserve">
+    <value>Продажа по розничной цене</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_WRITE_OFF_DESCRIPTION" xml:space="preserve">
+    <value>Возможность выполнять списания со склада.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_WRITE_OFF_NAME" xml:space="preserve">
+    <value>Списание</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к инвентаризации склада в текущем филиале.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_BRANCH_NAME" xml:space="preserve">
+    <value>Учёт в текущем филиале</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к инвентаризации склада, позволяющий выполнять подсчёты.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к инвентаризации склада глобально.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_GLOBAL_NAME" xml:space="preserve">
+    <value>Учёт глобально</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_NAME" xml:space="preserve">
+    <value>Учёт</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_VIEW_EXPECTED_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к просмотру ожидаемого количества во время инвентаризации.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_VIEW_EXPECTED_NAME" xml:space="preserve">
+    <value>Просмотр ожидаемого количества</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к созданию склада.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_CREATE_NAME" xml:space="preserve">
+    <value>Создание</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к удалению склада.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_DELETE_NAME" xml:space="preserve">
+    <value>Удаление</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к редактированию склада.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_EDIT_NAME" xml:space="preserve">
+    <value>Редактирование</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к приёму поступлений на склад в текущем филиале.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_BRANCH_NAME" xml:space="preserve">
+    <value>Поступление в текущем филиале</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к приёму поступлений на склад.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к приёму поступлений на склад глобально.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_GLOBAL_NAME" xml:space="preserve">
+    <value>Поступление глобально</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_NAME" xml:space="preserve">
+    <value>Поступление</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к просмотру уровня запасов по текущему филиалу.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_BRANCH_NAME" xml:space="preserve">
+    <value>Уровень запасов в текущем филиале</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к просмотру уровня запасов в текущей кассе.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к просмотру уровня запасов по всем филиалам.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_GLOBAL_NAME" xml:space="preserve">
+    <value>Уровень запасов глобально</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_NAME" xml:space="preserve">
+    <value>Уровень запасов</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Возможность выполнять переносы складских запасов в текущем филиале.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_BRANCH_NAME" xml:space="preserve">
+    <value>Перенос в текущем филиале</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к управлению складом, позволяющий обновлять и переносить позиции склада.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Возможность выполнять переносы складских запасов глобально.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_GLOBAL_NAME" xml:space="preserve">
+    <value>Перенос глобально</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_NAME" xml:space="preserve">
+    <value>Перенос</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к созданию задач.</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_CREATE_NAME" xml:space="preserve">
+    <value>Создание</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к удалению задач.</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_DELETE_NAME" xml:space="preserve">
+    <value>Удаление</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к разделу «Задачи».</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к редактированию задач.</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_EDIT_NAME" xml:space="preserve">
+    <value>Редактирование</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_NAME" xml:space="preserve">
+    <value>Доступ</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к созданию группы пользователей.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_CREATE_NAME" xml:space="preserve">
+    <value>Создание</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к удалению группы пользователей.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_DELETE_NAME" xml:space="preserve">
+    <value>Удаление</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к разделу «Группа пользователей».</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к редактированию группы пользователей.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_EDIT_NAME" xml:space="preserve">
+    <value>Редактирование</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_NAME" xml:space="preserve">
+    <value>Доступ</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_LIST_DESCRIPTION" xml:space="preserve">
+    <value>Доступ к странице списка пользователей.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_LIST_NAME" xml:space="preserve">
+    <value>Список</value>
+  </data>
+  <data name="HOST_GROUP_COMPUERS_DEFAULT_NAME" xml:space="preserve">
+    <value>Хосты</value>
+  </data>
+  <data name="HOST_GROUP_ENDPOINTS_DEFAULT_NAME" xml:space="preserve">
+    <value>Хосты</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUPED_DEFAULT_NAME" xml:space="preserve">
+    <value>Схема по умолчанию</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_CENTER" xml:space="preserve">
+    <value>Снизу по центру</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_LEFT" xml:space="preserve">
+    <value>Снизу слева</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_RIGHT" xml:space="preserve">
+    <value>Снизу справа</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_LEFT" xml:space="preserve">
+    <value>По центру слева</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_RIGHT" xml:space="preserve">
+    <value>По центру справа</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_SCREEN" xml:space="preserve">
+    <value>По центру экрана</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_CENTER" xml:space="preserve">
+    <value>Сверху по центру</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_LEFT" xml:space="preserve">
+    <value>Сверху слева</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_RIGHT" xml:space="preserve">
+    <value>Сверху справа</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_CLOCKWISE" xml:space="preserve">
+    <value>По часовой стрелке</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_COUNTERCLOCKWISE" xml:space="preserve">
+    <value>Против часовой стрелки</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_FIXED" xml:space="preserve">
+    <value>Фиксированное</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_BOTTOM" xml:space="preserve">
+    <value>Горизонтально снизу</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_CENTER" xml:space="preserve">
+    <value>Горизонтально по центру</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_TOP" xml:space="preserve">
+    <value>Горизонтально сверху</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_CENTER" xml:space="preserve">
+    <value>Вертикально по центру</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_LEFT" xml:space="preserve">
+    <value>Вертикально слева</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_RIGHT" xml:space="preserve">
+    <value>Вертикально справа</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_WALL_BOUNCE" xml:space="preserve">
+    <value>Отскок от стен</value>
+  </data>
+  <data name="HTTPS_CERTIFICATE_TYPE_SELF_SIGNED_DESCRIPTION" xml:space="preserve">
+    <value>Самоподписанный SSL/TLS сертификат</value>
+  </data>
+  <data name="HTTPS_CERTIFICATE_TYPE_USER_DEFINED_DESCRIPTION" xml:space="preserve">
+    <value>Пользовательский SSL/TLS сертификат</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP" xml:space="preserve">
+    <value>HTTP</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTPS" xml:space="preserve">
+    <value>HTTPS</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTPS_DESCRIPTION" xml:space="preserve">
+    <value>Протокол HTTPS</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP_DESCRIPTION" xml:space="preserve">
+    <value>Протокол HTTP</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP_HTTPS" xml:space="preserve">
+    <value>HTTP и HTTPS</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP_HTTPS_DESCRIPTION" xml:space="preserve">
+    <value>Оба протокола: HTTP и HTTPS</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_ERROR" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Ошибка во время аутентификации</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_NETWORK_ERROR" xml:space="preserve">
+    <value>Сетевая ошибка</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Сетевая ошибка во время аутентификации</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_SUCCESS" xml:space="preserve">
+    <value>Успех</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Аутентификация успешна</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_UNAUTHORIZED" xml:space="preserve">
+    <value>Не авторизован</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Аутентификация не авторизована</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_ALPHANUMERIC_DESCRIPTION" xml:space="preserve">
+    <value>Сгенерированные ключи содержат цифры и заглавные буквы</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_NUMERIC_DESCRIPTION" xml:space="preserve">
+    <value>Сгенерированные ключи содержат только цифры</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_UPPER_CASE_CHARACTERS_DESCRIPTION" xml:space="preserve">
+    <value>Сгенерированные ключи содержат только заглавные буквы</value>
+  </data>
+  <data name="LINE_TYPE_DEPOSIT" xml:space="preserve">
+    <value>Депозит</value>
+  </data>
+  <data name="LINE_TYPE_DEPOSIT_DESCRIPTION" xml:space="preserve">
+    <value>Позиция депозита</value>
+  </data>
+  <data name="LINE_TYPE_FIXED_TIME" xml:space="preserve">
+    <value>Фиксированное время</value>
+  </data>
+  <data name="LINE_TYPE_FIXED_TIME_DESCRIPTION" xml:space="preserve">
+    <value>Позиция фиксированного времени</value>
+  </data>
+  <data name="LINE_TYPE_PRODUCT" xml:space="preserve">
+    <value>Товар</value>
+  </data>
+  <data name="LINE_TYPE_PRODUCT_DESCRIPTION" xml:space="preserve">
+    <value>Товарная позиция</value>
+  </data>
+  <data name="LINE_TYPE_RESERVATION_FEE" xml:space="preserve">
+    <value>Комиссия за бронирование</value>
+  </data>
+  <data name="LINE_TYPE_RESERVATION_FEE_DESCRIPTION" xml:space="preserve">
+    <value>Позиция комиссии за бронирование</value>
+  </data>
+  <data name="LINE_TYPE_SESSION_TIME" xml:space="preserve">
+    <value>Время сеанса</value>
+  </data>
+  <data name="LINE_TYPE_SESSION_TIME_DESCRIPTION" xml:space="preserve">
+    <value>Позиция времени сеанса</value>
+  </data>
+  <data name="LINE_TYPE_TIME_PRODUCT" xml:space="preserve">
+    <value>Пакет времени</value>
+  </data>
+  <data name="LINE_TYPE_TIME_PRODUCT_DESCRIPTION" xml:space="preserve">
+    <value>Позиция пакета времени</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_CASH_NAME" xml:space="preserve">
+    <value>Наличные</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_CREDIT_CARD_NAME" xml:space="preserve">
+    <value>Кредитная карта</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_CUSTOM_NAME" xml:space="preserve">
+    <value>Пользовательский</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_DEPOSIT_NAME" xml:space="preserve">
+    <value>Депозит</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_POINTS_NAME" xml:space="preserve">
+    <value>Баллы</value>
+  </data>
+  <data name="PRODUCT_GROUP_DRINKS_DEFAULT_NAME" xml:space="preserve">
+    <value>Напитки</value>
+  </data>
+  <data name="PRODUCT_GROUP_FOOD_DEFAULT_NAME" xml:space="preserve">
+    <value>Еда</value>
+  </data>
+  <data name="PRODUCT_GROUP_SWEETS_DEFAULT_NAME" xml:space="preserve">
+    <value>Сладости</value>
+  </data>
+  <data name="PRODUCT_GROUP_TIME_OFFERS_DEFAULT_NAME" xml:space="preserve">
+    <value>Пакеты времени</value>
+  </data>
+  <data name="REGISTER_DEFAULT_NAME" xml:space="preserve">
+    <value>Основная</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL_DESCRIPTION" xml:space="preserve">
+    <value>Подтверждение по электронной почте</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL_NAME" xml:space="preserve">
+    <value>Электронная почта</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MESSENGER_DESCRIPTION" xml:space="preserve">
+    <value>Подтверждение через мессенджер</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MESSENGER_NAME" xml:space="preserve">
+    <value>Мессенджер</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE_DESCRIPTION" xml:space="preserve">
+    <value>Подтверждение по мобильному телефону</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE_NAME" xml:space="preserve">
+    <value>Мобильный телефон</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Подтверждение не требуется</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_NONE_NAME" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_FIXED" xml:space="preserve">
+    <value>Фиксированная</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_FIXED_DESCRIPTION" xml:space="preserve">
+    <value>Фиксированная сумма комиссии за бронирование</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_NONE" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Без комиссии за бронирование</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_PERCENTAGE" xml:space="preserve">
+    <value>Процент</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_PERCENTAGE_DESCRIPTION" xml:space="preserve">
+    <value>Процентная комиссия за бронирование</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_ENABLED_DESCRIPTION" xml:space="preserve">
+    <value>Указывает, включён ли льготный период выхода пользователя</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_ENABLED_NAME" xml:space="preserve">
+    <value>Включить льготный период выхода</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve">
+    <value>Время льготного периода выхода пользователя</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_NAME" xml:space="preserve">
+    <value>Льготное время</value>
+  </data>
+  <data name="SMTP_SECURITY_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Без шифрования</value>
+  </data>
+  <data name="SMTP_SECURITY_NONE_NAME" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="SMTP_SECURITY_SSL_DESCRIPTION" xml:space="preserve">
+    <value>Шифрование SSL</value>
+  </data>
+  <data name="SMTP_SECURITY_SSL_NAME" xml:space="preserve">
+    <value>SSL</value>
+  </data>
+  <data name="SMTP_SECURITY_STARTTLS_DESCRIPTION" xml:space="preserve">
+    <value>Шифрование STARTTLS</value>
+  </data>
+  <data name="SMTP_SECURITY_STARTTLS_NAME" xml:space="preserve">
+    <value>STARTTLS</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DESKTOP" xml:space="preserve">
+    <value>Рабочий стол</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DESKTOP_DESCRIPTION" xml:space="preserve">
+    <value>Папка рабочего стола</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DOWNLOADS" xml:space="preserve">
+    <value>Загрузки</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DOWNLOADS_DESCRIPTION" xml:space="preserve">
+    <value>Папка загрузок</value>
+  </data>
+  <data name="SPECIAL_FOLDER_FAVORITES" xml:space="preserve">
+    <value>Избранное</value>
+  </data>
+  <data name="SPECIAL_FOLDER_FAVORITES_DESCRIPTION" xml:space="preserve">
+    <value>Папка избранного</value>
+  </data>
+  <data name="SPECIAL_FOLDER_NONE" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="SPECIAL_FOLDER_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Без специальной папки</value>
+  </data>
+  <data name="STOCK_SELLING_POINT_DEFAULT_NAME" xml:space="preserve">
+    <value>Точка продаж</value>
+  </data>
+  <data name="STOCK_WAREHOUSE_DEFAULT_NAME" xml:space="preserve">
+    <value>Склад</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_MAIN_DESCRIPTION" xml:space="preserve">
+    <value>Основная система налогообложения</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_PATENT_SYSTEM_DESCRIPTION" xml:space="preserve">
+    <value>Патентная система налогообложения</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_EXPSENSES_DESCRIPTION" xml:space="preserve">
+    <value>Упрощённая система налогообложения «доходы минус расходы»</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_TAXATION_DESCRIPTION" xml:space="preserve">
+    <value>Упрощённая система налогообложения по доходам</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SINGLE_AGRICULTURAL_TAX_DESCRIPTION" xml:space="preserve">
+    <value>Единый сельскохозяйственный налог</value>
+  </data>
+  <data name="TAX_SYSTEMS_UNDEFINED" xml:space="preserve">
+    <value>Не определена</value>
+  </data>
+  <data name="TAX_SYSTEMS_UNDEFINED_DESCRIPTION" xml:space="preserve">
+    <value>Не определённая система налогообложения</value>
+  </data>
+  <data name="TAX_SYSTEM_COUNTRY_RUSSIA_DESCRIPTION" xml:space="preserve">
+    <value>Налоговая система Российской Федерации</value>
+  </data>
+  <data name="TAX_SYSTEM_COUNTRY_UNSPECIFIED_DESCRIPTION" xml:space="preserve">
+    <value>Без привязки к стране</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_EMAIL_DESCRIPTION" xml:space="preserve">
+    <value>Восстановление по электронной почте</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_EMAIL_NAME" xml:space="preserve">
+    <value>Электронная почта</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_MOBILE_DESCRIPTION" xml:space="preserve">
+    <value>Восстановление по мобильному телефону</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_MOBILE_NAME" xml:space="preserve">
+    <value>Мобильный</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Метод восстановления недоступен</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_NONE_NAME" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="USER_ROLE_GUEST" xml:space="preserve">
+    <value>Гость</value>
+  </data>
+  <data name="USER_ROLE_GUEST_DESCRIPTION" xml:space="preserve">
+    <value>Роль гостевого пользователя</value>
+  </data>
+  <data name="USER_ROLE_OPERATOR" xml:space="preserve">
+    <value>Оператор</value>
+  </data>
+  <data name="USER_ROLE_OPERATOR_DESCRIPTION" xml:space="preserve">
+    <value>Роль оператора</value>
+  </data>
+  <data name="USER_ROLE_USER" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="USER_ROLE_USER_DESCRIPTION" xml:space="preserve">
+    <value>Стандартная роль пользователя</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_ATTRIBUTES" xml:space="preserve">
+    <value>Атрибуты</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_ATTRIBUTES_DESCRIPTION" xml:space="preserve">
+    <value>Поиск по атрибутам</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_EMAIL" xml:space="preserve">
+    <value>Электронная почта</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_EMAIL_DESCRIPTION" xml:space="preserve">
+    <value>Поиск по адресу электронной почты</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Поиск по имени</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_IDENTIFICATION_NUMBER" xml:space="preserve">
+    <value>Идентификационный номер</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_IDENTIFICATION_NUMBER_DESCRIPTION" xml:space="preserve">
+    <value>Поиск по идентификационному номеру</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Поиск по фамилии</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_MOBILE_PHONE" xml:space="preserve">
+    <value>Мобильный телефон</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_MOBILE_PHONE_DESCRIPTION" xml:space="preserve">
+    <value>Поиск по номеру мобильного телефона</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_PHONE" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_PHONE_DESCRIPTION" xml:space="preserve">
+    <value>Поиск по номеру телефона</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USERNAME" xml:space="preserve">
+    <value>Имя пользователя</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USERNAME_DESCRIPTION" xml:space="preserve">
+    <value>Поиск по имени пользователя</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USER_GROUP" xml:space="preserve">
+    <value>Группа пользователей</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USER_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Поиск по группе пользователей</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_NONE_DESCRIPTION" xml:space="preserve">
+    <value>НДС не применяется</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT0_DESCRIPTION" xml:space="preserve">
+    <value>Ставка НДС 0%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT105" xml:space="preserve">
+    <value>НДС 5/105%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT105_DESCRIPTION" xml:space="preserve">
+    <value>Расчётная ставка НДС 5/105%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT107" xml:space="preserve">
+    <value>НДС 7/107%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT107_DESCRIPTION" xml:space="preserve">
+    <value>Расчётная ставка НДС 7/107%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT10_DESCRIPTION" xml:space="preserve">
+    <value>Ставка НДС 10%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT110" xml:space="preserve">
+    <value>НДС 10/110%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT110_DESCRIPTION" xml:space="preserve">
+    <value>Расчётная ставка НДС 10/110%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT120" xml:space="preserve">
+    <value>НДС 20/120%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT120_DESCRIPTION" xml:space="preserve">
+    <value>Расчётная ставка НДС 20/120%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT20_DESCRIPTION" xml:space="preserve">
+    <value>Ставка НДС 20%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT5" xml:space="preserve">
+    <value>НДС 5%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT5_DESCRIPTION" xml:space="preserve">
+    <value>Ставка НДС 5%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT7" xml:space="preserve">
+    <value>НДС 7%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT7_DESCRIPTION" xml:space="preserve">
+    <value>Ставка НДС 7%</value>
+  </data>
 </root>
