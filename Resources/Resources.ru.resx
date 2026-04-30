@@ -5,7 +5,7 @@
   Project: Gizmo.Shared
   Locale: ru, Russian
   Exported by: Oleg Savelos
-  Exported at: Tue, 31 Mar 2026 14:32:48 +0300 
+  Exported at: Wed, 29 Apr 2026 15:52:18 +0300 
   --> 
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -636,10 +636,10 @@
     <value>Сообщение с уведомлением о времени бронирования</value> 
   </data> 
   <data name="SERVER_OPTION_TAX_DEPOSITS_TAX_SYSTEM_DESCRIPTION" xml:space="preserve"> 
-    <value>Определяет систему налогообложения депозитов</value> 
+    <value>Определяет систему налогообложения для депозитов</value> 
   </data> 
   <data name="SERVER_OPTION_TAX_DEPOSITS_TAX_SYSTEM_NAME" xml:space="preserve"> 
-    <value>Система налогообложения депозитов</value> 
+    <value>Система налогообложения для депозитов</value> 
   </data> 
   <data name="SERVER_OPTION_TAX_GOODS_VAT_RATE_DESCRIPTION" xml:space="preserve"> 
     <value>Указывает ставку НДС на товары</value> 
@@ -654,16 +654,16 @@
     <value>Ставка НДС на сервисы</value> 
   </data> 
   <data name="TAX_SYSTEMS_RUSSIA_MAIN" xml:space="preserve"> 
-    <value>Основной</value> 
+    <value>ОСН</value> 
   </data> 
   <data name="TAX_SYSTEMS_RUSSIA_PATENT_SYSTEM" xml:space="preserve"> 
-    <value>Патентная система</value> 
+    <value>Патент</value> 
   </data> 
   <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_EXPSENSES" xml:space="preserve"> 
-    <value>Упрощенная система минус расходы</value> 
+    <value>УСН (Доход минус расход)</value> 
   </data> 
   <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_TAXATION" xml:space="preserve"> 
-    <value>Упрощенная система минус налогообложение</value> 
+    <value>УСН (Доход)</value> 
   </data> 
   <data name="TAX_SYSTEMS_RUSSIA_SINGLE_AGRICULTURAL_TAX" xml:space="preserve"> 
     <value>ЕСхн</value> 
@@ -672,19 +672,79 @@
     <value>Россия</value> 
   </data> 
   <data name="TAX_SYSTEM_COUNTRY_UNSPECIFIED" xml:space="preserve"> 
-    <value>Неизвестно</value> 
+    <value>Не определена</value> 
   </data> 
   <data name="VAT_RATES_RUSSIA_NONE" xml:space="preserve"> 
-    <value>Неа</value> 
+    <value>Без НДС</value> 
   </data> 
   <data name="VAT_RATES_RUSSIA_VAT0" xml:space="preserve"> 
-    <value>НДС0</value> 
+    <value>НДС 0%</value> 
   </data> 
   <data name="VAT_RATES_RUSSIA_VAT10" xml:space="preserve"> 
-    <value>НДС10</value> 
+    <value>НДС 10%</value> 
   </data> 
   <data name="VAT_RATES_RUSSIA_VAT20" xml:space="preserve"> 
-    <value>НДС20</value> 
+    <value>НДС 20%</value> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_ADD_DATE_NAME" xml:space="preserve"> 
+    <value>Добавить дату</value> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_POPULARITY_NAME" xml:space="preserve"> 
+    <value>Популярность</value> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_RATING_NAME" xml:space="preserve"> 
+    <value>Рейтинг</value> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_RELEASE_DATE_NAME" xml:space="preserve"> 
+    <value>Дата выхода</value> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_TITLE_NAME" xml:space="preserve"> 
+    <value>Заголовок</value> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_USE_NAME" xml:space="preserve"> 
+    <value>Использовать</value> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_ADMIN_MODE" xml:space="preserve"> 
+    <value>Режим администратора</value> 
+  </data> 
+  <data name="GIZMO_POLICY_APPLICATIONS_CREATE_DESCRIPTION" xml:space="preserve"> 
+    <value>Создание приложений</value> 
+  </data> 
+  <data name="GIZMO_POLICY_APPLICATIONS_CREATE_NAME" xml:space="preserve"> 
+    <value>Создание</value> 
+  </data> 
+  <data name="GIZMO_POLICY_APPLICATIONS_EDIT_DESCRIPTION" xml:space="preserve"> 
+    <value>Редактирование приложений</value> 
+  </data> 
+  <data name="GIZMO_POLICY_APPLICATIONS_EDIT_NAME" xml:space="preserve"> 
+    <value>Редактирование</value> 
+  </data> 
+  <data name="GIZMO_POLICY_APPLICATIONS_DELETE_DESCRIPTION" xml:space="preserve"> 
+    <value>Удаление приложений</value> 
+  </data> 
+  <data name="GIZMO_POLICY_APPLICATIONS_DELETE_NAME" xml:space="preserve"> 
+    <value>Удаление</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_DEPLOYMENT_DESCRIPTION" xml:space="preserve"> 
+    <value>Право для редактирования развертываний</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_DEPLOYMENT_NAME" xml:space="preserve"> 
+    <value>Развертывание</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_LOG_DESCRIPTION" xml:space="preserve"> 
+    <value>Доступ к мониторингу логов</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_MARKETING_DESCRIPTION" xml:space="preserve"> 
+    <value>Доступ к разделу маркетинга (новости, новостные ленты, скидки)</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_MARKETING_NAME" xml:space="preserve"> 
+    <value>Маркетинг</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SETTINGS_DESCRIPTION" xml:space="preserve"> 
+    <value>Доступ к разделу настроек</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SETTINGS_NAME" xml:space="preserve"> 
+    <value>Настройки</value> 
   </data> 
    
    
@@ -1004,6 +1064,42 @@
    
    
    
+  <data name="SPECIAL_FOLDER_MUSIC" xml:space="preserve"> 
+    <value>Музыка</value> 
+  </data> 
+  <data name="SPECIAL_FOLDER_MUSIC_DESCRIPTION" xml:space="preserve"> 
+    <value>Папка для музыки</value> 
+  </data> 
+  <data name="SPECIAL_FOLDER_PICTURES" xml:space="preserve"> 
+    <value>Изображения</value> 
+  </data> 
+  <data name="SPECIAL_FOLDER_PICTURES_DESCRIPTION" xml:space="preserve"> 
+    <value>Папка для изображений</value> 
+  </data> 
+  <data name="SPECIAL_FOLDER_VIDEOS" xml:space="preserve"> 
+    <value>Видео</value> 
+  </data> 
+  <data name="SPECIAL_FOLDER_VIDEOS_DESCRIPTION" xml:space="preserve"> 
+    <value>Папка для видео</value> 
+  </data> 
+  <data name="SPECIAL_FOLDER_SAVED_GAMES" xml:space="preserve"> 
+    <value>Сохранения игр</value> 
+  </data> 
+  <data name="SPECIAL_FOLDER_SAVED_GAMES_DESCRIPTION" xml:space="preserve"> 
+    <value>Папка для игровых сохранений</value> 
+  </data> 
+  <data name="SPECIAL_FOLDER_PERSONAL" xml:space="preserve"> 
+    <value>Персональная папка</value> 
+  </data> 
+  <data name="SPECIAL_FOLDER_PERSONAL_DESCRIPTION" xml:space="preserve"> 
+    <value>Персональная папка для файлов</value> 
+  </data> 
+  <data name="USER_ROLE_NONE" xml:space="preserve"> 
+    <value>Не выбрано</value> 
+  </data> 
+  <data name="USER_ROLE_NONE_DESCRIPTION" xml:space="preserve"> 
+    <value>Роль не присвоена</value> 
+  </data> 
    
    
    
@@ -1028,36 +1124,10 @@
    
    
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+  <data name="VAT_RATES_RUSSIA_VAT22" xml:space="preserve"> 
+    <value>НДС 22%</value> 
+  </data> 
+  <data name="VAT_RATES_RUSSIA_VAT22_DESCRIPTION" xml:space="preserve"> 
+    <value>НДС 22%</value> 
+  </data> 
 </root>

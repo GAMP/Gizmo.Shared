@@ -5,7 +5,7 @@
   Project: Gizmo.Shared
   Locale: pt-BR, Brazilian Portuguese
   Exported by: Oleg Savelos
-  Exported at: Tue, 31 Mar 2026 14:32:48 +0300 
+  Exported at: Wed, 29 Apr 2026 15:52:18 +0300 
   --> 
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -686,6 +686,8 @@
   <data name="VAT_RATES_RUSSIA_VAT20" xml:space="preserve"> 
     <value>IVA0</value> 
   </data> 
+   
+   
    
    
    
