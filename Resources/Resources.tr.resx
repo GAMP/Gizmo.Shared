@@ -1260,7 +1260,7 @@
     <value>Yerleşim Planı bölümüne ait politikalar.</value>
   </data>
   <data name="GIZMO_POLICY_GROUP_HOST_LAYOUT_NAME" xml:space="preserve">
-    <value>Yerleşim Planı</value>
+    <value>Planlar</value>
   </data>
   <data name="GIZMO_POLICY_GROUP_LOG_DESCRIPTION" xml:space="preserve">
     <value>Günlük bölümüne ait politikalar.</value>

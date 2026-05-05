@@ -791,7 +791,7 @@
     <value>Πολιτικές για τη διαχείριση διατάξεων σταθμών.</value> 
   </data> 
   <data name="GIZMO_POLICY_GROUP_HOST_LAYOUT_NAME" xml:space="preserve"> 
-    <value>Διάταξη σταθμών</value> 
+    <value>Διατάξεις</value> 
   </data> 
   <data name="GIZMO_POLICY_HOST_LAYOUT_DESCRIPTION" xml:space="preserve"> 
     <value>Παραχώρηση πρόσβασης σε διατάξεις σταθμών</value> 

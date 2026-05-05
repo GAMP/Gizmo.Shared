@@ -1283,7 +1283,7 @@
     <value>Политики для управления схемами размещения.</value>
   </data>
   <data name="GIZMO_POLICY_GROUP_HOST_LAYOUT_NAME" xml:space="preserve">
-    <value>Схема размещения</value>
+    <value>Схемы</value>
   </data>
   <data name="GIZMO_POLICY_GROUP_PRODUCTS_DESCRIPTION" xml:space="preserve">
     <value>Политики для управления товарами.</value>

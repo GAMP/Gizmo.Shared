@@ -481,7 +481,7 @@
     <value>Policies for host layout management.</value>
   </data>
   <data name="GIZMO_POLICY_GROUP_HOST_LAYOUT_NAME" xml:space="preserve">
-    <value>Host layout</value>
+    <value>Host layouts</value>
   </data>
   <data name="GIZMO_POLICY_HOST_LAYOUT_DESCRIPTION" xml:space="preserve">
     <value>Grant access to host layouts</value>

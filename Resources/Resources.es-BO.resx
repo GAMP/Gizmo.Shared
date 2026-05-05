@@ -423,7 +423,7 @@
     <value>Políticas de la sección «Esquema de distribución».</value>
   </data>
   <data name="GIZMO_POLICY_GROUP_HOST_LAYOUT_NAME" xml:space="preserve">
-    <value>Esquema de distribución</value>
+    <value>Esquemas</value>
   </data>
   <data name="GIZMO_POLICY_HOST_LAYOUT_DESCRIPTION" xml:space="preserve">
     <value>Acceso a la sección «Esquema de distribución».</value>

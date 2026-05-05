@@ -785,7 +785,7 @@
     <value>Políticas para gerenciamento do layout de terminais.</value> 
   </data> 
   <data name="GIZMO_POLICY_GROUP_HOST_LAYOUT_NAME" xml:space="preserve"> 
-    <value>Layout dos terminais</value> 
+    <value>Layouts</value> 
   </data> 
   <data name="GIZMO_POLICY_HOST_LAYOUT_DESCRIPTION" xml:space="preserve"> 
     <value>Garante acesso ao layouts dos terminais</value> 
