@@ -1817,7 +1817,13 @@
   <data name="VAT_RATES_RUSSIA_VAT22" xml:space="preserve"> 
     <value>IVA 22%</value> 
   </data> 
-  <data name="VAT_RATES_RUSSIA_VAT22_DESCRIPTION" xml:space="preserve"> 
-    <value>Taxa de IVA de 22%</value> 
-  </data> 
+  <data name="VAT_RATES_RUSSIA_VAT22_DESCRIPTION" xml:space="preserve">
+    <value>Taxa de IVA de 22%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT122" xml:space="preserve">
+    <value>IVA 22/122%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT122_DESCRIPTION" xml:space="preserve">
+    <value>Taxa de IVA calculada de 22/122%</value>
+  </data>
 </root>

@@ -421,6 +421,7 @@
   <data name="VAT_RATES_RUSSIA_VAT110" xml:space="preserve"><value>MOMS110</value></data>
   <data name="VAT_RATES_RUSSIA_VAT120" xml:space="preserve"><value>MOMS120</value></data>
   <data name="VAT_RATES_RUSSIA_VAT22" xml:space="preserve"><value>MOMS22</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT122" xml:space="preserve"><value>MOMS122</value></data>
   <data name="SMTP_SECURITY_NONE_NAME" xml:space="preserve"><value>Ingen</value></data>
   <data name="SMTP_SECURITY_SSL_NAME" xml:space="preserve"><value>SSL</value></data>
   <data name="SMTP_SECURITY_STARTTLS_NAME" xml:space="preserve"><value>STARTTLS</value></data>
@@ -525,6 +526,7 @@
   <data name="VAT_RATES_RUSSIA_VAT110_DESCRIPTION" xml:space="preserve"><value>10/110% beregnet momssats</value></data>
   <data name="VAT_RATES_RUSSIA_VAT120_DESCRIPTION" xml:space="preserve"><value>20/120% beregnet momssats</value></data>
   <data name="VAT_RATES_RUSSIA_VAT22_DESCRIPTION" xml:space="preserve"><value>22% momssats</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT122_DESCRIPTION" xml:space="preserve"><value>22/122% beregnet momssats</value></data>
   <data name="DISK_SPACE_ALLOCATIONS_ZERO_DESCRIPTION" xml:space="preserve"><value>Nul diskpladsallokering</value></data>
   <data name="DISK_SPACE_ALLOCATIONS_FIVE_DESCRIPTION" xml:space="preserve"><value>5% diskpladsallokering</value></data>
   <data name="DISK_SPACE_ALLOCATIONS_TEN_DESCRIPTION" xml:space="preserve"><value>10% diskpladsallokering</value></data>

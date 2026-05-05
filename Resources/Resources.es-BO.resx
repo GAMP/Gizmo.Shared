@@ -1232,6 +1232,9 @@
   <data name="VAT_RATES_RUSSIA_VAT22" xml:space="preserve">
     <value>IVA 22%</value>
   </data>
+  <data name="VAT_RATES_RUSSIA_VAT122" xml:space="preserve">
+    <value>IVA 22/122%</value>
+  </data>
   <data name="SMTP_SECURITY_NONE_NAME" xml:space="preserve">
     <value>Ninguno</value>
   </data>
@@ -1543,6 +1546,9 @@
   </data>
   <data name="VAT_RATES_RUSSIA_VAT22_DESCRIPTION" xml:space="preserve">
     <value>Tasa de IVA del 22%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT122_DESCRIPTION" xml:space="preserve">
+    <value>Tasa de IVA calculada 22/122%</value>
   </data>
   <data name="DISK_SPACE_ALLOCATIONS_ZERO_DESCRIPTION" xml:space="preserve">
     <value>Sin asignación de espacio en disco</value>

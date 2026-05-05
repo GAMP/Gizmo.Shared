@@ -95,5 +95,13 @@ namespace Gizmo
         [Name("VAT22", nameof(Resources.VAT_RATES_RUSSIA_VAT22))]
         [ExtendedDescription("22% VAT rate", nameof(Resources.VAT_RATES_RUSSIA_VAT22_DESCRIPTION))]
         RU_vat22 = 10,
+
+        /// <summary>
+        /// 22/122% VAT (vat122)
+        /// </summary>
+        [TaxSystemCountry(TaxSystemCountry.Russia)]
+        [Name("VAT122", nameof(Resources.VAT_RATES_RUSSIA_VAT122))]
+        [ExtendedDescription("22/122% calculated VAT rate", nameof(Resources.VAT_RATES_RUSSIA_VAT122_DESCRIPTION))]
+        RU_vat122 = 11,
     }
 }

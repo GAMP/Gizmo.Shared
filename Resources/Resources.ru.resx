@@ -1114,9 +1114,15 @@
   <data name="VAT_RATES_RUSSIA_VAT22" xml:space="preserve"> 
     <value>НДС 22%</value> 
   </data> 
-  <data name="VAT_RATES_RUSSIA_VAT22_DESCRIPTION" xml:space="preserve"> 
-    <value>НДС 22%</value> 
-  </data> 
+  <data name="VAT_RATES_RUSSIA_VAT22_DESCRIPTION" xml:space="preserve">
+    <value>НДС 22%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT122" xml:space="preserve">
+    <value>НДС 22/122%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT122_DESCRIPTION" xml:space="preserve">
+    <value>Расчётная ставка НДС 22/122%</value>
+  </data>
   <data name="ADVANCE_PAYMENTS_RUSSIA_ADVANCE_DESCRIPTION" xml:space="preserve">
     <value>Аванс за товары или услуги</value>
   </data>

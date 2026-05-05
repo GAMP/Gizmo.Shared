@@ -2129,6 +2129,12 @@
   <data name="VAT_RATES_RUSSIA_VAT22_DESCRIPTION" xml:space="preserve">
     <value>%22 KDV oranı</value>
   </data>
+  <data name="VAT_RATES_RUSSIA_VAT122" xml:space="preserve">
+    <value>KDV %22/122</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT122_DESCRIPTION" xml:space="preserve">
+    <value>%22/122 hesaplanmış KDV oranı</value>
+  </data>
   <data name="VAT_RATES_RUSSIA_VAT5" xml:space="preserve">
     <value>KDV %5</value>
   </data>
