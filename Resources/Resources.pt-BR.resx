@@ -1015,9 +1015,9 @@
   <data name="GIZMO_POLICY_TASKS_DELETE_NAME" xml:space="preserve"> 
     <value>Apagar</value> 
   </data> 
-  <data name="GIZMO_POLICY_GROUP_CLIENT_TASKS_DESCRIPTION" xml:space="preserve"> 
-    <value /> 
-  </data> 
+  <data name="GIZMO_POLICY_GROUP_CLIENT_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>Políticas para gerenciamento de tarefas do cliente.</value>
+  </data>
   <data name="GIZMO_POLICY_GROUP_CLIENT_TASKS_NAME" xml:space="preserve"> 
     <value>Tarefas do cliente</value> 
   </data> 
@@ -1183,8 +1183,8 @@
   <data name="HOST_NUMBER_POSITIONING_VERTICAL_RIGHT" xml:space="preserve"> 
     <value>Direita Vertical</value> 
   </data> 
-  <data name="HOST_NUMBER_POSITIONING_WALL_BOUNCE" xml:space="preserve"> 
-    <value /> 
+  <data name="HOST_NUMBER_POSITIONING_WALL_BOUNCE" xml:space="preserve">
+    <value>Rebote de parede</value>
   </data> 
   <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL_NAME" xml:space="preserve"> 
     <value>E-mail</value> 
