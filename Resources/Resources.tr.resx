@@ -1049,4 +1049,1132 @@
    
    
    
+  <data name="ADVANCE_PAYMENTS_RUSSIA_ADVANCE_DESCRIPTION" xml:space="preserve">
+    <value>Mal veya hizmetler için avans ödeme</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Teslimat anında tam ödeme</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PREPAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Mal veya hizmetlerin tesliminden önce tam ön ödeme</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_PREPAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Mal veya hizmetlerin tesliminden önce kısmi ön ödeme</value>
+  </data>
+  <data name="APPLICATION_SORTING_OPTION_ADD_DATE_NAME" xml:space="preserve">
+    <value>Eklenme Tarihi</value>
+  </data>
+  <data name="APPLICATION_SORTING_OPTION_POPULARITY_NAME" xml:space="preserve">
+    <value>Popülerlik</value>
+  </data>
+  <data name="APPLICATION_SORTING_OPTION_RATING_NAME" xml:space="preserve">
+    <value>Puan</value>
+  </data>
+  <data name="APPLICATION_SORTING_OPTION_RELEASE_DATE_NAME" xml:space="preserve">
+    <value>Çıkış Tarihi</value>
+  </data>
+  <data name="APPLICATION_SORTING_OPTION_TITLE_NAME" xml:space="preserve">
+    <value>Başlık</value>
+  </data>
+  <data name="APPLICATION_SORTING_OPTION_USE_NAME" xml:space="preserve">
+    <value>Kullanım</value>
+  </data>
+  <data name="APP_CATEGORY_APPLICATIONS_DEFAULT_NAME" xml:space="preserve">
+    <value>Uygulamalar</value>
+  </data>
+  <data name="APP_CATEGORY_GAMES_DEFAULT_NAME" xml:space="preserve">
+    <value>Oyunlar</value>
+  </data>
+  <data name="APP_CATEGORY_LAUNCHERS_DEFAULT_NAME" xml:space="preserve">
+    <value>Başlatıcılar</value>
+  </data>
+  <data name="APP_GROUP_DEFAULT_NAME" xml:space="preserve">
+    <value>Varsayılan</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_TYPE_DEFAULT_NAME" xml:space="preserve">
+    <value>Yardıma ihtiyacım var, lütfen.</value>
+  </data>
+  <data name="BILL_PROFILE_COMPUTERS_DEFAULT_NAME" xml:space="preserve">
+    <value>Bilgisayar fiyatları</value>
+  </data>
+  <data name="BILL_PROFILE_ENDPOINTS_DEFAULT_NAME" xml:space="preserve">
+    <value>Bilgisayar fiyatları</value>
+  </data>
+  <data name="BRANCH_DEFAULT_NAME" xml:space="preserve">
+    <value>Birincil</value>
+  </data>
+  <data name="CLIENT_LOGOUT_ACTION_ADMIN_MODE" xml:space="preserve">
+    <value>Yönetici Modu</value>
+  </data>
+  <data name="CLIENT_OPTIONS_DEFAULT_NAME" xml:space="preserve">
+    <value>Genel</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_FIFTEEN_DESCRIPTION" xml:space="preserve">
+    <value>%15 disk alanı tahsisi</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_FIVE_DESCRIPTION" xml:space="preserve">
+    <value>%5 disk alanı tahsisi</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TEN_DESCRIPTION" xml:space="preserve">
+    <value>%10 disk alanı tahsisi</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_THIRTY_DESCRIPTION" xml:space="preserve">
+    <value>%30 disk alanı tahsisi</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY_DESCRIPTION" xml:space="preserve">
+    <value>%20 disk alanı tahsisi</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY_FIVE_DESCRIPTION" xml:space="preserve">
+    <value>%25 disk alanı tahsisi</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_ZERO_DESCRIPTION" xml:space="preserve">
+    <value>Disk alanı tahsisi yok</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Uygulamalar için oluşturma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_CREATE_NAME" xml:space="preserve">
+    <value>Oluşturma</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Uygulamalar için silme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_DELETE_NAME" xml:space="preserve">
+    <value>Silme</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Uygulamalar için düzenleme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_EDIT_NAME" xml:space="preserve">
+    <value>Düzenleme</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Ekipmanlar için oluşturma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_CREATE_NAME" xml:space="preserve">
+    <value>Oluşturma</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Ekipmanlar için silme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_DELETE_NAME" xml:space="preserve">
+    <value>Silme</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_DESCRIPTION" xml:space="preserve">
+    <value>"Ekipmanlar" bölümüne erişim.</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Ekipmanlar için düzenleme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_EDIT_NAME" xml:space="preserve">
+    <value>Düzenleme</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_NAME" xml:space="preserve">
+    <value>Erişim</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>İstemci Görevleri için oluşturma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_CREATE_NAME" xml:space="preserve">
+    <value>Oluşturma</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>İstemci Görevleri için silme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_DELETE_NAME" xml:space="preserve">
+    <value>Silme</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>"İstemci Görevleri" bölümüne erişim.</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>İstemci Görevleri için düzenleme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_EDIT_NAME" xml:space="preserve">
+    <value>Düzenleme</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_NAME" xml:space="preserve">
+    <value>Erişim</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Kontrolörler için oluşturma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_CREATE_NAME" xml:space="preserve">
+    <value>Oluşturma</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Kontrolörler için silme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_DELETE_NAME" xml:space="preserve">
+    <value>Silme</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_DESCRIPTION" xml:space="preserve">
+    <value>"Kontrolörler" bölümüne erişim.</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Kontrolörler için düzenleme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_EDIT_NAME" xml:space="preserve">
+    <value>Düzenleme</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_NAME" xml:space="preserve">
+    <value>Erişim</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_ASSETS_DESCRIPTION" xml:space="preserve">
+    <value>Ekipmanlar bölümüne ait politikalar.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_ASSETS_NAME" xml:space="preserve">
+    <value>Ekipmanlar</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CLIENT_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>İstemci Görevleri bölümüne ait politikalar.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CLIENT_TASKS_NAME" xml:space="preserve">
+    <value>İstemci Görevleri</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CONTROLLERS_DESCRIPTION" xml:space="preserve">
+    <value>Kontrolörler bölümüne ait politikalar.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CONTROLLERS_NAME" xml:space="preserve">
+    <value>Kontrolörler</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_DEPLOYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Dağıtım bölümüne ait politikalar.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_DEPLOYMENT_NAME" xml:space="preserve">
+    <value>Dağıtım</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOSTS_DESCRIPTION" xml:space="preserve">
+    <value>Ana Bilgisayarlar bölümüne ait politikalar.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOSTS_NAME" xml:space="preserve">
+    <value>Ana Bilgisayarlar</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>Ana Bilgisayar Grupları bölümüne ait politikalar.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_GROUPS_NAME" xml:space="preserve">
+    <value>Ana Bilgisayar Grupları</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_LAYOUT_DESCRIPTION" xml:space="preserve">
+    <value>Yerleşim Planı bölümüne ait politikalar.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_LAYOUT_NAME" xml:space="preserve">
+    <value>Yerleşim Planı</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_LOG_DESCRIPTION" xml:space="preserve">
+    <value>Günlük bölümüne ait politikalar.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_MARKETING_DESCRIPTION" xml:space="preserve">
+    <value>Pazarlama bölümüne ait politikalar.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_MARKETING_NAME" xml:space="preserve">
+    <value>Pazarlama</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCTS_DESCRIPTION" xml:space="preserve">
+    <value>Ürünler bölümüne ait politikalar.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCTS_NAME" xml:space="preserve">
+    <value>Ürünler</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCT_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>Ürün Grupları bölümüne ait politikalar.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCT_GROUPS_NAME" xml:space="preserve">
+    <value>Ürün Grupları</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SECURITY_PROFILES_DESCRIPTION" xml:space="preserve">
+    <value>Güvenlik Profilleri bölümüne ait politikalar.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SECURITY_PROFILES_NAME" xml:space="preserve">
+    <value>Güvenlik Profilleri</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SETTINGS_DESCRIPTION" xml:space="preserve">
+    <value>Ayarlar bölümüne ait politikalar.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SETTINGS_NAME" xml:space="preserve">
+    <value>Ayarlar</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>Görevler bölümüne ait politikalar.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_TASKS_NAME" xml:space="preserve">
+    <value>Görevler</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_USER_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı Grubu bölümüne ait politikalar.</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_USER_GROUP_NAME" xml:space="preserve">
+    <value>Kullanıcı Grubu</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Ana Bilgisayarlar için oluşturma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_CREATE_NAME" xml:space="preserve">
+    <value>Oluşturma</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Ana Bilgisayarlar için silme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_DELETE_NAME" xml:space="preserve">
+    <value>Silme</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_DESCRIPTION" xml:space="preserve">
+    <value>"Ana Bilgisayarlar" bölümüne erişim.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Ana Bilgisayarlar için düzenleme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_EDIT_NAME" xml:space="preserve">
+    <value>Düzenleme</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_NAME" xml:space="preserve">
+    <value>Erişim</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Ana Bilgisayar Grupları için oluşturma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_CREATE_NAME" xml:space="preserve">
+    <value>Oluşturma</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Ana Bilgisayar Grupları için silme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_DELETE_NAME" xml:space="preserve">
+    <value>Silme</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>"Ana Bilgisayar Grupları" bölümüne erişim.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Ana Bilgisayar Grupları için düzenleme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_EDIT_NAME" xml:space="preserve">
+    <value>Düzenleme</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_NAME" xml:space="preserve">
+    <value>Erişim</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Yerleşim Planı için oluşturma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_CREATE_NAME" xml:space="preserve">
+    <value>Oluşturma</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Yerleşim Planı için silme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_DELETE_NAME" xml:space="preserve">
+    <value>Silme</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_DESCRIPTION" xml:space="preserve">
+    <value>"Yerleşim Planı" bölümüne erişim.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Yerleşim Planı için düzenleme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_EDIT_NAME" xml:space="preserve">
+    <value>Düzenleme</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_NAME" xml:space="preserve">
+    <value>Erişim</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_LOCK_NAME" xml:space="preserve">
+    <value>Giriş Kilidi</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_DESCRIPTION" xml:space="preserve">
+    <value>Bilgisayarları uzaktan kontrol etme ve istemci ekranlarıyla etkileşime geçme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_NAME" xml:space="preserve">
+    <value>Uzaktan Kumanda</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_VIEW_DESCRIPTION" xml:space="preserve">
+    <value>Uzak bilgisayar ekranlarını görüntüleme ve istemci etkinliklerini izleme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_VIEW_NAME" xml:space="preserve">
+    <value>Uzaktan Kumanda Görüntüleme</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_NAME" xml:space="preserve">
+    <value>Bilgisayarları Aç</value>
+  </data>
+  <data name="GIZMO_POLICY_MARKETING_DESCRIPTION" xml:space="preserve">
+    <value>"Pazarlama" bölümüne erişim.</value>
+  </data>
+  <data name="GIZMO_POLICY_MARKETING_NAME" xml:space="preserve">
+    <value>Erişim</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Ürünler için oluşturma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_CREATE_NAME" xml:space="preserve">
+    <value>Oluşturma</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Ürünler için silme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_DELETE_NAME" xml:space="preserve">
+    <value>Silme</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_DESCRIPTION" xml:space="preserve">
+    <value>"Ürünler" bölümüne erişim.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Ürünler için düzenleme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_EDIT_NAME" xml:space="preserve">
+    <value>Düzenleme</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_NAME" xml:space="preserve">
+    <value>Erişim</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Ürün Grupları için oluşturma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_CREATE_NAME" xml:space="preserve">
+    <value>Oluşturma</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Ürün Grupları için silme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_DELETE_NAME" xml:space="preserve">
+    <value>Silme</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>"Ürün Grupları" bölümüne erişim.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Ürün Grupları için düzenleme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_EDIT_NAME" xml:space="preserve">
+    <value>Düzenleme</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_NAME" xml:space="preserve">
+    <value>Erişim</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_PAY_IN_NAME" xml:space="preserve">
+    <value>Para Girişi</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_PAY_OUT_NAME" xml:space="preserve">
+    <value>Para Çıkışı</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Rezervasyonlar için oluşturma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_CREATE_NAME" xml:space="preserve">
+    <value>Oluşturma</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_DESCRIPTION" xml:space="preserve">
+    <value>Misafir hesapları için rezervasyon oluşturma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_NAME" xml:space="preserve">
+    <value>Misafirler için Rezervasyon</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Güvenlik Profilleri için oluşturma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_CREATE_NAME" xml:space="preserve">
+    <value>Oluşturma</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Güvenlik Profilleri için silme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_DELETE_NAME" xml:space="preserve">
+    <value>Silme</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_DESCRIPTION" xml:space="preserve">
+    <value>"Güvenlik Profilleri" bölümüne erişim.</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Güvenlik Profilleri için düzenleme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_EDIT_NAME" xml:space="preserve">
+    <value>Düzenleme</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_NAME" xml:space="preserve">
+    <value>Erişim</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Geçerli şubede stok düzeltmesi yapma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_BRANCH_NAME" xml:space="preserve">
+    <value>Şubede Düzeltme</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_DESCRIPTION" xml:space="preserve">
+    <value>Stok düzeltmesi yapma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Tüm şubelerde stok düzeltmesi yapma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_NAME" xml:space="preserve">
+    <value>Genel Düzeltme</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_NAME" xml:space="preserve">
+    <value>Düzeltme</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_COST_DESCRIPTION" xml:space="preserve">
+    <value>Stok düzeltmesini maliyet fiyatından satış olarak yapma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_COST_NAME" xml:space="preserve">
+    <value>Maliyet Fiyatından Satış</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_PRICE_DESCRIPTION" xml:space="preserve">
+    <value>Stok düzeltmesini perakende fiyatından satış olarak yapma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_PRICE_NAME" xml:space="preserve">
+    <value>Perakende Fiyatından Satış</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_WRITE_OFF_DESCRIPTION" xml:space="preserve">
+    <value>Stoktan silme işlemi yapma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_WRITE_OFF_NAME" xml:space="preserve">
+    <value>Stok Silme</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Geçerli şubede stok sayımı yapma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_BRANCH_NAME" xml:space="preserve">
+    <value>Şubede Sayım</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_DESCRIPTION" xml:space="preserve">
+    <value>Stok sayımı yapma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Tüm şubelerde stok sayımı yapma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_GLOBAL_NAME" xml:space="preserve">
+    <value>Genel Sayım</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_NAME" xml:space="preserve">
+    <value>Sayım</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_VIEW_EXPECTED_DESCRIPTION" xml:space="preserve">
+    <value>Sayım sırasında beklenen stok miktarını görüntüleme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_VIEW_EXPECTED_NAME" xml:space="preserve">
+    <value>Beklenen Miktarı Görüntüle</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Stok için oluşturma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_CREATE_NAME" xml:space="preserve">
+    <value>Oluşturma</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Stok için silme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_DELETE_NAME" xml:space="preserve">
+    <value>Silme</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Stok için düzenleme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_EDIT_NAME" xml:space="preserve">
+    <value>Düzenleme</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Geçerli şubede gelen stokları kabul etme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_BRANCH_NAME" xml:space="preserve">
+    <value>Şubede Gelen Stok</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_DESCRIPTION" xml:space="preserve">
+    <value>Gelen stokları kabul etme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Tüm şubelerde gelen stokları kabul etme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_GLOBAL_NAME" xml:space="preserve">
+    <value>Genel Gelen Stok</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_NAME" xml:space="preserve">
+    <value>Gelen Stok</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Geçerli şubedeki stok seviyelerini görüntüleme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_BRANCH_NAME" xml:space="preserve">
+    <value>Şube Stok Seviyesi</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_DESCRIPTION" xml:space="preserve">
+    <value>Geçerli kasadaki stok seviyelerini görüntüleme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Tüm şubelerdeki stok seviyelerini görüntüleme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_GLOBAL_NAME" xml:space="preserve">
+    <value>Genel Stok Seviyesi</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_NAME" xml:space="preserve">
+    <value>Stok Seviyesi</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Geçerli şubede stok transferi yapma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_BRANCH_NAME" xml:space="preserve">
+    <value>Şubede Transfer</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_DESCRIPTION" xml:space="preserve">
+    <value>Stok için transfer erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Tüm şubelerde stok transferi yapma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_GLOBAL_NAME" xml:space="preserve">
+    <value>Genel Transfer</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_NAME" xml:space="preserve">
+    <value>Transfer</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Görevler için oluşturma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_CREATE_NAME" xml:space="preserve">
+    <value>Oluşturma</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Görevler için silme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_DELETE_NAME" xml:space="preserve">
+    <value>Silme</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>"Görevler" bölümüne erişim.</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Görevler için düzenleme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_EDIT_NAME" xml:space="preserve">
+    <value>Düzenleme</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_NAME" xml:space="preserve">
+    <value>Erişim</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı Grubu için oluşturma erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_CREATE_NAME" xml:space="preserve">
+    <value>Oluşturma</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı Grubu için silme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_DELETE_NAME" xml:space="preserve">
+    <value>Silme</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>"Kullanıcı Grubu" bölümüne erişim.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı Grubu için düzenleme erişimi.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_EDIT_NAME" xml:space="preserve">
+    <value>Düzenleme</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_NAME" xml:space="preserve">
+    <value>Erişim</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_LIST_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı listesi sayfasına erişim.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_LIST_NAME" xml:space="preserve">
+    <value>Liste</value>
+  </data>
+  <data name="HOST_GROUP_COMPUERS_DEFAULT_NAME" xml:space="preserve">
+    <value>Bilgisayarlar</value>
+  </data>
+  <data name="HOST_GROUP_ENDPOINTS_DEFAULT_NAME" xml:space="preserve">
+    <value>Bilgisayarlar</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUPED_DEFAULT_NAME" xml:space="preserve">
+    <value>Varsayılan yerleşim</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_CENTER" xml:space="preserve">
+    <value>Alt Orta</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_LEFT" xml:space="preserve">
+    <value>Alt Sol</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_RIGHT" xml:space="preserve">
+    <value>Alt Sağ</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_LEFT" xml:space="preserve">
+    <value>Orta Sol</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_RIGHT" xml:space="preserve">
+    <value>Orta Sağ</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_SCREEN" xml:space="preserve">
+    <value>Ekran Ortası</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_CENTER" xml:space="preserve">
+    <value>Üst Orta</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_LEFT" xml:space="preserve">
+    <value>Üst Sol</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_RIGHT" xml:space="preserve">
+    <value>Üst Sağ</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_CLOCKWISE" xml:space="preserve">
+    <value>Saat Yönünde</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_COUNTERCLOCKWISE" xml:space="preserve">
+    <value>Saat Yönünün Tersine</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_FIXED" xml:space="preserve">
+    <value>Sabit</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_BOTTOM" xml:space="preserve">
+    <value>Yatay Alt</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_CENTER" xml:space="preserve">
+    <value>Yatay Orta</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_TOP" xml:space="preserve">
+    <value>Yatay Üst</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_CENTER" xml:space="preserve">
+    <value>Dikey Orta</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_LEFT" xml:space="preserve">
+    <value>Dikey Sol</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_RIGHT" xml:space="preserve">
+    <value>Dikey Sağ</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_WALL_BOUNCE" xml:space="preserve">
+    <value>Duvar Sektirme</value>
+  </data>
+  <data name="HTTPS_CERTIFICATE_TYPE_SELF_SIGNED_DESCRIPTION" xml:space="preserve">
+    <value>Kendinden imzalı SSL/TLS sertifikası</value>
+  </data>
+  <data name="HTTPS_CERTIFICATE_TYPE_USER_DEFINED_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı tanımlı SSL/TLS sertifikası</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP" xml:space="preserve">
+    <value>HTTP</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTPS" xml:space="preserve">
+    <value>HTTPS</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTPS_DESCRIPTION" xml:space="preserve">
+    <value>HTTPS protokolü</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP_DESCRIPTION" xml:space="preserve">
+    <value>HTTP protokolü</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP_HTTPS" xml:space="preserve">
+    <value>HTTP ve HTTPS</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP_HTTPS_DESCRIPTION" xml:space="preserve">
+    <value>Hem HTTP hem de HTTPS protokolleri</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_ERROR" xml:space="preserve">
+    <value>Hata</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Kimlik doğrulama sırasında hata</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_NETWORK_ERROR" xml:space="preserve">
+    <value>Ağ hatası</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Kimlik doğrulama sırasında ağ hatası</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_SUCCESS" xml:space="preserve">
+    <value>Başarılı</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Kimlik doğrulama başarılı</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_UNAUTHORIZED" xml:space="preserve">
+    <value>Yetkisiz</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Kimlik doğrulama yetkisiz</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_ALPHANUMERIC_DESCRIPTION" xml:space="preserve">
+    <value>Oluşturulan anahtarlar rakam ve büyük harf içerir</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_NUMERIC_DESCRIPTION" xml:space="preserve">
+    <value>Oluşturulan anahtarlar yalnızca rakam içerir</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_UPPER_CASE_CHARACTERS_DESCRIPTION" xml:space="preserve">
+    <value>Oluşturulan anahtarlar yalnızca büyük harf içerir</value>
+  </data>
+  <data name="LINE_TYPE_DEPOSIT" xml:space="preserve">
+    <value>Depozito</value>
+  </data>
+  <data name="LINE_TYPE_DEPOSIT_DESCRIPTION" xml:space="preserve">
+    <value>Depozito kalemi</value>
+  </data>
+  <data name="LINE_TYPE_FIXED_TIME" xml:space="preserve">
+    <value>Sabit süre</value>
+  </data>
+  <data name="LINE_TYPE_FIXED_TIME_DESCRIPTION" xml:space="preserve">
+    <value>Sabit süre kalemi</value>
+  </data>
+  <data name="LINE_TYPE_PRODUCT" xml:space="preserve">
+    <value>Ürün</value>
+  </data>
+  <data name="LINE_TYPE_PRODUCT_DESCRIPTION" xml:space="preserve">
+    <value>Ürün kalemi</value>
+  </data>
+  <data name="LINE_TYPE_RESERVATION_FEE" xml:space="preserve">
+    <value>Rezervasyon ücreti</value>
+  </data>
+  <data name="LINE_TYPE_RESERVATION_FEE_DESCRIPTION" xml:space="preserve">
+    <value>Rezervasyon ücreti kalemi</value>
+  </data>
+  <data name="LINE_TYPE_SESSION_TIME" xml:space="preserve">
+    <value>Oturum süresi</value>
+  </data>
+  <data name="LINE_TYPE_SESSION_TIME_DESCRIPTION" xml:space="preserve">
+    <value>Oturum süresi kalemi</value>
+  </data>
+  <data name="LINE_TYPE_TIME_PRODUCT" xml:space="preserve">
+    <value>Zaman paketi</value>
+  </data>
+  <data name="LINE_TYPE_TIME_PRODUCT_DESCRIPTION" xml:space="preserve">
+    <value>Zaman paketi kalemi</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_CASH_NAME" xml:space="preserve">
+    <value>Nakit</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_CREDIT_CARD_NAME" xml:space="preserve">
+    <value>Kredi Kartı</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_CUSTOM_NAME" xml:space="preserve">
+    <value>Özel</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_DEPOSIT_NAME" xml:space="preserve">
+    <value>Depozito</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_POINTS_NAME" xml:space="preserve">
+    <value>Puanlar</value>
+  </data>
+  <data name="PRODUCT_GROUP_DRINKS_DEFAULT_NAME" xml:space="preserve">
+    <value>İçecekler</value>
+  </data>
+  <data name="PRODUCT_GROUP_FOOD_DEFAULT_NAME" xml:space="preserve">
+    <value>Yiyecek</value>
+  </data>
+  <data name="PRODUCT_GROUP_SWEETS_DEFAULT_NAME" xml:space="preserve">
+    <value>Tatlılar</value>
+  </data>
+  <data name="PRODUCT_GROUP_TIME_OFFERS_DEFAULT_NAME" xml:space="preserve">
+    <value>Zaman paketleri</value>
+  </data>
+  <data name="REGISTER_DEFAULT_NAME" xml:space="preserve">
+    <value>Birincil</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL_DESCRIPTION" xml:space="preserve">
+    <value>E-posta ile doğrulama</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL_NAME" xml:space="preserve">
+    <value>E-posta</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MESSENGER_DESCRIPTION" xml:space="preserve">
+    <value>Mesajlaşma uygulaması ile doğrulama</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MESSENGER_NAME" xml:space="preserve">
+    <value>Mesajlaşma uygulaması</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE_DESCRIPTION" xml:space="preserve">
+    <value>Cep telefonu ile doğrulama</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE_NAME" xml:space="preserve">
+    <value>Cep Telefonu</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Doğrulama gerekli değil</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_NONE_NAME" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_FIXED" xml:space="preserve">
+    <value>Sabit</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_FIXED_DESCRIPTION" xml:space="preserve">
+    <value>Sabit tutarda rezervasyon ücreti</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_NONE" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Rezervasyon ücreti yok</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_PERCENTAGE" xml:space="preserve">
+    <value>Yüzde</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_PERCENTAGE_DESCRIPTION" xml:space="preserve">
+    <value>Yüzde bazlı rezervasyon ücreti</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_ENABLED_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı çıkış tolerans süresinin etkin olup olmadığını belirtir</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_ENABLED_NAME" xml:space="preserve">
+    <value>Kullanıcı çıkış tolerans süresini etkinleştir</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı çıkış tolerans süresini belirtir</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_NAME" xml:space="preserve">
+    <value>Tolerans süresi</value>
+  </data>
+  <data name="SMTP_SECURITY_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Şifreleme yok</value>
+  </data>
+  <data name="SMTP_SECURITY_NONE_NAME" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+  <data name="SMTP_SECURITY_SSL_DESCRIPTION" xml:space="preserve">
+    <value>SSL şifreleme</value>
+  </data>
+  <data name="SMTP_SECURITY_SSL_NAME" xml:space="preserve">
+    <value>SSL</value>
+  </data>
+  <data name="SMTP_SECURITY_STARTTLS_DESCRIPTION" xml:space="preserve">
+    <value>STARTTLS şifreleme</value>
+  </data>
+  <data name="SMTP_SECURITY_STARTTLS_NAME" xml:space="preserve">
+    <value>STARTTLS</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DESKTOP" xml:space="preserve">
+    <value>Masaüstü</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DESKTOP_DESCRIPTION" xml:space="preserve">
+    <value>Masaüstü klasörü</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DOWNLOADS" xml:space="preserve">
+    <value>İndirilenler</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DOWNLOADS_DESCRIPTION" xml:space="preserve">
+    <value>İndirilenler klasörü</value>
+  </data>
+  <data name="SPECIAL_FOLDER_FAVORITES" xml:space="preserve">
+    <value>Favoriler</value>
+  </data>
+  <data name="SPECIAL_FOLDER_FAVORITES_DESCRIPTION" xml:space="preserve">
+    <value>Favoriler klasörü</value>
+  </data>
+  <data name="SPECIAL_FOLDER_NONE" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+  <data name="SPECIAL_FOLDER_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Özel klasör yok</value>
+  </data>
+  <data name="STOCK_SELLING_POINT_DEFAULT_NAME" xml:space="preserve">
+    <value>Satış noktası</value>
+  </data>
+  <data name="STOCK_WAREHOUSE_DEFAULT_NAME" xml:space="preserve">
+    <value>Depo</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_MAIN_DESCRIPTION" xml:space="preserve">
+    <value>Ana vergi sistemi</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_PATENT_SYSTEM_DESCRIPTION" xml:space="preserve">
+    <value>Patent tabanlı vergi sistemi</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_EXPSENSES_DESCRIPTION" xml:space="preserve">
+    <value>Gelir eksi gider tabanlı basitleştirilmiş vergi sistemi</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_TAXATION_DESCRIPTION" xml:space="preserve">
+    <value>Gelir tabanlı basitleştirilmiş vergi sistemi</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SINGLE_AGRICULTURAL_TAX_DESCRIPTION" xml:space="preserve">
+    <value>Tarımsal üreticiler için tek vergi</value>
+  </data>
+  <data name="TAX_SYSTEMS_UNDEFINED" xml:space="preserve">
+    <value>Tanımsız</value>
+  </data>
+  <data name="TAX_SYSTEMS_UNDEFINED_DESCRIPTION" xml:space="preserve">
+    <value>Tanımsız vergi sistemi</value>
+  </data>
+  <data name="TAX_SYSTEM_COUNTRY_RUSSIA_DESCRIPTION" xml:space="preserve">
+    <value>Rusya Federasyonu vergi sistemi</value>
+  </data>
+  <data name="TAX_SYSTEM_COUNTRY_UNSPECIFIED_DESCRIPTION" xml:space="preserve">
+    <value>Ülkeye özel vergi sistemi yok</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_EMAIL_DESCRIPTION" xml:space="preserve">
+    <value>E-posta ile kurtarma</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_EMAIL_NAME" xml:space="preserve">
+    <value>E-posta</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_MOBILE_DESCRIPTION" xml:space="preserve">
+    <value>Cep telefonu ile kurtarma</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_MOBILE_NAME" xml:space="preserve">
+    <value>Cep Telefonu</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Kurtarma yöntemi mevcut değil</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_NONE_NAME" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+  <data name="USER_ROLE_GUEST" xml:space="preserve">
+    <value>Misafir</value>
+  </data>
+  <data name="USER_ROLE_GUEST_DESCRIPTION" xml:space="preserve">
+    <value>Misafir kullanıcı rolü</value>
+  </data>
+  <data name="USER_ROLE_OPERATOR" xml:space="preserve">
+    <value>Operatör</value>
+  </data>
+  <data name="USER_ROLE_OPERATOR_DESCRIPTION" xml:space="preserve">
+    <value>Operatör rolü</value>
+  </data>
+  <data name="USER_ROLE_USER" xml:space="preserve">
+    <value>Kullanıcı</value>
+  </data>
+  <data name="USER_ROLE_USER_DESCRIPTION" xml:space="preserve">
+    <value>Standart kullanıcı rolü</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_ATTRIBUTES" xml:space="preserve">
+    <value>Özellikler</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_ATTRIBUTES_DESCRIPTION" xml:space="preserve">
+    <value>Özelliklere göre ara</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_EMAIL" xml:space="preserve">
+    <value>E-posta</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_EMAIL_DESCRIPTION" xml:space="preserve">
+    <value>E-posta adresine göre ara</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Ada göre ara</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_IDENTIFICATION_NUMBER" xml:space="preserve">
+    <value>Kimlik numarası</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_IDENTIFICATION_NUMBER_DESCRIPTION" xml:space="preserve">
+    <value>Kimlik numarasına göre ara</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME" xml:space="preserve">
+    <value>Soyad</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Soyada göre ara</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_MOBILE_PHONE" xml:space="preserve">
+    <value>Cep telefonu</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_MOBILE_PHONE_DESCRIPTION" xml:space="preserve">
+    <value>Cep telefonu numarasına göre ara</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_PHONE" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_PHONE_DESCRIPTION" xml:space="preserve">
+    <value>Telefon numarasına göre ara</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USERNAME" xml:space="preserve">
+    <value>Kullanıcı adı</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USERNAME_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı adına göre ara</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USER_GROUP" xml:space="preserve">
+    <value>Kullanıcı grubu</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USER_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı grubuna göre ara</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_NONE_DESCRIPTION" xml:space="preserve">
+    <value>KDV uygulanmaz</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT0_DESCRIPTION" xml:space="preserve">
+    <value>Sıfır yüzde KDV oranı</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT105" xml:space="preserve">
+    <value>KDV %5/105</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT105_DESCRIPTION" xml:space="preserve">
+    <value>Hesaplanan KDV oranı %5/105</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT107" xml:space="preserve">
+    <value>KDV %7/107</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT107_DESCRIPTION" xml:space="preserve">
+    <value>Hesaplanan KDV oranı %7/107</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT10_DESCRIPTION" xml:space="preserve">
+    <value>%10 KDV oranı</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT110" xml:space="preserve">
+    <value>KDV %10/110</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT110_DESCRIPTION" xml:space="preserve">
+    <value>Hesaplanan KDV oranı %10/110</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT120" xml:space="preserve">
+    <value>KDV %20/120</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT120_DESCRIPTION" xml:space="preserve">
+    <value>Hesaplanan KDV oranı %20/120</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT20_DESCRIPTION" xml:space="preserve">
+    <value>%20 KDV oranı</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT22" xml:space="preserve">
+    <value>KDV %22</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT22_DESCRIPTION" xml:space="preserve">
+    <value>%22 KDV oranı</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT5" xml:space="preserve">
+    <value>KDV %5</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT5_DESCRIPTION" xml:space="preserve">
+    <value>%5 KDV oranı</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT7" xml:space="preserve">
+    <value>KDV %7</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT7_DESCRIPTION" xml:space="preserve">
+    <value>%7 KDV oranı</value>
+  </data>
+  <data name="SPECIAL_FOLDER_MUSIC" xml:space="preserve">
+    <value>Müzik</value>
+  </data>
+  <data name="SPECIAL_FOLDER_MUSIC_DESCRIPTION" xml:space="preserve">
+    <value>Müzik klasörü</value>
+  </data>
+  <data name="SPECIAL_FOLDER_PERSONAL" xml:space="preserve">
+    <value>Kişisel</value>
+  </data>
+  <data name="SPECIAL_FOLDER_PERSONAL_DESCRIPTION" xml:space="preserve">
+    <value>Kişisel belgeler klasörü</value>
+  </data>
+  <data name="SPECIAL_FOLDER_PICTURES" xml:space="preserve">
+    <value>Resimler</value>
+  </data>
+  <data name="SPECIAL_FOLDER_PICTURES_DESCRIPTION" xml:space="preserve">
+    <value>Resimler klasörü</value>
+  </data>
+  <data name="SPECIAL_FOLDER_SAVED_GAMES" xml:space="preserve">
+    <value>Kayıtlı Oyunlar</value>
+  </data>
+  <data name="SPECIAL_FOLDER_SAVED_GAMES_DESCRIPTION" xml:space="preserve">
+    <value>Kayıtlı oyunlar klasörü</value>
+  </data>
+  <data name="SPECIAL_FOLDER_VIDEOS" xml:space="preserve">
+    <value>Videolar</value>
+  </data>
+  <data name="SPECIAL_FOLDER_VIDEOS_DESCRIPTION" xml:space="preserve">
+    <value>Videolar klasörü</value>
+  </data>
+  <data name="USER_ROLE_NONE" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+  <data name="USER_ROLE_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Rol atanmamış</value>
+  </data>
 </root>

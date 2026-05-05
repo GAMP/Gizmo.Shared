@@ -670,9 +670,15 @@
   <data name="VAT_RATES_RUSSIA_VAT10" xml:space="preserve"> 
     <value>ΦΠΑ10</value> 
   </data> 
-  <data name="VAT_RATES_RUSSIA_VAT20" xml:space="preserve"> 
-    <value>ΦΠΑ20</value> 
-  </data> 
+  <data name="VAT_RATES_RUSSIA_VAT20" xml:space="preserve">
+    <value>ΦΠΑ20</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT22" xml:space="preserve">
+    <value>ΦΠΑ22</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT22_DESCRIPTION" xml:space="preserve">
+    <value>Συντελεστής ΦΠΑ 22%</value>
+  </data>
   <data name="APPLICATION_SORTING_OPTION_ADD_DATE_NAME" xml:space="preserve"> 
     <value>Ημερομηνία προσθήκης</value> 
   </data> 

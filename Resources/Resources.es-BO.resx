@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?> 
-<root> 
+<?xml version="1.0" encoding="utf-8"?>
+<root>
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -58,4 +58,1748 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+
+  <data name="ADVANCE_PAYMENTS_RUSSIA_ADVANCE" xml:space="preserve">
+    <value>Anticipo</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PAYMENT" xml:space="preserve">
+    <value>Pago completo</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PREPAYMENT" xml:space="preserve">
+    <value>Prepago completo</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_PREPAYMENT" xml:space="preserve">
+    <value>Prepago parcial</value>
+  </data>
+  <data name="APPLICATION_SORTING_OPTION_ADD_DATE_NAME" xml:space="preserve">
+    <value>Fecha de adición</value>
+  </data>
+  <data name="APPLICATION_SORTING_OPTION_POPULARITY_NAME" xml:space="preserve">
+    <value>Popularidad</value>
+  </data>
+  <data name="APPLICATION_SORTING_OPTION_RATING_NAME" xml:space="preserve">
+    <value>Calificación</value>
+  </data>
+  <data name="APPLICATION_SORTING_OPTION_RELEASE_DATE_NAME" xml:space="preserve">
+    <value>Fecha de lanzamiento</value>
+  </data>
+  <data name="APPLICATION_SORTING_OPTION_TITLE_NAME" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="APPLICATION_SORTING_OPTION_USE_NAME" xml:space="preserve">
+    <value>Uso</value>
+  </data>
+  <data name="CLIENT_LOGOUT_ACTION_ADMIN_MODE" xml:space="preserve">
+    <value>Modo Administrador</value>
+  </data>
+  <data name="CLIENT_LOGOUT_ACTION_CLOSE_PROGRAMS" xml:space="preserve">
+    <value>Cerrar programas</value>
+  </data>
+  <data name="CLIENT_LOGOUT_ACTION_LOG_OFF" xml:space="preserve">
+    <value>Cerrar sesión</value>
+  </data>
+  <data name="CLIENT_LOGOUT_ACTION_NO_ACTION" xml:space="preserve">
+    <value>Sin acción</value>
+  </data>
+  <data name="CLIENT_LOGOUT_ACTION_REBOOT" xml:space="preserve">
+    <value>Reiniciar</value>
+  </data>
+  <data name="CLIENT_LOGOUT_ACTION_STAND_BY" xml:space="preserve">
+    <value>Modo espera</value>
+  </data>
+  <data name="CLIENT_LOGOUT_ACTION_TURN_OFF" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+  <data name="CLIENT_POWER_SAVING_DISABLED" xml:space="preserve">
+    <value>Desactivado</value>
+  </data>
+  <data name="CLIENT_POWER_SAVING_SHUT_DOWN" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+  <data name="CLIENT_POWER_SAVING_SLEEP" xml:space="preserve">
+    <value>Suspender</value>
+  </data>
+  <data name="DISABLE_PRINT_RECEIPT_BY_DEFAULT" xml:space="preserve">
+    <value>Deshabilitar impresión de recibo por defecto</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_FIFTEEN" xml:space="preserve">
+    <value>15%</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_FIVE" xml:space="preserve">
+    <value>5%</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TEN" xml:space="preserve">
+    <value>10%</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_THIRTY" xml:space="preserve">
+    <value>30%</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY" xml:space="preserve">
+    <value>20%</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY_FIVE" xml:space="preserve">
+    <value>25%</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_ZERO" xml:space="preserve">
+    <value>0%</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Aplicaciones».</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para crear aplicaciones.</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_CREATE_NAME" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para editar aplicaciones.</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_EDIT_NAME" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para eliminar aplicaciones.</value>
+  </data>
+  <data name="GIZMO_POLICY_APPLICATIONS_DELETE_NAME" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="GIZMO_POLICY_DEPLOYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Implementación».</value>
+  </data>
+  <data name="GIZMO_POLICY_DEPLOYMENT_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_APPLICATIONS_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Aplicaciones».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_APPLICATIONS_NAME" xml:space="preserve">
+    <value>Aplicaciones</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_DEPLOYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Implementación».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_DEPLOYMENT_NAME" xml:space="preserve">
+    <value>Implementación</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_LOG_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Registro».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_LOG_NAME" xml:space="preserve">
+    <value>Registro</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_MANAGEMENT_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Administración».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_MANAGEMENT_NAME" xml:space="preserve">
+    <value>Administración</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_MONITORING_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Monitoreo».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_MONITORING_NAME" xml:space="preserve">
+    <value>Monitoreo</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_MARKETING_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Marketing».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_MARKETING_NAME" xml:space="preserve">
+    <value>Marketing</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_REGISTER_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Caja».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_REGISTER_NAME" xml:space="preserve">
+    <value>Caja</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_REPORTS_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Reportes».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_REPORTS_NAME" xml:space="preserve">
+    <value>Reportes</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_RESERVATIONS_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Reservaciones».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_RESERVATONS_NAME" xml:space="preserve">
+    <value>Reservaciones</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SALES_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Ventas».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SALES_NAME" xml:space="preserve">
+    <value>Ventas</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SETTINGS_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Configuración».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SETTINGS_NAME" xml:space="preserve">
+    <value>Configuración</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SHIFT_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Turno».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SHIFT_NAME" xml:space="preserve">
+    <value>Turno</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_STOCK_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Inventario».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_STOCK_NAME" xml:space="preserve">
+    <value>Inventario</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_USER_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Usuario».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_USER_NAME" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_WAITING_LINES_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Colas».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_WAITING_LINES_NAME" xml:space="preserve">
+    <value>Colas</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_WEB_API_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Web API».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_WEB_API_NAME" xml:space="preserve">
+    <value>Web API</value>
+  </data>
+  <data name="GIZMO_POLICY_LOG_CLEAR_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para limpiar los registros del sistema.</value>
+  </data>
+  <data name="GIZMO_POLICY_LOG_CLEAR_NAME" xml:space="preserve">
+    <value>Limpiar</value>
+  </data>
+  <data name="GIZMO_POLICY_LOG_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Registro».</value>
+  </data>
+  <data name="GIZMO_POLICY_LOG_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_CLIENT_MODULE_RESTART_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para reiniciar el módulo cliente.</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_CLIENT_MODULE_RESTART_NAME" xml:space="preserve">
+    <value>Reiniciar módulo cliente</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Administración».</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_FILES_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para administrar los archivos del cliente.</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_FILES_NAME" xml:space="preserve">
+    <value>Administrar archivos</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_LOCK_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para administrar el estado de bloqueo de entrada del cliente.</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_LOCK_NAME" xml:space="preserve">
+    <value>Bloqueo de entrada</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_MAINTENANCE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para administrar el estado de mantenimiento del cliente.</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_MAINTENANCE_NAME" xml:space="preserve">
+    <value>Administrar mantenimiento</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_PROCESSES_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para ver y administrar los procesos en ejecución.</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_PROCESSES_NAME" xml:space="preserve">
+    <value>Administrar procesos</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_SECURITY_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para administrar el estado de seguridad del cliente.</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_SECURITY_NAME" xml:space="preserve">
+    <value>Seguridad</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para ver y administrar las tareas.</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_TASKS_NAME" xml:space="preserve">
+    <value>Acceso a tareas</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para encender las estaciones manualmente.</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_NAME" xml:space="preserve">
+    <value>Encender estaciones</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para controlar remotamente las estaciones e interactuar con las pantallas del cliente.</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_NAME" xml:space="preserve">
+    <value>Control remoto</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_VIEW_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para ver las pantallas de las estaciones remotas y monitorear la actividad del cliente.</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_VIEW_NAME" xml:space="preserve">
+    <value>Vista de control remoto</value>
+  </data>
+  <data name="GIZMO_POLICY_MONITORING_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Monitoreo».</value>
+  </data>
+  <data name="GIZMO_POLICY_MONITORING_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_MARKETING_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Marketing».</value>
+  </data>
+  <data name="GIZMO_POLICY_MARKETING_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_PAY_IN_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para realizar ingresos en caja.</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_PAY_IN_NAME" xml:space="preserve">
+    <value>Ingresos</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_PAY_OUT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para realizar egresos de caja.</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_PAY_OUT_NAME" xml:space="preserve">
+    <value>Egresos</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para ver las transacciones de caja del día anterior.</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve">
+    <value>Ver transacciones del día anterior</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para ver todas las transacciones de caja.</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_NAME" xml:space="preserve">
+    <value>Ver transacciones</value>
+  </data>
+  <data name="GIZMO_POLICY_REPORTS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Reportes».</value>
+  </data>
+  <data name="GIZMO_POLICY_REPORTS_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Reservaciones».</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para crear reservaciones.</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_CREATE_NAME" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para crear reservaciones sin pago.</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_NAME" xml:space="preserve">
+    <value>Crear reservaciones sin pago</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para crear reservaciones para cuentas de invitados.</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_NAME" xml:space="preserve">
+    <value>Reservaciones para invitados</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_USER_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Grupo de usuarios».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_USER_GROUP_NAME" xml:space="preserve">
+    <value>Grupo de usuarios</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_LAYOUT_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Esquema de distribución».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_LAYOUT_NAME" xml:space="preserve">
+    <value>Esquema de distribución</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Esquema de distribución».</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para crear esquema de distribución.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_CREATE_NAME" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para editar esquema de distribución.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_EDIT_NAME" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para eliminar esquema de distribución.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_DELETE_NAME" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Grupo de usuarios».</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para crear grupo de usuarios.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_CREATE_NAME" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para editar grupo de usuarios.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_EDIT_NAME" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para eliminar grupo de usuarios.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_DELETE_NAME" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOSTS_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Estaciones».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOSTS_NAME" xml:space="preserve">
+    <value>Estaciones</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Estaciones».</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para crear estaciones.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_CREATE_NAME" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para editar estaciones.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_EDIT_NAME" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para eliminar estaciones.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_DELETE_NAME" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Grupos de estaciones».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_GROUPS_NAME" xml:space="preserve">
+    <value>Grupos de estaciones</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Grupos de estaciones».</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para crear grupos de estaciones.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_CREATE_NAME" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para editar grupos de estaciones.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_EDIT_NAME" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para eliminar grupos de estaciones.</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_DELETE_NAME" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CONTROLLERS_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Controladores».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CONTROLLERS_NAME" xml:space="preserve">
+    <value>Controladores</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Controladores».</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para crear controladores.</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_CREATE_NAME" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para editar controladores.</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_EDIT_NAME" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para eliminar controladores.</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_DELETE_NAME" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SECURITY_PROFILES_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Perfiles de seguridad».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SECURITY_PROFILES_NAME" xml:space="preserve">
+    <value>Perfiles de seguridad</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Perfiles de seguridad».</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para crear perfiles de seguridad.</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_CREATE_NAME" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para editar perfiles de seguridad.</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_EDIT_NAME" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para eliminar perfiles de seguridad.</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_DELETE_NAME" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_ASSETS_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Equipos».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_ASSETS_NAME" xml:space="preserve">
+    <value>Equipos</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Equipos».</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para crear equipos.</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_CREATE_NAME" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para editar equipos.</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_EDIT_NAME" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para eliminar equipos.</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_DELETE_NAME" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Tareas».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_TASKS_NAME" xml:space="preserve">
+    <value>Tareas</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Tareas».</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para crear tareas.</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_CREATE_NAME" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para editar tareas.</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_EDIT_NAME" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para eliminar tareas.</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_DELETE_NAME" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CLIENT_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Tareas de cliente».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CLIENT_TASKS_NAME" xml:space="preserve">
+    <value>Tareas de cliente</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Tareas de cliente».</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para crear tareas de cliente.</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_CREATE_NAME" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para editar tareas de cliente.</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_EDIT_NAME" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para eliminar tareas de cliente.</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_DELETE_NAME" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCTS_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Productos».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCTS_NAME" xml:space="preserve">
+    <value>Productos</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Productos».</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para crear productos.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_CREATE_NAME" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para editar productos.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_EDIT_NAME" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para eliminar productos.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_DELETE_NAME" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCT_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>Políticas de la sección «Grupos de productos».</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCT_GROUPS_NAME" xml:space="preserve">
+    <value>Grupos de productos</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Grupos de productos».</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para crear grupos de productos.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_CREATE_NAME" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para editar grupos de productos.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_EDIT_NAME" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para eliminar grupos de productos.</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_DELETE_NAME" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para otorgar crédito de tiempo.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_NAME" xml:space="preserve">
+    <value>Permitir crédito de tiempo</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_CUSTOM_PRICE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para realizar ventas a precios personalizados.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_CUSTOM_PRICE_NAME" xml:space="preserve">
+    <value>Precio personalizado</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_DELETE_TIME_PURCHASES_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para eliminar compras de tiempo.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_DELETE_TIME_PURCHASES_NAME" xml:space="preserve">
+    <value>Eliminar compras de tiempo</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_DEPOSIT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para realizar depósitos en cuentas de clientes.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_DEPOSIT_NAME" xml:space="preserve">
+    <value>Depósito</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para realizar ventas.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_DISABLE_RECEIPT_PRINT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para deshabilitar la impresión de recibos.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_DISABLE_RECEIPT_PRINT_NAME" xml:space="preserve">
+    <value>Deshabilitar impresión de recibo</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_MODIFY_USER_BILLING_OPTIONS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para modificar las opciones de facturación del usuario.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_MODIFY_USER_BILLING_OPTIONS_NAME" xml:space="preserve">
+    <value>Modificar opciones de facturación</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_OPEN_CASH_DRAWER_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para abrir el cajón de efectivo manualmente.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_OPEN_CASH_DRAWER_NAME" xml:space="preserve">
+    <value>Abrir cajón de efectivo</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_PAY_LATER_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para diferir el pago de transacciones.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_PAY_LATER_NAME" xml:space="preserve">
+    <value>Pagar después</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_DEPOSITS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para ver los depósitos de clientes.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_DEPOSITS_NAME" xml:space="preserve">
+    <value>Ver depósitos</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para ver las facturas.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_NAME" xml:space="preserve">
+    <value>Ver facturas</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para ver las facturas pagadas.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_NAME" xml:space="preserve">
+    <value>Ver facturas pagadas</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para ver los depósitos del día anterior.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_NAME" xml:space="preserve">
+    <value>Ver depósitos del día anterior</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para ver las facturas del día anterior.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_NAME" xml:space="preserve">
+    <value>Ver facturas del día anterior</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para anular facturas de turnos ya cerrados.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_NAME" xml:space="preserve">
+    <value>Anular facturas de turnos cerrados</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_DEPOSIT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para anular depósitos.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_DEPOSIT_NAME" xml:space="preserve">
+    <value>Anular depósito</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_INVOICE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para anular facturas.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_INVOICE_NAME" xml:space="preserve">
+    <value>Anular</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_NON_CURRENT_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para anular facturas emitidas en otra sucursal.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_NON_CURRENT_BRANCH_NAME" xml:space="preserve">
+    <value>Anular facturas de otra sucursal</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_NON_OWNED_INVOICE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para anular facturas creadas por otros operadores.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_NON_OWNED_INVOICE_NAME" xml:space="preserve">
+    <value>Anular facturas de otros operadores</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_PAST_DAY_INVOICE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para anular facturas de días anteriores.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_PAST_DAY_INVOICE_NAME" xml:space="preserve">
+    <value>Anular facturas de días anteriores</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para anular facturas con paquetes de tiempo ya usados.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_NAME" xml:space="preserve">
+    <value>Anular facturas con tiempo usado</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_WITHDRAW_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para realizar retiros de cuentas de clientes.</value>
+  </data>
+  <data name="GIZMO_POLICY_SALE_WITHDRAW_NAME" xml:space="preserve">
+    <value>Retiro</value>
+  </data>
+  <data name="GIZMO_POLICY_SETTINGS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Configuración».</value>
+  </data>
+  <data name="GIZMO_POLICY_SETTINGS_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_SET_CASHIER_NAME" xml:space="preserve">
+    <value>Cajero</value>
+  </data>
+  <data name="GIZMO_POLICY_SET_MANAGER_NAME" xml:space="preserve">
+    <value>Gerente</value>
+  </data>
+  <data name="GIZMO_POLICY_SET_MARKETER_NAME" xml:space="preserve">
+    <value>Mercadólogo</value>
+  </data>
+  <data name="GIZMO_POLICY_SET_OWNER_NAME" xml:space="preserve">
+    <value>Propietario</value>
+  </data>
+  <data name="GIZMO_POLICY_SET_TECHNICIAN_NAME" xml:space="preserve">
+    <value>Técnico</value>
+  </data>
+  <data name="GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para ver los montos esperados del turno.</value>
+  </data>
+  <data name="GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_NAME" xml:space="preserve">
+    <value>Ver monto esperado</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para crear inventario.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_CREATE_NAME" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para eliminar inventario.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_DELETE_NAME" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Inventario».</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para editar inventario.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_EDIT_NAME" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTIONS" xml:space="preserve">
+    <value>Acceso para ver las transacciones de inventario del día anterior.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve">
+    <value>Ver transacciones del día anterior</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para ver todas las transacciones de inventario.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_NAME" xml:space="preserve">
+    <value>Ver transacciones</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_BAN_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para bloquear usuarios.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_BAN_NAME" xml:space="preserve">
+    <value>Bloquear usuario</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_CHANGE_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para mover usuarios a diferentes grupos.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_CHANGE_GROUP_NAME" xml:space="preserve">
+    <value>Cambiar grupo de usuario</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para crear usuario.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_CREATE_NAME" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_LIST_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la página de lista de usuarios.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_LIST_NAME" xml:space="preserve">
+    <value>Lista</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para eliminar usuario.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_DELETE_NAME" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para editar usuario.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_EDIT_NAME" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_HARD_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para eliminar definitivamente cuentas de usuario.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_HARD_DELETE_NAME" xml:space="preserve">
+    <value>Eliminar definitivamente</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para iniciar sesión de usuarios manualmente.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_NAME" xml:space="preserve">
+    <value>Iniciar sesión de usuarios</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_PASSWORD_RESET_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para restablecer contraseñas de usuarios.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_PASSWORD_RESET_NAME" xml:space="preserve">
+    <value>Restablecer contraseña</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_RENAME_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para renombrar usuarios.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_RENAME_NAME" xml:space="preserve">
+    <value>Renombrar</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_UNBAN_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para desbloquear usuarios previamente bloqueados.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_UNBAN_NAME" xml:space="preserve">
+    <value>Desbloquear usuario</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_VIEW_STATS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para ver las estadísticas de actividad de usuarios.</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_VIEW_STATS_NAME" xml:space="preserve">
+    <value>Ver estadísticas</value>
+  </data>
+  <data name="GIZMO_POLICY_WAITING_LINES_DESCRIPTION" xml:space="preserve">
+    <value>Acceso a la sección «Colas».</value>
+  </data>
+  <data name="GIZMO_POLICY_WAITING_LINES_MANAGE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para administrar colas.</value>
+  </data>
+  <data name="GIZMO_POLICY_WAITING_LINES_MANAGE_NAME" xml:space="preserve">
+    <value>Administrar</value>
+  </data>
+  <data name="GIZMO_POLICY_WAITING_LINES_NAME" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_CENTER" xml:space="preserve">
+    <value>Centro inferior</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_LEFT" xml:space="preserve">
+    <value>Izquierda inferior</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_RIGHT" xml:space="preserve">
+    <value>Derecha inferior</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_LEFT" xml:space="preserve">
+    <value>Centro izquierda</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_RIGHT" xml:space="preserve">
+    <value>Centro derecha</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_SCREEN" xml:space="preserve">
+    <value>Centro de pantalla</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_CENTER" xml:space="preserve">
+    <value>Centro superior</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_LEFT" xml:space="preserve">
+    <value>Izquierda superior</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_RIGHT" xml:space="preserve">
+    <value>Derecha superior</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_CLOCKWISE" xml:space="preserve">
+    <value>En sentido horario</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_COUNTERCLOCKWISE" xml:space="preserve">
+    <value>En sentido antihorario</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_FIXED" xml:space="preserve">
+    <value>Fijo</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_BOTTOM" xml:space="preserve">
+    <value>Horizontal inferior</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_CENTER" xml:space="preserve">
+    <value>Horizontal centro</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_TOP" xml:space="preserve">
+    <value>Horizontal superior</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_CENTER" xml:space="preserve">
+    <value>Vertical centro</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_LEFT" xml:space="preserve">
+    <value>Vertical izquierda</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_RIGHT" xml:space="preserve">
+    <value>Vertical derecha</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_WALL_BOUNCE" xml:space="preserve">
+    <value>Rebote de pared</value>
+  </data>
+  <data name="HTTPS_CERTIFICATE_TYPE_SELF_SIGNED" xml:space="preserve">
+    <value>Autofirmado</value>
+  </data>
+  <data name="HTTPS_CERTIFICATE_TYPE_USER_DEFINED" xml:space="preserve">
+    <value>Definido por el usuario</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_ALPHANUMERIC" xml:space="preserve">
+    <value>Alfanumérico</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_NUMERIC" xml:space="preserve">
+    <value>Numérico</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_UPPER_CASE_CHARACTERS" xml:space="preserve">
+    <value>Letras mayúsculas</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL_NAME" xml:space="preserve">
+    <value>Correo electrónico</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE_NAME" xml:space="preserve">
+    <value>Teléfono móvil</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MESSENGER_NAME" xml:space="preserve">
+    <value>Mensajería</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_NONE_NAME" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_APPLICATIONS_ENABLED_DESCRIPTION" xml:space="preserve">
+    <value>Especifica si las restricciones de edad están habilitadas para aplicaciones</value>
+  </data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_APPLICATIONS_ENABLED_NAME" xml:space="preserve">
+    <value>Habilitar restricciones de edad para aplicaciones</value>
+  </data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_LOGIN_ENABLED_DESCRIPTION" xml:space="preserve">
+    <value>Especifica si las restricciones de edad están habilitadas para el inicio de sesión</value>
+  </data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_LOGIN_ENABLED_NAME" xml:space="preserve">
+    <value>Habilitar restricciones de edad para inicio de sesión</value>
+  </data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_PRODUCTS_ENABLED_DESCRIPTION" xml:space="preserve">
+    <value>Especifica si las restricciones de edad están habilitadas para productos</value>
+  </data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_PRODUCTS_ENABLED_NAME" xml:space="preserve">
+    <value>Habilitar restricciones de edad para productos</value>
+  </data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_DESCRIPTION" xml:space="preserve">
+    <value>Especifica si la edad es obligatoria para todas las restricciones de edad</value>
+  </data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_NAME" xml:space="preserve">
+    <value>Aplicar restricciones para usuarios con edad desconocida</value>
+  </data>
+  <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve">
+    <value>Especifica el mensaje de notificación de tiempo restante</value>
+  </data>
+  <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_NAME" xml:space="preserve">
+    <value>Mensaje de notificación de tiempo restante</value>
+  </data>
+  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_DESCRIPTION" xml:space="preserve">
+    <value>Especifica que se debe usar terminal al pagar con tarjeta de crédito</value>
+  </data>
+  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_NAME" xml:space="preserve">
+    <value>Usar terminal para tarjeta de crédito</value>
+  </data>
+  <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve">
+    <value>Especifica el mensaje de notificación de tiempo de reservación</value>
+  </data>
+  <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_NAME" xml:space="preserve">
+    <value>Mensaje de notificación de reservación</value>
+  </data>
+  <data name="SERVER_OPTION_TAX_DEPOSITS_TAX_SYSTEM_DESCRIPTION" xml:space="preserve">
+    <value>Especifica el sistema tributario para depósitos</value>
+  </data>
+  <data name="SERVER_OPTION_TAX_DEPOSITS_TAX_SYSTEM_NAME" xml:space="preserve">
+    <value>Sistema tributario para depósitos</value>
+  </data>
+  <data name="SERVER_OPTION_TAX_GOODS_VAT_RATE_DESCRIPTION" xml:space="preserve">
+    <value>Especifica la tasa de IVA para bienes</value>
+  </data>
+  <data name="SERVER_OPTION_TAX_GOODS_VAT_RATE_NAME" xml:space="preserve">
+    <value>Tasa de IVA para bienes</value>
+  </data>
+  <data name="SERVER_OPTION_TAX_SERVICES_VAT_RATE_DESCRIPTION" xml:space="preserve">
+    <value>Especifica la tasa de IVA para servicios</value>
+  </data>
+  <data name="SERVER_OPTION_TAX_SERVICES_VAT_RATE_NAME" xml:space="preserve">
+    <value>Tasa de IVA para servicios</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_MAIN" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_PATENT_SYSTEM" xml:space="preserve">
+    <value>Sistema de patentes</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_EXPSENSES" xml:space="preserve">
+    <value>Simplificado ingreso-gasto</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_TAXATION" xml:space="preserve">
+    <value>Simplificado por ingresos</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SINGLE_AGRICULTURAL_TAX" xml:space="preserve">
+    <value>Impuesto agrícola único</value>
+  </data>
+  <data name="TAX_SYSTEMS_UNDEFINED" xml:space="preserve">
+    <value>No definido</value>
+  </data>
+  <data name="TAX_SYSTEM_COUNTRY_RUSSIA" xml:space="preserve">
+    <value>Rusia</value>
+  </data>
+  <data name="TAX_SYSTEM_COUNTRY_UNSPECIFIED" xml:space="preserve">
+    <value>No especificado</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_EMAIL_NAME" xml:space="preserve">
+    <value>Correo electrónico</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_MOBILE_NAME" xml:space="preserve">
+    <value>Móvil</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_NONE_NAME" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_NONE" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT0" xml:space="preserve">
+    <value>IVA 0%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT10" xml:space="preserve">
+    <value>IVA 10%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT20" xml:space="preserve">
+    <value>IVA 20%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT5" xml:space="preserve">
+    <value>IVA 5%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT7" xml:space="preserve">
+    <value>IVA 7%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT105" xml:space="preserve">
+    <value>IVA 5/105%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT107" xml:space="preserve">
+    <value>IVA 7/107%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT110" xml:space="preserve">
+    <value>IVA 10/110%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT120" xml:space="preserve">
+    <value>IVA 20/120%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT22" xml:space="preserve">
+    <value>IVA 22%</value>
+  </data>
+  <data name="SMTP_SECURITY_NONE_NAME" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="SMTP_SECURITY_SSL_NAME" xml:space="preserve">
+    <value>SSL</value>
+  </data>
+  <data name="SMTP_SECURITY_STARTTLS_NAME" xml:space="preserve">
+    <value>STARTTLS</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_CASH_NAME" xml:space="preserve">
+    <value>Efectivo</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_CREDIT_CARD_NAME" xml:space="preserve">
+    <value>Tarjeta de crédito</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_DEPOSIT_NAME" xml:space="preserve">
+    <value>Depósito</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_POINTS_NAME" xml:space="preserve">
+    <value>Puntos</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_CUSTOM_NAME" xml:space="preserve">
+    <value>Personalizado</value>
+  </data>
+  <data name="STOCK_WAREHOUSE_DEFAULT_NAME" xml:space="preserve">
+    <value>Almacén</value>
+  </data>
+  <data name="STOCK_SELLING_POINT_DEFAULT_NAME" xml:space="preserve">
+    <value>Punto de venta</value>
+  </data>
+  <data name="BRANCH_DEFAULT_NAME" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="HOST_GROUP_ENDPOINTS_DEFAULT_NAME" xml:space="preserve">
+    <value>Estaciones</value>
+  </data>
+  <data name="HOST_GROUP_COMPUERS_DEFAULT_NAME" xml:space="preserve">
+    <value>Estaciones</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUPED_DEFAULT_NAME" xml:space="preserve">
+    <value>Distribución predeterminada</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_TYPE_DEFAULT_NAME" xml:space="preserve">
+    <value>Necesito asistencia, por favor.</value>
+  </data>
+  <data name="REGISTER_DEFAULT_NAME" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="CLIENT_OPTIONS_DEFAULT_NAME" xml:space="preserve">
+    <value>Global</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_NAME" xml:space="preserve">
+    <value>Conteo</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para realizar conteos de inventario.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_GLOBAL_NAME" xml:space="preserve">
+    <value>Conteo global</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para realizar conteos de inventario en todas las sucursales.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_BRANCH_NAME" xml:space="preserve">
+    <value>Conteo en sucursal</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para realizar conteos de inventario en la sucursal actual.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_NAME" xml:space="preserve">
+    <value>Ingreso de inventario</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para aceptar inventario entrante.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_NAME" xml:space="preserve">
+    <value>Transferir</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para transferir inventario.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_NAME" xml:space="preserve">
+    <value>Ajuste</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para realizar ajustes de inventario.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_BRANCH_NAME" xml:space="preserve">
+    <value>Ajuste en sucursal</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para realizar ajustes de inventario en la sucursal actual.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_NAME" xml:space="preserve">
+    <value>Ajuste global</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para realizar ajustes de inventario en todas las sucursales.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_VIEW_EXPECTED_NAME" xml:space="preserve">
+    <value>Ver cantidad esperada</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_VIEW_EXPECTED_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para ver la cantidad esperada de inventario durante el conteo.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_NAME" xml:space="preserve">
+    <value>Nivel de inventario</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para ver los niveles de inventario en la caja actual.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_BRANCH_NAME" xml:space="preserve">
+    <value>Nivel de inventario en sucursal</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para ver los niveles de inventario en la sucursal actual.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_GLOBAL_NAME" xml:space="preserve">
+    <value>Nivel de inventario global</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para ver los niveles de inventario en todas las sucursales.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_PRICE_NAME" xml:space="preserve">
+    <value>Venta al precio minorista</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_PRICE_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para realizar ajustes de inventario como venta al precio minorista.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_COST_NAME" xml:space="preserve">
+    <value>Venta al costo</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_COST_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para realizar ajustes de inventario como venta al precio de costo.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_WRITE_OFF_NAME" xml:space="preserve">
+    <value>Baja de inventario</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_WRITE_OFF_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para realizar bajas de inventario.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_BRANCH_NAME" xml:space="preserve">
+    <value>Transferencia en sucursal</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para realizar transferencias de inventario en la sucursal actual.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_GLOBAL_NAME" xml:space="preserve">
+    <value>Transferencia global</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para realizar transferencias de inventario en todas las sucursales.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_BRANCH_NAME" xml:space="preserve">
+    <value>Ingreso en sucursal</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para aceptar inventario entrante en la sucursal actual.</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_GLOBAL_NAME" xml:space="preserve">
+    <value>Ingreso global</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para aceptar inventario entrante en todas las sucursales.</value>
+  </data>
+  <data name="BILL_PROFILE_ENDPOINTS_DEFAULT_NAME" xml:space="preserve">
+    <value>Precios de estaciones</value>
+  </data>
+  <data name="BILL_PROFILE_COMPUTERS_DEFAULT_NAME" xml:space="preserve">
+    <value>Precios de estaciones</value>
+  </data>
+  <data name="APP_CATEGORY_GAMES_DEFAULT_NAME" xml:space="preserve">
+    <value>Juegos</value>
+  </data>
+  <data name="APP_CATEGORY_LAUNCHERS_DEFAULT_NAME" xml:space="preserve">
+    <value>Lanzadores</value>
+  </data>
+  <data name="APP_CATEGORY_APPLICATIONS_DEFAULT_NAME" xml:space="preserve">
+    <value>Aplicaciones</value>
+  </data>
+  <data name="APP_GROUP_DEFAULT_NAME" xml:space="preserve">
+    <value>Predeterminado</value>
+  </data>
+  <data name="PRODUCT_GROUP_SWEETS_DEFAULT_NAME" xml:space="preserve">
+    <value>Dulces</value>
+  </data>
+  <data name="PRODUCT_GROUP_DRINKS_DEFAULT_NAME" xml:space="preserve">
+    <value>Bebidas</value>
+  </data>
+  <data name="PRODUCT_GROUP_FOOD_DEFAULT_NAME" xml:space="preserve">
+    <value>Comida</value>
+  </data>
+  <data name="PRODUCT_GROUP_TIME_OFFERS_DEFAULT_NAME" xml:space="preserve">
+    <value>Paquetes de tiempo</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_ENABLED_NAME" xml:space="preserve">
+    <value>Habilitar período de gracia de cierre de sesión</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_ENABLED_DESCRIPTION" xml:space="preserve">
+    <value>Especifica si el período de gracia de cierre de sesión del usuario está habilitado</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_NAME" xml:space="preserve">
+    <value>Tiempo de gracia</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve">
+    <value>Especifica el tiempo del período de gracia de cierre de sesión</value>
+  </data>
+  <data name="LINE_TYPE_PRODUCT" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="LINE_TYPE_TIME_PRODUCT" xml:space="preserve">
+    <value>Paquete de tiempo</value>
+  </data>
+  <data name="LINE_TYPE_FIXED_TIME" xml:space="preserve">
+    <value>Tiempo fijo</value>
+  </data>
+  <data name="LINE_TYPE_SESSION_TIME" xml:space="preserve">
+    <value>Tiempo de sesión</value>
+  </data>
+  <data name="LINE_TYPE_DEPOSIT" xml:space="preserve">
+    <value>Depósito</value>
+  </data>
+  <data name="LINE_TYPE_RESERVATION_FEE" xml:space="preserve">
+    <value>Tarifa de reservación</value>
+  </data>
+  <data name="LINE_TYPE_PRODUCT_DESCRIPTION" xml:space="preserve">
+    <value>Línea de producto</value>
+  </data>
+  <data name="LINE_TYPE_TIME_PRODUCT_DESCRIPTION" xml:space="preserve">
+    <value>Línea de paquete de tiempo</value>
+  </data>
+  <data name="LINE_TYPE_FIXED_TIME_DESCRIPTION" xml:space="preserve">
+    <value>Línea de tiempo fijo</value>
+  </data>
+  <data name="LINE_TYPE_SESSION_TIME_DESCRIPTION" xml:space="preserve">
+    <value>Línea de tiempo de sesión</value>
+  </data>
+  <data name="LINE_TYPE_DEPOSIT_DESCRIPTION" xml:space="preserve">
+    <value>Línea de depósito</value>
+  </data>
+  <data name="LINE_TYPE_RESERVATION_FEE_DESCRIPTION" xml:space="preserve">
+    <value>Línea de tarifa de reservación</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PREPAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Prepago completo antes de la entrega de bienes o servicios</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_PREPAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Prepago parcial antes de la entrega de bienes o servicios</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_ADVANCE_DESCRIPTION" xml:space="preserve">
+    <value>Pago anticipado de bienes o servicios</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>Pago completo en el momento de la entrega</value>
+  </data>
+  <data name="TAX_SYSTEM_COUNTRY_UNSPECIFIED_DESCRIPTION" xml:space="preserve">
+    <value>Sin sistema tributario de país específico</value>
+  </data>
+  <data name="TAX_SYSTEM_COUNTRY_RUSSIA_DESCRIPTION" xml:space="preserve">
+    <value>Sistema tributario de la Federación Rusa</value>
+  </data>
+  <data name="TAX_SYSTEMS_UNDEFINED_DESCRIPTION" xml:space="preserve">
+    <value>Sistema tributario no definido</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_MAIN_DESCRIPTION" xml:space="preserve">
+    <value>Sistema tributario principal</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_TAXATION_DESCRIPTION" xml:space="preserve">
+    <value>Sistema tributario simplificado basado en ingresos</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_EXPSENSES_DESCRIPTION" xml:space="preserve">
+    <value>Sistema tributario simplificado basado en ingresos menos gastos</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SINGLE_AGRICULTURAL_TAX_DESCRIPTION" xml:space="preserve">
+    <value>Impuesto único para productores agrícolas</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_PATENT_SYSTEM_DESCRIPTION" xml:space="preserve">
+    <value>Sistema tributario basado en patentes</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Sin IVA aplicado</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT0_DESCRIPTION" xml:space="preserve">
+    <value>Tasa de IVA del 0%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT10_DESCRIPTION" xml:space="preserve">
+    <value>Tasa de IVA del 10%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT20_DESCRIPTION" xml:space="preserve">
+    <value>Tasa de IVA del 20%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT5_DESCRIPTION" xml:space="preserve">
+    <value>Tasa de IVA del 5%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT7_DESCRIPTION" xml:space="preserve">
+    <value>Tasa de IVA del 7%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT105_DESCRIPTION" xml:space="preserve">
+    <value>Tasa de IVA calculada 5/105%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT107_DESCRIPTION" xml:space="preserve">
+    <value>Tasa de IVA calculada 7/107%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT110_DESCRIPTION" xml:space="preserve">
+    <value>Tasa de IVA calculada 10/110%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT120_DESCRIPTION" xml:space="preserve">
+    <value>Tasa de IVA calculada 20/120%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT22_DESCRIPTION" xml:space="preserve">
+    <value>Tasa de IVA del 22%</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_ZERO_DESCRIPTION" xml:space="preserve">
+    <value>Sin asignación de espacio en disco</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_FIVE_DESCRIPTION" xml:space="preserve">
+    <value>Asignación de espacio en disco del 5%</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TEN_DESCRIPTION" xml:space="preserve">
+    <value>Asignación de espacio en disco del 10%</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_FIFTEEN_DESCRIPTION" xml:space="preserve">
+    <value>Asignación de espacio en disco del 15%</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY_DESCRIPTION" xml:space="preserve">
+    <value>Asignación de espacio en disco del 20%</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY_FIVE_DESCRIPTION" xml:space="preserve">
+    <value>Asignación de espacio en disco del 25%</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_THIRTY_DESCRIPTION" xml:space="preserve">
+    <value>Asignación de espacio en disco del 30%</value>
+  </data>
+  <data name="HTTPS_CERTIFICATE_TYPE_SELF_SIGNED_DESCRIPTION" xml:space="preserve">
+    <value>Certificado SSL/TLS autofirmado</value>
+  </data>
+  <data name="HTTPS_CERTIFICATE_TYPE_USER_DEFINED_DESCRIPTION" xml:space="preserve">
+    <value>Certificado SSL/TLS definido por el usuario</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_NUMERIC_DESCRIPTION" xml:space="preserve">
+    <value>Las claves generadas contienen solo números</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_UPPER_CASE_CHARACTERS_DESCRIPTION" xml:space="preserve">
+    <value>Las claves generadas contienen solo letras mayúsculas</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_ALPHANUMERIC_DESCRIPTION" xml:space="preserve">
+    <value>Las claves generadas contienen números y letras mayúsculas</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_NONE_DESCRIPTION" xml:space="preserve">
+    <value>No se requiere verificación</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL_DESCRIPTION" xml:space="preserve">
+    <value>Verificación por correo electrónico</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE_DESCRIPTION" xml:space="preserve">
+    <value>Verificación por teléfono móvil</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MESSENGER_DESCRIPTION" xml:space="preserve">
+    <value>Verificación por mensajería</value>
+  </data>
+  <data name="SMTP_SECURITY_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Sin cifrado</value>
+  </data>
+  <data name="SMTP_SECURITY_SSL_DESCRIPTION" xml:space="preserve">
+    <value>Cifrado SSL</value>
+  </data>
+  <data name="SMTP_SECURITY_STARTTLS_DESCRIPTION" xml:space="preserve">
+    <value>Cifrado STARTTLS</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_NONE_DESCRIPTION" xml:space="preserve">
+    <value>No hay método de recuperación disponible</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_MOBILE_DESCRIPTION" xml:space="preserve">
+    <value>Recuperación por teléfono móvil</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_EMAIL_DESCRIPTION" xml:space="preserve">
+    <value>Recuperación por correo electrónico</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP" xml:space="preserve">
+    <value>HTTP</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP_DESCRIPTION" xml:space="preserve">
+    <value>Protocolo HTTP</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTPS" xml:space="preserve">
+    <value>HTTPS</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTPS_DESCRIPTION" xml:space="preserve">
+    <value>Protocolo HTTPS</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP_HTTPS" xml:space="preserve">
+    <value>HTTP y HTTPS</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP_HTTPS_DESCRIPTION" xml:space="preserve">
+    <value>Ambos protocolos HTTP y HTTPS</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_SUCCESS" xml:space="preserve">
+    <value>Exitoso</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Autenticación exitosa</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_UNAUTHORIZED" xml:space="preserve">
+    <value>No autorizado</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Autenticación no autorizada</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_NETWORK_ERROR" xml:space="preserve">
+    <value>Error de red</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Error de red durante la autenticación</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_ERROR" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Error durante la autenticación</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_NONE" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Sin tarifa de reservación</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_FIXED" xml:space="preserve">
+    <value>Fija</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_FIXED_DESCRIPTION" xml:space="preserve">
+    <value>Tarifa de reservación de monto fijo</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_PERCENTAGE" xml:space="preserve">
+    <value>Porcentaje</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_PERCENTAGE_DESCRIPTION" xml:space="preserve">
+    <value>Tarifa de reservación basada en porcentaje</value>
+  </data>
+  <data name="SPECIAL_FOLDER_NONE" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="SPECIAL_FOLDER_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Sin carpeta especial</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DESKTOP" xml:space="preserve">
+    <value>Escritorio</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DESKTOP_DESCRIPTION" xml:space="preserve">
+    <value>Carpeta de escritorio</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DOWNLOADS" xml:space="preserve">
+    <value>Descargas</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DOWNLOADS_DESCRIPTION" xml:space="preserve">
+    <value>Carpeta de descargas</value>
+  </data>
+  <data name="SPECIAL_FOLDER_FAVORITES" xml:space="preserve">
+    <value>Favoritos</value>
+  </data>
+  <data name="SPECIAL_FOLDER_FAVORITES_DESCRIPTION" xml:space="preserve">
+    <value>Carpeta de favoritos</value>
+  </data>
+  <data name="SPECIAL_FOLDER_MUSIC" xml:space="preserve">
+    <value>Música</value>
+  </data>
+  <data name="SPECIAL_FOLDER_MUSIC_DESCRIPTION" xml:space="preserve">
+    <value>Carpeta de música</value>
+  </data>
+  <data name="SPECIAL_FOLDER_PICTURES" xml:space="preserve">
+    <value>Imágenes</value>
+  </data>
+  <data name="SPECIAL_FOLDER_PICTURES_DESCRIPTION" xml:space="preserve">
+    <value>Carpeta de imágenes</value>
+  </data>
+  <data name="SPECIAL_FOLDER_VIDEOS" xml:space="preserve">
+    <value>Videos</value>
+  </data>
+  <data name="SPECIAL_FOLDER_VIDEOS_DESCRIPTION" xml:space="preserve">
+    <value>Carpeta de videos</value>
+  </data>
+  <data name="SPECIAL_FOLDER_SAVED_GAMES" xml:space="preserve">
+    <value>Juegos guardados</value>
+  </data>
+  <data name="SPECIAL_FOLDER_SAVED_GAMES_DESCRIPTION" xml:space="preserve">
+    <value>Carpeta de juegos guardados</value>
+  </data>
+  <data name="SPECIAL_FOLDER_PERSONAL" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="SPECIAL_FOLDER_PERSONAL_DESCRIPTION" xml:space="preserve">
+    <value>Carpeta de documentos personales</value>
+  </data>
+  <data name="USER_ROLE_NONE" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="USER_ROLE_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Sin rol asignado</value>
+  </data>
+  <data name="USER_ROLE_USER" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="USER_ROLE_USER_DESCRIPTION" xml:space="preserve">
+    <value>Rol de usuario estándar</value>
+  </data>
+  <data name="USER_ROLE_GUEST" xml:space="preserve">
+    <value>Invitado</value>
+  </data>
+  <data name="USER_ROLE_GUEST_DESCRIPTION" xml:space="preserve">
+    <value>Rol de usuario invitado</value>
+  </data>
+  <data name="USER_ROLE_OPERATOR" xml:space="preserve">
+    <value>Operador</value>
+  </data>
+  <data name="USER_ROLE_OPERATOR_DESCRIPTION" xml:space="preserve">
+    <value>Rol de operador</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_MOBILE_PHONE" xml:space="preserve">
+    <value>Teléfono móvil</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_MOBILE_PHONE_DESCRIPTION" xml:space="preserve">
+    <value>Buscar por número de teléfono móvil</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USERNAME" xml:space="preserve">
+    <value>Nombre de usuario</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USERNAME_DESCRIPTION" xml:space="preserve">
+    <value>Buscar por nombre de usuario</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_EMAIL" xml:space="preserve">
+    <value>Correo electrónico</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_EMAIL_DESCRIPTION" xml:space="preserve">
+    <value>Buscar por dirección de correo electrónico</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_IDENTIFICATION_NUMBER" xml:space="preserve">
+    <value>Número de identificación</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_IDENTIFICATION_NUMBER_DESCRIPTION" xml:space="preserve">
+    <value>Buscar por número de identificación</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Buscar por nombre</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Buscar por apellido</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_ATTRIBUTES" xml:space="preserve">
+    <value>Atributos</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_ATTRIBUTES_DESCRIPTION" xml:space="preserve">
+    <value>Buscar por atributos</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_PHONE" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_PHONE_DESCRIPTION" xml:space="preserve">
+    <value>Buscar por número de teléfono</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USER_GROUP" xml:space="preserve">
+    <value>Grupo de usuarios</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USER_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Buscar por grupo de usuarios</value>
+  </data>
 </root>
