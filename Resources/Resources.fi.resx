@@ -1,0 +1,732 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_ADVANCE" xml:space="preserve"><value>Ennakko</value></data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PAYMENT" xml:space="preserve"><value>Täysi maksu</value></data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PREPAYMENT" xml:space="preserve"><value>Täysi ennakkomaksu</value></data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_PREPAYMENT" xml:space="preserve"><value>Ennakkomaksu</value></data>
+  <data name="APPLICATION_SORTING_OPTION_ADD_DATE_NAME" xml:space="preserve"><value>Lisäyspäivämäärä</value></data>
+  <data name="APPLICATION_SORTING_OPTION_POPULARITY_NAME" xml:space="preserve"><value>Suosio</value></data>
+  <data name="APPLICATION_SORTING_OPTION_RATING_NAME" xml:space="preserve"><value>Arvosana</value></data>
+  <data name="APPLICATION_SORTING_OPTION_RELEASE_DATE_NAME" xml:space="preserve"><value>Julkaisupäivämäärä</value></data>
+  <data name="APPLICATION_SORTING_OPTION_TITLE_NAME" xml:space="preserve"><value>Otsikko</value></data>
+  <data name="APPLICATION_SORTING_OPTION_USE_NAME" xml:space="preserve"><value>Käyttö</value></data>
+  <data name="CLIENT_LOGOUT_ACTION_ADMIN_MODE" xml:space="preserve"><value>Järjestelmänvalvojatila</value></data>
+  <data name="CLIENT_LOGOUT_ACTION_CLOSE_PROGRAMS" xml:space="preserve"><value>Sulje ohjelmat</value></data>
+  <data name="CLIENT_LOGOUT_ACTION_LOG_OFF" xml:space="preserve"><value>Kirjaudu ulos</value></data>
+  <data name="CLIENT_LOGOUT_ACTION_NO_ACTION" xml:space="preserve"><value>Ei toimintoa</value></data>
+  <data name="CLIENT_LOGOUT_ACTION_REBOOT" xml:space="preserve"><value>Käynnistä uudelleen</value></data>
+  <data name="CLIENT_LOGOUT_ACTION_STAND_BY" xml:space="preserve"><value>Valmiustila</value></data>
+  <data name="CLIENT_LOGOUT_ACTION_TURN_OFF" xml:space="preserve"><value>Sammuta</value></data>
+  <data name="CLIENT_POWER_SAVING_DISABLED" xml:space="preserve"><value>Poistettu käytöstä</value></data>
+  <data name="CLIENT_POWER_SAVING_SHUT_DOWN" xml:space="preserve"><value>Sammuta</value></data>
+  <data name="CLIENT_POWER_SAVING_SLEEP" xml:space="preserve"><value>Lepotila</value></data>
+  <data name="DISABLE_PRINT_RECEIPT_BY_DEFAULT" xml:space="preserve"><value>Poista kuitin tulostus käytöstä oletuksena</value></data>
+  <data name="DISK_SPACE_ALLOCATIONS_FIFTEEN" xml:space="preserve"><value>15%</value></data>
+  <data name="DISK_SPACE_ALLOCATIONS_FIVE" xml:space="preserve"><value>5%</value></data>
+  <data name="DISK_SPACE_ALLOCATIONS_TEN" xml:space="preserve"><value>10%</value></data>
+  <data name="DISK_SPACE_ALLOCATIONS_THIRTY" xml:space="preserve"><value>30%</value></data>
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY" xml:space="preserve"><value>20%</value></data>
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY_FIVE" xml:space="preserve"><value>25%</value></data>
+  <data name="DISK_SPACE_ALLOCATIONS_ZERO" xml:space="preserve"><value>0%</value></data>
+  <data name="GIZMO_POLICY_APPLICATIONS_DESCRIPTION" xml:space="preserve"><value>Myöntää pääsyn sovellusominaisuuteen, jolloin käyttäjä voi hallita ja käsitellä sovelluksia</value></data>
+  <data name="GIZMO_POLICY_APPLICATIONS_NAME" xml:space="preserve"><value>Käyttöoikeus</value></data>
+  <data name="GIZMO_POLICY_APPLICATIONS_CREATE_DESCRIPTION" xml:space="preserve"><value>Myöntää oikeuden luoda sovelluksia</value></data>
+  <data name="GIZMO_POLICY_APPLICATIONS_CREATE_NAME" xml:space="preserve"><value>Luo</value></data>
+  <data name="GIZMO_POLICY_APPLICATIONS_EDIT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at redigere applikationer</value></data>
+  <data name="GIZMO_POLICY_APPLICATIONS_EDIT_NAME" xml:space="preserve"><value>Rediger</value></data>
+  <data name="GIZMO_POLICY_APPLICATIONS_DELETE_DESCRIPTION" xml:space="preserve"><value>Myöntää oikeuden poistaa sovelluksia</value></data>
+  <data name="GIZMO_POLICY_APPLICATIONS_DELETE_NAME" xml:space="preserve"><value>Poista</value></data>
+  <data name="GIZMO_POLICY_DEPLOYMENT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til filkopiering og implementering, så brugeren kan administrere implementeringer</value></data>
+  <data name="GIZMO_POLICY_DEPLOYMENT_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_GROUP_APPLICATIONS_DESCRIPTION" xml:space="preserve"><value>Myöntää pääsyn sovellusryhmäominaisuuteen</value></data>
+  <data name="GIZMO_POLICY_GROUP_APPLICATIONS_NAME" xml:space="preserve"><value>Sovellukset</value></data>
+  <data name="GIZMO_POLICY_GROUP_DEPLOYMENT_DESCRIPTION" xml:space="preserve"><value>Politikker for administration af applikations- og tjenesteimplementeringer.</value></data>
+  <data name="GIZMO_POLICY_GROUP_DEPLOYMENT_NAME" xml:space="preserve"><value>Implementering</value></data>
+  <data name="GIZMO_POLICY_GROUP_LOG_DESCRIPTION" xml:space="preserve"><value>Myöntää pääsyn Log-ominaisuuteen</value></data>
+  <data name="GIZMO_POLICY_GROUP_LOG_NAME" xml:space="preserve"><value>Log</value></data>
+  <data name="GIZMO_POLICY_GROUP_MANAGEMENT_DESCRIPTION" xml:space="preserve"><value>Myöntää pääsyn hallintaominaisuuteen</value></data>
+  <data name="GIZMO_POLICY_GROUP_MANAGEMENT_NAME" xml:space="preserve"><value>Hallinta</value></data>
+  <data name="GIZMO_POLICY_GROUP_MONITORING_DESCRIPTION" xml:space="preserve"><value>Politikker for system- og driftsovervågning.</value></data>
+  <data name="GIZMO_POLICY_GROUP_MONITORING_NAME" xml:space="preserve"><value>Overvågning</value></data>
+  <data name="GIZMO_POLICY_GROUP_MARKETING_DESCRIPTION" xml:space="preserve"><value>Politikker for administration af markedsføringsindhold som nyheder og feeds.</value></data>
+  <data name="GIZMO_POLICY_GROUP_MARKETING_NAME" xml:space="preserve"><value>Markedsføring</value></data>
+  <data name="GIZMO_POLICY_GROUP_REGISTER_DESCRIPTION" xml:space="preserve"><value>Politikker for administration af kasseoperationer og -indstillinger.</value></data>
+  <data name="GIZMO_POLICY_GROUP_REGISTER_NAME" xml:space="preserve"><value>Kasse</value></data>
+  <data name="GIZMO_POLICY_GROUP_REPORTS_DESCRIPTION" xml:space="preserve"><value>Myöntää pääsyn raporttiominaisuuteen</value></data>
+  <data name="GIZMO_POLICY_GROUP_REPORTS_NAME" xml:space="preserve"><value>Raportit</value></data>
+  <data name="GIZMO_POLICY_GROUP_RESERVATIONS_DESCRIPTION" xml:space="preserve"><value>Myöntää pääsyn varausominaisuuteen</value></data>
+  <data name="GIZMO_POLICY_GROUP_RESERVATONS_NAME" xml:space="preserve"><value>Reservationer</value></data>
+  <data name="GIZMO_POLICY_GROUP_SALES_DESCRIPTION" xml:space="preserve"><value>Politikker for administration og overvågning af salg.</value></data>
+  <data name="GIZMO_POLICY_GROUP_SALES_NAME" xml:space="preserve"><value>Salg</value></data>
+  <data name="GIZMO_POLICY_GROUP_SETTINGS_DESCRIPTION" xml:space="preserve"><value>Myöntää pääsyn asetusominaisuuteen</value></data>
+  <data name="GIZMO_POLICY_GROUP_SETTINGS_NAME" xml:space="preserve"><value>Asetukset</value></data>
+  <data name="GIZMO_POLICY_GROUP_SHIFT_DESCRIPTION" xml:space="preserve"><value>Politikker for vagter og salgsoperationer under vagter.</value></data>
+  <data name="GIZMO_POLICY_GROUP_SHIFT_NAME" xml:space="preserve"><value>Vagt</value></data>
+  <data name="GIZMO_POLICY_GROUP_STOCK_DESCRIPTION" xml:space="preserve"><value>Myöntää pääsyn varastoominaisuuteen</value></data>
+  <data name="GIZMO_POLICY_GROUP_STOCK_NAME" xml:space="preserve"><value>Varasto</value></data>
+  <data name="GIZMO_POLICY_GROUP_USER_DESCRIPTION" xml:space="preserve"><value>Politikker for brugeradministration og adgang.</value></data>
+  <data name="GIZMO_POLICY_GROUP_USER_NAME" xml:space="preserve"><value>Bruger</value></data>
+  <data name="GIZMO_POLICY_GROUP_WAITING_LINES_DESCRIPTION" xml:space="preserve"><value>Myöntää pääsyn jonoominaisuuteen</value></data>
+  <data name="GIZMO_POLICY_GROUP_WAITING_LINES_NAME" xml:space="preserve"><value>Jonot</value></data>
+  <data name="GIZMO_POLICY_GROUP_WEB_API_DESCRIPTION" xml:space="preserve"><value>Politikker for adgang til og administration af Web API-funktionalitet.</value></data>
+  <data name="GIZMO_POLICY_GROUP_WEB_API_NAME" xml:space="preserve"><value>Web API</value></data>
+  <data name="GIZMO_POLICY_LOG_CLEAR_DESCRIPTION" xml:space="preserve"><value>Giver adgang til logadministration, så brugeren kan rydde systemlogs</value></data>
+  <data name="GIZMO_POLICY_LOG_CLEAR_NAME" xml:space="preserve"><value>Ryd</value></data>
+  <data name="GIZMO_POLICY_LOG_DESCRIPTION" xml:space="preserve"><value>Giver adgang til logfunktionen, så brugeren kan se systemlogs</value></data>
+  <data name="GIZMO_POLICY_LOG_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_CLIENT_MODULE_RESTART_DESCRIPTION" xml:space="preserve"><value>Giver adgang til genstart, så brugeren kan genstarte klientmodulet</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_CLIENT_MODULE_RESTART_NAME" xml:space="preserve"><value>Genstart klientmodul</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til administrationsfunktionen, så brugeren kan udføre administrative opgaver</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_FILES_DESCRIPTION" xml:space="preserve"><value>Giver adgang til klientstationsfiler, så brugeren kan administrere og interagere med stationsfiler</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_FILES_NAME" xml:space="preserve"><value>Administrer filer</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_LOCK_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at administrere klientstationens tastatur- og museinputlås, så brugeren kan styre inputtilladelser</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_LOCK_NAME" xml:space="preserve"><value>Inputlås</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_MAINTENANCE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at administrere klientstationens vedligeholdelsestilstand, så brugeren kan styre og opdatere vedligeholdelsesstatus</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_MAINTENANCE_NAME" xml:space="preserve"><value>Administrer vedligeholdelse</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_PROCESSES_DESCRIPTION" xml:space="preserve"><value>Giver adgang til klientstationsprocesser, så brugeren kan se og administrere kørende processer</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_PROCESSES_NAME" xml:space="preserve"><value>Administrer processer</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_SECURITY_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at administrere klientstationens sikkerhedstilstand, så brugeren kan styre og opdatere sikkerhedsindstillinger</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_SECURITY_NAME" xml:space="preserve"><value>Sikkerhed</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_TASKS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til opgavefunktionen, så brugeren kan se og administrere opgaver</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_TASKS_NAME" xml:space="preserve"><value>Adgang til opgaver</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til manuelt at tænde endpoints, så brugeren kan styre endpoint-strømtilstande</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_NAME" xml:space="preserve"><value>Tænd endpoints</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_DESCRIPTION" xml:space="preserve"><value>Giver adgang til fjernbetjening af endpoints, så brugeren kan interagere med klientskærme</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_NAME" xml:space="preserve"><value>Fjernstyring</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_VIEW_DESCRIPTION" xml:space="preserve"><value>Giver adgang til visning af fjern-endpointskærme, så brugeren kan overvåge klientaktivitet</value></data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_VIEW_NAME" xml:space="preserve"><value>Fjernstyring visning</value></data>
+  <data name="GIZMO_POLICY_MONITORING_DESCRIPTION" xml:space="preserve"><value>Giver adgang til skærmovervågningsfunktionen, så brugeren kan se og overvåge klientskærme</value></data>
+  <data name="GIZMO_POLICY_MONITORING_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_MARKETING_DESCRIPTION" xml:space="preserve"><value>Giver adgang til markedsføringsfunktionen, så brugeren kan se og administrere nyheder og feeds</value></data>
+  <data name="GIZMO_POLICY_MARKETING_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_REGISTER_PAY_IN_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at foretage kasseindbetalinger, så brugeren kan tilføje midler til kassen</value></data>
+  <data name="GIZMO_POLICY_REGISTER_PAY_IN_NAME" xml:space="preserve"><value>Foretag indbetalinger</value></data>
+  <data name="GIZMO_POLICY_REGISTER_PAY_OUT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at foretage kasseudbetalinger, så brugeren kan hæve midler fra kassen</value></data>
+  <data name="GIZMO_POLICY_REGISTER_PAY_OUT_NAME" xml:space="preserve"><value>Foretag udbetalinger</value></data>
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se tidligere dags kassetransaktioner, så brugeren kan gennemgå tidligere kasseaktiviteter</value></data>
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve"><value>Vis tidligere dags transaktioner</value></data>
+  <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se kassetransaktioner, så brugeren kan gennemgå alle kasseaktiviteter</value></data>
+  <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_NAME" xml:space="preserve"><value>Vis transaktioner</value></data>
+  <data name="GIZMO_POLICY_REPORTS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til rapportfunktionen, så brugeren kan se og generere rapporter</value></data>
+  <data name="GIZMO_POLICY_REPORTS_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_RESERVATIONS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til reservationer</value></data>
+  <data name="GIZMO_POLICY_RESERVATIONS_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_RESERVATIONS_CREATE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at oprette reservationer</value></data>
+  <data name="GIZMO_POLICY_RESERVATIONS_CREATE_NAME" xml:space="preserve"><value>Opret</value></data>
+  <data name="GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at oprette reservationer uden betaling</value></data>
+  <data name="GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_NAME" xml:space="preserve"><value>Opret reservationer uden betaling</value></data>
+  <data name="GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at oprette reservationer for gæstekonti</value></data>
+  <data name="GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_NAME" xml:space="preserve"><value>Opret reservationer for gæster</value></data>
+  <data name="GIZMO_POLICY_GROUP_USER_GROUP_DESCRIPTION" xml:space="preserve"><value>Politikker for brugergruppeadministration.</value></data>
+  <data name="GIZMO_POLICY_GROUP_USER_GROUP_NAME" xml:space="preserve"><value>Brugergruppe</value></data>
+  <data name="GIZMO_POLICY_GROUP_HOST_LAYOUT_DESCRIPTION" xml:space="preserve"><value>Politikker for opstillingsadministration.</value></data>
+  <data name="GIZMO_POLICY_GROUP_HOST_LAYOUT_NAME" xml:space="preserve"><value>Opstillinger</value></data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til opstillinger</value></data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_CREATE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at oprette opstillinger</value></data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_CREATE_NAME" xml:space="preserve"><value>Opret</value></data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_EDIT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at redigere opstillinger</value></data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_EDIT_NAME" xml:space="preserve"><value>Rediger</value></data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_DELETE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at slette opstillinger</value></data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_DELETE_NAME" xml:space="preserve"><value>Slet</value></data>
+  <data name="GIZMO_POLICY_USER_GROUP_DESCRIPTION" xml:space="preserve"><value>Giver adgang til brugergrupper</value></data>
+  <data name="GIZMO_POLICY_USER_GROUP_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_USER_GROUP_CREATE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at oprette brugergrupper</value></data>
+  <data name="GIZMO_POLICY_USER_GROUP_CREATE_NAME" xml:space="preserve"><value>Opret</value></data>
+  <data name="GIZMO_POLICY_USER_GROUP_EDIT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at redigere brugergrupper</value></data>
+  <data name="GIZMO_POLICY_USER_GROUP_EDIT_NAME" xml:space="preserve"><value>Rediger</value></data>
+  <data name="GIZMO_POLICY_USER_GROUP_DELETE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at slette brugergrupper</value></data>
+  <data name="GIZMO_POLICY_USER_GROUP_DELETE_NAME" xml:space="preserve"><value>Slet</value></data>
+  <data name="GIZMO_POLICY_GROUP_HOSTS_DESCRIPTION" xml:space="preserve"><value>Myöntää pääsyn asemaominaisuuteen</value></data>
+  <data name="GIZMO_POLICY_GROUP_HOSTS_NAME" xml:space="preserve"><value>Asemat</value></data>
+  <data name="GIZMO_POLICY_HOSTS_DESCRIPTION" xml:space="preserve"><value>Myöntää pääsyn asemaominaisuuteen, jolloin käyttäjä voi hallita ja käsitellä asemia</value></data>
+  <data name="GIZMO_POLICY_HOSTS_NAME" xml:space="preserve"><value>Käyttöoikeus</value></data>
+  <data name="GIZMO_POLICY_HOSTS_CREATE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at oprette stationer</value></data>
+  <data name="GIZMO_POLICY_HOSTS_CREATE_NAME" xml:space="preserve"><value>Opret</value></data>
+  <data name="GIZMO_POLICY_HOSTS_EDIT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at redigere stationer</value></data>
+  <data name="GIZMO_POLICY_HOSTS_EDIT_NAME" xml:space="preserve"><value>Rediger</value></data>
+  <data name="GIZMO_POLICY_HOSTS_DELETE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at slette stationer</value></data>
+  <data name="GIZMO_POLICY_HOSTS_DELETE_NAME" xml:space="preserve"><value>Slet</value></data>
+  <data name="GIZMO_POLICY_GROUP_HOST_GROUPS_DESCRIPTION" xml:space="preserve"><value>Politikker for stationsgruppeadministration.</value></data>
+  <data name="GIZMO_POLICY_GROUP_HOST_GROUPS_NAME" xml:space="preserve"><value>Stationsgrupper</value></data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til stationsgrupper</value></data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_CREATE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at oprette stationsgrupper</value></data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_CREATE_NAME" xml:space="preserve"><value>Opret</value></data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_EDIT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at redigere stationsgrupper</value></data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_EDIT_NAME" xml:space="preserve"><value>Rediger</value></data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_DELETE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at slette stationsgrupper</value></data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_DELETE_NAME" xml:space="preserve"><value>Slet</value></data>
+  <data name="GIZMO_POLICY_GROUP_CONTROLLERS_DESCRIPTION" xml:space="preserve"><value>Politikker for controlleradministration.</value></data>
+  <data name="GIZMO_POLICY_GROUP_CONTROLLERS_NAME" xml:space="preserve"><value>Controllere</value></data>
+  <data name="GIZMO_POLICY_CONTROLLERS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til controllere</value></data>
+  <data name="GIZMO_POLICY_CONTROLLERS_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_CONTROLLERS_CREATE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at oprette controllere</value></data>
+  <data name="GIZMO_POLICY_CONTROLLERS_CREATE_NAME" xml:space="preserve"><value>Opret</value></data>
+  <data name="GIZMO_POLICY_CONTROLLERS_EDIT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at redigere controllere</value></data>
+  <data name="GIZMO_POLICY_CONTROLLERS_EDIT_NAME" xml:space="preserve"><value>Rediger</value></data>
+  <data name="GIZMO_POLICY_CONTROLLERS_DELETE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at slette controllere</value></data>
+  <data name="GIZMO_POLICY_CONTROLLERS_DELETE_NAME" xml:space="preserve"><value>Slet</value></data>
+  <data name="GIZMO_POLICY_GROUP_SECURITY_PROFILES_DESCRIPTION" xml:space="preserve"><value>Politikker for sikkerhedsprofiladministration.</value></data>
+  <data name="GIZMO_POLICY_GROUP_SECURITY_PROFILES_NAME" xml:space="preserve"><value>Sikkerhedsprofiler</value></data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_DESCRIPTION" xml:space="preserve"><value>Giver adgang til sikkerhedsprofiler</value></data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_CREATE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at oprette sikkerhedsprofiler</value></data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_CREATE_NAME" xml:space="preserve"><value>Opret</value></data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_EDIT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at redigere sikkerhedsprofiler</value></data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_EDIT_NAME" xml:space="preserve"><value>Rediger</value></data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_DELETE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at slette sikkerhedsprofiler</value></data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_DELETE_NAME" xml:space="preserve"><value>Slet</value></data>
+  <data name="GIZMO_POLICY_GROUP_ASSETS_DESCRIPTION" xml:space="preserve"><value>Politikker for udstyrsadministration.</value></data>
+  <data name="GIZMO_POLICY_GROUP_ASSETS_NAME" xml:space="preserve"><value>Udstyr</value></data>
+  <data name="GIZMO_POLICY_ASSETS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til udstyr</value></data>
+  <data name="GIZMO_POLICY_ASSETS_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_ASSETS_CREATE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at oprette udstyr</value></data>
+  <data name="GIZMO_POLICY_ASSETS_CREATE_NAME" xml:space="preserve"><value>Opret</value></data>
+  <data name="GIZMO_POLICY_ASSETS_EDIT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at redigere udstyr</value></data>
+  <data name="GIZMO_POLICY_ASSETS_EDIT_NAME" xml:space="preserve"><value>Rediger</value></data>
+  <data name="GIZMO_POLICY_ASSETS_DELETE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at slette udstyr</value></data>
+  <data name="GIZMO_POLICY_ASSETS_DELETE_NAME" xml:space="preserve"><value>Slet</value></data>
+  <data name="GIZMO_POLICY_GROUP_TASKS_DESCRIPTION" xml:space="preserve"><value>Politikker for opgaveadministration.</value></data>
+  <data name="GIZMO_POLICY_GROUP_TASKS_NAME" xml:space="preserve"><value>Opgaver</value></data>
+  <data name="GIZMO_POLICY_TASKS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til opgaver</value></data>
+  <data name="GIZMO_POLICY_TASKS_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_TASKS_CREATE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at oprette opgaver</value></data>
+  <data name="GIZMO_POLICY_TASKS_CREATE_NAME" xml:space="preserve"><value>Opret</value></data>
+  <data name="GIZMO_POLICY_TASKS_EDIT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at redigere opgaver</value></data>
+  <data name="GIZMO_POLICY_TASKS_EDIT_NAME" xml:space="preserve"><value>Rediger</value></data>
+  <data name="GIZMO_POLICY_TASKS_DELETE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at slette opgaver</value></data>
+  <data name="GIZMO_POLICY_TASKS_DELETE_NAME" xml:space="preserve"><value>Slet</value></data>
+  <data name="GIZMO_POLICY_GROUP_CLIENT_TASKS_DESCRIPTION" xml:space="preserve"><value>Politikker for klientopgaveadministration.</value></data>
+  <data name="GIZMO_POLICY_GROUP_CLIENT_TASKS_NAME" xml:space="preserve"><value>Klientopgaver</value></data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til klientopgaver</value></data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_CREATE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at oprette klientopgaver</value></data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_CREATE_NAME" xml:space="preserve"><value>Opret</value></data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_EDIT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at redigere klientopgaver</value></data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_EDIT_NAME" xml:space="preserve"><value>Rediger</value></data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_DELETE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at slette klientopgaver</value></data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_DELETE_NAME" xml:space="preserve"><value>Slet</value></data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCTS_DESCRIPTION" xml:space="preserve"><value>Myöntää pääsyn tuoteominaisuuteen</value></data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCTS_NAME" xml:space="preserve"><value>Tuotteet</value></data>
+  <data name="GIZMO_POLICY_PRODUCTS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til produkter</value></data>
+  <data name="GIZMO_POLICY_PRODUCTS_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_PRODUCTS_CREATE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at oprette produkter</value></data>
+  <data name="GIZMO_POLICY_PRODUCTS_CREATE_NAME" xml:space="preserve"><value>Opret</value></data>
+  <data name="GIZMO_POLICY_PRODUCTS_EDIT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at redigere produkter</value></data>
+  <data name="GIZMO_POLICY_PRODUCTS_EDIT_NAME" xml:space="preserve"><value>Rediger</value></data>
+  <data name="GIZMO_POLICY_PRODUCTS_DELETE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at slette produkter</value></data>
+  <data name="GIZMO_POLICY_PRODUCTS_DELETE_NAME" xml:space="preserve"><value>Slet</value></data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCT_GROUPS_DESCRIPTION" xml:space="preserve"><value>Politikker for produktgruppeadministration.</value></data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCT_GROUPS_NAME" xml:space="preserve"><value>Produktgrupper</value></data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til produktgrupper</value></data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_CREATE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at oprette produktgrupper</value></data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_CREATE_NAME" xml:space="preserve"><value>Opret</value></data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_EDIT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at redigere produktgrupper</value></data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_EDIT_NAME" xml:space="preserve"><value>Rediger</value></data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_DELETE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at slette produktgrupper</value></data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_DELETE_NAME" xml:space="preserve"><value>Slet</value></data>
+  <data name="GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_DESCRIPTION" xml:space="preserve"><value>Tillad tidskredit</value></data>
+  <data name="GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_NAME" xml:space="preserve"><value>Tillad tidskredit</value></data>
+  <data name="GIZMO_POLICY_SALE_CUSTOM_PRICE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at sælge til tilpassede priser, så brugeren kan tilsidesætte standardpriser</value></data>
+  <data name="GIZMO_POLICY_SALE_CUSTOM_PRICE_NAME" xml:space="preserve"><value>Tilpasset pris</value></data>
+  <data name="GIZMO_POLICY_SALE_DELETE_TIME_PURCHASES_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at slette tidskøb, så brugeren kan fjerne fastids- eller tidspakketransaktioner</value></data>
+  <data name="GIZMO_POLICY_SALE_DELETE_TIME_PURCHASES_NAME" xml:space="preserve"><value>Slet tidskøb</value></data>
+  <data name="GIZMO_POLICY_SALE_DEPOSIT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at foretage depositummer, så brugeren kan tilføje midler til kundekonti</value></data>
+  <data name="GIZMO_POLICY_SALE_DEPOSIT_NAME" xml:space="preserve"><value>Depositum</value></data>
+  <data name="GIZMO_POLICY_SALE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at foretage salg, så brugeren kan behandle kundekøb</value></data>
+  <data name="GIZMO_POLICY_SALE_DISABLE_RECEIPT_PRINT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til selektivt at deaktivere kvitteringsudskrivning, så brugeren kan styre præferencer for kvitteringsgenerering</value></data>
+  <data name="GIZMO_POLICY_SALE_DISABLE_RECEIPT_PRINT_NAME" xml:space="preserve"><value>Deaktivér kvitteringsudskrivning</value></data>
+  <data name="GIZMO_POLICY_SALE_MODIFY_USER_BILLING_OPTIONS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til manuelt at vælge brugerens faktureringsindstillinger, så brugeren kan tilpasse faktureringspræferencer for kunder</value></data>
+  <data name="GIZMO_POLICY_SALE_MODIFY_USER_BILLING_OPTIONS_NAME" xml:space="preserve"><value>Rediger brugerens faktureringsindstillinger</value></data>
+  <data name="GIZMO_POLICY_SALE_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_SALE_OPEN_CASH_DRAWER_DESCRIPTION" xml:space="preserve"><value>Giver adgang til manuelt at åbne kasseskuffen, så brugeren kan tilsidesætte automatisk styring</value></data>
+  <data name="GIZMO_POLICY_SALE_OPEN_CASH_DRAWER_NAME" xml:space="preserve"><value>Åbn kasseskuffe</value></data>
+  <data name="GIZMO_POLICY_SALE_PAY_LATER_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at aktivere betal-later-muligheder, så brugeren kan udskyde betaling for transaktioner</value></data>
+  <data name="GIZMO_POLICY_SALE_PAY_LATER_NAME" xml:space="preserve"><value>Betal senere</value></data>
+  <data name="GIZMO_POLICY_SALE_VIEW_DEPOSITS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se depositummer, så brugeren kan gennemgå kundekontodepositumtransaktioner</value></data>
+  <data name="GIZMO_POLICY_SALE_VIEW_DEPOSITS_NAME" xml:space="preserve"><value>Vis depositummer</value></data>
+  <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se fakturaer, så brugeren kan gennemgå fakturerings- og betalingsoplysninger</value></data>
+  <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_NAME" xml:space="preserve"><value>Vis fakturaer</value></data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se betalte fakturaer, så brugeren kan gennemgå gennemførte betalingsposter</value></data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_NAME" xml:space="preserve"><value>Vis betalte fakturaer</value></data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se tidligere dags depositummer, så brugeren kan gennemgå depositumtransaktioner fra dagen før</value></data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_NAME" xml:space="preserve"><value>Vis tidligere dags depositummer</value></data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se tidligere dags fakturaer, så brugeren kan gennemgå fakturaer udstedt dagen før</value></data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_NAME" xml:space="preserve"><value>Vis tidligere dags fakturaer</value></data>
+  <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at annullere fakturaer fra lukkede vagter, så brugeren kan annullere transaktioner efter vagten er afsluttet</value></data>
+  <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_NAME" xml:space="preserve"><value>Annullér lukkede vagtfakturaer</value></data>
+  <data name="GIZMO_POLICY_SALE_VOID_DEPOSIT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at annullere depositummer, så brugeren kan annullere eller tilbageføre depositumtransaktioner</value></data>
+  <data name="GIZMO_POLICY_SALE_VOID_DEPOSIT_NAME" xml:space="preserve"><value>Annullér depositum</value></data>
+  <data name="GIZMO_POLICY_SALE_VOID_INVOICE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at annullere fakturaer, så brugeren kan annullere eller tilbageføre udstedte fakturaer</value></data>
+  <data name="GIZMO_POLICY_SALE_VOID_INVOICE_NAME" xml:space="preserve"><value>Annullér</value></data>
+  <data name="GIZMO_POLICY_SALE_VOID_NON_CURRENT_BRANCH_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at annullere fakturaer udstedt i en anden filial</value></data>
+  <data name="GIZMO_POLICY_SALE_VOID_NON_CURRENT_BRANCH_NAME" xml:space="preserve"><value>Annullér fakturaer fra andre filialer</value></data>
+  <data name="GIZMO_POLICY_SALE_VOID_NON_OWNED_INVOICE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at annullere fakturaer oprettet af andre operatører, så brugeren kan annullere transaktioner initieret af andre brugere</value></data>
+  <data name="GIZMO_POLICY_SALE_VOID_NON_OWNED_INVOICE_NAME" xml:space="preserve"><value>Annullér andres fakturaer</value></data>
+  <data name="GIZMO_POLICY_SALE_VOID_PAST_DAY_INVOICE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at annullere fakturaer oprettet på tidligere datoer, så brugeren kan annullere transaktioner fra tidligere dage</value></data>
+  <data name="GIZMO_POLICY_SALE_VOID_PAST_DAY_INVOICE_NAME" xml:space="preserve"><value>Annullér tidligere dags fakturaer</value></data>
+  <data name="GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at annullere fakturaer med anvendte tidspakker, så brugeren kan annullere transaktioner med indløste tidspakker</value></data>
+  <data name="GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_NAME" xml:space="preserve"><value>Annullér fakturaer med anvendt tid</value></data>
+  <data name="GIZMO_POLICY_SALE_WITHDRAW_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at foretage hævninger, så brugeren kan trække midler fra kundekonti</value></data>
+  <data name="GIZMO_POLICY_SALE_WITHDRAW_NAME" xml:space="preserve"><value>Hæv</value></data>
+  <data name="GIZMO_POLICY_SETTINGS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til indstillingsfunktionen, så brugeren kan se og ændre systemkonfigurationer</value></data>
+  <data name="GIZMO_POLICY_SETTINGS_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_SET_CASHIER_NAME" xml:space="preserve"><value>Kasserer</value></data>
+  <data name="GIZMO_POLICY_SET_MANAGER_NAME" xml:space="preserve"><value>Leder</value></data>
+  <data name="GIZMO_POLICY_SET_MARKETER_NAME" xml:space="preserve"><value>Marketingmedarbejder</value></data>
+  <data name="GIZMO_POLICY_SET_OWNER_NAME" xml:space="preserve"><value>Ejer</value></data>
+  <data name="GIZMO_POLICY_SET_TECHNICIAN_NAME" xml:space="preserve"><value>Tekniker</value></data>
+  <data name="GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se vagtens forventede beløb, så brugeren kan gennemgå forventede totaler for vagter</value></data>
+  <data name="GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_NAME" xml:space="preserve"><value>Vis forventet</value></data>
+  <data name="GIZMO_POLICY_STOCK_CREATE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at oprette lager</value></data>
+  <data name="GIZMO_POLICY_STOCK_CREATE_NAME" xml:space="preserve"><value>Opret</value></data>
+  <data name="GIZMO_POLICY_STOCK_DELETE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at slette lager</value></data>
+  <data name="GIZMO_POLICY_STOCK_DELETE_NAME" xml:space="preserve"><value>Slet</value></data>
+  <data name="GIZMO_POLICY_STOCK_DESCRIPTION" xml:space="preserve"><value>Giver adgang til lagerfunktionen, så brugeren kan se og administrere lagervarer</value></data>
+  <data name="GIZMO_POLICY_STOCK_EDIT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at redigere lager</value></data>
+  <data name="GIZMO_POLICY_STOCK_EDIT_NAME" xml:space="preserve"><value>Rediger</value></data>
+  <data name="GIZMO_POLICY_STOCK_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTIONS" xml:space="preserve"><value>Giver adgang til at se tidligere dags lagertransaktioner, så brugeren kan gennemgå lageraktiviteter fra dagen før</value></data>
+  <data name="GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve"><value>Vis tidligere dags transaktioner</value></data>
+  <data name="GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se lagertransaktioner, så brugeren kan gennemgå alle lageraktiviteter</value></data>
+  <data name="GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_NAME" xml:space="preserve"><value>Vis transaktioner</value></data>
+  <data name="GIZMO_POLICY_USER_BAN_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at spærre brugere, så brugeren kan begrænse kontoadgang for specifikke brugere</value></data>
+  <data name="GIZMO_POLICY_USER_BAN_NAME" xml:space="preserve"><value>Spær bruger</value></data>
+  <data name="GIZMO_POLICY_USER_CHANGE_GROUP_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at flytte brugere til andre brugergrupper, så brugeren kan opdatere brugergruppemedlemskaber</value></data>
+  <data name="GIZMO_POLICY_USER_CHANGE_GROUP_NAME" xml:space="preserve"><value>Skift brugergruppe</value></data>
+  <data name="GIZMO_POLICY_USER_CREATE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til manuelt at oprette brugere, så brugeren kan tilføje nye brugerkonti til systemet</value></data>
+  <data name="GIZMO_POLICY_USER_CREATE_NAME" xml:space="preserve"><value>Opret</value></data>
+  <data name="GIZMO_POLICY_USER_LIST_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se brugerlisten</value></data>
+  <data name="GIZMO_POLICY_USER_LIST_NAME" xml:space="preserve"><value>Liste</value></data>
+  <data name="GIZMO_POLICY_USER_DELETE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at slette brugere, så brugeren kan fjerne brugerkonti fra systemet</value></data>
+  <data name="GIZMO_POLICY_USER_DELETE_NAME" xml:space="preserve"><value>Slet</value></data>
+  <data name="GIZMO_POLICY_USER_EDIT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at redigere brugeres personlige oplysninger, så brugeren kan opdatere kontooplysninger</value></data>
+  <data name="GIZMO_POLICY_USER_EDIT_NAME" xml:space="preserve"><value>Rediger</value></data>
+  <data name="GIZMO_POLICY_USER_HARD_DELETE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til permanent sletning af brugere, så brugeren kan fjerne brugerkonti permanent fra systemet</value></data>
+  <data name="GIZMO_POLICY_USER_HARD_DELETE_NAME" xml:space="preserve"><value>Permanent slet</value></data>
+  <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_DESCRIPTION" xml:space="preserve"><value>Giver adgang til manuelt at logge brugere ind, så brugeren kan starte brugersessioner direkte</value></data>
+  <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_NAME" xml:space="preserve"><value>Log brugere ind</value></data>
+  <data name="GIZMO_POLICY_USER_PASSWORD_RESET_DESCRIPTION" xml:space="preserve"><value>Giver adgang til manuelt at nulstille brugeradgangskoder, så brugeren kan opdatere kontolegitimationsoplysninger</value></data>
+  <data name="GIZMO_POLICY_USER_PASSWORD_RESET_NAME" xml:space="preserve"><value>Nulstil adgangskode</value></data>
+  <data name="GIZMO_POLICY_USER_RENAME_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at omdøbe brugere, så brugeren kan opdatere brugerkontonavne</value></data>
+  <data name="GIZMO_POLICY_USER_RENAME_NAME" xml:space="preserve"><value>Omdøb</value></data>
+  <data name="GIZMO_POLICY_USER_UNBAN_DESCRIPTION" xml:space="preserve"><value>Giver adgang til manuelt at ophæve spærring af brugere, så brugeren kan gendanne adgang for tidligere spærrede konti</value></data>
+  <data name="GIZMO_POLICY_USER_UNBAN_NAME" xml:space="preserve"><value>Ophæv spærring</value></data>
+  <data name="GIZMO_POLICY_USER_VIEW_STATS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se brugerstatistikker, så brugeren kan gennemgå aktivitets- og præstationsmetrikker for brugere</value></data>
+  <data name="GIZMO_POLICY_USER_VIEW_STATS_NAME" xml:space="preserve"><value>Vis statistikker</value></data>
+  <data name="GIZMO_POLICY_WAITING_LINES_DESCRIPTION" xml:space="preserve"><value>Giver adgang til køfunktionen, så brugeren kan administrere og overvåge køer</value></data>
+  <data name="GIZMO_POLICY_WAITING_LINES_MANAGE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at administrere køer, så brugeren kan organisere og styre køoperationer</value></data>
+  <data name="GIZMO_POLICY_WAITING_LINES_MANAGE_NAME" xml:space="preserve"><value>Administrer køer</value></data>
+  <data name="GIZMO_POLICY_WAITING_LINES_NAME" xml:space="preserve"><value>Adgang</value></data>
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_CENTER" xml:space="preserve"><value>Bund center</value></data>
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_LEFT" xml:space="preserve"><value>Bund venstre</value></data>
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_RIGHT" xml:space="preserve"><value>Bund højre</value></data>
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_LEFT" xml:space="preserve"><value>Midt venstre</value></data>
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_RIGHT" xml:space="preserve"><value>Midt højre</value></data>
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_SCREEN" xml:space="preserve"><value>Midt på skærm</value></data>
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_CENTER" xml:space="preserve"><value>Top center</value></data>
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_LEFT" xml:space="preserve"><value>Top venstre</value></data>
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_RIGHT" xml:space="preserve"><value>Top højre</value></data>
+  <data name="HOST_NUMBER_POSITIONING_CLOCKWISE" xml:space="preserve"><value>Med uret</value></data>
+  <data name="HOST_NUMBER_POSITIONING_COUNTERCLOCKWISE" xml:space="preserve"><value>Mod uret</value></data>
+  <data name="HOST_NUMBER_POSITIONING_FIXED" xml:space="preserve"><value>Fast</value></data>
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_BOTTOM" xml:space="preserve"><value>Vandret bund</value></data>
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_CENTER" xml:space="preserve"><value>Vandret center</value></data>
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_TOP" xml:space="preserve"><value>Vandret top</value></data>
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_CENTER" xml:space="preserve"><value>Lodret center</value></data>
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_LEFT" xml:space="preserve"><value>Lodret venstre</value></data>
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_RIGHT" xml:space="preserve"><value>Lodret højre</value></data>
+  <data name="HOST_NUMBER_POSITIONING_WALL_BOUNCE" xml:space="preserve"><value>Vægbounce</value></data>
+  <data name="HTTPS_CERTIFICATE_TYPE_SELF_SIGNED" xml:space="preserve"><value>Selvsigneret</value></data>
+  <data name="HTTPS_CERTIFICATE_TYPE_USER_DEFINED" xml:space="preserve"><value>Brugerdefineret</value></data>
+  <data name="KEY_GENERATION_CHARACTERS_ALPHANUMERIC" xml:space="preserve"><value>Alfanumerisk</value></data>
+  <data name="KEY_GENERATION_CHARACTERS_NUMERIC" xml:space="preserve"><value>Numerisk</value></data>
+  <data name="KEY_GENERATION_CHARACTERS_UPPER_CASE_CHARACTERS" xml:space="preserve"><value>Store bogstaver</value></data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL_NAME" xml:space="preserve"><value>Sähköposti</value></data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE_NAME" xml:space="preserve"><value>Mobiltelefon</value></data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MESSENGER_NAME" xml:space="preserve"><value>Messenger</value></data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_NONE_NAME" xml:space="preserve"><value>Ingen</value></data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_APPLICATIONS_ENABLED_DESCRIPTION" xml:space="preserve"><value>Angiver om aldersbegrænsninger er aktiveret for applikationer</value></data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_APPLICATIONS_ENABLED_NAME" xml:space="preserve"><value>Aktivér aldersbegrænsninger for applikationer</value></data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_LOGIN_ENABLED_DESCRIPTION" xml:space="preserve"><value>Angiver om aldersbegrænsninger er aktiveret for login</value></data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_LOGIN_ENABLED_NAME" xml:space="preserve"><value>Aktivér aldersbegrænsninger for login</value></data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_PRODUCTS_ENABLED_DESCRIPTION" xml:space="preserve"><value>Angiver om aldersbegrænsninger er aktiveret for produkter</value></data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_PRODUCTS_ENABLED_NAME" xml:space="preserve"><value>Aktivér aldersbegrænsninger for produkter</value></data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_DESCRIPTION" xml:space="preserve"><value>Angiver om alder er obligatorisk for alle aldersbegrænsninger</value></data>
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_NAME" xml:space="preserve"><value>Håndhæv alle begrænsninger for brugere med ukendt alder</value></data>
+  <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve"><value>Angiver meddelelse om resterende tid</value></data>
+  <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_NAME" xml:space="preserve"><value>Meddelelse om resterende tid</value></data>
+  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_DESCRIPTION" xml:space="preserve"><value>Angiver at terminal skal bruges ved betaling med kreditkort</value></data>
+  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_NAME" xml:space="preserve"><value>Kreditkort brug terminal</value></data>
+  <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve"><value>Angiver meddelelse om reservationstid</value></data>
+  <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_NAME" xml:space="preserve"><value>Meddelelse om reservationstid</value></data>
+  <data name="SERVER_OPTION_TAX_DEPOSITS_TAX_SYSTEM_DESCRIPTION" xml:space="preserve"><value>Angiver depositumsskattesystem</value></data>
+  <data name="SERVER_OPTION_TAX_DEPOSITS_TAX_SYSTEM_NAME" xml:space="preserve"><value>Depositumsskattesystem</value></data>
+  <data name="SERVER_OPTION_TAX_GOODS_VAT_RATE_DESCRIPTION" xml:space="preserve"><value>Angiver momssats for varer</value></data>
+  <data name="SERVER_OPTION_TAX_GOODS_VAT_RATE_NAME" xml:space="preserve"><value>Momssats for varer</value></data>
+  <data name="SERVER_OPTION_TAX_SERVICES_VAT_RATE_DESCRIPTION" xml:space="preserve"><value>Angiver momssats for tjenester</value></data>
+  <data name="SERVER_OPTION_TAX_SERVICES_VAT_RATE_NAME" xml:space="preserve"><value>Momssats for tjenester</value></data>
+  <data name="TAX_SYSTEMS_RUSSIA_MAIN" xml:space="preserve"><value>Pää</value></data>
+  <data name="TAX_SYSTEMS_RUSSIA_PATENT_SYSTEM" xml:space="preserve"><value>Patentsystem</value></data>
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_EXPSENSES" xml:space="preserve"><value>Yksinkertaistettu järjestelmä – tulot miinus kulut</value></data>
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_TAXATION" xml:space="preserve"><value>Yksinkertaistettu järjestelmä – tulot miinus verotus</value></data>
+  <data name="TAX_SYSTEMS_RUSSIA_SINGLE_AGRICULTURAL_TAX" xml:space="preserve"><value>Yhtenäinen maatalousvero</value></data>
+  <data name="TAX_SYSTEMS_UNDEFINED" xml:space="preserve"><value>Udefineret</value></data>
+  <data name="TAX_SYSTEM_COUNTRY_RUSSIA" xml:space="preserve"><value>Rusland</value></data>
+  <data name="TAX_SYSTEM_COUNTRY_UNSPECIFIED" xml:space="preserve"><value>Uspecificeret</value></data>
+  <data name="USER_RECOVERY_METHOD_EMAIL_NAME" xml:space="preserve"><value>E-mail</value></data>
+  <data name="USER_RECOVERY_METHOD_MOBILE_NAME" xml:space="preserve"><value>Mobil</value></data>
+  <data name="USER_RECOVERY_METHOD_NONE_NAME" xml:space="preserve"><value>Ingen</value></data>
+  <data name="VAT_RATES_RUSSIA_NONE" xml:space="preserve"><value>Ei mitään</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT0" xml:space="preserve"><value>VAT0</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT10" xml:space="preserve"><value>VAT10</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT20" xml:space="preserve"><value>VAT20</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT5" xml:space="preserve"><value>VAT5</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT7" xml:space="preserve"><value>VAT7</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT105" xml:space="preserve"><value>VAT105</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT107" xml:space="preserve"><value>VAT107</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT110" xml:space="preserve"><value>VAT110</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT120" xml:space="preserve"><value>VAT120</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT22" xml:space="preserve"><value>VAT22</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT122" xml:space="preserve"><value>VAT122</value></data>
+  <data name="SMTP_SECURITY_NONE_NAME" xml:space="preserve"><value>Ei mitään</value></data>
+  <data name="SMTP_SECURITY_SSL_NAME" xml:space="preserve"><value>SSL</value></data>
+  <data name="SMTP_SECURITY_STARTTLS_NAME" xml:space="preserve"><value>STAR TTLS</value></data>
+  <data name="PAYMENT_METHOD_TYPE_CASH_NAME" xml:space="preserve"><value>Käteinen</value></data>
+  <data name="PAYMENT_METHOD_TYPE_CREDIT_CARD_NAME" xml:space="preserve"><value>Luottokortti</value></data>
+  <data name="PAYMENT_METHOD_TYPE_DEPOSIT_NAME" xml:space="preserve"><value>Talletus</value></data>
+  <data name="PAYMENT_METHOD_TYPE_POINTS_NAME" xml:space="preserve"><value>Pisteet</value></data>
+  <data name="PAYMENT_METHOD_TYPE_CUSTOM_NAME" xml:space="preserve"><value>Mukautettu</value></data>
+  <data name="STOCK_WAREHOUSE_DEFAULT_NAME" xml:space="preserve"><value>Varasto</value></data>
+  <data name="STOCK_SELLING_POINT_DEFAULT_NAME" xml:space="preserve"><value>Myyntipiste</value></data>
+  <data name="BRANCH_DEFAULT_NAME" xml:space="preserve"><value>Ensisijainen</value></data>
+  <data name="HOST_GROUP_ENDPOINTS_DEFAULT_NAME" xml:space="preserve"><value>Endpoints</value></data>
+  <data name="HOST_GROUP_COMPUERS_DEFAULT_NAME" xml:space="preserve"><value>Computere</value></data>
+  <data name="HOST_LAYOUT_GROUPED_DEFAULT_NAME" xml:space="preserve"><value>Standardopstilling</value></data>
+  <data name="ASSISTANCE_REQUEST_TYPE_DEFAULT_NAME" xml:space="preserve"><value>Jeg har brug for hjælp.</value></data>
+  <data name="REGISTER_DEFAULT_NAME" xml:space="preserve"><value>Primær</value></data>
+  <data name="CLIENT_OPTIONS_DEFAULT_NAME" xml:space="preserve"><value>Yleinen</value></data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_NAME" xml:space="preserve"><value>Optælling</value></data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til lageroptælling, så brugeren kan foretage optællinger</value></data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_GLOBAL_NAME" xml:space="preserve"><value>Global lageroptælling</value></data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_GLOBAL_DESCRIPTION" xml:space="preserve"><value>Giver adgang til lageroptælling globalt</value></data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_BRANCH_NAME" xml:space="preserve"><value>Lageroptælling filial</value></data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_BRANCH_DESCRIPTION" xml:space="preserve"><value>Giver adgang til lageroptælling i nuværende filial</value></data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_NAME" xml:space="preserve"><value>Indgående</value></data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at modtage indgående lager</value></data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_NAME" xml:space="preserve"><value>Siirto</value></data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at administrere lager, så brugeren kan opdatere og styre lagervarer</value></data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_NAME" xml:space="preserve"><value>Justering</value></data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at foretage lagerjusteringer</value></data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_BRANCH_NAME" xml:space="preserve"><value>Justering filial</value></data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_BRANCH_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at foretage lagerjusteringer i nuværende filial</value></data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_NAME" xml:space="preserve"><value>Global justering</value></data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at foretage lagerjusteringer globalt</value></data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_VIEW_EXPECTED_NAME" xml:space="preserve"><value>Vis forventet antal</value></data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_VIEW_EXPECTED_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se det forventede lagerantal under optælling</value></data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_NAME" xml:space="preserve"><value>Lagerniveau</value></data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se lagerniveauer ved nuværende kasse</value></data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_BRANCH_NAME" xml:space="preserve"><value>Lagerniveau filial</value></data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_BRANCH_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se lagerniveauer i nuværende filial</value></data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_GLOBAL_NAME" xml:space="preserve"><value>Globalt lagerniveau</value></data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_GLOBAL_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se lagerniveauer på tværs af alle filialer</value></data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_PRICE_NAME" xml:space="preserve"><value>Salg til detailpris</value></data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_PRICE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at foretage lagerjusteringer som salg til detailpris</value></data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_COST_NAME" xml:space="preserve"><value>Salg til kostpris</value></data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_COST_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at foretage lagerjusteringer som salg til kostpris</value></data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_WRITE_OFF_NAME" xml:space="preserve"><value>Afskrivning</value></data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_WRITE_OFF_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at afskrive lager</value></data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_BRANCH_NAME" xml:space="preserve"><value>Overførsel filial</value></data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_BRANCH_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at foretage lageroverførsler i nuværende filial</value></data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_GLOBAL_NAME" xml:space="preserve"><value>Global overførsel</value></data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_GLOBAL_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at foretage lageroverførsler globalt</value></data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_BRANCH_NAME" xml:space="preserve"><value>Indgående filial</value></data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_BRANCH_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at modtage indgående lager i nuværende filial</value></data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_GLOBAL_NAME" xml:space="preserve"><value>Globalt indgående</value></data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_GLOBAL_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at modtage indgående lager globalt</value></data>
+  <data name="BILL_PROFILE_ENDPOINTS_DEFAULT_NAME" xml:space="preserve"><value>Endpoint-priser</value></data>
+  <data name="BILL_PROFILE_COMPUTERS_DEFAULT_NAME" xml:space="preserve"><value>Computerpriser</value></data>
+  <data name="APP_CATEGORY_GAMES_DEFAULT_NAME" xml:space="preserve"><value>Spil</value></data>
+  <data name="APP_CATEGORY_LAUNCHERS_DEFAULT_NAME" xml:space="preserve"><value>Launchers</value></data>
+  <data name="APP_CATEGORY_APPLICATIONS_DEFAULT_NAME" xml:space="preserve"><value>Applikationer</value></data>
+  <data name="APP_GROUP_DEFAULT_NAME" xml:space="preserve"><value>Standard</value></data>
+  <data name="PRODUCT_GROUP_SWEETS_DEFAULT_NAME" xml:space="preserve"><value>Slik</value></data>
+  <data name="PRODUCT_GROUP_DRINKS_DEFAULT_NAME" xml:space="preserve"><value>Drikkevarer</value></data>
+  <data name="PRODUCT_GROUP_FOOD_DEFAULT_NAME" xml:space="preserve"><value>Mad</value></data>
+  <data name="PRODUCT_GROUP_TIME_OFFERS_DEFAULT_NAME" xml:space="preserve"><value>Tidspakker</value></data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_ENABLED_NAME" xml:space="preserve"><value>Aktivér brugerlogout-karensperiode</value></data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_ENABLED_DESCRIPTION" xml:space="preserve"><value>Angiver om brugerlogout-karensperioden er aktiveret</value></data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_NAME" xml:space="preserve"><value>Karenstid</value></data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve"><value>Angiver brugerlogout-karensperiodestid</value></data>
+  <data name="LINE_TYPE_PRODUCT" xml:space="preserve"><value>Produkt</value></data>
+  <data name="LINE_TYPE_TIME_PRODUCT" xml:space="preserve"><value>Tidsprodukt</value></data>
+  <data name="LINE_TYPE_FIXED_TIME" xml:space="preserve"><value>Fast tid</value></data>
+  <data name="LINE_TYPE_SESSION_TIME" xml:space="preserve"><value>Sessionstid</value></data>
+  <data name="LINE_TYPE_DEPOSIT" xml:space="preserve"><value>Depositum</value></data>
+  <data name="LINE_TYPE_RESERVATION_FEE" xml:space="preserve"><value>Reservationsgebyr</value></data>
+  <data name="LINE_TYPE_PRODUCT_DESCRIPTION" xml:space="preserve"><value>Produktlinjepost</value></data>
+  <data name="LINE_TYPE_TIME_PRODUCT_DESCRIPTION" xml:space="preserve"><value>Tidsbaseret produktlinjepost</value></data>
+  <data name="LINE_TYPE_FIXED_TIME_DESCRIPTION" xml:space="preserve"><value>Fast tidslinjepost</value></data>
+  <data name="LINE_TYPE_SESSION_TIME_DESCRIPTION" xml:space="preserve"><value>Sessionstidslinjepost</value></data>
+  <data name="LINE_TYPE_DEPOSIT_DESCRIPTION" xml:space="preserve"><value>Depositumlinjepost</value></data>
+  <data name="LINE_TYPE_RESERVATION_FEE_DESCRIPTION" xml:space="preserve"><value>Reservationsgebyrlinjepost</value></data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PREPAYMENT_DESCRIPTION" xml:space="preserve"><value>Täysi ennakkomaksu tavaroista tai palveluista</value></data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_PREPAYMENT_DESCRIPTION" xml:space="preserve"><value>Osittainen ennakkomaksu tavaroista tai palveluista</value></data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_ADVANCE_DESCRIPTION" xml:space="preserve"><value>Ennakkomaksu tavaroista tai palveluista</value></data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PAYMENT_DESCRIPTION" xml:space="preserve"><value>Täysi maksu toimituksen yhteydessä</value></data>
+  <data name="TAX_SYSTEM_COUNTRY_UNSPECIFIED_DESCRIPTION" xml:space="preserve"><value>Intet specifikt landsskattesystem</value></data>
+  <data name="TAX_SYSTEM_COUNTRY_RUSSIA_DESCRIPTION" xml:space="preserve"><value>Den Russiske Føderations skattesystem</value></data>
+  <data name="TAX_SYSTEMS_UNDEFINED_DESCRIPTION" xml:space="preserve"><value>Udefineret skattesystem</value></data>
+  <data name="TAX_SYSTEMS_RUSSIA_MAIN_DESCRIPTION" xml:space="preserve"><value>Hoved beskatningssystem</value></data>
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_TAXATION_DESCRIPTION" xml:space="preserve"><value>Forenklet beskatningssystem baseret på indkomst</value></data>
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_EXPSENSES_DESCRIPTION" xml:space="preserve"><value>Forenklet beskatningssystem baseret på indkomst minus udgifter</value></data>
+  <data name="TAX_SYSTEMS_RUSSIA_SINGLE_AGRICULTURAL_TAX_DESCRIPTION" xml:space="preserve"><value>Enkelt skat for landbrugsproducenter</value></data>
+  <data name="TAX_SYSTEMS_RUSSIA_PATENT_SYSTEM_DESCRIPTION" xml:space="preserve"><value>Patentbaseret beskatningssystem</value></data>
+  <data name="VAT_RATES_RUSSIA_NONE_DESCRIPTION" xml:space="preserve"><value>Ei ALV:tä</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT0_DESCRIPTION" xml:space="preserve"><value>0 %:n ALV-kanta</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT10_DESCRIPTION" xml:space="preserve"><value>10 %:n ALV-kanta</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT20_DESCRIPTION" xml:space="preserve"><value>20 %:n ALV-kanta</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT5_DESCRIPTION" xml:space="preserve"><value>5 %:n ALV-kanta</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT7_DESCRIPTION" xml:space="preserve"><value>7 %:n ALV-kanta</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT105_DESCRIPTION" xml:space="preserve"><value>5/105 %:n laskettu ALV-kanta</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT107_DESCRIPTION" xml:space="preserve"><value>7/107 %:n laskettu ALV-kanta</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT110_DESCRIPTION" xml:space="preserve"><value>10/110 %:n laskettu ALV-kanta</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT120_DESCRIPTION" xml:space="preserve"><value>20/120 %:n laskettu ALV-kanta</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT22_DESCRIPTION" xml:space="preserve"><value>22 %:n ALV-kanta</value></data>
+  <data name="VAT_RATES_RUSSIA_VAT122_DESCRIPTION" xml:space="preserve"><value>22/122 %:n laskettu ALV-kanta</value></data>
+  <data name="DISK_SPACE_ALLOCATIONS_ZERO_DESCRIPTION" xml:space="preserve"><value>Nul diskpladsallokering</value></data>
+  <data name="DISK_SPACE_ALLOCATIONS_FIVE_DESCRIPTION" xml:space="preserve"><value>5% diskpladsallokering</value></data>
+  <data name="DISK_SPACE_ALLOCATIONS_TEN_DESCRIPTION" xml:space="preserve"><value>10% diskpladsallokering</value></data>
+  <data name="DISK_SPACE_ALLOCATIONS_FIFTEEN_DESCRIPTION" xml:space="preserve"><value>15% diskpladsallokering</value></data>
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY_DESCRIPTION" xml:space="preserve"><value>20% diskpladsallokering</value></data>
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY_FIVE_DESCRIPTION" xml:space="preserve"><value>25% diskpladsallokering</value></data>
+  <data name="DISK_SPACE_ALLOCATIONS_THIRTY_DESCRIPTION" xml:space="preserve"><value>30% diskpladsallokering</value></data>
+  <data name="HTTPS_CERTIFICATE_TYPE_SELF_SIGNED_DESCRIPTION" xml:space="preserve"><value>Selvsigneret SSL/TLS-certifikat</value></data>
+  <data name="HTTPS_CERTIFICATE_TYPE_USER_DEFINED_DESCRIPTION" xml:space="preserve"><value>Brugertilvejebragt SSL/TLS-certifikat</value></data>
+  <data name="KEY_GENERATION_CHARACTERS_NUMERIC_DESCRIPTION" xml:space="preserve"><value>Genererede nøgler indeholder kun tal</value></data>
+  <data name="KEY_GENERATION_CHARACTERS_UPPER_CASE_CHARACTERS_DESCRIPTION" xml:space="preserve"><value>Genererede nøgler indeholder kun store bogstaver</value></data>
+  <data name="KEY_GENERATION_CHARACTERS_ALPHANUMERIC_DESCRIPTION" xml:space="preserve"><value>Genererede nøgler indeholder tal og store bogstaver</value></data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_NONE_DESCRIPTION" xml:space="preserve"><value>Ingen bekræftelse påkrævet</value></data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL_DESCRIPTION" xml:space="preserve"><value>Bekræftelse via e-mail</value></data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE_DESCRIPTION" xml:space="preserve"><value>Bekræftelse via mobiltelefon</value></data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MESSENGER_DESCRIPTION" xml:space="preserve"><value>Bekræftelse via messenger</value></data>
+  <data name="SMTP_SECURITY_NONE_DESCRIPTION" xml:space="preserve"><value>Ingen kryptering</value></data>
+  <data name="SMTP_SECURITY_SSL_DESCRIPTION" xml:space="preserve"><value>SSL-kryptering</value></data>
+  <data name="SMTP_SECURITY_STARTTLS_DESCRIPTION" xml:space="preserve"><value>STARTTLS-kryptering</value></data>
+  <data name="USER_RECOVERY_METHOD_NONE_DESCRIPTION" xml:space="preserve"><value>Ingen gendannelsesmetode tilgængelig</value></data>
+  <data name="USER_RECOVERY_METHOD_MOBILE_DESCRIPTION" xml:space="preserve"><value>Gendannelse via mobiltelefon</value></data>
+  <data name="USER_RECOVERY_METHOD_EMAIL_DESCRIPTION" xml:space="preserve"><value>Gendannelse via e-mail</value></data>
+  <data name="HTTP_PROTOCOL_HTTP" xml:space="preserve"><value>HTTP</value></data>
+  <data name="HTTP_PROTOCOL_HTTP_DESCRIPTION" xml:space="preserve"><value>HTTP-protokol</value></data>
+  <data name="HTTP_PROTOCOL_HTTPS" xml:space="preserve"><value>HTTPS</value></data>
+  <data name="HTTP_PROTOCOL_HTTPS_DESCRIPTION" xml:space="preserve"><value>HTTPS-protokol</value></data>
+  <data name="HTTP_PROTOCOL_HTTP_HTTPS" xml:space="preserve"><value>HTTP og HTTPS</value></data>
+  <data name="HTTP_PROTOCOL_HTTP_HTTPS_DESCRIPTION" xml:space="preserve"><value>Både HTTP- og HTTPS-protokol</value></data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_ERROR" xml:space="preserve">
+    <value>Virhe</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Fejl under godkendelse</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_NETWORK_ERROR" xml:space="preserve">
+    <value>Netværksfejl</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>Netværksfejl under godkendelse</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_SUCCESS" xml:space="preserve">
+    <value>Succes</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>Godkendelse lykkedes</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_UNAUTHORIZED" xml:space="preserve">
+    <value>Ikke autoriseret</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>Godkendelse ikke autoriseret</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_FIXED" xml:space="preserve">
+    <value>Fast</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_FIXED_DESCRIPTION" xml:space="preserve">
+    <value>Fast beløb som reservationsgebyr</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_NONE" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Intet reservationsgebyr</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_PERCENTAGE" xml:space="preserve">
+    <value>Procent</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_PERCENTAGE_DESCRIPTION" xml:space="preserve">
+    <value>Procentbaseret reservationsgebyr</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DESKTOP" xml:space="preserve">
+    <value>Työpöytä</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DESKTOP_DESCRIPTION" xml:space="preserve">
+    <value>Skrivebordsmappen</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DOWNLOADS" xml:space="preserve">
+    <value>Lataukset</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DOWNLOADS_DESCRIPTION" xml:space="preserve">
+    <value>Downloadsmappen</value>
+  </data>
+  <data name="SPECIAL_FOLDER_FAVORITES" xml:space="preserve">
+    <value>Favoritter</value>
+  </data>
+  <data name="SPECIAL_FOLDER_FAVORITES_DESCRIPTION" xml:space="preserve">
+    <value>Favoritmappen</value>
+  </data>
+  <data name="SPECIAL_FOLDER_MUSIC" xml:space="preserve">
+    <value>Musiikki</value>
+  </data>
+  <data name="SPECIAL_FOLDER_MUSIC_DESCRIPTION" xml:space="preserve">
+    <value>Musikmappen</value>
+  </data>
+  <data name="SPECIAL_FOLDER_NONE" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="SPECIAL_FOLDER_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Ingen speciel mappe</value>
+  </data>
+  <data name="SPECIAL_FOLDER_PERSONAL" xml:space="preserve">
+    <value>Henkilökohtainen</value>
+  </data>
+  <data name="SPECIAL_FOLDER_PERSONAL_DESCRIPTION" xml:space="preserve">
+    <value>Mappen med personlige dokumenter</value>
+  </data>
+  <data name="SPECIAL_FOLDER_PICTURES" xml:space="preserve">
+    <value>Kuvat</value>
+  </data>
+  <data name="SPECIAL_FOLDER_PICTURES_DESCRIPTION" xml:space="preserve">
+    <value>Billedmappen</value>
+  </data>
+  <data name="SPECIAL_FOLDER_SAVED_GAMES" xml:space="preserve">
+    <value>Gemte spil</value>
+  </data>
+  <data name="SPECIAL_FOLDER_SAVED_GAMES_DESCRIPTION" xml:space="preserve">
+    <value>Mappen med gemte spil</value>
+  </data>
+  <data name="SPECIAL_FOLDER_VIDEOS" xml:space="preserve">
+    <value>Videot</value>
+  </data>
+  <data name="SPECIAL_FOLDER_VIDEOS_DESCRIPTION" xml:space="preserve">
+    <value>Videomappen</value>
+  </data>
+  <data name="USER_ROLE_GUEST" xml:space="preserve">
+    <value>Gæst</value>
+  </data>
+  <data name="USER_ROLE_GUEST_DESCRIPTION" xml:space="preserve">
+    <value>Gæstebrugerrolle</value>
+  </data>
+  <data name="USER_ROLE_NONE" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="USER_ROLE_NONE_DESCRIPTION" xml:space="preserve">
+    <value>Ingen rolle tildelt</value>
+  </data>
+  <data name="USER_ROLE_OPERATOR" xml:space="preserve">
+    <value>Operatør</value>
+  </data>
+  <data name="USER_ROLE_OPERATOR_DESCRIPTION" xml:space="preserve">
+    <value>Operatørrolle</value>
+  </data>
+  <data name="USER_ROLE_USER" xml:space="preserve">
+    <value>Bruger</value>
+  </data>
+  <data name="USER_ROLE_USER_DESCRIPTION" xml:space="preserve">
+    <value>Standard brugerrolle</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_ATTRIBUTES" xml:space="preserve">
+    <value>Attributter</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_ATTRIBUTES_DESCRIPTION" xml:space="preserve">
+    <value>Søg efter attributter</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_EMAIL" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_EMAIL_DESCRIPTION" xml:space="preserve">
+    <value>Søg efter e-mailadresse</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME" xml:space="preserve">
+    <value>Fornavn</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Søg efter fornavn</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_IDENTIFICATION_NUMBER" xml:space="preserve">
+    <value>Identifikationsnummer</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_IDENTIFICATION_NUMBER_DESCRIPTION" xml:space="preserve">
+    <value>Søg efter identifikationsnummer</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME" xml:space="preserve">
+    <value>Efternavn</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Søg efter efternavn</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_MOBILE_PHONE" xml:space="preserve">
+    <value>Mobiltelefon</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_MOBILE_PHONE_DESCRIPTION" xml:space="preserve">
+    <value>Søg efter mobiltelefonnummer</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_PHONE" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_PHONE_DESCRIPTION" xml:space="preserve">
+    <value>Søg efter telefonnummer</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USERNAME" xml:space="preserve">
+    <value>Brugernavn</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USERNAME_DESCRIPTION" xml:space="preserve">
+    <value>Søg efter brugernavn</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USER_GROUP" xml:space="preserve">
+    <value>Brugergruppe</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USER_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>Søg efter brugergruppe</value>
+  </data>
+</root>
