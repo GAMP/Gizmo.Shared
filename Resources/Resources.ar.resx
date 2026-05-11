@@ -1,0 +1,2152 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema"> 
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_ADVANCE" xml:space="preserve"> 
+    <value>دفعة مقدمة</value> 
+  </data> 
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PAYMENT" xml:space="preserve"> 
+    <value>دفع كامل</value> 
+  </data> 
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PREPAYMENT" xml:space="preserve"> 
+    <value>دفع مسبق كامل</value> 
+  </data> 
+  <data name="ADVANCE_PAYMENTS_RUSSIA_PREPAYMENT" xml:space="preserve"> 
+    <value>دفع مسبق</value> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_CLOSE_PROGRAMS" xml:space="preserve"> 
+    <value>إغلاق البرامج</value> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_LOG_OFF" xml:space="preserve"> 
+    <value>تسجيل الخروج</value> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_NO_ACTION" xml:space="preserve"> 
+    <value>لا إجراء</value> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_REBOOT" xml:space="preserve"> 
+    <value>إعادة التشغيل</value> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_STAND_BY" xml:space="preserve"> 
+    <value>وضع الاستعداد</value> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_TURN_OFF" xml:space="preserve"> 
+    <value>إيقاف التشغيل</value> 
+  </data> 
+  <data name="CLIENT_POWER_SAVING_DISABLED" xml:space="preserve"> 
+    <value>معطّل</value> 
+  </data> 
+  <data name="CLIENT_POWER_SAVING_SHUT_DOWN" xml:space="preserve"> 
+    <value>إيقاف التشغيل</value> 
+  </data> 
+  <data name="CLIENT_POWER_SAVING_SLEEP" xml:space="preserve"> 
+    <value>وضع السكون</value> 
+  </data> 
+  <data name="DISABLE_PRINT_RECEIPT_BY_DEFAULT" xml:space="preserve"> 
+    <value>تعطيل طباعة الإيصال افتراضياً</value> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_FIFTEEN" xml:space="preserve"> 
+    <value>15%</value> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_FIVE" xml:space="preserve"> 
+    <value>5%</value> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_TEN" xml:space="preserve"> 
+    <value>10%</value> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_THIRTY" xml:space="preserve"> 
+    <value>30%</value> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY" xml:space="preserve"> 
+    <value>20%</value> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY_FIVE" xml:space="preserve"> 
+    <value>25%</value> 
+  </data> 
+  <data name="DISK_SPACE_ALLOCATIONS_ZERO" xml:space="preserve"> 
+    <value>0%</value> 
+  </data> 
+  <data name="GIZMO_POLICY_APPLICATIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى ميزة التطبيقات مما يتيح للمستخدم إدارة التطبيقات والتفاعل معها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_APPLICATIONS_NAME" xml:space="preserve"> 
+    <value>وصول</value> 
+  </data> 
+  <data name="GIZMO_POLICY_DEPLOYMENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى ميزة نسخ الملفات والنشر مما يتيح للمستخدم إدارة عمليات النشر</value> 
+  </data> 
+  <data name="GIZMO_POLICY_DEPLOYMENT_NAME" xml:space="preserve"> 
+    <value>وصول</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_APPLICATIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>سياسات إدارة الوصول إلى التطبيقات وإعداداتها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_APPLICATIONS_NAME" xml:space="preserve"> 
+    <value>التطبيقات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_LOG_NAME" xml:space="preserve"> 
+    <value>السجل</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_MANAGEMENT_DESCRIPTION" xml:space="preserve"> 
+    <value>سياسات إدارة النظام والعمليات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_MANAGEMENT_NAME" xml:space="preserve"> 
+    <value>الإدارة</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_MONITORING_DESCRIPTION" xml:space="preserve"> 
+    <value>سياسات مراقبة النظام والعمليات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_MONITORING_NAME" xml:space="preserve"> 
+    <value>المراقبة</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_REGISTER_DESCRIPTION" xml:space="preserve"> 
+    <value>سياسات إدارة عمليات الكاشير وإعداداته</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_REGISTER_NAME" xml:space="preserve"> 
+    <value>الكاشير</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_REPORTS_DESCRIPTION" xml:space="preserve"> 
+    <value>سياسات إنشاء التقارير والوصول إليها وإدارتها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_REPORTS_NAME" xml:space="preserve"> 
+    <value>التقارير</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_RESERVATIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>السياسات المتعلقة بالحجوزات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_RESERVATONS_NAME" xml:space="preserve">
+    <value>الحجوزات</value>
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SALES_DESCRIPTION" xml:space="preserve"> 
+    <value>السياسات المتعلقة بإدارة المبيعات ومراقبتها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SALES_NAME" xml:space="preserve"> 
+    <value>المبيعات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SHIFT_DESCRIPTION" xml:space="preserve"> 
+    <value>السياسات المتعلقة بالورديات وعمليات المبيعات خلالها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SHIFT_NAME" xml:space="preserve"> 
+    <value>الوردية</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_STOCK_DESCRIPTION" xml:space="preserve"> 
+    <value>سياسات إدارة المخزون والوصول إليه</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_STOCK_NAME" xml:space="preserve"> 
+    <value>المخزون</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_USER_DESCRIPTION" xml:space="preserve"> 
+    <value>سياسات إدارة المستخدمين والوصول إليهم</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_USER_NAME" xml:space="preserve"> 
+    <value>المستخدم</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_WAITING_LINES_DESCRIPTION" xml:space="preserve"> 
+    <value>سياسات إدارة الوصول إلى قوائم الانتظار</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_WAITING_LINES_NAME" xml:space="preserve"> 
+    <value>قوائم الانتظار</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_WEB_API_DESCRIPTION" xml:space="preserve"> 
+    <value>سياسات الوصول إلى وظائف Web API وإدارتها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_WEB_API_NAME" xml:space="preserve">
+    <value>Web API</value>
+  </data>
+  <data name="GIZMO_POLICY_LOG_CLEAR_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى ميزة إدارة السجلات مما يتيح للمستخدم مسح سجلات النظام</value> 
+  </data> 
+  <data name="GIZMO_POLICY_LOG_CLEAR_NAME" xml:space="preserve"> 
+    <value>مسح</value> 
+  </data> 
+  <data name="GIZMO_POLICY_LOG_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى ميزة السجل مما يتيح للمستخدم عرض سجلات النظام</value> 
+  </data> 
+  <data name="GIZMO_POLICY_LOG_NAME" xml:space="preserve"> 
+    <value>وصول</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_CLIENT_MODULE_RESTART_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى ميزة إعادة التشغيل مما يتيح للمستخدم إعادة تشغيل وحدة العميل</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_CLIENT_MODULE_RESTART_NAME" xml:space="preserve"> 
+    <value>إعادة تشغيل وحدة العميل</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى ميزة الإدارة مما يتيح للمستخدم تنفيذ المهام الإدارية</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_FILES_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى ميزة ملفات المحطة مما يتيح للمستخدم إدارة ملفات المحطة والتفاعل معها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_FILES_NAME" xml:space="preserve"> 
+    <value>إدارة الملفات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_LOCK_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى إدارة حالة قفل إدخال المحطة مما يتيح للمستخدم التحكم في صلاحيات الإدخال</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_MAINTENANCE_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى إدارة حالة صيانة المحطة مما يتيح للمستخدم التحكم في حالة الصيانة وتحديثها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_MAINTENANCE_NAME" xml:space="preserve"> 
+    <value>إدارة الصيانة</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_NAME" xml:space="preserve"> 
+    <value>وصول</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_PROCESSES_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى ميزة العمليات الجارية في المحطة مما يتيح للمستخدم عرض العمليات الجارية وإدارتها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_PROCESSES_NAME" xml:space="preserve"> 
+    <value>إدارة العمليات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_SECURITY_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى إدارة حالة أمان المحطة مما يتيح للمستخدم التحكم في إعدادات الأمان وتحديثها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_SECURITY_NAME" xml:space="preserve"> 
+    <value>الأمان</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_TASKS_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى ميزة المهام مما يتيح للمستخدم عرض المهام وإدارتها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_TASKS_NAME" xml:space="preserve"> 
+    <value>الوصول إلى المهام</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى تشغيل الطرفيات يدوياً مما يتيح للمستخدم التحكم في حالة طاقة الطرفيات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MONITORING_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى ميزة مراقبة الشاشة مما يتيح للمستخدم عرض شاشات العميل ومراقبتها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_MONITORING_NAME" xml:space="preserve"> 
+    <value>وصول</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_PAY_IN_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى تنفيذ الإيداعات في الكاشير مما يتيح للمستخدم إضافة الأموال إلى الكاشير</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_PAY_OUT_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى تنفيذ السحوبات من الكاشير مما يتيح للمستخدم سحب الأموال من الكاشير</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى عرض معاملات الكاشير السابقة مما يتيح للمستخدم مراجعة أنشطة الكاشير السابقة</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve"> 
+    <value>عرض معاملات اليوم السابق</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى عرض معاملات الكاشير مما يتيح للمستخدم مراجعة جميع أنشطة الكاشير</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_NAME" xml:space="preserve"> 
+    <value>عرض المعاملات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REPORTS_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى ميزة التقارير مما يتيح للمستخدم عرض التقارير وإنشاءها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REPORTS_NAME" xml:space="preserve"> 
+    <value>وصول</value> 
+  </data> 
+  <data name="GIZMO_POLICY_RESERVATIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>منح صلاحية الوصول إلى الحجوزات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_RESERVATIONS_NAME" xml:space="preserve"> 
+    <value>وصول</value> 
+  </data> 
+  <data name="GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_DESCRIPTION" xml:space="preserve"> 
+    <value>منح صلاحية إنشاء حجوزات بدون مدفوعات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_RESERVATIONS_WITHOUT_PAYMENT_NAME" xml:space="preserve"> 
+    <value>إنشاء حجوزات بدون مدفوعات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_DESCRIPTION" xml:space="preserve"> 
+    <value>السماح بائتمان الوقت</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_ALLOW_TIME_CREDIT_NAME" xml:space="preserve"> 
+    <value>السماح بائتمان الوقت</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_CUSTOM_PRICE_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لإجراء المبيعات بأسعار مخصصة مما يتيح للمستخدم تجاوز الأسعار الافتراضية</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_CUSTOM_PRICE_NAME" xml:space="preserve"> 
+    <value>سعر مخصص</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DELETE_TIME_PURCHASES_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لحذف مشتريات الوقت مما يتيح للمستخدم إزالة معاملات الوقت الثابت أو عروض الوقت</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DELETE_TIME_PURCHASES_NAME" xml:space="preserve"> 
+    <value>حذف مشتريات الوقت</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DEPOSIT_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لإجراء الإيداعات مما يتيح للمستخدم إضافة الأموال إلى حسابات العملاء</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DEPOSIT_NAME" xml:space="preserve"> 
+    <value>إيداع</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لإجراء المبيعات مما يتيح للمستخدم معالجة مشتريات العملاء</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DISABLE_RECEIPT_PRINT_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لتعطيل طباعة الإيصالات بشكل انتقائي مما يتيح للمستخدم إدارة تفضيلات إنشاء الإيصالات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_DISABLE_RECEIPT_PRINT_NAME" xml:space="preserve"> 
+    <value>تعطيل طباعة الإيصالات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_MODIFY_USER_BILLING_OPTIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لاختيار خيارات فوترة المستخدم يدوياً مما يتيح للمستخدم تخصيص تفضيلات الفوترة للعملاء</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_MODIFY_USER_BILLING_OPTIONS_NAME" xml:space="preserve"> 
+    <value>تعديل خيارات فوترة المستخدم</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_NAME" xml:space="preserve"> 
+    <value>وصول</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_OPEN_CASH_DRAWER_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لفتح درج النقد يدوياً مما يتيح للمستخدم تجاوز التحكم التلقائي</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_OPEN_CASH_DRAWER_NAME" xml:space="preserve"> 
+    <value>فتح درج النقد</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_PAY_LATER_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لتمكين خيارات الدفع الآجل مما يتيح للمستخدم تأجيل الدفع للمعاملات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_PAY_LATER_NAME" xml:space="preserve"> 
+    <value>الدفع الآجل</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_DEPOSITS_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لعرض الإيداعات مما يتيح للمستخدم مراجعة معاملات إيداع حسابات العملاء</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_DEPOSITS_NAME" xml:space="preserve"> 
+    <value>عرض الإيداعات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لعرض الفواتير مما يتيح للمستخدم مراجعة تفاصيل الفوترة والدفع</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_NAME" xml:space="preserve"> 
+    <value>عرض الفواتير</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لعرض الفواتير المدفوعة مما يتيح للمستخدم مراجعة سجلات الدفع المكتملة</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_NAME" xml:space="preserve"> 
+    <value>عرض الفواتير المدفوعة</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لعرض إيداعات اليوم السابق مما يتيح للمستخدم مراجعة معاملات الإيداع السابقة</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_NAME" xml:space="preserve"> 
+    <value>عرض إيداعات اليوم السابق</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لعرض فواتير اليوم السابق مما يتيح للمستخدم مراجعة الفواتير الصادرة في اليوم السابق</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_NAME" xml:space="preserve"> 
+    <value>عرض فواتير اليوم السابق</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لإلغاء فواتير الورديات المغلقة مما يتيح للمستخدم إلغاء المعاملات بعد انتهاء الوردية</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_NAME" xml:space="preserve"> 
+    <value>إلغاء فواتير الورديات المغلقة</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_DEPOSIT_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لإلغاء الإيداعات مما يتيح للمستخدم إلغاء معاملات الإيداع أو عكسها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_DEPOSIT_NAME" xml:space="preserve"> 
+    <value>إلغاء الإيداع</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_INVOICE_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لإلغاء الفواتير مما يتيح للمستخدم إلغاء الفواتير الصادرة أو عكسها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_INVOICE_NAME" xml:space="preserve"> 
+    <value>إلغاء</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_NON_CURRENT_BRANCH_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لإلغاء الفواتير الصادرة من فرع مختلف</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_NON_CURRENT_BRANCH_NAME" xml:space="preserve"> 
+    <value>إلغاء فواتير الفروع الأخرى</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_NON_OWNED_INVOICE_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لإلغاء الفواتير التي أنشأها مشغّلون آخرون مما يتيح للمستخدم إلغاء المعاملات التي أجراها مستخدمون آخرون</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_NON_OWNED_INVOICE_NAME" xml:space="preserve"> 
+    <value>إلغاء الفواتير غير المملوكة</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_PAST_DAY_INVOICE_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لإلغاء الفواتير الصادرة في تواريخ سابقة مما يتيح للمستخدم إلغاء معاملات الأيام السابقة</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_PAST_DAY_INVOICE_NAME" xml:space="preserve"> 
+    <value>إلغاء فواتير الأيام السابقة</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لإلغاء الفواتير التي تحتوي على عروض وقت مستخدمة مما يتيح للمستخدم إلغاء معاملات عروض الوقت المستردة</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_VOID_USED_TIME_INVOICE_NAME" xml:space="preserve"> 
+    <value>إلغاء فواتير الوقت المستخدم</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_WITHDRAW_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لإجراء السحوبات مما يتيح للمستخدم خصم الأموال من حسابات العملاء</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SALE_WITHDRAW_NAME" xml:space="preserve"> 
+    <value>سحب</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SETTINGS_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى ميزة الإعدادات مما يتيح للمستخدم عرض تكوينات النظام وتعديلها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SETTINGS_NAME" xml:space="preserve"> 
+    <value>وصول</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SET_CASHIER_NAME" xml:space="preserve"> 
+    <value>كاشير</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SET_MANAGER_NAME" xml:space="preserve"> 
+    <value>مدير</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SET_MARKETER_NAME" xml:space="preserve"> 
+    <value>مسوّق</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SET_OWNER_NAME" xml:space="preserve"> 
+    <value>مالك</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SET_TECHNICIAN_NAME" xml:space="preserve"> 
+    <value>فني</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لعرض المبالغ المتوقعة للوردية مما يتيح للمستخدم مراجعة الإجماليات المتوقعة للورديات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_SHIFT_COUNT_VIEW_EXPECTED_NAME" xml:space="preserve"> 
+    <value>عرض المتوقع</value> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى ميزة المخزون مما يتيح للمستخدم عرض عناصر المخزون وإدارتها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_NAME" xml:space="preserve"> 
+    <value>وصول</value> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTIONS" xml:space="preserve"> 
+    <value>يمنح الوصول لعرض معاملات المخزون السابقة مما يتيح للمستخدم مراجعة أنشطة المخزون من اليوم السابق</value> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve"> 
+    <value>عرض معاملات اليوم السابق</value> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لعرض معاملات المخزون مما يتيح للمستخدم مراجعة جميع أنشطة المخزون</value> 
+  </data> 
+  <data name="GIZMO_POLICY_STOCK_VIEW_TRANSACTIONS_NAME" xml:space="preserve"> 
+    <value>عرض المعاملات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_BAN_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لحظر المستخدمين مما يتيح للمستخدم تقييد الوصول إلى الحسابات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_BAN_NAME" xml:space="preserve"> 
+    <value>حظر المستخدم</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CHANGE_GROUP_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لنقل المستخدمين إلى مجموعات مستخدمين مختلفة مما يتيح للمستخدم تحديث تعيينات المجموعات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CHANGE_GROUP_NAME" xml:space="preserve"> 
+    <value>تغيير مجموعة المستخدمين</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CREATE_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لإنشاء المستخدمين يدوياً مما يتيح للمستخدم إضافة حسابات مستخدمين جديدة إلى النظام</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CREATE_NAME" xml:space="preserve"> 
+    <value>إنشاء</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_DELETE_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لحذف المستخدمين مما يتيح للمستخدم إزالة حسابات المستخدمين من النظام</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_DELETE_NAME" xml:space="preserve"> 
+    <value>حذف</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_EDIT_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لتعديل المعلومات الشخصية للمستخدمين مما يتيح للمستخدم تحديث تفاصيل الحسابات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_EDIT_NAME" xml:space="preserve"> 
+    <value>تعديل</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_HARD_DELETE_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لحذف المستخدمين نهائياً مما يتيح للمستخدم إزالة حسابات المستخدمين بشكل دائم من النظام</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_HARD_DELETE_NAME" xml:space="preserve"> 
+    <value>حذف نهائي</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لتسجيل دخول المستخدمين يدوياً مما يتيح للمستخدم بدء جلسات المستخدمين مباشرة</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_NAME" xml:space="preserve"> 
+    <value>تسجيل دخول المستخدمين</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_PASSWORD_RESET_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لإعادة تعيين كلمات مرور المستخدمين يدوياً مما يتيح للمستخدم تحديث بيانات اعتماد الحساب</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_PASSWORD_RESET_NAME" xml:space="preserve"> 
+    <value>إعادة تعيين كلمة المرور</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_RENAME_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لإعادة تسمية المستخدمين مما يتيح للمستخدم تحديث أسماء حسابات المستخدمين</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_RENAME_NAME" xml:space="preserve"> 
+    <value>إعادة التسمية</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_UNBAN_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لرفع الحظر عن المستخدمين يدوياً مما يتيح للمستخدم استعادة الوصول للحسابات المحظورة</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_UNBAN_NAME" xml:space="preserve"> 
+    <value>رفع الحظر عن المستخدم</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_VIEW_STATS_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لعرض إحصائيات المستخدمين مما يتيح للمستخدم مراجعة مقاييس النشاط والأداء</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_VIEW_STATS_NAME" xml:space="preserve"> 
+    <value>عرض الإحصائيات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_WAITING_LINES_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول إلى ميزة قوائم الانتظار مما يتيح للمستخدم إدارة الطوابير ومراقبتها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_WAITING_LINES_MANAGE_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لإدارة قوائم الانتظار مما يتيح للمستخدم تنظيم عمليات الطابور والتحكم فيها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_WAITING_LINES_MANAGE_NAME" xml:space="preserve"> 
+    <value>إدارة قوائم الانتظار</value> 
+  </data> 
+  <data name="GIZMO_POLICY_WAITING_LINES_NAME" xml:space="preserve"> 
+    <value>وصول</value> 
+  </data> 
+  <data name="HTTPS_CERTIFICATE_TYPE_SELF_SIGNED" xml:space="preserve"> 
+    <value>موقّع ذاتياً</value> 
+  </data> 
+  <data name="HTTPS_CERTIFICATE_TYPE_USER_DEFINED" xml:space="preserve"> 
+    <value>محدد من قِبَل المستخدم</value> 
+  </data> 
+  <data name="KEY_GENERATION_CHARACTERS_ALPHANUMERIC" xml:space="preserve"> 
+    <value>أحرف وأرقام</value> 
+  </data> 
+  <data name="KEY_GENERATION_CHARACTERS_NUMERIC" xml:space="preserve"> 
+    <value>أرقام</value> 
+  </data> 
+  <data name="KEY_GENERATION_CHARACTERS_UPPER_CASE_CHARACTERS" xml:space="preserve"> 
+    <value>أحرف كبيرة</value> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_APPLICATIONS_ENABLED_DESCRIPTION" xml:space="preserve"> 
+    <value>يحدد ما إذا كانت قيود العمر مفعّلة للتطبيقات</value> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_APPLICATIONS_ENABLED_NAME" xml:space="preserve"> 
+    <value>تفعيل قيود العمر للتطبيقات</value> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_LOGIN_ENABLED_DESCRIPTION" xml:space="preserve"> 
+    <value>يحدد ما إذا كانت قيود العمر مفعّلة لتسجيل الدخول</value> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_LOGIN_ENABLED_NAME" xml:space="preserve"> 
+    <value>تفعيل قيود العمر لتسجيل الدخول</value> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_PRODUCTS_ENABLED_DESCRIPTION" xml:space="preserve"> 
+    <value>يحدد ما إذا كانت قيود العمر مفعّلة للمنتجات</value> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_PRODUCTS_ENABLED_NAME" xml:space="preserve"> 
+    <value>تفعيل قيود العمر للمنتجات</value> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_DESCRIPTION" xml:space="preserve"> 
+    <value>يحدد ما إذا كان العمر إلزامياً لجميع قيود العمر</value> 
+  </data> 
+  <data name="SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_NAME" xml:space="preserve"> 
+    <value>تطبيق جميع القيود على المستخدمين ذوي العمر غير المعروف</value> 
+  </data> 
+  <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>يحدد رسالة إشعار الوقت المتبقي</value> 
+  </data> 
+  <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_NAME" xml:space="preserve"> 
+    <value>رسالة إشعار الوقت المتبقي</value> 
+  </data> 
+  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_DESCRIPTION" xml:space="preserve"> 
+    <value>يحدد استخدام الطرفية عند الدفع ببطاقة الائتمان</value> 
+  </data> 
+  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_NAME" xml:space="preserve"> 
+    <value>استخدام طرفية بطاقة الائتمان</value> 
+  </data> 
+  <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve"> 
+    <value>يحدد رسالة إشعار وقت الحجز</value> 
+  </data> 
+  <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_NAME" xml:space="preserve"> 
+    <value>رسالة إشعار وقت الحجز</value> 
+  </data> 
+  <data name="SERVER_OPTION_TAX_DEPOSITS_TAX_SYSTEM_DESCRIPTION" xml:space="preserve"> 
+    <value>يحدد نظام ضريبة الإيداعات</value> 
+  </data> 
+  <data name="SERVER_OPTION_TAX_DEPOSITS_TAX_SYSTEM_NAME" xml:space="preserve"> 
+    <value>نظام ضريبة الإيداعات</value> 
+  </data> 
+  <data name="SERVER_OPTION_TAX_GOODS_VAT_RATE_DESCRIPTION" xml:space="preserve"> 
+    <value>يحدد معدل ضريبة القيمة المضافة للسلع</value> 
+  </data> 
+  <data name="SERVER_OPTION_TAX_GOODS_VAT_RATE_NAME" xml:space="preserve"> 
+    <value>معدل ضريبة القيمة المضافة للسلع</value> 
+  </data> 
+  <data name="SERVER_OPTION_TAX_SERVICES_VAT_RATE_DESCRIPTION" xml:space="preserve"> 
+    <value>يحدد معدل ضريبة القيمة المضافة للخدمات</value> 
+  </data> 
+  <data name="SERVER_OPTION_TAX_SERVICES_VAT_RATE_NAME" xml:space="preserve"> 
+    <value>معدل ضريبة القيمة المضافة للخدمات</value> 
+  </data> 
+  <data name="TAX_SYSTEMS_RUSSIA_MAIN" xml:space="preserve"> 
+    <value>رئيسي</value> 
+  </data> 
+  <data name="TAX_SYSTEMS_RUSSIA_PATENT_SYSTEM" xml:space="preserve"> 
+    <value>نظام البراءات</value> 
+  </data> 
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_EXPSENSES" xml:space="preserve"> 
+    <value>النظام المبسّط ناقص المصروفات</value> 
+  </data> 
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_TAXATION" xml:space="preserve"> 
+    <value>النظام المبسّط ناقص الضرائب</value> 
+  </data> 
+  <data name="TAX_SYSTEMS_RUSSIA_SINGLE_AGRICULTURAL_TAX" xml:space="preserve">
+    <value>الضريبة الزراعية الموحّدة</value>
+  </data>
+  <data name="TAX_SYSTEM_COUNTRY_RUSSIA" xml:space="preserve"> 
+    <value>روسيا</value> 
+  </data> 
+  <data name="TAX_SYSTEM_COUNTRY_UNSPECIFIED" xml:space="preserve"> 
+    <value>غير محدد</value> 
+  </data> 
+  <data name="VAT_RATES_RUSSIA_NONE" xml:space="preserve"> 
+    <value>لا شيء</value> 
+  </data> 
+  <data name="VAT_RATES_RUSSIA_VAT0" xml:space="preserve"> 
+    <value>ضريبة 0%</value> 
+  </data> 
+  <data name="VAT_RATES_RUSSIA_VAT10" xml:space="preserve"> 
+    <value>ضريبة 10%</value> 
+  </data> 
+  <data name="VAT_RATES_RUSSIA_VAT20" xml:space="preserve"> 
+    <value>ضريبة 20%</value> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_ADD_DATE_NAME" xml:space="preserve"> 
+    <value>تاريخ الإضافة</value> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_POPULARITY_NAME" xml:space="preserve"> 
+    <value>الشعبية</value> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_RATING_NAME" xml:space="preserve"> 
+    <value>التقييم</value> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_RELEASE_DATE_NAME" xml:space="preserve"> 
+    <value>تاريخ الإصدار</value> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_TITLE_NAME" xml:space="preserve"> 
+    <value>العنوان</value> 
+  </data> 
+  <data name="APPLICATION_SORTING_OPTION_USE_NAME" xml:space="preserve"> 
+    <value>الاستخدام</value> 
+  </data> 
+  <data name="CLIENT_LOGOUT_ACTION_ADMIN_MODE" xml:space="preserve"> 
+    <value>وضع الإدارة</value> 
+  </data> 
+  <data name="GIZMO_POLICY_APPLICATIONS_CREATE_DESCRIPTION" xml:space="preserve"> 
+    <value>منح صلاحية إنشاء التطبيقات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_APPLICATIONS_CREATE_NAME" xml:space="preserve"> 
+    <value>إنشاء</value> 
+  </data> 
+  <data name="GIZMO_POLICY_APPLICATIONS_EDIT_DESCRIPTION" xml:space="preserve"> 
+    <value>منح صلاحية تعديل التطبيقات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_APPLICATIONS_EDIT_NAME" xml:space="preserve"> 
+    <value>تعديل</value> 
+  </data> 
+  <data name="GIZMO_POLICY_APPLICATIONS_DELETE_DESCRIPTION" xml:space="preserve"> 
+    <value>منح صلاحية حذف التطبيقات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_APPLICATIONS_DELETE_NAME" xml:space="preserve"> 
+    <value>حذف</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_DEPLOYMENT_DESCRIPTION" xml:space="preserve"> 
+    <value>سياسات إدارة نشر التطبيقات والخدمات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_DEPLOYMENT_NAME" xml:space="preserve"> 
+    <value>النشر</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_LOG_DESCRIPTION" xml:space="preserve"> 
+    <value>سياسات الوصول إلى السجلات وإدارتها</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_MARKETING_DESCRIPTION" xml:space="preserve"> 
+    <value>سياسات إدارة محتوى التسويق كالأخبار والخلاصات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_MARKETING_NAME" xml:space="preserve"> 
+    <value>التسويق</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SETTINGS_DESCRIPTION" xml:space="preserve"> 
+    <value>سياسات إدارة الإعدادات</value> 
+  </data> 
+  <data name="GIZMO_POLICY_GROUP_SETTINGS_NAME" xml:space="preserve"> 
+    <value>الإعدادات</value> 
+  </data> 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  <data name="SPECIAL_FOLDER_MUSIC" xml:space="preserve"> 
+    <value>الموسيقى</value> 
+  </data> 
+  <data name="SPECIAL_FOLDER_MUSIC_DESCRIPTION" xml:space="preserve"> 
+    <value>مجلد الموسيقى</value> 
+  </data> 
+  <data name="SPECIAL_FOLDER_PICTURES" xml:space="preserve"> 
+    <value>الصور</value> 
+  </data> 
+  <data name="SPECIAL_FOLDER_PICTURES_DESCRIPTION" xml:space="preserve"> 
+    <value>مجلد الصور</value> 
+  </data> 
+  <data name="SPECIAL_FOLDER_VIDEOS" xml:space="preserve"> 
+    <value>الفيديو</value> 
+  </data> 
+  <data name="SPECIAL_FOLDER_VIDEOS_DESCRIPTION" xml:space="preserve"> 
+    <value>مجلد الفيديو</value> 
+  </data> 
+  <data name="SPECIAL_FOLDER_SAVED_GAMES" xml:space="preserve"> 
+    <value>الألعاب المحفوظة</value> 
+  </data> 
+  <data name="SPECIAL_FOLDER_SAVED_GAMES_DESCRIPTION" xml:space="preserve"> 
+    <value>مجلد الألعاب المحفوظة</value> 
+  </data> 
+  <data name="SPECIAL_FOLDER_PERSONAL" xml:space="preserve"> 
+    <value>شخصي</value> 
+  </data> 
+  <data name="SPECIAL_FOLDER_PERSONAL_DESCRIPTION" xml:space="preserve"> 
+    <value>مجلد المستندات الشخصية</value> 
+  </data> 
+  <data name="USER_ROLE_NONE" xml:space="preserve"> 
+    <value>لا شيء</value> 
+  </data> 
+  <data name="USER_ROLE_NONE_DESCRIPTION" xml:space="preserve"> 
+    <value>لم يُعيَّن دور</value> 
+  </data> 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  <data name="VAT_RATES_RUSSIA_VAT22" xml:space="preserve"> 
+    <value>ضريبة 22%</value> 
+  </data> 
+  <data name="VAT_RATES_RUSSIA_VAT22_DESCRIPTION" xml:space="preserve">
+    <value>معدل ضريبة القيمة المضافة 22%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT122" xml:space="preserve">
+    <value>ضريبة 22/122%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT122_DESCRIPTION" xml:space="preserve">
+    <value>معدل ضريبة القيمة المضافة المحسوب 22/122%</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_ADVANCE_DESCRIPTION" xml:space="preserve">
+    <value>دفعة مقدمة مقابل بضائع أو خدمات</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>دفع كامل عند التسليم</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_FULL_PREPAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>دفع مسبق كامل قبل تسليم البضائع أو الخدمات</value>
+  </data>
+  <data name="ADVANCE_PAYMENTS_RUSSIA_PREPAYMENT_DESCRIPTION" xml:space="preserve">
+    <value>دفع مسبق جزئي قبل تسليم البضائع أو الخدمات</value>
+  </data>
+  <data name="APP_CATEGORY_APPLICATIONS_DEFAULT_NAME" xml:space="preserve">
+    <value>التطبيقات</value>
+  </data>
+  <data name="APP_CATEGORY_GAMES_DEFAULT_NAME" xml:space="preserve">
+    <value>الألعاب</value>
+  </data>
+  <data name="APP_CATEGORY_LAUNCHERS_DEFAULT_NAME" xml:space="preserve">
+    <value>المشغّلات</value>
+  </data>
+  <data name="APP_GROUP_DEFAULT_NAME" xml:space="preserve">
+    <value>افتراضي</value>
+  </data>
+  <data name="ASSISTANCE_REQUEST_TYPE_DEFAULT_NAME" xml:space="preserve">
+    <value>أحتاج إلى مساعدة، من فضلك.</value>
+  </data>
+  <data name="BILL_PROFILE_COMPUTERS_DEFAULT_NAME" xml:space="preserve">
+    <value>أسعار الحواسيب</value>
+  </data>
+  <data name="BILL_PROFILE_ENDPOINTS_DEFAULT_NAME" xml:space="preserve">
+    <value>أسعار الطرفيات</value>
+  </data>
+  <data name="BRANCH_DEFAULT_NAME" xml:space="preserve">
+    <value>الرئيسي</value>
+  </data>
+  <data name="CLIENT_OPTIONS_DEFAULT_NAME" xml:space="preserve">
+    <value>عام</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_FIFTEEN_DESCRIPTION" xml:space="preserve">
+    <value>تخصيص 15% من مساحة القرص</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_FIVE_DESCRIPTION" xml:space="preserve">
+    <value>تخصيص 5% من مساحة القرص</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TEN_DESCRIPTION" xml:space="preserve">
+    <value>تخصيص 10% من مساحة القرص</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_THIRTY_DESCRIPTION" xml:space="preserve">
+    <value>تخصيص 30% من مساحة القرص</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY_DESCRIPTION" xml:space="preserve">
+    <value>تخصيص 20% من مساحة القرص</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_TWENTY_FIVE_DESCRIPTION" xml:space="preserve">
+    <value>تخصيص 25% من مساحة القرص</value>
+  </data>
+  <data name="DISK_SPACE_ALLOCATIONS_ZERO_DESCRIPTION" xml:space="preserve">
+    <value>تخصيص صفر من مساحة القرص</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية إنشاء المعدات</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_CREATE_NAME" xml:space="preserve">
+    <value>إنشاء</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية حذف المعدات</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_DELETE_NAME" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية الوصول إلى المعدات</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية تعديل المعدات</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_EDIT_NAME" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="GIZMO_POLICY_ASSETS_NAME" xml:space="preserve">
+    <value>وصول</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية إنشاء مهام العميل</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_CREATE_NAME" xml:space="preserve">
+    <value>إنشاء</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية حذف مهام العميل</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_DELETE_NAME" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية الوصول إلى مهام العميل</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية تعديل مهام العميل</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_EDIT_NAME" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="GIZMO_POLICY_CLIENT_TASKS_NAME" xml:space="preserve">
+    <value>وصول</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية إنشاء أجهزة التحكم</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_CREATE_NAME" xml:space="preserve">
+    <value>إنشاء</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية حذف أجهزة التحكم</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_DELETE_NAME" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية الوصول إلى أجهزة التحكم</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية تعديل أجهزة التحكم</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_EDIT_NAME" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="GIZMO_POLICY_CONTROLLERS_NAME" xml:space="preserve">
+    <value>وصول</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_ASSETS_DESCRIPTION" xml:space="preserve">
+    <value>سياسات إدارة المعدات</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_ASSETS_NAME" xml:space="preserve">
+    <value>المعدات</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CLIENT_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>سياسات إدارة مهام العميل</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CLIENT_TASKS_NAME" xml:space="preserve">
+    <value>مهام العميل</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CONTROLLERS_DESCRIPTION" xml:space="preserve">
+    <value>سياسات إدارة أجهزة التحكم</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_CONTROLLERS_NAME" xml:space="preserve">
+    <value>أجهزة التحكم</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOSTS_DESCRIPTION" xml:space="preserve">
+    <value>سياسات إدارة المحطات</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOSTS_NAME" xml:space="preserve">
+    <value>المحطات</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>سياسات إدارة مجموعات المحطات</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_GROUPS_NAME" xml:space="preserve">
+    <value>مجموعات المحطات</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_LAYOUT_DESCRIPTION" xml:space="preserve">
+    <value>سياسات إدارة تخطيطات المحطات</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_HOST_LAYOUT_NAME" xml:space="preserve">
+    <value>تخطيطات المحطات</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCTS_DESCRIPTION" xml:space="preserve">
+    <value>سياسات إدارة المنتجات</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCTS_NAME" xml:space="preserve">
+    <value>المنتجات</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCT_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>سياسات إدارة مجموعات المنتجات</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_PRODUCT_GROUPS_NAME" xml:space="preserve">
+    <value>مجموعات المنتجات</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SECURITY_PROFILES_DESCRIPTION" xml:space="preserve">
+    <value>سياسات إدارة ملفات تعريف الأمان</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_SECURITY_PROFILES_NAME" xml:space="preserve">
+    <value>ملفات تعريف الأمان</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>سياسات إدارة المهام</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_TASKS_NAME" xml:space="preserve">
+    <value>المهام</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_USER_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>سياسات إدارة مجموعات المستخدمين</value>
+  </data>
+  <data name="GIZMO_POLICY_GROUP_USER_GROUP_NAME" xml:space="preserve">
+    <value>مجموعة المستخدمين</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية إنشاء المحطات</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_CREATE_NAME" xml:space="preserve">
+    <value>إنشاء</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية حذف المحطات</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_DELETE_NAME" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية الوصول إلى المحطات</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية تعديل المحطات</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_EDIT_NAME" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="GIZMO_POLICY_HOSTS_NAME" xml:space="preserve">
+    <value>وصول</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية إنشاء مجموعات المحطات</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_CREATE_NAME" xml:space="preserve">
+    <value>إنشاء</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية حذف مجموعات المحطات</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_DELETE_NAME" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية الوصول إلى مجموعات المحطات</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية تعديل مجموعات المحطات</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_EDIT_NAME" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_GROUPS_NAME" xml:space="preserve">
+    <value>وصول</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية إنشاء تخطيطات المحطات</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_CREATE_NAME" xml:space="preserve">
+    <value>إنشاء</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية حذف تخطيطات المحطات</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_DELETE_NAME" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية الوصول إلى تخطيطات المحطات</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية تعديل تخطيطات المحطات</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_EDIT_NAME" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="GIZMO_POLICY_HOST_LAYOUT_NAME" xml:space="preserve">
+    <value>وصول</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_LOCK_NAME" xml:space="preserve">
+    <value>قفل الإدخال</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول إلى التحكم عن بُعد بالطرفيات مما يتيح للمستخدم التفاعل مع شاشات العميل</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_NAME" xml:space="preserve">
+    <value>التحكم عن بُعد</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_VIEW_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول إلى عرض شاشات الطرفيات عن بُعد مما يتيح للمستخدم مراقبة نشاط العميل</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_REMOTE_CONTROL_VIEW_NAME" xml:space="preserve">
+    <value>عرض التحكم عن بُعد</value>
+  </data>
+  <data name="GIZMO_POLICY_MANAGEMENT_TURN_ON_ENDPOINTS_NAME" xml:space="preserve">
+    <value>تشغيل الطرفيات</value>
+  </data>
+  <data name="GIZMO_POLICY_MARKETING_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول إلى ميزة التسويق مما يتيح للمستخدم عرض الأخبار والخلاصات وإدارتها</value>
+  </data>
+  <data name="GIZMO_POLICY_MARKETING_NAME" xml:space="preserve">
+    <value>وصول</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية إنشاء المنتجات</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_CREATE_NAME" xml:space="preserve">
+    <value>إنشاء</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية حذف المنتجات</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_DELETE_NAME" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية الوصول إلى المنتجات</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية تعديل المنتجات</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_EDIT_NAME" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCTS_NAME" xml:space="preserve">
+    <value>وصول</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية إنشاء مجموعات المنتجات</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_CREATE_NAME" xml:space="preserve">
+    <value>إنشاء</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية حذف مجموعات المنتجات</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_DELETE_NAME" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية الوصول إلى مجموعات المنتجات</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية تعديل مجموعات المنتجات</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_EDIT_NAME" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="GIZMO_POLICY_PRODUCT_GROUPS_NAME" xml:space="preserve">
+    <value>وصول</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_PAY_IN_NAME" xml:space="preserve">
+    <value>إجراء إيداعات</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_PAY_OUT_NAME" xml:space="preserve">
+    <value>إجراء سحوبات</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية إنشاء الحجوزات</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_CREATE_NAME" xml:space="preserve">
+    <value>إنشاء</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية إنشاء حجوزات لحسابات الضيوف</value>
+  </data>
+  <data name="GIZMO_POLICY_RESERVATIONS_FOR_GUESTS_NAME" xml:space="preserve">
+    <value>إنشاء حجوزات للضيوف</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية إنشاء ملفات تعريف الأمان</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_CREATE_NAME" xml:space="preserve">
+    <value>إنشاء</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية حذف ملفات تعريف الأمان</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_DELETE_NAME" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية الوصول إلى ملفات تعريف الأمان</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية تعديل ملفات تعريف الأمان</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_EDIT_NAME" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="GIZMO_POLICY_SECURITY_PROFILES_NAME" xml:space="preserve">
+    <value>وصول</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول لإجراء تسويات المخزون في الفرع الحالي</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_BRANCH_NAME" xml:space="preserve">
+    <value>تسوية مخزون الفرع</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول لإجراء تسويات المخزون</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول لإجراء تسويات المخزون على مستوى النظام</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_GLOBAL_NAME" xml:space="preserve">
+    <value>تسوية المخزون عالمياً</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_NAME" xml:space="preserve">
+    <value>تسوية</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_COST_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول لإجراء تسويات المخزون كبيع بسعر التكلفة</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_COST_NAME" xml:space="preserve">
+    <value>بيع بالتكلفة</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_PRICE_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول لإجراء تسويات المخزون كبيع بسعر التجزئة</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_SALE_BY_PRICE_NAME" xml:space="preserve">
+    <value>بيع بالسعر</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_WRITE_OFF_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول لشطب المخزون</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_ADJUSTMENT_WRITE_OFF_NAME" xml:space="preserve">
+    <value>شطب</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول إلى عدّ المخزون مما يتيح للمستخدم إجراء العدّ في الفرع الحالي</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_BRANCH_NAME" xml:space="preserve">
+    <value>عدّ مخزون الفرع</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول إلى عدّ المخزون مما يتيح للمستخدم إجراء العدّ</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول إلى عدّ المخزون مما يتيح للمستخدم إجراء العدّ على مستوى النظام</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_GLOBAL_NAME" xml:space="preserve">
+    <value>عدّ المخزون عالمياً</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_NAME" xml:space="preserve">
+    <value>العدّ</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_VIEW_EXPECTED_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول لعرض الكمية المتوقعة للمخزون أثناء العدّ</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_COUNT_VIEW_EXPECTED_NAME" xml:space="preserve">
+    <value>عرض الكمية المتوقعة</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية إنشاء المخزون</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_CREATE_NAME" xml:space="preserve">
+    <value>إنشاء</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية حذف المخزون</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_DELETE_NAME" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية تعديل المخزون</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_EDIT_NAME" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول لقبول المخزون الوارد في الفرع الحالي</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_BRANCH_NAME" xml:space="preserve">
+    <value>الوارد للفرع</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول لقبول المخزون الوارد</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول لقبول المخزون الوارد على مستوى النظام</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_GLOBAL_NAME" xml:space="preserve">
+    <value>الوارد عالمياً</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_INBOUND_NAME" xml:space="preserve">
+    <value>الوارد</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول لعرض مستويات المخزون عبر الفرع الحالي</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_BRANCH_NAME" xml:space="preserve">
+    <value>مستوى مخزون الفرع</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول لعرض مستويات المخزون في الكاشير الحالي</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول لعرض مستويات المخزون عبر جميع الفروع</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_GLOBAL_NAME" xml:space="preserve">
+    <value>مستوى المخزون عالمياً</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_LEVEL_NAME" xml:space="preserve">
+    <value>مستوى المخزون</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_BRANCH_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول لإجراء نقل المخزون في الفرع الحالي</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_BRANCH_NAME" xml:space="preserve">
+    <value>نقل مخزون الفرع</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول لإدارة المخزون مما يتيح للمستخدم تحديث عناصر المخزون والتحكم فيها</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_GLOBAL_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول لإجراء نقل المخزون على مستوى النظام</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_GLOBAL_NAME" xml:space="preserve">
+    <value>نقل المخزون عالمياً</value>
+  </data>
+  <data name="GIZMO_POLICY_STOCK_TRANSFER_NAME" xml:space="preserve">
+    <value>نقل</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية إنشاء المهام</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_CREATE_NAME" xml:space="preserve">
+    <value>إنشاء</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية حذف المهام</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_DELETE_NAME" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية الوصول إلى المهام</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية تعديل المهام</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_EDIT_NAME" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="GIZMO_POLICY_TASKS_NAME" xml:space="preserve">
+    <value>وصول</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_CREATE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية إنشاء مجموعات المستخدمين</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_CREATE_NAME" xml:space="preserve">
+    <value>إنشاء</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_DELETE_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية حذف مجموعات المستخدمين</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_DELETE_NAME" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية الوصول إلى مجموعات المستخدمين</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_EDIT_DESCRIPTION" xml:space="preserve">
+    <value>منح صلاحية تعديل مجموعات المستخدمين</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_EDIT_NAME" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_GROUP_NAME" xml:space="preserve">
+    <value>وصول</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_LIST_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول لعرض صفحة قائمة المستخدمين</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_LIST_NAME" xml:space="preserve">
+    <value>قائمة</value>
+  </data>
+  <data name="HOST_GROUP_COMPUERS_DEFAULT_NAME" xml:space="preserve">
+    <value>الحواسيب</value>
+  </data>
+  <data name="HOST_GROUP_ENDPOINTS_DEFAULT_NAME" xml:space="preserve">
+    <value>الطرفيات</value>
+  </data>
+  <data name="HOST_LAYOUT_GROUPED_DEFAULT_NAME" xml:space="preserve">
+    <value>التخطيط الافتراضي</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_CENTER" xml:space="preserve">
+    <value>المركز السفلي</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_LEFT" xml:space="preserve">
+    <value>اليسار السفلي</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_BOTTOM_RIGHT" xml:space="preserve">
+    <value>اليمين السفلي</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_LEFT" xml:space="preserve">
+    <value>المركز الأيسر</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_RIGHT" xml:space="preserve">
+    <value>المركز الأيمن</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_CENTER_SCREEN" xml:space="preserve">
+    <value>وسط الشاشة</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_CENTER" xml:space="preserve">
+    <value>المركز العلوي</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_LEFT" xml:space="preserve">
+    <value>اليسار العلوي</value>
+  </data>
+  <data name="HOST_NUMBER_FIXED_POSITION_TOP_RIGHT" xml:space="preserve">
+    <value>اليمين العلوي</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_CLOCKWISE" xml:space="preserve">
+    <value>عقارب الساعة</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_COUNTERCLOCKWISE" xml:space="preserve">
+    <value>عكس عقارب الساعة</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_FIXED" xml:space="preserve">
+    <value>ثابت</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_BOTTOM" xml:space="preserve">
+    <value>أفقي سفلي</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_CENTER" xml:space="preserve">
+    <value>أفقي مركزي</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_HORIZONTAL_TOP" xml:space="preserve">
+    <value>أفقي علوي</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_CENTER" xml:space="preserve">
+    <value>رأسي مركزي</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_LEFT" xml:space="preserve">
+    <value>رأسي أيسر</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_VERTICAL_RIGHT" xml:space="preserve">
+    <value>رأسي أيمن</value>
+  </data>
+  <data name="HOST_NUMBER_POSITIONING_WALL_BOUNCE" xml:space="preserve">
+    <value>ارتداد الجدار</value>
+  </data>
+  <data name="HTTPS_CERTIFICATE_TYPE_SELF_SIGNED_DESCRIPTION" xml:space="preserve">
+    <value>شهادة SSL/TLS موقّعة ذاتياً</value>
+  </data>
+  <data name="HTTPS_CERTIFICATE_TYPE_USER_DEFINED_DESCRIPTION" xml:space="preserve">
+    <value>شهادة SSL/TLS يوفرها المستخدم</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP" xml:space="preserve">
+    <value>HTTP</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTPS" xml:space="preserve">
+    <value>HTTPS</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTPS_DESCRIPTION" xml:space="preserve">
+    <value>بروتوكول HTTPS</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP_DESCRIPTION" xml:space="preserve">
+    <value>بروتوكول HTTP</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP_HTTPS" xml:space="preserve">
+    <value>HTTP و HTTPS</value>
+  </data>
+  <data name="HTTP_PROTOCOL_HTTP_HTTPS_DESCRIPTION" xml:space="preserve">
+    <value>بروتوكولا HTTP و HTTPS معاً</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_ERROR" xml:space="preserve">
+    <value>خطأ</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>خطأ أثناء المصادقة</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_NETWORK_ERROR" xml:space="preserve">
+    <value>خطأ في الشبكة</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_NETWORK_ERROR_DESCRIPTION" xml:space="preserve">
+    <value>خطأ في الشبكة أثناء المصادقة</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_SUCCESS" xml:space="preserve">
+    <value>نجاح</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_SUCCESS_DESCRIPTION" xml:space="preserve">
+    <value>تمت المصادقة بنجاح</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_UNAUTHORIZED" xml:space="preserve">
+    <value>غير مصرح</value>
+  </data>
+  <data name="INSTANCE_AUTHENTICATION_STATE_UNAUTHORIZED_DESCRIPTION" xml:space="preserve">
+    <value>المصادقة غير مصرح بها</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_ALPHANUMERIC_DESCRIPTION" xml:space="preserve">
+    <value>المفاتيح المولّدة تحتوي على أرقام وأحرف كبيرة</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_NUMERIC_DESCRIPTION" xml:space="preserve">
+    <value>المفاتيح المولّدة تحتوي على أرقام فقط</value>
+  </data>
+  <data name="KEY_GENERATION_CHARACTERS_UPPER_CASE_CHARACTERS_DESCRIPTION" xml:space="preserve">
+    <value>المفاتيح المولّدة تحتوي على أحرف كبيرة فقط</value>
+  </data>
+  <data name="LINE_TYPE_DEPOSIT" xml:space="preserve">
+    <value>إيداع</value>
+  </data>
+  <data name="LINE_TYPE_DEPOSIT_DESCRIPTION" xml:space="preserve">
+    <value>بند إيداع</value>
+  </data>
+  <data name="LINE_TYPE_FIXED_TIME" xml:space="preserve">
+    <value>وقت ثابت</value>
+  </data>
+  <data name="LINE_TYPE_FIXED_TIME_DESCRIPTION" xml:space="preserve">
+    <value>بند وقت ثابت</value>
+  </data>
+  <data name="LINE_TYPE_PRODUCT" xml:space="preserve">
+    <value>منتج</value>
+  </data>
+  <data name="LINE_TYPE_PRODUCT_DESCRIPTION" xml:space="preserve">
+    <value>بند منتج</value>
+  </data>
+  <data name="LINE_TYPE_RESERVATION_FEE" xml:space="preserve">
+    <value>رسوم الحجز</value>
+  </data>
+  <data name="LINE_TYPE_RESERVATION_FEE_DESCRIPTION" xml:space="preserve">
+    <value>بند رسوم الحجز</value>
+  </data>
+  <data name="LINE_TYPE_SESSION_TIME" xml:space="preserve">
+    <value>وقت الجلسة</value>
+  </data>
+  <data name="LINE_TYPE_SESSION_TIME_DESCRIPTION" xml:space="preserve">
+    <value>بند وقت الجلسة</value>
+  </data>
+  <data name="LINE_TYPE_TIME_PRODUCT" xml:space="preserve">
+    <value>منتج زمني</value>
+  </data>
+  <data name="LINE_TYPE_TIME_PRODUCT_DESCRIPTION" xml:space="preserve">
+    <value>بند منتج زمني</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_CASH_NAME" xml:space="preserve">
+    <value>نقداً</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_CREDIT_CARD_NAME" xml:space="preserve">
+    <value>بطاقة ائتمانية</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_CUSTOM_NAME" xml:space="preserve">
+    <value>مخصص</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_DEPOSIT_NAME" xml:space="preserve">
+    <value>إيداع</value>
+  </data>
+  <data name="PAYMENT_METHOD_TYPE_POINTS_NAME" xml:space="preserve">
+    <value>نقاط</value>
+  </data>
+  <data name="PRODUCT_GROUP_DRINKS_DEFAULT_NAME" xml:space="preserve">
+    <value>المشروبات</value>
+  </data>
+  <data name="PRODUCT_GROUP_FOOD_DEFAULT_NAME" xml:space="preserve">
+    <value>الطعام</value>
+  </data>
+  <data name="PRODUCT_GROUP_SWEETS_DEFAULT_NAME" xml:space="preserve">
+    <value>الحلويات</value>
+  </data>
+  <data name="PRODUCT_GROUP_TIME_OFFERS_DEFAULT_NAME" xml:space="preserve">
+    <value>عروض الوقت</value>
+  </data>
+  <data name="REGISTER_DEFAULT_NAME" xml:space="preserve">
+    <value>الرئيسي</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL_DESCRIPTION" xml:space="preserve">
+    <value>التحقق عبر البريد الإلكتروني</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_EMAIL_NAME" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MESSENGER_DESCRIPTION" xml:space="preserve">
+    <value>التحقق عبر المراسلة الفورية</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MESSENGER_NAME" xml:space="preserve">
+    <value>المراسلة الفورية</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE_DESCRIPTION" xml:space="preserve">
+    <value>التحقق عبر الهاتف المحمول</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_MOBILE_PHONE_NAME" xml:space="preserve">
+    <value>الهاتف المحمول</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_NONE_DESCRIPTION" xml:space="preserve">
+    <value>لا يلزم التحقق</value>
+  </data>
+  <data name="REGISTRATION_VERIFICATION_METHOD_NONE_NAME" xml:space="preserve">
+    <value>لا شيء</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_FIXED" xml:space="preserve">
+    <value>ثابت</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_FIXED_DESCRIPTION" xml:space="preserve">
+    <value>رسوم حجز بمبلغ ثابت</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_NONE" xml:space="preserve">
+    <value>لا شيء</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_NONE_DESCRIPTION" xml:space="preserve">
+    <value>لا توجد رسوم حجز</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_PERCENTAGE" xml:space="preserve">
+    <value>نسبة مئوية</value>
+  </data>
+  <data name="RESERVATION_FEE_TYPE_PERCENTAGE_DESCRIPTION" xml:space="preserve">
+    <value>رسوم حجز قائمة على نسبة مئوية</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_ENABLED_DESCRIPTION" xml:space="preserve">
+    <value>يحدد ما إذا كانت فترة السماح لتسجيل خروج المستخدم مفعّلة</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_ENABLED_NAME" xml:space="preserve">
+    <value>تفعيل فترة السماح لتسجيل خروج المستخدم</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve">
+    <value>يحدد وقت فترة السماح لتسجيل خروج المستخدم</value>
+  </data>
+  <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_NAME" xml:space="preserve">
+    <value>وقت السماح</value>
+  </data>
+  <data name="SMTP_SECURITY_NONE_DESCRIPTION" xml:space="preserve">
+    <value>بدون تشفير</value>
+  </data>
+  <data name="SMTP_SECURITY_NONE_NAME" xml:space="preserve">
+    <value>لا شيء</value>
+  </data>
+  <data name="SMTP_SECURITY_SSL_DESCRIPTION" xml:space="preserve">
+    <value>تشفير SSL</value>
+  </data>
+  <data name="SMTP_SECURITY_SSL_NAME" xml:space="preserve">
+    <value>SSL</value>
+  </data>
+  <data name="SMTP_SECURITY_STARTTLS_DESCRIPTION" xml:space="preserve">
+    <value>تشفير STARTTLS</value>
+  </data>
+  <data name="SMTP_SECURITY_STARTTLS_NAME" xml:space="preserve">
+    <value>STARTTLS</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DESKTOP" xml:space="preserve">
+    <value>سطح المكتب</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DESKTOP_DESCRIPTION" xml:space="preserve">
+    <value>مجلد سطح المكتب</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DOWNLOADS" xml:space="preserve">
+    <value>التنزيلات</value>
+  </data>
+  <data name="SPECIAL_FOLDER_DOWNLOADS_DESCRIPTION" xml:space="preserve">
+    <value>مجلد التنزيلات</value>
+  </data>
+  <data name="SPECIAL_FOLDER_FAVORITES" xml:space="preserve">
+    <value>المفضلة</value>
+  </data>
+  <data name="SPECIAL_FOLDER_FAVORITES_DESCRIPTION" xml:space="preserve">
+    <value>مجلد المفضلة</value>
+  </data>
+  <data name="SPECIAL_FOLDER_NONE" xml:space="preserve">
+    <value>لا شيء</value>
+  </data>
+  <data name="SPECIAL_FOLDER_NONE_DESCRIPTION" xml:space="preserve">
+    <value>لا توجد مجلد خاص</value>
+  </data>
+  <data name="STOCK_SELLING_POINT_DEFAULT_NAME" xml:space="preserve">
+    <value>نقطة بيع</value>
+  </data>
+  <data name="STOCK_WAREHOUSE_DEFAULT_NAME" xml:space="preserve">
+    <value>مستودع</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_MAIN_DESCRIPTION" xml:space="preserve">
+    <value>نظام الضريبة الرئيسي</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_PATENT_SYSTEM_DESCRIPTION" xml:space="preserve">
+    <value>نظام ضريبي قائم على البراءات</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_EXPSENSES_DESCRIPTION" xml:space="preserve">
+    <value>النظام الضريبي المبسّط القائم على الدخل ناقص المصروفات</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SIMPLIFIED_SYSTEM_INCOME_MINUS_TAXATION_DESCRIPTION" xml:space="preserve">
+    <value>النظام الضريبي المبسّط القائم على الدخل</value>
+  </data>
+  <data name="TAX_SYSTEMS_RUSSIA_SINGLE_AGRICULTURAL_TAX_DESCRIPTION" xml:space="preserve">
+    <value>ضريبة موحّدة للمنتجين الزراعيين</value>
+  </data>
+  <data name="TAX_SYSTEMS_UNDEFINED" xml:space="preserve">
+    <value>غير محدد</value>
+  </data>
+  <data name="TAX_SYSTEMS_UNDEFINED_DESCRIPTION" xml:space="preserve">
+    <value>نظام ضريبي غير محدد</value>
+  </data>
+  <data name="TAX_SYSTEM_COUNTRY_RUSSIA_DESCRIPTION" xml:space="preserve">
+    <value>نظام ضريبة الاتحاد الروسي</value>
+  </data>
+  <data name="TAX_SYSTEM_COUNTRY_UNSPECIFIED_DESCRIPTION" xml:space="preserve">
+    <value>لا يوجد نظام ضريبي لدولة محددة</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_EMAIL_DESCRIPTION" xml:space="preserve">
+    <value>الاسترداد عبر البريد الإلكتروني</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_EMAIL_NAME" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_MOBILE_DESCRIPTION" xml:space="preserve">
+    <value>الاسترداد عبر الهاتف المحمول</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_MOBILE_NAME" xml:space="preserve">
+    <value>الجوال</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_NONE_DESCRIPTION" xml:space="preserve">
+    <value>لا توجد طريقة استرداد</value>
+  </data>
+  <data name="USER_RECOVERY_METHOD_NONE_NAME" xml:space="preserve">
+    <value>لا شيء</value>
+  </data>
+  <data name="USER_ROLE_GUEST" xml:space="preserve">
+    <value>ضيف</value>
+  </data>
+  <data name="USER_ROLE_GUEST_DESCRIPTION" xml:space="preserve">
+    <value>دور المستخدم الضيف</value>
+  </data>
+  <data name="USER_ROLE_OPERATOR" xml:space="preserve">
+    <value>مشغّل</value>
+  </data>
+  <data name="USER_ROLE_OPERATOR_DESCRIPTION" xml:space="preserve">
+    <value>دور المشغّل</value>
+  </data>
+  <data name="USER_ROLE_USER" xml:space="preserve">
+    <value>مستخدم</value>
+  </data>
+  <data name="USER_ROLE_USER_DESCRIPTION" xml:space="preserve">
+    <value>دور المستخدم القياسي</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_ATTRIBUTES" xml:space="preserve">
+    <value>السمات</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_ATTRIBUTES_DESCRIPTION" xml:space="preserve">
+    <value>البحث بالسمات</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_EMAIL" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_EMAIL_DESCRIPTION" xml:space="preserve">
+    <value>البحث بعنوان البريد الإلكتروني</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME" xml:space="preserve">
+    <value>الاسم الأول</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>البحث بالاسم الأول</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_IDENTIFICATION_NUMBER" xml:space="preserve">
+    <value>رقم الهوية</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_IDENTIFICATION_NUMBER_DESCRIPTION" xml:space="preserve">
+    <value>البحث برقم الهوية</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME" xml:space="preserve">
+    <value>اسم العائلة</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>البحث باسم العائلة</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_MOBILE_PHONE" xml:space="preserve">
+    <value>الهاتف المحمول</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_MOBILE_PHONE_DESCRIPTION" xml:space="preserve">
+    <value>البحث برقم الهاتف المحمول</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_PHONE" xml:space="preserve">
+    <value>الهاتف</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_PHONE_DESCRIPTION" xml:space="preserve">
+    <value>البحث برقم الهاتف</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USERNAME" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USERNAME_DESCRIPTION" xml:space="preserve">
+    <value>البحث باسم المستخدم</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USER_GROUP" xml:space="preserve">
+    <value>مجموعة المستخدمين</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_USER_GROUP_DESCRIPTION" xml:space="preserve">
+    <value>البحث بمجموعة المستخدمين</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_NONE_DESCRIPTION" xml:space="preserve">
+    <value>لا تُطبَّق ضريبة القيمة المضافة</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT0_DESCRIPTION" xml:space="preserve">
+    <value>معدل ضريبة القيمة المضافة صفر بالمئة</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT105" xml:space="preserve">
+    <value>ضريبة 5/105%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT105_DESCRIPTION" xml:space="preserve">
+    <value>معدل ضريبة القيمة المضافة المحسوب 5/105%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT107" xml:space="preserve">
+    <value>ضريبة 7/107%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT107_DESCRIPTION" xml:space="preserve">
+    <value>معدل ضريبة القيمة المضافة المحسوب 7/107%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT10_DESCRIPTION" xml:space="preserve">
+    <value>معدل ضريبة القيمة المضافة 10%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT110" xml:space="preserve">
+    <value>ضريبة 10/110%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT110_DESCRIPTION" xml:space="preserve">
+    <value>معدل ضريبة القيمة المضافة المحسوب 10/110%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT120" xml:space="preserve">
+    <value>ضريبة 20/120%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT120_DESCRIPTION" xml:space="preserve">
+    <value>معدل ضريبة القيمة المضافة المحسوب 20/120%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT20_DESCRIPTION" xml:space="preserve">
+    <value>معدل ضريبة القيمة المضافة 20%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT5" xml:space="preserve">
+    <value>ضريبة 5%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT5_DESCRIPTION" xml:space="preserve">
+    <value>معدل ضريبة القيمة المضافة 5%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT7" xml:space="preserve">
+    <value>ضريبة 7%</value>
+  </data>
+  <data name="VAT_RATES_RUSSIA_VAT7_DESCRIPTION" xml:space="preserve">
+    <value>معدل ضريبة القيمة المضافة 7%</value>
+  </data>
+</root>
