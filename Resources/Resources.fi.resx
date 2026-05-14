@@ -38,7 +38,7 @@
   <data name="APPLICATION_SORTING_OPTION_POPULARITY_NAME" xml:space="preserve"><value>Suosio</value></data>
   <data name="APPLICATION_SORTING_OPTION_RATING_NAME" xml:space="preserve"><value>Arvosana</value></data>
   <data name="APPLICATION_SORTING_OPTION_RELEASE_DATE_NAME" xml:space="preserve"><value>Julkaisupäivämäärä</value></data>
-  <data name="APPLICATION_SORTING_OPTION_TITLE_NAME" xml:space="preserve"><value>Otsikko</value></data>
+  <data name="APPLICATION_SORTING_OPTION_TITLE_NAME" xml:space="preserve"><value>Nimi</value></data>
   <data name="APPLICATION_SORTING_OPTION_USE_NAME" xml:space="preserve"><value>Käyttö</value></data>
   <data name="CLIENT_LOGOUT_ACTION_ADMIN_MODE" xml:space="preserve"><value>Järjestelmänvalvojatila</value></data>
   <data name="CLIENT_LOGOUT_ACTION_CLOSE_PROGRAMS" xml:space="preserve"><value>Sulje ohjelmat</value></data>

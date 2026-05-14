@@ -38,7 +38,7 @@
   <data name="APPLICATION_SORTING_OPTION_POPULARITY_NAME" xml:space="preserve"><value>Popularitet</value></data>
   <data name="APPLICATION_SORTING_OPTION_RATING_NAME" xml:space="preserve"><value>Vurdering</value></data>
   <data name="APPLICATION_SORTING_OPTION_RELEASE_DATE_NAME" xml:space="preserve"><value>Udgivelsesdato</value></data>
-  <data name="APPLICATION_SORTING_OPTION_TITLE_NAME" xml:space="preserve"><value>Titel</value></data>
+  <data name="APPLICATION_SORTING_OPTION_TITLE_NAME" xml:space="preserve"><value>Navn</value></data>
   <data name="APPLICATION_SORTING_OPTION_USE_NAME" xml:space="preserve"><value>Brug</value></data>
   <data name="CLIENT_LOGOUT_ACTION_ADMIN_MODE" xml:space="preserve"><value>Administratortilstand</value></data>
   <data name="CLIENT_LOGOUT_ACTION_CLOSE_PROGRAMS" xml:space="preserve"><value>Luk programmer</value></data>

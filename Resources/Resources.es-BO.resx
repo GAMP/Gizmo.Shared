@@ -84,7 +84,7 @@
     <value>Fecha de lanzamiento</value>
   </data>
   <data name="APPLICATION_SORTING_OPTION_TITLE_NAME" xml:space="preserve">
-    <value>Título</value>
+    <value>Nombre</value>
   </data>
   <data name="APPLICATION_SORTING_OPTION_USE_NAME" xml:space="preserve">
     <value>Uso</value>

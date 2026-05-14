@@ -674,7 +674,7 @@
     <value>IVA0</value> 
   </data> 
   <data name="APPLICATION_SORTING_OPTION_ADD_DATE_NAME" xml:space="preserve"> 
-    <value>Data de instalação</value> 
+    <value>Data de adição</value> 
   </data> 
   <data name="APPLICATION_SORTING_OPTION_POPULARITY_NAME" xml:space="preserve"> 
     <value>Popularidade</value> 
@@ -683,10 +683,10 @@
     <value>Avaliação</value> 
   </data> 
   <data name="APPLICATION_SORTING_OPTION_RELEASE_DATE_NAME" xml:space="preserve"> 
-    <value>Data de Lançamento</value> 
+    <value>Data de lançamento</value> 
   </data> 
   <data name="APPLICATION_SORTING_OPTION_TITLE_NAME" xml:space="preserve"> 
-    <value>Titulo</value> 
+    <value>Nome</value> 
   </data> 
   <data name="APPLICATION_SORTING_OPTION_USE_NAME" xml:space="preserve"> 
     <value>Uso</value> 

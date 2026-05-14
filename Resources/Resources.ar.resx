@@ -686,7 +686,7 @@
     <value>تاريخ الإصدار</value> 
   </data> 
   <data name="APPLICATION_SORTING_OPTION_TITLE_NAME" xml:space="preserve"> 
-    <value>العنوان</value> 
+    <value>الاسم</value> 
   </data> 
   <data name="APPLICATION_SORTING_OPTION_USE_NAME" xml:space="preserve"> 
     <value>الاستخدام</value> 

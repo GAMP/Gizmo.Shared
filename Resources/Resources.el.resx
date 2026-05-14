@@ -698,7 +698,7 @@
     <value>Ημερομηνία κυκλοφορίας</value> 
   </data> 
   <data name="APPLICATION_SORTING_OPTION_TITLE_NAME" xml:space="preserve"> 
-    <value>Τίτλος</value> 
+    <value>Όνομα</value> 
   </data> 
   <data name="APPLICATION_SORTING_OPTION_USE_NAME" xml:space="preserve"> 
     <value>Χρήση</value> 

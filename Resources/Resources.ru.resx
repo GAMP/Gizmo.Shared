@@ -674,7 +674,7 @@
     <value>НДС 20%</value> 
   </data> 
   <data name="APPLICATION_SORTING_OPTION_ADD_DATE_NAME" xml:space="preserve"> 
-    <value>Добавить дату</value> 
+    <value>Дата добавления</value> 
   </data> 
   <data name="APPLICATION_SORTING_OPTION_POPULARITY_NAME" xml:space="preserve"> 
     <value>Популярность</value> 
@@ -686,10 +686,10 @@
     <value>Дата выхода</value> 
   </data> 
   <data name="APPLICATION_SORTING_OPTION_TITLE_NAME" xml:space="preserve"> 
-    <value>Заголовок</value> 
+    <value>Имя</value> 
   </data> 
   <data name="APPLICATION_SORTING_OPTION_USE_NAME" xml:space="preserve"> 
-    <value>Использовать</value> 
+    <value>Использование</value> 
   </data> 
   <data name="CLIENT_LOGOUT_ACTION_ADMIN_MODE" xml:space="preserve"> 
     <value>Режим администратора</value> 
