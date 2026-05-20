@@ -451,9 +451,9 @@
   <data name="GIZMO_POLICY_SET_CASHIER_NAME" xml:space="preserve"> 
     <value>Кассир</value> 
   </data> 
-  <data name="GIZMO_POLICY_SET_MANAGER_NAME" xml:space="preserve"> 
-    <value>Файл</value> 
-  </data> 
+  <data name="GIZMO_POLICY_SET_MANAGER_NAME" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
   <data name="GIZMO_POLICY_SET_MARKETER_NAME" xml:space="preserve"> 
     <value>Маркетолог</value> 
   </data> 
@@ -1151,10 +1151,10 @@
     <value>Мне нужна помощь.</value>
   </data>
   <data name="BILL_PROFILE_COMPUTERS_DEFAULT_NAME" xml:space="preserve">
-    <value>Цены для хостов</value>
+    <value>Цены для станций</value>
   </data>
   <data name="BILL_PROFILE_ENDPOINTS_DEFAULT_NAME" xml:space="preserve">
-    <value>Цены для хостов</value>
+    <value>Цены для терминалов</value>
   </data>
   <data name="BRANCH_DEFAULT_NAME" xml:space="preserve">
     <value>Основной</value>
@@ -1694,10 +1694,10 @@
     <value>Список</value>
   </data>
   <data name="HOST_GROUP_COMPUERS_DEFAULT_NAME" xml:space="preserve">
-    <value>Хосты</value>
+    <value>Станции</value>
   </data>
   <data name="HOST_GROUP_ENDPOINTS_DEFAULT_NAME" xml:space="preserve">
-    <value>Хосты</value>
+    <value>Терминалы</value>
   </data>
   <data name="HOST_LAYOUT_GROUPED_DEFAULT_NAME" xml:space="preserve">
     <value>Схема по умолчанию</value>

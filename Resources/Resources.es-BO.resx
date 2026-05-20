@@ -1269,7 +1269,7 @@
     <value>Principal</value>
   </data>
   <data name="HOST_GROUP_ENDPOINTS_DEFAULT_NAME" xml:space="preserve">
-    <value>Estaciones</value>
+    <value>Terminales</value>
   </data>
   <data name="HOST_GROUP_COMPUERS_DEFAULT_NAME" xml:space="preserve">
     <value>Estaciones</value>
@@ -1401,7 +1401,7 @@
     <value>Acceso para aceptar inventario entrante en todas las sucursales.</value>
   </data>
   <data name="BILL_PROFILE_ENDPOINTS_DEFAULT_NAME" xml:space="preserve">
-    <value>Precios de estaciones</value>
+    <value>Precios de terminales</value>
   </data>
   <data name="BILL_PROFILE_COMPUTERS_DEFAULT_NAME" xml:space="preserve">
     <value>Precios de estaciones</value>

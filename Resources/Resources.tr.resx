@@ -1095,10 +1095,10 @@
     <value>Yardıma ihtiyacım var, lütfen.</value>
   </data>
   <data name="BILL_PROFILE_COMPUTERS_DEFAULT_NAME" xml:space="preserve">
-    <value>Bilgisayar fiyatları</value>
+    <value>İstasyon fiyatları</value>
   </data>
   <data name="BILL_PROFILE_ENDPOINTS_DEFAULT_NAME" xml:space="preserve">
-    <value>Bilgisayar fiyatları</value>
+    <value>Terminal fiyatları</value>
   </data>
   <data name="BRANCH_DEFAULT_NAME" xml:space="preserve">
     <value>Birincil</value>
@@ -1683,7 +1683,7 @@
     <value>Bilgisayarlar</value>
   </data>
   <data name="HOST_GROUP_ENDPOINTS_DEFAULT_NAME" xml:space="preserve">
-    <value>Bilgisayarlar</value>
+    <value>Terminaller</value>
   </data>
   <data name="HOST_LAYOUT_GROUPED_DEFAULT_NAME" xml:space="preserve">
     <value>Varsayılan yerleşim</value>

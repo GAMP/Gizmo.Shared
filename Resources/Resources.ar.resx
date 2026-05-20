@@ -1151,7 +1151,7 @@
     <value>أحتاج إلى مساعدة، من فضلك.</value>
   </data>
   <data name="BILL_PROFILE_COMPUTERS_DEFAULT_NAME" xml:space="preserve">
-    <value>أسعار الحواسيب</value>
+    <value>أسعار المحطات</value>
   </data>
   <data name="BILL_PROFILE_ENDPOINTS_DEFAULT_NAME" xml:space="preserve">
     <value>أسعار الطرفيات</value>

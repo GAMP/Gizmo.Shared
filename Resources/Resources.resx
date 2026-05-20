@@ -1414,7 +1414,7 @@
     <comment>Default name to use when creating default endpoints billing profile on initial data seeding.</comment>
   </data>
   <data name="BILL_PROFILE_COMPUTERS_DEFAULT_NAME" xml:space="preserve">
-    <value>Computers prices</value>
+    <value>Hosts prices</value>
     <comment>Default name to use when creating default computers billing profile on initial data seeding.</comment>
   </data>
   <data name="APP_CATEGORY_GAMES_DEFAULT_NAME" xml:space="preserve">

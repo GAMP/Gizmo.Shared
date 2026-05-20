@@ -477,8 +477,8 @@
   <data name="GIZMO_POLICY_STOCK_INBOUND_BRANCH_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at modtage indgående lager i nuværende filial</value></data>
   <data name="GIZMO_POLICY_STOCK_INBOUND_GLOBAL_NAME" xml:space="preserve"><value>Globalt indgående</value></data>
   <data name="GIZMO_POLICY_STOCK_INBOUND_GLOBAL_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at modtage indgående lager globalt</value></data>
-  <data name="BILL_PROFILE_ENDPOINTS_DEFAULT_NAME" xml:space="preserve"><value>Endpoint-priser</value></data>
-  <data name="BILL_PROFILE_COMPUTERS_DEFAULT_NAME" xml:space="preserve"><value>Computerpriser</value></data>
+  <data name="BILL_PROFILE_ENDPOINTS_DEFAULT_NAME" xml:space="preserve"><value>Terminaalien hinnat</value></data>
+  <data name="BILL_PROFILE_COMPUTERS_DEFAULT_NAME" xml:space="preserve"><value>Asemien hinnat</value></data>
   <data name="APP_CATEGORY_GAMES_DEFAULT_NAME" xml:space="preserve"><value>Spil</value></data>
   <data name="APP_CATEGORY_LAUNCHERS_DEFAULT_NAME" xml:space="preserve"><value>Launchers</value></data>
   <data name="APP_CATEGORY_APPLICATIONS_DEFAULT_NAME" xml:space="preserve"><value>Applikationer</value></data>
