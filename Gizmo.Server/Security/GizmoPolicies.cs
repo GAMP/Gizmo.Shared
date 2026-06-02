@@ -76,7 +76,7 @@ namespace Gizmo.Server.Security
         /// <summary>
         /// Sale deposit permission.
         /// </summary>
-        [PolicyDescription("Sale", "Deposit", GizmoPolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_GROUP_DEPLOYMENT_NAME), nameof(Resources.GIZMO_POLICY_SALE_DEPOSIT_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        [PolicyDescription("Sale", "Deposit", GizmoPolicyGroups.Sales, [Sale], nameof(Resources.GIZMO_POLICY_SALE_DEPOSIT_NAME), nameof(Resources.GIZMO_POLICY_SALE_DEPOSIT_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
         Deposit,
 
         /// <summary>
