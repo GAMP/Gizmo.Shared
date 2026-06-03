@@ -14,7 +14,7 @@ namespace System.ComponentModel.DataAnnotations
         /// </summary>
         public MacAddressValidationAttribute()
         {
-            _regex = new Regex("^([0-9A-F]{2}[:-]){5}([0-9A-F]{2})$", RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.Compiled);
+            _regex = new Regex("^([0-9A-F]{2}-){5}([0-9A-F]{2})$", RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.Compiled);
         }
         #endregion
 
