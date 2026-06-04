@@ -173,5 +173,10 @@ namespace Gizmo.Server.Exceptions
         /// Promotion exception.
         /// </summary>
         Promotion = 31,
+
+        /// <summary>
+        /// Refund exception.
+        /// </summary>
+        Refund = 32,
     }
 }
