@@ -16,6 +16,10 @@ namespace Gizmo.Extensibility.Abstractions
         /// <summary>
         /// Human readable name.
         /// </summary>
+        /// <remarks>
+        /// Used as the neutral fallback display name when the type carries no class-level
+        /// <see cref="System.ComponentModel.DataAnnotations.NameAttribute"/> or its resource is not found.
+        /// </remarks>
         public string Id { get; }
 
         /// <summary>
