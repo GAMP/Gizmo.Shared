@@ -178,5 +178,10 @@ namespace Gizmo.Server.Exceptions
         /// Refund exception.
         /// </summary>
         Refund = 32,
+
+        /// <summary>
+        /// Payment reversal exception.
+        /// </summary>
+        PaymentReversal = 33,
     }
 }
