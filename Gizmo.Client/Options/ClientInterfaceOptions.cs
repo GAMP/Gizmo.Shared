@@ -31,8 +31,11 @@ namespace Gizmo.Client.Options
         }
 
         /// <summary>
-        /// Gets custom style sheet.
+        /// Gets custom style sheet content.
         /// </summary>
+        /// <remarks>
+        /// Raw css authored in the manager for the effective skin profile, injected inline by the client.
+        /// </remarks>
         [MessagePack.Key(2)]
         [DefaultValue(null)]
         public string? StyleSheet
