@@ -31,10 +31,8 @@ namespace Gizmo.Extensibility.Abstractions
         /// </summary>
         HostGroup = 2,
 
-        /// <summary>
-        /// Restrict measurement to activity within a time-of-day window.
-        /// </summary>
-        DayTime = 4,
+        // 4 is reserved — was DayTime, merged into DayOfWeek when day-anchored
+        // time windows moved onto the day of week filter entries.
 
         /// <summary>
         /// Restrict measurement to activity settled with any of the specified payment methods.
@@ -60,5 +58,37 @@ namespace Gizmo.Extensibility.Abstractions
         /// Restrict measurement to activity in applications of any of the specified app groups.
         /// </summary>
         AppGroup = 128,
+
+        /// <summary>
+        /// Restrict measurement to activity involving any of the specified products.
+        /// </summary>
+        Product = 256,
+
+        /// <summary>
+        /// Restrict measurement to activity involving products of any of the specified product groups.
+        /// </summary>
+        ProductGroup = 512,
+
+        /// <summary>
+        /// Restrict measurement to activity billed under any of the specified bill profiles.
+        /// </summary>
+        BillProfile = 1024,
+
+        /// <summary>
+        /// Restrict measurement to activity within any of the specified day-anchored
+        /// windows — a day of week, optionally narrowed to a time-of-day window
+        /// (see <see cref="SignalDayWindow"/>).
+        /// </summary>
+        DayOfWeek = 2048,
+
+        /// <summary>
+        /// Restrict measurement to activity in any of the specified application executables.
+        /// </summary>
+        AppExe = 4096,
+
+        /// <summary>
+        /// Restrict measurement to activity in applications of any of the specified categories.
+        /// </summary>
+        AppCategory = 8192,
     }
 }

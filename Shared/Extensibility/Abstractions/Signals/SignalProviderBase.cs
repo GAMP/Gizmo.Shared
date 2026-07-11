@@ -35,16 +35,19 @@ namespace Gizmo.Extensibility.Abstractions
             if (query.UserIds.Count > IAchievementSignalProvider.MaxBatchSize)
                 throw new ArgumentException($"At most {IAchievementSignalProvider.MaxBatchSize} user ids may be requested in a single call.", nameof(query));
 
-            if ((query.FilterKinds & SignalFilterKinds.DayTime) != SignalFilterKinds.None)
+            if (query.DayWindows is { Count: > 0 })
             {
-                if (!query.DayTimeFrom.HasValue || !query.DayTimeTo.HasValue)
-                    throw new ArgumentException("A day time window requires both DayTimeFrom and DayTimeTo.", nameof(query));
-
-                if (query.DayTimeFrom.Value == query.DayTimeTo.Value)
-                    throw new ArgumentException("Day time window is empty — DayTimeFrom must differ from DayTimeTo.", nameof(query));
-
                 if (string.IsNullOrWhiteSpace(query.TimeZoneId))
-                    throw new ArgumentException("A day time window requires TimeZoneId to define the local clock.", nameof(query));
+                    throw new ArgumentException("Day windows require TimeZoneId to define the local clock.", nameof(query));
+
+                foreach (var dayWindow in query.DayWindows)
+                {
+                    if (dayWindow.From.HasValue != dayWindow.To.HasValue)
+                        throw new ArgumentException("A day window time range requires both From and To.", nameof(query));
+
+                    if (dayWindow.From.HasValue && dayWindow.From.Value == dayWindow.To!.Value)
+                        throw new ArgumentException("Day window time range is empty — From must differ from To.", nameof(query));
+                }
             }
 
             var unsupportedFilters = query.FilterKinds & ~SupportedFilters;

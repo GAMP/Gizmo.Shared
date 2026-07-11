@@ -69,22 +69,41 @@ namespace Gizmo.Extensibility.Abstractions
         public IReadOnlyCollection<int>? PaymentMethodIds { get; init; }
 
         /// <summary>
-        /// Gets optional time-of-day window start — count only activity within the window.
-        /// A window requires both bounds and <see cref="TimeZoneId"/>; a window whose start is
-        /// later than its end wraps across midnight (e.g. 22:00–06:00).
+        /// Gets optional product filter — count only activity involving any of the specified products.
         /// </summary>
-        public TimeOnly? DayTimeFrom { get; init; }
+        public IReadOnlyCollection<int>? ProductIds { get; init; }
 
         /// <summary>
-        /// Gets optional time-of-day window end — count only activity within the window.
-        /// See <see cref="DayTimeFrom"/> for window semantics.
+        /// Gets optional product group filter — count only activity involving products of any of the specified groups.
         /// </summary>
-        public TimeOnly? DayTimeTo { get; init; }
+        public IReadOnlyCollection<int>? ProductGroupIds { get; init; }
 
         /// <summary>
-        /// Gets the time zone id defining the local clock for the day time window.
-        /// Required when a day time window is set; fact timestamps (stored UTC) are projected
-        /// into this zone before the window is applied.
+        /// Gets optional bill profile filter — count only activity billed under any of the specified profiles.
+        /// </summary>
+        public IReadOnlyCollection<int>? BillProfileIds { get; init; }
+
+        /// <summary>
+        /// Gets optional application executable filter — count only activity in any of the specified executables.
+        /// </summary>
+        public IReadOnlyCollection<int>? AppExeIds { get; init; }
+
+        /// <summary>
+        /// Gets optional app category filter — count only activity in applications of any of the specified categories.
+        /// </summary>
+        public IReadOnlyCollection<int>? AppCategoryIds { get; init; }
+
+        /// <summary>
+        /// Gets optional day window filter — count only activity within any of the specified
+        /// day-anchored windows (see <see cref="SignalDayWindow"/> for anchoring and wrap
+        /// semantics). <see cref="TimeZoneId"/> is required when set.
+        /// </summary>
+        public IReadOnlyCollection<SignalDayWindow>? DayWindows { get; init; }
+
+        /// <summary>
+        /// Gets the time zone id defining the local clock for the day windows.
+        /// Required when <see cref="DayWindows"/> is set; fact timestamps (stored UTC) are
+        /// projected into this zone before the windows are applied.
         /// </summary>
         public string? TimeZoneId { get; init; }
 
@@ -104,7 +123,12 @@ namespace Gizmo.Extensibility.Abstractions
             (AppIds is { Count: > 0 } ? SignalFilterKinds.App : SignalFilterKinds.None) |
             (AppGroupIds is { Count: > 0 } ? SignalFilterKinds.AppGroup : SignalFilterKinds.None) |
             (PaymentMethodIds is { Count: > 0 } ? SignalFilterKinds.PaymentMethod : SignalFilterKinds.None) |
-            (DayTimeFrom.HasValue || DayTimeTo.HasValue ? SignalFilterKinds.DayTime : SignalFilterKinds.None) |
+            (ProductIds is { Count: > 0 } ? SignalFilterKinds.Product : SignalFilterKinds.None) |
+            (ProductGroupIds is { Count: > 0 } ? SignalFilterKinds.ProductGroup : SignalFilterKinds.None) |
+            (BillProfileIds is { Count: > 0 } ? SignalFilterKinds.BillProfile : SignalFilterKinds.None) |
+            (AppExeIds is { Count: > 0 } ? SignalFilterKinds.AppExe : SignalFilterKinds.None) |
+            (AppCategoryIds is { Count: > 0 } ? SignalFilterKinds.AppCategory : SignalFilterKinds.None) |
+            (DayWindows is { Count: > 0 } ? SignalFilterKinds.DayOfWeek : SignalFilterKinds.None) |
             (Parameters.Count > 0 ? SignalFilterKinds.Parameters : SignalFilterKinds.None);
 
         private static readonly IReadOnlyDictionary<string, string> EmptyParameters = new Dictionary<string, string>();
