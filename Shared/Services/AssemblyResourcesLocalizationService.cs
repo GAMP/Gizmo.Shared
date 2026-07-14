@@ -23,6 +23,13 @@ namespace Gizmo
         }
         
         private const string DEFAULT_RESOURCE_NAME = "Resources";
+
+        /// <summary>
+        /// Fallback resource simple name probed when an assembly embeds no "Resources" resx.
+        /// Host application assemblies conventionally name their default resources "SharedResource"
+        /// (e.g. the server assembly), while module assemblies use "Resources".
+        /// </summary>
+        private const string FALLBACK_RESOURCE_NAME = "SharedResource";
         private CultureInfo? _culture;
         private readonly ConcurrentDictionary<(Assembly asm, string simpleName), ResourceManager?> _managerCache = new();
 
@@ -98,7 +105,8 @@ namespace Gizmo
             var rm = _managerCache.GetOrAdd((assembly, resourceSimpleName), static key =>
             {
                 var (asm, simpleName) = key;
-                var baseName = ResolveResourceBaseNameFromManifest(asm, simpleName);
+                var baseName = ResolveResourceBaseNameFromManifest(asm, simpleName)
+                    ?? ResolveResourceBaseNameFromManifest(asm, FALLBACK_RESOURCE_NAME);
                 return baseName is null ? null : new ResourceManager(baseName, asm);
             });
 

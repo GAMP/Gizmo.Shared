@@ -63,7 +63,6 @@ namespace Gizmo.Extensibility
 
             registry.Add(asm, baseDir, moduleName);
             services.AddKeyedSingleton(asm, new ModuleInfo(moduleName, baseDir));
-            var asmVersion = asm.GetName().Version;
 
             // 1. Discover and run all DLL-wide registrars (ordered, no integration context)
             var registrars = asm.GetExportedTypes()
@@ -99,71 +98,119 @@ namespace Gizmo.Extensibility
             //    Multiple rows sharing a TypeGuid represent distinct configured instances (different
             //    PublicId and ConfigJson), so each gets its own keyed singleton.
             foreach (var (type, attr) in moduleTypes)
+                RegisterModuleType(services, type, attr!, lookup, hostEnvironment, modulesDataRoot, typeRegistry);
+        }
+
+        /// <summary>
+        /// Registers explicitly listed host-assembly types as integration modules.
+        /// </summary>
+        /// <remarks>
+        /// Unlike <see cref="LoadAssemblyIntoServices"/> the containing assembly is NOT registered as a
+        /// module assembly — no <see cref="ModuleAssemblyRegistry"/> entry (which would subject the host's
+        /// controllers to module controller filtering), no <see cref="IServiceRegistrar"/> scan and no
+        /// assembly-wide [ModuleMetadata] sweep. Required for the host application assembly, which also
+        /// contains [ModuleMetadata] types that are not integrations (e.g. achievement signal providers).
+        /// </remarks>
+        public static void LoadHostTypesIntoServices(
+            IServiceCollection services,
+            IReadOnlyList<Type> types,
+            IReadOnlyList<IntegrationSpec> integrations,
+            IHostEnvironment hostEnvironment,
+            string modulesDataRoot,
+            IntegrationTypeRegistry typeRegistry)
+        {
+            var lookup = integrations.ToLookup(i => i.TypeGuid);
+
+            foreach (var type in types)
             {
-                var typeGuid = Guid.Parse(attr!.ModuleGuid);
+                var attr = type.GetCustomAttribute<ModuleMetadataAttribute>()
+                    ?? throw new InvalidOperationException($"Type '{type}' is not decorated with {nameof(ModuleMetadataAttribute)}.");
 
-                var capabilities = DiscoverCapabilities(type);
-                typeRegistry.Add(typeGuid, attr.Id, type, capabilities);
+                RegisterModuleType(services, type, attr, lookup, hostEnvironment, modulesDataRoot, typeRegistry);
+            }
+        }
 
-                // Config schema metadata is the same for all instances of this type — extract once
-                // and register keyed by TypeGuid so the Manager UI can request it before any
-                // instance exists (e.g. when showing the "create integration" form).
-                var configMetadata = ModuleConfigMetadataExtractor.Extract(type);
-                services.AddKeyedSingleton(typeGuid, configMetadata);
+        /// <summary>
+        /// Registers a single [ModuleMetadata] type — its registry entry, config schema metadata and one
+        /// keyed instance per matching <see cref="IntegrationSpec"/>.
+        /// </summary>
+        private static void RegisterModuleType(
+            IServiceCollection services,
+            Type type,
+            ModuleMetadataAttribute attr,
+            ILookup<Guid, IntegrationSpec> lookup,
+            IHostEnvironment hostEnvironment,
+            string modulesDataRoot,
+            IntegrationTypeRegistry typeRegistry)
+        {
+            var asm = type.Assembly;
+            var fullPath = asm.Location;
+            var baseDir = Path.GetDirectoryName(fullPath)!;
+            var asmVersion = asm.GetName().Version;
 
-                foreach (var integration in lookup[typeGuid])
+            var typeGuid = Guid.Parse(attr.ModuleGuid);
+
+            var capabilities = DiscoverCapabilities(type);
+            typeRegistry.Add(typeGuid, attr.Id, type, capabilities);
+
+            // Config schema metadata is the same for all instances of this type — extract once
+            // and register keyed by TypeGuid so the Manager UI can request it before any
+            // instance exists (e.g. when showing the "create integration" form).
+            var configMetadata = ModuleConfigMetadataExtractor.Extract(type);
+            services.AddKeyedSingleton(typeGuid, configMetadata);
+
+            foreach (var integration in lookup[typeGuid])
+            {
+                var publicId = integration.PublicId;
+                typeRegistry.AddInstance(typeGuid, publicId, type);
+                var dataDir = Path.Combine(modulesDataRoot, publicId.ToString());
+                var (config, reloader) = BuildModuleConfiguration(integration.ConfigJson);
+
+                var ctx = new ModuleContext
                 {
-                    var publicId = integration.PublicId;
-                    typeRegistry.AddInstance(typeGuid, publicId, type);
-                    var dataDir = Path.Combine(modulesDataRoot, publicId.ToString());
-                    var (config, reloader) = BuildModuleConfiguration(integration.ConfigJson);
+                    ModuleId = integration.Name,
+                    TypeGuid = typeGuid,
+                    PublicId = publicId,
+                    AssemblyPath = fullPath,
+                    BaseDirectory = baseDir,
+                    DataDirectory = dataDir,
+                    HostEnvironment = hostEnvironment,
+                    Configuration = config,
+                    ConfigSchemaVersion = integration.ConfigSchemaVersion,
+                    Version = asmVersion
+                };
 
-                    var ctx = new ModuleContext
-                    {
-                        ModuleId = integration.Name,
-                        TypeGuid = typeGuid,
-                        PublicId = publicId,
-                        AssemblyPath = fullPath,
-                        BaseDirectory = baseDir,
-                        DataDirectory = dataDir,
-                        HostEnvironment = hostEnvironment,
-                        Configuration = config,
-                        ConfigSchemaVersion = integration.ConfigSchemaVersion,
-                        Version = asmVersion
-                    };
+                // Keyed by PublicId string — one entry per instance, unique across the container.
+                services.AddKeyedSingleton(publicId.ToString(), ctx);
 
-                    // Keyed by PublicId string — one entry per instance, unique across the container.
-                    services.AddKeyedSingleton(publicId.ToString(), ctx);
+                // Reloader — host resolves this by PublicId and calls Reload(newJson) when
+                // ConfigJson is updated in the DB; IOptionsMonitor<T> fires automatically.
+                services.AddKeyedSingleton(publicId, reloader);
 
-                    // Reloader — host resolves this by PublicId and calls Reload(newJson) when
-                    // ConfigJson is updated in the DB; IOptionsMonitor<T> fires automatically.
-                    services.AddKeyedSingleton(publicId, reloader);
+                // Key the implementation type by PublicId so two instances of the same class
+                // remain independent singletons. A lightweight wrapper IServiceProvider makes the
+                // correct ModuleContext available for constructor injection without requiring it —
+                // plugin types that don't need ModuleContext are not constrained to declare it.
+                services.AddKeyedSingleton(type, publicId, (sp, _) =>
+                    ActivatorUtilities.CreateInstance(new ModuleServiceProvider(sp, ctx), type));
 
-                    // Key the implementation type by PublicId so two instances of the same class
-                    // remain independent singletons. A lightweight wrapper IServiceProvider makes the
-                    // correct ModuleContext available for constructor injection without requiring it —
-                    // plugin types that don't need ModuleContext are not constrained to declare it.
-                    services.AddKeyedSingleton(type, publicId, (sp, _) =>
-                        ActivatorUtilities.CreateInstance(new ModuleServiceProvider(sp, ctx), type));
+                if (typeof(IModuleInitialize).IsAssignableFrom(type))
+                    services.Add(ServiceDescriptor.Singleton(
+                        typeof(IModuleInitialize),
+                        sp => (IModuleInitialize)sp.GetRequiredKeyedService(type, publicId)));
 
-                    if (typeof(IModuleInitialize).IsAssignableFrom(type))
-                        services.Add(ServiceDescriptor.Singleton(
-                            typeof(IModuleInitialize),
-                            sp => (IModuleInitialize)sp.GetRequiredKeyedService(type, publicId)));
+                if (typeof(IModuleStart).IsAssignableFrom(type))
+                    services.Add(ServiceDescriptor.Singleton(
+                        typeof(IModuleStart),
+                        sp => (IModuleStart)sp.GetRequiredKeyedService(type, publicId)));
 
-                    if (typeof(IModuleStart).IsAssignableFrom(type))
-                        services.Add(ServiceDescriptor.Singleton(
-                            typeof(IModuleStart),
-                            sp => (IModuleStart)sp.GetRequiredKeyedService(type, publicId)));
+                if (typeof(IModuleStop).IsAssignableFrom(type))
+                    services.Add(ServiceDescriptor.Singleton(
+                        typeof(IModuleStop),
+                        sp => (IModuleStop)sp.GetRequiredKeyedService(type, publicId)));
 
-                    if (typeof(IModuleStop).IsAssignableFrom(type))
-                        services.Add(ServiceDescriptor.Singleton(
-                            typeof(IModuleStop),
-                            sp => (IModuleStop)sp.GetRequiredKeyedService(type, publicId)));
-
-                    // Auto-bind [ModuleOptions] declared on the integration type
-                    BindModuleOptions(services, type, config);
-                }
+                // Auto-bind [ModuleOptions] declared on the integration type
+                BindModuleOptions(services, type, config);
             }
         }
 

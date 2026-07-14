@@ -51,5 +51,31 @@ namespace Gizmo.Extensibility
         /// </summary>
         /// <seealso cref="Gizmo.Server.Extensibility.ICanProvideEmail"/>
         public static readonly Guid ProvideEmail = Guid.Parse("1E8A2E58-D0E4-41E2-A834-C4BC595DD04E");
+
+        /// <summary>
+        /// The integration can send SMS messages composed by the system.
+        /// </summary>
+        /// <seealso cref="Gizmo.SmsProviders.ISmsProvider"/>
+        public static readonly Guid SmsSend = Guid.Parse("D2F8A6C1-4E7B-4A93-B5D8-1C6E9F3A7B24");
+
+        /// <summary>
+        /// The integration can deliver a verification code via flash call.
+        /// The code is derived from the calling number and is returned by the provider.
+        /// </summary>
+        /// <seealso cref="Gizmo.SmsProviders.IFlashCallProvider"/>
+        public static readonly Guid FlashCall = Guid.Parse("6B3D9E47-8A2C-4F15-9D6B-4E8A1C5F2D73");
+
+        /// <summary>
+        /// The integration can send email messages composed by the system.
+        /// </summary>
+        /// <seealso cref="Gizmo.Server.Extensibility.IEmailSendHandler"/>
+        public static readonly Guid EmailSend = Guid.Parse("4A7C1E92-5B8D-4F36-A1C4-9E2B6D5F8A17");
+
+        /// <summary>
+        /// The integration can verify a user by an incoming call — the user calls a
+        /// provider-supplied phone number to prove possession of their phone.
+        /// </summary>
+        /// <seealso cref="Gizmo.Server.Extensibility.IWaitCallHandler"/>
+        public static readonly Guid WaitCall = Guid.Parse("8D5F3B29-6E4A-4C71-9B2D-5A8E1F6C4D93");
     }
 }

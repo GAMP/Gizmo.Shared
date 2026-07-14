@@ -77,6 +77,31 @@ namespace Gizmo.Extensibility
             return services;
         }
 
+        /// <summary>
+        /// Registers explicitly listed host-assembly types as integration modules. Must be called after
+        /// <see cref="AddModules"/>. See <see cref="ModuleLoader.LoadHostTypesIntoServices"/> for why the
+        /// containing assembly is not registered as a module assembly.
+        /// </summary>
+        public static IServiceCollection AddHostTypeModules(
+            this IServiceCollection services,
+            IReadOnlyList<Type> types,
+            IReadOnlyList<IntegrationSpec> integrations,
+            IHostEnvironment hostEnvironment,
+            string modulesDataRoot)
+        {
+            var typeRegistry = GetRegisteredSingleton<IntegrationTypeRegistry>(services);
+
+            ModuleLoader.LoadHostTypesIntoServices(
+                services,
+                types,
+                integrations,
+                hostEnvironment,
+                modulesDataRoot,
+                typeRegistry);
+
+            return services;
+        }
+
         private static T GetRegisteredSingleton<T>(IServiceCollection services) where T : class
         {
             foreach (var descriptor in services)
