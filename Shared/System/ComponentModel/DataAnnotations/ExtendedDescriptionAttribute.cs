@@ -8,7 +8,7 @@ namespace System.ComponentModel.DataAnnotations
     /// <remarks>
     /// This attribute allows addition of extended description metadata.
     /// </remarks>
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Class | AttributeTargets.Enum, AllowMultiple = false)]
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Class | AttributeTargets.Interface | AttributeTargets.Enum, AllowMultiple = false)]
     public sealed class ExtendedDescriptionAttribute : LocalizedAttribute
     {
         #region CONSTRUCTOR
