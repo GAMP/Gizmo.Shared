@@ -2065,6 +2065,12 @@
   <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_DESCRIPTION" xml:space="preserve">
     <value>Поиск по имени</value>
   </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_LAST_NAME" xml:space="preserve">
+    <value>Имя и фамилия</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_LAST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Поиск по имени и фамилии</value>
+  </data>
   <data name="USER_SEARCH_FIELD_TYPE_IDENTIFICATION_NUMBER" xml:space="preserve">
     <value>Идентификационный номер</value>
   </data>
@@ -2076,6 +2082,12 @@
   </data>
   <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_DESCRIPTION" xml:space="preserve">
     <value>Поиск по фамилии</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_FIRST_NAME" xml:space="preserve">
+    <value>Фамилия и имя</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_FIRST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Поиск по фамилии и имени</value>
   </data>
   <data name="USER_SEARCH_FIELD_TYPE_MOBILE_PHONE" xml:space="preserve">
     <value>Мобильный телефон</value>

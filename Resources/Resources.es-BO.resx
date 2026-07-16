@@ -1784,11 +1784,23 @@
   <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_DESCRIPTION" xml:space="preserve">
     <value>Buscar por nombre</value>
   </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_LAST_NAME" xml:space="preserve">
+    <value>Nombre y apellido</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_LAST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Buscar por nombre y apellido</value>
+  </data>
   <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME" xml:space="preserve">
     <value>Apellido</value>
   </data>
   <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_DESCRIPTION" xml:space="preserve">
     <value>Buscar por apellido</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_FIRST_NAME" xml:space="preserve">
+    <value>Apellido y nombre</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_FIRST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Buscar por apellido y nombre</value>
   </data>
   <data name="USER_SEARCH_FIELD_TYPE_ATTRIBUTES" xml:space="preserve">
     <value>Atributos</value>

@@ -693,6 +693,12 @@
   <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_DESCRIPTION" xml:space="preserve">
     <value>Søg efter fornavn</value>
   </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_LAST_NAME" xml:space="preserve">
+    <value>Fornavn og efternavn</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_LAST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Søg efter fornavn og efternavn</value>
+  </data>
   <data name="USER_SEARCH_FIELD_TYPE_IDENTIFICATION_NUMBER" xml:space="preserve">
     <value>Identifikationsnummer</value>
   </data>
@@ -704,6 +710,12 @@
   </data>
   <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_DESCRIPTION" xml:space="preserve">
     <value>Søg efter efternavn</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_FIRST_NAME" xml:space="preserve">
+    <value>Efternavn og fornavn</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_FIRST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Søg efter efternavn og fornavn</value>
   </data>
   <data name="USER_SEARCH_FIELD_TYPE_MOBILE_PHONE" xml:space="preserve">
     <value>Mobiltelefon</value>

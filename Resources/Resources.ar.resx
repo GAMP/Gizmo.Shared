@@ -2065,6 +2065,12 @@
   <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_DESCRIPTION" xml:space="preserve">
     <value>البحث بالاسم الأول</value>
   </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_LAST_NAME" xml:space="preserve">
+    <value>الاسم الأول واسم العائلة</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_LAST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>البحث بالاسم الأول متبوعًا باسم العائلة</value>
+  </data>
   <data name="USER_SEARCH_FIELD_TYPE_IDENTIFICATION_NUMBER" xml:space="preserve">
     <value>رقم الهوية</value>
   </data>
@@ -2076,6 +2082,12 @@
   </data>
   <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_DESCRIPTION" xml:space="preserve">
     <value>البحث باسم العائلة</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_FIRST_NAME" xml:space="preserve">
+    <value>اسم العائلة والاسم الأول</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_FIRST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>البحث باسم العائلة متبوعًا بالاسم الأول</value>
   </data>
   <data name="USER_SEARCH_FIELD_TYPE_MOBILE_PHONE" xml:space="preserve">
     <value>الهاتف المحمول</value>

@@ -2051,6 +2051,12 @@
   <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_DESCRIPTION" xml:space="preserve">
     <value>Ada göre ara</value>
   </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_LAST_NAME" xml:space="preserve">
+    <value>Ad ve soyad</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_LAST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Ad ve soyada göre ara</value>
+  </data>
   <data name="USER_SEARCH_FIELD_TYPE_IDENTIFICATION_NUMBER" xml:space="preserve">
     <value>Kimlik numarası</value>
   </data>
@@ -2062,6 +2068,12 @@
   </data>
   <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_DESCRIPTION" xml:space="preserve">
     <value>Soyada göre ara</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_FIRST_NAME" xml:space="preserve">
+    <value>Soyad ve ad</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_FIRST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Soyad ve ada göre ara</value>
   </data>
   <data name="USER_SEARCH_FIELD_TYPE_MOBILE_PHONE" xml:space="preserve">
     <value>Cep telefonu</value>

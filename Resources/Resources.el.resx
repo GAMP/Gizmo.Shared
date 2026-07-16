@@ -1800,13 +1800,25 @@
     <value>Όνομα</value> 
   </data> 
   <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_DESCRIPTION" xml:space="preserve"> 
-    <value>Αναζήτηση κατά όνομα</value> 
+    <value>Αναζήτηση κατά όνομα</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_LAST_NAME" xml:space="preserve">
+    <value>Όνομα και επώνυμο</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_LAST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Αναζήτηση κατά όνομα και επώνυμο</value>
   </data> 
   <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME" xml:space="preserve"> 
     <value>Επώνυμο</value> 
   </data> 
   <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_DESCRIPTION" xml:space="preserve"> 
-    <value>Αναζήτηση κατά επώνυμο</value> 
+    <value>Αναζήτηση κατά επώνυμο</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_FIRST_NAME" xml:space="preserve">
+    <value>Επώνυμο και όνομα</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_FIRST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Αναζήτηση κατά επώνυμο και όνομα</value>
   </data> 
   <data name="USER_SEARCH_FIELD_TYPE_ATTRIBUTES" xml:space="preserve"> 
     <value>Χαρακτηριστικά</value> 

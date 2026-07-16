@@ -1787,14 +1787,26 @@
   <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME" xml:space="preserve"> 
     <value>Nome</value> 
   </data> 
-  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_DESCRIPTION" xml:space="preserve"> 
-    <value>Pesquisar pelo nome</value> 
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Pesquisar pelo nome</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_LAST_NAME" xml:space="preserve">
+    <value>Nome e sobrenome</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_LAST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Pesquisar pelo nome e sobrenome</value>
   </data> 
   <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME" xml:space="preserve"> 
     <value>Sobrenome</value> 
   </data> 
-  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_DESCRIPTION" xml:space="preserve"> 
-    <value>Pesquisar pelo sobrenome</value> 
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Pesquisar pelo sobrenome</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_FIRST_NAME" xml:space="preserve">
+    <value>Sobrenome e nome</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_FIRST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Pesquisar pelo sobrenome e nome</value>
   </data> 
   <data name="USER_SEARCH_FIELD_TYPE_ATTRIBUTES" xml:space="preserve"> 
     <value>Atributos</value> 

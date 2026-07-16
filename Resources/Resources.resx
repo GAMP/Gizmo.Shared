@@ -1803,11 +1803,23 @@
   <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_DESCRIPTION" xml:space="preserve">
     <value>Search by first name</value>
   </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_LAST_NAME" xml:space="preserve">
+    <value>First and last name</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_FIRST_NAME_LAST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Search by first name followed by last name</value>
+  </data>
   <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME" xml:space="preserve">
     <value>Last name</value>
   </data>
   <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_DESCRIPTION" xml:space="preserve">
     <value>Search by last name</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_FIRST_NAME" xml:space="preserve">
+    <value>Last and first name</value>
+  </data>
+  <data name="USER_SEARCH_FIELD_TYPE_LAST_NAME_FIRST_NAME_DESCRIPTION" xml:space="preserve">
+    <value>Search by last name followed by first name</value>
   </data>
   <data name="USER_SEARCH_FIELD_TYPE_ATTRIBUTES" xml:space="preserve">
     <value>Attributes</value>
