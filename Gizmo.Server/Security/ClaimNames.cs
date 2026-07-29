@@ -12,5 +12,7 @@
         public const string BranchId = "branchId";
         public const string RegisterId = "registerId";
         public const string StockId = "stockId";
+        public const string DeviceRoleName = "device";
+        public const string DeviceAppKind = "deviceAppKind";
     }
 }
