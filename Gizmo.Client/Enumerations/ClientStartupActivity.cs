@@ -61,5 +61,14 @@
         /// </remarks>
         [Localized("EN_SMA_CONNECTION_ESTABLISHED")]
         ConnectionEstablished = 8,
+        /// <summary>
+        /// Waiting for connection settings.
+        /// </summary>
+        /// <remarks>
+        /// This is the state when no server configuration is present and the client is waiting to
+        /// be discovered by / receive its connection settings from a server.
+        /// </remarks>
+        [Localized("EN_SMA_WAITING_CONNECTION_SETTINGS")]
+        WaitingForConnectionSettings = 9,
     }
 }
