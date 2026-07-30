@@ -53,5 +53,13 @@
         /// </summary>
         [Localized("EN_SMA_PROCESSING_DRIVE_MAPPINGS")]
         MappingDrives = 7,
+        /// <summary>
+        /// Server connection established.
+        /// </summary>
+        /// <remarks>
+        /// This is the state when the client has established the connection to the server.
+        /// </remarks>
+        [Localized("EN_SMA_CONNECTION_ESTABLISHED")]
+        ConnectionEstablished = 8,
     }
 }
