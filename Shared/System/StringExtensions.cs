@@ -82,6 +82,40 @@ namespace System
         }
 
         /// <summary>
+        /// Determines whether the source string contains the specified search pattern,
+        /// ignoring case and diacritics.
+        /// </summary>
+        /// <param name="source">Source string to search in.</param>
+        /// <param name="pattern">Search pattern.</param>
+        /// <returns>
+        /// True if <paramref name="pattern"/> is null or empty, or if it occurs in
+        /// <paramref name="source"/>; otherwise false.
+        /// </returns>
+        /// <remarks>
+        /// Intended for user facing search boxes and list filters. Unlike
+        /// <see cref="StringComparison.InvariantCultureIgnoreCase"/>, which ignores case but not
+        /// accents, this also applies <see cref="Globalization.CompareOptions.IgnoreNonSpace"/> so
+        /// that "Agua" matches "Água" and vice versa. Users commonly omit accents when typing.
+        /// This additionally makes matching insensitive to Unicode normalization form, so names
+        /// stored decomposed (NFD) are found by patterns typed in composed (NFC) form.
+        /// Matching remains a contiguous substring search; it does not reorder or split words.
+        /// Requires ICU data to be available at runtime.
+        /// </remarks>
+        public static bool ContainsSearch(this string? source, string? pattern)
+        {
+            if (string.IsNullOrEmpty(pattern))
+                return true;
+
+            if (string.IsNullOrEmpty(source))
+                return false;
+
+            return Globalization.CultureInfo.InvariantCulture.CompareInfo.IndexOf(
+                source,
+                pattern,
+                Globalization.CompareOptions.IgnoreCase | Globalization.CompareOptions.IgnoreNonSpace) >= 0;
+        }
+
+        /// <summary>
         /// Formats string with named parameters.
         /// </summary>
         /// <param name="str">String.</param>
