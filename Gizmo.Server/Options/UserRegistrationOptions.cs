@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using Microsoft.Extensions.Options;
 
@@ -23,11 +24,19 @@ namespace Gizmo.Server.Options
         [MessagePack.Key(1)]
         public bool IsPortalEnabled { get; init; }
 
+        [Obsolete("The concrete verification method is configured on the verification methods page.")]
         [Name("Verification method")]
         [ExtendedDescription("Specifies user verification method")]
         [StoreOptionKey("VERIFICATION_METHOD")]
         [MessagePack.Key(2)]
         [DefaultValue(RegistrationVerificationMethod.None)]
         public RegistrationVerificationMethod VerificationMethod { get; init; }
+
+        [Name("Direct registration enabled")]
+        [ExtendedDescription("Specifies if direct user registration is enabled")]
+        [StoreOptionKey("DIRECT_ENABLED")]
+        [MessagePack.Key(3)]
+        [DefaultValue(false)]
+        public bool IsDirectEnabled { get; init; }
     }
 }
