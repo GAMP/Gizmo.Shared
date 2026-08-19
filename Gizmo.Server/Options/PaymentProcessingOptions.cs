@@ -34,13 +34,8 @@ namespace Gizmo.Server.Options
             get; set;
         }
 
-        [Name("Credit card use terminal", "SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_NAME")]
-        [ExtendedDescription("Specifies that terminal should be used when paying with credit card", "SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_DESCRIPTION")]
-        [StoreOptionKey("CREDIT_CARD_USE_TERMINAL")]
-        [MessagePack.Key(2)]
-        public bool CreditCardUseTerminal
-        {
-           get; set;
-        } = false;
+        // NOTE: MessagePack key 2 is retired - it belonged to the removed CreditCardUseTerminal option.
+        // Payment terminal availability is now a per register fact, derived from a non null
+        // Register.PaymentTerminalNumber, so do not reuse key 2 for an unrelated option.
     }
 }

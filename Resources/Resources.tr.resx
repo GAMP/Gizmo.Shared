@@ -610,12 +610,6 @@
   <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_NAME" xml:space="preserve"> 
     <value>Kalan süre bildirim mesajı</value> 
   </data> 
-  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_DESCRIPTION" xml:space="preserve"> 
-    <value>Kredi kartı ile ödeme yaparken terminal kullanılması gerektiğini belirtir</value> 
-  </data> 
-  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_NAME" xml:space="preserve"> 
-    <value>Kredi kartı terminal kullanımı</value> 
-  </data> 
   <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve"> 
     <value>Rezervasyon süresi bildirim mesajını belirtir</value> 
   </data> 

@@ -389,8 +389,6 @@
   <data name="SERVER_OPTION_AGE_RESTRICTIONS_REQUIRE_AGE_NAME" xml:space="preserve"><value>Håndhæv alle begrænsninger for brugere med ukendt alder</value></data>
   <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve"><value>Angiver meddelelse om resterende tid</value></data>
   <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_NAME" xml:space="preserve"><value>Meddelelse om resterende tid</value></data>
-  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_DESCRIPTION" xml:space="preserve"><value>Angiver at terminal skal bruges ved betaling med kreditkort</value></data>
-  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_NAME" xml:space="preserve"><value>Kreditkort brug terminal</value></data>
   <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve"><value>Angiver meddelelse om reservationstid</value></data>
   <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_NAME" xml:space="preserve"><value>Meddelelse om reservationstid</value></data>
   <data name="SERVER_OPTION_TAX_DEPOSITS_TAX_SYSTEM_DESCRIPTION" xml:space="preserve"><value>Angiver depositumsskattesystem</value></data>

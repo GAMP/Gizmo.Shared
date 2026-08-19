@@ -610,12 +610,6 @@
   <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_NAME" xml:space="preserve"> 
     <value>رسالة إشعار الوقت المتبقي</value> 
   </data> 
-  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_DESCRIPTION" xml:space="preserve"> 
-    <value>يحدد استخدام الطرفية عند الدفع ببطاقة الائتمان</value> 
-  </data> 
-  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_NAME" xml:space="preserve"> 
-    <value>استخدام طرفية بطاقة الائتمان</value> 
-  </data> 
   <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve"> 
     <value>يحدد رسالة إشعار وقت الحجز</value> 
   </data> 

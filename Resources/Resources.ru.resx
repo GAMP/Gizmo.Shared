@@ -610,12 +610,6 @@
   <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_NAME" xml:space="preserve"> 
     <value>Сообщение об оставшемся времени</value> 
   </data> 
-  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_DESCRIPTION" xml:space="preserve"> 
-    <value>Указывает, что при оплате банковской картой следует использовать терминал.</value> 
-  </data> 
-  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_NAME" xml:space="preserve"> 
-    <value>Терминал для использования банковских карт</value> 
-  </data> 
   <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve"> 
     <value>Указывает сообщение с уведомлением о времени бронирования</value> 
   </data> 

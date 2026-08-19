@@ -610,12 +610,6 @@
   <data name="SERVER_OPTION_CLIENT_NOTIFICATION_OPTIONS_NAME" xml:space="preserve"> 
     <value>Μήνυμα ειδοποίησης για τον υπολειπόμενο χρόνο</value> 
   </data> 
-  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_DESCRIPTION" xml:space="preserve"> 
-    <value>Καθορίζει ότι πρέπει να χρησιμοποιείται τερματικό κατά την πληρωμή με πιστωτική κάρτα.</value> 
-  </data> 
-  <data name="SERVER_OPTION_PAYMENT_PROCESSING_CREDIT_CARD_USE_TERMINAL_NAME" xml:space="preserve"> 
-    <value>Η πιστωτική κάρτα χρησιμοποιεί τερματικό</value> 
-  </data> 
   <data name="SERVER_OPTION_RESERVATION_NOTIFICATION_OPTIONS_DESCRIPTION" xml:space="preserve"> 
     <value>Καθορίζει το μήνυμα ειδοποίησης για την ώρα της κράτησης</value> 
   </data> 
