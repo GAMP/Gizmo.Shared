@@ -2155,4 +2155,10 @@
   <data name="VAT_RATES_RUSSIA_VAT7_DESCRIPTION" xml:space="preserve">
     <value>Ставка НДС 7%</value>
   </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_CONFIRMATION_MESSAGE_DESCRIPTION" xml:space="preserve">
+    <value>Сообщение, отправляемое с кодом подтверждения. Используйте токен {0}, чтобы включить код.</value>
+  </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
+    <value>Текст сообщения с кодом подтверждения</value>
+  </data>
 </root>

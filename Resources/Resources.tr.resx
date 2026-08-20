@@ -2189,4 +2189,10 @@
   <data name="USER_ROLE_NONE_DESCRIPTION" xml:space="preserve">
     <value>Rol atanmamış</value>
   </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_CONFIRMATION_MESSAGE_DESCRIPTION" xml:space="preserve">
+    <value>Doğrulama koduyla birlikte gönderilen mesaj. Kodu eklemek için {0} belirtecini kullanın.</value>
+  </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
+    <value>Onay kodu mesajı</value>
+  </data>
 </root>
