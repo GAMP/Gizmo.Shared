@@ -1840,4 +1840,10 @@
   <data name="SERVER_OPTION_SMS_GATEWAY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
     <value>Μήνυμα κωδικού επιβεβαίωσης</value>
   </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_DESCRIPTION" xml:space="preserve">
+    <value>Μήνυμα που αποστέλλεται με τον κωδικό επαλήθευσης για ανάκτηση κωδικού πρόσβασης. Χρησιμοποιήστε το token {0} για να συμπεριλάβετε τον κωδικό.</value>
+  </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
+    <value>Μήνυμα κωδικού επιβεβαίωσης για ανάκτηση κωδικού πρόσβασης</value>
+  </data>
 </root>

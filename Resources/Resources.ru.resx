@@ -2161,4 +2161,10 @@
   <data name="SERVER_OPTION_SMS_GATEWAY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
     <value>Текст сообщения с кодом подтверждения</value>
   </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_DESCRIPTION" xml:space="preserve">
+    <value>Сообщение, отправляемое с кодом подтверждения при восстановлении пароля. Используйте токен {0}, чтобы включить код.</value>
+  </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
+    <value>Текст сообщения с кодом подтверждения для восстановления пароля</value>
+  </data>
 </root>

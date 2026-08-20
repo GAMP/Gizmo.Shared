@@ -35,5 +35,15 @@ namespace Gizmo.Server.Options
         {
             get; set;
         }
+
+        [Name("Recovery confirmation code message", "SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_NAME")]
+        [ExtendedDescription("Message sent with the verification code for password recovery. Use the {0} token to include the code.", "SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_DESCRIPTION")]
+        [StoreOptionKey("RECOVERY_CONFIRMATION_MESSAGE")]
+        [DefaultValue("Hi! Your mobile phone verification code is {0}.")]
+        [MessagePack.Key(3)]
+        public string? RecoveryConfirmationCodeMessage
+        {
+            get; set;
+        }
     }
 }

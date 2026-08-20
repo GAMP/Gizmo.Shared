@@ -1820,4 +1820,10 @@
   <data name="SERVER_OPTION_SMS_GATEWAY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
     <value>Mensaje del código de confirmación</value>
   </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_DESCRIPTION" xml:space="preserve">
+    <value>Mensaje enviado con el código de verificación para la recuperación de contraseña. Use el token {0} para incluir el código.</value>
+  </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
+    <value>Mensaje del código de confirmación de recuperación de contraseña</value>
+  </data>
 </root>
