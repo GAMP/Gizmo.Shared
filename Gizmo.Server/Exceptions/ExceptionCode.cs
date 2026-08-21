@@ -183,5 +183,10 @@ namespace Gizmo.Server.Exceptions
         /// Payment reversal exception.
         /// </summary>
         PaymentReversal = 33,
+
+        /// <summary>
+        /// Non-fiscal receipt exception.
+        /// </summary>
+        NonFiscalReceipt = 34,
     }
 }
