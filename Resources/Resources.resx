@@ -1833,4 +1833,16 @@
   <data name="USER_SEARCH_FIELD_TYPE_USER_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Search by user group</value>
   </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_CONFIRMATION_MESSAGE_DESCRIPTION" xml:space="preserve">
+    <value>Message sent with the verification code. Use the {0} token to include the code.</value>
+  </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
+    <value>Confirmation code message</value>
+  </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_DESCRIPTION" xml:space="preserve">
+    <value>Message sent with the verification code for password recovery. Use the {0} token to include the code.</value>
+  </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
+    <value>Recovery confirmation code message</value>
+  </data>
 </root>

@@ -2155,4 +2155,16 @@
   <data name="VAT_RATES_RUSSIA_VAT7_DESCRIPTION" xml:space="preserve">
     <value>معدل ضريبة القيمة المضافة 7%</value>
   </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_CONFIRMATION_MESSAGE_DESCRIPTION" xml:space="preserve">
+    <value>الرسالة المُرسلة مع رمز التحقق. استخدم الرمز {0} لتضمين الرمز.</value>
+  </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
+    <value>رسالة رمز التأكيد</value>
+  </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_DESCRIPTION" xml:space="preserve">
+    <value>الرسالة المُرسلة مع رمز التحقق لاستعادة كلمة المرور. استخدم الرمز {0} لتضمين الرمز.</value>
+  </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
+    <value>رسالة رمز تأكيد استعادة كلمة المرور</value>
+  </data>
 </root>

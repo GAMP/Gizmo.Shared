@@ -739,4 +739,16 @@
   <data name="USER_SEARCH_FIELD_TYPE_USER_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Søg efter brugergruppe</value>
   </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_CONFIRMATION_MESSAGE_DESCRIPTION" xml:space="preserve">
+    <value>Vahvistuskoodin mukana lähetettävä viesti. Käytä tunnusta {0} sisällyttääksesi koodin.</value>
+  </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
+    <value>Vahvistuskoodiviesti</value>
+  </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_DESCRIPTION" xml:space="preserve">
+    <value>Salasanan palautuksen vahvistuskoodin mukana lähetettävä viesti. Käytä tunnusta {0} sisällyttääksesi koodin.</value>
+  </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
+    <value>Salasanan palautuksen vahvistuskoodiviesti</value>
+  </data>
 </root>

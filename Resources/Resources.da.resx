@@ -739,4 +739,16 @@
   <data name="USER_SEARCH_FIELD_TYPE_USER_GROUP_DESCRIPTION" xml:space="preserve">
     <value>Søg efter brugergruppe</value>
   </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_CONFIRMATION_MESSAGE_DESCRIPTION" xml:space="preserve">
+    <value>Besked, der sendes med bekræftelseskoden. Brug tokenet {0} for at inkludere koden.</value>
+  </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
+    <value>Besked med bekræftelseskode</value>
+  </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_DESCRIPTION" xml:space="preserve">
+    <value>Besked, der sendes med bekræftelseskoden ved nulstilling af adgangskode. Brug tokenet {0} for at inkludere koden.</value>
+  </data>
+  <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
+    <value>Besked med bekræftelseskode til nulstilling af adgangskode</value>
+  </data>
 </root>
