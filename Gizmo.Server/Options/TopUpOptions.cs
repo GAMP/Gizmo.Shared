@@ -27,7 +27,7 @@ namespace Gizmo.Server.Options
         [ExtendedDescription("Specifies top up maximum value", "SERVER_OPTION_TOP_UP_MAXIMUM_VALUE_DESCRIPTION")]
         [StoreOptionKey("MAXIMUM_VALUE")]
         [DefaultValue(null)]
-        [MessagePack.Key(3)]
-        public decimal? MaximumValue { get;init; }
+        [MessagePack.Key(2)]
+        public decimal? MaximumValue { get; init; }
     }
 }
