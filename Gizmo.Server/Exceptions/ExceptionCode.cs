@@ -188,5 +188,10 @@ namespace Gizmo.Server.Exceptions
         /// Non-fiscal receipt exception.
         /// </summary>
         NonFiscalReceipt = 34,
+
+        /// <summary>
+        /// Achievement reward exception.
+        /// </summary>
+        AchievementReward = 35,
     }
 }
