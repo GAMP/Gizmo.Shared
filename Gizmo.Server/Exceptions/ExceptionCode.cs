@@ -193,5 +193,10 @@ namespace Gizmo.Server.Exceptions
         /// Achievement reward exception.
         /// </summary>
         AchievementReward = 35,
+
+        /// <summary>
+        /// Achievement exception.
+        /// </summary>
+        Achievement = 36,
     }
 }
