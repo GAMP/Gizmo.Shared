@@ -1,0 +1,32 @@
+# Thin caller for the committed reusable Gizmo.Infra NuGet release-publish
+# workflow. It publishes the stable package and creates or reconciles the
+# package-qualified immutable release tag.
+#
+# LOCAL PREPARATION ONLY — remote setup is still required before this caller may
+# publish or tag anything, so it is manual-dispatch only and must not be run yet:
+#   - Branch protection or a ruleset must mark the publishing branch protected
+#     so github.ref_protected is true for the caller run.
+#   - NuGet.org Trusted Publishing must trust this caller repository and the
+#     Gizmo.Infra package-release.yml workflow identity at the pinned commit.
+#   - The repository variable NUGET_USER must hold the NuGet.org profile name
+#     (a public profile identifier, never a secret).
+# The reusable workflow reference is pinned to an immutable full commit SHA;
+# never replace it with a branch, tag, abbreviated SHA, or expression.
+name: Package Release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  publish:
+    name: Build, publish, and tag release package
+    uses: GAMP/Gizmo.Infra/.github/workflows/package-release.yml@ef71c813ae37e118f48763dd60a9fc2ff6a5b115
+    with:
+      project-path: Gizmo.Shared.csproj
+      package-id: Gizmo.Shared
+      package-visibility: public
+      nuget-user: ${{ vars.NUGET_USER }}
