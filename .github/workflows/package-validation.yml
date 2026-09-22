@@ -18,7 +18,7 @@ permissions:
 jobs:
   validate:
     name: Validate package
-    uses: GAMP/Gizmo.Infra/.github/workflows/package-validation.yml@f775f66a452fc8179f43855d1d3d853a0b7dd9e9
+    uses: GAMP/Gizmo.Infra/.github/workflows/package-validation.yml@6bf1e1cda4c3ccdd88ceef53cb48b657844c3878
     with:
       project-path: Gizmo.Shared.csproj
       package-id: Gizmo.Shared
