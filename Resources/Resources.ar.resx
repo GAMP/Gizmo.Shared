@@ -1927,6 +1927,12 @@
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve">
     <value>يحدد وقت فترة السماح لتسجيل خروج المستخدم</value>
   </data>
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_NAME" xml:space="preserve">
+    <value>أولوية حقول بحث المستخدم</value>
+  </data>
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_DESCRIPTION" xml:space="preserve">
+    <value>ترتيب أولوية حقول بحث المستخدم، مع عرض أفضل تطابق أولاً</value>
+  </data>
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_NAME" xml:space="preserve">
     <value>وقت السماح</value>
   </data>

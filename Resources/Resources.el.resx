@@ -1460,6 +1460,12 @@
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve"> 
     <value>Καθορίζει τον χρόνο περιόδου χάριτος αποσύνδεσης χρήστη</value> 
   </data> 
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_NAME" xml:space="preserve"> 
+    <value>Προτεραιότητα πεδίων αναζήτησης χρήστη</value> 
+  </data> 
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_DESCRIPTION" xml:space="preserve"> 
+    <value>Η σειρά κατάταξης των πεδίων αναζήτησης χρήστη, με πρώτη την καλύτερη αντιστοίχιση</value> 
+  </data> 
   <data name="LINE_TYPE_PRODUCT" xml:space="preserve"> 
     <value>Προϊόν</value> 
   </data> 

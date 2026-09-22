@@ -1455,6 +1455,12 @@
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve">
     <value>Specifies user logout grace period time</value>
   </data>
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_NAME" xml:space="preserve">
+    <value>User search field priority</value>
+  </data>
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_DESCRIPTION" xml:space="preserve">
+    <value>Order the user search fields rank in, best match first</value>
+  </data>
   <data name="LINE_TYPE_PRODUCT" xml:space="preserve">
     <value>Product</value>
   </data>

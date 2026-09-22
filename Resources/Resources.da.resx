@@ -489,6 +489,8 @@
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_ENABLED_DESCRIPTION" xml:space="preserve"><value>Angiver om brugerlogout-karensperioden er aktiveret</value></data>
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_NAME" xml:space="preserve"><value>Karenstid</value></data>
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve"><value>Angiver brugerlogout-karensperiodestid</value></data>
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_NAME" xml:space="preserve"><value>Prioritet for brugersøgefelter</value></data>
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_DESCRIPTION" xml:space="preserve"><value>Rækkefølgen som brugersøgefelterne rangeres i, bedste match først</value></data>
   <data name="LINE_TYPE_PRODUCT" xml:space="preserve"><value>Produkt</value></data>
   <data name="LINE_TYPE_TIME_PRODUCT" xml:space="preserve"><value>Tidsprodukt</value></data>
   <data name="LINE_TYPE_FIXED_TIME" xml:space="preserve"><value>Fast tid</value></data>

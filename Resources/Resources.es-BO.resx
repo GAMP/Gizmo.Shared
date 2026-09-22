@@ -1436,6 +1436,12 @@
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve">
     <value>Especifica el tiempo del período de gracia de cierre de sesión</value>
   </data>
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_NAME" xml:space="preserve">
+    <value>Prioridad de los campos de búsqueda de usuarios</value>
+  </data>
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_DESCRIPTION" xml:space="preserve">
+    <value>Orden en que se clasifican los campos de búsqueda de usuarios, primero la mejor coincidencia</value>
+  </data>
   <data name="LINE_TYPE_PRODUCT" xml:space="preserve">
     <value>Producto</value>
   </data>

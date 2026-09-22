@@ -1913,6 +1913,12 @@
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve">
     <value>Kullanıcı çıkış tolerans süresini belirtir</value>
   </data>
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_NAME" xml:space="preserve">
+    <value>Kullanıcı arama alanı önceliği</value>
+  </data>
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_DESCRIPTION" xml:space="preserve">
+    <value>Kullanıcı arama alanlarının sıralama önceliği, en iyi eşleşme önce</value>
+  </data>
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_NAME" xml:space="preserve">
     <value>Tolerans süresi</value>
   </data>
