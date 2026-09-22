@@ -23,7 +23,7 @@ permissions:
 jobs:
   publish:
     name: Build and publish development package
-    uses: GAMP/Gizmo.Infra/.github/workflows/package-development.yml@6bf1e1cda4c3ccdd88ceef53cb48b657844c3878
+    uses: GAMP/Gizmo.Infra/.github/workflows/package-development.yml@a74259cc14f568abd030b3bd2f54ef5f9667c12e
     with:
       project-path: Gizmo.Shared.csproj
       package-id: Gizmo.Shared

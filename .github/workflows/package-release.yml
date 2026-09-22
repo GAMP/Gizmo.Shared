@@ -24,7 +24,7 @@ permissions:
 jobs:
   publish:
     name: Build, publish, and tag release package
-    uses: GAMP/Gizmo.Infra/.github/workflows/package-release.yml@6bf1e1cda4c3ccdd88ceef53cb48b657844c3878
+    uses: GAMP/Gizmo.Infra/.github/workflows/package-release.yml@a74259cc14f568abd030b3bd2f54ef5f9667c12e
     with:
       project-path: Gizmo.Shared.csproj
       package-id: Gizmo.Shared
