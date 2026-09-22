@@ -74,24 +74,24 @@ namespace Gizmo.Server.Options
         [MessagePack.Key(9)]
         public Guid? AssistanceRequestedSound { get; init; }
 
-        [Name("Terminal disconnected sound enabled", nameof(Resources.SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_ENABLED_NAME))]
+        [Name("Host disconnected sound enabled", nameof(Resources.SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_ENABLED_NAME))]
         [StoreOptionKey("HOST_DISCONNECTED_SOUND_ENABLED")]
         [DefaultValue(true)]
         [MessagePack.Key(10)]
         public bool HostDisconnectedSoundEnabled { get; init; }
 
-        [Name("Terminal disconnected sound", nameof(Resources.SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME))]
+        [Name("Host disconnected sound", nameof(Resources.SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME))]
         [StoreOptionKey("HOST_DISCONNECTED_SOUND")]
         [MessagePack.Key(11)]
         public Guid? HostDisconnectedSound { get; init; }
 
-        [Name("Terminal reconnected sound enabled", nameof(Resources.SERVER_OPTION_ACTION_CENTER_HOST_RECONNECTED_SOUND_ENABLED_NAME))]
+        [Name("Host reconnected sound enabled", nameof(Resources.SERVER_OPTION_ACTION_CENTER_HOST_RECONNECTED_SOUND_ENABLED_NAME))]
         [StoreOptionKey("HOST_RECONNECTED_SOUND_ENABLED")]
         [DefaultValue(true)]
         [MessagePack.Key(12)]
         public bool HostReconnectedSoundEnabled { get; init; }
 
-        [Name("Terminal reconnected sound", nameof(Resources.SERVER_OPTION_ACTION_CENTER_HOST_RECONNECTED_SOUND_NAME))]
+        [Name("Host reconnected sound", nameof(Resources.SERVER_OPTION_ACTION_CENTER_HOST_RECONNECTED_SOUND_NAME))]
         [StoreOptionKey("HOST_RECONNECTED_SOUND")]
         [MessagePack.Key(13)]
         public Guid? HostReconnectedSound { get; init; }
@@ -107,13 +107,13 @@ namespace Gizmo.Server.Options
         [MessagePack.Key(15)]
         public Guid? UserLoggedInSound { get; init; }
 
-        [Name("Terminal security disabled sound enabled", nameof(Resources.SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME))]
+        [Name("Host security disabled sound enabled", nameof(Resources.SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME))]
         [StoreOptionKey("HOST_SECURITY_DISABLED_SOUND_ENABLED")]
         [DefaultValue(true)]
         [MessagePack.Key(16)]
         public bool HostSecurityDisabledSoundEnabled { get; init; }
 
-        [Name("Terminal security disabled sound", nameof(Resources.SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME))]
+        [Name("Host security disabled sound", nameof(Resources.SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME))]
         [StoreOptionKey("HOST_SECURITY_DISABLED_SOUND")]
         [MessagePack.Key(17)]
         public Guid? HostSecurityDisabledSound { get; init; }

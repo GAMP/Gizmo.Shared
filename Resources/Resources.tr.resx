@@ -2208,57 +2208,57 @@
     <value>Şifre kurtarma onay kodu mesajı</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Logout sound enabled</value>
+    <value>Çıkış sesi etkin</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_NAME" xml:space="preserve">
-    <value>Logout sound</value>
+    <value>Çıkış sesi</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Logout with outstanding balance sound enabled</value>
+    <value>Bekleyen bakiye ile çıkış sesi etkin</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_NAME" xml:space="preserve">
-    <value>Logout with outstanding balance sound</value>
+    <value>Bekleyen bakiye ile çıkış sesi</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Console session ended sound enabled</value>
+    <value>Konsol oturumu sona erdi sesi etkin</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_NAME" xml:space="preserve">
-    <value>Console session ended sound</value>
+    <value>Konsol oturumu sona erdi sesi</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Order received sound enabled</value>
+    <value>Sipariş alındı sesi etkin</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_NAME" xml:space="preserve">
-    <value>Order received sound</value>
+    <value>Sipariş alındı sesi</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Assistance requested sound enabled</value>
+    <value>Yardım istendi sesi etkin</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_NAME" xml:space="preserve">
-    <value>Assistance requested sound</value>
+    <value>Yardım istendi sesi</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Terminal disconnected sound enabled</value>
+    <value>Bilgisayar bağlantısı kesildi sesi etkin</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME" xml:space="preserve">
-    <value>Terminal disconnected sound</value>
+    <value>Bilgisayar bağlantısı kesildi sesi</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_RECONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Terminal reconnected sound enabled</value>
+    <value>Bilgisayar yeniden bağlandı sesi etkin</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_RECONNECTED_SOUND_NAME" xml:space="preserve">
-    <value>Terminal reconnected sound</value>
+    <value>Bilgisayar yeniden bağlandı sesi</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>User logged in sound enabled</value>
+    <value>Kullanıcı giriş yaptı sesi etkin</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_NAME" xml:space="preserve">
-    <value>User logged in sound</value>
+    <value>Kullanıcı giriş yaptı sesi</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Terminal security disabled sound enabled</value>
+    <value>Bilgisayar güvenliği devre dışı sesi etkin</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME" xml:space="preserve">
-    <value>Terminal security disabled sound</value>
+    <value>Bilgisayar güvenliği devre dışı sesi</value>
   </data>
 </root>

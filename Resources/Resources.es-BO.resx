@@ -1833,57 +1833,57 @@
     <value>Mensaje del código de confirmación de recuperación de contraseña</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Logout sound enabled</value>
+    <value>Sonido de Cierre de sesión habilitado</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_NAME" xml:space="preserve">
-    <value>Logout sound</value>
+    <value>Sonido de Cierre de sesión</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Logout with outstanding balance sound enabled</value>
+    <value>Sonido de Cierre de sesión con saldo pendiente habilitado</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_NAME" xml:space="preserve">
-    <value>Logout with outstanding balance sound</value>
+    <value>Sonido de Cierre de sesión con saldo pendiente</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Console session ended sound enabled</value>
+    <value>Sonido de Sesión de consola finalizada habilitado</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_NAME" xml:space="preserve">
-    <value>Console session ended sound</value>
+    <value>Sonido de Sesión de consola finalizada</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Order received sound enabled</value>
+    <value>Sonido de Pedido recibido habilitado</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_NAME" xml:space="preserve">
-    <value>Order received sound</value>
+    <value>Sonido de Pedido recibido</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Assistance requested sound enabled</value>
+    <value>Sonido de Asistencia solicitada habilitado</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_NAME" xml:space="preserve">
-    <value>Assistance requested sound</value>
+    <value>Sonido de Asistencia solicitada</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Terminal disconnected sound enabled</value>
+    <value>Sonido de Estación desconectada habilitado</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME" xml:space="preserve">
-    <value>Terminal disconnected sound</value>
+    <value>Sonido de Estación desconectada</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_RECONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Terminal reconnected sound enabled</value>
+    <value>Sonido de Estación reconectada habilitado</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_RECONNECTED_SOUND_NAME" xml:space="preserve">
-    <value>Terminal reconnected sound</value>
+    <value>Sonido de Estación reconectada</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>User logged in sound enabled</value>
+    <value>Sonido de Usuario con sesión iniciada habilitado</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_NAME" xml:space="preserve">
-    <value>User logged in sound</value>
+    <value>Sonido de Usuario con sesión iniciada</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Terminal security disabled sound enabled</value>
+    <value>Sonido de Seguridad de estación deshabilitada habilitado</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME" xml:space="preserve">
-    <value>Terminal security disabled sound</value>
+    <value>Sonido de Seguridad de estación deshabilitada</value>
   </data>
 </root>

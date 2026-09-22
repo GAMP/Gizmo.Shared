@@ -754,57 +754,57 @@
     <value>Salasanan palautuksen vahvistuskoodiviesti</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Logout sound enabled</value>
+    <value>Ääni käytössä: Uloskirjautuminen</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_NAME" xml:space="preserve">
-    <value>Logout sound</value>
+    <value>Ääni: Uloskirjautuminen</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Logout with outstanding balance sound enabled</value>
+    <value>Ääni käytössä: Uloskirjautuminen maksamattomalla saldolla</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_NAME" xml:space="preserve">
-    <value>Logout with outstanding balance sound</value>
+    <value>Ääni: Uloskirjautuminen maksamattomalla saldolla</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Console session ended sound enabled</value>
+    <value>Ääni käytössä: Konsoli-istunto päättyi</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_NAME" xml:space="preserve">
-    <value>Console session ended sound</value>
+    <value>Ääni: Konsoli-istunto päättyi</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Order received sound enabled</value>
+    <value>Ääni käytössä: Tilaus vastaanotettu</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_NAME" xml:space="preserve">
-    <value>Order received sound</value>
+    <value>Ääni: Tilaus vastaanotettu</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Assistance requested sound enabled</value>
+    <value>Ääni käytössä: Apua pyydetty</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_NAME" xml:space="preserve">
-    <value>Assistance requested sound</value>
+    <value>Ääni: Apua pyydetty</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Terminal disconnected sound enabled</value>
+    <value>Ääni käytössä: Aseman yhteys katkaistu</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME" xml:space="preserve">
-    <value>Terminal disconnected sound</value>
+    <value>Ääni: Aseman yhteys katkaistu</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_RECONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Terminal reconnected sound enabled</value>
+    <value>Ääni käytössä: Aseman yhteys palautettu</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_RECONNECTED_SOUND_NAME" xml:space="preserve">
-    <value>Terminal reconnected sound</value>
+    <value>Ääni: Aseman yhteys palautettu</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>User logged in sound enabled</value>
+    <value>Ääni käytössä: Käyttäjä kirjautui sisään</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_NAME" xml:space="preserve">
-    <value>User logged in sound</value>
+    <value>Ääni: Käyttäjä kirjautui sisään</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Terminal security disabled sound enabled</value>
+    <value>Ääni käytössä: Aseman suojaus poistettu käytöstä</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME" xml:space="preserve">
-    <value>Terminal security disabled sound</value>
+    <value>Ääni: Aseman suojaus poistettu käytöstä</value>
   </data>
 </root>
