@@ -17,7 +17,7 @@
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<PackageIcon>package_icon.png</PackageIcon>
-		<Version>1.0.14.0</Version>
+		<Version>3.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Nullable>enable</Nullable>
     <Title>Gizmo shared code library. The library contains code shared between all of Gizmo modules.</Title>
@@ -38,7 +38,7 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.6" />
 		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.6" />
 		<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
-		<PackageReference Include="MessagePack" Version="2.5.198" />
+		<PackageReference Include="MessagePack" Version="3.1.9" />
 	</ItemGroup>
 
 	<ItemGroup>
