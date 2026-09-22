@@ -1,31 +1,56 @@
-# Thin caller for the committed reusable Gizmo.Infra NuGet development-publish
-# workflow.
+# Caller-owned public NuGet development publisher.
+# Deterministic version/build/collision logic lives in pinned Gizmo.Infra
+# composite actions; the OIDC-requesting job identity remains in this repository.
 #
-# LOCAL PREPARATION ONLY — remote setup is still required before this caller may
-# publish anything, so it is manual-dispatch only and must not be run yet:
-#   - Branch protection or a ruleset must mark the publishing branch protected
-#     so github.ref_protected is true for the caller run.
-#   - NuGet.org Trusted Publishing must trust this caller repository and the
-#     Gizmo.Infra package-development.yml workflow identity at the pinned commit.
-#   - The repository variable NUGET_USER must hold the NuGet.org profile name
-#     (a public profile identifier, never a secret).
-# The reusable workflow reference is pinned to an immutable full commit SHA;
-# never replace it with a branch, tag, abbreviated SHA, or expression.
+# Pilot state: manual-dispatch only. Do not add automatic version-3 publishing
+# until that branch is protected and the corresponding NuGet.org Trusted
+# Publishing policy is intentionally enabled.
 name: Package Development
 
 on:
   workflow_dispatch:
 
-permissions:
-  contents: read
-  id-token: write
+permissions: {}
+
+concurrency:
+  group: nuget-${{ github.repository }}-Gizmo.Shared
+  cancel-in-progress: false
 
 jobs:
+  prepare:
+    name: Prepare development package
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      package-artifact: ${{ steps.prepare.outputs.package-artifact }}
+      package-version: ${{ steps.prepare.outputs.package-version }}
+      calculated-state: ${{ steps.prepare.outputs.calculated-state }}
+      tag-state-fingerprint: ${{ steps.prepare.outputs.tag-state-fingerprint }}
+    steps:
+      - id: prepare
+        name: Calculate, build, pack, and validate
+        uses: GAMP/Gizmo.Infra/.github/actions/package-development-prepare@de3b92f68fc21e9003b83f522039b5ee7aea1a76
+        with:
+          project-path: Gizmo.Shared.csproj
+          package-id: Gizmo.Shared
+          package-visibility: public
+          nuget-user: ${{ vars.NUGET_USER }}
+
   publish:
-    name: Build and publish development package
-    uses: GAMP/Gizmo.Infra/.github/workflows/package-development.yml@a74259cc14f568abd030b3bd2f54ef5f9667c12e
-    with:
-      project-path: Gizmo.Shared.csproj
-      package-id: Gizmo.Shared
-      package-visibility: public
-      nuget-user: ${{ vars.NUGET_USER }}
+    name: Publish development package
+    needs: prepare
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Recheck and publish with caller-owned OIDC
+        uses: GAMP/Gizmo.Infra/.github/actions/package-development-public@de3b92f68fc21e9003b83f522039b5ee7aea1a76
+        with:
+          package-id: Gizmo.Shared
+          nuget-user: ${{ vars.NUGET_USER }}
+          package-artifact: ${{ needs.prepare.outputs.package-artifact }}
+          package-version: ${{ needs.prepare.outputs.package-version }}
+          calculated-state: ${{ needs.prepare.outputs.calculated-state }}
+          tag-state-fingerprint: ${{ needs.prepare.outputs.tag-state-fingerprint }}
