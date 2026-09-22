@@ -753,4 +753,58 @@
   <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
     <value>Besked med bekræftelseskode til nulstilling af adgangskode</value>
   </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Logout sound enabled</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_NAME" xml:space="preserve">
+    <value>Logout sound</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Logout with outstanding balance sound enabled</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_NAME" xml:space="preserve">
+    <value>Logout with outstanding balance sound</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Console session ended sound enabled</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_NAME" xml:space="preserve">
+    <value>Console session ended sound</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Order received sound enabled</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_NAME" xml:space="preserve">
+    <value>Order received sound</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Assistance requested sound enabled</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_NAME" xml:space="preserve">
+    <value>Assistance requested sound</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Terminal disconnected sound enabled</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME" xml:space="preserve">
+    <value>Terminal disconnected sound</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_RECONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Terminal reconnected sound enabled</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_RECONNECTED_SOUND_NAME" xml:space="preserve">
+    <value>Terminal reconnected sound</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>User logged in sound enabled</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_NAME" xml:space="preserve">
+    <value>User logged in sound</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Terminal security disabled sound enabled</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME" xml:space="preserve">
+    <value>Terminal security disabled sound</value>
+  </data>
 </root>
