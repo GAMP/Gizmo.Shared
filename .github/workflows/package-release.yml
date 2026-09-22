@@ -1,32 +1,81 @@
-# Thin caller for the committed reusable Gizmo.Infra NuGet release-publish
-# workflow. It publishes the stable package and creates or reconciles the
-# package-qualified immutable release tag.
-#
-# LOCAL PREPARATION ONLY — remote setup is still required before this caller may
-# publish or tag anything, so it is manual-dispatch only and must not be run yet:
-#   - Branch protection or a ruleset must mark the publishing branch protected
-#     so github.ref_protected is true for the caller run.
-#   - NuGet.org Trusted Publishing must trust this caller repository and the
-#     Gizmo.Infra package-release.yml workflow identity at the pinned commit.
-#   - The repository variable NUGET_USER must hold the NuGet.org profile name
-#     (a public profile identifier, never a secret).
-# The reusable workflow reference is pinned to an immutable full commit SHA;
-# never replace it with a branch, tag, abbreviated SHA, or expression.
+# Caller-owned public NuGet release publisher.
+# Deterministic version/build/collision/tag logic lives in pinned Gizmo.Infra
+# composite actions. The public publish job itself belongs to this repository so
+# NuGet.org Trusted Publishing can bind to package-release.yml.
 name: Package Release
 
 on:
+  push:
+    branches:
+      - "release"
   workflow_dispatch:
 
-permissions:
-  contents: write
-  id-token: write
+permissions: {}
+
+concurrency:
+  group: nuget-${{ github.repository }}-Gizmo.Shared
+  cancel-in-progress: false
 
 jobs:
+  prepare:
+    name: Prepare release package
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      package-artifact: ${{ steps.prepare.outputs.package-artifact }}
+      package-version: ${{ steps.prepare.outputs.package-version }}
+      release-tag: ${{ steps.prepare.outputs.release-tag }}
+      release-tag-state: ${{ steps.prepare.outputs.release-tag-state }}
+      calculated-state: ${{ steps.prepare.outputs.calculated-state }}
+      tag-state-fingerprint: ${{ steps.prepare.outputs.tag-state-fingerprint }}
+      package-state: ${{ steps.prepare.outputs.package-state }}
+    steps:
+      - id: prepare
+        name: Calculate, build, pack, and resolve release state
+        uses: GAMP/Gizmo.Infra/.github/actions/package-release-prepare@de3b92f68fc21e9003b83f522039b5ee7aea1a76
+        with:
+          project-path: Gizmo.Shared.csproj
+          package-id: Gizmo.Shared
+          package-visibility: public
+          nuget-user: ${{ vars.NUGET_USER }}
+
   publish:
-    name: Build, publish, and tag release package
-    uses: GAMP/Gizmo.Infra/.github/workflows/package-release.yml@a74259cc14f568abd030b3bd2f54ef5f9667c12e
-    with:
-      project-path: Gizmo.Shared.csproj
-      package-id: Gizmo.Shared
-      package-visibility: public
-      nuget-user: ${{ vars.NUGET_USER }}
+    name: Publish release package
+    needs: prepare
+    if: needs.prepare.outputs.package-state == 'unpublished'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Recheck and publish with caller-owned OIDC
+        uses: GAMP/Gizmo.Infra/.github/actions/package-release-public@de3b92f68fc21e9003b83f522039b5ee7aea1a76
+        with:
+          package-id: Gizmo.Shared
+          nuget-user: ${{ vars.NUGET_USER }}
+          package-artifact: ${{ needs.prepare.outputs.package-artifact }}
+          package-version: ${{ needs.prepare.outputs.package-version }}
+          calculated-state: ${{ needs.prepare.outputs.calculated-state }}
+          tag-state-fingerprint: ${{ needs.prepare.outputs.tag-state-fingerprint }}
+
+  tag:
+    name: Create or reconcile immutable release tag
+    needs:
+      - prepare
+      - publish
+    if: >-
+      always() &&
+      needs.prepare.result == 'success' &&
+      needs.prepare.outputs.release-tag-state == 'missing' &&
+      (needs.publish.result == 'success' || needs.prepare.outputs.package-state == 'published')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Recheck and create immutable release tag
+        uses: GAMP/Gizmo.Infra/.github/actions/package-release-tag@de3b92f68fc21e9003b83f522039b5ee7aea1a76
+        with:
+          release-tag: ${{ needs.prepare.outputs.release-tag }}
+          calculated-state: ${{ needs.prepare.outputs.calculated-state }}
+          tag-state-fingerprint: ${{ needs.prepare.outputs.tag-state-fingerprint }}

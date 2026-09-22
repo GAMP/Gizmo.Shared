@@ -1,8 +1,7 @@
 # Thin caller for the committed reusable Gizmo.Infra NuGet validation workflow.
-# Validation only: it calculates, restores, audits, builds, packs, and retains a
+# Validation calculates, restores, audits, builds, packs, and retains a
 # nonpublished package. It cannot publish or tag.
-# The reusable workflow reference is pinned to an immutable full commit SHA;
-# never replace it with a branch, tag, abbreviated SHA, or expression.
+# The reusable workflow reference is pinned to an immutable full commit SHA.
 name: Package Validation
 
 on:
@@ -18,7 +17,7 @@ permissions:
 jobs:
   validate:
     name: Validate package
-    uses: GAMP/Gizmo.Infra/.github/workflows/package-validation.yml@a74259cc14f568abd030b3bd2f54ef5f9667c12e
+    uses: GAMP/Gizmo.Infra/.github/workflows/package-validation.yml@de3b92f68fc21e9003b83f522039b5ee7aea1a76
     with:
       project-path: Gizmo.Shared.csproj
       package-id: Gizmo.Shared
