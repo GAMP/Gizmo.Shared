@@ -2203,28 +2203,22 @@
   <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_NAME" xml:space="preserve">
     <value>Звук: Запрос помощи</value>
   </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Звук включён: Защита хоста отключена</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME" xml:space="preserve">
+    <value>Звук: Защита хоста отключена</value>
+  </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Звук включён: Хост отключён</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME" xml:space="preserve">
     <value>Звук: Хост отключён</value>
   </data>
-  <data name="SERVER_OPTION_ACTION_CENTER_HOST_RECONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Звук включён: Хост снова подключён</value>
-  </data>
-  <data name="SERVER_OPTION_ACTION_CENTER_HOST_RECONNECTED_SOUND_NAME" xml:space="preserve">
-    <value>Звук: Хост снова подключён</value>
-  </data>
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Звук включён: Пользователь вошёл в систему</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_NAME" xml:space="preserve">
     <value>Звук: Пользователь вошёл в систему</value>
-  </data>
-  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Звук включён: Защита хоста отключена</value>
-  </data>
-  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME" xml:space="preserve">
-    <value>Звук: Защита хоста отключена</value>
   </data>
 </root>

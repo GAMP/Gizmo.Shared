@@ -2203,28 +2203,22 @@
   <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_NAME" xml:space="preserve">
     <value>صوت طلب مساعدة</value>
   </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>تفعيل صوت تعطيل أمان المحطة</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME" xml:space="preserve">
+    <value>صوت تعطيل أمان المحطة</value>
+  </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>تفعيل صوت انقطاع اتصال المحطة</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME" xml:space="preserve">
     <value>صوت انقطاع اتصال المحطة</value>
   </data>
-  <data name="SERVER_OPTION_ACTION_CENTER_HOST_RECONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>تفعيل صوت إعادة اتصال المحطة</value>
-  </data>
-  <data name="SERVER_OPTION_ACTION_CENTER_HOST_RECONNECTED_SOUND_NAME" xml:space="preserve">
-    <value>صوت إعادة اتصال المحطة</value>
-  </data>
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>تفعيل صوت تسجيل دخول مستخدم</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_NAME" xml:space="preserve">
     <value>صوت تسجيل دخول مستخدم</value>
-  </data>
-  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>تفعيل صوت تعطيل أمان المحطة</value>
-  </data>
-  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME" xml:space="preserve">
-    <value>صوت تعطيل أمان المحطة</value>
   </data>
 </root>

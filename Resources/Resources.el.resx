@@ -1882,28 +1882,22 @@
   <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_NAME" xml:space="preserve">
     <value>Ήχος: Αίτημα βοήθειας</value>
   </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Ενεργοποίηση ήχου: Απενεργοποίηση ασφάλειας σταθμού</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME" xml:space="preserve">
+    <value>Ήχος: Απενεργοποίηση ασφάλειας σταθμού</value>
+  </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Ενεργοποίηση ήχου: Αποσύνδεση σταθμού</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME" xml:space="preserve">
     <value>Ήχος: Αποσύνδεση σταθμού</value>
   </data>
-  <data name="SERVER_OPTION_ACTION_CENTER_HOST_RECONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Ενεργοποίηση ήχου: Επανασύνδεση σταθμού</value>
-  </data>
-  <data name="SERVER_OPTION_ACTION_CENTER_HOST_RECONNECTED_SOUND_NAME" xml:space="preserve">
-    <value>Ήχος: Επανασύνδεση σταθμού</value>
-  </data>
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Ενεργοποίηση ήχου: Σύνδεση χρήστη</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_NAME" xml:space="preserve">
     <value>Ήχος: Σύνδεση χρήστη</value>
-  </data>
-  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME" xml:space="preserve">
-    <value>Ενεργοποίηση ήχου: Απενεργοποίηση ασφάλειας σταθμού</value>
-  </data>
-  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME" xml:space="preserve">
-    <value>Ήχος: Απενεργοποίηση ασφάλειας σταθμού</value>
   </data>
 </root>
