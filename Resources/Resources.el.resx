@@ -1856,48 +1856,48 @@
     <value>Ενεργοποίηση ήχου: Αποσύνδεση</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_NAME" xml:space="preserve">
-    <value>Ήχος: Αποσύνδεση</value>
+    <value>Αποσύνδεση</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Ενεργοποίηση ήχου: Αποσύνδεση με εκκρεμές υπόλοιπο</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_NAME" xml:space="preserve">
-    <value>Ήχος: Αποσύνδεση με εκκρεμές υπόλοιπο</value>
+    <value>Αποσύνδεση με εκκρεμές υπόλοιπο</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Ενεργοποίηση ήχου: Λήξη συνεδρίας κονσόλας</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_NAME" xml:space="preserve">
-    <value>Ήχος: Λήξη συνεδρίας κονσόλας</value>
+    <value>Λήξη συνεδρίας κονσόλας</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Ενεργοποίηση ήχου: Λήψη παραγγελίας</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_NAME" xml:space="preserve">
-    <value>Ήχος: Λήψη παραγγελίας</value>
+    <value>Λήψη παραγγελίας</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Ενεργοποίηση ήχου: Αίτημα βοήθειας</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_NAME" xml:space="preserve">
-    <value>Ήχος: Αίτημα βοήθειας</value>
+    <value>Αίτημα βοήθειας</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Ενεργοποίηση ήχου: Απενεργοποίηση ασφάλειας σταθμού</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME" xml:space="preserve">
-    <value>Ήχος: Απενεργοποίηση ασφάλειας σταθμού</value>
+    <value>Απενεργοποίηση ασφάλειας σταθμού</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Ενεργοποίηση ήχου: Αποσύνδεση σταθμού</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME" xml:space="preserve">
-    <value>Ήχος: Αποσύνδεση σταθμού</value>
+    <value>Αποσύνδεση σταθμού</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Ενεργοποίηση ήχου: Σύνδεση χρήστη</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_NAME" xml:space="preserve">
-    <value>Ήχος: Σύνδεση χρήστη</value>
+    <value>Σύνδεση χρήστη</value>
   </data>
 </root>

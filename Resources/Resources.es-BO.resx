@@ -1836,48 +1836,48 @@
     <value>Sonido de Cierre de sesión habilitado</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_NAME" xml:space="preserve">
-    <value>Sonido de Cierre de sesión</value>
+    <value>Cierre de sesión</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Sonido de Cierre de sesión con saldo pendiente habilitado</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_NAME" xml:space="preserve">
-    <value>Sonido de Cierre de sesión con saldo pendiente</value>
+    <value>Cierre de sesión con saldo pendiente</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Sonido de Sesión de consola finalizada habilitado</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_NAME" xml:space="preserve">
-    <value>Sonido de Sesión de consola finalizada</value>
+    <value>Sesión de consola finalizada</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Sonido de Pedido recibido habilitado</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_NAME" xml:space="preserve">
-    <value>Sonido de Pedido recibido</value>
+    <value>Pedido recibido</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Sonido de Asistencia solicitada habilitado</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_NAME" xml:space="preserve">
-    <value>Sonido de Asistencia solicitada</value>
+    <value>Asistencia solicitada</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Sonido de Seguridad de estación deshabilitada habilitado</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME" xml:space="preserve">
-    <value>Sonido de Seguridad de estación deshabilitada</value>
+    <value>Seguridad de estación deshabilitada</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Sonido de Estación desconectada habilitado</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME" xml:space="preserve">
-    <value>Sonido de Estación desconectada</value>
+    <value>Estación desconectada</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Sonido de Usuario con sesión iniciada habilitado</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_NAME" xml:space="preserve">
-    <value>Sonido de Usuario con sesión iniciada</value>
+    <value>Usuario con sesión iniciada</value>
   </data>
 </root>

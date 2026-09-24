@@ -757,48 +757,48 @@
     <value>Ääni käytössä: Uloskirjautuminen</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_NAME" xml:space="preserve">
-    <value>Ääni: Uloskirjautuminen</value>
+    <value>Uloskirjautuminen</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Ääni käytössä: Uloskirjautuminen maksamattomalla saldolla</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_NAME" xml:space="preserve">
-    <value>Ääni: Uloskirjautuminen maksamattomalla saldolla</value>
+    <value>Uloskirjautuminen maksamattomalla saldolla</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Ääni käytössä: Konsoli-istunto päättyi</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_NAME" xml:space="preserve">
-    <value>Ääni: Konsoli-istunto päättyi</value>
+    <value>Konsoli-istunto päättyi</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Ääni käytössä: Tilaus vastaanotettu</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_NAME" xml:space="preserve">
-    <value>Ääni: Tilaus vastaanotettu</value>
+    <value>Tilaus vastaanotettu</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Ääni käytössä: Apua pyydetty</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_NAME" xml:space="preserve">
-    <value>Ääni: Apua pyydetty</value>
+    <value>Apua pyydetty</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Ääni käytössä: Aseman suojaus poistettu käytöstä</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME" xml:space="preserve">
-    <value>Ääni: Aseman suojaus poistettu käytöstä</value>
+    <value>Aseman suojaus poistettu käytöstä</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Ääni käytössä: Aseman yhteys katkaistu</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME" xml:space="preserve">
-    <value>Ääni: Aseman yhteys katkaistu</value>
+    <value>Aseman yhteys katkaistu</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_ENABLED_NAME" xml:space="preserve">
     <value>Ääni käytössä: Käyttäjä kirjautui sisään</value>
   </data>
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_NAME" xml:space="preserve">
-    <value>Ääni: Käyttäjä kirjautui sisään</value>
+    <value>Käyttäjä kirjautui sisään</value>
   </data>
 </root>

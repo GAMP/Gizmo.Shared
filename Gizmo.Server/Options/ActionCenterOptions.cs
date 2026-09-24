@@ -25,7 +25,7 @@ namespace Gizmo.Server.Options
         [MessagePack.Key(0)]
         public bool LogoutSoundEnabled { get; init; }
 
-        [Name("Logout sound", nameof(Resources.SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_NAME))]
+        [Name("Logout", nameof(Resources.SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_NAME))]
         [StoreOptionKey("LOGOUT_SOUND")]
         [MessagePack.Key(1)]
         public Guid? LogoutSound { get; init; }
@@ -36,7 +36,7 @@ namespace Gizmo.Server.Options
         [MessagePack.Key(2)]
         public bool LogoutWithDebtSoundEnabled { get; init; }
 
-        [Name("Logout with outstanding balance sound", nameof(Resources.SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_NAME))]
+        [Name("Logout with outstanding balance", nameof(Resources.SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_NAME))]
         [StoreOptionKey("LOGOUT_WITH_DEBT_SOUND")]
         [MessagePack.Key(3)]
         public Guid? LogoutWithDebtSound { get; init; }
@@ -47,7 +47,7 @@ namespace Gizmo.Server.Options
         [MessagePack.Key(4)]
         public bool ConsoleSessionEndedSoundEnabled { get; init; }
 
-        [Name("Console session ended sound", nameof(Resources.SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_NAME))]
+        [Name("Console session ended", nameof(Resources.SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_NAME))]
         [StoreOptionKey("CONSOLE_SESSION_ENDED_SOUND")]
         [MessagePack.Key(5)]
         public Guid? ConsoleSessionEndedSound { get; init; }
@@ -58,7 +58,7 @@ namespace Gizmo.Server.Options
         [MessagePack.Key(6)]
         public bool OrderReceivedSoundEnabled { get; init; }
 
-        [Name("Order received sound", nameof(Resources.SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_NAME))]
+        [Name("Order received", nameof(Resources.SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_NAME))]
         [StoreOptionKey("ORDER_RECEIVED_SOUND")]
         [MessagePack.Key(7)]
         public Guid? OrderReceivedSound { get; init; }
@@ -69,7 +69,7 @@ namespace Gizmo.Server.Options
         [MessagePack.Key(8)]
         public bool AssistanceRequestedSoundEnabled { get; init; }
 
-        [Name("Assistance requested sound", nameof(Resources.SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_NAME))]
+        [Name("Assistance requested", nameof(Resources.SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_NAME))]
         [StoreOptionKey("ASSISTANCE_REQUESTED_SOUND")]
         [MessagePack.Key(9)]
         public Guid? AssistanceRequestedSound { get; init; }
@@ -80,7 +80,7 @@ namespace Gizmo.Server.Options
         [MessagePack.Key(10)]
         public bool HostSecurityDisabledSoundEnabled { get; init; }
 
-        [Name("Host security disabled sound", nameof(Resources.SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME))]
+        [Name("Host security disabled", nameof(Resources.SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME))]
         [StoreOptionKey("HOST_SECURITY_DISABLED_SOUND")]
         [MessagePack.Key(11)]
         public Guid? HostSecurityDisabledSound { get; init; }
@@ -91,7 +91,7 @@ namespace Gizmo.Server.Options
         [MessagePack.Key(12)]
         public bool HostDisconnectedSoundEnabled { get; init; }
 
-        [Name("Host disconnected sound", nameof(Resources.SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME))]
+        [Name("Host disconnected", nameof(Resources.SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME))]
         [StoreOptionKey("HOST_DISCONNECTED_SOUND")]
         [MessagePack.Key(13)]
         public Guid? HostDisconnectedSound { get; init; }
@@ -102,7 +102,7 @@ namespace Gizmo.Server.Options
         [MessagePack.Key(14)]
         public bool UserLoggedInSoundEnabled { get; init; }
 
-        [Name("User logged in sound", nameof(Resources.SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_NAME))]
+        [Name("User logged in", nameof(Resources.SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_NAME))]
         [StoreOptionKey("USER_LOGGED_IN_SOUND")]
         [MessagePack.Key(15)]
         public Guid? UserLoggedInSound { get; init; }
