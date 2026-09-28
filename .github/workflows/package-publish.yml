@@ -1,0 +1,92 @@
+# Canonical caller-owned NuGet publishing workflow.
+# Replace every `<40-character-infra-commit-sha>` with one immutable Gizmo.Infra commit SHA.
+# The workflow filename binds NuGet.org Trusted Publishing and must not be renamed.
+name: Publish package
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# The caller owns the only lock; the reusable preparation workflow declares none so it cannot nest.
+concurrency:
+  group: nuget-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    uses: GAMP/Gizmo.Infra/.github/workflows/package-publish.yml@e5cf1c47d058daf16f90f99505f3e896d0585444
+    permissions:
+      contents: read
+
+  publish-public:
+    needs: prepare
+    if: ${{ needs.prepare.outputs.branch-role != 'none' && needs.prepare.outputs.repository-visibility == 'public' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Publish public package
+        uses: GAMP/Gizmo.Infra/.github/actions/package-public-publish@e5cf1c47d058daf16f90f99505f3e896d0585444
+        with:
+          package-id: ${{ needs.prepare.outputs.package-id }}
+          nuget-user: ${{ vars.NUGET_USER }}
+          package-artifact: ${{ needs.prepare.outputs.package-artifact }}
+          package-version: ${{ needs.prepare.outputs.package-version }}
+          calculated-state: ${{ needs.prepare.outputs.calculated-state }}
+          tag-state-fingerprint: ${{ needs.prepare.outputs.tag-state-fingerprint }}
+          repository-visibility: ${{ needs.prepare.outputs.repository-visibility }}
+
+  publish-private:
+    needs: prepare
+    if: ${{ needs.prepare.outputs.branch-role != 'none' && needs.prepare.outputs.repository-visibility == 'private' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Publish private package
+        uses: GAMP/Gizmo.Infra/.github/actions/package-private-publish@e5cf1c47d058daf16f90f99505f3e896d0585444
+        with:
+          package-id: ${{ needs.prepare.outputs.package-id }}
+          package-artifact: ${{ needs.prepare.outputs.package-artifact }}
+          package-version: ${{ needs.prepare.outputs.package-version }}
+          calculated-state: ${{ needs.prepare.outputs.calculated-state }}
+          tag-state-fingerprint: ${{ needs.prepare.outputs.tag-state-fingerprint }}
+          repository-visibility: ${{ needs.prepare.outputs.repository-visibility }}
+
+  reject-unsupported-visibility:
+    needs: prepare
+    if: ${{ needs.prepare.outputs.branch-role != 'none' && needs.prepare.outputs.repository-visibility != 'public' && needs.prepare.outputs.repository-visibility != 'private' }}
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - name: Fail closed for unsupported visibility
+        shell: bash
+        env:
+          REPOSITORY_VISIBILITY: ${{ needs.prepare.outputs.repository-visibility }}
+        run: |
+          set -euo pipefail
+          echo "Unsupported caller repository visibility '$REPOSITORY_VISIBILITY' for this branch role; refusing to publish or tag." >&2
+          exit 1
+
+  tag:
+    needs:
+      - prepare
+      - publish-public
+      - publish-private
+    if: ${{ always() && needs.prepare.outputs.branch-role == 'release' && (needs.publish-public.result == 'success' || needs.publish-private.result == 'success') }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Reconcile immutable release tag
+        uses: GAMP/Gizmo.Infra/.github/actions/package-release-tag@e5cf1c47d058daf16f90f99505f3e896d0585444
+        with:
+          branch-role: ${{ needs.prepare.outputs.branch-role }}
+          release-tag: ${{ needs.prepare.outputs.release-tag }}
+          calculated-state: ${{ needs.prepare.outputs.calculated-state }}
+          tag-state-fingerprint: ${{ needs.prepare.outputs.tag-state-fingerprint }}
