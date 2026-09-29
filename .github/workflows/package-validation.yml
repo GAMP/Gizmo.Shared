@@ -7,7 +7,7 @@ name: Package Validation
 on:
   pull_request:
     branches:
-      - "version-3"
+      - "pre-release"
       - "release"
 
 permissions:
