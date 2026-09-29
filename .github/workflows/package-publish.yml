@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   prepare:
-    uses: GAMP/Gizmo.Infra/.github/workflows/package-publish.yml@e5cf1c47d058daf16f90f99505f3e896d0585444
+    uses: GAMP/Gizmo.Infra/.github/workflows/package-publish.yml@c131d96141bf3927c6f4e7f6ca648a8ad3370c85
     permissions:
       contents: read
 
@@ -30,7 +30,7 @@ jobs:
       id-token: write
     steps:
       - name: Publish public package
-        uses: GAMP/Gizmo.Infra/.github/actions/package-public-publish@e5cf1c47d058daf16f90f99505f3e896d0585444
+        uses: GAMP/Gizmo.Infra/.github/actions/package-public-publish@c131d96141bf3927c6f4e7f6ca648a8ad3370c85
         with:
           package-id: ${{ needs.prepare.outputs.package-id }}
           nuget-user: ${{ vars.NUGET_USER }}
@@ -49,7 +49,7 @@ jobs:
       packages: write
     steps:
       - name: Publish private package
-        uses: GAMP/Gizmo.Infra/.github/actions/package-private-publish@e5cf1c47d058daf16f90f99505f3e896d0585444
+        uses: GAMP/Gizmo.Infra/.github/actions/package-private-publish@c131d96141bf3927c6f4e7f6ca648a8ad3370c85
         with:
           package-id: ${{ needs.prepare.outputs.package-id }}
           package-artifact: ${{ needs.prepare.outputs.package-artifact }}
@@ -84,7 +84,7 @@ jobs:
       contents: write
     steps:
       - name: Reconcile immutable release tag
-        uses: GAMP/Gizmo.Infra/.github/actions/package-release-tag@e5cf1c47d058daf16f90f99505f3e896d0585444
+        uses: GAMP/Gizmo.Infra/.github/actions/package-release-tag@c131d96141bf3927c6f4e7f6ca648a8ad3370c85
         with:
           branch-role: ${{ needs.prepare.outputs.branch-role }}
           release-tag: ${{ needs.prepare.outputs.release-tag }}

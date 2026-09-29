@@ -16,4 +16,4 @@ permissions:
 jobs:
   validate:
     name: Validate package
-    uses: GAMP/Gizmo.Infra/.github/workflows/package-validation.yml@e5cf1c47d058daf16f90f99505f3e896d0585444
+    uses: GAMP/Gizmo.Infra/.github/workflows/package-validation.yml@c131d96141bf3927c6f4e7f6ca648a8ad3370c85
