@@ -1927,6 +1927,12 @@
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve">
     <value>Время льготного периода выхода пользователя</value>
   </data>
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_NAME" xml:space="preserve">
+    <value>Приоритет полей поиска пользователей</value>
+  </data>
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_DESCRIPTION" xml:space="preserve">
+    <value>Порядок приоритета полей поиска пользователей, лучшее совпадение первым</value>
+  </data>
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_NAME" xml:space="preserve">
     <value>Льготное время</value>
   </data>
@@ -2166,5 +2172,53 @@
   </data>
   <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
     <value>Текст сообщения с кодом подтверждения для восстановления пароля</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Звук включён: Выход из системы</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_NAME" xml:space="preserve">
+    <value>Выход из системы</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Звук включён: Выход из системы с задолженностью</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_NAME" xml:space="preserve">
+    <value>Выход из системы с задолженностью</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Звук включён: Сеанс консоли завершён</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_NAME" xml:space="preserve">
+    <value>Сеанс консоли завершён</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Звук включён: Получен заказ</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_NAME" xml:space="preserve">
+    <value>Получен заказ</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Звук включён: Запрос помощи</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_NAME" xml:space="preserve">
+    <value>Запрос помощи</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Звук включён: Защита хоста отключена</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME" xml:space="preserve">
+    <value>Защита хоста отключена</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Звук включён: Хост отключён</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME" xml:space="preserve">
+    <value>Хост отключён</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Звук включён: Пользователь вошёл в систему</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_NAME" xml:space="preserve">
+    <value>Пользователь вошёл в систему</value>
   </data>
 </root>

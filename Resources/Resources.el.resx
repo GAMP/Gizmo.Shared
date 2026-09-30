@@ -1460,6 +1460,12 @@
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve"> 
     <value>Καθορίζει τον χρόνο περιόδου χάριτος αποσύνδεσης χρήστη</value> 
   </data> 
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_NAME" xml:space="preserve"> 
+    <value>Προτεραιότητα πεδίων αναζήτησης χρήστη</value> 
+  </data> 
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_DESCRIPTION" xml:space="preserve"> 
+    <value>Η σειρά κατάταξης των πεδίων αναζήτησης χρήστη, με πρώτη την καλύτερη αντιστοίχιση</value> 
+  </data> 
   <data name="LINE_TYPE_PRODUCT" xml:space="preserve"> 
     <value>Προϊόν</value> 
   </data> 
@@ -1845,5 +1851,53 @@
   </data>
   <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
     <value>Μήνυμα κωδικού επιβεβαίωσης για ανάκτηση κωδικού πρόσβασης</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Ενεργοποίηση ήχου: Αποσύνδεση</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_NAME" xml:space="preserve">
+    <value>Αποσύνδεση</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Ενεργοποίηση ήχου: Αποσύνδεση με εκκρεμές υπόλοιπο</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_NAME" xml:space="preserve">
+    <value>Αποσύνδεση με εκκρεμές υπόλοιπο</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Ενεργοποίηση ήχου: Λήξη συνεδρίας κονσόλας</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_NAME" xml:space="preserve">
+    <value>Λήξη συνεδρίας κονσόλας</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Ενεργοποίηση ήχου: Λήψη παραγγελίας</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_NAME" xml:space="preserve">
+    <value>Λήψη παραγγελίας</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Ενεργοποίηση ήχου: Αίτημα βοήθειας</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_NAME" xml:space="preserve">
+    <value>Αίτημα βοήθειας</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Ενεργοποίηση ήχου: Απενεργοποίηση ασφάλειας σταθμού</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME" xml:space="preserve">
+    <value>Απενεργοποίηση ασφάλειας σταθμού</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Ενεργοποίηση ήχου: Αποσύνδεση σταθμού</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME" xml:space="preserve">
+    <value>Αποσύνδεση σταθμού</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Ενεργοποίηση ήχου: Σύνδεση χρήστη</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_NAME" xml:space="preserve">
+    <value>Σύνδεση χρήστη</value>
   </data>
 </root>
