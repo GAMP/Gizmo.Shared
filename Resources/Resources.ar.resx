@@ -1927,6 +1927,12 @@
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve">
     <value>يحدد وقت فترة السماح لتسجيل خروج المستخدم</value>
   </data>
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_NAME" xml:space="preserve">
+    <value>أولوية حقول بحث المستخدم</value>
+  </data>
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_DESCRIPTION" xml:space="preserve">
+    <value>ترتيب أولوية حقول بحث المستخدم، مع عرض أفضل تطابق أولاً</value>
+  </data>
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_NAME" xml:space="preserve">
     <value>وقت السماح</value>
   </data>
@@ -2166,5 +2172,53 @@
   </data>
   <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
     <value>رسالة رمز تأكيد استعادة كلمة المرور</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>تفعيل صوت تسجيل الخروج</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_NAME" xml:space="preserve">
+    <value>تسجيل الخروج</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>تفعيل صوت تسجيل الخروج مع رصيد مستحق</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_NAME" xml:space="preserve">
+    <value>تسجيل الخروج مع رصيد مستحق</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>تفعيل صوت انتهاء جلسة الكونسول</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_NAME" xml:space="preserve">
+    <value>انتهاء جلسة الكونسول</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>تفعيل صوت استلام طلب</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_NAME" xml:space="preserve">
+    <value>استلام طلب</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>تفعيل صوت طلب مساعدة</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_NAME" xml:space="preserve">
+    <value>طلب مساعدة</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>تفعيل صوت تعطيل أمان المحطة</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME" xml:space="preserve">
+    <value>تعطيل أمان المحطة</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>تفعيل صوت انقطاع اتصال المحطة</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME" xml:space="preserve">
+    <value>انقطاع اتصال المحطة</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>تفعيل صوت تسجيل دخول مستخدم</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_NAME" xml:space="preserve">
+    <value>تسجيل دخول مستخدم</value>
   </data>
 </root>

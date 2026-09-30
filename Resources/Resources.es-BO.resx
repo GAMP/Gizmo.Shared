@@ -1436,6 +1436,12 @@
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve">
     <value>Especifica el tiempo del período de gracia de cierre de sesión</value>
   </data>
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_NAME" xml:space="preserve">
+    <value>Prioridad de los campos de búsqueda de usuarios</value>
+  </data>
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_DESCRIPTION" xml:space="preserve">
+    <value>Orden en que se clasifican los campos de búsqueda de usuarios, primero la mejor coincidencia</value>
+  </data>
   <data name="LINE_TYPE_PRODUCT" xml:space="preserve">
     <value>Producto</value>
   </data>
@@ -1825,5 +1831,53 @@
   </data>
   <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
     <value>Mensaje del código de confirmación de recuperación de contraseña</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Sonido de Cierre de sesión habilitado</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_NAME" xml:space="preserve">
+    <value>Cierre de sesión</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Sonido de Cierre de sesión con saldo pendiente habilitado</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_NAME" xml:space="preserve">
+    <value>Cierre de sesión con saldo pendiente</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Sonido de Sesión de consola finalizada habilitado</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_NAME" xml:space="preserve">
+    <value>Sesión de consola finalizada</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Sonido de Pedido recibido habilitado</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_NAME" xml:space="preserve">
+    <value>Pedido recibido</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Sonido de Asistencia solicitada habilitado</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_NAME" xml:space="preserve">
+    <value>Asistencia solicitada</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Sonido de Seguridad de estación deshabilitada habilitado</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME" xml:space="preserve">
+    <value>Seguridad de estación deshabilitada</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Sonido de Estación desconectada habilitado</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME" xml:space="preserve">
+    <value>Estación desconectada</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Sonido de Usuario con sesión iniciada habilitado</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_NAME" xml:space="preserve">
+    <value>Usuario con sesión iniciada</value>
   </data>
 </root>

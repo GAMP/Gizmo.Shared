@@ -489,6 +489,8 @@
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_ENABLED_DESCRIPTION" xml:space="preserve"><value>Angiver om brugerlogout-karensperioden er aktiveret</value></data>
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_NAME" xml:space="preserve"><value>Karenstid</value></data>
   <data name="SERVER_OPTION_USER_LOGOUT_GRACE_PERIOD_TIME_DESCRIPTION" xml:space="preserve"><value>Angiver brugerlogout-karensperiodestid</value></data>
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_NAME" xml:space="preserve"><value>Prioritet for brugersøgefelter</value></data>
+  <data name="SERVER_OPTION_USER_SEARCH_FIELD_PRIORITY_DESCRIPTION" xml:space="preserve"><value>Rækkefølgen som brugersøgefelterne rangeres i, bedste match først</value></data>
   <data name="LINE_TYPE_PRODUCT" xml:space="preserve"><value>Produkt</value></data>
   <data name="LINE_TYPE_TIME_PRODUCT" xml:space="preserve"><value>Tidsprodukt</value></data>
   <data name="LINE_TYPE_FIXED_TIME" xml:space="preserve"><value>Fast tid</value></data>
@@ -750,5 +752,53 @@
   </data>
   <data name="SERVER_OPTION_SMS_GATEWAY_RECOVERY_CONFIRMATION_MESSAGE_NAME" xml:space="preserve">
     <value>Besked med bekræftelseskode til nulstilling af adgangskode</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Lyd for Log ud aktiveret</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_SOUND_NAME" xml:space="preserve">
+    <value>Log ud</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Lyd for Log ud med udestående saldo aktiveret</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_LOGOUT_WITH_DEBT_SOUND_NAME" xml:space="preserve">
+    <value>Log ud med udestående saldo</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Lyd for Konsolsession afsluttet aktiveret</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_CONSOLE_SESSION_ENDED_SOUND_NAME" xml:space="preserve">
+    <value>Konsolsession afsluttet</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Lyd for Ordre modtaget aktiveret</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ORDER_RECEIVED_SOUND_NAME" xml:space="preserve">
+    <value>Ordre modtaget</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Lyd for Assistance anmodet aktiveret</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_ASSISTANCE_REQUESTED_SOUND_NAME" xml:space="preserve">
+    <value>Assistance anmodet</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Lyd for Stationssikkerhed deaktiveret aktiveret</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_SECURITY_DISABLED_SOUND_NAME" xml:space="preserve">
+    <value>Stationssikkerhed deaktiveret</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Lyd for Station afbrudt aktiveret</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_HOST_DISCONNECTED_SOUND_NAME" xml:space="preserve">
+    <value>Station afbrudt</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_ENABLED_NAME" xml:space="preserve">
+    <value>Lyd for Bruger logget ind aktiveret</value>
+  </data>
+  <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_NAME" xml:space="preserve">
+    <value>Bruger logget ind</value>
   </data>
 </root>
