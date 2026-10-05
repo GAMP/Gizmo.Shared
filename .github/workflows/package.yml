@@ -24,7 +24,7 @@ jobs:
   validate:
     # Pull requests only validate; they never publish or tag.
     if: ${{ github.event_name == 'pull_request' }}
-    uses: GAMP/Gizmo.Infra/.github/workflows/package-validation.yml@9b703b0225ff1557a5b49eb9a885795b258f2e79
+    uses: GAMP/Gizmo.Infra/.github/workflows/package-validation.yml@0c708bed3819041d563057b9f7aecbf0ffa926f6
     permissions:
       contents: read
     with:
@@ -34,7 +34,7 @@ jobs:
   prepare:
     # Push resolves the branch role and prepares the package.
     if: ${{ github.event_name == 'push' }}
-    uses: GAMP/Gizmo.Infra/.github/workflows/package-publish.yml@9b703b0225ff1557a5b49eb9a885795b258f2e79
+    uses: GAMP/Gizmo.Infra/.github/workflows/package-publish.yml@0c708bed3819041d563057b9f7aecbf0ffa926f6
     permissions:
       contents: read
     with:
@@ -50,7 +50,7 @@ jobs:
       id-token: write
     steps:
       - name: Publish public package
-        uses: GAMP/Gizmo.Infra/.github/actions/public@9b703b0225ff1557a5b49eb9a885795b258f2e79
+        uses: GAMP/Gizmo.Infra/.github/actions/public@0c708bed3819041d563057b9f7aecbf0ffa926f6
         with:
           package-id: ${{ needs.prepare.outputs.package-id }}
           nuget-user: ${{ vars.NUGET_USER }}
@@ -69,7 +69,7 @@ jobs:
       packages: write
     steps:
       - name: Publish private package
-        uses: GAMP/Gizmo.Infra/.github/actions/private@9b703b0225ff1557a5b49eb9a885795b258f2e79
+        uses: GAMP/Gizmo.Infra/.github/actions/private@0c708bed3819041d563057b9f7aecbf0ffa926f6
         with:
           package-id: ${{ needs.prepare.outputs.package-id }}
           package-artifact: ${{ needs.prepare.outputs.package-artifact }}
@@ -104,7 +104,7 @@ jobs:
       contents: write
     steps:
       - name: Reconcile immutable production tag
-        uses: GAMP/Gizmo.Infra/.github/actions/tag@9b703b0225ff1557a5b49eb9a885795b258f2e79
+        uses: GAMP/Gizmo.Infra/.github/actions/tag@0c708bed3819041d563057b9f7aecbf0ffa926f6
         with:
           branch-role: ${{ needs.prepare.outputs.branch-role }}
           release-tag: ${{ needs.prepare.outputs.release-tag }}
