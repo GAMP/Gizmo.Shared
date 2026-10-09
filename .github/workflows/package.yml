@@ -1,5 +1,5 @@
 # Canonical single caller-owned NuGet package workflow; copy it to a consumer repository at .github/workflows/package.yml.
-# Replace every `ee6fbd96adbcfba997755376a2c227f536c210d7` with one immutable Gizmo.Infra commit SHA and both branch placeholders with real branch names.
+# Gizmo.Infra references are pinned to one immutable commit SHA; caller branches are declared once below.
 # Do not rename the file: its name binds NuGet.org Trusted Publishing.
 name: Package
 
