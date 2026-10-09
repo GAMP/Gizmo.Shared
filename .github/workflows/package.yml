@@ -17,96 +17,172 @@ concurrency:
 
 # Each physical branch name is declared exactly once here and passed to Gizmo.Infra by alias.
 env:
-  DEVELOPMENT_BRANCH: &development_branch pre-release
-  PRODUCTION_BRANCH: &production_branch release
+  DEV: &dev pre-release
+  PROD: &prod release
 
 jobs:
-  validate:
-    # Pull requests only validate; they never publish or tag.
-    if: ${{ github.event_name == 'pull_request' }}
-    uses: GAMP/Gizmo.Infra/.github/workflows/package-validation.yml@0c708bed3819041d563057b9f7aecbf0ffa926f6
+  plan:
+    uses: GAMP/Gizmo.Infra/.github/workflows/package.yml@73cc424f1d4dcb42c76fd356e93776989deb994a
     permissions:
       contents: read
     with:
-      development-branch: *development_branch
-      production-branch: *production_branch
+      dev: *dev
+      prod: *prod
 
-  prepare:
-    # Push resolves the branch role and prepares the package.
-    if: ${{ github.event_name == 'push' }}
-    uses: GAMP/Gizmo.Infra/.github/workflows/package-publish.yml@0c708bed3819041d563057b9f7aecbf0ffa926f6
-    permissions:
-      contents: read
-    with:
-      development-branch: *development_branch
-      production-branch: *production_branch
-
-  publish-public:
-    needs: prepare
-    if: ${{ github.event_name != 'pull_request' && needs.prepare.outputs.branch-role != 'none' && needs.prepare.outputs.repository-visibility == 'public' }}
+  # The public NuGet.org publisher is caller-owned so it can present caller OIDC.
+  nuget:
+    needs: plan
+    if: ${{ needs.plan.outputs.publisher == 'nuget' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
       id-token: write
     steps:
       - name: Publish public package
-        uses: GAMP/Gizmo.Infra/.github/actions/public@0c708bed3819041d563057b9f7aecbf0ffa926f6
+        uses: GAMP/Gizmo.Infra/.github/actions/nuget@73cc424f1d4dcb42c76fd356e93776989deb994a
         with:
-          package-id: ${{ needs.prepare.outputs.package-id }}
-          nuget-user: ${{ vars.NUGET_USER }}
-          package-artifact: ${{ needs.prepare.outputs.package-artifact }}
-          package-version: ${{ needs.prepare.outputs.package-version }}
-          calculated-state: ${{ needs.prepare.outputs.calculated-state }}
-          tag-state-fingerprint: ${{ needs.prepare.outputs.tag-state-fingerprint }}
-          repository-visibility: ${{ needs.prepare.outputs.repository-visibility }}
+          state: ${{ needs.plan.outputs.state }}
+          user: ${{ vars.NUGET_USER }}
 
-  publish-private:
-    needs: prepare
-    if: ${{ github.event_name != 'pull_request' && needs.prepare.outputs.branch-role != 'none' && needs.prepare.outputs.repository-visibility == 'private' }}
+  # The internal registry publisher is caller-owned so it can use the caller token.
+  internal:
+    needs: plan
+    if: ${{ needs.plan.outputs.publisher == 'internal' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
     steps:
-      - name: Publish private package
-        uses: GAMP/Gizmo.Infra/.github/actions/private@0c708bed3819041d563057b9f7aecbf0ffa926f6
+      - name: Publish internal package
+        uses: GAMP/Gizmo.Infra/.github/actions/internal@73cc424f1d4dcb42c76fd356e93776989deb994a
         with:
-          package-id: ${{ needs.prepare.outputs.package-id }}
-          package-artifact: ${{ needs.prepare.outputs.package-artifact }}
-          package-version: ${{ needs.prepare.outputs.package-version }}
-          calculated-state: ${{ needs.prepare.outputs.calculated-state }}
-          tag-state-fingerprint: ${{ needs.prepare.outputs.tag-state-fingerprint }}
-          repository-visibility: ${{ needs.prepare.outputs.repository-visibility }}
+          state: ${{ needs.plan.outputs.state }}
 
-  reject-unsupported-visibility:
-    needs: prepare
-    if: ${{ github.event_name != 'pull_request' && needs.prepare.outputs.branch-role != 'none' && needs.prepare.outputs.repository-visibility != 'public' && needs.prepare.outputs.repository-visibility != 'private' }}
-    runs-on: ubuntu-latest
-    permissions: {}
-    steps:
-      - name: Fail closed for unsupported visibility
-        shell: bash
-        env:
-          REPOSITORY_VISIBILITY: ${{ needs.prepare.outputs.repository-visibility }}
-        run: |
-          set -euo pipefail
-          echo "Unsupported caller repository visibility '$REPOSITORY_VISIBILITY' for this branch role; refusing to publish or tag." >&2
-          exit 1
-
+  # Production tagging only, and only after the selected publisher succeeded.
   tag:
     needs:
-      - prepare
-      - publish-public
-      - publish-private
-    if: ${{ always() && github.event_name != 'pull_request' && needs.prepare.outputs.branch-role == 'production' && (needs.publish-public.result == 'success' || needs.publish-private.result == 'success') }}
+      - plan
+      - nuget
+      - internal
+    if: >-
+      ${{
+        always() &&
+        needs.plan.outputs.tag == 'true' &&
+        (
+          needs.nuget.result == 'success' ||
+          needs.internal.result == 'success'
+        )
+      }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - name: Reconcile immutable production tag
-        uses: GAMP/Gizmo.Infra/.github/actions/tag@0c708bed3819041d563057b9f7aecbf0ffa926f6
+        uses: GAMP/Gizmo.Infra/.github/actions/tag@73cc424f1d4dcb42c76fd356e93776989deb994a
         with:
-          branch-role: ${{ needs.prepare.outputs.branch-role }}
-          release-tag: ${{ needs.prepare.outputs.release-tag }}
-          calculated-state: ${{ needs.prepare.outputs.calculated-state }}
-          tag-state-fingerprint: ${{ needs.prepare.outputs.tag-state-fingerprint }}
+          state: ${{ needs.plan.outputs.state }}
+
+  # The Actions API does not expose job outputs for independent inspection.
+  verify-pr-noop:
+    needs:
+      - plan
+      - nuget
+      - internal
+      - tag
+    if: >-
+      ${{
+        always() &&
+        github.event_name == 'pull_request' &&
+        needs.plan.result == 'success'
+      }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Assert pull-request routing outputs
+        shell: bash
+        env:
+          PUBLISHER: ${{ needs.plan.outputs.publisher }}
+          TAG: ${{ needs.plan.outputs.tag }}
+          STATE: ${{ needs.plan.outputs.state }}
+          NUGET_RESULT: ${{ needs.nuget.result }}
+          INTERNAL_RESULT: ${{ needs.internal.result }}
+          TAG_RESULT: ${{ needs.tag.result }}
+        run: |
+          set -euo pipefail
+          fail() { echo "$1" >&2; exit 1; }
+          [[ "$PUBLISHER" == none ]] || fail "A pull request must resolve publisher=none."
+          [[ "$TAG" == false ]] || fail "A pull request must resolve tag=false."
+          [[ -n "$STATE" ]] || fail "The plan must export a non-empty state."
+          [[ "$NUGET_RESULT" == skipped ]] || fail "The nuget publisher must be skipped."
+          [[ "$INTERNAL_RESULT" == skipped ]] || fail "The internal publisher must be skipped."
+          [[ "$TAG_RESULT" == skipped ]] || fail "The tag job must be skipped."
+
+      - name: Checkout pinned Gizmo.Infra source
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        with:
+          repository: GAMP/Gizmo.Infra
+          ref: 73cc424f1d4dcb42c76fd356e93776989deb994a
+          path: .gizmo-infra
+          persist-credentials: false
+
+      - name: Download exact prepared package artifact
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: nuget-package-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts
+
+      - name: Verify exported state and exact artifact
+        id: verify
+        shell: bash
+        env:
+          STATE: ${{ needs.plan.outputs.state }}
+          STATE_PARSER: ${{ github.workspace }}/.gizmo-infra/.github/package/state.py
+          NUSPEC_PARSER: ${{ github.workspace }}/.gizmo-infra/.github/package/nuspec.py
+        run: |
+          set -euo pipefail
+          export LC_ALL=C
+          fail() { echo "$1" >&2; exit 1; }
+
+          mapfile -t packages < <(find artifacts -type f -name '*.nupkg')
+          [[ "${#packages[@]}" -eq 1 ]] || fail "Expected exactly one prepared .nupkg artifact."
+          artifact="${packages[0]}"
+          actual_digest=$(sha256sum "$artifact" | cut -d ' ' -f1)
+
+          # Producer success alone does not prove the exported state binds this artifact.
+          if ! resolved=$(printf '%s' "$STATE" | python3 "$STATE_PARSER" seal --digest "$actual_digest"); then
+            fail "The exported plan state is malformed, wrong-version, or context-bound incorrectly."
+          fi
+          [[ "$resolved" == "state=$STATE" ]] || fail "The exported plan state does not bind the exact prepared artifact digest."
+
+          name="${artifact##*/}"
+          [[ "$name" =~ ^Gizmo\.Shared\.(.+)\.nupkg$ ]] || fail "The prepared artifact name is not the expected package."
+          version="${BASH_REMATCH[1]}"
+          [[ "$version" == *"-pr.${GITHUB_RUN_NUMBER}" ]] || fail "The prepared artifact is not a pull-request version for this run."
+
+          entries=$(unzip -Z1 "$artifact" 2>/dev/null | grep -i '\.nuspec$' || true)
+          [[ "$(printf '%s\n' "$entries" | grep -c '[^[:space:]]' || true)" == 1 ]] || fail "Expected exactly one nuspec entry."
+          nuspec_name=$(printf '%s\n' "$entries" | grep '[^[:space:]]')
+          # An artifact filename alone cannot establish package provenance.
+          if ! verdict=$(unzip -p "$artifact" "$nuspec_name" 2>/dev/null | EXPECTED_PACKAGE_ID="Gizmo.Shared" PACKAGE_VERSION="$version" GITHUB_SHA="$GITHUB_SHA" python3 "$NUSPEC_PARSER"); then
+            fail "nuspec provenance verdict: $verdict"
+          fi
+
+          jq -n \
+            --arg packageFile "$name" \
+            --argjson sizeBytes "$(stat -c '%s' "$artifact")" \
+            --arg sha256 "$actual_digest" \
+            --arg packageVersion "$version" \
+            --arg runNumber "$GITHUB_RUN_NUMBER" \
+            --arg callerPrMergeSha "$GITHUB_SHA" \
+            --arg runUrl "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" \
+            '{packageFile: $packageFile, sizeBytes: $sizeBytes, sha256: $sha256, packageVersion: $packageVersion, runNumber: $runNumber, callerPrMergeSha: $callerPrMergeSha, runUrl: $runUrl, publisher: "none", tag: "false", nugetResult: "skipped", internalResult: "skipped", tagResult: "skipped"}' > probe-evidence.json
+          cat probe-evidence.json >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload probe evidence
+        if: ${{ always() && steps.verify.outcome == 'success' }}
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        with:
+          name: gizmo-pr-probe-evidence-${{ github.run_id }}-${{ github.run_attempt }}
+          path: probe-evidence.json
+          if-no-files-found: error
