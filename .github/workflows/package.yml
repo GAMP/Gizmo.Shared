@@ -1,5 +1,5 @@
 # Canonical single caller-owned NuGet package workflow; copy it to a consumer repository at .github/workflows/package.yml.
-# Replace every `<40-character-infra-commit-sha>` with one immutable Gizmo.Infra commit SHA and both branch placeholders with real branch names.
+# Replace every `ee6fbd96adbcfba997755376a2c227f536c210d7` with one immutable Gizmo.Infra commit SHA and both branch placeholders with real branch names.
 # Do not rename the file: its name binds NuGet.org Trusted Publishing.
 name: Package
 
@@ -10,103 +10,74 @@ on:
 permissions:
   contents: read
 
-# The caller owns the only lock; the reusable workflows declare none so they cannot nest.
+# The caller owns the only lock; the reusable workflow declares none so it cannot nest.
 concurrency:
   group: nuget-${{ github.repository }}
   cancel-in-progress: false
 
 # Each physical branch name is declared exactly once here and passed to Gizmo.Infra by alias.
 env:
-  DEVELOPMENT_BRANCH: &development_branch pre-release
-  PRODUCTION_BRANCH: &production_branch release
+  DEV: &dev pre-release
+  PROD: &prod release
 
 jobs:
-  validate:
-    # Pull requests only validate; they never publish or tag.
-    if: ${{ github.event_name == 'pull_request' }}
-    uses: GAMP/Gizmo.Infra/.github/workflows/package-validation.yml@0c708bed3819041d563057b9f7aecbf0ffa926f6
+  plan:
+    uses: GAMP/Gizmo.Infra/.github/workflows/package.yml@ee6fbd96adbcfba997755376a2c227f536c210d7
     permissions:
       contents: read
     with:
-      development-branch: *development_branch
-      production-branch: *production_branch
+      dev: *dev
+      prod: *prod
 
-  prepare:
-    # Push resolves the branch role and prepares the package.
-    if: ${{ github.event_name == 'push' }}
-    uses: GAMP/Gizmo.Infra/.github/workflows/package-publish.yml@0c708bed3819041d563057b9f7aecbf0ffa926f6
-    permissions:
-      contents: read
-    with:
-      development-branch: *development_branch
-      production-branch: *production_branch
-
-  publish-public:
-    needs: prepare
-    if: ${{ github.event_name != 'pull_request' && needs.prepare.outputs.branch-role != 'none' && needs.prepare.outputs.repository-visibility == 'public' }}
+  # The public NuGet.org publisher is caller-owned so it can present caller OIDC.
+  nuget:
+    needs: plan
+    if: ${{ needs.plan.outputs.publisher == 'nuget' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
       id-token: write
     steps:
       - name: Publish public package
-        uses: GAMP/Gizmo.Infra/.github/actions/public@0c708bed3819041d563057b9f7aecbf0ffa926f6
+        uses: GAMP/Gizmo.Infra/.github/actions/nuget@ee6fbd96adbcfba997755376a2c227f536c210d7
         with:
-          package-id: ${{ needs.prepare.outputs.package-id }}
-          nuget-user: ${{ vars.NUGET_USER }}
-          package-artifact: ${{ needs.prepare.outputs.package-artifact }}
-          package-version: ${{ needs.prepare.outputs.package-version }}
-          calculated-state: ${{ needs.prepare.outputs.calculated-state }}
-          tag-state-fingerprint: ${{ needs.prepare.outputs.tag-state-fingerprint }}
-          repository-visibility: ${{ needs.prepare.outputs.repository-visibility }}
+          state: ${{ needs.plan.outputs.state }}
+          user: ${{ vars.NUGET_USER }}
 
-  publish-private:
-    needs: prepare
-    if: ${{ github.event_name != 'pull_request' && needs.prepare.outputs.branch-role != 'none' && needs.prepare.outputs.repository-visibility == 'private' }}
+  # The internal registry publisher is caller-owned so it can use the caller token.
+  internal:
+    needs: plan
+    if: ${{ needs.plan.outputs.publisher == 'internal' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
     steps:
-      - name: Publish private package
-        uses: GAMP/Gizmo.Infra/.github/actions/private@0c708bed3819041d563057b9f7aecbf0ffa926f6
+      - name: Publish internal package
+        uses: GAMP/Gizmo.Infra/.github/actions/internal@ee6fbd96adbcfba997755376a2c227f536c210d7
         with:
-          package-id: ${{ needs.prepare.outputs.package-id }}
-          package-artifact: ${{ needs.prepare.outputs.package-artifact }}
-          package-version: ${{ needs.prepare.outputs.package-version }}
-          calculated-state: ${{ needs.prepare.outputs.calculated-state }}
-          tag-state-fingerprint: ${{ needs.prepare.outputs.tag-state-fingerprint }}
-          repository-visibility: ${{ needs.prepare.outputs.repository-visibility }}
+          state: ${{ needs.plan.outputs.state }}
 
-  reject-unsupported-visibility:
-    needs: prepare
-    if: ${{ github.event_name != 'pull_request' && needs.prepare.outputs.branch-role != 'none' && needs.prepare.outputs.repository-visibility != 'public' && needs.prepare.outputs.repository-visibility != 'private' }}
-    runs-on: ubuntu-latest
-    permissions: {}
-    steps:
-      - name: Fail closed for unsupported visibility
-        shell: bash
-        env:
-          REPOSITORY_VISIBILITY: ${{ needs.prepare.outputs.repository-visibility }}
-        run: |
-          set -euo pipefail
-          echo "Unsupported caller repository visibility '$REPOSITORY_VISIBILITY' for this branch role; refusing to publish or tag." >&2
-          exit 1
-
+  # Production tagging only, and only after the selected publisher succeeded.
   tag:
     needs:
-      - prepare
-      - publish-public
-      - publish-private
-    if: ${{ always() && github.event_name != 'pull_request' && needs.prepare.outputs.branch-role == 'production' && (needs.publish-public.result == 'success' || needs.publish-private.result == 'success') }}
+      - plan
+      - nuget
+      - internal
+    if: >-
+      ${{
+        always() &&
+        needs.plan.outputs.tag == 'true' &&
+        (
+          needs.nuget.result == 'success' ||
+          needs.internal.result == 'success'
+        )
+      }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - name: Reconcile immutable production tag
-        uses: GAMP/Gizmo.Infra/.github/actions/tag@0c708bed3819041d563057b9f7aecbf0ffa926f6
+        uses: GAMP/Gizmo.Infra/.github/actions/tag@ee6fbd96adbcfba997755376a2c227f536c210d7
         with:
-          branch-role: ${{ needs.prepare.outputs.branch-role }}
-          release-tag: ${{ needs.prepare.outputs.release-tag }}
-          calculated-state: ${{ needs.prepare.outputs.calculated-state }}
-          tag-state-fingerprint: ${{ needs.prepare.outputs.tag-state-fingerprint }}
+          state: ${{ needs.plan.outputs.state }}
