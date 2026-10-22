@@ -22,7 +22,7 @@ env:
 
 jobs:
   plan:
-    uses: GAMP/Gizmo.Infra/.github/workflows/package.yml@ee6fbd96adbcfba997755376a2c227f536c210d7
+    uses: GAMP/Gizmo.Infra/.github/workflows/package.yml@4cf658f3ae09069730cefc7232cacd12a52bd1da
     permissions:
       contents: read
     with:
@@ -39,7 +39,7 @@ jobs:
       id-token: write
     steps:
       - name: Publish public package
-        uses: GAMP/Gizmo.Infra/.github/actions/nuget@ee6fbd96adbcfba997755376a2c227f536c210d7
+        uses: GAMP/Gizmo.Infra/.github/actions/nuget@4cf658f3ae09069730cefc7232cacd12a52bd1da
         with:
           state: ${{ needs.plan.outputs.state }}
           user: ${{ vars.NUGET_USER }}
@@ -54,7 +54,7 @@ jobs:
       packages: write
     steps:
       - name: Publish internal package
-        uses: GAMP/Gizmo.Infra/.github/actions/internal@ee6fbd96adbcfba997755376a2c227f536c210d7
+        uses: GAMP/Gizmo.Infra/.github/actions/internal@4cf658f3ae09069730cefc7232cacd12a52bd1da
         with:
           state: ${{ needs.plan.outputs.state }}
 
@@ -78,6 +78,6 @@ jobs:
       contents: write
     steps:
       - name: Reconcile immutable production tag
-        uses: GAMP/Gizmo.Infra/.github/actions/tag@ee6fbd96adbcfba997755376a2c227f536c210d7
+        uses: GAMP/Gizmo.Infra/.github/actions/tag@4cf658f3ae09069730cefc7232cacd12a52bd1da
         with:
           state: ${{ needs.plan.outputs.state }}
