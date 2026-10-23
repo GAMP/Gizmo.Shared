@@ -1,6 +1,6 @@
-# Canonical single caller-owned NuGet package workflow; copy it to a consumer repository at .github/workflows/package.yml.
-# Gizmo.Infra references are pinned to one immutable commit SHA; caller branches are declared once below.
-# Do not rename the file: its name binds NuGet.org Trusted Publishing.
+# The caller file must be named package.yml because that file name binds NuGet.org Trusted Publishing.
+# Only refs/tags/stable or one explicit full commit SHA is trusted; branches and other tags are not.
+# The nuget and tag jobs run the plan's verified infra-sha so one run cannot split across Infra versions.
 name: Package
 
 on:
@@ -15,18 +15,18 @@ concurrency:
   group: nuget-${{ github.repository }}
   cancel-in-progress: false
 
-# Each physical branch name is declared exactly once here and passed to Gizmo.Infra by alias.
+# Each physical branch name is declared once here; PREV feeds the reusable preview input.
 env:
-  DEV: &dev pre-release
+  PREV: &prev pre-release
   PROD: &prod release
 
 jobs:
   plan:
-    uses: GAMP/Gizmo.Infra/.github/workflows/package.yml@4cf658f3ae09069730cefc7232cacd12a52bd1da
+    uses: GAMP/Gizmo.Infra/.github/workflows/package.yml@stable
     permissions:
       contents: read
     with:
-      dev: *dev
+      prev: *prev
       prod: *prod
 
   # The public NuGet.org publisher is caller-owned so it can present caller OIDC.
@@ -38,46 +38,71 @@ jobs:
       contents: read
       id-token: write
     steps:
+      - &require-planned-infra-sha
+        name: Require the planned Gizmo.Infra source SHA
+        shell: bash
+        env:
+          INFRA_SHA: ${{ needs.plan.outputs.infra-sha }}
+        run: |
+          set -euo pipefail
+          [[ "$INFRA_SHA" =~ ^[0-9a-f]{40}$ ]] || { echo "The plan did not export a complete 40-character Gizmo.Infra commit SHA." >&2; exit 1; }
+      - &checkout-planned-infra
+        name: Checkout the exact planned Gizmo.Infra source
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        with:
+          repository: GAMP/Gizmo.Infra
+          ref: ${{ needs.plan.outputs.infra-sha }}
+          path: .gizmo-infra
+          persist-credentials: false
+      - &verify-planned-infra
+        name: Verify the checked-out Gizmo.Infra commit
+        shell: bash
+        env:
+          INFRA_SHA: ${{ needs.plan.outputs.infra-sha }}
+        run: |
+          set -euo pipefail
+          checked_out_sha=$(git -C .gizmo-infra rev-parse HEAD)
+          [[ "$checked_out_sha" == "$INFRA_SHA" ]] || { echo "The Gizmo.Infra checkout does not match the planned commit; refusing to continue." >&2; exit 1; }
+          printf 'Gizmo.Infra action source: %s\n' "$checked_out_sha"
       - name: Publish public package
-        uses: GAMP/Gizmo.Infra/.github/actions/nuget@4cf658f3ae09069730cefc7232cacd12a52bd1da
+        uses: ./.gizmo-infra/.github/actions/nuget
         with:
           state: ${{ needs.plan.outputs.state }}
           user: ${{ vars.NUGET_USER }}
 
-  # The internal registry publisher is caller-owned so it can use the caller token.
+  # The internal capability is selected but not implemented; the job fails closed so no tag can follow.
   internal:
     needs: plan
     if: ${{ needs.plan.outputs.publisher == 'internal' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      packages: write
     steps:
-      - name: Publish internal package
-        uses: GAMP/Gizmo.Infra/.github/actions/internal@4cf658f3ae09069730cefc7232cacd12a52bd1da
-        with:
-          state: ${{ needs.plan.outputs.state }}
+      - name: Reject unsupported internal registry publishing
+        shell: bash
+        run: |
+          echo "Internal registry publishing is not implemented; refusing publication so no tag can follow." >&2
+          exit 1
 
-  # Production tagging only, and only after the selected publisher succeeded.
+  # Requiring nuget success keeps the fail-closed internal placeholder from tagging.
   tag:
     needs:
       - plan
       - nuget
-      - internal
     if: >-
       ${{
         always() &&
         needs.plan.outputs.tag == 'true' &&
-        (
-          needs.nuget.result == 'success' ||
-          needs.internal.result == 'success'
-        )
+        needs.nuget.result == 'success'
       }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
+      - *require-planned-infra-sha
+      - *checkout-planned-infra
+      - *verify-planned-infra
       - name: Reconcile immutable production tag
-        uses: GAMP/Gizmo.Infra/.github/actions/tag@4cf658f3ae09069730cefc7232cacd12a52bd1da
+        uses: ./.gizmo-infra/.github/actions/tag
         with:
           state: ${{ needs.plan.outputs.state }}
