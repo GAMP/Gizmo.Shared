@@ -24,5 +24,12 @@ namespace Gizmo.Server.Options
         [MessagePack.Key(1)]
         [DefaultValue(false)]
         public bool IsClientEnabled { get; init; }
+
+        [Name("Mobile enabled")]
+        [ExtendedDescription("Specifies if mobile app user password recovery is enabled")]
+        [StoreOptionKey("MOBILE_ENABLED")]
+        [DefaultValue(false)]
+        [MessagePack.Key(2)]
+        public bool IsMobileEnabled { get; init; }
     }
 }

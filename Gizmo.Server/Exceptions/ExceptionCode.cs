@@ -198,5 +198,10 @@ namespace Gizmo.Server.Exceptions
         /// Achievement exception.
         /// </summary>
         Achievement = 36,
+
+        /// <summary>
+        /// User login exception.
+        /// </summary>
+        UserLogin = 37,
     }
 }
