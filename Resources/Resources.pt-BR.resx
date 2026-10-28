@@ -529,6 +529,12 @@
   <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_NAME" xml:space="preserve"> 
     <value>Logar usuários</value> 
   </data> 
+  <data name="GIZMO_POLICY_GUEST_MANUAL_LOGIN_DESCRIPTION" xml:space="preserve">
+    <value>Concede acesso para fazer login de convidados manualmente, permitindo que o usuário inicie sessões de convidados diretamente.</value>
+  </data>
+  <data name="GIZMO_POLICY_GUEST_MANUAL_LOGIN_NAME" xml:space="preserve">
+    <value>Logar convidados</value>
+  </data>
   <data name="GIZMO_POLICY_USER_PASSWORD_RESET_DESCRIPTION" xml:space="preserve"> 
     <value>Concede acesso para redefinir manualmente as senhas dos usuários, permitindo que eles atualizem as credenciais da conta.</value> 
   </data> 

@@ -339,6 +339,8 @@
   <data name="GIZMO_POLICY_USER_HARD_DELETE_NAME" xml:space="preserve"><value>Permanent slet</value></data>
   <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_DESCRIPTION" xml:space="preserve"><value>Giver adgang til manuelt at logge brugere ind, så brugeren kan starte brugersessioner direkte</value></data>
   <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_NAME" xml:space="preserve"><value>Log brugere ind</value></data>
+  <data name="GIZMO_POLICY_GUEST_MANUAL_LOGIN_DESCRIPTION" xml:space="preserve"><value>Antaa oikeuden kirjata vieraita sisään manuaalisesti, jolloin käyttäjä voi aloittaa vierasistuntoja suoraan</value></data>
+  <data name="GIZMO_POLICY_GUEST_MANUAL_LOGIN_NAME" xml:space="preserve"><value>Kirjaa vieraat sisään</value></data>
   <data name="GIZMO_POLICY_USER_PASSWORD_RESET_DESCRIPTION" xml:space="preserve"><value>Giver adgang til manuelt at nulstille brugeradgangskoder, så brugeren kan opdatere kontolegitimationsoplysninger</value></data>
   <data name="GIZMO_POLICY_USER_PASSWORD_RESET_NAME" xml:space="preserve"><value>Nulstil adgangskode</value></data>
   <data name="GIZMO_POLICY_USER_RENAME_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at omdøbe brugere, så brugeren kan opdatere brugerkontonavne</value></data>

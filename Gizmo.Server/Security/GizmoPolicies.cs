@@ -471,6 +471,12 @@ namespace Gizmo.Server.Security
         UserManualLogin,
 
         /// <summary>
+        /// Manual guest login permission.
+        /// </summary>
+        [PolicyDescription("User", "GuestManualLogin", GizmoPolicyGroups.User, nameof(Resources.GIZMO_POLICY_GUEST_MANUAL_LOGIN_NAME), nameof(Resources.GIZMO_POLICY_GUEST_MANUAL_LOGIN_DESCRIPTION), [GizmoPolicySet.Owner])]
+        GuestManualLogin,
+
+        /// <summary>
         /// Add user permission.
         /// </summary>
         [PolicyDescription("User", "Add", GizmoPolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_CREATE_NAME), nameof(Resources.GIZMO_POLICY_USER_CREATE_DESCRIPTION),

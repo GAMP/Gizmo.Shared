@@ -527,8 +527,14 @@
     <value>Предоставляет доступ к ручному входу пользователей, позволяя пользователю напрямую инициировать сеансы пользователя.</value> 
   </data> 
   <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_NAME" xml:space="preserve"> 
-    <value>Пользователи, вошедшие в систему</value> 
+    <value>Авторизация пользователей</value> 
   </data> 
+  <data name="GIZMO_POLICY_GUEST_MANUAL_LOGIN_DESCRIPTION" xml:space="preserve">
+    <value>Предоставляет доступ к ручному входу гостей, позволяя пользователю напрямую инициировать сеансы гостей.</value>
+  </data>
+  <data name="GIZMO_POLICY_GUEST_MANUAL_LOGIN_NAME" xml:space="preserve">
+    <value>Авторизация гостей</value>
+  </data>
   <data name="GIZMO_POLICY_USER_PASSWORD_RESET_DESCRIPTION" xml:space="preserve"> 
     <value>Предоставляет доступ к сбросу паролей пользователей вручную, позволяя пользователю обновить учетные данные учетной записи.</value> 
   </data> 

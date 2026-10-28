@@ -529,6 +529,12 @@
   <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_NAME" xml:space="preserve"> 
     <value>Σύνδεση χρηστών</value> 
   </data> 
+  <data name="GIZMO_POLICY_GUEST_MANUAL_LOGIN_DESCRIPTION" xml:space="preserve">
+    <value>Παρέχει πρόσβαση στη χειροκίνητη σύνδεση επισκεπτών, επιτρέποντας στον χρήστη να ξεκινήσει απευθείας συνεδρίες επισκεπτών.</value>
+  </data>
+  <data name="GIZMO_POLICY_GUEST_MANUAL_LOGIN_NAME" xml:space="preserve">
+    <value>Σύνδεση επισκεπτών</value>
+  </data>
   <data name="GIZMO_POLICY_USER_PASSWORD_RESET_DESCRIPTION" xml:space="preserve"> 
     <value>Παρέχει πρόσβαση για χειροκίνητη επαναφορά κωδικών χρήστης, επιτρέποντας στον χρήστη να ενημερώσει τα διαπιστευτήρια του λογαριασμού του.</value> 
   </data> 
