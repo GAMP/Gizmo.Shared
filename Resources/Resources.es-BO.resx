@@ -986,6 +986,12 @@
   <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_NAME" xml:space="preserve">
     <value>Iniciar sesión de usuarios</value>
   </data>
+  <data name="GIZMO_POLICY_GUEST_MANUAL_LOGIN_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para iniciar sesión de invitados manualmente.</value>
+  </data>
+  <data name="GIZMO_POLICY_GUEST_MANUAL_LOGIN_NAME" xml:space="preserve">
+    <value>Iniciar sesión de invitados</value>
+  </data>
   <data name="GIZMO_POLICY_USER_PASSWORD_RESET_DESCRIPTION" xml:space="preserve">
     <value>Acceso para restablecer contraseñas de usuarios.</value>
   </data>

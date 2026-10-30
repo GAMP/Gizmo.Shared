@@ -529,6 +529,12 @@
   <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_NAME" xml:space="preserve"> 
     <value>تسجيل دخول المستخدمين</value> 
   </data> 
+  <data name="GIZMO_POLICY_GUEST_MANUAL_LOGIN_DESCRIPTION" xml:space="preserve">
+    <value>يمنح الوصول لتسجيل دخول الضيوف يدوياً مما يتيح للمستخدم بدء جلسات الضيوف مباشرة</value>
+  </data>
+  <data name="GIZMO_POLICY_GUEST_MANUAL_LOGIN_NAME" xml:space="preserve">
+    <value>تسجيل دخول الضيوف</value>
+  </data>
   <data name="GIZMO_POLICY_USER_PASSWORD_RESET_DESCRIPTION" xml:space="preserve"> 
     <value>يمنح الوصول لإعادة تعيين كلمات مرور المستخدمين يدوياً مما يتيح للمستخدم تحديث بيانات اعتماد الحساب</value> 
   </data> 

@@ -529,6 +529,12 @@
   <data name="GIZMO_POLICY_USER_MANUAL_LOGIN_NAME" xml:space="preserve"> 
     <value>Kullanıcı girişi yap</value> 
   </data> 
+  <data name="GIZMO_POLICY_GUEST_MANUAL_LOGIN_DESCRIPTION" xml:space="preserve">
+    <value>Manuel olarak misafir oturumu açma erişimi sağlar, kullanıcının doğrudan misafir oturumları başlatmasına olanak tanır</value>
+  </data>
+  <data name="GIZMO_POLICY_GUEST_MANUAL_LOGIN_NAME" xml:space="preserve">
+    <value>Misafir girişi yap</value>
+  </data>
   <data name="GIZMO_POLICY_USER_PASSWORD_RESET_DESCRIPTION" xml:space="preserve"> 
     <value>Manuel olarak kullanıcı şifrelerini sıfırlama erişimi sağlar, kullanıcının hesap kimlik bilgilerini güncellemesine olanak tanır</value> 
   </data> 
