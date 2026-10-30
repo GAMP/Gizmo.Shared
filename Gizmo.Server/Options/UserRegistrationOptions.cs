@@ -38,5 +38,12 @@ namespace Gizmo.Server.Options
         [MessagePack.Key(3)]
         [DefaultValue(false)]
         public bool IsDirectEnabled { get; init; }
+
+        [Name("Mobile enabled")]
+        [ExtendedDescription("Specifies if mobile app user registration is enabled")]
+        [StoreOptionKey("MOBILE_ENABLED")]
+        [DefaultValue(false)]
+        [MessagePack.Key(4)]
+        public bool IsMobileEnabled { get; init; }
     }
 }
