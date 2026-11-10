@@ -377,6 +377,12 @@
   <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve">
     <value>View past day transactions</value>
   </data>
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_CLOSED_RECEIPTS_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to view closed receipts from past days and shifts enabling the user to review fiscal receipts beyond the current shift or business day</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_CLOSED_RECEIPTS_NAME" xml:space="preserve">
+    <value>View closed receipts from past days / shifts</value>
+  </data>
   <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve">
     <value>Grants access to view register transactions enabling the user to review all register activities</value>
   </data>
@@ -804,28 +810,28 @@
     <value>View deposits</value>
   </data>
   <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_DESCRIPTION" xml:space="preserve">
-    <value>Grants access to view invoices enabling the user to review billing and payment details</value>
+    <value>Grants access to view all orders enabling the user to review orders and related payments</value>
   </data>
   <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_NAME" xml:space="preserve">
-    <value>View invoices</value>
+    <value>View all orders</value>
   </data>
   <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_DESCRIPTION" xml:space="preserve">
-    <value>Grants access to view paid invoices enabling the user to review completed payment records</value>
+    <value>Grants access to view paid orders enabling the user to review completed order payment records</value>
   </data>
   <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_NAME" xml:space="preserve">
-    <value>View paid invoices</value>
+    <value>View paid orders</value>
   </data>
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_DESCRIPTION" xml:space="preserve">
-    <value>Grants access to view past day deposits enabling the user to review deposit transactions from the previous day</value>
+    <value>Grants access to view deposits from past days and shifts enabling the user to review deposit transactions beyond the current shift or business day</value>
   </data>
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_NAME" xml:space="preserve">
-    <value>View past day deposits</value>
+    <value>View deposits from past days / shifts</value>
   </data>
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_DESCRIPTION" xml:space="preserve">
-    <value>Grants access to view past day invoices enabling the user to review invoices issued on the previous day</value>
+    <value>Grants access to view orders from past days and shifts enabling the user to review orders beyond the current shift or business day</value>
   </data>
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_NAME" xml:space="preserve">
-    <value>View past day invoices</value>
+    <value>View orders from past days / shifts</value>
   </data>
   <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_DESCRIPTION" xml:space="preserve">
     <value>Grants access to void invoices from closed shifts enabling the user to cancel transactions after the shift has ended</value>

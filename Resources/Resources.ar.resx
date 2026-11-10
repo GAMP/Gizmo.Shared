@@ -286,6 +286,12 @@
   <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve"> 
     <value>عرض معاملات اليوم السابق</value> 
   </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_CLOSED_RECEIPTS_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لعرض الإيصالات المغلقة للأيام والورديات السابقة مما يتيح للمستخدم مراجعة الإيصالات الضريبية خارج الوردية أو اليوم الحالي</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_CLOSED_RECEIPTS_NAME" xml:space="preserve"> 
+    <value>عرض الإيصالات المغلقة للأيام / الورديات السابقة</value> 
+  </data> 
   <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve"> 
     <value>يمنح الوصول إلى عرض معاملات الكاشير مما يتيح للمستخدم مراجعة جميع أنشطة الكاشير</value> 
   </data> 
@@ -371,28 +377,28 @@
     <value>عرض الإيداعات</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_DESCRIPTION" xml:space="preserve"> 
-    <value>يمنح الوصول لعرض الفواتير مما يتيح للمستخدم مراجعة تفاصيل الفوترة والدفع</value> 
+    <value>يمنح الوصول لعرض جميع الطلبات مما يتيح للمستخدم مراجعة الطلبات والمدفوعات المرتبطة بها</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_NAME" xml:space="preserve"> 
-    <value>عرض الفواتير</value> 
+    <value>عرض جميع الطلبات</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_DESCRIPTION" xml:space="preserve"> 
-    <value>يمنح الوصول لعرض الفواتير المدفوعة مما يتيح للمستخدم مراجعة سجلات الدفع المكتملة</value> 
+    <value>يمنح الوصول لعرض الطلبات المدفوعة مما يتيح للمستخدم مراجعة سجلات دفع الطلبات المكتملة</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_NAME" xml:space="preserve"> 
-    <value>عرض الفواتير المدفوعة</value> 
+    <value>عرض الطلبات المدفوعة</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_DESCRIPTION" xml:space="preserve"> 
-    <value>يمنح الوصول لعرض إيداعات اليوم السابق مما يتيح للمستخدم مراجعة معاملات الإيداع السابقة</value> 
+    <value>يمنح الوصول لعرض إيداعات الأيام والورديات السابقة مما يتيح للمستخدم مراجعة معاملات الإيداع خارج الوردية أو اليوم الحالي</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_NAME" xml:space="preserve"> 
-    <value>عرض إيداعات اليوم السابق</value> 
+    <value>عرض إيداعات الأيام / الورديات السابقة</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_DESCRIPTION" xml:space="preserve"> 
-    <value>يمنح الوصول لعرض فواتير اليوم السابق مما يتيح للمستخدم مراجعة الفواتير الصادرة في اليوم السابق</value> 
+    <value>يمنح الوصول لعرض طلبات الأيام والورديات السابقة مما يتيح للمستخدم مراجعة الطلبات خارج الوردية أو اليوم الحالي</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_NAME" xml:space="preserve"> 
-    <value>عرض فواتير اليوم السابق</value> 
+    <value>عرض طلبات الأيام / الورديات السابقة</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_DESCRIPTION" xml:space="preserve"> 
     <value>يمنح الوصول لإلغاء فواتير الورديات المغلقة مما يتيح للمستخدم إلغاء المعاملات بعد انتهاء الوردية</value> 

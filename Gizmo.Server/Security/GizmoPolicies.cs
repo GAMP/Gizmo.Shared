@@ -573,6 +573,12 @@ namespace Gizmo.Server.Security
         RegisterViewPastDaysTransactions,
 
         /// <summary>
+        /// View past days closed receipts permission.
+        /// </summary>
+        [PolicyDescription("Register", "ViewPastDaysClosedReceipts", GizmoPolicyGroups.Register, [RegisterViewTransactions], nameof(Resources.GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_CLOSED_RECEIPTS_NAME), nameof(Resources.GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_CLOSED_RECEIPTS_DESCRIPTION), [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+        ViewPastDaysClosedReceipts,
+
+        /// <summary>
         /// Create pay in register transactions permission.
         /// </summary>
 

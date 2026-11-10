@@ -377,6 +377,12 @@
   <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve">
     <value>Ver transacciones del día anterior</value>
   </data>
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_CLOSED_RECEIPTS_DESCRIPTION" xml:space="preserve">
+    <value>Acceso para ver recibos cerrados de días y turnos anteriores.</value>
+  </data>
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_CLOSED_RECEIPTS_NAME" xml:space="preserve">
+    <value>Ver recibos cerrados de días / turnos anteriores</value>
+  </data>
   <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve">
     <value>Acceso para ver todas las transacciones de caja.</value>
   </data>
@@ -804,28 +810,28 @@
     <value>Ver depósitos</value>
   </data>
   <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_DESCRIPTION" xml:space="preserve">
-    <value>Acceso para ver las facturas.</value>
+    <value>Acceso para ver todos los pedidos y los pagos relacionados.</value>
   </data>
   <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_NAME" xml:space="preserve">
-    <value>Ver facturas</value>
+    <value>Ver todos los pedidos</value>
   </data>
   <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_DESCRIPTION" xml:space="preserve">
-    <value>Acceso para ver las facturas pagadas.</value>
+    <value>Acceso para ver los pedidos pagados.</value>
   </data>
   <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_NAME" xml:space="preserve">
-    <value>Ver facturas pagadas</value>
+    <value>Ver pedidos pagados</value>
   </data>
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_DESCRIPTION" xml:space="preserve">
-    <value>Acceso para ver los depósitos del día anterior.</value>
+    <value>Acceso para ver depósitos de días y turnos anteriores.</value>
   </data>
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_NAME" xml:space="preserve">
-    <value>Ver depósitos del día anterior</value>
+    <value>Ver depósitos de días / turnos anteriores</value>
   </data>
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_DESCRIPTION" xml:space="preserve">
-    <value>Acceso para ver las facturas del día anterior.</value>
+    <value>Acceso para ver pedidos de días y turnos anteriores.</value>
   </data>
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_NAME" xml:space="preserve">
-    <value>Ver facturas del día anterior</value>
+    <value>Ver pedidos de días / turnos anteriores</value>
   </data>
   <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_DESCRIPTION" xml:space="preserve">
     <value>Acceso para anular facturas de turnos ya cerrados.</value>

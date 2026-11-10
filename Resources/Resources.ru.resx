@@ -286,6 +286,12 @@
   <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve"> 
     <value>Просмотр транзакций за прошлый день</value> 
   </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_CLOSED_RECEIPTS_DESCRIPTION" xml:space="preserve"> 
+    <value>Предоставляет доступ к просмотру закрытых чеков за прошлые дни и смены, позволяя пользователю просматривать фискальные чеки не только за текущую смену или день.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_CLOSED_RECEIPTS_NAME" xml:space="preserve"> 
+    <value>Просмотр закрытых чеков за прошлые дни / смены</value> 
+  </data> 
   <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve"> 
     <value>Предоставляет доступ к просмотру транзакций регистра, позволяя пользователю просматривать все действия регистра.</value> 
   </data> 
@@ -371,28 +377,28 @@
     <value>Просмотр Депозитов</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_DESCRIPTION" xml:space="preserve"> 
-    <value>Предоставляет доступ к просмотру счетов, позволяя пользователю просматривать детали выставления счетов и платежей.</value> 
+    <value>Предоставляет доступ к просмотру всех заказов, позволяя пользователю просматривать заказы и связанные с ними платежи.</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_NAME" xml:space="preserve"> 
-    <value>Просмотр счетов</value> 
+    <value>Просмотр всех заказов</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_DESCRIPTION" xml:space="preserve"> 
-    <value>Предоставляет доступ к просмотру оплаченных счетов, позволяя пользователю просматривать завершенные записи о платежах.</value> 
+    <value>Предоставляет доступ к просмотру оплаченных заказов, позволяя пользователю просматривать завершённые записи об оплате заказов.</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_NAME" xml:space="preserve"> 
-    <value>Просмотр оплаченных счетов</value> 
+    <value>Просмотр оплаченных заказов</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_DESCRIPTION" xml:space="preserve"> 
-    <value>Предоставляет доступ к просмотру депозитов за прошлые дни, позволяя пользователю просматривать операции по депозитам за предыдущий день.</value> 
+    <value>Предоставляет доступ к просмотру депозитов за прошлые дни и смены, позволяя пользователю просматривать операции по депозитам не только за текущую смену или день.</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_NAME" xml:space="preserve"> 
-    <value>Просмотр депозитов за прошлые дни</value> 
+    <value>Просмотр депозитов за прошлые дни / смены</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_DESCRIPTION" xml:space="preserve"> 
-    <value>Предоставляет доступ к просмотру счетов за прошлые дни, позволяя пользователю просматривать счета, выставленные накануне.</value> 
+    <value>Предоставляет доступ к просмотру заказов за прошлые дни и смены, позволяя пользователю просматривать заказы не только за текущую смену или день.</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_NAME" xml:space="preserve"> 
-    <value>Просмотр счетов за прошлые дни</value> 
+    <value>Просмотр заказов за прошлые дни / смены</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_DESCRIPTION" xml:space="preserve"> 
     <value>Предоставляет доступ к отменённым счетам из закрытых смен, позволяя пользователю отменять транзакции после окончания смены.</value> 

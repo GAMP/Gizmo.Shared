@@ -136,6 +136,8 @@
   <data name="GIZMO_POLICY_REGISTER_PAY_OUT_NAME" xml:space="preserve"><value>Foretag udbetalinger</value></data>
   <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se tidligere dags kassetransaktioner, så brugeren kan gennemgå tidligere kasseaktiviteter</value></data>
   <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve"><value>Vis tidligere dags transaktioner</value></data>
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_CLOSED_RECEIPTS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se lukkede kvitteringer fra tidligere dage og vagter, så brugeren kan gennemgå fiskale kvitteringer uden for nuværende vagt eller dag</value></data>
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_CLOSED_RECEIPTS_NAME" xml:space="preserve"><value>Vis lukkede kvitteringer fra tidligere dage / vagter</value></data>
   <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se kassetransaktioner, så brugeren kan gennemgå alle kasseaktiviteter</value></data>
   <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_NAME" xml:space="preserve"><value>Vis transaktioner</value></data>
   <data name="GIZMO_POLICY_REPORTS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til rapportfunktionen, så brugeren kan se og generere rapporter</value></data>
@@ -278,14 +280,14 @@
   <data name="GIZMO_POLICY_SALE_PAY_LATER_NAME" xml:space="preserve"><value>Betal senere</value></data>
   <data name="GIZMO_POLICY_SALE_VIEW_DEPOSITS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se depositummer, så brugeren kan gennemgå kundekontodepositumtransaktioner</value></data>
   <data name="GIZMO_POLICY_SALE_VIEW_DEPOSITS_NAME" xml:space="preserve"><value>Vis depositummer</value></data>
-  <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se fakturaer, så brugeren kan gennemgå fakturerings- og betalingsoplysninger</value></data>
-  <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_NAME" xml:space="preserve"><value>Vis fakturaer</value></data>
-  <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se betalte fakturaer, så brugeren kan gennemgå gennemførte betalingsposter</value></data>
-  <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_NAME" xml:space="preserve"><value>Vis betalte fakturaer</value></data>
-  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se tidligere dags depositummer, så brugeren kan gennemgå depositumtransaktioner fra dagen før</value></data>
-  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_NAME" xml:space="preserve"><value>Vis tidligere dags depositummer</value></data>
-  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se tidligere dags fakturaer, så brugeren kan gennemgå fakturaer udstedt dagen før</value></data>
-  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_NAME" xml:space="preserve"><value>Vis tidligere dags fakturaer</value></data>
+  <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se alle ordrer, så brugeren kan gennemgå ordrer og relaterede betalinger</value></data>
+  <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_NAME" xml:space="preserve"><value>Vis alle ordrer</value></data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se betalte ordrer, så brugeren kan gennemgå gennemførte ordrebetalingsposter</value></data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_NAME" xml:space="preserve"><value>Vis betalte ordrer</value></data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se depositummer fra tidligere dage og vagter, så brugeren kan gennemgå depositumtransaktioner uden for nuværende vagt eller dag</value></data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_NAME" xml:space="preserve"><value>Vis depositummer fra tidligere dage / vagter</value></data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se ordrer fra tidligere dage og vagter, så brugeren kan gennemgå ordrer uden for nuværende vagt eller dag</value></data>
+  <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_NAME" xml:space="preserve"><value>Vis ordrer fra tidligere dage / vagter</value></data>
   <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at annullere fakturaer fra lukkede vagter, så brugeren kan annullere transaktioner efter vagten er afsluttet</value></data>
   <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_NAME" xml:space="preserve"><value>Annullér lukkede vagtfakturaer</value></data>
   <data name="GIZMO_POLICY_SALE_VOID_DEPOSIT_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at annullere depositummer, så brugeren kan annullere eller tilbageføre depositumtransaktioner</value></data>

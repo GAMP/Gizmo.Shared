@@ -286,6 +286,12 @@
   <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve"> 
     <value>Εμφάνιση συναλλαγών προηγούμενης ημέρας</value> 
   </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_CLOSED_RECEIPTS_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για την προβολή κλειστών αποδείξεων προηγούμενων ημερών και βαρδιών, επιτρέποντας στον χρήστη να ελέγχει φορολογικές αποδείξεις πέρα από την τρέχουσα βάρδια ή ημέρα.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_CLOSED_RECEIPTS_NAME" xml:space="preserve"> 
+    <value>Προβολή κλειστών αποδείξεων προηγούμενων ημερών / βαρδιών</value> 
+  </data> 
   <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve"> 
     <value>Παρέχει πρόσβαση για την εμφάνιση των συναλλαγών του μητρώου, επιτρέποντας στον χρήστη να ελέγχει όλες τις δραστηριότητες του μητρώου.</value> 
   </data> 
@@ -371,28 +377,28 @@
     <value>Προβολή κινήσεων καταθέσεων</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_DESCRIPTION" xml:space="preserve"> 
-    <value>Παρέχει πρόσβαση για την προβολή παραστατικών, επιτρέποντας στον χρήστη να ελέγχει τις λεπτομέρειες χρέωσης και πληρωμής.</value> 
+    <value>Παρέχει πρόσβαση για την προβολή όλων των παραγγελιών, επιτρέποντας στον χρήστη να ελέγχει παραγγελίες και σχετικές πληρωμές.</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_NAME" xml:space="preserve"> 
-    <value>Προβολή παραστατικών</value> 
+    <value>Προβολή όλων των παραγγελιών</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_DESCRIPTION" xml:space="preserve"> 
-    <value>Παρέχει πρόσβαση για την προβολή εξοφλημένων παραστατικών, επιτρέποντας στον χρήστη να ελέγχει τα ολοκληρωμένα αρχεία πληρωμών.</value> 
+    <value>Παρέχει πρόσβαση για την προβολή πληρωμένων παραγγελιών, επιτρέποντας στον χρήστη να ελέγχει ολοκληρωμένα αρχεία πληρωμών παραγγελιών.</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_NAME" xml:space="preserve"> 
-    <value>Προβολή πληρωμένων παραστατικών</value> 
+    <value>Προβολή πληρωμένων παραγγελιών</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_DESCRIPTION" xml:space="preserve"> 
-    <value>Παρέχει πρόσβαση για την προβολή παλαιών κινήσεων καταθέσεων, επιτρέποντας στον χρήστη να ελέγξει τις κινήσεις καταθέσεων της προηγούμενης ημέρας.</value> 
+    <value>Παρέχει πρόσβαση για την προβολή καταθέσεων προηγούμενων ημερών και βαρδιών, επιτρέποντας στον χρήστη να ελέγχει κινήσεις καταθέσεων πέρα από την τρέχουσα βάρδια ή ημέρα.</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_NAME" xml:space="preserve"> 
-    <value>Προβολή παλαιών κινήσεων καταθέσεων</value> 
+    <value>Προβολή καταθέσεων προηγούμενων ημερών / βαρδιών</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_DESCRIPTION" xml:space="preserve"> 
-    <value>Παρέχει πρόσβαση για την προβολή παλαιών παραστατικών, επιτρέποντας στον χρήστη να ελέγξει τα παραστατικά που εκδόθηκαν την προηγούμενη ημέρα.</value> 
+    <value>Παρέχει πρόσβαση για την προβολή παραγγελιών προηγούμενων ημερών και βαρδιών, επιτρέποντας στον χρήστη να ελέγχει παραγγελίες πέρα από την τρέχουσα βάρδια ή ημέρα.</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_NAME" xml:space="preserve"> 
-    <value>Προβολή παλαιών παραστατικών</value> 
+    <value>Προβολή παραγγελιών προηγούμενων ημερών / βαρδιών</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_DESCRIPTION" xml:space="preserve"> 
     <value>Παρέχει πρόσβαση σε ακυρωμένα παραστατικά από κλειστές βάρδιες, επιτρέποντας στον χρήστη να ακυρώσει συναλλαγές μετά το τέλος της βάρδιας.</value> 

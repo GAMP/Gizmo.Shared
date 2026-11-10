@@ -286,6 +286,12 @@
   <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_TRANSACTIONS_NAME" xml:space="preserve"> 
     <value>Önceki gün işlemlerini görüntüle</value> 
   </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_CLOSED_RECEIPTS_DESCRIPTION" xml:space="preserve"> 
+    <value>Geçmiş gün ve vardiya kapanmış fişlerini görüntüleme erişimi sağlar, kullanıcının mevcut vardiya veya gün dışındaki mali fişleri incelemesine olanak tanır</value> 
+  </data> 
+  <data name="GIZMO_POLICY_REGISTER_VIEW_PAST_DAY_CLOSED_RECEIPTS_NAME" xml:space="preserve"> 
+    <value>Geçmiş gün / vardiya kapanmış fişlerini görüntüle</value> 
+  </data> 
   <data name="GIZMO_POLICY_REGISTER_VIEW_TRANSACTIONS_DESCRIPTION" xml:space="preserve"> 
     <value>Kasa işlemlerini görüntüleme erişimi sağlar, kullanıcının tüm kasa aktivitelerini incelemesine olanak tanır</value> 
   </data> 
@@ -371,28 +377,28 @@
     <value>Depozitoları görüntüle</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_DESCRIPTION" xml:space="preserve"> 
-    <value>Faturaları görüntüleme erişimi sağlar, kullanıcının faturalama ve ödeme detaylarını incelemesine olanak tanır</value> 
+    <value>Tüm siparişleri görüntüleme erişimi sağlar, kullanıcının siparişleri ve ilgili ödemeleri incelemesine olanak tanır</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_INVOICES_NAME" xml:space="preserve"> 
-    <value>Faturaları görüntüle</value> 
+    <value>Tüm siparişleri görüntüle</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_DESCRIPTION" xml:space="preserve"> 
-    <value>Ödenmiş faturaları görüntüleme erişimi sağlar, kullanıcının tamamlanmış ödeme kayıtlarını incelemesine olanak tanır</value> 
+    <value>Ödenmiş siparişleri görüntüleme erişimi sağlar, kullanıcının tamamlanmış sipariş ödeme kayıtlarını incelemesine olanak tanır</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAID_INVOICES_NAME" xml:space="preserve"> 
-    <value>Ödenmiş faturaları görüntüle</value> 
+    <value>Ödenmiş siparişleri görüntüle</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_DESCRIPTION" xml:space="preserve"> 
-    <value>Önceki gün depozitolarını görüntüleme erişimi sağlar, kullanıcının önceki günün depozito işlemlerini incelemesine olanak tanır</value> 
+    <value>Geçmiş gün ve vardiya depozitolarını görüntüleme erişimi sağlar, kullanıcının mevcut vardiya veya gün dışındaki depozito işlemlerini incelemesine olanak tanır</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_DEPOSITS_NAME" xml:space="preserve"> 
-    <value>Önceki gün depozitolarını görüntüle</value> 
+    <value>Geçmiş gün / vardiya depozitolarını görüntüle</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_DESCRIPTION" xml:space="preserve"> 
-    <value>Önceki gün faturalarını görüntüleme erişimi sağlar, kullanıcının önceki gün düzenlenen faturaları incelemesine olanak tanır</value> 
+    <value>Geçmiş gün ve vardiya siparişlerini görüntüleme erişimi sağlar, kullanıcının mevcut vardiya veya gün dışındaki siparişleri incelemesine olanak tanır</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VIEW_PAST_DAY_INVOICES_NAME" xml:space="preserve"> 
-    <value>Önceki gün faturalarını görüntüle</value> 
+    <value>Geçmiş gün / vardiya siparişlerini görüntüle</value> 
   </data> 
   <data name="GIZMO_POLICY_SALE_VOID_CLOSED_SHIFT_INVOICE_DESCRIPTION" xml:space="preserve"> 
     <value>Kapalı vardiya faturalarını iptal etme erişimi sağlar, kullanıcının vardiya bittikten sonra işlemleri iptal etmesine olanak tanır</value> 
