@@ -957,10 +957,16 @@
     <value>Cambiar grupo de usuario</value>
   </data>
   <data name="GIZMO_POLICY_USER_CREATE_DESCRIPTION" xml:space="preserve">
-    <value>Acceso para crear usuario.</value>
+    <value>Permite completar todos los campos del usuario al crearlo. Cambiar el grupo de usuarios requiere el permiso independiente para cambiar el grupo de usuarios</value>
   </data>
   <data name="GIZMO_POLICY_USER_CREATE_NAME" xml:space="preserve">
-    <value>Crear</value>
+    <value>Crear usuario (completo)</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_CREATE_BASIC_DESCRIPTION" xml:space="preserve">
+    <value>Permite completar solo los campos obligatorios del grupo de usuarios al crear un usuario. El grupo de usuarios permanece como el predeterminado, salvo que se tenga el permiso para cambiar el grupo de usuarios</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_CREATE_BASIC_NAME" xml:space="preserve">
+    <value>Crear usuario (básico)</value>
   </data>
   <data name="GIZMO_POLICY_USER_LIST_DESCRIPTION" xml:space="preserve">
     <value>Acceso a la página de lista de usuarios.</value>

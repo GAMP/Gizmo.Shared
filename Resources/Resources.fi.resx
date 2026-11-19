@@ -329,8 +329,10 @@
   <data name="GIZMO_POLICY_USER_BAN_NAME" xml:space="preserve"><value>Spær bruger</value></data>
   <data name="GIZMO_POLICY_USER_CHANGE_GROUP_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at flytte brugere til andre brugergrupper, så brugeren kan opdatere brugergruppemedlemskaber</value></data>
   <data name="GIZMO_POLICY_USER_CHANGE_GROUP_NAME" xml:space="preserve"><value>Skift brugergruppe</value></data>
-  <data name="GIZMO_POLICY_USER_CREATE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til manuelt at oprette brugere, så brugeren kan tilføje nye brugerkonti til systemet</value></data>
-  <data name="GIZMO_POLICY_USER_CREATE_NAME" xml:space="preserve"><value>Opret</value></data>
+  <data name="GIZMO_POLICY_USER_CREATE_DESCRIPTION" xml:space="preserve"><value>Antaa oikeuden täyttää kaikki käyttäjän kentät käyttäjää luotaessa. Käyttäjäryhmän vaihtaminen vaatii erillisen oikeuden vaihtaa käyttäjäryhmä</value></data>
+  <data name="GIZMO_POLICY_USER_CREATE_NAME" xml:space="preserve"><value>Luo käyttäjä (täysi)</value></data>
+  <data name="GIZMO_POLICY_USER_CREATE_BASIC_DESCRIPTION" xml:space="preserve"><value>Antaa oikeuden täyttää vain käyttäjäryhmän vaatimat kentät käyttäjää luotaessa. Käyttäjäryhmä pysyy oletusryhmänä, ellei oikeutta vaihtaa käyttäjäryhmää ole</value></data>
+  <data name="GIZMO_POLICY_USER_CREATE_BASIC_NAME" xml:space="preserve"><value>Luo käyttäjä (perus)</value></data>
   <data name="GIZMO_POLICY_USER_LIST_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at se brugerlisten</value></data>
   <data name="GIZMO_POLICY_USER_LIST_NAME" xml:space="preserve"><value>Liste</value></data>
   <data name="GIZMO_POLICY_USER_DELETE_DESCRIPTION" xml:space="preserve"><value>Giver adgang til at slette brugere, så brugeren kan fjerne brugerkonti fra systemet</value></data>

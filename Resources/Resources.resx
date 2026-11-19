@@ -957,10 +957,16 @@
     <value>Change usergroup</value>
   </data>
   <data name="GIZMO_POLICY_USER_CREATE_DESCRIPTION" xml:space="preserve">
-    <value>Grants access to manually create users enabling the user to add new user accounts to the system</value>
+    <value>Grants access to fill every user field when creating a user. Changing the user group requires the separate change user group permission</value>
   </data>
   <data name="GIZMO_POLICY_USER_CREATE_NAME" xml:space="preserve">
-    <value>Create</value>
+    <value>Create user (full)</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_CREATE_BASIC_DESCRIPTION" xml:space="preserve">
+    <value>Grants access to fill only the fields required by the user group when creating a user. The user group stays the default unless the change user group permission is held</value>
+  </data>
+  <data name="GIZMO_POLICY_USER_CREATE_BASIC_NAME" xml:space="preserve">
+    <value>Create user (basic)</value>
   </data>
   <data name="GIZMO_POLICY_USER_LIST_DESCRIPTION" xml:space="preserve">
     <value>Grants access to view the users list page</value>

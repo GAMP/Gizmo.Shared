@@ -506,10 +506,16 @@
     <value>تغيير مجموعة المستخدمين</value> 
   </data> 
   <data name="GIZMO_POLICY_USER_CREATE_DESCRIPTION" xml:space="preserve"> 
-    <value>يمنح الوصول لإنشاء المستخدمين يدوياً مما يتيح للمستخدم إضافة حسابات مستخدمين جديدة إلى النظام</value> 
+    <value>يمنح الوصول لتعبئة جميع حقول المستخدم عند الإنشاء. تغيير مجموعة المستخدمين يتطلب صلاحية تغيير مجموعة المستخدمين المنفصلة</value> 
   </data> 
   <data name="GIZMO_POLICY_USER_CREATE_NAME" xml:space="preserve"> 
-    <value>إنشاء</value> 
+    <value>إنشاء مستخدم (كامل)</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CREATE_BASIC_DESCRIPTION" xml:space="preserve"> 
+    <value>يمنح الوصول لتعبئة الحقول المطلوبة من مجموعة المستخدمين فقط عند الإنشاء. تبقى مجموعة المستخدمين هي المجموعة الافتراضية ما لم تتوفر صلاحية تغيير مجموعة المستخدمين</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CREATE_BASIC_NAME" xml:space="preserve"> 
+    <value>إنشاء مستخدم (أساسي)</value> 
   </data> 
   <data name="GIZMO_POLICY_USER_DELETE_DESCRIPTION" xml:space="preserve"> 
     <value>يمنح الوصول لحذف المستخدمين مما يتيح للمستخدم إزالة حسابات المستخدمين من النظام</value> 

@@ -506,10 +506,16 @@
     <value>Kullanıcı grubunu değiştir</value> 
   </data> 
   <data name="GIZMO_POLICY_USER_CREATE_DESCRIPTION" xml:space="preserve"> 
-    <value>Manuel olarak kullanıcı oluşturma erişimi sağlar, kullanıcının sisteme yeni kullanıcı hesapları eklemesine olanak tanır</value> 
+    <value>Kullanıcı oluştururken tüm kullanıcı alanlarını doldurma erişimi sağlar. Kullanıcı grubunu değiştirmek ayrı kullanıcı grubunu değiştirme iznini gerektirir</value> 
   </data> 
   <data name="GIZMO_POLICY_USER_CREATE_NAME" xml:space="preserve"> 
-    <value>Oluştur</value> 
+    <value>Kullanıcı oluştur (tam)</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CREATE_BASIC_DESCRIPTION" xml:space="preserve"> 
+    <value>Kullanıcı oluştururken yalnızca kullanıcı grubunun zorunlu kıldığı alanları doldurma erişimi sağlar. Kullanıcı grubunu değiştirme izni yoksa kullanıcı grubu varsayılan grup olarak kalır</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CREATE_BASIC_NAME" xml:space="preserve"> 
+    <value>Kullanıcı oluştur (temel)</value> 
   </data> 
   <data name="GIZMO_POLICY_USER_DELETE_DESCRIPTION" xml:space="preserve"> 
     <value>Kullanıcıları silme erişimi sağlar, kullanıcının sistemden kullanıcı hesaplarını kaldırmasına olanak tanır</value> 

@@ -506,10 +506,16 @@
     <value>Изменить группу пользователей</value> 
   </data> 
   <data name="GIZMO_POLICY_USER_CREATE_DESCRIPTION" xml:space="preserve"> 
-    <value>Предоставляет доступ к ручному созданию пользователей, позволяя пользователю добавлять новые учетные записи пользователей в систему.</value> 
+    <value>Предоставляет доступ ко всем полям пользователя при создании. Смена группы пользователей по-прежнему требует отдельного права.</value> 
   </data> 
   <data name="GIZMO_POLICY_USER_CREATE_NAME" xml:space="preserve"> 
-    <value>Создать</value> 
+    <value>Создание пользователя (полное)</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CREATE_BASIC_DESCRIPTION" xml:space="preserve"> 
+    <value>Предоставляет доступ только к обязательным полям группы пользователей при создании. Группа пользователей остаётся группой по умолчанию, если нет права изменить группу пользователей.</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CREATE_BASIC_NAME" xml:space="preserve"> 
+    <value>Создание пользователя (базовое)</value> 
   </data> 
   <data name="GIZMO_POLICY_USER_DELETE_DESCRIPTION" xml:space="preserve"> 
     <value>Предоставляет доступ к удалению пользователей, позволяя пользователю удалять учетные записи пользователей из системы.</value> 

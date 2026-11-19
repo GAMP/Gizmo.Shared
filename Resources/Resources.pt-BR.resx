@@ -506,10 +506,16 @@
     <value>Alterar grupo de usuários</value> 
   </data> 
   <data name="GIZMO_POLICY_USER_CREATE_DESCRIPTION" xml:space="preserve"> 
-    <value>Concede acesso para criar usuários manualmente, permitindo que o usuário adicione novas contas de usuário ao sistema.</value> 
+    <value>Concede acesso para preencher todos os campos do usuário ao criá-lo. Alterar o grupo de usuários exige a permissão separada de alterar o grupo de usuários</value> 
   </data> 
   <data name="GIZMO_POLICY_USER_CREATE_NAME" xml:space="preserve"> 
-    <value>Criar</value> 
+    <value>Criar usuário (completo)</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CREATE_BASIC_DESCRIPTION" xml:space="preserve"> 
+    <value>Concede acesso para preencher apenas os campos exigidos pelo grupo de usuários ao criar um usuário. O grupo de usuários permanece o padrão, a menos que haja a permissão de alterar o grupo de usuários</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CREATE_BASIC_NAME" xml:space="preserve"> 
+    <value>Criar usuário (básico)</value> 
   </data> 
   <data name="GIZMO_POLICY_USER_DELETE_DESCRIPTION" xml:space="preserve"> 
     <value>Concede acesso para excluir usuários, permitindo que o usuário remova contas de usuário do sistema.</value> 

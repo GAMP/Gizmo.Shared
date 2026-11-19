@@ -506,10 +506,16 @@
     <value>Αλλαγή ομάδας χρηστών</value> 
   </data> 
   <data name="GIZMO_POLICY_USER_CREATE_DESCRIPTION" xml:space="preserve"> 
-    <value>Παρέχει πρόσβαση για χειροκίνητη δημιουργία χρηστών, επιτρέποντας στον χρήστη να προσθέτει νέους λογαριασμούς χρηστών στο σύστημα.</value> 
+    <value>Παρέχει πρόσβαση για τη συμπλήρωση όλων των πεδίων του χρήστη κατά τη δημιουργία. Η αλλαγή της ομάδας χρηστών απαιτεί το ξεχωριστό δικαίωμα αλλαγής ομάδας χρηστών</value> 
   </data> 
   <data name="GIZMO_POLICY_USER_CREATE_NAME" xml:space="preserve"> 
-    <value>Δημιουργία</value> 
+    <value>Δημιουργία χρήστη (πλήρης)</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CREATE_BASIC_DESCRIPTION" xml:space="preserve"> 
+    <value>Παρέχει πρόσβαση για τη συμπλήρωση μόνο των πεδίων που απαιτεί η ομάδα χρηστών κατά τη δημιουργία. Η ομάδα χρηστών παραμένει η προεπιλεγμένη, εκτός εάν υπάρχει το δικαίωμα αλλαγής ομάδας χρηστών</value> 
+  </data> 
+  <data name="GIZMO_POLICY_USER_CREATE_BASIC_NAME" xml:space="preserve"> 
+    <value>Δημιουργία χρήστη (βασική)</value> 
   </data> 
   <data name="GIZMO_POLICY_USER_DELETE_DESCRIPTION" xml:space="preserve"> 
     <value>Παρέχει πρόσβαση για τη διαγραφή χρηστών, επιτρέποντας στον χρήστη να καταργήσει λογαριασμούς χρηστών από το σύστημα.</value> 

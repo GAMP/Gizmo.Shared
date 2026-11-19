@@ -480,8 +480,15 @@ namespace Gizmo.Server.Security
         /// Add user permission.
         /// </summary>
         [PolicyDescription("User", "Add", GizmoPolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_CREATE_NAME), nameof(Resources.GIZMO_POLICY_USER_CREATE_DESCRIPTION),
-             [GizmoPolicySet.Cashier, GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
+             [GizmoPolicySet.Manager, GizmoPolicySet.Owner])]
         UserAdd,
+
+        /// <summary>
+        /// Add user with the fields required by the user group.
+        /// </summary>
+        [PolicyDescription("User", "AddBasic", GizmoPolicyGroups.User, nameof(Resources.GIZMO_POLICY_USER_CREATE_BASIC_NAME), nameof(Resources.GIZMO_POLICY_USER_CREATE_BASIC_DESCRIPTION),
+             [GizmoPolicySet.Cashier])]
+        UserAddBasic,
 
         /// <summary>
         /// Delete user permission.
