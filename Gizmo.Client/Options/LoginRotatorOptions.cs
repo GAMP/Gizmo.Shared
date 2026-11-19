@@ -1,6 +1,7 @@
 ﻿
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using Gizmo.Client.UI.View.Constants;
 using MessagePack;
 
 namespace Gizmo.Client.Options
@@ -32,5 +33,12 @@ namespace Gizmo.Client.Options
         [DefaultValue(5)]
         [Range(1, int.MaxValue)]
         public int RotateEvery { get; set; }
+
+        /// <summary>
+        /// Defines the media transition animation.
+        /// </summary>
+        [MessagePack.Key(3)]
+        [DefaultValue(LoginRotatorTransition.LeftToRight)]
+        public LoginRotatorTransition Transition { get; set; }
     }
 }

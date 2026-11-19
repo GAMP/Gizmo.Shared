@@ -2239,4 +2239,19 @@
   <data name="SERVER_OPTION_ACTION_CENTER_USER_LOGGED_IN_SOUND_NAME" xml:space="preserve">
     <value>Пользователь вошёл в систему</value>
   </data>
+  <data name="LOGIN_ROTATOR_TRANSITION_LEFT_TO_RIGHT" xml:space="preserve">
+    <value>Слева направо</value>
+  </data>
+  <data name="LOGIN_ROTATOR_TRANSITION_TOP_TO_BOTTOM" xml:space="preserve">
+    <value>Сверху вниз</value>
+  </data>
+  <data name="LOGIN_ROTATOR_TRANSITION_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>Справа налево</value>
+  </data>
+  <data name="LOGIN_ROTATOR_TRANSITION_BOTTOM_TO_TOP" xml:space="preserve">
+    <value>Снизу вверх</value>
+  </data>
+  <data name="LOGIN_ROTATOR_TRANSITION_SEQUENTIAL" xml:space="preserve">
+    <value>По очереди</value>
+  </data>
 </root>
