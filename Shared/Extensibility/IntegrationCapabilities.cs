@@ -77,5 +77,23 @@ namespace Gizmo.Extensibility
         /// </summary>
         /// <seealso cref="Gizmo.Server.Extensibility.IWaitCallHandler"/>
         public static readonly Guid WaitCall = Guid.Parse("8D5F3B29-6E4A-4C71-9B2D-5A8E1F6C4D93");
+
+        /// <summary>
+        /// The integration provides AI models for the built-in conversations.
+        /// </summary>
+        /// <seealso cref="Gizmo.Server.Extensibility.IAIChatModelProvider"/>
+        public static readonly Guid AIChat = Guid.Parse("8DD32620-FDCE-4321-9551-BD623260CE39");
+
+        /// <summary>
+        /// The integration contributes tools to the AI assistant and the MCP endpoint.
+        /// </summary>
+        /// <seealso cref="Gizmo.Server.Extensibility.IAIToolProvider"/>
+        public static readonly Guid AITools = Guid.Parse("DAB948B8-D097-48FB-A863-523B12998A2F");
+
+        /// <summary>
+        /// The integration provides knowledge the AI assistant can search.
+        /// </summary>
+        /// <seealso cref="Gizmo.Server.Extensibility.IAIKnowledgeSource"/>
+        public static readonly Guid AIKnowledge = Guid.Parse("D9E2010D-D480-4FAA-AFB7-2461234551F0");
     }
 }
