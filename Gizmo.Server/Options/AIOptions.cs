@@ -39,5 +39,22 @@ namespace Gizmo.Server.Options
         {
             get; init;
         }
+
+        /// <summary>
+        /// The most characters of standing instructions one AI turn carries, Gizmo's own not counted.
+        /// </summary>
+        /// <remarks>
+        /// Instructions come from the knowledge sources ordered by weight; once the limit is reached the remaining,
+        /// lighter entries are left out of the turn.
+        /// </remarks>
+        [Name("Maximum instruction characters per AI turn", "SERVER_OPTION_AI_MAX_INSTRUCTION_CHARACTERS_NAME")]
+        [StoreOptionKey("MAX_INSTRUCTION_CHARACTERS")]
+        [DefaultValue(8192)]
+        [Range(1024, 65536)]
+        [MessagePack.Key(2)]
+        public int MaxInstructionCharacters
+        {
+            get; init;
+        }
     }
 }
